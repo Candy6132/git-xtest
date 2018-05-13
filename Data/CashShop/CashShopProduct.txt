@@ -1,0 +1,2 @@
+//Category   MainIndex   CoinValue   FlagValue   ItemIndex   ItemLevel   ItemOption1   ItemOption2   ItemOption3   ItemNewOption   ItemSetOption   ItemHarmonyOption   ItemOptionEx   ItemSocketOption1   ItemSocketOption2   ItemSocketOption3   ItemSocketOption4   ItemSocketOption5   ItemQuantity   ItemDuration
+end

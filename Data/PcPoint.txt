@@ -1,0 +1,9 @@
+//Index   Level   Count   Option1   Option2   Option3   NewOption   Value   Comment
+6699      0       0       0         0         0         0           24      //Seal of Ascension
+6700      0       0       0         0         0         0           36      //Seal of Wealth
+6701      0       0       0         0         0         0           24      //Seal of Sustenance
+7223      0       0       0         0         0         0           36      //Green Chaos Box
+7224      0       0       0         0         0         0           72      //Red Chaos Box
+7225      0       0       0         0         0         0           144     //Purple Chaos Box
+end
+

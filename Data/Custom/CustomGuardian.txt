@@ -1,0 +1,2 @@
+//Index   ItemIndex   DecLife   DurRate   IncDamageConstA   DecDamageConstA   ModelType   ModelName
+end
