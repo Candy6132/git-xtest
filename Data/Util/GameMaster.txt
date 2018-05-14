@@ -1,4 +1,4 @@
 //Account         Name         Level
 Wraithulek	NOWITAM	3
-Rezun		Candy
+Rezun		Candy	3
 end
