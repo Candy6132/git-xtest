@@ -42,7 +42,7 @@
 6706      4       0       *         *         *         *         *         *         *         0          *           *              77                84                1000       //Illusion Sorcerer Covenant 4
 6706      5       0       *         *         *         *         *         *         *         0          *           *              85                101               1000       //Illusion Sorcerer Covenant 5
 6706      6       0       *         *         *         *         *         *         *         0          *           *              102               150               1000       //Illusion Sorcerer Covenant 6
-6708      0       0       *         *         *         *         *         *         *         0          41          *              25                150               1000       //Condor Flame
+6708      0       0       *         *         *         *         *         *         *         0          41          *              25                150               0	     //Condor Flame
 6722      0       0       *         *         *         *         *         *         *         0          *           466            *                 *                 0          //Invitation to Santa Village
 7179      1       0       *         *         *         *         *         *         *         0          *           *              12                69                0          //Star of Christmas
 7179      3       0       *         *         *         *         *         *         *         0          *           *              12                69                0          //Heart of Love

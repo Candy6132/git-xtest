@@ -3,7 +3,7 @@
 ; Post Command Settings
 ;==================================================
 CommandPostSwitch = 1
-CommandPostType = 0
+CommandPostType = 4
 CommandPostEnable_AL0 = 1
 CommandPostEnable_AL1 = 1
 CommandPostEnable_AL2 = 1
@@ -58,7 +58,7 @@ CommandPKClearMoney_AL3 = 100000000
 ;==================================================
 ; Money Command Settings
 ;==================================================
-CommandMoneySwitch = 1
+CommandMoneySwitch = 0
 CommandMoneyEnable_AL0 = 1
 CommandMoneyEnable_AL1 = 1
 CommandMoneyEnable_AL2 = 1
@@ -67,7 +67,7 @@ CommandMoneyEnable_AL3 = 1
 ;==================================================
 ; Change Command Settings
 ;==================================================
-CommandChangeSwitch = 1
+CommandChangeSwitch = 0
 CommandChangeEnable_AL0 = 1
 CommandChangeEnable_AL1 = 1
 CommandChangeEnable_AL2 = 1
@@ -89,24 +89,24 @@ CommandWareEnable_AL0 = 1
 CommandWareEnable_AL1 = 1
 CommandWareEnable_AL2 = 1
 CommandWareEnable_AL3 = 1
-CommandWareNumber_AL0 = 1
-CommandWareNumber_AL1 = 1
-CommandWareNumber_AL2 = 1
-CommandWareNumber_AL3 = 1
+CommandWareNumber_AL0 = 5
+CommandWareNumber_AL1 = 5
+CommandWareNumber_AL2 = 5
+CommandWareNumber_AL3 = 5
 
 ;==================================================
 ; Reset Command Settings
 ;==================================================
 CommandResetSwitch = 1
-CommandResetType = 0
+CommandResetType = 1
 CommandResetEnable_AL0 = 1
 CommandResetEnable_AL1 = 1
 CommandResetEnable_AL2 = 1
 CommandResetEnable_AL3 = 1
-CommandResetAutoEnable_AL0 = 1
-CommandResetAutoEnable_AL1 = 1
-CommandResetAutoEnable_AL2 = 1
-CommandResetAutoEnable_AL3 = 1
+CommandResetAutoEnable_AL0 = 0
+CommandResetAutoEnable_AL1 = 0
+CommandResetAutoEnable_AL2 = 0
+CommandResetAutoEnable_AL3 = 0
 CommandResetCheckItem_AL0 = 0
 CommandResetCheckItem_AL1 = 0
 CommandResetCheckItem_AL2 = 0
@@ -127,18 +127,18 @@ CommandResetLevel_AL0 = 400
 CommandResetLevel_AL1 = 400
 CommandResetLevel_AL2 = 400
 CommandResetLevel_AL3 = 400
-CommandResetMoney_AL0 = 0
-CommandResetMoney_AL1 = 0
-CommandResetMoney_AL2 = 0
-CommandResetMoney_AL3 = 0
+CommandResetMoney_AL0 = 100000000
+CommandResetMoney_AL1 = 100000000
+CommandResetMoney_AL2 = 100000000
+CommandResetMoney_AL3 = 100000000
 CommandResetCount_AL0 = 1
 CommandResetCount_AL1 = 1
 CommandResetCount_AL2 = 1
 CommandResetCount_AL3 = 1	
-CommandResetLimit_AL0 = 10000
-CommandResetLimit_AL1 = 10000
-CommandResetLimit_AL2 = 10000
-CommandResetLimit_AL3 = 10000
+CommandResetLimit_AL0 = 40
+CommandResetLimit_AL1 = 40
+CommandResetLimit_AL2 = 40
+CommandResetLimit_AL3 = 40
 CommandResetLimitDay_AL0 = 10000
 CommandResetLimitDay_AL1 = 10000
 CommandResetLimitDay_AL2 = 10000
@@ -155,22 +155,22 @@ CommandResetStartLevel_AL0 = 1
 CommandResetStartLevel_AL1 = 1
 CommandResetStartLevel_AL2 = 1
 CommandResetStartLevel_AL3 = 1
-CommandResetPoint_AL0 = 0
-CommandResetPoint_AL1 = 0
-CommandResetPoint_AL2 = 0
-CommandResetPoint_AL3 = 0
+CommandResetPoint_AL0 = 300
+CommandResetPoint_AL1 = 300
+CommandResetPoint_AL2 = 300
+CommandResetPoint_AL3 = 300
 CommandResetPointRateDW = 100
 CommandResetPointRateDK = 100
 CommandResetPointRateFE = 100
-CommandResetPointRateMG = 100
-CommandResetPointRateDL = 100
+CommandResetPointRateMG = 125
+CommandResetPointRateDL = 112
 CommandResetPointRateSU = 100
 
 ;==================================================
 ; Master Reset Command Settings
 ;==================================================
-CommandMasterResetSwitch = 0
-CommandMasterResetType = 0
+CommandMasterResetSwitch = 1
+CommandMasterResetType = 1
 CommandMasterResetEnable_AL0 = 1
 CommandMasterResetEnable_AL1 = 1
 CommandMasterResetEnable_AL2 = 1
@@ -179,10 +179,10 @@ CommandMasterResetCheckItem_AL0 = 0
 CommandMasterResetCheckItem_AL1 = 0
 CommandMasterResetCheckItem_AL2 = 0
 CommandMasterResetCheckItem_AL3 = 0
-CommandMasterResetMove_AL0 = 0
-CommandMasterResetMove_AL1 = 0
-CommandMasterResetMove_AL2 = 0
-CommandMasterResetMove_AL3 = 0
+CommandMasterResetMove_AL0 = 1
+CommandMasterResetMove_AL1 = 1
+CommandMasterResetMove_AL2 = 1
+CommandMasterResetMove_AL3 = 1
 CommandMasterResetQuest_AL0 = 0
 CommandMasterResetQuest_AL1 = 0
 CommandMasterResetQuest_AL2 = 0
@@ -195,14 +195,14 @@ CommandMasterResetLevel_AL0 = 400
 CommandMasterResetLevel_AL1 = 400
 CommandMasterResetLevel_AL2 = 400
 CommandMasterResetLevel_AL3 = 400
-CommandMasterResetReset_AL0 = 1000
-CommandMasterResetReset_AL1 = 1000
-CommandMasterResetReset_AL2 = 1000
-CommandMasterResetReset_AL3 = 1000
-CommandMasterResetMoney_AL0 = 0
-CommandMasterResetMoney_AL1 = 0
-CommandMasterResetMoney_AL2 = 0
-CommandMasterResetMoney_AL3 = 0
+CommandMasterResetReset_AL0 = 40
+CommandMasterResetReset_AL1 = 40
+CommandMasterResetReset_AL2 = 40
+CommandMasterResetReset_AL3 = 40
+CommandMasterResetMoney_AL0 = 1000000000
+CommandMasterResetMoney_AL1 = 1000000000
+CommandMasterResetMoney_AL2 = 1000000000
+CommandMasterResetMoney_AL3 = 1000000000
 CommandMasterResetCount_AL0 = 1					
 CommandMasterResetCount_AL1 = 1	
 CommandMasterResetCount_AL2 = 1	
@@ -223,23 +223,23 @@ CommandMasterResetLimitMon_AL0 = 10000
 CommandMasterResetLimitMon_AL1 = 10000
 CommandMasterResetLimitMon_AL2 = 10000
 CommandMasterResetLimitMon_AL3 = 10000
-CommandMasterResetStartLevel_AL0 = 400
-CommandMasterResetStartLevel_AL1 = 400
-CommandMasterResetStartLevel_AL2 = 400
-CommandMasterResetStartLevel_AL3 = 400
+CommandMasterResetStartLevel_AL0 = 1
+CommandMasterResetStartLevel_AL1 = 1
+CommandMasterResetStartLevel_AL2 = 1
+CommandMasterResetStartLevel_AL3 = 1
 CommandMasterResetStartReset_AL0 = 0
 CommandMasterResetStartReset_AL1 = 0
 CommandMasterResetStartReset_AL2 = 0
 CommandMasterResetStartReset_AL3 = 0
-CommandMasterResetPoint_AL0 = 0
-CommandMasterResetPoint_AL1 = 0
-CommandMasterResetPoint_AL2 = 0
-CommandMasterResetPoint_AL3 = 0
+CommandMasterResetPoint_AL0 = 2000
+CommandMasterResetPoint_AL1 = 2000
+CommandMasterResetPoint_AL2 = 2000
+CommandMasterResetPoint_AL3 = 2000
 CommandMasterResetPointRateDW = 100
 CommandMasterResetPointRateDK = 100
 CommandMasterResetPointRateFE = 100
-CommandMasterResetPointRateMG = 100
-CommandMasterResetPointRateDL = 100
+CommandMasterResetPointRateMG = 125
+CommandMasterResetPointRateDL = 112
 CommandMasterResetPointRateSU = 100
 
 ;==================================================
