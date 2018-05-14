@@ -1,4 +1,5 @@
 //Account         Name         Level
 Wraithulek	NOWITAM	3
 Rezun		Candy	3
+buzka		POZDRO	3
 end
