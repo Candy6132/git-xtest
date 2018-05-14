@@ -9,26 +9,27 @@ CustomArenaKillerScoreIncrease = 100
 ;==================================================
 ; Custom Attack Settings
 ;==================================================
-CustomJewelPackSwitch = 1
-CustomJewelPackMaxSize = 16
-CustomJewelPackEnable_AL0 = 1
-CustomJewelPackEnable_AL1 = 1
-CustomJewelPackEnable_AL2 = 1
-CustomJewelPackEnable_AL3 = 1
-CustomJewelPackRequireMoney_AL0 = 100000
-CustomJewelPackRequireMoney_AL1 = 100000
-CustomJewelPackRequireMoney_AL2 = 100000
-CustomJewelPackRequireMoney_AL3 = 100000
-CustomJewelPackCommandJoBSyntax = bless
-CustomJewelPackCommandJoSSyntax = soul
-CustomJewelPackCommandJoLSyntax = life
-CustomJewelPackCommandJCRSyntax = creation
-CustomJewelPackCommandJoGSyntax = guardian
-CustomJewelPackCommandJGMSyntax = gem
-CustomJewelPackCommandJoHSyntax = harmony
-CustomJewelPackCommandJoCSyntax = chaos
-CustomJewelPackCommandJLRSyntax = loref
-CustomJewelPackCommandJHRSyntax = hiref
+CustomAttackSwitch = 0
+CustomAttackEnable_AL0 = 0
+CustomAttackEnable_AL1 = 0
+CustomAttackEnable_AL2 = 0
+CustomAttackEnable_AL3 = 0
+CustomAttackBuffEnable_AL0 = 0
+CustomAttackBuffEnable_AL1 = 0
+CustomAttackBuffEnable_AL2 = 0
+CustomAttackBuffEnable_AL3 = 0
+CustomAttackPickEnable_AL0 = 0
+CustomAttackPickEnable_AL1 = 0
+CustomAttackPickEnable_AL2 = 0
+CustomAttackPickEnable_AL3 = 0
+CustomAttackRequireLevel_AL0 = 0
+CustomAttackRequireLevel_AL1 = 0
+CustomAttackRequireLevel_AL2 = 0
+CustomAttackRequireLevel_AL3 = 0
+CustomAttackRequireReset_AL0 = 0
+CustomAttackRequireReset_AL1 = 0
+CustomAttackRequireReset_AL2 = 0
+CustomAttackRequireReset_AL3 = 0
 
 ;==================================================
 ; Custom Attack Offline Settings
@@ -99,7 +100,7 @@ CustomJewelPackCommandJHRSyntax = hiref
 ;==================================================
 ; Custom Store Settings
 ;==================================================
-CustomStoreSwitch = 1
+CustomStoreSwitch = 0
 CustomStoreMapZone = -1
 CustomStoreEnable_AL0 = 1
 CustomStoreEnable_AL1 = 1
@@ -109,10 +110,10 @@ CustomStoreRequireLevel_AL0 = 6
 CustomStoreRequireLevel_AL1 = 6
 CustomStoreRequireLevel_AL2 = 6
 CustomStoreRequireLevel_AL3 = 6
-CustomStoreRequireReset_AL0 = 6
-CustomStoreRequireReset_AL1 = 6
-CustomStoreRequireReset_AL2 = 6
-CustomStoreRequireReset_AL3 = 6
+CustomStoreRequireReset_AL0 = 0
+CustomStoreRequireReset_AL1 = 0
+CustomStoreRequireReset_AL2 = 0
+CustomStoreRequireReset_AL3 = 0
 CustomStoreJoBCommisionRate = 0
 CustomStoreJoSCommisionRate = 0
 CustomStoreJoCCommisionRate = 0
