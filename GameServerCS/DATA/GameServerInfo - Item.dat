@@ -2,12 +2,12 @@
 ;==================================================
 ; Transformation Ring Settings
 ;==================================================
-TransformationRing1 = 2
-TransformationRing2 = 7
-TransformationRing3 = 14
+TransformationRing1 = 351
+TransformationRing2 = 300
+TransformationRing3 = 303
 TransformationRing4 = 8
-TransformationRing5 = 9
-TransformationRing6 = 41
+TransformationRing5 = 236
+TransformationRing6 = 156
 
 ;==================================================
 ; Guardian Inc Damage Settings
@@ -41,62 +41,62 @@ SUApplePotionRate = 10
 ;==================================================
 ; Small Life Potion Settings
 ;==================================================
-DWSmallLifePotionRate = 20
-DKSmallLifePotionRate = 20
-FESmallLifePotionRate = 20
-MGSmallLifePotionRate = 20
-DLSmallLifePotionRate = 20
-SUSmallLifePotionRate = 20
+DWSmallLifePotionRate = 30
+DKSmallLifePotionRate = 30
+FESmallLifePotionRate = 30
+MGSmallLifePotionRate = 30
+DLSmallLifePotionRate = 30
+SUSmallLifePotionRate = 30
 
 ;==================================================
 ; Midle Life Potion Settings
 ;==================================================
-DWMidleLifePotionRate = 30
-DKMidleLifePotionRate = 30
-FEMidleLifePotionRate = 30
-MGMidleLifePotionRate = 30
-DLMidleLifePotionRate = 30
-SUMidleLifePotionRate = 30
+DWMidleLifePotionRate = 40
+DKMidleLifePotionRate = 40
+FEMidleLifePotionRate = 40
+MGMidleLifePotionRate = 40
+DLMidleLifePotionRate = 40
+SUMidleLifePotionRate = 40
 
 ;==================================================
 ; Large Life Potion Settings
 ;==================================================
-DWLargeLifePotionRate = 40
-DKLargeLifePotionRate = 40
-FELargeLifePotionRate = 40
-MGLargeLifePotionRate = 40
-DLLargeLifePotionRate = 40
-SULargeLifePotionRate = 40
+DWLargeLifePotionRate = 50
+DKLargeLifePotionRate = 50
+FELargeLifePotionRate = 50
+MGLargeLifePotionRate = 50
+DLLargeLifePotionRate = 50
+SULargeLifePotionRate = 50
 
 ;==================================================
 ; Small Mana Potion Settings
 ;==================================================
-DWSmallManaPotionRate = 20
-DKSmallManaPotionRate = 20
-FESmallManaPotionRate = 20
-MGSmallManaPotionRate = 20
-DLSmallManaPotionRate = 20
-SUSmallManaPotionRate = 20
+DWSmallManaPotionRate = 30
+DKSmallManaPotionRate = 30
+FESmallManaPotionRate = 30
+MGSmallManaPotionRate = 30
+DLSmallManaPotionRate = 30
+SUSmallManaPotionRate = 30
 
 ;==================================================
 ; Midle Mana Potion Settings
 ;==================================================
-DWMidleManaPotionRate = 30
-DKMidleManaPotionRate = 30
-FEMidleManaPotionRate = 30
-MGMidleManaPotionRate = 30
-DLMidleManaPotionRate = 30
-SUMidleManaPotionRate = 30
+DWMidleManaPotionRate = 45
+DKMidleManaPotionRate = 45
+FEMidleManaPotionRate = 45
+MGMidleManaPotionRate = 45
+DLMidleManaPotionRate = 45
+SUMidleManaPotionRate = 45
 
 ;==================================================
 ; Large Mana Potion Settings
 ;==================================================
-DWLargeManaPotionRate = 40
-DKLargeManaPotionRate = 40
-FELargeManaPotionRate = 40
-MGLargeManaPotionRate = 40
-DLLargeManaPotionRate = 40
-SULargeManaPotionRate = 40
+DWLargeManaPotionRate = 60
+DKLargeManaPotionRate = 60
+FELargeManaPotionRate = 60
+MGLargeManaPotionRate = 60
+DLLargeManaPotionRate = 60
+SULargeManaPotionRate = 60
 
 ;==================================================
 ; Small Shield Potion Settings

@@ -56,9 +56,9 @@ CrywolfEvent = 1
 CrywolfBenefitSwitch = 1
 CrywolfBenefitChaosRate = 10
 CrywolfBenefitMonsterLife = 80
-CrywolfPenaltySwitch = 0
+CrywolfPenaltySwitch = 1
 CrywolfPenaltyJewelDrop = 70
-CrywolfPenaltyExperience = 70
+CrywolfPenaltyExperience = 80
 
 ;==================================================
 ; Devil Square Event Settings

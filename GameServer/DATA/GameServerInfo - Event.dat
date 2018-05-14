@@ -56,9 +56,9 @@ CrywolfEvent = 0
 CrywolfBenefitSwitch = 1
 CrywolfBenefitChaosRate = 10
 CrywolfBenefitMonsterLife = 80
-CrywolfPenaltySwitch = 0
+CrywolfPenaltySwitch = 1
 CrywolfPenaltyJewelDrop = 70
-CrywolfPenaltyExperience = 70
+CrywolfPenaltyExperience = 80
 
 ;==================================================
 ; Devil Square Event Settings
@@ -73,7 +73,7 @@ DevilSquareMaxEntryCount_AL3 = 0
 ;==================================================
 ; Illusion Temple Event Settings
 ;==================================================
-IllusionTempleEvent = 1
+IllusionTempleEvent = 0
 IllusionTempleMinUser = 2
 IllusionTempleMaxEntryCount_AL0 = 0
 IllusionTempleMaxEntryCount_AL1 = 0
@@ -93,4 +93,4 @@ KanturuEvent = 1
 ;==================================================
 ; Raklion Event Settings
 ;==================================================
-RaklionEvent = 1
+RaklionEvent = 0

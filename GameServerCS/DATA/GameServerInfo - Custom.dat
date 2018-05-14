@@ -9,27 +9,26 @@ CustomArenaKillerScoreIncrease = 100
 ;==================================================
 ; Custom Attack Settings
 ;==================================================
-CustomAttackSwitch = 0
-CustomAttackEnable_AL0 = 0
-CustomAttackEnable_AL1 = 0
-CustomAttackEnable_AL2 = 0
-CustomAttackEnable_AL3 = 0
-CustomAttackBuffEnable_AL0 = 0
-CustomAttackBuffEnable_AL1 = 0
-CustomAttackBuffEnable_AL2 = 0
-CustomAttackBuffEnable_AL3 = 0
-CustomAttackPickEnable_AL0 = 0
-CustomAttackPickEnable_AL1 = 0
-CustomAttackPickEnable_AL2 = 0
-CustomAttackPickEnable_AL3 = 0
-CustomAttackRequireLevel_AL0 = 0
-CustomAttackRequireLevel_AL1 = 0
-CustomAttackRequireLevel_AL2 = 0
-CustomAttackRequireLevel_AL3 = 0
-CustomAttackRequireReset_AL0 = 0
-CustomAttackRequireReset_AL1 = 0
-CustomAttackRequireReset_AL2 = 0
-CustomAttackRequireReset_AL3 = 0
+CustomJewelPackSwitch = 1
+CustomJewelPackMaxSize = 16
+CustomJewelPackEnable_AL0 = 1
+CustomJewelPackEnable_AL1 = 1
+CustomJewelPackEnable_AL2 = 1
+CustomJewelPackEnable_AL3 = 1
+CustomJewelPackRequireMoney_AL0 = 100000
+CustomJewelPackRequireMoney_AL1 = 100000
+CustomJewelPackRequireMoney_AL2 = 100000
+CustomJewelPackRequireMoney_AL3 = 100000
+CustomJewelPackCommandJoBSyntax = bless
+CustomJewelPackCommandJoSSyntax = soul
+CustomJewelPackCommandJoLSyntax = life
+CustomJewelPackCommandJCRSyntax = creation
+CustomJewelPackCommandJoGSyntax = guardian
+CustomJewelPackCommandJGMSyntax = gem
+CustomJewelPackCommandJoHSyntax = harmony
+CustomJewelPackCommandJoCSyntax = chaos
+CustomJewelPackCommandJLRSyntax = loref
+CustomJewelPackCommandJHRSyntax = hiref
 
 ;==================================================
 ; Custom Attack Offline Settings
@@ -76,16 +75,16 @@ CustomEventDropSwitch = 0
 ;==================================================
 ; Custom Jewel Pack Settings
 ;==================================================
-CustomJewelPackSwitch = 0
+CustomJewelPackSwitch = 1
 CustomJewelPackMaxSize = 16
-CustomJewelPackEnable_AL0 = 0
-CustomJewelPackEnable_AL1 = 0
-CustomJewelPackEnable_AL2 = 0
-CustomJewelPackEnable_AL3 = 0
-CustomJewelPackRequireMoney_AL0 = 0
-CustomJewelPackRequireMoney_AL1 = 0
-CustomJewelPackRequireMoney_AL2 = 0
-CustomJewelPackRequireMoney_AL3 = 0
+CustomJewelPackEnable_AL0 = 1
+CustomJewelPackEnable_AL1 = 1
+CustomJewelPackEnable_AL2 = 1
+CustomJewelPackEnable_AL3 = 1
+CustomJewelPackRequireMoney_AL0 = 100000
+CustomJewelPackRequireMoney_AL1 = 100000
+CustomJewelPackRequireMoney_AL2 = 100000
+CustomJewelPackRequireMoney_AL3 = 100000
 CustomJewelPackCommandJoBSyntax = bless
 CustomJewelPackCommandJoSSyntax = soul
 CustomJewelPackCommandJoLSyntax = life
@@ -100,20 +99,20 @@ CustomJewelPackCommandJHRSyntax = hiref
 ;==================================================
 ; Custom Store Settings
 ;==================================================
-CustomStoreSwitch = 0
+CustomStoreSwitch = 1
 CustomStoreMapZone = -1
-CustomStoreEnable_AL0 = 0
-CustomStoreEnable_AL1 = 0
-CustomStoreEnable_AL2 = 0
-CustomStoreEnable_AL3 = 0
-CustomStoreRequireLevel_AL0 = 0
-CustomStoreRequireLevel_AL1 = 0
-CustomStoreRequireLevel_AL2 = 0
-CustomStoreRequireLevel_AL3 = 0
-CustomStoreRequireReset_AL0 = 0
-CustomStoreRequireReset_AL1 = 0
-CustomStoreRequireReset_AL2 = 0
-CustomStoreRequireReset_AL3 = 0
+CustomStoreEnable_AL0 = 1
+CustomStoreEnable_AL1 = 1
+CustomStoreEnable_AL2 = 1
+CustomStoreEnable_AL3 = 1
+CustomStoreRequireLevel_AL0 = 6
+CustomStoreRequireLevel_AL1 = 6
+CustomStoreRequireLevel_AL2 = 6
+CustomStoreRequireLevel_AL3 = 6
+CustomStoreRequireReset_AL0 = 6
+CustomStoreRequireReset_AL1 = 6
+CustomStoreRequireReset_AL2 = 6
+CustomStoreRequireReset_AL3 = 6
 CustomStoreJoBCommisionRate = 0
 CustomStoreJoSCommisionRate = 0
 CustomStoreJoCCommisionRate = 0
@@ -130,14 +129,14 @@ CustomStoreCommandPCPSyntax = pcp
 CustomStoreCommandJCRSyntax = creation
 CustomStoreCommandJoGSyntax = guardian
 CustomStoreCommandJoHSyntax = harmony
-CustomStoreJoBName = .::BLESS STORE::.
-CustomStoreJoSName = .::SOUL STORE::.
-CustomStoreJoCName = .::CHAOS STORE::.
-CustomStoreWCCName = .::WCC STORE::.
-CustomStorePCPName = .::PCP STORE::.
-CustomStoreJCRName = .::CREATION STORE::.
-CustomStoreJoGName = .::GUARDIAN STORE::.
-CustomStoreJoHName = .::HARMONY STORE::.
+CustomStoreJoBName = Bless Store
+CustomStoreJoSName = Soul Store
+CustomStoreJoCName = Chaos Store
+CustomStoreWCCName = WCC Store
+CustomStorePCPName = PCP Store
+CustomStoreJCRName = Creation Store
+CustomStoreJoGName = Guardian Store
+CustomStoreJoHName = Harmony Store
 
 ;==================================================
 ; Custom Store Offline Settings

@@ -42,66 +42,66 @@ DevilSquareMixRate7_AL3 = 70
 ;==================================================
 ; Plus Item Level 10 Mix Settings
 ;==================================================
-PlusCommonItemLevelMixRate1_AL0 = 60
-PlusCommonItemLevelMixRate1_AL1 = 60
-PlusCommonItemLevelMixRate1_AL2 = 60
-PlusCommonItemLevelMixRate1_AL3 = 60
-PlusExcSetItemLevelMixRate1_AL0 = 60
-PlusExcSetItemLevelMixRate1_AL1 = 60
-PlusExcSetItemLevelMixRate1_AL2 = 60
-PlusExcSetItemLevelMixRate1_AL3 = 60
-PlusSocketItemLevelMixRate1_AL0 = 60
-PlusSocketItemLevelMixRate1_AL1 = 60
-PlusSocketItemLevelMixRate1_AL2 = 60
-PlusSocketItemLevelMixRate1_AL3 = 60
+PlusCommonItemLevelMixRate1_AL0 = 65
+PlusCommonItemLevelMixRate1_AL1 = 65
+PlusCommonItemLevelMixRate1_AL2 = 65
+PlusCommonItemLevelMixRate1_AL3 = 65
+PlusExcSetItemLevelMixRate1_AL0 = 65
+PlusExcSetItemLevelMixRate1_AL1 = 65
+PlusExcSetItemLevelMixRate1_AL2 = 65
+PlusExcSetItemLevelMixRate1_AL3 = 65
+PlusSocketItemLevelMixRate1_AL0 = 65
+PlusSocketItemLevelMixRate1_AL1 = 65
+PlusSocketItemLevelMixRate1_AL2 = 65
+PlusSocketItemLevelMixRate1_AL3 = 65
 
 ;==================================================
 ; Plus Item Level 11 Mix Settings
 ;==================================================
-PlusCommonItemLevelMixRate2_AL0 = 60
-PlusCommonItemLevelMixRate2_AL1 = 60
-PlusCommonItemLevelMixRate2_AL2 = 60
-PlusCommonItemLevelMixRate2_AL3 = 60
-PlusExcSetItemLevelMixRate2_AL0 = 60
-PlusExcSetItemLevelMixRate2_AL1 = 60
-PlusExcSetItemLevelMixRate2_AL2 = 60
-PlusExcSetItemLevelMixRate2_AL3 = 60
-PlusSocketItemLevelMixRate2_AL0 = 60
-PlusSocketItemLevelMixRate2_AL1 = 60
-PlusSocketItemLevelMixRate2_AL2 = 60
-PlusSocketItemLevelMixRate2_AL3 = 60
+PlusCommonItemLevelMixRate2_AL0 = 55
+PlusCommonItemLevelMixRate2_AL1 = 55
+PlusCommonItemLevelMixRate2_AL2 = 55
+PlusCommonItemLevelMixRate2_AL3 = 55
+PlusExcSetItemLevelMixRate2_AL0 = 55
+PlusExcSetItemLevelMixRate2_AL1 = 55
+PlusExcSetItemLevelMixRate2_AL2 = 55
+PlusExcSetItemLevelMixRate2_AL3 = 55
+PlusSocketItemLevelMixRate2_AL0 = 55
+PlusSocketItemLevelMixRate2_AL1 = 55
+PlusSocketItemLevelMixRate2_AL2 = 55
+PlusSocketItemLevelMixRate2_AL3 = 55
 
 ;==================================================
 ; Plus Item Level 12 Mix Settings
 ;==================================================
-PlusCommonItemLevelMixRate3_AL0 = 50
-PlusCommonItemLevelMixRate3_AL1 = 50
-PlusCommonItemLevelMixRate3_AL2 = 50
-PlusCommonItemLevelMixRate3_AL3 = 50
-PlusExcSetItemLevelMixRate3_AL0 = 50
-PlusExcSetItemLevelMixRate3_AL1 = 50
-PlusExcSetItemLevelMixRate3_AL2 = 50
-PlusExcSetItemLevelMixRate3_AL3 = 50
-PlusSocketItemLevelMixRate3_AL0 = 50
-PlusSocketItemLevelMixRate3_AL1 = 50
-PlusSocketItemLevelMixRate3_AL2 = 50
-PlusSocketItemLevelMixRate3_AL3 = 50
+PlusCommonItemLevelMixRate3_AL0 = 45
+PlusCommonItemLevelMixRate3_AL1 = 45
+PlusCommonItemLevelMixRate3_AL2 = 45
+PlusCommonItemLevelMixRate3_AL3 = 45
+PlusExcSetItemLevelMixRate3_AL0 = 45
+PlusExcSetItemLevelMixRate3_AL1 = 45
+PlusExcSetItemLevelMixRate3_AL2 = 45
+PlusExcSetItemLevelMixRate3_AL3 = 45
+PlusSocketItemLevelMixRate3_AL0 = 45
+PlusSocketItemLevelMixRate3_AL1 = 45
+PlusSocketItemLevelMixRate3_AL2 = 45
+PlusSocketItemLevelMixRate3_AL3 = 45
 
 ;==================================================
 ; Plus Item Level 13 Mix Settings
 ;==================================================
-PlusCommonItemLevelMixRate4_AL0 = 50
-PlusCommonItemLevelMixRate4_AL1 = 50
-PlusCommonItemLevelMixRate4_AL2 = 50
-PlusCommonItemLevelMixRate4_AL3 = 50
-PlusExcSetItemLevelMixRate4_AL0 = 50
-PlusExcSetItemLevelMixRate4_AL1 = 50
-PlusExcSetItemLevelMixRate4_AL2 = 50
-PlusExcSetItemLevelMixRate4_AL3 = 50
-PlusSocketItemLevelMixRate4_AL0 = 50
-PlusSocketItemLevelMixRate4_AL1 = 50
-PlusSocketItemLevelMixRate4_AL2 = 50
-PlusSocketItemLevelMixRate4_AL3 = 50
+PlusCommonItemLevelMixRate4_AL0 = 35
+PlusCommonItemLevelMixRate4_AL1 = 35
+PlusCommonItemLevelMixRate4_AL2 = 35
+PlusCommonItemLevelMixRate4_AL3 = 35
+PlusExcSetItemLevelMixRate4_AL0 = 35
+PlusExcSetItemLevelMixRate4_AL1 = 35
+PlusExcSetItemLevelMixRate4_AL2 = 35
+PlusExcSetItemLevelMixRate4_AL3 = 35
+PlusSocketItemLevelMixRate4_AL0 = 35
+PlusSocketItemLevelMixRate4_AL1 = 35
+PlusSocketItemLevelMixRate4_AL2 = 35
+PlusSocketItemLevelMixRate4_AL3 = 35
 
 ;==================================================
 ; Dinorant Mix Settings
@@ -238,14 +238,14 @@ JewelOfHarmonyItemPurityMixRate_AL3 = 100
 ;==================================================
 ; Jewel of Harmony Item Smelt Mix Settings
 ;==================================================
-JewelOfHarmonyItemSmeltMixRate1_AL0 = 50
-JewelOfHarmonyItemSmeltMixRate1_AL1 = 50
-JewelOfHarmonyItemSmeltMixRate1_AL2 = 50
-JewelOfHarmonyItemSmeltMixRate1_AL3 = 50
-JewelOfHarmonyItemSmeltMixRate2_AL0 = 100
-JewelOfHarmonyItemSmeltMixRate2_AL1 = 100
-JewelOfHarmonyItemSmeltMixRate2_AL2 = 100
-JewelOfHarmonyItemSmeltMixRate2_AL3 = 100
+JewelOfHarmonyItemSmeltMixRate1_AL0 = 80
+JewelOfHarmonyItemSmeltMixRate1_AL1 = 80
+JewelOfHarmonyItemSmeltMixRate1_AL2 = 80
+JewelOfHarmonyItemSmeltMixRate1_AL3 = 80
+JewelOfHarmonyItemSmeltMixRate2_AL0 = 80
+JewelOfHarmonyItemSmeltMixRate2_AL1 = 80
+JewelOfHarmonyItemSmeltMixRate2_AL2 = 80
+JewelOfHarmonyItemSmeltMixRate2_AL3 = 80
 
 ;==================================================
 ; Jewel of Harmony Item Restore Mix Settings

@@ -2,18 +2,19 @@
 ;==================================================
 ; Mana Shield Skill Settings
 ;==================================================
-ManaShieldConstA = 10
-ManaShieldConstB = 50
-ManaShieldConstC = 200
-ManaShieldRateDW = 100
-ManaShieldRateDK = 100
-ManaShieldRateFE = 100
-ManaShieldRateMG = 100
-ManaShieldRateDL = 100
-ManaShieldRateSU = 100
+ManaShieldConstA = 150
+ManaShieldConstB = 150
+ManaShieldConstC = 150
+ManaShieldRateDW = 500
+ManaShieldRateDK = 500
+ManaShieldRateFE = 500
+ManaShieldRateMG = 500
+ManaShieldRateDL = 500
+ManaShieldRateSU = 500
 ManaShieldTimeConstA = 60
-ManaShieldTimeConstB = 40
-ManaShieldMaxRate = 50
+ManaShieldTimeConstB = 60
+ManaShieldMaxRate = 40
+
 
 ;==================================================
 ; Defense Skill Settings
@@ -65,17 +66,17 @@ SummonAttackSuccessRateRate = 100
 ;==================================================
 ; Greater Life Skill Settings
 ;==================================================
-GreaterLifeConstA = 12
-GreaterLifeConstB = 100
-GreaterLifeConstC = 20
-GreaterLifeRateDW = 100
-GreaterLifeRateDK = 100
-GreaterLifeRateFE = 100
-GreaterLifeRateMG = 100
-GreaterLifeRateDL = 100
-GreaterLifeRateSU = 100
+GreaterLifeConstA = 35
+GreaterLifeConstB = 35
+GreaterLifeConstC = 35
+GreaterLifeRateDW = 170
+GreaterLifeRateDK = 170
+GreaterLifeRateFE = 170
+GreaterLifeRateMG = 170
+GreaterLifeRateDL = 170
+GreaterLifeRateSU = 170
 GreaterLifeTimeConstA = 60
-GreaterLifeTimeConstB = 10
+GreaterLifeTimeConstB = 60
 GreaterLifeMaxRate = 100
 
 ;==================================================

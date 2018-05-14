@@ -33,7 +33,7 @@ ConnectServerPort = 55557
 ;==================================================
 WriteChatLog = 0
 WriteCommandLog = 0
-WriteTradeLog = 0
+WriteTradeLog = 1
 WriteConnectLog = 1
 WriteHackLog = 1
 WriteCashShopLog = 0
@@ -64,7 +64,7 @@ MaxIpConnection = 3
 PersonalCodeCheck = 1
 EffectOverwriteMode = 0
 ChaosMixPlusItemAnnounce = 0
-SetItemAcceptHarmonySwitch = 0
+SetItemAcceptHarmonySwitch = 1
 
 ;==================================================
 ; Monster Settings
@@ -99,14 +99,14 @@ GuildOwnerDestroyLimit = 1
 ;==================================================
 ; Elf Buffer Settings
 ;==================================================
-ElfBufferMaxLevel_AL0 = 390
-ElfBufferMaxLevel_AL1 = 220
-ElfBufferMaxLevel_AL2 = 220
-ElfBufferMaxLevel_AL3 = 220
-ElfBufferMaxReset_AL0 = 10000
-ElfBufferMaxReset_AL1 = 10000
-ElfBufferMaxReset_AL2 = 10000
-ElfBufferMaxReset_AL3 = 10000
+ElfBufferMaxLevel_AL0 = 200
+ElfBufferMaxLevel_AL1 = 200
+ElfBufferMaxLevel_AL2 = 200
+ElfBufferMaxLevel_AL3 = 200
+ElfBufferMaxReset_AL0 = 3
+ElfBufferMaxReset_AL1 = 3
+ElfBufferMaxReset_AL2 = 3
+ElfBufferMaxReset_AL3 = 3
 ElfBufferDamageConstA = 50
 ElfBufferDamageConstB = 5
 ElfBufferDefenseConstA = 45
@@ -115,40 +115,40 @@ ElfBufferDefenseConstB = 3
 ;==================================================
 ; Experience Settings
 ;==================================================
-AddExperienceRate_AL0 = 3000
-AddExperienceRate_AL1 = 1
-AddExperienceRate_AL2 = 1
-AddExperienceRate_AL3 = 1
-AddMasterExperienceRate_AL0 = 3000
-AddMasterExperienceRate_AL1 = 1
-AddMasterExperienceRate_AL2 = 1
-AddMasterExperienceRate_AL3 = 1
-MinMasterExperienceMonsterLevel_AL0 = 95
-MinMasterExperienceMonsterLevel_AL1 = 95
-MinMasterExperienceMonsterLevel_AL2 = 95
-MinMasterExperienceMonsterLevel_AL3 = 95
-AddEventExperienceRate_AL0 = 300
-AddEventExperienceRate_AL1 = 1
-AddEventExperienceRate_AL2 = 1
-AddEventExperienceRate_AL3 = 1
+AddExperienceRate_AL0 = 3000  //test
+AddExperienceRate_AL1 = 300
+AddExperienceRate_AL2 = 300
+AddExperienceRate_AL3 = 300
+AddMasterExperienceRate_AL0 = 3000  //test
+AddMasterExperienceRate_AL1 = 300
+AddMasterExperienceRate_AL2 = 300
+AddMasterExperienceRate_AL3 = 300
+MinMasterExperienceMonsterLevel_AL0 = 150
+MinMasterExperienceMonsterLevel_AL1 = 150
+MinMasterExperienceMonsterLevel_AL2 = 150
+MinMasterExperienceMonsterLevel_AL3 = 150
+AddEventExperienceRate_AL0 = 3000  //test
+AddEventExperienceRate_AL1 = 350
+AddEventExperienceRate_AL2 = 350
+AddEventExperienceRate_AL3 = 350
 
 ;==================================================
 ; Item Drop Settings
 ;==================================================
 ItemDropTime = 30
-ItemDropRate_AL0 = 100
-ItemDropRate_AL1 = 100
-ItemDropRate_AL2 = 100
-ItemDropRate_AL3 = 100
+ItemDropRate_AL0 = 40
+ItemDropRate_AL1 = 40
+ItemDropRate_AL2 = 40
+ItemDropRate_AL3 = 40
 
 ;==================================================
 ; Money Drop Settings
 ;==================================================
 MoneyDropTime = 30
-MoneyAmountDropRate_AL0 = 1500
-MoneyAmountDropRate_AL1 = 50
-MoneyAmountDropRate_AL2 = 50
-MoneyAmountDropRate_AL3 = 50
+MoneyAmountDropRate_AL0 = 3000  //test
+MoneyAmountDropRate_AL1 = 300
+MoneyAmountDropRate_AL2 = 300
+MoneyAmountDropRate_AL3 = 300
 
 ;==================================================
 ; Item Durability Settings
@@ -168,7 +168,7 @@ TradeItemBlock = 0
 TradeItemBlockExc = 0
 TradeItemBlockSet = 0
 TradeItemBlock380 = 0
-TradeItemBlockHarmony = 0
+TradeItemBlockHarmony = 1
 TradeItemBlockSockets = 0
 TradeItemBlockSell = 0
 
@@ -229,7 +229,7 @@ ShieldGaugeAttackComboMiss = 0
 ;==================================================
 ; Master Skill Tree Settings
 ;==================================================
-MasterSkillTree = 1
+MasterSkillTree = 0
 MasterSkillTreePoint = 1
 MasterSkillTreeMaxLevel = 200
 
@@ -241,7 +241,7 @@ CashShopSwitch = 0
 ;==================================================
 ; Pc Point Settings
 ;==================================================
-PcPointSwitch = 1
+PcPointSwitch = 0
 PcPointMaxPoint = 1008
 PcPointPointDelay = 10
 PcPointPointValue_AL0 = 1
@@ -255,47 +255,47 @@ PcPointPointValue_AL3 = 1
 PartyReconnectTime = 300
 PartyExperienceRange = 200
 PartyGeneralExperience1 = 100
-PartyGeneralExperience2 = 80
-PartyGeneralExperience3 = 60
-PartyGeneralExperience4 = 50
-PartyGeneralExperience5 = 45
+PartyGeneralExperience2 = 85
+PartyGeneralExperience3 = 70
+PartyGeneralExperience4 = 60
+PartyGeneralExperience5 = 50
 PartySpecialExperience1 = 100
-PartySpecialExperience2 = 80
-PartySpecialExperience3 = 75
-PartySpecialExperience4 = 65
-PartySpecialExperience5 = 60
+PartySpecialExperience2 = 85
+PartySpecialExperience3 = 80
+PartySpecialExperience4 = 75
+PartySpecialExperience5 = 70
 
 ;==================================================
 ; Jewel Settings
 ;==================================================
-SoulSuccessRate_AL0 = 100
+SoulSuccessRate_AL0 = 50
 SoulSuccessRate_AL1 = 50
 SoulSuccessRate_AL2 = 50
 SoulSuccessRate_AL3 = 50
-LifeSuccessRate_AL0 = 100
-LifeSuccessRate_AL1 = 50
-LifeSuccessRate_AL2 = 50
-LifeSuccessRate_AL3 = 50
-HarmonySuccessRate_AL0 = 100
-HarmonySuccessRate_AL1 = 50
-HarmonySuccessRate_AL2 = 50
-HarmonySuccessRate_AL3 = 50
-SmeltStoneSuccessRate1_AL0 = 100
-SmeltStoneSuccessRate1_AL1 = 50
-SmeltStoneSuccessRate1_AL2 = 50
-SmeltStoneSuccessRate1_AL3 = 50
-SmeltStoneSuccessRate2_AL0 = 100
-SmeltStoneSuccessRate2_AL1 = 70
-SmeltStoneSuccessRate2_AL2 = 70
-SmeltStoneSuccessRate2_AL3 = 70
-AddLuckSuccessRate1_AL0 = 0
+LifeSuccessRate_AL0 = 80
+LifeSuccessRate_AL1 = 80
+LifeSuccessRate_AL2 = 80
+LifeSuccessRate_AL3 = 80
+HarmonySuccessRate_AL0 = 80
+HarmonySuccessRate_AL1 = 80
+HarmonySuccessRate_AL2 = 80
+HarmonySuccessRate_AL3 = 80
+SmeltStoneSuccessRate1_AL0 = 90
+SmeltStoneSuccessRate1_AL1 = 90
+SmeltStoneSuccessRate1_AL2 = 90
+SmeltStoneSuccessRate1_AL3 = 90
+SmeltStoneSuccessRate2_AL0 = 90
+SmeltStoneSuccessRate2_AL1 = 90
+SmeltStoneSuccessRate2_AL2 = 90
+SmeltStoneSuccessRate2_AL3 = 90
+AddLuckSuccessRate1_AL0 = 25
 AddLuckSuccessRate1_AL1 = 25
 AddLuckSuccessRate1_AL2 = 25
 AddLuckSuccessRate1_AL3 = 25
-AddLuckSuccessRate2_AL0 = 0
-AddLuckSuccessRate2_AL1 = 20
-AddLuckSuccessRate2_AL2 = 20
-AddLuckSuccessRate2_AL3 = 20
+AddLuckSuccessRate2_AL0 = 25
+AddLuckSuccessRate2_AL1 = 25
+AddLuckSuccessRate2_AL2 = 25
+AddLuckSuccessRate2_AL3 = 25
 
 ;==================================================
 ; Fruit Settings

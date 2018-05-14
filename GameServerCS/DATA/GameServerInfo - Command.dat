@@ -16,10 +16,10 @@ CommandPostReset_AL0 = 0
 CommandPostReset_AL1 = 0
 CommandPostReset_AL2 = 0
 CommandPostReset_AL3 = 0
-CommandPostMoney_AL0 = 0
-CommandPostMoney_AL1 = 0
-CommandPostMoney_AL2 = 0
-CommandPostMoney_AL3 = 0
+CommandPostMoney_AL0 = 500000
+CommandPostMoney_AL1 = 500000
+CommandPostMoney_AL2 = 500000
+CommandPostMoney_AL3 = 500000
 CommandPostDelay_AL0 = 30
 CommandPostDelay_AL1 = 30
 CommandPostDelay_AL2 = 30
@@ -50,10 +50,10 @@ CommandPKClearEnable_AL0 = 1
 CommandPKClearEnable_AL1 = 1
 CommandPKClearEnable_AL2 = 1
 CommandPKClearEnable_AL3 = 1
-CommandPKClearMoney_AL0 = 0
-CommandPKClearMoney_AL1 = 0
-CommandPKClearMoney_AL2 = 0
-CommandPKClearMoney_AL3 = 0
+CommandPKClearMoney_AL0 = 100000000
+CommandPKClearMoney_AL1 = 100000000
+CommandPKClearMoney_AL2 = 100000000
+CommandPKClearMoney_AL3 = 100000000
 
 ;==================================================
 ; Money Command Settings
@@ -252,13 +252,13 @@ CommandGMMoveGameMasterLevel = 0
 ; GM Post Command Settings
 ;==================================================
 CommandGMPostSwitch = 1
-CommandGMPostGameMasterLevel = 0
+CommandGMPostGameMasterLevel = 1
 
 ;==================================================
 ; Track Command Settings
 ;==================================================
 CommandTrackSwitch = 1
-CommandTrackGameMasterLevel = 0
+CommandTrackGameMasterLevel = 2
 
 ;==================================================
 ; Trace Command Settings
@@ -270,7 +270,7 @@ CommandTraceGameMasterLevel = 0
 ; Disconnect Command Settings
 ;==================================================
 CommandDisconnectSwitch = 1
-CommandDisconnectGameMasterLevel = 0
+CommandDisconnectGameMasterLevel = 2
 
 ;==================================================
 ; Fireworks Command Settings
@@ -282,7 +282,7 @@ CommandFireworksGameMasterLevel = 0
 ; Make Command Settings
 ;==================================================
 CommandMakeSwitch = 1
-CommandMakeGameMasterLevel = 0
+CommandMakeGameMasterLevel = 2
 
 ;==================================================
 ; Skin Command Settings
@@ -294,13 +294,13 @@ CommandSkinGameMasterLevel = 0
 ; Set Money Command Settings
 ;==================================================
 CommandSetMoneySwitch = 1
-CommandSetMoneyGameMasterLevel = 0
+CommandSetMoneyGameMasterLevel = 2
 
 ;==================================================
 ; Notice Command Settings
 ;==================================================
 CommandNoticeSwitch = 1
-CommandNoticeGameMasterLevel = 0
+CommandNoticeGameMasterLevel = 1
 
 ;==================================================
 ; Hide Command Settings
@@ -312,4 +312,4 @@ CommandHideGameMasterLevel = 0
 ; Mute Command Settings
 ;==================================================
 CommandMuteSwitch = 1
-CommandMuteGameMasterLevel = 0
+CommandMuteGameMasterLevel = 2
