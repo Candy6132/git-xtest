@@ -43,14 +43,14 @@ WriteScriptLog = 1
 ;==================================================
 ; Hack Settings
 ;==================================================
-CheckSpeedHack = 0
-CheckSpeedHackTolerance = 0
+CheckSpeedHack = 1
+CheckSpeedHackTolerance = 500
 CheckLatencyHack = 0
 CheckLatencyHackTolerance = 0
-CheckAutoPotionHack = 0
-CheckAutoPotionHackTolerance = 0
-CheckAutoComboHack = 0
-CheckAutoComboHackTolerance = 0
+CheckAutoPotionHack = 1
+CheckAutoPotionHackTolerance = 200
+CheckAutoComboHack = 1
+CheckAutoComboHackTolerance = 500
 CheckMoveHack = 0
 CheckMoveHackMaxDelay = 0
 CheckMoveHackMinCount = 0
@@ -60,7 +60,7 @@ CheckMoveHackMaxCount = 0
 ; Common Settings
 ;==================================================
 MaxItemOption = 7
-MaxIpConnection = 10
+MaxIpConnection = 2
 PersonalCodeCheck = 1
 EffectOverwriteMode = 0
 ChaosMixPlusItemAnnounce = 0
@@ -159,7 +159,7 @@ WingDurabilityRate = 100
 GuardianDurabilityRate = 100
 PendantDurabilityRate = 100
 RingDurabilityRate = 100
-PetDurabilityRate = 100
+PetDurabilityRate = 300
 
 ;==================================================
 ; Trade Item Block Settings
@@ -170,14 +170,14 @@ TradeItemBlockSet = 0
 TradeItemBlock380 = 0
 TradeItemBlockHarmony = 1
 TradeItemBlockSockets = 0
-TradeItemBlockSell = 0
+TradeItemBlockSell = 1
 
 ;==================================================
 ; Level Up Settings
 ;==================================================
 MaxLevel = 400
-MaxLevelUp = 1
-MaxLevelUpEvent = 1
+MaxLevelUp = 5
+MaxLevelUpEvent = 5
 MaxStatPoint_AL0 = 65000
 MaxStatPoint_AL1 = 65000
 MaxStatPoint_AL2 = 65000
