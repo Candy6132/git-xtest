@@ -20,7 +20,7 @@
 18        "/make"
 19        "/skin"
 20        "/setmoney"
-21        "!"
+21        "/notice"
 22        "/mreset"
 23        "/war"
 24        "/soccer"

@@ -24,8 +24,8 @@
 6673      6       0       *         *         *         *         *         *         *         0          *           *              77                84                1000       //Blood Bone 6
 6673      7       0       *         *         *         *         *         *         *         0          *           *              85                101               1000       //Blood Bone 7
 6673      8       0       *         *         *         *         *         *         *         0          *           *              102               150               1000       //Blood Bone 8
-6687      0       0       *         *         *         *         *         *         *         0          *           *              25                150               1000       //Spirit of Dark Horse        
-6687      1       0       *         *         *         *         *         *         *         0          *           *              25                150               1000       //Spirit of Dark Spirit
+6687      0       0       *         *         *         *         *         *         *         0          *           *              102                120               1000       //Spirit of Dark Horse        
+6687      1       0       *         *         *         *         *         *         *         0          *           *              80                101               1000       //Spirit of Dark Spirit
 6688      0       0       *         *         *         *         *         *         *         0          34          *              97                134               2000       //Splinter of Armor
 6689      0       0       *         *         *         *         *         *         *         0          34          *              97                134               2000       //Bless of Guardian
 6690      0       0       *         *         *         *         *         *         *         0          34          *              97                134               2000       //Claw of Beast
