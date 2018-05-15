@@ -1,5 +1,6 @@
 require("ScriptDefine")
 require("ScriptUtil")
+require("ScriptCustomRespawn")
 
 
 function OnReadScript()
