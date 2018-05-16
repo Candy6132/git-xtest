@@ -107,7 +107,7 @@
 5         4       1       0       1.200       0.006       //Fire Ball
 5         7       1       0       1.200       0.006       //Ice
 5         11      1       0       1.200       0.006       //Power Wave
-5         76      3       1       1.200       0.006       //Plasma Storm
+5         76      3       1       1.800       0.004       //Plasma Storm
 5         214     1       0       1.200       0.006       //Drain Life
 5         215     1       0       1.200       0.006       //Chain Lightning
 5         217     0       1       1.200       0.006       //Damage Reflect
@@ -125,7 +125,7 @@
 5         740     0       2       1.200       0.006       //Archangel Will
 6         0       0       0       2.000       0.012       //Melee
 6         19      1       0       1.200       0.006       //Falling Slash
-6         76      3       1       1.200       0.006       //Plasma Storm
+6         76      3       1       1.800       0.004       //Plasma Storm
 6         260     1       0       1.200       0.006       //Large Ring Blower
 6         261     4       0       1.200       0.006       //Upper Beast
 6         262     4       0       1.200       0.006       //Chain Driver
