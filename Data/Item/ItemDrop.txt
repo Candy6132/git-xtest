@@ -69,13 +69,13 @@
 7186      7       0       *         *         *         *         *         *         *         0          *           *              85                150               1000       //Devil's Key 7
 7189      3       0       *         *         *         *         *         *         *         0          *           *              25                150               3000       //Sign of the Lord
 7190      0       0       *         *         *         *         *         *         *         0          *           *              46                150               1000       //Jewel of Creation
-7197      1       0       *         *         *         *         *         *         *         0          *           *              25                46                1000       //Symbol of Kundun 1
-7197      2       0       *         *         *         *         *         *         *         0          *           *              47                65                1000       //Symbol of Kundun 2
-7197      3       0       *         *         *         *         *         *         *         0          *           *              66                77                1000       //Symbol of Kundun 3
-7197      4       0       *         *         *         *         *         *         *         0          *           *              78                83                1000       //Symbol of Kundun 4
-7197      5       0       *         *         *         *         *         *         *         0          *           *              84                91                1000       //Symbol of Kundun 5
-7197      6       0       *         *         *         *         *         *         *         0          *           *              92                113               1000       //Symbol of Kundun 6
-7197      7       0       *         *         *         *         *         *         *         0          *           *              114               150               1000       //Symbol of Kundun 7
+7197      1       0       *         *         *         *         *         *         *         0          *           *              25                46                4000       //Symbol of Kundun 1
+7197      2       0       *         *         *         *         *         *         *         0          *           *              47                65                4000       //Symbol of Kundun 2
+7197      3       0       *         *         *         *         *         *         *         0          *           *              66                77                4000       //Symbol of Kundun 3
+7197      4       0       *         *         *         *         *         *         *         0          *           *              78                83                4000       //Symbol of Kundun 4
+7197      5       0       *         *         *         *         *         *         *         0          *           *              84                91                4000       //Symbol of Kundun 5
+7197      6       0       *         *         *         *         *         *         *         0          *           *              92                113               4000       //Symbol of Kundun 6
+7197      7       0       *         *         *         *         *         *         *         0          *           *              114               150               4000       //Symbol of Kundun 7
 7200      0       0       *         *         *         *         *         *         *         0          *           *              12                49                0          //Pink Chocolate Box
 7200      1       0       *         *         *         *         *         *         *         0          *           *              12                49                0          //Lilac Candy Box
 7201      0       0       *         *         *         *         *         *         *         0          *           *              50                69                0          //Red Chocolate Box
