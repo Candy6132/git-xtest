@@ -98,7 +98,7 @@ CommandWareNumber_AL3 = 6
 ; Reset Command Settings
 ;==================================================
 CommandResetSwitch = 1
-CommandResetType = 1
+CommandResetType = 0			//Test
 CommandResetEnable_AL0 = 1
 CommandResetEnable_AL1 = 1
 CommandResetEnable_AL2 = 1
