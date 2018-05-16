@@ -94,4 +94,5 @@
 *             *           *              10             0              *              "Special\Lucky Coin 1"
 *             *           *              10             1              *              "Special\Lucky Coin 2"
 *             *           *              10             2              *              "Special\Lucky Coin 3"
+*             *           *              11             2              *              "Special\Life Mix"
 end
