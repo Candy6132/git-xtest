@@ -73,8 +73,5 @@ end
 11,015    0       0       *         *         *         *         12        *         *         0          //Storm Crow Boots [Exc: 1]
 10,026    0       0       *         *         *         *         12        *         *         0          //Adamantine Gloves [Exc: 1]
 09,026    0       0       *         *         *         *         12        *         *         0          //Adamantine Pants [Exc: 1]
-11,026    0       0       *         *         *         *         12        *         *         0          //Adamantine Boots [Exc: 1]
-14,019    0       0       35        *         *         *         *         *         *         0          //Devil's Invitation [Level: +4~6]
-13,018    0       0       37        *         *         *         *         *         *         0          //Invisibility Cloak [Level: +5~7]
-14,028    0       0       39        *         *         *         *         *         *         0          //Lost Map [Level: +6~8]
+11,026    0       0       *         *         *         *         12        *         *         0          //Adamantine Boots [Exc: 1]
 end
