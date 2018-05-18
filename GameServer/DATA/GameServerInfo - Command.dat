@@ -67,7 +67,7 @@ CommandMoneyEnable_AL3 = 1
 ;==================================================
 ; Change Command Settings
 ;==================================================
-CommandChangeSwitch = 0
+CommandChangeSwitch = 1		//Test
 CommandChangeEnable_AL0 = 1
 CommandChangeEnable_AL1 = 1
 CommandChangeEnable_AL2 = 1

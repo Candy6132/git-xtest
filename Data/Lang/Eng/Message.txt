@@ -161,7 +161,7 @@
 249 	  "Account Level: Vip1 (%s)"
 250 	  "Account Level: Vip2 (%s)"
 251 	  "Account Level: Vip3 (%s)"
-256       "Welcome %s to the X-Team server"
+256       "Welcome %s to WykopMu!"
 257 	  "You must be at least level 40 to use the ring"
 258 	  "You must be at least level 80 to use the ring"
 259 	  "You can not move to this map at the moment"

@@ -161,7 +161,7 @@
 249       "Nível da conta: Vip1 (%s)"
 250       "Nível da conta: Vip2 (%s)"
 251       "Nível da conta: Vip3 (%s)"
-256       "Bem vindo %s ao server da X-Team"
+256       "Bem vindo %s ao server da WykopMu"
 257       "Você precisa ser no mínimo level 40 para usar o anel"
 258       "Você precisa ser no mínimo level 80 para usar o anel"
 259       "Você não pode se mover para este mapa no momento"
