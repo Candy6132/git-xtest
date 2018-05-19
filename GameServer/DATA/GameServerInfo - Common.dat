@@ -61,7 +61,7 @@ CheckMoveHackMaxCount = 0
 ;==================================================
 MaxItemOption = 7
 MaxIpConnection = 3
-PersonalCodeCheck = 1
+PersonalCodeCheck = 0
 EffectOverwriteMode = 0
 ChaosMixPlusItemAnnounce = 0
 SetItemAcceptHarmonySwitch = 1

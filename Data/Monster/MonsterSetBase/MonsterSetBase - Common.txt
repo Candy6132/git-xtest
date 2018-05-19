@@ -27,7 +27,7 @@ end
 0
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
 229            02             00         183            030            03             //Marlon
-236            02             00         226            066            01             //Golden Archer
+//236            02             00         226            066            01             //Golden Archer
 233            02             00         209            030            01             //Messenger of Archangel
 233            02             00         219            009            03             //Messenger of Archangel
 235            02             00         183            032            03             //Sebina the Priest
@@ -134,7 +134,6 @@ end
 207            34             00         120            038            02             //Wolf Altar 3
 208            34             00         115            035            02             //Wolf Altar 4
 209            34             00         117            027            02             //Wolf Altar 5
-406            34             00         228            048            01             //Apostle Devin
 407            34             00         062            239            01             //Werewolf Quarel
 248            34             00         099            040            02             //Wandering Merchant Martin
 end
