@@ -169,7 +169,7 @@ CommandResetPointRateSU = 100
 ;==================================================
 ; Master Reset Command Settings
 ;==================================================
-CommandMasterResetSwitch = 1
+CommandMasterResetSwitch = 0
 CommandMasterResetType = 1
 CommandMasterResetEnable_AL0 = 1
 CommandMasterResetEnable_AL1 = 1

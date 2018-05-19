@@ -214,8 +214,8 @@ SUCreateLevel_AL3 = 0
 ; Delete Character Settings
 ;==================================================
 CharacterDeleteSwitch = 1
-CharacterDeleteMaxLevel = 0
-CharacterDeleteMaxReset = 0
+CharacterDeleteMaxLevel = 400
+CharacterDeleteMaxReset = 5
 
 ;==================================================
 ; Shield Gauge Settings
