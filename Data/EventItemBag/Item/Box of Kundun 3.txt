@@ -44,11 +44,11 @@ end
 10,007	0	0	*	*	13	32	29	*	*	0	//Sphinx Gloves
 11,007	0	0	*	*	13	32	29	*	*	0	//Sphinx Boots
 											
-07,040	0	0	*	*	13	32	29	*	*	0	//Red Wing Helm
-08,040	0	0	*	*	13	32	29	*	*	0	//Red Wing Armor
-09,040	0	0	*	*	13	32	29	*	*	0	//Red Wing Pants
-10,040	0	0	*	*	13	32	29	*	*	0	//Red Wing Gloves
-11,040	0	0	*	*	13	32	29	*	*	0	//Red Wing Boots
+07,039	0	0	*	*	13	32	29	*	*	0	//Violent Wind Helm
+08,039	0	0	*	*	13	32	29	*	*	0	//Violent Wind Armor
+09,039	0	0	*	*	13	32	29	*	*	0	//Violent Wind Pants
+10,039	0	0	*	*	13	32	29	*	*	0	//Violent Wind Gloves
+11,039	0	0	*	*	13	32	29	*	*	0	//Violent Wind Boots
 											
 06,008	0	0	*	12	13	32	29	*	*	0	//Tower Shield
 06,009	0	0	*	12	13	32	29	*	*	0	//Plate Shield
@@ -58,7 +58,7 @@ end
 05,003	0	0	*	*	13	32	29	*	*	0	//Thunder Staff
 05,004	0	0	*	*	13	32	29	*	*	0	//Gordon Staff
 											
-05,016	0	0	*	*	13	32	29	*	*	0	//Red Wing Stick
+05,015	0	0	*	*	13	32	29	*	*	0	//Violent Wind Stick
 05,021	0	0	*	12	13	32	29	*	*	0	//Book of Sahamutt
 											
 04,004	0	0	*	12	13	32	29	*	*	0	//Silver Bow
@@ -86,4 +86,4 @@ end
 											
 13,024	0	0	*	*	*	32	29	*	*	0	//Ring of Magic
 13,028	0	0	*	*	*	32	29	*	*	0	//Pendant of Ability
-end																															
+end																																									

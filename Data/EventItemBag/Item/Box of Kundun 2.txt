@@ -34,12 +34,6 @@ end
 10,004	0	0	*	*	13	32	29	*	*	0	//Bone Gloves
 11,004	0	0	*	*	13	32	29	*	*	0	//Bone Boots
 											
-07,039	0	0	*	*	13	32	29	*	*	0	//Violent Wind Helm
-08,039	0	0	*	*	13	32	29	*	*	0	//Violent Wind Armor
-09,039	0	0	*	*	13	32	29	*	*	0	//Violent Wind Pants
-10,039	0	0	*	*	13	32	29	*	*	0	//Violent Wind Gloves
-11,039	0	0	*	*	13	32	29	*	*	0	//Violent Wind Boots
-											
 06,002	0	0	*	12	13	32	29	*	*	0	//Kite Shield
 06,005	0	0	*	12	13	32	29	*	*	0	//Dragon Slayer Shield
 06,006	0	0	*	12	13	32	29	*	*	0	//Skull Shield
@@ -48,7 +42,7 @@ end
 05,001	0	0	*	*	13	32	29	*	*	0	//Angelic Staff
 05,002	0	0	*	*	13	32	29	*	*	0	//Serpent Staff
 											
-05,015	0	0	*	*	13	32	29	*	*	0	//Violent Wind Stick
+05,014	0	0	*	*	13	32	29	*	*	0	//Mystery Stick
 											
 04,003	0	0	*	12	13	32	29	*	*	0	//Battle Bow
 04,009	0	0	*	12	13	32	29	*	*	0	//Golden Crossbow
@@ -71,4 +65,4 @@ end
 											
 13,008	0	0	*	*	*	32	29	*	*	0	//Ring of Ice
 13,025	0	0	*	*	*	32	29	*	*	0	//Pendant of Ice
-end											
+end																						

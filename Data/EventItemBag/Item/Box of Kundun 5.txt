@@ -39,11 +39,11 @@ end
 10,018	0	0	*	*	13	32	29	*	*	0	//Grand Soul Gloves
 11,018	0	0	*	*	13	32	29	*	*	0	//Grand Soul Boots
 											
-07,042	0	0	*	*	13	32	29	*	*	0	//Demonic Helm
-08,042	0	0	*	*	13	32	29	*	*	0	//Demonic Armor
-09,042	0	0	*	*	13	32	29	*	*	0	//Demonic Pants
-10,042	0	0	*	*	13	32	29	*	*	0	//Demonic Gloves
-11,042	0	0	*	*	13	32	29	*	*	0	//Demonic Boots
+07,041	0	0	*	*	13	32	29	*	*	0	//Ancient Helm
+08,041	0	0	*	*	13	32	29	*	*	0	//Ancient Armor
+09,041	0	0	*	*	13	32	29	*	*	0	//Ancient Pants
+10,041	0	0	*	*	13	32	29	*	*	0	//Ancient Gloves
+11,041	0	0	*	*	13	32	29	*	*	0	//Ancient Boots
 											
 08,037	0	0	*	*	13	32	29	*	*	0	//Valiant Armor
 09,037	0	0	*	*	13	32	29	*	*	0	//Valiant Pants
@@ -63,7 +63,7 @@ end
 05,010	0	0	*	*	13	32	29	*	*	0	//Divine Staff of Archangel
 05,011	0	0	*	*	13	32	29	*	*	0	//Staff of Kundun
 											
-05,018	0	0	*	*	13	32	29	*	*	0	//Demonic Stick
+05,017	0	0	*	*	13	32	29	*	*	0	//Ancient Stick
 05,023	0	0	*	12	13	32	29	*	*	0	//Book of Ghost Phantom
 											
 04,017	0	0	*	12	13	32	29	*	*	0	//Celestial Bow
@@ -82,4 +82,4 @@ end
 13,026	0	0	*	12	13	32	29	*	*	0	//Pendant of Wind
 13,021	0	0	*	12	13	32	29	*	*	0	//Ring of Fire
 13,013	0	0	*	12	13	32	29	*	*	0	//Pendant of Fire
-end											
+end																					

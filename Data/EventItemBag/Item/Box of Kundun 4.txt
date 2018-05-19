@@ -49,11 +49,11 @@ end
 10,035	0	0	*	*	13	32	29	*	*	0	//Eclipse Gloves
 11,035	0	0	*	*	13	32	29	*	*	0	//Eclipse Boots
 											
-07,041	0	0	*	*	13	32	29	*	*	0	//Ancient Helm
-08,041	0	0	*	*	13	32	29	*	*	0	//Ancient Armor
-09,041	0	0	*	*	13	32	29	*	*	0	//Ancient Pants
-10,041	0	0	*	*	13	32	29	*	*	0	//Ancient Gloves
-11,041	0	0	*	*	13	32	29	*	*	0	//Ancient Boots
+07,040	0	0	*	*	13	32	29	*	*	0	//Red Wing Helm
+08,040	0	0	*	*	13	32	29	*	*	0	//Red Wing Armor
+09,040	0	0	*	*	13	32	29	*	*	0	//Red Wing Pants
+10,040	0	0	*	*	13	32	29	*	*	0	//Red Wing Gloves
+11,040	0	0	*	*	13	32	29	*	*	0	//Red Wing Boots
 											
 08,015	0	0	*	*	13	32	29	*	*	0	//Storm Crow Armor
 09,015	0	0	*	*	13	32	29	*	*	0	//Storm Crow Pants
@@ -71,7 +71,7 @@ end
 05,006	0	0	*	*	13	32	29	*	*	0	//Staff of Resurrection
 05,007	0	0	*	*	13	32	29	*	*	0	//CLS
 											
-05,017	0	0	*	*	13	32	29	*	*	0	//Ancient Stick
+05,016	0	0	*	*	13	32	29	*	*	0	//Red Wing Stick
 05,022	0	0	*	12	13	32	29	*	*	0	//Book of Neil
 											
 04,006	0	0	*	12	13	32	29	*	*	0	//CNB
@@ -98,4 +98,4 @@ end
 											
 13,012	0	0	*	*	*	32	29	*	*	0	//Pendant of Lightning
 13,027	0	0	*	*	*	32	29	*	*	0	//Pendant of Water
-end											
+end																						
