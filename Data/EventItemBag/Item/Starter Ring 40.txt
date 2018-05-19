@@ -1,79 +1,134 @@
 3
 //Index   DropRate
 0         10000
+1         10000
+2         10000
+3         10000
+4         10000
+5         10000
 end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
-0         5         10000         1000          0             1    1    1    1    1    1
+0         5         10000         1000          0             0    1    0    0    0    0
+1         6         10000         1000          0             1    0    0    0    0    0
+2         7         10000         1000          0             0    0    1    0    0    0
+3         8         10000         1000          0             0    0    0    0    0    1
+4         9         10000         1000          0             0    0    0    1    0    0
+5         10        10000         1000          0             0    0    0    0    1    0
 end
 
-5
-//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-
-00,003    6       0       *         12        12        12        *         *         *         0          //Katana [Level: 6 Skill Luck Option: +4]
-00,005    6       0       *         12        12        12        *         *         *         0          //Blade [Level: 6 Skill Luck Option: +4]
-00,009    6       0       *         12        12        12        *         *         *         0          //Sword of Salamander [Level: 6 Skill Luck Option: +4]
-00,010    6       0       *         12        12        12        *         *         *         0          //Light Saber [Level: 6 Skill Luck Option: +4]
-00,013    6       0       *         12        12        12        *         *         *         0          //Double Blade [Level: 6 Skill Luck Option: +4]
-03,008    6       0       *         12        12        12        *         *         *         0          //Great Scythe [Level: 6 Skill Luck Option: +4]
-04,004    6       0       *         12        12        12        *         *         *         0          //Tiger Bow [Level: 6 Skill Luck Option: +4]
-04,009    6       0       *         12        12        12        *         *         *         0          //Golden Crossbow [Level: 6 Skill Luck Option: +4]
-04,011    6       0       *         12        12        12        *         *         *         0          //Light Crossbow [Level: 6 Skill Luck Option: +4]
-04,005    6       0       *         12        12        12        *         *         *         0          //Silver Bow [Level: 6 Skill Luck Option: +4]
-04,012    6       0       *         12        12        12        *         *         *         0          //Serpent Crossbow [Level: 6 Skill Luck Option: +4]
-05,000    6       0       *         12        12        12        *         *         *         0          //Skull Staff [Level: 6 Skill Luck Option: +4]
-05,002    6       0       *         12        12        12        *         *         *         0          //Serpent Staff [Level: 6 Skill Luck Option: +4]
-05,003    6       0       *         12        12        12        *         *         *         0          //Thunder Staff [Level: 6 Skill Luck Option: +4]
-05,004    6       0       *         12        12        12        *         *         *         0          //Gorgon Staff [Level: 6 Skill Luck Option: +4]
-07,000    6       0       *         12        12        12        *         *         *         0          //Bronze Helm [Level: 6 Skill Luck Option: +4]
-07,002    6       0       *         12        12        12        *         *         *         0          //Pad Helm [Level: 6 Skill Luck Option: +4]
-07,004    6       0       *         12        12        12        *         *         *         0          //Bone Helm [Level: 6 Skill Luck Option: +4]
-07,005    6       0       *         12        12        12        *         *         *         0          //Leather Helm [Level: 6 Skill Luck Option: +4]
-07,006    6       0       *         12        12        12        *         *         *         0          //Scale Helm [Level: 6 Skill Luck Option: +4]
-07,007    6       0       *         12        12        12        *         *         *         0          //Sphinx Mask [Level: 6 Skill Luck Option: +4]
-07,008    6       0       *         12        12        12        *         *         *         0          //Brass Helm [Level: 6 Skill Luck Option: +4]
-07,010    6       0       *         12        12        12        *         *         *         0          //Vine Helm [Level: 6 Skill Luck Option: +4]
-07,011    6       0       *         12        12        12        *         *         *         0          //Silk Helm [Level: 6 Skill Luck Option: +4]
-07,012    6       0       *         12        12        12        *         *         *         0          //Wind Helm [Level: 6 Skill Luck Option: +4]
-08,000    6       0       *         12        12        12        *         *         *         0          //Bronze Armor [Level: 6 Skill Luck Option: +4]
-08,002    6       0       *         12        12        12        *         *         *         0          //Pad Armor [Level: 6 Skill Luck Option: +4]
-08,004    6       0       *         12        12        12        *         *         *         0          //Bone Armor [Level: 6 Skill Luck Option: +4]
-08,005    6       0       *         12        12        12        *         *         *         0          //Leather Armor [Level: 6 Skill Luck Option: +4]
-08,006    6       0       *         12        12        12        *         *         *         0          //Scale Armor [Level: 6 Skill Luck Option: +4]
-08,007    6       0       *         12        12        12        *         *         *         0          //Sphinx Armor [Level: 6 Skill Luck Option: +4]
-08,008    6       0       *         12        12        12        *         *         *         0          //Brass Armor [Level: 6 Skill Luck Option: +4]
-08,010    6       0       *         12        12        12        *         *         *         0          //Vine Armor [Level: 6 Skill Luck Option: +4]
-08,011    6       0       *         12        12        12        *         *         *         0          //Silk Armor [Level: 6 Skill Luck Option: +4]
-08,012    6       0       *         12        12        12        *         *         *         0          //Wind Armor [Level: 6 Skill Luck Option: +4]
-09,000    6       0       *         12        12        12        *         *         *         0          //Bronze Pants [Level: 6 Skill Luck Option: +4]
-09,002    6       0       *         12        12        12        *         *         *         0          //Pad Pants [Level: 6 Skill Luck Option: +4]
-09,004    6       0       *         12        12        12        *         *         *         0          //Bone Pants [Level: 6 Skill Luck Option: +4]
-09,005    6       0       *         12        12        12        *         *         *         0          //Leather Pants [Level: 6 Skill Luck Option: +4]
-09,006    6       0       *         12        12        12        *         *         *         0          //Scale Pants [Level: 6 Skill Luck Option: +4]
-09,007    6       0       *         12        12        12        *         *         *         0          //Sphinx Pants [Level: 6 Skill Luck Option: +4]
-09,008    6       0       *         12        12        12        *         *         *         0          //Brass Pants [Level: 6 Skill Luck Option: +4]
-09,010    6       0       *         12        12        12        *         *         *         0          //Vine Pants [Level: 6 Skill Luck Option: +4]
-09,011    6       0       *         12        12        12        *         *         *         0          //Silk Pants [Level: 6 Skill Luck Option: +4]
-09,012    6       0       *         12        12        12        *         *         *         0          //Wind Pants [Level: 6 Skill Luck Option: +4]
-10,000    6       0       *         12        12        12        *         *         *         0          //Bronze Gloves [Level: 6 Skill Luck Option: +4]
-10,002    6       0       *         12        12        12        *         *         *         0          //Pad Gloves [Level: 6 Skill Luck Option: +4]
-10,004    6       0       *         12        12        12        *         *         *         0          //Bone Gloves [Level: 6 Skill Luck Option: +4]
-10,005    6       0       *         12        12        12        *         *         *         0          //Leather Gloves [Level: 6 Skill Luck Option: +4]
-10,006    6       0       *         12        12        12        *         *         *         0          //Scale Gloves [Level: 6 Skill Luck Option: +4]
-10,007    6       0       *         12        12        12        *         *         *         0          //Sphinx Gloves [Level: 6 Skill Luck Option: +4]
-10,008    6       0       *         12        12        12        *         *         *         0          //Brass Gloves [Level: 6 Skill Luck Option: +4]
-10,010    6       0       *         12        12        12        *         *         *         0          //Vine Gloves [Level: 6 Skill Luck Option: +4]
-10,011    6       0       *         12        12        12        *         *         *         0          //Silk Gloves [Level: 6 Skill Luck Option: +4]
-10,012    6       0       *         12        12        12        *         *         *         0          //Wind Gloves [Level: 6 Skill Luck Option: +4]
-11,000    6       0       *         12        12        12        *         *         *         0          //Bronze Boots [Level: 6 Skill Luck Option: +4]
-11,002    6       0       *         12        12        12        *         *         *         0          //Pad Boots [Level: 6 Skill Luck Option: +4]
-11,004    6       0       *         12        12        12        *         *         *         0          //Bone Boots [Level: 6 Skill Luck Option: +4]
-11,005    6       0       *         12        12        12        *         *         *         0          //Leather Boots [Level: 6 Skill Luck Option: +4]
-11,006    6       0       *         12        12        12        *         *         *         0          //Scale Boots [Level: 6 Skill Luck Option: +4]
-11,007    6       0       *         12        12        12        *         *         *         0          //Sphinx Boots [Level: 6 Skill Luck Option: +4]
-11,008    6       0       *         12        12        12        *         *         *         0          //Brass Boots [Level: 6 Skill Luck Option: +4]
-11,010    6       0       *         12        12        12        *         *         *         0          //Vine Boots [Level: 6 Skill Luck Option: +4]
-11,011    6       0       *         12        12        12        *         *         *         0          //Silk Boots [Level: 6 Skill Luck Option: +4]
-11,012    6       0       *         12        12        12        *         *         *         0          //Wind Boots [Level: 6 Skill Luck Option: +4]
-end
+//DK Drop:											
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,005	0	0	49	*	*	10	*	*	*	0	//Leather Helm
+08,005	0	0	49	*	*	10	*	*	*	0	//Leather Armor
+09,005	0	0	49	*	*	10	*	*	*	0	//Leather Pants
+10,005	0	0	49	*	*	10	*	*	*	0	//Leather Gloves
+11,005	0	0	49	*	*	10	*	*	*	0	//Leather Boots
+07,000	0	0	49	*	*	10	*	*	*	0	//Bronze Helm
+08,000	0	0	49	*	*	10	*	*	*	0	//Bronze Armor
+09,000	0	0	49	*	*	10	*	*	*	0	//Bronze Pants
+10,000	0	0	49	*	*	10	*	*	*	0	//Bronze Gloves
+11,000	0	0	49	*	*	10	*	*	*	0	//Bronze Boots
+00,003	0	0	49	12	*	10	*	*	*	0	//Katana
+00,004	0	0	49	12	*	10	*	*	*	0	//Sword of Assassin
+06,001	0	0	49	*	*	10	*	*	*	0	//Horn Shield
+06,004	0	0	49	*	*	10	*	*	*	0	//Buckler
+end											
+											
+//DW Drop:											
+6											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,002	0	0	49	*	*	10	*	*	*	0	//Pad Helm
+08,002	0	0	49	*	*	10	*	*	*	0	//Pad Armor
+09,002	0	0	49	*	*	10	*	*	*	0	//Pad Pants
+10,002	0	0	49	*	*	10	*	*	*	0	//Pad Gloves
+11,002	0	0	49	*	*	10	*	*	*	0	//Pad Boots
+07,004	0	0	49	*	*	10	*	*	*	0	//Bone Helm
+08,004	0	0	49	*	*	10	*	*	*	0	//Bone Armor
+09,004	0	0	49	*	*	10	*	*	*	0	//Bone Pants
+10,004	0	0	49	*	*	10	*	*	*	0	//Bone Gloves
+11,004	0	0	49	*	*	10	*	*	*	0	//Bone Boots
+06,004	0	0	49	*	*	10	*	*	*	0	//Buckler
+06,006	0	0	49	*	*	10	*	*	*	0	//Skull Shield
+05,000	0	0	49	*	*	10	*	*	*	0	//Skull Staff
+05,001	0	0	49	*	*	10	*	*	*	0	//Angelic Staff
+end											
+											
+//Elf Drop:											
+7											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,010	0	0	49	*	*	10	*	*	*	0	//Vine Helm
+08,010	0	0	49	*	*	10	*	*	*	0	//Vine Armor
+09,010	0	0	49	*	*	10	*	*	*	0	//Vine Pants
+10,010	0	0	49	*	*	10	*	*	*	0	//Vine Gloves
+11,010	0	0	49	*	*	10	*	*	*	0	//Vine Boots
+00,002	0	0	49	*	*	10	*	*	*	0	//Rapier
+00,000	0	0	49	*	*	10	*	*	*	0	//Kris
+06,003	0	0	49	*	*	10	*	*	*	0	//Elven Shield
+06,000	0	0	49	*	*	10	*	*	*	0	//Small Shield
+04,000	0	0	49	12	*	10	*	*	*	0	//Shord Bow
+04,001	0	0	49	12	*	10	*	*	*	0	//Bow
+04,002	0	0	49	12	*	10	*	*	*	0	//Elven Bow
+04,008	0	0	49	12	*	10	*	*	*	0	//Crossbow
+end											
+											
+//Summoner Drop:											
+8											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,039	0	0	49	*	*	10	*	*	*	0	//Violent Wind Helm
+08,039	0	0	49	*	*	10	*	*	*	0	//Violent Wind Armor
+09,039	0	0	49	*	*	10	*	*	*	0	//Violent Wind Pants
+10,039	0	0	49	*	*	10	*	*	*	0	//Violent Wind Gloves
+11,039	0	0	49	*	*	10	*	*	*	0	//Violent Wind Boots
+05,014	0	0	49	*	*	10	*	*	*	0	//Mystery Stick
+05,000	0	0	49	*	*	10	*	*	*	0	//Skull Staff
+end											
+											
+//MG Drop:											
+9											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+08,005	0	0	49	*	*	10	*	*	*	0	//Leather Armor
+09,005	0	0	49	*	*	10	*	*	*	0	//Leather Pants
+10,005	0	0	49	*	*	10	*	*	*	0	//Leather Gloves
+11,005	0	0	49	*	*	10	*	*	*	0	//Leather Boots
+08,000	0	0	49	*	*	10	*	*	*	0	//Bronze Armor
+09,000	0	0	49	*	*	10	*	*	*	0	//Bronze Pants
+10,000	0	0	49	*	*	10	*	*	*	0	//Bronze Gloves
+11,000	0	0	49	*	*	10	*	*	*	0	//Bronze Boots
+08,002	0	0	49	*	*	10	*	*	*	0	//Pad Armor
+09,002	0	0	49	*	*	10	*	*	*	0	//Pad Pants
+10,002	0	0	49	*	*	10	*	*	*	0	//Pad Gloves
+11,002	0	0	49	*	*	10	*	*	*	0	//Pad Boots
+08,004	0	0	49	*	*	10	*	*	*	0	//Bone Armor
+09,004	0	0	49	*	*	10	*	*	*	0	//Bone Pants
+10,004	0	0	49	*	*	10	*	*	*	0	//Bone Gloves
+11,004	0	0	49	*	*	10	*	*	*	0	//Bone Boots
+06,006	0	0	49	*	*	10	*	*	*	0	//Skull Shield
+05,000	0	0	49	*	*	10	*	*	*	0	//Skull Staff
+05,001	0	0	49	*	*	10	*	*	*	0	//Angelic Staff
+00,003	0	0	49	12	*	10	*	*	*	0	//Katana
+00,004	0	0	49	12	*	10	*	*	*	0	//Sword of Assassin
+06,001	0	0	49	*	*	10	*	*	*	0	//Horn Shield
+06,004	0	0	49	*	*	10	*	*	*	0	//Buckler
+end											
+											
+//DL Drop:											
+10											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,005	0	0	49	*	*	10	*	*	*	0	//Leather Helm
+08,005	0	0	49	*	*	10	*	*	*	0	//Leather Armor
+09,005	0	0	49	*	*	10	*	*	*	0	//Leather Pants
+10,005	0	0	49	*	*	10	*	*	*	0	//Leather Gloves
+11,005	0	0	49	*	*	10	*	*	*	0	//Leather Boots
+07,000	0	0	49	*	*	10	*	*	*	0	//Bronze Helm
+08,000	0	0	49	*	*	10	*	*	*	0	//Bronze Armor
+09,000	0	0	49	*	*	10	*	*	*	0	//Bronze Pants
+10,000	0	0	49	*	*	10	*	*	*	0	//Bronze Gloves
+11,000	0	0	49	*	*	10	*	*	*	0	//Bronze Boots
+00,003	0	0	49	12	*	10	*	*	*	0	//Katana
+00,004	0	0	49	12	*	10	*	*	*	0	//Sword of Assassin
+06,001	0	0	49	*	*	10	*	*	*	0	//Horn Shield
+06,004	0	0	49	*	*	10	*	*	*	0	//Buckler
+end											
