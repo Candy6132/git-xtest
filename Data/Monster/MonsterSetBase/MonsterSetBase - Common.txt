@@ -61,6 +61,12 @@ end
 
 0
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
+257            04             00         203            80             03             //Shadow Phantom Soldier
+253            04             00         206            81             02             //Potion Girl Amy
+end
+
+0
+//Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
 232            11             00         010            009            01             //Archangel
 232            12             00         010            009            01             //Archangel
 232            13             00         010            009            01             //Archangel
@@ -1059,7 +1065,8 @@ end
 //=================== Atlans NPCs- ======================================				
 //=========================================================================================
 0
-253	7	3	27	22	2	//Potion Girl
+253	7	3	27	22	1	//Potion Girl
+257     7       3       23      25	1	//Shadow Phantom Soldier
 end
 
 //=========================================================================================				
@@ -1469,7 +1476,7 @@ end
 
 0
 253	8	0	191	73	2	//Potion Girl
-231	8	0	204	62	3	// Thompson Kenel
+231	8	0	204	62	1	// Thompson Kenel
 end
 
 //Mob	Map	Radio	CordX	CordY	CordX2	CordY2	Dir	Quant	Name
