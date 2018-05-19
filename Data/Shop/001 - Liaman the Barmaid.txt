@@ -1,4 +1,6 @@
 //Index   Level   Count   Option1   Option2   Option3   NewOption   Comment
+
+//Test:
 6145      0       0       0         0         0         0           //Wings of Heaven
 6144      0       0       0         0         0         0           //Wings of Elf
 6686      0       0       0         0         0         0           //Cape of Lord
@@ -17,4 +19,13 @@
 6189      0       0       0         0         0         0           //Crystal of Multi-Shot
 7695      0       0       0         0         0         0           //Scroll of Soul Barrier
 7697      0       0       0         0         0         0           //Scroll of Ice Storm
+7179      0       0       0         0         0         0           //BoL
+7179      7       0       0         0         0         0           //BoH
+7179      8       0       0         0         0         0           //BoK+1
+7179      9       0       0         0         0         0           //BoK+2
+7179      10      0       0         0         0         0           //BoK+3
+7179      11      0       0         0         0         0           //BoK+4
+7179      12      0       0         0         0         0           //BoK+5
+10250     1       0       0         0         0         0           //Ring 40 lvl
+10250     2       0       0         0         0         0           //Ring 80 lvl
 end
