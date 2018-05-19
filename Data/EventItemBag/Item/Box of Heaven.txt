@@ -5,7 +5,7 @@ end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
-0         5         12000         1000          0             1    1    1    1    1    1
+0         5         20000         1000          0             1    1    1    1    1    1
 0         6         10000         1000          0             1    1    1    1    1    1
 0         7         8000          1000          0             1    1    1    1    1    1
 0         8         6000          1000          0             1    1    1    1    1    1
@@ -13,10 +13,18 @@ end
 
 5
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-13,008    0       0       9         *         *         3         *         *         *         0          //Ring of Ice [Option: +8]
-13,009    0       0       9         *         *         3         *         *         *         0          //Ring of Poison [Option: +8]
-13,012    0       0       9         *         *         3         *         *         *         0          //Pendant of Lighting [Option: +8]
-13,013    0       0       9         *         *         3         *         *         *         0          //Pendant of Fire [Option: +8]
+13,008    0       0       9         *         *         10        *         *         *         0          //Ring of Ice [+0~7 +0~12%]
+13,009    0       0       9         *         *         10        *         *         *         0          //Ring of Poison [+0~7 +0~12%]
+13,021    0       0       9         *         *         10        *         *         *         0          //Ring of Fire [+0~7 +0~12%]
+13,022    0       0       9         *         *         10        *         *         *         0          //Ring of Earth [+0~7 +0~12%]
+13,023    0       0       9         *         *         10        *         *         *         0          //Ring of Wind [+0~7 +0~12%]
+13,024    0       0       9         *         *         10        *         *         *         0          //Ring of Magic [+0~7 +0~12%]
+13,025    0       0       9         *         *         10        *         *         *         0          //Pendant of Ice [+0~7 +0~12%]
+13,026    0       0       9         *         *         10        *         *         *         0          //Pendant of Wind [+0~7 +0~12%]
+13,027    0       0       9         *         *         10        *         *         *         0          //Pendant of Water [+0~7 +0~12%]
+13,028    0       0       9         *         *         10        *         *         *         0          //Pendant of Ability [+0~7 +0~12%]
+13,012    0       0       9         *         *         10        *         *         *         0          //Pendant of Lighting [+0~7 +0~12%]
+13,013    0       0       9         *         *         10        *         *         *         0          //Pendant of Fire [+0~7 +0~12%]
 end
 
 6
