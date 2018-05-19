@@ -115,6 +115,7 @@ end
 29        0       0       0       0       0       5000    5000    0       //JoL Option (EventItemBag) (5~6)
 30        0       0       0       0       0       3334    3333    3333    //JoL Option (EventItemBag) (5~7)
 31        0       0       0       0       0       0       5000    5000    //JoL Option (EventItemBag) (6~7)
+32        4000    3000    2000    1000    0       0       0       0       //JoL Option (Box of Kundun) (0~3)
 end
 
 4

@@ -8,17 +8,78 @@ end
 0         5         10000         1000          0             1    1    1    1    1    1
 end
 
-5
-//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-
-12,015    0       0       *         *         *         *         *         *         *         0          //Jewel of Chaos
-14,014    0       0       *         *         *         *         *         *         *         0          //Jewel of Soul
-14,013    0       0       *         *         *         *         *         *         *         0          //Jewel of Bless
-14,016    0       0       *         *         *         *         *         *         *         0          //Jewel of Life
-14,022    0       0       *         *         *         *         *         *         *         0          //Jewel of Creation
-14,044    0       0       *         *         *         *         *         *         *         0          //Higher refining stone
-14,019    0       0       39        *         *         *         *         *         *         0          //Devil's Invitation [Level: +6~8]
-13,018    0       0       41        *         *         *         *         *         *         0          //Invisibility Cloak [Level: +7~9]
-14,028    7       0       *         *         *         *         *         *         *         0          //Lost Map [Level: 7]
-13,051    0       0       35        *         *         *         *         *         *         0          //Scroll of Blood [Level: +4~6]
-end
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,017	0	0	*	*	13	32	29	*	*	0	//Phoenix Helm
+08,017	0	0	*	*	13	32	29	*	*	0	//Phoenix Armor
+09,017	0	0	*	*	13	32	29	*	*	0	//Phoenix Pants
+10,017	0	0	*	*	13	32	29	*	*	0	//Phoenix Gloves
+11,017	0	0	*	*	13	32	29	*	*	0	//Phoenix Boots
+07,016	0	0	*	*	13	32	29	*	*	0	//Black Dragon Helm
+08,016	0	0	*	*	13	32	29	*	*	0	//Black Dragon Armor
+09,016	0	0	*	*	13	32	29	*	*	0	//Black Dragon Pants
+10,016	0	0	*	*	13	32	29	*	*	0	//Black Dragon Gloves
+11,016	0	0	*	*	13	32	29	*	*	0	//Black Dragon Boots
+											
+07,019	0	0	*	*	13	32	29	*	*	0	//Divine Helm
+08,019	0	0	*	*	13	32	29	*	*	0	//Divine Armor
+09,019	0	0	*	*	13	32	29	*	*	0	//Divine Pants
+10,019	0	0	*	*	13	32	29	*	*	0	//Divine Gloves
+11,019	0	0	*	*	13	32	29	*	*	0	//Divine Boots
+											
+07,038	0	0	*	*	13	32	29	*	*	0	//Glorious Helm
+08,038	0	0	*	*	13	32	29	*	*	0	//Glorious Armor
+09,038	0	0	*	*	13	32	29	*	*	0	//Glorious Pants
+10,038	0	0	*	*	13	32	29	*	*	0	//Glorious Gloves
+11,038	0	0	*	*	13	32	29	*	*	0	//Glorious Boots
+											
+07,018	0	0	*	*	13	32	29	*	*	0	//Grand Soul Helm
+08,018	0	0	*	*	13	32	29	*	*	0	//Grand Soul Armor
+09,018	0	0	*	*	13	32	29	*	*	0	//Grand Soul Pants
+10,018	0	0	*	*	13	32	29	*	*	0	//Grand Soul Gloves
+11,018	0	0	*	*	13	32	29	*	*	0	//Grand Soul Boots
+											
+07,042	0	0	*	*	13	32	29	*	*	0	//Demonic Helm
+08,042	0	0	*	*	13	32	29	*	*	0	//Demonic Armor
+09,042	0	0	*	*	13	32	29	*	*	0	//Demonic Pants
+10,042	0	0	*	*	13	32	29	*	*	0	//Demonic Gloves
+11,042	0	0	*	*	13	32	29	*	*	0	//Demonic Boots
+											
+08,037	0	0	*	*	13	32	29	*	*	0	//Valiant Armor
+09,037	0	0	*	*	13	32	29	*	*	0	//Valiant Pants
+10,037	0	0	*	*	13	32	29	*	*	0	//Valiant Gloves
+11,037	0	0	*	*	13	32	29	*	*	0	//Valiant Boots
+08,020	0	0	*	*	13	32	29	*	*	0	//Thunder Hawk Armor
+09,020	0	0	*	*	13	32	29	*	*	0	//Thunder Hawk Pants
+10,020	0	0	*	*	13	32	29	*	*	0	//Thunder Hawk Gloves
+11,020	0	0	*	*	13	32	29	*	*	0	//Thunder Hawk Boots
+											
+06,013	0	0	*	*	13	32	29	*	*	0	//Dragon Shield
+06,015	0	0	*	*	13	32	29	*	*	0	//Grand Soul Shield
+06,016	0	0	*	*	13	32	29	*	*	0	//Elemental Shield
+											
+05,008	0	0	*	*	13	32	29	*	*	0	//Staff of Destr
+05,009	0	0	*	*	13	32	29	*	*	0	//Dragon Soul Staff
+05,010	0	0	*	*	13	32	29	*	*	0	//Divine Staff of Archangel
+05,011	0	0	*	*	13	32	29	*	*	0	//Staff of Kundun
+											
+05,018	0	0	*	*	13	32	29	*	*	0	//Demonic Stick
+05,023	0	0	*	12	13	32	29	*	*	0	//Book of Ghost Phantom
+											
+04,017	0	0	*	12	13	32	29	*	*	0	//Celestial Bow
+04,018	0	0	*	12	13	32	29	*	*	0	//Divine Crossbow of Archangel
+04,019	0	0	*	12	13	32	29	*	*	0	//Great Regin Crossbow
+											
+02,011	0	0	*	12	13	32	29	*	*	0	//Lord Scepter
+02,015	0	0	*	12	13	32	29	*	*	0	//Shining Scepter
+											
+03,010	0	0	*	12	13	32	29	*	*	0	//Dragon Spear
+00,017	0	0	*	12	13	32	29	*	*	0	//Dark Breaker
+00,020	0	0	*	12	13	32	29	*	*	0	//Knight Blade
+00,031	0	0	*	12	13	32	29	*	*	0	//Rune Blade
+											
+13,023	0	0	*	12	13	32	29	*	*	0	//Ring of Wind
+13,026	0	0	*	12	13	32	29	*	*	0	//Pendant of Wind
+13,021	0	0	*	12	13	32	29	*	*	0	//Ring of Fire
+13,013	0	0	*	12	13	32	29	*	*	0	//Pendant of Fire
+end											

@@ -8,17 +8,94 @@ end
 0         5         10000         1000          0             1    1    1    1    1    1
 end
 
-5
-//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-
-12,015    0       0       *         *         *         *         *         *         *         0          //Jewel of Chaos
-14,014    0       0       *         *         *         *         *         *         *         0          //Jewel of Soul
-14,013    0       0       *         *         *         *         *         *         *         0          //Jewel of Bless
-14,016    0       0       *         *         *         *         *         *         *         0          //Jewel of Life
-14,022    0       0       *         *         *         *         *         *         *         0          //Jewel of Creation
-14,044    0       0       *         *         *         *         *         *         *         0          //Higher refining stone
-14,019    0       0       35        *         *         *         *         *         *         0          //Devil's Invitation [Level: +4~6]
-13,018    0       0       37        *         *         *         *         *         *         0          //Invisibility Cloak [Level: +5~7]
-14,028    0       0       37        *         *         *         *         *         *         0          //Lost Map [Level: +5~7]
-13,051    0       0       31        *         *         *         *         *         *         0          //Scroll of Blood [Level: +2~4]
-end
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,001	0	0	*	*	13	32	29	*	*	0	//Dragon Helm
+08,001	0	0	*	*	13	32	29	*	*	0	//Dragon Armor
+09,001	0	0	*	*	13	32	29	*	*	0	//Dragon Pants
+10,001	0	0	*	*	13	32	29	*	*	0	//Dragon Gloves
+11,001	0	0	*	*	13	32	29	*	*	0	//Dragon Boots
+07,034	0	0	*	*	13	32	29	*	*	0	//Ashcrow Helm
+08,034	0	0	*	*	13	32	29	*	*	0	//Ashcrow Armor
+09,034	0	0	*	*	13	32	29	*	*	0	//Ashcrow Pants
+10,034	0	0	*	*	13	32	29	*	*	0	//Ashcrow Gloves
+11,034	0	0	*	*	13	32	29	*	*	0	//Ashcrow Boots
+											
+07,014	0	0	*	*	13	32	29	*	*	0	//Guardian Helm
+08,014	0	0	*	*	13	32	29	*	*	0	//Guardian Armor
+09,014	0	0	*	*	13	32	29	*	*	0	//Guardian Pants
+10,014	0	0	*	*	13	32	29	*	*	0	//Guardian Gloves
+11,014	0	0	*	*	13	32	29	*	*	0	//Guardian Boots
+07,036	0	0	*	*	13	32	29	*	*	0	//Iris Helm
+08,036	0	0	*	*	13	32	29	*	*	0	//Iris Armor
+09,036	0	0	*	*	13	32	29	*	*	0	//Iris Pants
+10,036	0	0	*	*	13	32	29	*	*	0	//Iris Gloves
+11,036	0	0	*	*	13	32	29	*	*	0	//Iris Boots
+											
+07,027	0	0	*	*	13	32	29	*	*	0	//Dark Steel Helm
+08,027	0	0	*	*	13	32	29	*	*	0	//Dark Steel Armor
+09,027	0	0	*	*	13	32	29	*	*	0	//Dark Steel Pants
+10,027	0	0	*	*	13	32	29	*	*	0	//Dark Steel Gloves
+11,027	0	0	*	*	13	32	29	*	*	0	//Dark Steel Boots
+											
+07,003	0	0	*	*	13	32	29	*	*	0	//Legendary Helm
+08,003	0	0	*	*	13	32	29	*	*	0	//Legendary Armor
+09,003	0	0	*	*	13	32	29	*	*	0	//Legendary Pants
+10,003	0	0	*	*	13	32	29	*	*	0	//Legendary Gloves
+11,003	0	0	*	*	13	32	29	*	*	0	//Legendary Boots
+07,035	0	0	*	*	13	32	29	*	*	0	//Eclipse Helm
+08,035	0	0	*	*	13	32	29	*	*	0	//Eclipse Armor
+09,035	0	0	*	*	13	32	29	*	*	0	//Eclipse Pants
+10,035	0	0	*	*	13	32	29	*	*	0	//Eclipse Gloves
+11,035	0	0	*	*	13	32	29	*	*	0	//Eclipse Boots
+											
+07,041	0	0	*	*	13	32	29	*	*	0	//Ancient Helm
+08,041	0	0	*	*	13	32	29	*	*	0	//Ancient Armor
+09,041	0	0	*	*	13	32	29	*	*	0	//Ancient Pants
+10,041	0	0	*	*	13	32	29	*	*	0	//Ancient Gloves
+11,041	0	0	*	*	13	32	29	*	*	0	//Ancient Boots
+											
+08,015	0	0	*	*	13	32	29	*	*	0	//Storm Crow Armor
+09,015	0	0	*	*	13	32	29	*	*	0	//Storm Crow Pants
+10,015	0	0	*	*	13	32	29	*	*	0	//Storm Crow Gloves
+11,015	0	0	*	*	13	32	29	*	*	0	//Storm Crow Boots
+08,037	0	0	*	*	13	32	29	*	*	0	//Valiant Armor
+09,037	0	0	*	*	13	32	29	*	*	0	//Valiant Pants
+10,037	0	0	*	*	13	32	29	*	*	0	//Valiant Gloves
+11,037	0	0	*	*	13	32	29	*	*	0	//Valiant Boots
+											
+06,012	0	0	*	12	13	32	29	*	*	0	//Bronze Shield
+06,014	0	0	*	*	13	32	29	*	*	0	//Legendary Shield
+											
+05,005	0	0	*	*	13	32	29	*	*	0	//Legendary Staff
+05,006	0	0	*	*	13	32	29	*	*	0	//Staff of Resurrection
+05,007	0	0	*	*	13	32	29	*	*	0	//CLS
+											
+05,017	0	0	*	*	13	32	29	*	*	0	//Ancient Stick
+05,022	0	0	*	12	13	32	29	*	*	0	//Book of Neil
+											
+04,006	0	0	*	12	13	32	29	*	*	0	//CNB
+04,013	0	0	*	12	13	32	29	*	*	0	//Bluewing Crossbow
+04,014	0	0	*	12	13	32	29	*	*	0	//Aquagold Crossbow
+04,016	0	0	*	12	13	32	29	*	*	0	//Saint Crossbow
+											
+03,008	0	0	*	12	13	32	29	*	*	0	//Great Scythe
+03,009	0	0	*	12	13	32	29	*	*	0	//Bill of Balrog
+											
+02,004	0	0	*	12	13	32	29	*	*	0	//Crystal Morning Str
+02,005	0	0	*	12	13	32	29	*	*	0	//Crystal Sword
+02,006	0	0	*	12	13	32	29	*	*	0	//CDA
+02,007	0	0	*	*	13	32	29	*	*	0	//Elemental Mace
+02,010	0	0	*	12	13	32	29	*	*	0	//Great Scepter
+02,011	0	0	*	12	13	32	29	*	*	0	//Lord Scepter
+											
+01,008	0	0	*	12	13	32	29	*	*	0	//Cresent Axae
+											
+00,012	0	0	*	12	13	32	29	*	*	0	//Helical Sword
+00,015	0	0	*	12	13	32	29	*	*	0	//Giant Sword
+00,016	0	0	*	12	13	32	29	*	*	0	//Sword of Destruction
+00,018	0	0	*	12	13	32	29	*	*	0	//Thunder Blade
+											
+13,012	0	0	*	*	*	32	29	*	*	0	//Pendant of Lightning
+13,027	0	0	*	*	*	32	29	*	*	0	//Pendant of Water
+end											
