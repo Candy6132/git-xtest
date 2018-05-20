@@ -1,6 +1,6 @@
 3
 //Index   DropRate
-0         10000
+0         8000
 end
 
 4
@@ -11,5 +11,5 @@ end
 5
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
 
-14,011    10      0       *         *         *         *         *         *         *         0          //Box of Luck [Level: 10]
+14,011    7       0       *         *         *         *         *         *         *         0          //Box of Heaven
 end

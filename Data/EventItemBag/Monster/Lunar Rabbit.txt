@@ -1,6 +1,6 @@
 3
 //Index   DropRate
-0         10000
+0         8000
 end
 
 4

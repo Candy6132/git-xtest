@@ -3,7 +3,7 @@
 end
 
 1
-//Index   Name                                 DropMap   DropX   DropY   DropRange   AlarmTime   EventTime
+//Index   Name    DropMap   DropX   DropY   DropRange   AlarmTime   EventTime
 end
 
 2

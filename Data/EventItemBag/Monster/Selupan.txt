@@ -1,136 +1,198 @@
 3
 //Index   DropRate
 0         10000
-1         10000
+1         3000
 2         10000
 3         10000
-4         10000
-5         10000
-6         10000
-7         10000
-8         10000
-9         10000
+4         2000
 end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
-0         5         5000          1000          0             1    1    1    1    1    1
-1         5         5000          1000          0             1    1    1    1    1    1
-2         5         5000          1000          0             1    1    1    1    1    1
-3         5         5000          1000          0             1    1    1    1    1    1
-4         5         5000          1000          0             1    1    1    1    1    1
-5         5         5000          1000          0             1    1    1    1    1    1
-6         5         5000          1000          0             1    1    1    1    1    1
-7         5         5000          1000          0             1    1    1    1    1    1
-8         5         5000          1000          0             1    1    1    1    1    1
-9         5         5000          1000          0             1    1    1    1    1    1
+0         5         10000          1000          0             1    1    1    1    1    1
+1         5         10000          1000          0             1    1    1    1    1    1
+2         6         10000          1000          0             1    1    1    1    1    1
+3         6         10000          1000          0             1    1    1    1    1    1
+4         6         10000          1000          0             1    1    1    1    1    1
 end
 
-5
-//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-
-05,008    0       0       *         12        *         12        12        *         *         0          //Staff of Destruction [Skill Option: +4 Exc: 1]
-05,009    0       0       *         12        *         12        12        *         *         0          //Dragon Soul Staff [Skill Option: +4 Exc: 1]
-00,013    0       0       *         12        *         12        12        *         *         0          //Double Blade [Skill Option: +4 Exc: 1]
-00,016    0       0       *         12        *         12        12        *         *         0          //Sword of Destruction [Skill Option: +4 Exc: 1]
-00,031    0       0       *         12        *         12        12        *         *         0          //Rune Blade [Skill Option: +4 Exc: 1]
-02,007    0       0       *         12        *         12        12        *         *         0          //Elemental Mace [Skill Option: +4 Exc: 1]
-02,009    0       0       *         12        *         12        12        *         *         0          //Master Scepter [Skill Option: +4 Exc: 1]
-02,010    0       0       *         12        *         12        12        *         *         0          //Great Scepter [Skill Option: +4 Exc: 1]
-02,011    0       0       *         12        *         12        12        *         *         0          //Lord Scepter [Skill Option: +4 Exc: 1]
-03,010    0       0       *         12        *         12        12        *         *         0          //Dragon Spear [Skill Option: +4 Exc: 1]
-04,016    0       0       *         12        *         12        12        *         *         0          //Saint Crossbow [Skill Option: +4 Exc: 1]
-04,017    0       0       *         12        *         12        12        *         *         0          //Celestial Bow [Skill Option: +4 Exc: 1]
-04,009    0       0       *         12        *         12        12        *         *         0          //Golden Crossbow [Skill Option: +4 Exc: 1]
-04,014    0       0       *         12        *         12        12        *         *         0          //Aquagold Crossbow [Skill Option: +4 Exc: 1]
-04,016    0       0       *         12        *         12        12        *         *         0          //Saint Crossbow [Skill Option: +4 Exc: 1]
-05,005    0       0       *         *         *         12        12        *         *         0          //Legendary Staff [Option: +4 Exc: 1]
-05,006    0       0       *         *         *         12        12        *         *         0          //Staff of Resurrection [Option: +4 Exc: 1]
-05,016    0       0       *         *         *         12        12        *         *         0          //Red Wing Stick [Option: +4 Exc: 1]
-05,021    0       0       *         12        *         12        12        *         *         0          //Book of Samut [Skill Option: +4 Exc: 1]
-07,034    0       0       *         *         *         12        12        *         *         0          //Ashcrow Helm [Option: +4 Exc: 1]
-08,034    0       0       *         *         *         12        12        *         *         0          //Ashcrow Armor [Option: +4 Exc: 1]
-09,034    0       0       *         *         *         12        12        *         *         0          //Ashcrow Pants [Option: +4 Exc: 1]
-10,034    0       0       *         *         *         12        12        *         *         0          //Ashcrow Gloves [Option: +4 Exc: 1]
-11,034    0       0       *         *         *         12        12        *         *         0          //Ashcrow Boots [Option: +4 Exc: 1]
-07,035    0       0       *         *         *         12        12        *         *         0          //Eclipse Helm [Option: +4 Exc: 1]
-08,035    0       0       *         *         *         12        12        *         *         0          //Eclipse Armor [Option: +4 Exc: 1]
-09,035    0       0       *         *         *         12        12        *         *         0          //Eclipse Pants [Option: +4 Exc: 1]
-10,035    0       0       *         *         *         12        12        *         *         0          //Eclipse Gloves [Option: +4 Exc: 1]
-11,035    0       0       *         *         *         12        12        *         *         0          //Eclipse Boots [Option: +4 Exc: 1]
-07,036    0       0       *         *         *         12        12        *         *         0          //Iris Helm [Option: +4 Exc: 1]
-08,036    0       0       *         *         *         12        12        *         *         0          //Iris Armor [Option: +4 Exc: 1]
-09,036    0       0       *         *         *         12        12        *         *         0          //Iris Pants [Option: +4 Exc: 1]
-10,036    0       0       *         *         *         12        12        *         *         0          //Iris Gloves [Option: +4 Exc: 1]
-11,036    0       0       *         *         *         12        12        *         *         0          //Iris Boots [Option: +4 Exc: 1]
-08,037    0       0       *         *         *         12        12        *         *         0          //Valiant Armor [Option: +4 Exc: 1]
-09,037    0       0       *         *         *         12        12        *         *         0          //Valiant Pants [Option: +4 Exc: 1]
-10,037    0       0       *         *         *         12        12        *         *         0          //Valiant Gloves [Option: +4 Exc: 1]
-11,037    0       0       *         *         *         12        12        *         *         0          //Valiant Boots [Option: +4 Exc: 1]
-07,038    0       0       *         *         *         12        12        *         *         0          //Glorious Mask [Option: +4 Exc: 1]
-08,038    0       0       *         *         *         12        12        *         *         0          //Glorious Armor [Option: +4 Exc: 1]
-09,038    0       0       *         *         *         12        12        *         *         0          //Glorious Pants [Option: +4 Exc: 1]
-10,038    0       0       *         *         *         12        12        *         *         0          //Glorious Gloves [Option: +4 Exc: 1]
-11,038    0       0       *         *         *         12        12        *         *         0          //Glorious Boots [Option: +4 Exc: 1]
-06,013    0       0       *         12        *         12        12        *         *         0          //Dragon Shield [Skill Option: +4 Exc: 1]
-06,014    0       0       *         12        *         12        12        *         *         0          //Legendary Shield [Skill Option: +4 Exc: 1]
-06,016    0       0       *         12        *         12        12        *         *         0          //Elemental Shield [Skill Option: +4 Exc: 1]
-12,072    0       0       *         *         *         *         *         *         *         0          //Sphere (Tri)
-00,026    0       0       33        12        12        12        *         *         *         0          //Flameberge [Level: +3~5 Skill Luck Option: +4]
-00,027    0       0       33        12        12        12        *         *         *         0          //Sword Breaker [Level: +3~5 Skill Luck Option: +4]
-00,028    0       0       33        12        12        12        *         *         *         0          //Rune Bastard Sword [Level: +3~5 Skill Luck Option: +4]
-02,016    0       0       33        12        12        12        *         *         *         0          //Frost Mace [Level: +3~5 Skill Luck Option: +4]
-02,017    0       0       33        12        12        12        *         *         *         0          //Absolute Scepter [Level: +3~5 Skill Luck Option: +4]
-04,023    0       0       33        12        12        12        *         *         *         0          //Dark Stinger [Level: +3~5 Skill Luck Option: +4]
-05,030    0       0       33        *         12        12        *         *         *         0          //Deadly Staff [Level: +3~5 Luck Option: +4]
-05,031    0       0       33        *         12        12        *         *         *         0          //Inberial Staff [Level: +3~5 Luck Option: +4]
-05,032    0       0       33        *         12        12        *         *         *         0          //Nao existe [Level: +3~5 Luck Option: +4]
-06,017    0       0       33        12        12        12        *         *         *         0          //Crimson Glory [Level: +3~5 Skill Luck Option: +4]
-06,018    0       0       33        12        12        12        *         *         *         0          //Salamander Shield [Level: +3~5 Skill Luck Option: +4]
-06,019    0       0       33        12        12        12        *         *         *         0          //Frost Barrier [Level: +3~5 Skill Luck Option: +4]
-06,020    0       0       33        12        12        12        *         *         *         0          //Guardian Shield [Level: +3~5 Skill Luck Option: +4]
-07,045    0       0       33        *         12        12        *         *         *         0          //Titan Helm [Level: +3~5 Luck Option: +4]
-07,046    0       0       33        *         12        12        *         *         *         0          //Brave Helm [Level: +3~5 Luck Option: +4]
-07,049    0       0       33        *         12        12        *         *         *         0          //Seraphim Helm [Level: +3~5 Luck Option: +4]
-07,050    0       0       33        *         12        12        *         *         *         0          //Divine Helm [Level: +3~5 Luck Option: +4]
-07,051    0       0       33        *         12        12        *         *         *         0          //Royal Mask [Level: +3~5 Luck Option: +4]
-07,052    0       0       33        *         12        12        *         *         *         0          //Hades Helm [Level: +3~5 Luck Option: +4]
-07,053    0       0       33        *         12        12        *         *         *         0          //Nao existe [Level: +3~5 Luck Option: +4]
-08,045    0       0       33        *         12        12        *         *         *         0          //Titan Armor [Level: +3~5 Luck Option: +4]
-08,046    0       0       33        *         12        12        *         *         *         0          //Brave Armor [Level: +3~5 Luck Option: +4]
-08,047    0       0       33        *         12        12        *         *         *         0          //Phantom Armor [Level: +3~5 Luck Option: +4]
-08,048    0       0       33        *         12        12        *         *         *         0          //Destroy Armor [Level: +3~5 Luck Option: +4]
-08,049    0       0       33        *         12        12        *         *         *         0          //Seraphim Armor [Level: +3~5 Luck Option: +4]
-08,050    0       0       33        *         12        12        *         *         *         0          //Divine Armor [Level: +3~5 Luck Option: +4]
-08,051    0       0       33        *         12        12        *         *         *         0          //Royal Armor [Level: +3~5 Luck Option: +4]
-08,052    0       0       33        *         12        12        *         *         *         0          //Hades Armor [Level: +3~5 Luck Option: +4]
-08,053    0       0       33        *         12        12        *         *         *         0          //Nao existe [Level: +3~5 Luck Option: +4]
-09,045    0       0       33        *         12        12        *         *         *         0          //Titan  Pants [Level: +3~5 Luck Option: +4]
-09,046    0       0       33        *         12        12        *         *         *         0          //Brave Pants [Level: +3~5 Luck Option: +4]
-09,047    0       0       33        *         12        12        *         *         *         0          //Phantom  Pants [Level: +3~5 Luck Option: +4]
-09,048    0       0       33        *         12        12        *         *         *         0          //Destroy Pants [Level: +3~5 Luck Option: +4]
-09,049    0       0       33        *         12        12        *         *         *         0          //Seraphim Pants [Level: +3~5 Luck Option: +4]
-09,050    0       0       33        *         12        12        *         *         *         0          //Divine Pants [Level: +3~5 Luck Option: +4]
-09,051    0       0       33        *         12        12        *         *         *         0          //Royal Pants [Level: +3~5 Luck Option: +4]
-09,052    0       0       33        *         12        12        *         *         *         0          //Hades Pants [Level: +3~5 Luck Option: +4]
-09,053    0       0       33        *         12        12        *         *         *         0          //Nao existe [Level: +3~5 Luck Option: +4]
-10,045    0       0       33        *         12        12        *         *         *         0          //Titan  Gloves [Level: +3~5 Luck Option: +4]
-10,046    0       0       33        *         12        12        *         *         *         0          //Brave Gloves [Level: +3~5 Luck Option: +4]
-10,047    0       0       33        *         12        12        *         *         *         0          //Phantom  Gloves [Level: +3~5 Luck Option: +4]
-10,048    0       0       33        *         12        12        *         *         *         0          //Destroy Gloves [Level: +3~5 Luck Option: +4]
-10,049    0       0       33        *         12        12        *         *         *         0          //Seraphim Gloves [Level: +3~5 Luck Option: +4]
-10,050    0       0       33        *         12        12        *         *         *         0          //Divine Gloves [Level: +3~5 Luck Option: +4]
-10,051    0       0       33        *         12        12        *         *         *         0          //Royal Gloves [Level: +3~5 Luck Option: +4]
-10,052    0       0       33        *         12        12        *         *         *         0          //Hades Gloves [Level: +3~5 Luck Option: +4]
-10,053    0       0       33        *         12        12        *         *         *         0          //Nao existe [Level: +3~5 Luck Option: +4]
-11,045    0       0       33        *         12        12        *         *         *         0          //Titan Boots [Level: +3~5 Luck Option: +4]
-11,046    0       0       33        *         12        12        *         *         *         0          //Brave Boots [Level: +3~5 Luck Option: +4]
-11,047    0       0       33        *         12        12        *         *         *         0          //Phantom Boots [Level: +3~5 Luck Option: +4]
-11,048    0       0       33        *         12        12        *         *         *         0          //Destroy Boots [Level: +3~5 Luck Option: +4]
-11,049    0       0       33        *         12        12        *         *         *         0          //Seraphim Boots [Level: +3~5 Luck Option: +4]
-11,050    0       0       33        *         12        12        *         *         *         0          //Divine Boots [Level: +3~5 Luck Option: +4]
-11,051    0       0       33        *         12        12        *         *         *         0          //Royal Boots [Level: +3~5 Luck Option: +4]
-11,052    0       0       33        *         12        12        *         *         *         0          //Hades Boots [Level: +3~5 Luck Option: +4]
-11,053    0       0       33        *         12        12        *         *         *         0          //Nao existe [Level: +3~5 Luck Option: +4]
-12,071    0       0       *         *         *         *         *         *         *         0          //Sphere (Di)
-end
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Helm
+08,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Armor
+09,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Pants
+10,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Gloves
+11,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Boots
+07,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Helm
+08,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Armor
+09,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Pants
+10,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Gloves
+11,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Boots
+07,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Helm
+08,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Armor
+09,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Pants
+10,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Gloves
+11,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Boots
+07,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Helm
+08,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Armor
+09,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Pants
+10,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Gloves
+11,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Boots
+08,032	0	0	*	*	16	32	29	*	*	0	//Volcano Armor
+09,032	0	0	*	*	16	32	29	*	*	0	//Volcano Pants
+10,032	0	0	*	*	16	32	29	*	*	0	//Volcano Gloves
+11,032	0	0	*	*	16	32	29	*	*	0	//Volcano Boots
+07,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Helm
+08,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Armor
+09,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Pants
+10,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Gloves
+11,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Boots
+											
+00,022	0	0	*	12	16	32	29	*	*	0	//Bone Blade
+00,023	0	0	*	12	16	32	29	*	*	0	//Explosion Blade
+05,012	0	0	*	*	16	32	29	*	*	0	//Grand Viper Staff
+05,011	0	0	41	*	16	32	29	*	*	0	//Staff of Kundun
+04,021	0	0	*	12	16	32	29	*	*	0	//Sylph Wind Bow
+02,013	0	0	*	12	16	32	29	*	*	0	//Divine Scepter of Archangel
+02,014	0	0	*	12	16	32	29	*	*	0	//Soleil Scepter
+05,019	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Stick
+end											
+											
+6												
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment	
+07,001	0	0	54	*	17	32	*	24	*	0	//Hyon Dragon Helm	
+11,001	0	0	54	*	17	32	*	24	*	0	//Hyon Dragon Boots 	
+10,001	0	0	54	*	17	32	*	24	*	0	//Hyon Dragon Gloves 	
+00,014	0	0	54	12	17	32	*	24	*	0	//Hyon Lightning Sword 	
+												
+07,003	0	0	54	*	17	32	*	24	*	0	//Anubis Legendary Helm 	
+08,003	0	0	54	*	17	32	*	24	*	0	//Anubis Legendary Armor 	
+10,003	0	0	54	*	17	32	*	24	*	0	//Anubis Legendary Gloves 	
+13,021	0	0	54	*	*	32	*	24	*	0	//Anubis Ring of Fire	
+												
+07,005	0	0	54	*	17	32	*	24	*	0	//Warrior Leather Helm 	
+08,005	0	0	54	*	17	32	*	24	*	0	//Warrior Leather Armor 	
+09,005	0	0	54	*	17	32	*	24	*	0	//Warrior Leather Pants 	
+11,005	0	0	54	*	17	32	*	24	*	0	//Warrior Leather Boots 	
+10,005	0	0	54	*	17	32	*	24	*	0	//Warrior Leather Gloves 	
+02,001	0	0	54	12	17	32	*	24	*	0	//Warrior Morning Star 	
+13,008	0	0	54	*	*	32	*	24	*	0	//Warrior Ring of ice	
+												
+08,000	0	0	54	*	17	32	*	24	*	0	//Hyperion Bronze Armor 	
+09,000	0	0	54	*	17	32	*	24	*	0	//Hyperion Bronze Pants 	
+11,000	0	0	54	*	17	32	*	24	*	0	//Hyperion Bronze Boots 	
+												
+08,006	0	0	54	*	17	32	*	24	*	0	//Eplete Scale Armor 	
+09,006	0	0	54	*	17	32	*	24	*	0	//Eplete Scale Pants 	
+07,006	0	0	54	*	17	32	*	24	*	0	//Eplete Scale Helmet 	
+06,009	0	0	54	12	17	32	*	24	*	0	//Eplete Plate Shield 	
+13,012	0	0	54	*	*	32	*	24	*	0	//Eplete Pendant of Lightning	
+												
+08,008	0	0	54	*	17	32	*	24	*	0	//Garuda Brass Armor 	
+09,008	0	0	54	*	17	32	*	24	*	0	//Garuda Brass Pants 	
+10,008	0	0	54	*	17	32	*	24	*	0	//Garuda Brass Gloves 	
+11,008	0	0	54	*	17	32	*	24	*	0	//Garuda Brass Boots 	
+13,013	0	0	54	*	*	32	*	24	*	0	//Garuda Pendant of Fire	
+												
+08,009	0	0	54	*	17	32	*	24	*	0	//Kantata Plate Armor 	
+10,009	0	0	54	*	17	32	*	24	*	0	//Kantata Plate Gloves 	
+11,009	0	0	54	*	17	32	*	24	*	0	//Kantata Plate Boots 	
+13,009	0	0	54	*	*	32	*	24	*	0	//Kantata Ring of Poison	
+13,023	0	0	54	*	*	32	*	24	*	0	//Kantata Ring of Wind	
+												
+08,002	0	0	54	*	17	32	*	24	*	0	//Apollo Pad Armor 	
+09,002	0	0	54	*	17	32	*	24	*	0	//Apollo Pad Pants 	
+07,002	0	0	54	*	17	32	*	24	*	0	//Apollo Pad Helm 	
+10,002	0	0	54	*	17	32	*	24	*	0	//Apollo Pad Gloves 	
+05,000	0	0	54	*	17	32	*	24	*	0	//Appollo skull staff 	
+13,025	0	0	54	*	*	32	*	24	*	0	//Apollo Pendant of Ice	
+13,024	0	0	54	*	*	32	*	24	*	0	//Apollo Ring of Magic	
+												
+08,004	0	0	54	*	17	32	*	24	*	0	//Evis Bone Armor 	
+09,004	0	0	54	*	17	32	*	24	*	0	//Evis Bone Pants 	
+11,004	0	0	54	*	17	32	*	24	*	0	//Evis Bone Boots 	
+13,026	0	0	54	*	*	32	*	24	*	0	//Evis Pendant of Wind	
+												
+07,007	0	0	54	*	17	32	*	24	*	0	//Hera Sphinx Armor 	
+09,007	0	0	54	*	17	32	*	24	*	0	//Hera Sphinx Pants 	
+11,007	0	0	54	*	17	32	*	24	*	0	//Hera Sphinx Boots 	
+10,007	0	0	54	*	17	32	*	24	*	0	//Hera Sphinx Gloves 	
+07,007	0	0	54	*	17	32	*	24	*	0	//Hera Sphinx Helm 	
+06,006	0	0	54	*	17	32	*	24	*	0	//Hera Skull Shield 	
+												
+11,010	0	0	54	*	17	32	*	24	*	0	//Ceto Vine Boots 	
+09,010	0	0	54	*	17	32	*	24	*	0	//Ceto Vine Pants 	
+10,010	0	0	54	*	17	32	*	24	*	0	//Ceto Vine Gloves 	
+07,010	0	0	54	*	17	32	*	24	*	0	//Ceto Vine Helm 	
+00,002	0	0	54	*	17	32	*	24	*	0	//Ceto Rapier Sword 	
+13,022	0	0	54	*	*	32	*	24	*	0	//Ceto Ring of Earth	
+												
+09,011	0	0	54	*	17	32	*	24	*	0	//Gaia Silk Pants 	
+08,011	0	0	54	*	17	32	*	24	*	0	//Gaia Silk Armor 	
+07,011	0	0	54	*	17	32	*	24	*	0	//Gaia Silk Helm 	
+10,011	0	0	54	*	17	32	*	24	*	0	//Gaia Silk Gloves 	
+04,009	0	0	54	12	17	32	*	24	*	0	//Gaia Golden Crossbow 	
+												
+07,012	0	0	54	*	17	32	*	24	*	0	//Odin Wind Helm 	
+08,012	0	0	54	*	17	32	*	24	*	0	//Odin Wind Armor 	
+09,012	0	0	54	*	17	32	*	24	*	0	//Odin Wind Pants 	
+10,012	0	0	54	*	17	32	*	24	*	0	//Odin Wind Gloves 	
+11,012	0	0	54	*	17	32	*	24	*	0	//Odin Wind Boots 	
+												
+08,013	0	0	54	*	17	32	*	24	*	0	//Argo Spirit Armor 	
+09,013	0	0	54	*	17	32	*	24	*	0	//Argo Spirit Pants 	
+10,013	0	0	54	*	17	32	*	24	*	0	//Argo Spirit Gloves 	
+												
+08,014	0	0	54	*	17	32	*	24	*	0	//Gywen Guardian Armor 	
+10,014	0	0	54	*	17	32	*	24	*	0	//Gywen Guardian Gloves 	
+11,014	0	0	54	*	17	32	*	24	*	0	//Gywen Guardian Boots 	
+04,005	0	0	54	12	17	32	*	24	*	0	//Gywen Sliver bow 	
+13,028	0	0	54	*	*	32	*	24	*	0	//Gywen Pendant of ability	
+												
+07,015	0	0	54	*	17	32	*	24	*	0	//Gaion Storm Crow Helm	
+09,015	0	0	54	*	17	32	*	24	*	0	//Gaion Storm Crow Pants	
+08,015	0	0	54	*	17	32	*	24	*	0	//Gaion Storm Crow Armor	
+13,027	0	0	54	*	*	32	*	24	*	0	//Gaion Pendant of Water	
+												
+07,026	0	0	54	*	17	32	*	24	*	0	//Agnis Adamantine Mask	
+08,026	0	0	54	*	17	32	*	24	*	0	//Agnis Adamantine Armor	
+09,026	0	0	54	*	17	32	*	24	*	0	//Agnis Adamantine Pants	
+13,009	0	0	54	*	*	32	*	25	*	0	//Agnis Ring of Poison	
+												
+07,040	0	0	54	*	17	32	*	24	*	0	//Chrono Red Wing Helm	
+09,040	0	0	54	*	17	32	*	24	*	0	//Chrono Red Wing Pants	
+10,040	0	0	54	*	17	32	*	24	*	0	//Chrono Red Wing Gloves	
+13,024	0	0	54	*	*	32	*	25	*	0	//Chrono Ring of Magic	
+												
+//content zablokowany:												
+//07,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Helm
+//08,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Armor 
+//09,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Pants
+//13,022	0	0	54	*	*	32	*	25	*	0	//Vicious Ring of Earth
+												
+//07,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Helm 
+//08,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Armor 
+//09,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Pants
+//11,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Boots
+												
+//07,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Helm
+//08,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Armor 
+//09,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Pants
+//11,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Boots 
+												
+//08,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Armor
+//09,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Pants
+//10,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Gloves
+//13,021	0	0	54	*	*	32	*	25	*	0	//Muren Ring of Fire
+												
+//09,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Pants
+//10,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Gloves
+//11,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Boots
+//13,025	0	0	54	*	*	32	*	25	*	0	//Broy Pendant of Ice
+												
+//07,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Helm
+//08,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Armor
+//10,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Gloves
+//11,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Boots
+end												
+																	
