@@ -17,11 +17,14 @@
 249            00             30         131            148            01             //Guard
 240            00             00         147            145            01             //Safety Guardian
 240            00             00         146            110            03             //Safety Guardian
+240            00             00         5              143            02             //Safety Guardian
 257            00             00         096            129            01             //Shadow Phantom Soldier
 375            00             00         132            161            03             //Chaos Card Master
 257            00             00         132            165            03             //Shadow Phantom Soldier
 257            00             00         132            090            03             //Shadow Phantom Soldier
 257            00             00         170            129            01             //Shadow Phantom Soldier
+257            00             00         7              120            01             //Shadow Phantom Soldier
+131            00             00         5              143            01             //Thompson Kenel
 end
 
 0
@@ -260,7 +263,7 @@ end
 6	0	10	135	213	143	220	-1	6 	// Lich
 14	0	10	135	213	143	220	-1	10 	// Skeleton Warrior
 14	0	3	121	230	121	231	-1	5 	// Skeleton Warrior
-4	0	6	8	134	12	141	-1	8 	// Elite Bull Fighter
+4	0	6	14	127	18	132	-1	8 	// Elite Bull Fighter
 end
 
 //=========================================================================================				
