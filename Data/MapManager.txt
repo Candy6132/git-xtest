@@ -1,5 +1,5 @@
 //Index   NonPK   ViewRange   ExperienceRate   ItemDropRate   ExcItemDropRate   SetItemDropRate   SocketItemDrop   GuildWarEnable   TradeEnable   PShopEnable   DuelEnable   Comment
-0         *       12          100              100            1000              0                 0                1                1             1             1            //Lorencia
+0         2       12          100              100            1000              0                 0                1                1             1             1            //Lorencia
 1         *       10          100              100            1000              0                 0                1                1             1             1            //Dungeon
 2         *       12          100              100            1000              0                 0                1                1             1             1            //Devias
 3         *       12          100              100            1000              0                 0                1                1             1             1            //Noria

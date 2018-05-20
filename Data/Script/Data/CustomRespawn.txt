@@ -1,2 +1,3 @@
 //Map   MapSX   MapSY   MapTX   MapTY   RespawnMap   RespawnMapSX   RespawnMapSY   RespawnMapTX   RespawnMapTY
+0	1	1	80	255	0		8		140		15		147
 end
