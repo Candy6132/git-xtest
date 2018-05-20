@@ -1,60 +1,134 @@
 3
 //Index   DropRate
 0         10000
-1         10000
+1         3000
 2         10000
+3         10000
+4         2000
 end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
-0         5         5000          1000          0             1    1    1    1    1    1
-1         5         5000          1000          0             1    1    1    1    1    1
-2         5         5000          1000          0             1    1    1    1    1    1
+0         5         10000          1000          0             1    1    1    1    1    1
+1         5         10000          1000          0             1    1    1    1    1    1
+2         6         10000          1000          0             1    1    1    1    1    1
+3         6         10000          1000          0             1    1    1    1    1    1
+4         6         10000          1000          0             1    1    1    1    1    1
 end
 
-5
-//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-
-00,017    0       0       27        12        12        *         *         *         *         0          //Dark Breaker [Level: +0~2 Skill Luck]
-00,018    0       0       27        12        12        *         *         *         *         0          //Thunder Blade [Level: +0~2 Skill Luck]
-00,031    0       0       27        12        12        *         *         *         *         0          //Rune Blade [Level: +0~2 Skill Luck]
-00,020    0       0       27        12        12        *         *         *         *         0          //Knight Blade [Level: +0~2 Skill Luck]
-00,021    0       0       27        12        12        *         *         *         *         0          //Dark Reign Blade [Level: +0~2 Skill Luck]
-03,012    0       0       27        12        12        *         *         *         *         0          //Nao existe [Level: +0~2 Skill Luck]
-04,019    0       0       27        12        12        *         *         *         *         0          //Great Reign Crossbow [Level: +0~2 Skill Luck]
-04,020    0       0       27        12        12        *         *         *         *         0          //Arrow Viper Bow [Level: +0~2 Skill Luck]
-05,009    0       0       27        12        12        *         *         *         *         0          //Dragon Soul Staff [Level: +0~2 Skill Luck]
-05,011    0       0       27        12        12        *         *         *         *         0          //Staff of Kundun [Level: +0~2 Skill Luck]
-02,014    0       0       27        12        12        *         *         *         *         0          //Soleil Sceptor [Level: +0~2 Skill Luck]
-00,022    0       0       27        12        12        *         *         *         *         0          //Bone Blade [Level: +0~2 Skill Luck]
-00,023    0       0       27        12        12        *         *         *         *         0          //Explosion Blade [Level: +0~2 Skill Luck]
-04,021    0       0       27        12        12        *         *         *         *         0          //Sylph Wind Bow [Level: +0~2 Skill Luck]
-05,012    0       0       27        12        12        *         *         *         *         0          //Grand Viper Staff [Level: +0~2 Skill Luck]
-00,016    0       0       *         12        12        *         12        *         *         0          //Sword of Destruction [Skill Luck Exc: 1]
-02,010    0       0       *         12        12        *         12        *         *         0          //Great Scepter [Skill Luck Exc: 1]
-03,010    0       0       *         12        12        *         12        *         *         0          //Dragon Spear [Skill Luck Exc: 1]
-04,016    0       0       *         12        12        *         12        *         *         0          //Saint Crossbow [Skill Luck Exc: 1]
-04,017    0       0       *         12        12        *         12        *         *         0          //Celestial Bow [Skill Luck Exc: 1]
-05,008    0       0       *         12        12        *         12        *         *         0          //Staff of Destruction [Skill Luck Exc: 1]
-07,021    0       0       27        *         12        *         *         *         *         0          //Great Dragon Helm [Level: +0~2 Luck]
-07,022    0       0       27        *         12        *         *         *         *         0          //Dark Soul Helm [Level: +0~2 Luck]
-07,028    0       0       27        *         12        *         *         *         *         0          //Dark Master Mask [Level: +0~2 Luck]
-08,017    0       0       27        *         12        *         *         *         *         0          //Dark Phoenix Armor [Level: +0~2 Luck]
-08,020    0       0       27        *         12        *         *         *         *         0          //Thunder Hawk Armor [Level: +0~2 Luck]
-08,021    0       0       27        *         12        *         *         *         *         0          //Great Dragon Armor [Level: +0~2 Luck]
-08,022    0       0       27        *         12        *         *         *         *         0          //Dark Soul Armor [Level: +0~2 Luck]
-08,023    0       0       27        *         12        *         *         *         *         0          //Hurricane Armor [Level: +0~2 Luck]
-08,024    0       0       27        *         12        *         *         *         *         0          //Red Sprit Armor [Level: +0~2 Luck]
-08,028    0       0       27        *         12        *         *         *         *         0          //Dark Master Armor [Level: +0~2 Luck]
-08,030    0       0       27        12        12        *         *         *         *         0          //Venom Mist Armor [Level: +0~2 Skill Luck]
-08,031    0       0       27        12        12        *         *         *         *         0          //Sylphid Ray Armor [Level: +0~2 Skill Luck]
-08,032    0       0       27        12        12        *         *         *         *         0          //Volcano Armor [Level: +0~2 Skill Luck]
-08,033    0       0       27        12        12        *         *         *         *         0          //Sunlight Armor [Level: +0~2 Skill Luck]
-09,021    0       0       27        *         12        *         *         *         *         0          //Great Dragon Pants [Level: +0~2 Luck]
-09,022    0       0       27        *         12        *         *         *         *         0          //Dark Soul Pants [Level: +0~2 Luck]
-09,023    0       0       27        *         12        *         *         *         *         0          //Hurricane Pants [Level: +0~2 Luck]
-09,024    0       0       27        *         12        *         *         *         *         0          //Red Spirit Pants [Level: +0~2 Luck]
-09,028    0       0       27        *         12        *         *         *         *         0          //Dark Master Pants [Level: +0~2 Luck]
-10,023    0       0       27        *         12        *         *         *         *         0          //Hurricane Gloves [Level: +0~2 Luck]
-11,023    0       0       27        *         12        *         *         *         *         0          //Hurricane Boots [Level: +0~2 Luck]
-end
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+08,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Armor
+08,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Armor
+08,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Armor
+08,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Armor
+08,032	0	0	*	*	16	32	29	*	*	0	//Volcano Armor
+08,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Armor
+											
+00,022	0	0	*	12	16	32	29	*	*	0	//Bone Blade
+00,023	0	0	*	12	16	32	29	*	*	0	//Explosion Blade
+05,012	0	0	*	*	16	32	29	*	*	0	//Grand Viper Staff
+05,011	0	0	41	*	16	32	29	*	*	0	//Staff of Kundun
+04,021	0	0	*	12	16	32	29	*	*	0	//Sylph Wind Bow
+02,013	0	0	*	12	16	32	29	*	*	0	//Divine Scepter of Archangel
+02,014	0	0	*	12	16	32	29	*	*	0	//Soleil Scepter
+05,019	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Stick
+end											
+											
+6											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,001	0	0	54	*	17	32	*	24	*	0	//Hyon Dragon Armor 
+11,001	0	0	54	*	17	32	*	24	*	0	//Hyon Dragon Boots 
+10,001	0	0	54	*	17	32	*	24	*	0	//Hyon Dragon Gloves 
+00,001	0	0	54	12	17	32	*	24	*	0	//Hyon Lightning Sword 
+											
+07,003	0	0	54	*	17	32	*	24	*	0	//Anubis Legendary Helm 
+08,003	0	0	54	*	17	32	*	24	*	0	//Anubis Legendary Armor 
+10,003	0	0	54	*	17	32	*	24	*	0	//Anubis Legendary Gloves 
+13,021	0	0	54	*	*	32	*	24	*	0	//Anubis Ring of Fire
+											
+07,005	0	0	54	*	17	32	*	24	*	0	//Warrior Leather Helm 
+08,005	0	0	54	*	17	32	*	24	*	0	//Warrior Leather Armor 
+09,005	0	0	54	*	17	32	*	24	*	0	//Warrior Leather Pants 
+11,005	0	0	54	*	17	32	*	24	*	0	//Warrior Leather Boots 
+10,005	0	0	54	*	17	32	*	24	*	0	//Warrior Leather Gloves 
+02,001	0	0	54	12	17	32	*	24	*	0	//Warrior Morning Star 
+13,008	0	0	54	*	*	32	*	24	*	0	//Warrior Ring of ice
+											
+08,000	0	0	54	*	17	32	*	24	*	0	//Hyperion Bronze Armor 
+09,000	0	0	54	*	17	32	*	24	*	0	//Hyperion Bronze Pants 
+11,000	0	0	54	*	17	32	*	24	*	0	//Hyperion Bronze Boots 
+											
+08,006	0	0	54	*	17	32	*	24	*	0	//Eplete Scale Armor 
+09,006	0	0	54	*	17	32	*	24	*	0	//Eplete Scale Pants 
+07,006	0	0	54	*	17	32	*	24	*	0	//Eplete Scale Helmet 
+06,009	0	0	54	12	17	32	*	24	*	0	//Eplete Plate Shield 
+13,012	0	0	54	*	*	32	*	24	*	0	//Eplete Pendant of Lightning
+											
+08,008	0	0	54	*	17	32	*	24	*	0	//Garuda Brass Armor 
+09,008	0	0	54	*	17	32	*	24	*	0	//Garuda Brass Pants 
+10,008	0	0	54	*	17	32	*	24	*	0	//Garuda Brass Gloves 
+11,008	0	0	54	*	17	32	*	24	*	0	//Garuda Brass Boots 
+13,013	0	0	54	*	*	32	*	24	*	0	//Garuda Pendant of Fire
+											
+08,009	0	0	54	*	17	32	*	24	*	0	//Kantata Plate Armor 
+10,009	0	0	54	*	17	32	*	24	*	0	//Kantata Plate Gloves 
+11,009	0	0	54	*	17	32	*	24	*	0	//Kantata Plate Boots 
+13,009	0	0	54	*	*	32	*	24	*	0	//Kantata Ring of Poison
+13,023	0	0	54	*	*	32	*	24	*	0	//Kantata Ring of Wind
+											
+08,002	0	0	54	*	17	32	*	24	*	0	//Apollo Pad Armor 
+09,002	0	0	54	*	17	32	*	24	*	0	//Apollo Pad Pants 
+07,002	0	0	54	*	17	32	*	24	*	0	//Apollo Pad Helm 
+10,002	0	0	54	*	17	32	*	24	*	0	//Apollo Pad Gloves 
+05,000	0	0	54	*	17	32	*	24	*	0	//Appollo skull staff 
+13,025	0	0	54	*	*	32	*	24	*	0	//Apollo Pendant of Ice
+13,024	0	0	54	*	*	32	*	24	*	0	//Apollo Ring of Magic
+											
+08,004	0	0	54	*	17	32	*	24	*	0	//Evis Bone Armor 
+09,004	0	0	54	*	17	32	*	24	*	0	//Evis Bone Pants 
+11,004	0	0	54	*	17	32	*	24	*	0	//Evis Bone Boots 
+13,026	0	0	54	*	*	32	*	24	*	0	//Evis Pendant of Wind
+											
+07,007	0	0	54	*	17	32	*	24	*	0	//Hera Sphinx Armor 
+09,007	0	0	54	*	17	32	*	24	*	0	//Hera Sphinx Pants 
+11,007	0	0	54	*	17	32	*	24	*	0	//Hera Sphinx Boots 
+10,007	0	0	54	*	17	32	*	24	*	0	//Hera Sphinx Gloves 
+07,007	0	0	54	*	17	32	*	24	*	0	//Hera Sphinx Helm 
+06,006	0	0	54	*	17	32	*	24	*	0	//Hera Skull Shield 
+											
+11,010	0	0	54	*	17	32	*	24	*	0	//Ceto Vine Boots 
+09,010	0	0	54	*	17	32	*	24	*	0	//Ceto Vine Pants 
+10,010	0	0	54	*	17	32	*	24	*	0	//Ceto Vine Gloves 
+07,010	0	0	54	*	17	32	*	24	*	0	//Ceto Vine Helm 
+00,002	0	0	54	*	17	32	*	24	*	0	//Ceto Rapier Sword 
+13,022	0	0	54	*	*	32	*	24	*	0	//Ceto Ring of Earth
+											
+09,011	0	0	54	*	17	32	*	24	*	0	//Gaia Silk Pants 
+08,011	0	0	54	*	17	32	*	24	*	0	//Gaia Silk Armor 
+07,011	0	0	54	*	17	32	*	24	*	0	//Gaia Silk Helm 
+10,011	0	0	54	*	17	32	*	24	*	0	//Gaia Silk Gloves 
+04,009	0	0	54	12	17	32	*	24	*	0	//Gaia Golden Crossbow 
+											
+07,012	0	0	54	*	17	32	*	24	*	0	//Odin Wind Helm 
+08,012	0	0	54	*	17	32	*	24	*	0	//Odin Wind Armor 
+09,012	0	0	54	*	17	32	*	24	*	0	//Odin Wind Pants 
+10,012	0	0	54	*	17	32	*	24	*	0	//Odin Wind Gloves 
+11,012	0	0	54	*	17	32	*	24	*	0	//Odin Wind Boots 
+											
+08,013	0	0	54	*	17	32	*	24	*	0	//Argo Spirit Armor 
+09,013	0	0	54	*	17	32	*	24	*	0	//Argo Spirit Pants 
+10,013	0	0	54	*	17	32	*	24	*	0	//Argo Spirit Gloves 
+											
+08,014	0	0	54	*	17	32	*	24	*	0	//Gywen Guardian Armor 
+10,014	0	0	54	*	17	32	*	24	*	0	//Gywen Guardian Gloves 
+11,014	0	0	54	*	17	32	*	24	*	0	//Gywen Guardian Boots 
+04,005	0	0	54	12	17	32	*	24	*	0	//Gywen Sliver bow 
+13,028	0	0	54	*	*	32	*	24	*	0	//Gywen Pendant of ability
+											
+07,015	0	0	54	*	17	32	*	24	*	0	//Gaion Storm Crow Helm
+09,015	0	0	54	*	17	32	*	24	*	0	//Gaion Storm Crow Pants
+08,015	0	0	54	*	17	32	*	24	*	0	//Gaion Storm Crow Armor
+13,027	0	0	54	*	*	32	*	24	*	0	//Gaion Pendant of Water
+end											
+																			

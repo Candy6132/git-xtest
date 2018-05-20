@@ -8,39 +8,26 @@ end
 0         5         10000         1000          0             1    1    1    1    1    1
 end
 
-5
-//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-
-00,017    0       0       27        12        *         *         *         *         *         0          //Dark Breaker [Level: +0~2 Skill]
-00,018    0       0       27        12        *         *         *         *         *         0          //Thunder Blade [Level: +0~2 Skill]
-00,031    0       0       27        12        *         *         *         *         *         0          //Rune Blade [Level: +0~2 Skill]
-00,020    0       0       27        12        *         *         *         *         *         0          //Knight Blade [Level: +0~2 Skill]
-00,021    0       0       27        12        *         *         *         *         *         0          //Dark Reign Blade [Level: +0~2 Skill]
-03,012    0       0       27        12        *         *         *         *         *         0          //Nao existe [Level: +0~2 Skill]
-04,019    0       0       27        12        *         *         *         *         *         0          //Great Reign Crossbow [Level: +0~2 Skill]
-04,020    0       0       27        12        *         *         *         *         *         0          //Arrow Viper Bow [Level: +0~2 Skill]
-05,009    0       0       27        12        *         *         *         *         *         0          //Dragon Soul Staff [Level: +0~2 Skill]
-05,011    0       0       27        12        *         *         *         *         *         0          //Staff of Kundun [Level: +0~2 Skill]
-00,016    0       0       *         12        12        *         12        *         *         0          //Sword of Destruction [Skill Luck Exc: 1]
-02,010    0       0       *         12        12        *         12        *         *         0          //Great Scepter [Skill Luck Exc: 1]
-03,010    0       0       *         12        12        *         12        *         *         0          //Dragon Spear [Skill Luck Exc: 1]
-04,016    0       0       *         12        12        *         12        *         *         0          //Saint Crossbow [Skill Luck Exc: 1]
-04,017    0       0       *         12        12        *         12        *         *         0          //Celestial Bow [Skill Luck Exc: 1]
-05,009    0       0       *         12        12        *         12        *         *         0          //Dragon Soul Staff [Skill Luck Exc: 1]
-05,008    0       0       *         12        12        *         12        *         *         0          //Staff of Destruction [Skill Luck Exc: 1]
-07,021    0       0       27        *         12        *         *         *         *         0          //Great Dragon Helm [Level: +0~2 Luck]
-07,022    0       0       27        *         12        *         *         *         *         0          //Dark Soul Helm [Level: +0~2 Luck]
-07,028    0       0       27        *         12        *         *         *         *         0          //Dark Master Mask [Level: +0~2 Luck]
-07,024    0       0       27        *         12        *         *         *         *         0          //Red Spirit Helm [Level: +0~2 Luck]
-09,021    0       0       27        *         12        *         *         *         *         0          //Great Dragon Pants [Level: +0~2 Luck]
-09,022    0       0       27        *         12        *         *         *         *         0          //Dark Soul Pants [Level: +0~2 Luck]
-09,023    0       0       27        *         12        *         *         *         *         0          //Hurricane Pants [Level: +0~2 Luck]
-09,024    0       0       27        *         12        *         *         *         *         0          //Red Spirit Pants [Level: +0~2 Luck]
-09,028    0       0       27        *         12        *         *         *         *         0          //Dark Master Pants [Level: +0~2 Luck]
-10,021    0       0       27        *         12        *         *         *         *         0          //Great Dragon Gloves [Level: +0~2 Luck]
-10,024    0       0       27        *         12        *         *         *         *         0          //Red Spirit Gloves [Level: +0~2 Luck]
-10,023    0       0       27        *         12        *         *         *         *         0          //Hurricane Gloves [Level: +0~2 Luck]
-11,022    0       0       27        *         12        *         *         *         *         0          //Dark Soul Boots [Level: +0~2 Luck]
-11,023    0       0       27        *         12        *         *         *         *         0          //Hurricane Boots [Level: +0~2 Luck]
-11,028    0       0       27        *         12        *         *         *         *         0          //Dark Master Boots [Level: +0~2 Luck]
-end
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Helm
+09,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Pants
+07,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Helm
+09,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Pants
+07,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Helm
+09,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Pants
+07,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Helm
+09,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Pants
+09,032	0	0	*	*	16	32	29	*	*	0	//Volcano Pants
+07,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Helm
+09,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Pants
+											
+00,022	0	0	*	12	15	32	29	*	*	0	//Bone Blade
+00,023	0	0	*	12	15	32	29	*	*	0	//Explosion Blade
+05,012	0	0	*	*	15	32	29	*	*	0	//Grand Viper Staff
+04,021	0	0	*	12	15	32	29	*	*	0	//Sylph Wind Bow
+02,013	0	0	*	12	15	32	29	*	*	0	//Divine Scepter of Archangel
+02,014	0	0	*	12	15	32	29	*	*	0	//Soleil Scepter
+05,019	0	0	*	*	15	32	29	*	*	0	//Storm Blitz Stick
+end											
+										

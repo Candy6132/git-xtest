@@ -5,73 +5,73 @@ end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
-0         5         10000         1000          0             1    1    1    1    1    1
+0         5         2500         1000          0             1    1    1    1    1    1
+0         6         7500         1000          0             1    1    1    1    1    1
 end
 
-5
-//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-
-00,017    0       0       35        12        12        12        *         *         *         0          //Dark Breaker [Level: +4~6 Skill Luck Option: +4]
-00,018    0       0       35        12        12        12        *         *         *         0          //Thunder Blade [Level: +4~6 Skill Luck Option: +4]
-02,011    0       0       35        12        12        12        *         *         *         0          //Lord Scepter [Level: +4~6 Skill Luck Option: +4]
-04,019    0       0       35        12        12        12        *         *         *         0          //Great Reign Crossbow [Level: +4~6 Skill Luck Option: +4]
-05,009    0       0       35        12        12        12        *         *         *         0          //Dragon Soul Staff [Level: +4~6 Skill Luck Option: +4]
-00,014    0       0       *         12        *         *         12        *         *         0          //Lighting Sword [Skill Exc: 1]
-05,005    0       0       *         12        *         *         12        *         *         0          //Legendary Staff [Skill Exc: 1]
-04,014    0       0       *         12        *         *         12        *         *         0          //Aquagold Crossbow [Skill Exc: 1]
-04,016    0       0       *         12        *         *         12        *         *         0          //Saint Crossbow [Skill Exc: 1]
-02,009    0       0       *         12        *         *         12        *         *         0          //Master Scepter [Skill Exc: 1]
-02,004    0       0       *         12        *         *         12        *         *         0          //Crystal Morning Star [Skill Exc: 1]
-02,005    0       0       *         12        *         *         12        *         *         0          //Crystal Sword [Skill Exc: 1]
-06,015    0       0       35        12        *         12        *         *         *         0          //Grand Soul Shield [Level: +4~6 Skill Option: +4]
-06,012    0       0       *         12        *         *         12        *         *         0          //Bronze Shield [Skill Exc: 1]
-06,016    0       0       *         12        *         *         12        *         *         0          //Elemental Shield [Skill Exc: 1]
-07,034    0       0       35        *         12        12        *         *         *         0          //Ashcrow Helm [Level: +4~6 Luck Option: +4]
-09,034    0       0       35        *         12        12        *         *         *         0          //Ashcrow Pants [Level: +4~6 Luck Option: +4]
-10,034    0       0       35        *         12        12        *         *         *         0          //Ashcrow Gloves [Level: +4~6 Luck Option: +4]
-11,034    0       0       35        *         12        12        *         *         *         0          //Ashcrow Boots [Level: +4~6 Luck Option: +4]
-07,035    0       0       35        *         12        12        *         *         *         0          //Eclipse Helm [Level: +4~6 Luck Option: +4]
-09,035    0       0       35        *         12        12        *         *         *         0          //Eclipse Pants [Level: +4~6 Luck Option: +4]
-10,035    0       0       35        *         12        12        *         *         *         0          //Eclipse Gloves [Level: +4~6 Luck Option: +4]
-11,035    0       0       35        *         12        12        *         *         *         0          //Eclipse Boots [Level: +4~6 Luck Option: +4]
-07,036    0       0       35        *         12        12        *         *         *         0          //Iris Helm [Level: +4~6 Luck Option: +4]
-09,036    0       0       35        *         12        12        *         *         *         0          //Iris Pants [Level: +4~6 Luck Option: +4]
-10,036    0       0       35        *         12        12        *         *         *         0          //Iris Gloves [Level: +4~6 Luck Option: +4]
-11,036    0       0       35        *         12        12        *         *         *         0          //Iris Boots [Level: +4~6 Luck Option: +4]
-09,037    0       0       35        *         12        12        *         *         *         0          //Valiant Pants [Level: +4~6 Luck Option: +4]
-10,037    0       0       35        *         12        12        *         *         *         0          //Valiant Gloves [Level: +4~6 Luck Option: +4]
-11,037    0       0       35        *         12        12        *         *         *         0          //Valiant Boots [Level: +4~6 Luck Option: +4]
-07,038    0       0       35        *         12        12        *         *         *         0          //Glorious Mask [Level: +4~6 Luck Option: +4]
-09,038    0       0       35        *         12        12        *         *         *         0          //Glorious Pants [Level: +4~6 Luck Option: +4]
-10,038    0       0       35        *         12        12        *         *         *         0          //Glorious Gloves [Level: +4~6 Luck Option: +4]
-11,038    0       0       35        *         12        12        *         *         *         0          //Glorious Boots [Level: +4~6 Luck Option: +4]
-08,017    0       0       35        *         12        12        *         *         *         0          //Dark Phoenix Armor [Level: +4~6 Luck Option: +4]
-09,017    0       0       35        *         12        12        *         *         *         0          //Dark Phoenix Pants [Level: +4~6 Luck Option: +4]
-08,018    0       0       35        *         12        12        *         *         *         0          //Grand Soul Armor [Level: +4~6 Luck Option: +4]
-09,018    0       0       35        *         12        12        *         *         *         0          //Grand Soul Pants [Level: +4~6 Luck Option: +4]
-08,019    0       0       35        *         12        12        *         *         *         0          //Divine Armor [Level: +4~6 Luck Option: +4]
-09,019    0       0       35        *         12        12        *         *         *         0          //Divine Pants [Level: +4~6 Luck Option: +4]
-08,020    0       0       35        *         12        12        *         *         *         0          //Thunder Hawk Armor [Level: +4~6 Luck Option: +4]
-09,020    0       0       35        *         12        12        *         *         *         0          //Thunder Hawk Pants [Level: +4~6 Luck Option: +4]
-08,027    0       0       35        *         12        12        *         *         *         0          //Dark Steel Armor [Level: +4~6 Luck Option: +4]
-09,027    0       0       35        *         12        12        *         *         *         0          //Dark Steel Pants [Level: +4~6 Luck Option: +4]
-07,016    0       0       *         *         *         *         12        *         *         0          //Black Dragon Helm [Exc: 1]
-09,016    0       0       *         *         *         *         12        *         *         0          //Black Dragon Pants [Exc: 1]
-10,016    0       0       *         *         *         *         12        *         *         0          //Black Dragon Gloves [Exc: 1]
-11,016    0       0       *         *         *         *         12        *         *         0          //Black Dragon Boots [Exc: 1]
-10,017    0       0       *         *         *         *         12        *         *         0          //Dark Phoenix Gloves [Exc: 1]
-11,017    0       0       *         *         *         *         12        *         *         0          //Dark Phoenix Boots [Exc: 1]
-09,003    0       0       *         *         *         *         12        *         *         0          //Legendary Pants [Exc: 1]
-08,003    0       0       *         *         *         *         12        *         *         0          //Legendary Armor [Exc: 1]
-10,018    0       0       *         *         *         *         12        *         *         0          //Grand Soul Gloves [Exc: 1]
-11,018    0       0       *         *         *         *         12        *         *         0          //Grand Soul Boots [Exc: 1]
-08,014    0       0       *         *         *         *         12        *         *         0          //Guardian Armor [Exc: 1]
-09,014    0       0       *         *         *         *         12        *         *         0          //Guardian Pants [Exc: 1]
-10,019    0       0       *         *         *         *         12        *         *         0          //Divine Gloves [Exc: 1]
-11,019    0       0       *         *         *         *         12        *         *         0          //Divine Boots [Exc: 1]
-10,015    0       0       *         *         *         *         12        *         *         0          //Storm Crow Gloves [Exc: 1]
-11,015    0       0       *         *         *         *         12        *         *         0          //Storm Crow Boots [Exc: 1]
-10,026    0       0       *         *         *         *         12        *         *         0          //Adamantine Gloves [Exc: 1]
-09,026    0       0       *         *         *         *         12        *         *         0          //Adamantine Pants [Exc: 1]
-11,026    0       0       *         *         *         *         12        *         *         0          //Adamantine Boots [Exc: 1]
-end
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+10,021	0	0	*	*	16	32	29	*	*	0	//Red Phoenix Gloves
+11,021	0	0	*	*	16	32	29	*	*	0	//Red Phoenix Boots
+10,022	0	0	*	*	16	32	29	*	*	0	//Dark Side Gloves
+11,022	0	0	*	*	16	32	29	*	*	0	//Dark Side Boots
+10,024	0	0	*	*	16	32	29	*	*	0	//Nature Gloves
+11,024	0	0	*	*	16	32	29	*	*	0	//Nature Boots
+10,028	0	0	*	*	16	32	29	*	*	0	//Dark Master Gloves
+11,028	0	0	*	*	16	32	29	*	*	0	//Dark Master Boots
+10,023	0	0	*	*	16	32	29	*	*	0	//Hurricane Gloves
+11,023	0	0	*	*	16	32	29	*	*	0	//Hurricane Boots
+10,042	0	0	*	*	16	32	29	*	*	0	//Demonic Gloves
+11,042	0	0	*	*	16	32	29	*	*	0	//Demonic Boots
+											
+00,024	0	0	*	13	14	32	29	*	*	0	//Daybreak
+00,021	0	0	*	13	14	32	29	*	*	0	//Dark Reign Blade
+00,025	0	0	*	13	14	32	29	*	*	0	//Sword Dancer
+05,013	0	0	*	*	14	32	29	*	*	0	//Platina Staff
+04,022	0	0	*	13	14	32	29	*	*	0	//Albatross Bow
+04,020	0	0	*	13	14	32	29	*	*	0	//Arrow Viper Bow
+02,012	0	0	*	13	14	32	29	*	*	0	//Great Lord Scepter
+00,019	0	0	*	13	14	32	29	*	*	0	//Divine Sword of Archangel
+05,018	0	0	*	*	14	32	29	*	*	0	//Demonic Stick
+end											
+											
+6											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,029	0	0	41	*	13	32	*	*	*	0	//Dragon Knight Helm
+08,029	0	0	41	*	13	32	*	*	*	0	//Dragon Knight Armor
+09,029	0	0	41	*	13	32	*	*	*	0	//Dragon Knight Pants
+10,029	0	0	41	*	13	32	*	*	*	0	//Dragon Knight Gloves
+11,029	0	0	41	*	13	32	*	*	*	0	//Dragon Knight Boots
+07,030	0	0	41	*	13	32	*	*	*	0	//Venom Mist Helm
+08,030	0	0	41	*	13	32	*	*	*	0	//Venom Mist Armor
+09,030	0	0	41	*	13	32	*	*	*	0	//Venom Mist Pants
+10,030	0	0	41	*	13	32	*	*	*	0	//Venom Mist Gloves
+11,030	0	0	41	*	13	32	*	*	*	0	//Venom Mist Boots
+07,031	0	0	41	*	13	32	*	*	*	0	//Sylphid Ray Helm
+08,031	0	0	41	*	13	32	*	*	*	0	//Sylphid Ray Armor
+09,031	0	0	41	*	13	32	*	*	*	0	//Sylphid Ray Pants
+10,031	0	0	41	*	13	32	*	*	*	0	//Sylphid Ray Gloves
+11,031	0	0	41	*	13	32	*	*	*	0	//Sylphid Ray Boots
+07,033	0	0	41	*	13	32	*	*	*	0	//Sunlight Helm
+08,033	0	0	41	*	13	32	*	*	*	0	//Sunlight Armor
+09,033	0	0	41	*	13	32	*	*	*	0	//Sunlight Pants
+10,033	0	0	41	*	13	32	*	*	*	0	//Sunlight Gloves
+11,033	0	0	41	*	13	32	*	*	*	0	//Sunlight Boots
+08,032	0	0	41	*	13	32	*	*	*	0	//Volcano Armor
+09,032	0	0	41	*	13	32	*	*	*	0	//Volcano Pants
+10,032	0	0	41	*	13	32	*	*	*	0	//Volcano Gloves
+11,032	0	0	41	*	13	32	*	*	*	0	//Volcano Boots
+07,043	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Helm
+08,043	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Armor
+09,043	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Pants
+10,043	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Gloves
+11,043	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Boots
+											
+00,022	0	0	41	12	13	32	*	*	*	0	//Bone Blade
+00,023	0	0	41	12	13	32	*	*	*	0	//Explosion Blade
+05,012	0	0	41	*	13	32	*	*	*	0	//Grand Viper Staff
+04,021	0	0	41	12	13	32	*	*	*	0	//Sylph Wind Bow
+02,013	0	0	41	12	13	32	*	*	*	0	//Divine Scepter of Archangel
+05,019	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Stick
+end											
+																					
