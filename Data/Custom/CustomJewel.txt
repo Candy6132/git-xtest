@@ -1,6 +1,6 @@
 0
 //Index   ItemIndex   MinItemLevel   MaxItemLevel   MaxItemOption1   MaxItemOption2   MinItemOption3   MaxItemOption3   MinItemNewOption   MaxItemNewOption   MaxItemSetOption   MaxItem380Option   MinItemSocketOption   MaxItemSocketOption   EnableSlotWeapon   EnableSlotArmor   EnableSlotWing   SuccessRate_AL0   SuccessRate_AL1   SuccessRate_AL2   SuccessRate_AL3   SalePrice   ModelName
-0	    7269	   *		*		*		*		*			*		*		*			*		*		*			*			1		1			1	    100			100		100		100	       15000000		"JewelOfLight.bmd"	//Jewel of Luck
+0	    7269	   *		*		*		*		*			*		*		*			*		*		*			*			1		1			1	    100			100		100		100	       15000000		"JewelOfLight"	//Jewel of Luck
 end
 
 1
