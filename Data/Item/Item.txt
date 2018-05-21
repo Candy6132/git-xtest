@@ -709,6 +709,7 @@ end
 98       *      0       2       2        1            0            0          "Scroll of Strength"                 0       0
 99       *      0       1       1        1            0            0          "Christmas Firecracker"              0       0
 100      *      0       1       1        1            0            0          "Lucky Coin"                         0       0
+101      *      0       1       1        1            0            0          "Jewel of Luck"                      0       120
 end
 
 15
