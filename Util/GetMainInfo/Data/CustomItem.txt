@@ -1,2 +1,3 @@
 //Index   ColorR   ColorG   ColorB   ModelName
+00,032		255	255	255	"Sword33"
 end

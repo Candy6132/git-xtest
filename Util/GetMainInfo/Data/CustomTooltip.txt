@@ -1,15 +1,19 @@
 0
 //ItemIndex   FontColor
+00,032	3
 end
 
 1
 //ItemIndex   FontValue   FontColor   Text
+00,032	0	3	"Game Master Sword1"
 end
 
 2
 //ItemIndex   FontValue   FontColor   Text
+00,032	0	3	"Game Master Sword2"
 end
 
 3
 //ItemIndex   FontValue   FontColor   Text
+00,032	0	3	"Game Master Sword3"
 end
