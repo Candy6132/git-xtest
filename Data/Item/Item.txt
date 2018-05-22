@@ -30,7 +30,6 @@
 27       0      22      1       4        0            0            0          "Sword Breaker"                      133     91          99          35            90           0                 0                 1          53            176            0           0             0               0      0       2       0       0       0       0
 28       0      56      1       4        0            0            0          "Rune Bastard Sword"                 139     98          122         45            90           0                 109               1          91            73             17          0             0               0      0       0       0       1       0       0
 31       0      56      2       4        1            1            1          "Rune Blade"                         100     104         130         35            93           0                 104               0          135           62             9           0             0               0      0       0       0       1       0       0
-32       0      23      2       3        1            1            1          "Game Master Sword"                  200     250         255         50            255          0                 255               1          300           300            300         0             0               0      1       1       1       1       1       1
 end
 
 1
@@ -711,7 +710,7 @@ end
 98       *      0       2       2        1            0            0          "Scroll of Strength"                 0       0
 99       *      0       1       1        1            0            0          "Christmas Firecracker"              0       0
 100      *      0       1       1        1            0            0          "Lucky Coin"                         0       0
-101      *      0       1       1        1            0            0          "Jewel of Luck"                      0       120
+101      *      0       1       1        1            0            0          "Jewel of Luck"                      80      0
 end
 
 15

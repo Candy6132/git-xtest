@@ -1,23 +1,19 @@
 0
 //ItemIndex   FontColor
-32	3
 7269	3
 end
 
 1
 //ItemIndex   FontValue   FontColor   Text
-32	0	3	"Game Master Sword"
 7269	0	3	"Jewel of Luck"
 end
 
 2
 //ItemIndex   FontValue   FontColor   Text
-32	0	3	"Game Master Sword"
 7269	0	3	"Jewel of Luck"
 end
 
 3
 //ItemIndex   FontValue   FontColor   Text
-32	0	3	"Game Master Sword"
 7269	0	3	"Jewel of Luck"
 end
