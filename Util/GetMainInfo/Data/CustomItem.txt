@@ -1,3 +1,6 @@
 //Index   ColorR   ColorG   ColorB   ModelName
-7269		0	0	0	"Jewel102"
+7269		255	255	100	"JewelofLuck"
+7270		255	255	100	"JewelofSkill"
+7271		255	255	100	"JewelofExcellent"
+7272		255	255	100	"JewelofAncient"
 end

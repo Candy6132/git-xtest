@@ -721,6 +721,9 @@ end
 99       *      0       1       1        1            0            0          "Christmas Firecracker"              0       0
 100      *      0       1       1        1            0            0          "Lucky Coin"                         0       0
 101      *      0       1       1        1            0            0          "Jewel of Luck"                      80      0
+102      *      0       1       1        1            0            0          "Jewel of Skill"                     100     0
+103      *      0       1       1        1            0            0          "Excellent Stone"                    120     0
+104      *      0       1       1        1            0            0          "Jewel of Ancient"                   140     0
 end
 
 15
