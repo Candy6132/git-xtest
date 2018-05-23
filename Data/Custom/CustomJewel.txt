@@ -4,7 +4,6 @@
 1	    7270	   *		*		0		*		*			*		*		*			*		*		*			*			1		0			0	    100			100		100		100	       35000000		"JewelofSkill"		//Jewel of Skill
 2	    7271	   *		*		*		*		*			*		*		2			0		*		*			*			1		1			0	    100			100		100		100	       80000000		"JewelofExcellent"	//Jewel of Excellent
 3	    7272	   *		*		*		*		*			*		*		0			1		*		*			*			1		1			0	    100			100		100		100	       100000000	"JewelofAncient"	//Jewel of Ancient
-4	    7272	   13		*		*		*		7			*		*		0			1		*		*			*			1		1			0	    0			0		0		0	       100000000	"JewelofAncient"	//Jewel of Ancient
 end
 
 1
@@ -13,7 +12,6 @@ end
 1	   0		1	0	0	0		0		0		0
 2	   0		0	0	0	1		0		0		0
 3	   0		0	0	0	0		11		0		0
-4	   0		0	0	0	0		0		0		0
 end
 
 2
@@ -22,5 +20,4 @@ end
 1	   0		0	0	0	0		0		0		0
 2	   0		0	0	0	0		0		0		0
 3	   0		0	0	0	0		0		0		0
-4	   13		0	0	7	0		0		0		0
 end
