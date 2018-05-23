@@ -98,7 +98,7 @@ CommandWareNumber_AL3 = 6
 ; Reset Command Settings
 ;==================================================
 CommandResetSwitch = 1
-CommandResetType = 0			//Test
+CommandResetType = 1
 CommandResetEnable_AL0 = 1
 CommandResetEnable_AL1 = 1
 CommandResetEnable_AL2 = 1
@@ -135,10 +135,10 @@ CommandResetCount_AL0 = 1
 CommandResetCount_AL1 = 1
 CommandResetCount_AL2 = 1
 CommandResetCount_AL3 = 1	
-CommandResetLimit_AL0 = 40
-CommandResetLimit_AL1 = 40
-CommandResetLimit_AL2 = 40
-CommandResetLimit_AL3 = 40
+CommandResetLimit_AL0 = 0
+CommandResetLimit_AL1 = 0
+CommandResetLimit_AL2 = 0
+CommandResetLimit_AL3 = 0
 CommandResetLimitDay_AL0 = 10000
 CommandResetLimitDay_AL1 = 10000
 CommandResetLimitDay_AL2 = 10000
