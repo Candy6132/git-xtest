@@ -8,24 +8,24 @@ end
 
 1
 //ItemIndex   FontValue   FontColor   Text
-7269	0	0	"Add Luck option to your item."
-7270	0	0	"Add Skill to your weapon."
-7271	0	2	"Add random Excellent Option to your item."
-7272	0	0	"Creates Ancient Option to your item."
+7269	0	0	"Adds Luck Option to your item"
+7270	0	0	"Adds Skill to your weapon"
+7271	0	4	"Adds random Excellent Option to your item"
+7272	0	0	"Makes Ancient from your item"
 end
 
 2
 //ItemIndex   FontValue   FontColor   Text
-7269	0	0	"Add Luck option to your item."
-7270	0	0	"Add Skill to your weapon."
-7271	0	2	"Add random Excellent Option to your item."
-7272	0	0	"Creates Ancient Option to your item."
+7269	0	0	"Adds Luck Option to your item"
+7270	0	0	"Adds Skill to your weapon"
+7271	0	4	"Adds random Excellent Option to your item"
+7272	0	0	"Makes Ancient from your item"
 end
 
 3
 //ItemIndex   FontValue   FontColor   Text
-7269	0	0	"Add Luck option to your item."
-7270	0	0	"Add Skill to your weapon."
-7271	0	2	"Add random Excellent Option to your item."
-7272	0	0	"Creates Ancient Option to your item."
+7269	0	0	"Adds Luck Option to your item"
+7270	0	0	"Adds Skill to your weapon"
+7271	0	4	"Adds random Excellent Option to your item"
+7272	0	0	"Makes Ancient from your item"
 end
