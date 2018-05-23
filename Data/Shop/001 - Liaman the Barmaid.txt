@@ -76,5 +76,5 @@
 7269	7	0	0	0	0	0		//Jewel of Luck
 7270	9	0	0	0	0	0		//Jewel of Skill
 7271	7	0	0	0	0	7		//Jewel of Excellent
-7272	7	0	0	0	0	0	5	//Jewel of Ancient
+7272	7	0	0	0	0	0		//Jewel of Ancient
 end
