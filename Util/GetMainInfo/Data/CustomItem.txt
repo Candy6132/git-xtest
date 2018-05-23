@@ -1,4 +1,11 @@
 //Index   ColorR   ColorG   ColorB   ModelName
+17		50	95	150	"sword18"
+1042		255	255	50	"gamble_safter01"
+1547		50	200	50	"gamble_scyder01"
+2072		50	150	255	"gamblebow"
+2593		255	255	50	"gamble_wand"
+2594		255	255	50	"gamble_stick"
+2596		255	255	150	"Archangelus"
 7269		255	255	100	"JewelofLuck"
 7270		255	255	100	"JewelofSkill"
 7271		255	255	100	"JewelofExcellent"
