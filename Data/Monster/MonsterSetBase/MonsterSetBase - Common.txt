@@ -24,7 +24,7 @@
 257            00             00         132            090            03             //Shadow Phantom Soldier
 257            00             00         170            129            01             //Shadow Phantom Soldier
 257            00             00         7              120            01             //Shadow Phantom Soldier
-131            00             00         5              143            01             //Thompson Kenel
+248            00             00         5              143            01             //Thompson Kenel
 end
 
 0

@@ -1,23 +1,14 @@
-//Index   Level   Count   Option1   Option2   Option3   NewOption   Comment
-3597      3       0       0         1         1         0           //Spirit Helm
-4109      3       0       0         1         1         0           //Spirit Armor
-4621      3       0       0         1         1         0           //Spirit Pants
-5133      3       0       0         1         1         0           //Spirit Gloves
-5645      3       0       0         1         1         0           //Spirit Boots
-3598      3       0       0         1         1         0           //Guardian Helm
-4110      3       0       0         1         1         0           //Guardian Armor
-4622      3       0       0         1         1         0           //Guardian Pants
-5134      3       0       0         1         1         0           //Guardian Gloves
-5646      3       0       0         1         1         0           //Guardian Boots
-2056      1       0       1         1         1         0           //Crossbow
-2057      3       0       1         1         1         0           //Golden Crossbow
-2048      0       0       1         1         1         0           //Short Bow
-2049      0       0       1         1         1         0           //Bow
-2050      2       0       1         1         1         0           //Elven Bow
-2051      3       0       1         1         1         0           //Battle Bow
-2059      3       0       1         1         1         0           //Light Crossbow
-2052      3       0       1         1         1         0           //Tiger Bow
-2058      3       0       1         1         1         0           //Arquebus
-3075      3       0       1         1         1         0           //Elven Shield
-end
-
+//Index	Level	Count	Option1	Option2	Option3	NewOption	Comment
+2055	0	0	0	0	0	0	//Bolts
+2055	1	0	0	0	0	0	//Bolts
+2055	2	0	0	0	0	0	//Bolts
+2063	0	0	0	0	0	0	//Arrows
+2063	1	0	0	0	0	0	//Arrows
+2063	2	0	0	0	0	0	//Arrows
+2048	5	0	1	1	0	0	//Short Bow
+2056	5	0	1	1	0	0	//Crossbow
+2049	5	0	1	1	0	0	//Bow
+2057	5	0	1	1	0	0	//Golden Crossbow
+2058	0	0	1	1	2	0	//Arquebus
+2050	5	0	1	1	0	0	//Elven Bow
+end							

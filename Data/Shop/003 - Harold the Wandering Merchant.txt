@@ -1,27 +1,20 @@
-//Index   Level   Count   Option1   Option2   Option3   NewOption   Comment
-3589      0       0       0         1         1         0           //Leather Helm
-4101      0       0       0         1         1         0           //Leather Armor
-4613      0       0       0         1         1         0           //Leather Pants
-5125      0       0       0         1         1         0           //Leather Gloves
-5637      0       0       0         1         1         0           //Leather Boots
-3584      2       0       0         1         1         0           //Bronze Helm
-4096      2       0       0         1         1         0           //Bronze Armor
-4608      2       0       0         1         1         0           //Bronze Pants
-5120      2       0       0         1         1         0           //Bronze Gloves
-5632      2       0       0         1         1         0           //Bronze Boots
-3590      3       0       0         1         1         0           //Scale Helm
-4102      3       0       0         1         1         0           //Scale Armor
-4614      3       0       0         1         1         0           //Scale Pants
-5126      3       0       0         1         1         0           //Scale Gloves
-5638      3       0       0         1         1         0           //Scale Boots
-3592      3       0       0         1         1         0           //Brass Helm
-4104      3       0       0         1         1         0           //Brass Armor
-4616      3       0       0         1         1         0           //Brass Pants
-5128      3       0       0         1         1         0           //Brass Gloves
-5640      3       0       0         1         1         0           //Brass Boots
-3593      3       0       0         1         1         0           //Plate Helm
-4105      3       0       0         1         1         0           //Plate Armor
-4617      3       0       0         1         1         0           //Plate Pants
-5129      3       0       0         1         1         0           //Plate Gloves
-5641      3       0       0         1         1         0           //Plate Boots
-end
+//Index	Level	Count	Option1	Option2	Option3	NewOption	Comment
+7171	0	255	0	0	0	0	//Large Healing Potion
+7170	0	255	0	0	0	0	//Medium Healing Potion
+7169	0	255	0	0	0	0	//Samll Healing Potion
+7168	0	255	0	0	0	0	//Apple
+3074	0	0	1	1	2	0	//Kite Shield
+5125	5	0	0	0	0	0	//Leather Gloves
+7174	0	255	0	0	0	0	//Large Mana Potion
+7173	0	255	0	0	0	0	//Medium Mana Potion
+7172	0	255	0	0	0	0	//Samll Mana Potion
+7176	0	3	0	0	0	0	//Antidote
+3589	5	0	0	0	0	0	//Leather Helm
+4101	5	0	0	0	0	0	//Leather Armor
+4613	5	0	0	0	0	0	//Leather Pants
+5637	5	0	0	0	0	0	//Leather Boots
+0001	0	0	0	1	2	0	//Short Sword
+0002	0	0	1	1	2	0	//Rapier
+0514	0	0	1	1	2	0	//Double Axe
+0517	0	0	1	1	2	0	//Battle Axe
+end							

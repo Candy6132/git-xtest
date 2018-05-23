@@ -1,13 +1,41 @@
-//Index   Level   Count   Option1   Option2   Option3   NewOption   Comment
-7177      0       1       0         0         0         0           //Ale
-7178      0       1       0         0         0         0           //Town Portal Scroll
-6672      1       1       0         0         0         0           //Scroll of Archangel
-6672      2       1       0         0         0         0           //Scroll of Archangel
-6673      1       1       0         0         0         0           //Blood Bone
-6673      2       1       0         0         0         0           //Blood Bone
-7185      1       0       0         0         0         0           //Devil's Eye
-7185      2       0       0         0         0         0           //Devil's Eye
-7186      1       0       0         0         0         0           //Devil's Key
-7186      2       0       0         0         0         0           //Devil's Key
-6685      0       1       0         0         0         0           //Armor of Guardsman
-end
+//Index	Level	Count	Option1	Option2	Option3	NewOption	Comment
+7171	0	255	0	0	0	0	//Large Healing Potion
+7170	0	255	0	0	0	0	//Medium Healing Potion
+7169	0	255	0	0	0	0	//Samll Healing Potion
+7168	0	255	0	0	0	0	//Apple
+7188	0	0	0	0	0	0	//Remedy of Love
+6160	0	0	0	0	0	0	//Fire Slash
+6165	0	0	0	0	0	0	//Fire Burst Scroll
+7177	1	0	0	0	0	0	//Ale
+7174	0	255	0	0	0	0	//Large Mana Potion
+7173	0	255	0	0	0	0	//Medium Mana Potion
+7172	0	255	0	0	0	0	//Samll Mana Potion
+7176	0	30	0	0	0	0	//Antidote
+7176	0	3	0	0	0	0	//Antidote
+6151	0	0	0	0	0	0	//Twisting Slash Orb
+7186	4	0	0	0	0	0	//Devil Key+4
+7186	3	0	0	0	0	0	//Devil Key+3
+7186	2	0	0	0	0	0	//Devil Key+2
+7186	1	0	0	0	0	0	//Devil Key+1
+7185	4	0	0	0	0	0	//Devil Eye+4
+7185	3	0	0	0	0	0	//Devil Eye+3
+7185	2	0	0	0	0	0	//Devil Eye+2
+7185	1	0	0	0	0	0	//Devil Eye+1
+6673	5	0	0	0	0	0	//Blood Bone+5
+6672	5	0	0	0	0	0	//Archangel Scroll+5
+7177	11	0	0	0	0	0	//Ale
+7177	9	0	0	0	0	0	//Ale
+7177	7	0	0	0	0	0	//Ale
+7177	5	0	0	0	0	0	//Ale
+7177	3	0	0	0	0	0	//Ale
+7177	0	0	0	0	0	0	//Ale
+6673	4	0	0	0	0	0	//Blood Bone+4
+6672	4	0	0	0	0	0	//Archangel Scroll+4
+6673	3	0	0	0	0	0	//Blood Bone+3
+6672	3	0	0	0	0	0	//Archangel Scroll+3
+6673	2	0	0	0	0	0	//Blood Bone+2
+6672	2	0	0	0	0	0	//Archangel Scroll+2
+6673	1	0	0	0	0	0	//Blood Bone+1
+6672	1	0	0	0	0	0	//Archangel Scroll+1
+6685	0	0	0	0	0	0	//Chaos Castle Armor
+end							
