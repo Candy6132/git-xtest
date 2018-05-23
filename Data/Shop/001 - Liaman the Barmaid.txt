@@ -74,7 +74,7 @@
 6676      2       0       0         0         0         0           //Ring 80 lvl
 6151	0	0	0	0	0	0		//Twisting Slash
 7269	7	0	0	0	0	0		//Jewel of Luck
-7270	9	0	0	0	0	0		//Jewel of Skill
+7270	7	0	0	0	0	0		//Jewel of Skill
 7271	7	0	0	0	0	7		//Jewel of Excellent
 7272	7	0	0	0	0	0		//Jewel of Ancient
 end
