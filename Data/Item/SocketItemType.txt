@@ -1,112 +1,63 @@
-//Index   MaxSocket   Comment
-26        3           //Flameberge
-27        3           //Sword Breaker
-28        3           //Rune Bastard Sword
-29        3           //Sonic Blade
-30        3           //Asura
-36        3           //Cyclone Sword
-37        5           //Blast Break
-1040      3           //Frost Mace
-1041      3           //Absolute Scepter
-1043      3           //Thunderbolt
-1044      5           //Horn of Steal
-1548      5           //Magmus Peer
-2071      5           //Dark Stinger
-2073      5           //Angelic Bow
-2074      5           //Devil Crossbow
-2590      3           //Deadly Staff
-2591      3           //Inberial Staff
-2592      3           //Summon Spirit Stick
-2595      3           //Miracle Staff
-2597      5           //Spite Staff
-3089      3           //Crimson Glory
-3090      3           //Salamander Shield
-3091      3           //Frost Barrier
-3092      3           //Guardian Shield
-3094      3           //Lazy Wind Shield
-3095      3           //Light Lord Shield
-3096      3           //Dark Devil Shield
-3097      3           //Magic Knight Shield
-3098      3           //Ambition Shield
-3629      3           //Titan  Helm
-3630      3           //Brave Helm
-3633      3           //Seraphim Helm
-3634      3           //Divine Helm
-3635      3           //Royal Mask
-3636      3           //Hades Helm
-3637      3           //Succubus Helm
-3638      3           //Lazy Wind Helm
-3639      3           //Dark Devil Helm
-3640      3           //Sticky Helm
-3642      3           //Ambition Mask
-3658      3           //Stormwing Helm
-3659      3           //Light Lord Helmet
-4141      3           //Titan  Armor
-4142      3           //Brave Armor
-4143      3           //Phantom  Armor
-4144      3           //Destroy Armor
-4145      3           //Seraphim Armor
-4146      3           //Divine Armor
-4147      3           //Royal Armor
-4148      3           //Hades Armor
-4149      3           //Succubus Armor
-4150      3           //Lazy Wind Armor
-4151      3           //Dark Devil Armor
-4152      3           //Sticky Armor
-4153      3           //Hell Night Armor
-4154      3           //Ambition Armor
-4170      3           //Stormwing Armor
-4171      3           //Light Lord Armor
-4172      3           //Magic Knight Armor
-4653      3           //Titan  Pants
-4654      3           //Brave Pants
-4655      3           //Phantom  Pants
-4656      3           //Destroy Pants
-4657      3           //Seraphim Pants
-4658      3           //Divine Pants
-4659      3           //Royal Pants
-4660      3           //Hades Pants
-4661      3           //Succubus Pants
-4662      3           //Lazy Wind Pants
-4663      3           //Dark Devil Pants
-4664      3           //Sticky Pants
-4665      3           //Hell Night Pants
-4666      3           //Ambition Pants
-4682      3           //Stormwing Pants
-4683      3           //Light Lord Pants
-4684      3           //Magic Knight Pants
-5165      3           //Titan  Gloves
-5166      3           //Brave Gloves
-5167      3           //Phantom  Gloves
-5168      3           //Destroy Gloves
-5169      3           //Seraphim Gloves
-5170      3           //Divine Gloves
-5171      3           //Royal Gloves
-5172      3           //Hades Gloves
-5173      3           //Succubus Gloves
-5174      3           //Lazy Wind Gloves
-5175      3           //Dark Devil Gloves
-5176      3           //Sticky Gloves
-5177      3           //Hell Night Gloves
-5178      3           //Ambition Gloves
-5194      3           //Stormwing Gloves
-5195      3           //Light Lord Gloves
-5196      3           //Magic Knight Gloves
-5677      3           //Titan Boots
-5678      3           //Brave Boots
-5679      3           //Phantom Boots
-5680      3           //Destroy Boots
-5681      3           //Seraphim Boots
-5682      3           //Divine Boots
-5683      3           //Royal Boots
-5684      3           //Hades Boots
-5685      3           //Succubus Boots
-5686      3           //Lazy Wind Boots
-5687      3           //Dark Devil Boots
-5688      3           //Sticky Boots
-5689      3           //Hell Night Boots
-5690      3           //Ambition Boots
-5706      3           //Stormwing Boots
-5707      3           //Light Lord Boots
-5708      3           //Magic Knight Boots
+//ID   MaxSocket
+26     3
+27     3
+28     3
+1040     3
+1041     3
+2071     5
+2580	 3
+2590     3
+2591     3
+3089     3
+3090     3
+3091     3
+3092     3
+3093	 3
+3628	 3
+3629     3
+3630     3
+3633     3
+3634     3
+3635     3
+3636     3
+3636     3
+4141     3
+4142     3
+4143     3
+4144     3
+4145     3
+4146     3
+4147     3
+4148     3
+4149     3
+4652	 3
+4653     3
+4654     3
+4655     3
+4656     3
+4657     3
+4658     3
+4659     3
+4660     3
+4661     3
+5164	 3
+5165     3
+5166     3
+5167     3
+5168     3
+5169     3
+5170     3
+5171     3
+5172     3
+5173     3
+5676	 3
+5677     3
+5678     3
+5679     3
+5680     3
+5681     3
+5682     3
+5683     3
+5684     3
+5685     3
 end
