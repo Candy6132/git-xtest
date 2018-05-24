@@ -25,6 +25,7 @@
 257            00             00         170            129            01             //Shadow Phantom Soldier
 257            00             00         7              120            01             //Shadow Phantom Soldier
 248            00             00         5              143            01             //Thompson Kenel
+256            00             00         130            128            03             //Lahap
 end
 
 0
