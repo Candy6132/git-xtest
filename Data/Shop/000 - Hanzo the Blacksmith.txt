@@ -1,25 +1,20 @@
 //Index	Level	Count	Option1	Option2	Option3	NewOption	Comment
-7171	0	255	0	0	0	0	//Large Healing Potion
-7170	0	255	0	0	0	0	//Medium Healing Potion
-7169	0	255	0	0	0	0	//Samll Healing Potion
-7168	0	255	0	0	0	0	//Apple
-2055	2	0	0	0	0	0	//Bolts
-2055	1	0	0	0	0	0	//Bolts
-2055	0	0	0	0	0	0	//Bolts
-7177	0	0	0	0	0	0	//Ale
-7174	0	255	0	0	0	0	//Large Mana Potion
-7173	0	255	0	0	0	0	//Medium Mana Potion
-7172	0	255	0	0	0	0	//Samll Mana Potion
-7176	0	30	0	0	0	0	//Antidote
-2063	2	0	0	0	0	0	//Arrows
-2063	1	0	0	0	0	0	//Arrows
-2063	0	0	0	0	0	0	//Arrows
-7177	0	0	0	0	0	0	//Ale
-6664	0	0	0	0	2	0	//Ring of Ice
-6665	0	0	0	0	2	0	//Ring of Poison
-6668	0	0	0	0	2	0	//Lightning Pendant
-6669	0	0	0	0	2	0	//Fire Pendant
-6682	0	0	0	0	2	0	//Pendant of Wind
-6683	0	0	0	0	2	0	//Pendant of Water
-6684	0	0	0	0	2	0	//Pendant of Ability
+3584	5	0	0	0	0	0	//Bronze Helm
+3609	5	0	0	0	0	0	//Light Plate Helm
+3076	0	0	1	1	2	0	//Bucker
+1025	0	0	1	1	2	0	//Morning Star
+0515	0	0	1	1	2	0	//Tomahawk
+4096	5	0	0	0	0	0	//Bronze Armor
+4121	5	0	0	0	0	0	//Light Plate Armor
+3077	0	0	1	1	2	0	//Dragon Slayer
+1032	0	0	1	1	2	0	//Battle Scepter
+1033	0	0	1	1	2	0	//Master Scepter
+4608	5	0	0	0	0	0	//Bronze Pants
+0003	0	0	1	1	2	0	//Katache
+0005	0	0	1	1	2	0	//Blade
+4633	5	0	0	0	0	0	//Light Plate Pants
+5632	5	0	0	0	0	0	//Bronze Boots
+5145	5	0	0	0	0	0	//Light Plate Gloves
+5657	5	0	0	0	0	0	//Light Plate Boots
+5120	5	0	0	0	0	0	//Bronze Gloves
 end							

@@ -24,6 +24,6 @@
 2560	0	0	0	1	2	0	//Skull Staff
 7174	0	255	0	0	0	0	//Large Mana Potion
 7173	0	255	0	0	0	0	//Medium Mana Potion
-7172	0	255	0	0	0	0	//Samll Mana Potion
+7172	0	255	0	0	0	0	//Small Mana Potion
 7176	0	3	0	0	0	0	//Antidote
 end							

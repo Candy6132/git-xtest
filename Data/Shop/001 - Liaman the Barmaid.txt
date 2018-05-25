@@ -1,5 +1,3 @@
-//Index   Level   Count   Option1   Option2   Option3   NewOption   Comment
-
 //Index	Level	Count	Option1	Option2	Option3	NewOption	Comment
 //7171	0	255	0	0	0	0	//Large Healing Potion
 //7170	0	255	0	0	0	0	//Medium Healing Potion
@@ -41,40 +39,38 @@
 //6672	1	0	0	0	0	0	//Archangel Scroll+1
 //6685	0	0	0	0	0	0	//Chaos Castle Armor
 //end							
-
-
-
-//Test:
-6145      0       0       0         0         0         0           //Wings of Heaven
-6144      0       0       0         0         0         0           //Wings of Elf
-6686      0       0       0         0         0         0           //Cape of Lord
-6146      0       0       0         0         0         0           //Wings of Satan
-7181      0       0       0         0         0         0           //Jewel of Bless
-7184      0       0       0         0         0         0           //Jewel of Life
-6159      0       0       0         0         0         0           //Jewel of Chaos
-7182      0       0       0         0         0         0           //Jewel of Soul
-6179      0       0       0         0         0         0           //Scroll of Fire Scream
-7688      0       0       0         0         0         0           //Scroll of Evil Spirit
-7709      0       0       0         0         0         0           //Scroll of Gigantic Storm
-7707      0       0       0         0         0         0           //Innovation Parchment
-7703      0       0       0         0         0         0           //Berserker Parchment
-7701      0       0       0         0         0         0           //Lightning Shock Parchment
-6186      0       0       0         0         0         0           //Wings of Despair
-6189      0       0       0         0         0         0           //Crystal of Multi-Shot
-7695      0       0       0         0         0         0           //Scroll of Soul Barrier
-7697      0       0       0         0         0         0           //Scroll of Ice Storm
-7179      0       0       0         0         0         0           //BoL
-7179      7       0       0         0         0         0           //BoH
-7179      8       0       0         0         0         0           //BoK+1
-7179      9       0       0         0         0         0           //BoK+2
-7179      10      0       0         0         0         0           //BoK+3
-7179      11      0       0         0         0         0           //BoK+4
-7179      12      0       0         0         0         0           //BoK+5
-6676      1       0       0         0         0         0           //Ring 40 lvl
-6676      2       0       0         0         0         0           //Ring 80 lvl
-6151	0	0	0	0	0	0		//Twisting Slash
-7269	7	0	0	0	0	0		//Jewel of Luck
-7270	7	0	0	0	0	0		//Jewel of Skill
-7271	7	0	0	0	0	7		//Jewel of Excellent
-7272	7	0	0	0	0	0		//Jewel of Ancient
-end
+							
+//Test:							
+6145	0	0	0	0	0	0	//Wings of Heaven
+6144	0	0	0	0	0	0	//Wings of Elf
+6686	0	0	0	0	0	0	//Cape of Lord
+6146	0	0	0	0	0	0	//Wings of Satan
+7181	0	0	0	0	0	0	//Jewel of Bless
+7184	0	0	0	0	0	0	//Jewel of Life
+6159	0	0	0	0	0	0	//Jewel of Chaos
+7182	0	0	0	0	0	0	//Jewel of Soul
+6179	0	0	0	0	0	0	//Scroll of Fire
+7688	0	0	0	0	0	0	//Scroll of Evil
+7709	0	0	0	0	0	0	//Scroll of Gigantic
+7707	0	0	0	0	0	0	//Innovation Parchment 
+7703	0	0	0	0	0	0	//Berserker Parchment 
+7701	0	0	0	0	0	0	//Lightning Shock Parchment
+6186	0	0	0	0	0	0	//Wings of Despair
+6189	0	0	0	0	0	0	//Crystal of Multi-Shot
+7695	0	0	0	0	0	0	//Scroll of Soul
+7697	0	0	0	0	0	0	//Scroll of Ice
+7179	0	0	0	0	0	0	//BoL  
+7179	7	0	0	0	0	0	//BoH  
+7179	8	0	0	0	0	0	//BoK+1  
+7179	9	0	0	0	0	0	//BoK+2  
+7179	10	0	0	0	0	0	//BoK+3  
+7179	11	0	0	0	0	0	//BoK+4  
+7179	12	0	0	0	0	0	//BoK+5  
+6676	1	0	0	0	0	0	//Ring 40 lvl
+6676	2	0	0	0	0	0	//Ring 80 lvl
+6151	0	0	0	0	0	0	//Twisting Slash 
+7269	7	0	0	0	0	0	//Jewel of Luck
+7270	7	0	0	0	0	0	//Jewel of Skill
+7271	7	0	0	0	0	7	//Jewel of Excellent
+7272	7	0	0	0	0	0	//Jewel of Ancient
+end							

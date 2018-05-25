@@ -1,22 +1,16 @@
 //Index	Level	Count	Option1	Option2	Option3	NewOption	Comment
-3623	2	0	0	0	0	0	//Violent Wind Helm
-4135	2	0	0	0	0	0	//Violent Wind Armor
-4647	2	0	0	0	0	0	//Violent Wind Pants
-5159	2	0	0	0	0	0	//Violent Wind Gloves
-5671	2	0	0	0	0	0	//Violent Wind Boots
-3624	3	0	0	0	0	0	//Red Wing Helm
-4136	3	0	0	0	0	0	//Red Wing Armor
-4648	3	0	0	0	0	0	//Red Wing Pants
-5160	3	0	0	0	0	0	//Red Wing Gloves
-5672	3	0	0	0	0	0	//Red Wing Boots
-0512	1	0	0	0	0	0	//Small Axe 
-0001	0	0	0	0	0	0	//Short Sword 
-0513	1	0	0	0	0	0	//Hand Axe 
-0002	2	0	1	0	0	0	//Rapier  
-0516	1	0	0	0	0	0	//Elven Axe 
-0000	1	0	0	0	0	0	//Kris  
-2560	1	0	0	0	0	0	//Skull Staff 
-2574	1	0	0	0	0	0	//Mystery Stick 
-2575	2	0	0	0	0	0	//Violent Wind Stick
-2576	3	0	0	0	0	0	//Red Wing Stick
+3623	5	0	0	0	0	0	//Violent Wind Helm  
+4135	5	0	0	0	0	0	//Violent Wind Armor  
+4647	5	0	0	0	0	0	//Violent Wind Pants  
+5159	5	0	0	0	0	0	//Violent Wind Gloves  
+5671	5	0	0	0	0	0	//Violent Wind Boots  
+0512	0	0	0	1	2	0	//Small Axe 
+0001	0	0	0	1	2	0	//Short Sword 
+0513	0	0	0	1	2	0	//Hand Axe 
+0002	0	0	0	1	2	0	//Rapier  
+0516	0	0	0	1	2	0	//Elven Axe 
+0000	0	0	0	1	2	0	//Kris  
+2560	0	0	0	1	2	0	//Skull Staff 
+2574	0	0	0	1	2	0	//Mystery Stick 
+2575	0	0	0	1	2	0	//Violent Wind Stick
 end							

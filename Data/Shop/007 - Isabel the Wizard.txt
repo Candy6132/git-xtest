@@ -1,36 +1,42 @@
 //Index	Level	Count	Option1	Option2	Option3	NewOption	Comment
 3588	5	0	0	0	0	0	//Bone Helm
 3591	5	0	0	0	0	0	//Sphinx Helm
-2562	0	0	0	1	2	0	//Serpent Staff
+3624	5	0	0	0	0	0	//Red Wing Helm
+7681	0	0	0	0	0	0	//Meteor Scroll
 7682	0	0	0	0	0	0	//Lightning Scroll
-7685	0	0	0	0	0	0	//Teleport Scroll
 4100	5	0	0	0	0	0	//Bone Armor
 4103	5	0	0	0	0	0	//Sphinx Armor
-7681	0	0	0	0	0	0	//Meteor Scroll
-7686	0	0	0	0	0	0	//Ice Scroll
-2563	0	0	0	1	2	0	//Lightning Staff
-4612	5	0	0	0	0	0	//Bone Pants
+4136	5	0	0	0	0	0	//Red Wing Armor
 7680	0	0	0	0	0	0	//Poison Scroll
+7686	0	0	0	0	0	0	//Ice Scroll
+4612	5	0	0	0	0	0	//Bone Pants
+4648	5	0	0	0	0	0	//Red Wing Pants
 7684	0	0	0	0	0	0	//Flame Scroll
+7687	0	0	0	0	0	0	//Twister Scroll
 4615	5	0	0	0	0	0	//Sphinx Pants
 5636	5	0	0	0	0	0	//Bone Boots
-7680	0	0	0	0	0	0	//Poison Scroll
-7684	0	0	0	0	0	0	//Flame Scroll
+5672	5	0	0	0	0	0	//Red Wing Boots
+7685	0	0	0	0	0	0	//Teleport Scroll
+7688	0	0	0	0	0	0	//Evil Spirits Scroll, lub Life Drain
 5639	5	0	0	0	0	0	//Sphinx Boots
+5124	5	0	0	0	0	0	//Bone Gloves
+5160	5	0	0	0	0	0	//Red Wing Boots
 7171	0	255	0	0	0	0	//Large Healing Potion
 7174	0	255	0	0	0	0	//Large Mana Potion
-5124	5	0	0	0	0	0	//Bone Gloves
+5127	5	0	0	0	0	0	//Sphinx Gloves
+7171	0	20	0	0	0	0	//Large Healing Potion
+7174	0	20	0	0	0	0	//Large Mana Potion
+2563	0	0	0	1	2	0	//Lightning Staff
+2576	5	0	0	0	0	0	//Red Wing Stick
 7170	0	255	0	0	0	0	//Medium Healing Potion
 7173	0	255	0	0	0	0	//Medium Mana Potion
-7687	0	0	0	0	0	0	//Twister Scroll
-7688	0	0	0	0	0	0	//Evil Spirits Scroll
-5127	5	0	0	0	0	0	//Sphinx Gloves
-7169	0	255	0	0	0	0	//Samll Healing Potion
-7172	0	255	0	0	0	0	//Samll Mana Potion
-2055	2	0	0	0	0	0	//Bolts
-2055	1	0	0	0	0	0	//Bolts
+2562	0	0	0	1	2	0	//Serpent Staff
+7169	0	255	0	0	0	0	//Small Healing Potion
+7172	0	255	0	0	0	0	//Small Mana Potion
 7188	0	0	0	0	0	0	//Remedy of Love
 7176	0	30	0	0	0	0	//Antidote
+2055	2	0	0	0	0	0	//Bolts
+2055	1	0	0	0	0	0	//Bolts
 2063	2	0	0	0	0	0	//Arrows
 2063	1	0	0	0	0	0	//Arrows
 end							
