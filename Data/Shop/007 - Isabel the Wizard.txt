@@ -28,15 +28,15 @@
 7174	0	20	0	0	0	0	//Large Mana Potion
 2563	0	0	0	1	2	0	//Lightning Staff
 2576	5	0	0	0	0	0	//Red Wing Stick
+2055	2	0	0	0	0	0	//Bolts
 7170	0	255	0	0	0	0	//Medium Healing Potion
 7173	0	255	0	0	0	0	//Medium Mana Potion
 2562	0	0	0	1	2	0	//Serpent Staff
+2055	1	0	0	0	0	0	//Bolts
 7169	0	255	0	0	0	0	//Small Healing Potion
 7172	0	255	0	0	0	0	//Small Mana Potion
+2063	2	0	0	0	0	0	//Arrows
 7188	0	0	0	0	0	0	//Remedy of Love
 7176	0	30	0	0	0	0	//Antidote
-2055	2	0	0	0	0	0	//Bolts
-2055	1	0	0	0	0	0	//Bolts
-2063	2	0	0	0	0	0	//Arrows
 2063	1	0	0	0	0	0	//Arrows
 end							

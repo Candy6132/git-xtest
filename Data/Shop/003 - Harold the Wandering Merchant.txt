@@ -3,7 +3,7 @@
 7170	0	20	0	0	0	0	//Medium Healing Potion
 7169	0	20	0	0	0	0	//Small Healing Potion
 7168	0	20	0	0	0	0	//Apple
-3074	0	0	1	1	2	0	//Kite Shield
+3072	0	0	0	1	2	0	//Small Shield
 5125	5	0	0	0	0	0	//Leather Gloves
 7174	0	20	0	0	0	0	//Large Mana Potion
 7173	0	20	0	0	0	0	//Medium Mana Potion
