@@ -22,4 +22,7 @@
 6682	2	0	1	0	2	0	//Pendant of Wind
 6683	2	0	1	0	2	0	//Pendant of Water
 6684	2	0	1	0	2	0	//Pendant of Ability
+3076	0	0	1	1	2	0	//Buckler Shield
+3077	0	0	1	1	2	0	//Dragon Slayer Shield
+3080	0	0	1	1	2	0	//Tower Shield
 end							
