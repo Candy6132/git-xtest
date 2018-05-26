@@ -23,8 +23,8 @@
 257            00             00         132            165            03             //Shadow Phantom Soldier
 257            00             00         132            090            03             //Shadow Phantom Soldier
 257            00             00         170            129            01             //Shadow Phantom Soldier
-257            00             00         7              120            01             //Shadow Phantom Soldier
-248            00             00         5              143            01             //Thompson Kenel
+257            00             00         7              120            03             //Shadow Phantom Soldier
+248            00             00         6              144            03             //Thompson Kenel
 256            00             00         130            128            03             //Lahap
 end
 
@@ -46,7 +46,8 @@ end
 240            02             00         218            063            02             //Safety Guardian
 257            02             00         219            073            03             //Shadow Phantom Soldier
 257            02             00         172            044            01             //Shadow Phantom Soldier
-379            02             00         032            031            03             //Natasha the Firecracker Merchan
+//379            02             00         032            031            03             //Natasha the Firecracker Merchan - zbugowana picza
+231		2		0	 9		72		3		// Thompson Kenel
 end
 
 0
@@ -66,7 +67,7 @@ end
 0
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
 257            04             00         203            80             03             //Shadow Phantom Soldier
-253            04             00         206            81             02             //Potion Girl Amy
+253            04             00         201            77             02             //Potion Girl Amy
 end
 
 0
@@ -129,6 +130,7 @@ end
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
 369            33             00         078            013            02             //Osbourne
 370            33             00         086            013            01             //Jerridon
+240            33             00         81             7              03             //Safety Guardian
 end
 
 0
@@ -597,7 +599,8 @@ end
 //=========================================================================================
 //Mob	Map	Radio	CordX	CordY	CordX2	CordY2	Dir	Quant	Name
 1
-36	4	5	192	99	202	135	-1 	20	//Shadow LT1
+36	4	5	192	99	202	116	-1 	12	//Shadow LT1
+36	4	5	189	122	202	136	-1 	8	//Shadow LT1
 39	4	5	210	213	210	213	-1	3	//Poison Shadow LT2
 39	4	5	215	208	210	213	-1	3	//Poison Shadow LT2
 41	4	3	101	193	101	193	-1	3	//Death Cow LT3
