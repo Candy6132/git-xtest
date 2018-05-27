@@ -26,7 +26,10 @@
 30        5      1          "Add Excellent Damage Rate"          10     10       11       12       13       14
 31        5      2          "Add Critical Damage"                30     30       32       35       40       50
 32        5      3          "Add Critical Damage Rate"           10     8        9        10       11       12
-36        6      2          "Add Vitality"                       10     30       32       34       36       38
+34        6      0          "Add Strength"                       25     30       32       34       36       38
+35        6      1          "Add Dexterity"                      25     30       32       34       36       38
+36        6      2          "Add Vitality"                       25     30       32       34       36       38
+37        6      3          "Add Energy"                         25     30       32       34       36       38
 end
 
 1
