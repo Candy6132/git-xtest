@@ -27,7 +27,7 @@ end
 00,023	0	0	*	13	14	32	29	*	*	0	//Explosion Blade
 05,012	0	0	*	*	14	32	29	*	*	0	//Grand Viper Staff
 04,021	0	0	*	13	14	32	29	*	*	0	//Sylph Wind Bow
-02,013	0	0	*	13	14	32	29	*	*	0	//Divine Scepter of Archangel
+02,012	0	0	*	13	14	32	29	*	*	0	//Great Lord Scepter
 02,014	0	0	*	13	14	32	29	*	*	0	//Soleil Scepter
 05,019	0	0	*	*	14	32	29	*	*	0	//Storm Blitz Stick
-end
+end											

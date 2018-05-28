@@ -16,48 +16,48 @@ end
 4         6         10000          1000          0             1    1    1    1    1    1
 end
 
-5											
-//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
-07,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Helm
-08,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Armor
-09,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Pants
-10,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Gloves
-11,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Boots
-07,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Helm
-08,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Armor
-09,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Pants
-10,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Gloves
-11,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Boots
-07,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Helm
-08,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Armor
-09,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Pants
-10,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Gloves
-11,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Boots
-07,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Helm
-08,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Armor
-09,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Pants
-10,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Gloves
-11,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Boots
-08,032	0	0	*	*	16	32	29	*	*	0	//Volcano Armor
-09,032	0	0	*	*	16	32	29	*	*	0	//Volcano Pants
-10,032	0	0	*	*	16	32	29	*	*	0	//Volcano Gloves
-11,032	0	0	*	*	16	32	29	*	*	0	//Volcano Boots
-07,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Helm
-08,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Armor
-09,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Pants
-10,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Gloves
-11,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Boots
-											
-00,022	0	0	*	12	16	32	29	*	*	0	//Bone Blade
-00,023	0	0	*	12	16	32	29	*	*	0	//Explosion Blade
-05,012	0	0	*	*	16	32	29	*	*	0	//Grand Viper Staff
-05,011	0	0	41	*	16	32	29	*	*	0	//Staff of Kundun
-04,021	0	0	*	12	16	32	29	*	*	0	//Sylph Wind Bow
-02,013	0	0	*	12	16	32	29	*	*	0	//Divine Scepter of Archangel
-02,014	0	0	*	12	16	32	29	*	*	0	//Soleil Scepter
-05,019	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Stick
-end											
-											
+5												
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment	
+07,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Helm	
+08,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Armor	
+09,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Pants	
+10,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Gloves	
+11,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Boots	
+07,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Helm	
+08,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Armor	
+09,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Pants	
+10,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Gloves	
+11,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Boots	
+07,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Helm	
+08,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Armor	
+09,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Pants	
+10,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Gloves	
+11,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Boots	
+07,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Helm	
+08,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Armor	
+09,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Pants	
+10,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Gloves	
+11,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Boots	
+08,032	0	0	*	*	16	32	29	*	*	0	//Volcano Armor	
+09,032	0	0	*	*	16	32	29	*	*	0	//Volcano Pants	
+10,032	0	0	*	*	16	32	29	*	*	0	//Volcano Gloves	
+11,032	0	0	*	*	16	32	29	*	*	0	//Volcano Boots	
+07,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Helm	
+08,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Armor	
+09,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Pants	
+10,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Gloves	
+11,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Boots	
+												
+00,022	0	0	*	12	16	32	29	*	*	0	//Bone Blade	
+00,023	0	0	*	12	16	32	29	*	*	0	//Explosion Blade	
+05,012	0	0	*	*	16	32	29	*	*	0	//Grand Viper Staff	
+05,011	0	0	41	*	16	32	29	*	*	0	//Staff of Kundun	
+04,021	0	0	*	12	16	32	29	*	*	0	//Sylph Wind Bow	
+02,012	0	0	*	12	16	32	29	*	*	0	//Great Lord Scepter	
+02,014	0	0	*	12	16	32	29	*	*	0	//Soleil Scepter	
+05,019	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Stick	
+end												
+												
 6												
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment	
 07,001	0	0	54	*	17	32	*	24	*	0	//Hyon Dragon Helm	
@@ -165,34 +165,34 @@ end
 13,024	0	0	54	*	*	32	*	25	*	0	//Chrono Ring of Magic	
 												
 //content zablokowany:												
-//07,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Helm
-//08,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Armor 
-//09,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Pants
-//13,022	0	0	54	*	*	32	*	25	*	0	//Vicious Ring of Earth
+//	07,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Helm
+//	08,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Armor 
+//	09,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Pants
+//	13,022	0	0	54	*	*	32	*	25	*	0	//Vicious Ring of Earth
 												
-//07,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Helm 
-//08,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Armor 
-//09,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Pants
-//11,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Boots
+//	07,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Helm 
+//	08,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Armor 
+//	09,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Pants
+//	11,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Boots
 												
-//07,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Helm
-//08,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Armor 
-//09,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Pants
-//11,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Boots 
+//	07,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Helm
+//	08,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Armor 
+//	09,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Pants
+//	11,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Boots 
 												
-//08,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Armor
-//09,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Pants
-//10,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Gloves
-//13,021	0	0	54	*	*	32	*	25	*	0	//Muren Ring of Fire
+//	08,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Armor
+//	09,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Pants
+//	10,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Gloves
+//	13,021	0	0	54	*	*	32	*	25	*	0	//Muren Ring of Fire
 												
-//09,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Pants
-//10,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Gloves
-//11,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Boots
-//13,025	0	0	54	*	*	32	*	25	*	0	//Broy Pendant of Ice
+//	09,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Pants
+//	10,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Gloves
+//	11,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Boots
+//	13,025	0	0	54	*	*	32	*	25	*	0	//Broy Pendant of Ice
 												
-//07,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Helm
-//08,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Armor
-//10,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Gloves
-//11,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Boots
+//	07,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Helm
+//	08,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Armor
+//	10,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Gloves
+//	11,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Boots
 end												
-																	
+																

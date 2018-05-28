@@ -30,9 +30,10 @@ end
 05,013	0	0	*	*	14	32	29	*	*	0	//Platina Staff
 04,022	0	0	*	13	14	32	29	*	*	0	//Albatross Bow
 04,020	0	0	*	13	14	32	29	*	*	0	//Arrow Viper Bow
-02,012	0	0	*	13	14	32	29	*	*	0	//Great Lord Scepter
+02,013	0	0	*	12	14	32	29	*	*	0	//Divine Scepter of Archangel
 00,019	0	0	*	13	14	32	29	*	*	0	//Divine Sword of Archangel
 05,018	0	0	*	*	14	32	29	*	*	0	//Demonic Stick
+05,036	0	0	*	*	14	32	29	*	*	0	//Divine Stick of Archangel
 end											
 											
 6											
@@ -71,7 +72,6 @@ end
 00,023	0	0	41	12	13	32	*	*	*	0	//Explosion Blade
 05,012	0	0	41	*	13	32	*	*	*	0	//Grand Viper Staff
 04,021	0	0	41	12	13	32	*	*	*	0	//Sylph Wind Bow
-02,013	0	0	41	12	13	32	*	*	*	0	//Divine Scepter of Archangel
+02,012	0	0	41	12	13	32	*	*	*	0	//Great Lord Scepter
 05,019	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Stick
 end											
-																				

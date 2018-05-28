@@ -82,4 +82,5 @@ end
 13,026	0	0	*	12	13	32	29	*	*	0	//Pendant of Wind
 13,021	0	0	*	12	13	32	29	*	*	0	//Ring of Fire
 13,013	0	0	*	12	13	32	29	*	*	0	//Pendant of Fire
-end																					
+end											
+																				

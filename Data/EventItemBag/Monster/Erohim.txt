@@ -10,24 +10,21 @@ end
 
 5											
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
-07,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Helm
-09,029	0	0	*	*	16	32	29	*	*	0	//Dragon Knight Pants
-07,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Helm
-09,030	0	0	*	*	16	32	29	*	*	0	//Venom Mist Pants
-07,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Helm
-09,031	0	0	*	*	16	32	29	*	*	0	//Sylphid Ray Pants
-07,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Helm
-09,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Pants
-09,032	0	0	*	*	16	32	29	*	*	0	//Volcano Pants
-07,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Helm
-09,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Pants
+08,021	0	0	*	*	16	32	29	*	*	0	//Red Phoenix Armor
+08,024	0	0	*	*	16	32	29	*	*	0	//Nature Armor
+08,028	0	0	*	*	16	32	29	*	*	0	//Dark Master Armor
+08,022	0	0	*	*	16	32	29	*	*	0	//Dark Side Armor
+08,023	0	0	*	*	16	32	29	*	*	0	//Hurricane Armor
+08,042	0	0	*	*	16	32	29	*	*	0	//Demonic Armor
 											
-00,022	0	0	*	12	15	32	29	*	*	0	//Bone Blade
-00,023	0	0	*	12	15	32	29	*	*	0	//Explosion Blade
-05,012	0	0	*	*	15	32	29	*	*	0	//Grand Viper Staff
-04,021	0	0	*	12	15	32	29	*	*	0	//Sylph Wind Bow
-02,013	0	0	*	12	15	32	29	*	*	0	//Divine Scepter of Archangel
-02,014	0	0	*	12	15	32	29	*	*	0	//Soleil Scepter
-05,019	0	0	*	*	15	32	29	*	*	0	//Storm Blitz Stick
+00,024	0	0	*	12	16	32	29	*	*	0	//Daybreak
+00,021	0	0	*	12	16	32	29	*	*	0	//Dark Reign Blade
+00,025	0	0	*	12	16	32	29	*	*	0	//Sword Dancer
+05,013	0	0	*	*	16	32	29	*	*	0	//Platina Staff
+04,022	0	0	*	12	16	32	29	*	*	0	//Albatross Bow
+04,020	0	0	*	12	16	32	29	*	*	0	//Arrow Viper Bow
+02,013	0	0	*	12	16	32	29	*	*	0	//Divine Scepter of Archangel
+00,019	0	0	*	12	16	32	29	*	*	0	//Divine Sword of Archangel
+05,018	0	0	*	*	16	32	29	*	*	0	//Demonic Stick
+05,036	0	0	*	*	16	32	29	*	*	0	//Divine Stick of Archangel
 end											
-										
