@@ -25,7 +25,6 @@
 257            00             00         7              120            03             //Shadow Phantom Soldier
 248            00             00         6              144            03             //Thompson Kenel
 256            00             00         130            128            03             //Lahap
-371            00             00         139            140            01             //Leo The Helper
 end
 
 0
