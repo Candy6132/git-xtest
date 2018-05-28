@@ -2262,7 +2262,8 @@ end
 274 	29 	30 	43 	91 	-1 	//Schriker
 274 	29 	30 	42 	94 	-1 	//Schriker
 274 	29 	30 	38 	112 	-1 	//Schriker
-275 	29 	30 	23 	86 	-1	//Kundun Demon
+//275 	29 	30 	23 	86 	-1	//Kundun Demon
+338 	29 	30 	23 	86 	-1	//Relics of Kundun
 end
 
 //Kalima 7
@@ -2277,6 +2278,7 @@ end
 336	36	5	57	68	67	79	-1	4	//Death Centurion
 337	36	5	44	58	49	68	-1	3	//Schriker
 337	36	5	48	93	53	100	-1	3	//Schriker
+
 end
 //Mob	Map	Radio	CordX	CordY	Strong	Name
 2
@@ -2349,7 +2351,7 @@ end
 337 	36 	30 	43 	91 	-1 	//Schriker
 337 	36 	30 	42 	94 	-1 	//Schriker
 337 	36 	30 	38 	112 	-1 	//Schriker
-338 	36 	30 	23 	86 	-1	//Relics of Kundun
+//338 	36 	30 	23 	86 	-1	//Relics of Kundun
 end
 
 //=========================================================================================
