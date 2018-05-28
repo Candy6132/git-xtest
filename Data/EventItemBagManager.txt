@@ -44,6 +44,7 @@
 *             *           150            *              *              *              "Monster\Bali"
 *             *           275            *              *              *              "Monster\Kundun"
 *             *           295            *              *              *              "Monster\Erohim"
+*             *           338            *              *              *              "Monster\Relics of Kundun"
 *             *           340            *              *              *              "Monster\Dark Elf"
 *             *           349            *              *              *              "Monster\Balgass"
 *             *           361            *              *              *              "Monster\Nightmare"

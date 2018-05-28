@@ -1,0 +1,25 @@
+3
+//Index   DropRate
+0         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
+0         5         10000          1000          0             1    1    1    1    1    1
+end
+
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+00,022	0	0	*	12	12	32	*	*	*	0	//Bone Blade
+00,023	0	0	*	12	12	32	*	*	*	0	//Explosion Blade
+02,013	0	0	*	12	12	32	*	*	*	0	//Divine Scepter
+04,021	0	0	*	12	12	32	*	*	*	0	//Sylph Wind Bow
+05,012	0	0	*	*	12	32	*	*	*	0	//Grand Viper Staff
+05,019	0	0	*	*	12	32	*	*	*	0	//Storm Blitz Stick
+08,029	0	0	*	*	12	32	*	*	*	0	//Dragon Knight Armor
+08,030	0	0	*	*	12	32	*	*	*	0	//Venom Mist Armor
+08,031	0	0	*	*	12	32	*	*	*	0	//Sylphid Ray Armor
+08,032	0	0	*	*	12	32	*	*	*	0	//Volcano Armor
+08,033	0	0	*	*	12	32	*	*	*	0	//Sunlight Armor
+08,043	0	0	*	*	12	32	*	*	*	0	//Storm Blitz Armor
+end												
