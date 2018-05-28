@@ -306,6 +306,8 @@
 502 	  "Hell Maine and his whitches arrived. Defend the town!"
 503 	  "Hell Maine has been defeated!"
 504 	  "The Army retreats!"
+505 	  "Ancient Bali visited Noria!"
+506 	  "Ancient Bali has been defeated by %s."
 800       "[%s] irá fechar em %d minuto(s)"
 801       "[%s] fechou"
 802       "[%s] irá começar em %d minuto(s)"

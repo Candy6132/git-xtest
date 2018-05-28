@@ -41,6 +41,7 @@
 *             *           82             *              *              *              "Monster\Golden Tantalos"
 *             *           83             *              *              *              "Monster\Golden Iron Wheel"
 *             *           135            *              *              *              "Monster\White Wizard"
+*             *           150            *              *              *              "Monster\Bali"
 *             *           275            *              *              *              "Monster\Kundun"
 *             *           295            *              *              *              "Monster\Erohim"
 *             *           338            *              *              *              "Monster\Relics of Kundun"
