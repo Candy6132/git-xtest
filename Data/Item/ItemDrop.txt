@@ -86,19 +86,18 @@
 
 //Relics of Kundun in Kalima
 //Index	Level	Grade	Option0	Option1	Option2	Option3	Option4	Option5	Option6	Duration	MapNumber	MonsterClass	MonsterLevelMin	MonsterLevelMax	DropRate	Comment					
-22	0	0	*	12	12	32	*	*	*	0		28		*		150		150		83333	//Bone Blade
-23	0	0	*	12	12	32	*	*	*	0		28		*		150		150		83333	//Explosion Blade
-1037	0	0	*	12	12	32	*	*	*	0		28		*		150		150		83333	//Divine Scepter
-2069	0	0	*	12	12	32	*	*	*	0		28		*		150		150		83333	//Sylph Wind Bow
-2572	0	0	*	*	12	32	*	*	*	0		28		*		150		150		83333	//Grand Viper Staff
-2579	0	0	*	*	12	32	*	*	*	0		28		*		150		150		83333	//Storm Blitz Stick
-4125	0	0	*	*	12	32	*	*	*	0		28		*		150		150		83333	//Dragon Knight Armor
-4126	0	0	*	*	12	32	*	*	*	0		28		*		150		150		83333	//Venom Mist Armor
-4127	0	0	*	*	12	32	*	*	*	0		28		*		150		150		83333	//Sylphid Ray Armor
-4128	0	0	*	*	12	32	*	*	*	0		28		*		150		150		83333	//Volcano Armor
-4129	0	0	*	*	12	32	*	*	*	0		28		*		150		150		83333	//Sunlight Armor
-4139	0	0	*	*	12	32	*	*	*	0		28		*		150		150		83333	//Storm Blitz Armor
-
+22	0	0	*	12	12	32	*	*	*	0		36		*		150		150		83333	//Bone Blade
+23	0	0	*	12	12	32	*	*	*	0		36		*		150		150		83333	//Explosion Blade
+1037	0	0	*	12	12	32	*	*	*	0		36		*		150		150		83333	//Divine Scepter
+2069	0	0	*	12	12	32	*	*	*	0		36		*		150		150		83333	//Sylph Wind Bow
+2572	0	0	*	*	12	32	*	*	*	0		36		*		150		150		83333	//Grand Viper Staff
+2579	0	0	*	*	12	32	*	*	*	0		36		*		150		150		83333	//Storm Blitz Stick
+4125	0	0	*	*	12	32	*	*	*	0		36		*		150		150		83333	//Dragon Knight Armor
+4126	0	0	*	*	12	32	*	*	*	0		36		*		150		150		83333	//Venom Mist Armor
+4127	0	0	*	*	12	32	*	*	*	0		36		*		150		150		83333	//Sylphid Ray Armor
+4128	0	0	*	*	12	32	*	*	*	0		36		*		150		150		83333	//Volcano Armor
+4129	0	0	*	*	12	32	*	*	*	0		36		*		150		150		83333	//Sunlight Armor
+4139	0	0	*	*	12	32	*	*	*	0		36		*		150		150		83333	//Storm Blitz Armor
 
 //Witch Queen (Hell Maine Invasion):
 6676      0       0       *         *         *         *         *         *         *         0          0           304            *                 *                 800000     //Wizard Ring
