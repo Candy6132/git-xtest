@@ -21,7 +21,7 @@
 //38	50	2000	2000	10	10	//Decay  
 //39	50	2000	2000	10	10	//Ice Storm 
 //40	50	2000	2000	10	10	//Nova  
-41	50	2000	2000	10	10	//Twisting Slash 
+41	50	2000	2000	20	20	//Twisting Slash 
 //42	50	2000	2000	10	10	//Rageful Blow 
 43	50	2000	2000	20	20	//Death Stab 
 //44	50	2000	2000	10	10	//Crescent Moon Slash

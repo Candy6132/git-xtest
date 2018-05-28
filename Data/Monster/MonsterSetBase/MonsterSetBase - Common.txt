@@ -19,7 +19,6 @@
 240            00             00         146            110            03             //Safety Guardian
 240            00             00         5              143            02             //Safety Guardian
 257            00             00         096            129            01             //Shadow Phantom Soldier
-375            00             00         132            161            03             //Chaos Card Master
 257            00             00         132            165            03             //Shadow Phantom Soldier
 257            00             00         132            090            03             //Shadow Phantom Soldier
 257            00             00         170            129            01             //Shadow Phantom Soldier
