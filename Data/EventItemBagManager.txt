@@ -28,6 +28,7 @@
 7224          *           *              *              *              *              "Item\Pink Mistery Box"
 7225          *           *              *              *              *              "Item\Purple Mistery Box"
 7252          *           *              *              *              *              "Item\Cherry Blossom Box"
+
 *             *           42             *              *              *              "Monster\Red Dragon"
 *             *           43             *              *              *              "Monster\Golden Budge Dragon"
 *             *           53             *              *              *              "Monster\Golden Titan"
@@ -51,6 +52,7 @@
 *             *           413            *              *              *              "Monster\Lunar Rabbit"
 *             *           459            *              *              *              "Monster\Selupan"
 *             *           463            *              *              *              "Monster\Fire Flame Ghost"
+
 *             *           *              0              0              1              "Special\Devil Square 1"
 *             *           *              0              1              1              "Special\Devil Square 2"
 *             *           *              0              2              1              "Special\Devil Square 3"
