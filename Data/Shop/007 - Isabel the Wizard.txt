@@ -27,7 +27,7 @@
 7171	0	20	0	0	0	0	//Large Healing Potion
 7174	0	20	0	0	0	0	//Large Mana Potion
 2563	0	0	0	1	2	0	//Lightning Staff
-2576	5	0	0	0	0	0	//Red Wing Stick
+2576	0	0	0	1	2	0	//Red Wing Stick
 2055	2	0	0	0	0	0	//Bolts
 7170	0	255	0	0	0	0	//Medium Healing Potion
 7173	0	255	0	0	0	0	//Medium Mana Potion
