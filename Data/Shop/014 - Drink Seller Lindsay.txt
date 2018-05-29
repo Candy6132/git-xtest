@@ -1,15 +1,15 @@
 //Index	Level	Count	Option1	Option2	Option3	NewOption	Comment
-7171	0	20	0	0	0	0	//Large Healing Potion
-7170	0	20	0	0	0	0	//Medium Healing Potion
-7169	0	20	0	0	0	0	//Small Healing Potion
-7168	0	20	0	0	0	0	//Apple
+7171	0	255	0	0	0	0	//Large Healing Potion
+7170	0	255	0	0	0	0	//Medium Healing Potion
+7169	0	255	0	0	0	0	//Small Healing Potion
+7168	0	255	0	0	0	0	//Apple
 2055	2	0	0	0	0	0	//Bolts
 2055	1	0	0	0	0	0	//Bolts
 2055	0	0	0	0	0	0	//Bolts
 7177	0	0	0	0	0	0	//Ale
-7174	0	20	0	0	0	0	//Large Mana Potion
-7173	0	20	0	0	0	0	//Medium Mana Potion
-7172	0	20	0	0	0	0	//Small Mana Potion
+7174	0	255	0	0	0	0	//Large Mana Potion
+7173	0	255	0	0	0	0	//Medium Mana Potion
+7172	0	255	0	0	0	0	//Small Mana Potion
 7176	0	30	0	0	0	0	//Antidote
 2063	2	0	0	0	0	0	//Arrows
 2063	1	0	0	0	0	0	//Arrows
