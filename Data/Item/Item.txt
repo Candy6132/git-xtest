@@ -677,35 +677,35 @@ end
 51       *      0       1       1        1            0            0          "Chistmas Star"                      0       0																																																										
 52       *      0       1       1        1            0            0          "GM Gift"                            0       0																																																										
 53       *      0       1       1        1            0            0          "Talisman of Luck"                   0       0																																																										
-54       *      0       1       1        1            0            0          "Chaos Card"                         0       0																																																										
+54       *      0       1       1        1            0            0          "Chaos Card"                         0       0	//brak w kliencie
 55       *      0       1       1        1            0            0          "Green Chaos Box"                    0       0																																																										
 56       *      0       1       1        1            0            0          "Red Chaos Box"                      0       0																																																										
 57       *      0       1       1        1            0            0          "Purple Chaos Box"                   0       0																																																										
-58       *      0       1       1        1            0            0          "Rare Item Ticket1"                  0       0																																																										
-59       *      0       1       1        1            0            0          "Rare Item Ticket2"                  0       0																																																										
-60       *      0       1       1        1            0            0          "Rare Item Ticket3"                  0       0																																																										
-61       *      0       1       1        1            0            0          "Rare Item Ticket4"                  0       0																																																										
-62       *      0       1       1        1            0            0          "Rare Item Ticket5"                  0       0																																																										
+58       *      0       1       1        1            0            0          "Rare Item Ticket1"                  0       0	//brak w kliencie
+59       *      0       1       1        1            0            0          "Rare Item Ticket2"                  0       0	//brak w kliencie
+60       *      0       1       1        1            0            0          "Rare Item Ticket3"                  0       0	//brak w kliencie
+61       *      0       1       1        1            0            0          "Rare Item Ticket4"                  0       0	//brak w kliencie
+62       *      0       1       1        1            0            0          "Rare Item Ticket5"                  0       0	//brak w kliencie
 63       *      0       1       1        1            0            0          "Firecracker"                        0       0																																																										
 64       *      0       1       1        1            0            0          "Cursed Castle Water"                0       0																																																										
 65       *      0       1       1        1            0            0          "Death-beam Knight Flame"            0       0																																																										
 66       *      0       1       2        1            0            0          "Hell-Miner Horn"                    0       0																																																										
 67       *      0       1       2        1            0            0          "Dark Phoenix Feather"               0       0																																																										
 68       *      0       1       2        1            0            0          "Abyssal Eye"                        0       0																																																										
-70       *      0       1       1        1            0            0          "Elite Healing Potion"               0       0																																																										
-71       *      0       1       1        1            0            0          "Elite Mana Potion"                  0       0																																																										
-72       *      0       2       2        1            0            0          "Scroll of Quickness"                0       0																																																										
-73       *      0       2       2        1            0            0          "Scroll of Defense"                  0       0																																																										
-74       *      0       2       2        1            0            0          "Scroll of Wrath"                    0       0																																																										
-75       *      0       2       2        1            0            0          "Scroll of Wizardry"                 0       0																																																										
-76       *      0       2       2        1            0            0          "Scroll of Health"                   0       0																																																										
-77       *      0       2       2        1            0            0          "Scroll of Mana"                     0       0																																																										
-78       *      0       1       2        1            0            0          "Elixir of Strength"                 0       0																																																										
-79       *      0       1       2        1            0            0          "Elixir of Agility"                  0       0																																																										
-80       *      0       1       2        1            0            0          "Elixir of Health"                   0       0																																																										
-81       *      0       1       2        1            0            0          "Elixir of Energy"                   0       0																																																										
-82       *      0       1       2        1            0            0          "Elixir of Control"                  0       0																																																										
-83       *      0       1       1        1            0            0          "Rare Item Ticket"                   0       0																																																										
+70       *      0       1       1        1            0            0          "Elite Healing Potion"               0       0	//brak w kliencie
+71       *      0       1       1        1            0            0          "Elite Mana Potion"                  0       0	//brak w kliencie
+72       *      0       2       2        1            0            0          "Scroll of Quickness"                0       0	//brak w kliencie
+73       *      0       2       2        1            0            0          "Scroll of Defense"                  0       0	//brak w kliencie
+74       *      0       2       2        1            0            0          "Scroll of Wrath"                    0       0	//brak w kliencie
+75       *      0       2       2        1            0            0          "Scroll of Wizardry"                 0       0	//brak w kliencie
+76       *      0       2       2        1            0            0          "Scroll of Health"                   0       0	//brak w kliencie
+77       *      0       2       2        1            0            0          "Scroll of Mana"                     0       0	//brak w kliencie
+78       *      0       1       2        1            0            0          "Elixir of Strength"                 0       0	//brak w kliencie
+79       *      0       1       2        1            0            0          "Elixir of Agility"                  0       0	//brak w kliencie
+80       *      0       1       2        1            0            0          "Elixir of Health"                   0       0	//brak w kliencie
+81       *      0       1       2        1            0            0          "Elixir of Energy"                   0       0	//brak w kliencie
+82       *      0       1       2        1            0            0          "Elixir of Control"                  0       0	//brak w kliencie
+83       *      0       1       1        1            0            0          "Rare Item Ticket"                   0       0	//brak w kliencie
 84       *      0       1       1        1            0            0          "Cherry Blossom Play-Box"            0       0																																																										
 85       *      0       1       2        1            0            0          "Cherry Blossom Wine"                0       0																																																										
 86       *      0       1       1        1            0            0          "Cherry Blossom Rice Cake"           0       0																																																										
