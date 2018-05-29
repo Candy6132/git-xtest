@@ -46,8 +46,7 @@ end
 257            02             00         219            073            03             //Shadow Phantom Soldier
 257            02             00         172            044            01             //Shadow Phantom Soldier
 //379            02             00         032            031            03             //Natasha the Firecracker Merchan - zbugowana picza
-231		2		0	 9		72		3		//Thompson Kenel
-385            02             00         207            12             03             //Mirage
+231		2		0	 9		72		3		// Thompson Kenel
 end
 
 0
@@ -228,7 +227,7 @@ end
 257            51             00         057            232            03             //Shadow Phantom Soldier
 257            51             00         073            220            01             //Shadow Phantom Soldier
 240            51             00         050            229            01             //Safety Guardian
-//385            51             00         055            243            01             //Mirage
+385            51             00         055            243            01             //Mirage
 452            51             00         046            243            01             //Seed Master
 453            51             00         050            243            01             //Seed Researcher
 end
