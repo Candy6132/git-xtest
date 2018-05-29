@@ -47,7 +47,7 @@ end
 257            02             00         172            044            01             //Shadow Phantom Soldier
 //379            02             00         032            031            03             //Natasha the Firecracker Merchan - zbugowana picza
 231		2		0	 9		72		3		//Thompson Kenel
-385            02             00         207            12             03             //Mirage
+567            02             00         207            13             03             //Priestess Veina
 end
 
 0
@@ -110,7 +110,6 @@ end
 0
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
 259            29             00         007            019            02             //Oracle Layla
-567            29             00         010            028            02             //Priestess Veina
 end
 
 0

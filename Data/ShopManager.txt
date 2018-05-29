@@ -20,5 +20,5 @@
 18        417            //Marseille
 21        239            //Stadium Guard
 22        259            //Priestess Reira
-23        385            //Mirage
+23        567            //Priestess Veina
 end
