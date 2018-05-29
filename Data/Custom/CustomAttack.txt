@@ -40,7 +40,7 @@
 1         723     3       0       1.200       0.006       //Fire Blow
 1         740     0       2       1.200       0.006       //Archangel Will
 2         0       0       0       2.000       0.012       //Melee
-2         24      2       1       1.200       0.006       //Triple Shot
+2         24      2       1       1.600       0.006       //Triple Shot
 2         26      0       1       1.200       0.006       //Heal
 2         27      0       1       1.200       0.006       //Greater Defense
 2         28      0       1       1.200       0.006       //Greater Damage
