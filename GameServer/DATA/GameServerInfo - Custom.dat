@@ -76,7 +76,7 @@ CustomEventDropSwitch = 0
 ;==================================================
 ; Custom Jewel Pack Settings
 ;==================================================
-CustomJewelPackSwitch = 0	//do czasu dodania pozosa³ych jewell bundle
+CustomJewelPackSwitch = 1	//do czasu dodania pozosa³ych jewell bundle
 CustomJewelPackMaxSize = 16
 CustomJewelPackEnable_AL0 = 1
 CustomJewelPackEnable_AL1 = 1

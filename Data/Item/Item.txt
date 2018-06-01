@@ -727,6 +727,12 @@ end
 102      *      0       1       1        1            0            0          "Jewel of Skill"                     100     0																																																										
 103      *      0       1       1        1            0            0          "Excellent Stone"                    120     0																																																										
 104      *      0       1       1        1            0            0          "Jewel of Ancient"                   140     0																																																										
+
+106      *      0       1       1        1            0            0          "Bundle of Chaos"                    0       0																																																										
+107      *      0       1       1        1            0            0          "Bundle of Life"                     80      0																																																										
+108      *      0       1       1        1            0            0          "Bundle of Creation"                 100     0																																																										
+109      *      0       1       1        1            0            0          "Bundle of Guardian"                 120     0																																																										
+110      *      0       1       1        1            0            0          "Bundle of Harmony"                  140     0
 end																																																										
 																																																										
 15																																																										
