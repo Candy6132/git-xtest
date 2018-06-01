@@ -8,7 +8,7 @@
 end
 
 1
-//ItemIndex   FontValue   FontColor   Text
+//ItemIndex   FontValue   FontColor   Text (maks 95 znaków!)
 17	0	1	"This blade ties ancestral spirits inside."
 7269	0	0	"Adds Luck Option to your item"
 7270	0	0	"Adds Skill to your weapon"
@@ -17,7 +17,7 @@ end
 end
 
 2
-//ItemIndex   FontValue   FontColor   Text
+//ItemIndex   FontValue   FontColor   Text (maks 95 znaków!)
 17	0	1	"This blade ties ancestral spirits inside."
 7269	0	0	"Adds Luck Option to your item"
 7270	0	0	"Adds Skill to your weapon"
@@ -26,7 +26,7 @@ end
 end
 
 3
-//ItemIndex   FontValue   FontColor   Text
+//ItemIndex   FontValue   FontColor   Text (maks 95 znaków!)
 17	0	1	"This blade ties ancestral spirits inside."
 7269	0	0	"Adds Luck Option to your item"
 7270	0	0	"Adds Skill to your weapon"

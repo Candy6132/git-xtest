@@ -85,5 +85,9 @@
 7212      0           1           1            1            //Higher refining stone
 7221      0           1           1            1            //Talisman of Luck
 7232      1           0           0            0            //Cursed Castle Water
-7264      0           1           1            1            //Talisman of Chaos Assembly	
+7264      0           1           1            1            //Talisman of Chaos Assembly
+7269      0           1           1            1            //Jewel of Luck
+7270      0           1           1            1            //Jewel of Skill
+7271      0           1           1            1            //Jewel of Excellent
+7272      0           1           1            1            //Jewel of Ancient
 end
