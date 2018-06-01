@@ -76,7 +76,7 @@ CustomEventDropSwitch = 0
 ;==================================================
 ; Custom Jewel Pack Settings
 ;==================================================
-CustomJewelPackSwitch = 0	//do czasu dodania pozosa³ych jewell bundle
+CustomJewelPackSwitch = 1
 CustomJewelPackMaxSize = 16
 CustomJewelPackEnable_AL0 = 1
 CustomJewelPackEnable_AL1 = 1
@@ -88,14 +88,14 @@ CustomJewelPackRequireMoney_AL2 = 100000
 CustomJewelPackRequireMoney_AL3 = 100000
 CustomJewelPackCommandJoBSyntax = bless
 CustomJewelPackCommandJoSSyntax = soul
-CustomJewelPackCommandJoLSyntax = life
-CustomJewelPackCommandJCRSyntax = creation
-CustomJewelPackCommandJoGSyntax = guardian
-CustomJewelPackCommandJGMSyntax = gem
-CustomJewelPackCommandJoHSyntax = harmony
-CustomJewelPackCommandJoCSyntax = chaos
-CustomJewelPackCommandJLRSyntax = loref
-CustomJewelPackCommandJHRSyntax = hiref
+CustomJewelPackCommandJoLSyntax = -1
+CustomJewelPackCommandJCRSyntax = -1
+CustomJewelPackCommandJoGSyntax = -1
+CustomJewelPackCommandJGMSyntax = -1
+CustomJewelPackCommandJoHSyntax = -1
+CustomJewelPackCommandJoCSyntax = -1
+CustomJewelPackCommandJLRSyntax = -1
+CustomJewelPackCommandJHRSyntax = -1
 
 ;==================================================
 ; Custom Store Settings
