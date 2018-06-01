@@ -48,6 +48,7 @@ end
 //379            02             00         032            031            03             //Natasha the Firecracker Merchan - zbugowana picza
 231		2		0	 9		72		3		//Thompson Kenel
 239            02             00         206            30             02             //Librarian
+256            02             00         190            18             04             //Lahap
 end
 
 0
