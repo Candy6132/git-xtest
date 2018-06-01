@@ -9,7 +9,7 @@ CustomArenaKillerScoreIncrease = 100
 ;==================================================
 ; Custom Attack Settings
 ;==================================================
-CustomAttackSwitch = 1		//Test
+CustomAttackSwitch = 1
 CustomAttackEnable_AL0 = 1
 CustomAttackEnable_AL1 = 1
 CustomAttackEnable_AL2 = 1
@@ -18,10 +18,10 @@ CustomAttackBuffEnable_AL0 = 1
 CustomAttackBuffEnable_AL1 = 1
 CustomAttackBuffEnable_AL2 = 1
 CustomAttackBuffEnable_AL3 = 1
-CustomAttackPickEnable_AL0 = 1
-CustomAttackPickEnable_AL1 = 1
-CustomAttackPickEnable_AL2 = 1
-CustomAttackPickEnable_AL3 = 1
+CustomAttackPickEnable_AL0 = 0
+CustomAttackPickEnable_AL1 = 0
+CustomAttackPickEnable_AL2 = 0
+CustomAttackPickEnable_AL3 = 0
 CustomAttackRequireLevel_AL0 = 0
 CustomAttackRequireLevel_AL1 = 0
 CustomAttackRequireLevel_AL2 = 0
