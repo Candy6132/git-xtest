@@ -18,7 +18,7 @@
 16        415            //Sivia
 17        416            //Leah
 18        417            //Marseille
-21        239            //Stadium Guard
+21        239            //Librarian
 22        259            //Priestess Reira
 23        567            //Priestess Veina
 end

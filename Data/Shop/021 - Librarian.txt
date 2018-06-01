@@ -1,0 +1,14 @@
+//Index	Level	Count	Option1	Option2	Option3	NewOption	Comment
+7683	0	0	0	0	0	0	//Scroll of Fire Ball
+7690	0	0	0	0	0	0	//Scroll of Power
+7681	0	0	0	0	0	0	//Meteor Scroll
+7682	0	0	0	0	0	0	//Lightning Scroll
+7680	0	0	0	0	0	0	//Poison Scroll
+7686	0	0	0	0	0	0	//Ice Scroll
+7686	0	0	0	0	0	0	//Ice Scroll
+7684	0	0	0	0	0	0	//Flame Scroll
+7687	0	0	0	0	0	0	//Twister Scroll
+7685	0	0	0	0	0	0	//Teleport Scroll
+7688	0	0	0	0	0	0	//Evil Spirits Scroll, lub Life Drain
+7700	0	0	0	0	0	0	//Scroll of Life Parchment
+end							
