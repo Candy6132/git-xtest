@@ -127,10 +127,10 @@ MinMasterExperienceMonsterLevel_AL0 = 150
 MinMasterExperienceMonsterLevel_AL1 = 150
 MinMasterExperienceMonsterLevel_AL2 = 150
 MinMasterExperienceMonsterLevel_AL3 = 150
-AddEventExperienceRate_AL0 = 300
-AddEventExperienceRate_AL1 = 350
-AddEventExperienceRate_AL2 = 350
-AddEventExperienceRate_AL3 = 350
+AddEventExperienceRate_AL0 = 150
+AddEventExperienceRate_AL1 = 150
+AddEventExperienceRate_AL2 = 150
+AddEventExperienceRate_AL3 = 150
 
 ;==================================================
 ; Item Drop Settings
