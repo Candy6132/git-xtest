@@ -61,19 +61,20 @@ end
 
 function CustomPK_OnCheckUserKiller(aIndex,bIndex)
 
-	if CustomRespawn_SystemSwitch ~= 0 then
+	if CustomPK_SystemSwitch ~= 0 then
 
 		local KillerMap = GetObjectMap(aIndex)
 		local KillerMapX = GetObjectMapX(aIndex)
 		local KillerMapY = GetObjectMapY(aIndex)
 
+		
 		for n=1,#CustomPK_PKList,1 do
 
 			if CustomPK_PKList[n].Map == KillerMap then
 
 				if CustomPK_PKList[n].MapSX == -1 or CustomPK_PKList[n].MapSX <= KillerMapX then
 
-					if CustomPK_PKList[n].MapSY == -1 or CustomPK_PKList[n].MapSy <= KillerMapY then
+					if CustomPK_PKList[n].MapSY == -1 or CustomPK_PKList[n].MapSY <= KillerMapY then
 
 						if CustomPK_PKList[n].MapTX == -1 or CustomPK_PKList[n].MapTX >= KillerMapX then
 
