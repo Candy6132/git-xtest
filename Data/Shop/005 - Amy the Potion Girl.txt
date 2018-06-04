@@ -14,7 +14,6 @@
 2063	2	0	0	0	0	0	//Arrows
 2063	1	0	0	0	0	0	//Arrows
 2063	0	0	0	0	0	0	//Arrows
-7177	0	0	0	0	0	0	//Ale
 6664	0	0	0	0	2	0	//Ring of Ice
 6665	0	0	0	0	2	0	//Ring of Poison
 6668	0	0	0	0	2	0	//Lightning Pendant

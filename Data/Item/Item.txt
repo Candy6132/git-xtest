@@ -658,12 +658,12 @@ end
 32       *      0       1       1        1            0            0          "Pink Chocolate Box"                 0       0																																																										
 33       *      0       1       1        1            0            0          "Red Chocolate Box"                  0       0																																																										
 34       *      0       1       1        1            0            0          "Blue Chocolate Box"                 0       0																																																										
-35       *      0       1       1        1            0            1          "Small SD Potion"                    50      0																																																										
-36       *      0       1       1        1            0            1          "SD Potion"                          80      0																																																										
-37       *      0       1       1        1            0            1          "Large SD Potion"                    100     0																																																										
-38       *      0       1       1        1            0            1          "Small Complex Potion"               20      68																																																										
-39       *      0       1       1        1            0            1          "Complex Potion"                     40      96																																																										
-40       *      0       1       1        1            0            1          "Large Complex Potion"               60      118																																																										
+35       *      0       1       1        1            0            0          "Small SD Potion"                    50      0																																																										
+36       *      0       1       1        1            0            0          "SD Potion"                          80      0																																																										
+37       *      0       1       1        1            0            0          "Large SD Potion"                    100     0																																																										
+38       *      0       1       1        1            0            0          "Small Complex Potion"               20      68																																																										
+39       *      0       1       1        1            0            0          "Complex Potion"                     40      96																																																										
+40       *      0       1       1        1            0            0          "Large Complex Potion"               60      118																																																										
 41       *      0       1       1        1            0            0          "Gemstone"                           150     25																																																										
 42       *      0       1       1        1            0            0          "Jewel of Harmony"                   150     25																																																										
 43       *      0       1       1        1            0            0          "Lower refining stone"               150     25																																																										
