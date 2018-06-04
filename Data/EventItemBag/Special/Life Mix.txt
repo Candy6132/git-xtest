@@ -5,8 +5,7 @@ end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
-0         5         9000          1000          0             1    1    1    1    1    1
-0         *         1000          1000          8             1    1    1    1    1    1
+0         5         10000          1000          0             1    1    1    1    1    1
 end
 
 5
