@@ -3,7 +3,60 @@ CustomPK_SystemSwitch = 1
 CustomPK_PKList = {}
 
 
+ScriptLoader_AddOnReadScript("CustomPK_OnReadScript")
+
 ScriptLoader_AddOnCheckUserKiller("CustomPK_OnCheckUserKiller")
+
+
+function CustomPK_OnReadScript()
+
+	local ReadTable = FileLoad("..\\Data\\Script\\Data\\CustomPK.txt")
+
+	if ReadTable == nil then return end
+
+	local ReadCount = 1
+
+	while ReadCount < #ReadTable do
+
+		if ReadTable[ReadCount] == "end" then
+
+			ReadCount = ReadCount+1
+
+			break
+
+		else
+
+			CustomPK_PKListRow = {}
+
+			CustomPK_PKListRow["Map"] = tonumber(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+
+			CustomPK_PKListRow["MapSX"] = tonumber(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+
+			CustomPK_PKListRow["MapSY"] = tonumber(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+
+			CustomPK_PKListRow["MapTX"] = tonumber(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+
+			CustomPK_PKListRow["MapTY"] = tonumber(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+
+			table.insert(CustomPK_PKList,CustomPK_PKListRow)
+
+		end
+
+	end
+
+	math.randomseed(os.time())
+
+end
 
 
 function CustomPK_OnCheckUserKiller(aIndex,bIndex)
@@ -14,20 +67,34 @@ function CustomPK_OnCheckUserKiller(aIndex,bIndex)
 		local KillerMapX = GetObjectMapX(aIndex)
 		local KillerMapY = GetObjectMapY(aIndex)
 
-		if KillerMap == 2 and KillerMapX <= 232 and KillerMapX >= 215 and KillerMapY <= 92 and KillerMapY >= 78 then
+		for n=1,#CustomPK_PKList,1 do
 
-			return 0
+			if CustomPK_PKList[n].Map == KillerMap then
 
-		else
+				if CustomPK_PKList[n].MapSX == -1 or CustomPK_PKList[n].MapSX <= KillerMapX then
 
-			return 1
+					if CustomPK_PKList[n].MapSY == -1 or CustomPK_PKList[n].MapSy <= KillerMapY then
+
+						if CustomPK_PKList[n].MapTX == -1 or CustomPK_PKList[n].MapTX >= KillerMapX then
+
+							if CustomPK_PKList[n].MapTY == -1 or CustomPK_PKList[n].MapTY >= KillerMapY then
+
+								return 0
+
+							end
+
+						end
+
+					end
+
+				end
+
+			end
 
 		end
 
-	else
-
-		return 1
-
 	end
+
+	return 1
 
 end
