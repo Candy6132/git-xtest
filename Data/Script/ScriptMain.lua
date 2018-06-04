@@ -2,6 +2,7 @@ require("ScriptDefine")
 require("ScriptUtil")
 require("ScriptCustomRespawn")
 require("ScriptExtraCommand")
+require("ScriptCustomPK")
 
 
 function OnReadScript()

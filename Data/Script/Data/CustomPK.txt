@@ -1,0 +1,3 @@
+//Map   MapSX   MapSY   MapTX   MapTY
+0	138	122	149	133
+end
