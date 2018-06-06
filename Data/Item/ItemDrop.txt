@@ -33,7 +33,7 @@
 //7268      0       0       *         *         *         *         *         *         *         0          *           *              25                150               0          //Lucky Coin
 
 7258      0       0       *         *         *         *         *         *         *         0          *           *              12                120               4000        //Golden Cherry Blossom - Cherry Blossom Event
-6159      0       0       *         *         *         *         *         *         *         0          *           *              12                65                3000        //Jewel of Chaos
+6159      0       0       *         *         *         *         *         *         *         0          *           *              12                65                2000        //Jewel of Chaos
 6159      0       0       *         *         *         *         *         *         *         0          *           *              66                199               1000        //Jewel of Chaos
 6670      0       0       *         *         *         *         *         *         *         0          10          *              25                150               500        //Loch's Feather  
 6670      1       0       *         *         *         *         *         *         *         0          10          *              25                150               300        //Monarch's Crest 
