@@ -3,7 +3,7 @@ require("ScriptUtil")
 require("ScriptCustomRespawn")
 require("ScriptExtraCommand")
 require("ScriptCustomPK")
-require("ScriptCustomQuests")
+require("ScriptCustomQuest")
 
 
 function OnReadScript()
