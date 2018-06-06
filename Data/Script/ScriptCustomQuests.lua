@@ -27,7 +27,7 @@ function CustomQuests_OnReadScript()
 
 	SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
 	
-	CustomQuest_SystemSwitch = ConfigReadNumber("CustomQuestInfo","SystemSwitch","..\\Data\\Script\\Data\\CustomQuest.ini")
+	CustomQuests_SystemSwitch = ConfigReadNumber("CustomQuestInfo","SystemSwitch","..\\Data\\Script\\Data\\CustomQuest.ini")
 	
 	
 	local ReadTable = FileLoad("..\\Data\\Script\\Data\\CustomQuests.txt")
@@ -166,9 +166,15 @@ function CustomQuests_OnNpcTalk(aIndex,bIndex)
 			
 			local CharacterName = GetObjectName(bIndex)
 			
-			CustomQuests_AddCharToTable(CharacterName)
+			if CustomQuests_AddCharToTable(CharacterName) == 1 then
 			
+				NoticeSend(bIndex,1,string.format("Hi, %s. Your quest status is %d, monsters killed: %d",CustomQuests_QuestStatusTable[CustomQuests_CharacterIndexes[CharacterName]].Name,CustomQuests_QuestStatusTable[CustomQuests_CharacterIndexes[CharacterName]].QuestStatus,CustomQuests_QuestStatusTable[CustomQuests_CharacterIndexes[CharacterName]].MonsterCount))
 			
+			else
+			
+				NoticeSend(bIndex,1,"Your quests are currently unavailable. Please contact the administrator.")
+			
+			end
 			
 			--if SQLQuery(string.format("SELECT CustomQuest FROM Character WHERE Name='%s'",GetObjectName(bIndex))) == 0 or SQLFetch() == 0 then
 
@@ -206,8 +212,36 @@ function CustomQuests_AddCharToTable(aName)
 			
 	if CharacterIndex == nil then
 		
-		--Ladowanie Quest Status postaci jesli jej nie ma w tabeli
+		if SQLQuery(string.format("SELECT * FROM Character WHERE Name='%s'",aName)) == 0 or SQLFetch() == 0 then
+
+			SQLClose()
+			
+			return 0
+
+		else
+
+			CustomQuests_QuestStatusTableRow = {}
+			
+			CustomQuests_QuestStatusTableRow["Name"] = aName
+			
+			CustomQuests_QuestStatusTableRow["QuestStatus"] = SQLGetNumber("CustomQuest")
+			
+			CustomQuests_QuestStatusTableRow["MonsterCount"] = SQLGetNumber("CQMonsterCount")
+			
+			SQLClose()
+			
+			table.insert(CustomQuests_QuestStatusTable,CustomQuests_QuestStatusTableRow)
+			
+			CustomQuests_CharacterIndexes[aName] = #CustomQuests_QuestStatusTable
+		
+			return 1
+			
+		end
 	
+	else
+	
+		return 1
+		
 	end
 
 end

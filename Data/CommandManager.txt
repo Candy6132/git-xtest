@@ -33,6 +33,7 @@
 31        "/mute"
 32        "/pack"
 33        "/unpack"
+201       "/questtable"
 
 100       "/online"
 101       "/info"
