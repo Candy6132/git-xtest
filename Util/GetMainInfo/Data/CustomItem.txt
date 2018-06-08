@@ -1,16 +1,45 @@
-//Index   ColorR   ColorG   ColorB   ModelName
-17		50	95	150	"sword18"
-19		255	255	150	"Sword20"
-1037		255	255	150	"saint"
-1042		255	255	50	"gamble_safter01"
-1547		50	200	50	"gamble_scyder01"
-2072		50	150	255	"gamblebow"
-2570		255	255	150	"Staff11"
-2593		255	255	50	"gamble_wand"
-2594		255	255	50	"gamble_stick"
-2596		255	255	150	"Archangelus"
-7269		255	255	100	"JewelofLuck"
-7270		255	255	100	"JewelofSkill"
-7271		255	255	100	"JewelofExcellent"
-7272		255	255	100	"JewelofAncient"
-end
+//Index	ColorR	ColorG	ColorB	ModelName	
+17	50	95	150	"sword18"	
+19	255	255	150	"Sword20"	
+1037	255	255	150	"saint"	
+1042	255	255	50	"gamble_safter01"	
+1547	50	200	50	"gamble_scyder01"	
+2072	50	150	255	"gamblebow"	
+2570	255	255	150	"Staff11"	
+2593	255	255	50	"gamble_wand"	
+2594	255	255	50	"gamble_stick"	
+2596	255	255	150	"Archangelus"	
+7269	255	255	100	"JewelofLuck"	
+7270	255	255	100	"JewelofSkill"	
+7271	255	255	100	"JewelofExcellent"	
+7272	255	255	100	"JewelofAncient"	
+3701	255	0	0	"HelmMale18"		//Red Phoenix Helm 
+4213	255	0	0	"ArmorMale18"		//Red Phoenix Armor 
+4725	255	0	0	"PantMale18"		//Red Phoenix Pants 
+5237	255	0	0	"GloveMale18"		//Red Phoenix Gloves 
+5749	255	0	0	"BootMale18"		//Red Phoenix Boots 
+3702	120	0	0	"HelmMale19"		//Brilliant Soul Helm 
+4214	120	0	0	"ArmorMale19"		//Brilliant Soul Armor 
+4726	120	0	0	"PantMale19"		//Brilliant Soul Pants 
+5238	120	0	0	"GloveMale19"		//Brilliant Soul Gloves 
+5750	120	0	0	"BootMale19"		//Brilliant Soul Boots 
+3703	0	0	180	"HelmMaleTest20"	//Divine Helm of Elements
+4215	0	0	180	"ArmorMaleTest20"	//Divine Armor of Elements
+4727	0	0	180	"PantMaleTest20"	//Divine Pants of Elements
+5239	0	0	180	"GloveMaleTest20"	//Divine Gloves of Elements
+5751	0	0	180	"BootMaleTest20"	//Divine Boots of Elements
+4216	255	255	100	"ArmorMale21"		//Vengeful Hawk Armor 
+4728	255	255	100	"PantMale21"		//Vengeful Hawk Pants 
+5240	255	255	100	"GloveMale21"		//Vengeful Hawk Gloves 
+5752	255	255	100	"BootMale21"		//Vengeful Hawk Boots 
+3712	255	255	200	"HelmMale29"		//Pure Master Helm 
+4224	255	255	200	"ArmorMale29"		//Pure Master Armor 
+4736	255	255	200	"PantMale29"		//Pure Master Pants 
+5248	255	255	200	"GloveMale29"		//Pure Master Gloves 
+5760	255	255	200	"BootMale29"		//Pure Master Boots 
+3726	0	0	180	"HelmMale43"		//Vibrant Helm  
+4238	0	0	180	"ArmorMale43"		//Vibrant Armor  
+4750	0	0	180	"PantMale43"		//Vibrant Pants  
+5262	0	0	180	"GloveMale43"		//Vibrant Gloves  
+5774	0	0	180	"BootMale43"		//Vibrant Boots  
+end					
