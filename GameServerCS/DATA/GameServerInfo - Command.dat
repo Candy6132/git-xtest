@@ -16,10 +16,10 @@ CommandPostReset_AL0 = 0
 CommandPostReset_AL1 = 0
 CommandPostReset_AL2 = 0
 CommandPostReset_AL3 = 0
-CommandPostMoney_AL0 = 500000
-CommandPostMoney_AL1 = 500000
-CommandPostMoney_AL2 = 500000
-CommandPostMoney_AL3 = 500000
+CommandPostMoney_AL0 = 5000
+CommandPostMoney_AL1 = 5000
+CommandPostMoney_AL2 = 5000
+CommandPostMoney_AL3 = 5000
 CommandPostDelay_AL0 = 30
 CommandPostDelay_AL1 = 30
 CommandPostDelay_AL2 = 30
@@ -50,10 +50,10 @@ CommandPKClearEnable_AL0 = 1
 CommandPKClearEnable_AL1 = 1
 CommandPKClearEnable_AL2 = 1
 CommandPKClearEnable_AL3 = 1
-CommandPKClearMoney_AL0 = 100000000
-CommandPKClearMoney_AL1 = 100000000
-CommandPKClearMoney_AL2 = 100000000
-CommandPKClearMoney_AL3 = 100000000
+CommandPKClearMoney_AL0 = 1000000
+CommandPKClearMoney_AL1 = 1000000
+CommandPKClearMoney_AL2 = 1000000
+CommandPKClearMoney_AL3 = 1000000
 
 ;==================================================
 ; Money Command Settings
@@ -89,10 +89,10 @@ CommandWareEnable_AL0 = 1
 CommandWareEnable_AL1 = 1
 CommandWareEnable_AL2 = 1
 CommandWareEnable_AL3 = 1
-CommandWareNumber_AL0 = 3
-CommandWareNumber_AL1 = 4
-CommandWareNumber_AL2 = 5
-CommandWareNumber_AL3 = 6
+CommandWareNumber_AL0 = 2
+CommandWareNumber_AL1 = 3
+CommandWareNumber_AL2 = 4
+CommandWareNumber_AL3 = 5
 
 ;==================================================
 ; Reset Command Settings
@@ -127,10 +127,10 @@ CommandResetLevel_AL0 = 400
 CommandResetLevel_AL1 = 400
 CommandResetLevel_AL2 = 400
 CommandResetLevel_AL3 = 400
-CommandResetMoney_AL0 = 100000000
-CommandResetMoney_AL1 = 100000000
-CommandResetMoney_AL2 = 100000000
-CommandResetMoney_AL3 = 100000000
+CommandResetMoney_AL0 = 1000000
+CommandResetMoney_AL1 = 1000000
+CommandResetMoney_AL2 = 1000000
+CommandResetMoney_AL3 = 1000000
 CommandResetCount_AL0 = 1
 CommandResetCount_AL1 = 1
 CommandResetCount_AL2 = 1
