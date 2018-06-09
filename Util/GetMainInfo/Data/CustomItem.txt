@@ -23,11 +23,11 @@
 4726	120	0	0	"PantMale19"		//Brilliant Soul Pants 
 5238	120	0	0	"GloveMale19"		//Brilliant Soul Gloves 
 5750	120	0	0	"BootMale19"		//Brilliant Soul Boots 
-3703	0	0	180	"HelmMaleTest20"	//Divine Helm of Elements
-4215	0	0	180	"ArmorMaleTest20"	//Divine Armor of Elements
-4727	0	0	180	"PantMaleTest20"	//Divine Pants of Elements
-5239	0	0	180	"GloveMaleTest20"	//Divine Gloves of Elements
-5751	0	0	180	"BootMaleTest20"	//Divine Boots of Elements
+3703	0	0	220	"HelmMaleTest20"	//Divine Helm of Elements
+4215	0	0	220	"ArmorMaleTest20"	//Divine Armor of Elements
+4727	0	0	220	"PantMaleTest20"	//Divine Pants of Elements
+5239	0	0	220	"GloveMaleTest20"	//Divine Gloves of Elements
+5751	0	0	220	"BootMaleTest20"	//Divine Boots of Elements
 4216	255	255	100	"ArmorMale21"		//Vengeful Hawk Armor 
 4728	255	255	100	"PantMale21"		//Vengeful Hawk Pants 
 5240	255	255	100	"GloveMale21"		//Vengeful Hawk Gloves 
@@ -37,9 +37,9 @@
 4736	255	255	200	"PantMale29"		//Pure Master Pants 
 5248	255	255	200	"GloveMale29"		//Pure Master Gloves 
 5760	255	255	200	"BootMale29"		//Pure Master Boots 
-3726	0	0	180	"HelmMale43"		//Vibrant Helm  
-4238	0	0	180	"ArmorMale43"		//Vibrant Armor  
-4750	0	0	180	"PantMale43"		//Vibrant Pants  
-5262	0	0	180	"GloveMale43"		//Vibrant Gloves  
-5774	0	0	180	"BootMale43"		//Vibrant Boots  
+3726	0	0	220	"HelmMale43"		//Vibrant Helm  
+4238	0	0	220	"ArmorMale43"		//Vibrant Armor  
+4750	0	0	220	"PantMale43"		//Vibrant Pants  
+5262	0	0	220	"GloveMale43"		//Vibrant Gloves  
+5774	0	0	220s	"BootMale43"		//Vibrant Boots  
 end					

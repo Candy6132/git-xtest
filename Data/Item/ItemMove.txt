@@ -90,4 +90,34 @@
 7270      0           1           1            1            //Jewel of Skill
 7271      0           1           1            1            //Jewel of Excellent
 7272      0           1           1            1            //Jewel of Ancient
+
+3701      0           1           0            1            //Red Phoenix Helm 
+4213      0           1           0            1            //Red Phoenix Armor 
+4725      0           1           0            1            //Red Phoenix Pants 
+5237      0           1           0            1            //Red Phoenix Gloves 
+5749      0           1           0            1            //Red Phoenix Boots 
+3702      0           1           0            1            //Brilliant Soul Helm 
+4214      0           1           0            1            //Brilliant Soul Armor 
+4726      0           1           0            1            //Brilliant Soul Pants 
+5238      0           1           0            1            //Brilliant Soul Gloves 
+5750      0           1           0            1            //Brilliant Soul Boots 
+3703      0           1           0            1            //Divine Helm of Elements
+4215      0           1           0            1            //Divine Armor of Elements
+4727      0           1           0            1            //Divine Pants of Elements
+5239      0           1           0            1            //Divine Gloves of Elements
+5751      0           1           0            1            //Divine Boots of Elements
+4216      0           1           0            1            //Vengeful Hawk Armor 
+4728      0           1           0            1            //Vengeful Hawk Pants 
+5240      0           1           0            1            //Vengeful Hawk Gloves 
+5752      0           1           0            1            //Vengeful Hawk Boots 
+3712      0           1           0            1            //Pure Master Helm 
+4224      0           1           0            1            //Pure Master Armor 
+4736      0           1           0            1            //Pure Master Pants 
+5248      0           1           0            1            //Pure Master Gloves 
+5760      0           1           0            1            //Pure Master Boots 
+3726      0           1           0            1            //Vibrant Helm  
+4238      0           1           0            1            //Vibrant Armor  
+4750      0           1           0            1            //Vibrant Pants  
+5262      0           1           0            1            //Vibrant Gloves  
+5774      0           1           0            1            //Vibrant Boots  
 end
