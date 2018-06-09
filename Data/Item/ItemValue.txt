@@ -7,6 +7,13 @@
 2063      1       *       12            //Arrow
 2063      2       *       20            //Arrow
 2063      3       *       28            //Arrow
+6144      *       *       500000        //Wings of Elf
+6145      *       *       500000        //Wings of Heaven
+6146      *       *       500000        //Wings of Satan
+6147      *       *       2000000       //Wings of Spirits
+6148      *       *       2000000       //Wings of Soul
+6149      *       *       2000000       //Wings of Dragon
+6150      *       *       2000000       //Wings of Darkness
 6159      *       *       8100          //Jewel of Chaos
 6170      0       *       600           //Gem of Secret
 6174      0       *       900000        //Bundle of Jewel of Bless 1
@@ -15,6 +22,14 @@
 6175      0       *       600000        //Bundle of Jewel of Soul 1
 6175      1       *       1200000       //Bundle of Jewel of Soul 2
 6175      0       *       1800000       //Bundle of Jewel of Soul 3
+6180      *       *       4000000       //Wings of Storm
+6181      *       *       4000000       //Wings of Eternal
+6182      *       *       4000000       //Wings of Illusion
+6183      *       *       4000000       //Wings of Ruin
+6184      *       *       4000000       //Cape of Emperor
+6185      *       *       800000        //Wings of Curse
+6186      *       *       2000000       //Wings of Despair
+6187      *       *       4000000       //Wings of Dimension
 6659      *       0       9600          //Horn of Dinorant
 6659      *       1       12600         //Horn of Dinorant
 6659      *       2       12600         //Horn of Dinorant
@@ -128,6 +143,13 @@
 7196      *       *       6000          //Lost Map
 7197      *       *       300           //Symbol of Kundun
 7199      *       *       600000        //Jewel of Guardian
+7168      *       *       4             //Apple
+7169      *       *       16            //Small Healing Potion
+7170      *       *       66            //Medium Healing Potion
+7171      *       *       300           //Large Healing Potion
+7172      *       *       16            //Small Mana Potion
+7173      *       *       66            //Medium Mana Potion
+7174      *       *       300           //Large Mana Potion
 7203      *       *       200           //Small SD Potion
 7204      *       *       400           //SD Potion
 7205      *       *       600           //Large SD Potion
