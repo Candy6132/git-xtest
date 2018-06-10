@@ -29,6 +29,8 @@ function CustomQuest_OnReadScript()
 	
 	CustomQuest_NPCNumber = ConfigReadNumber("CustomQuestInfo","QuestNPC","..\\Data\\Script\\Data\\CustomQuest.ini")
 	
+	CustomQuest_NPCName = ConfigReadString("CustomQuestInfo","NPCName","..\\Data\\Script\\Data\\CustomQuest.ini")
+	
 
 	local ReadTable = FileLoad("..\\Data\\Script\\Data\\CustomQuest.txt")
 
@@ -72,6 +74,22 @@ function CustomQuest_OnReadScript()
 
 			ReadCount = ReadCount+1
 			
+			CustomQuest_QuestListRow["MonsterFEIndex"] = tonumber(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+			
+			CustomQuest_QuestListRow["MonsterFEString"] = tostring(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+			
+			CustomQuest_QuestListRow["MonsterSUIndex"] = tonumber(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+			
+			CustomQuest_QuestListRow["MonsterSUString"] = tostring(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+			
 			CustomQuest_QuestListRow["NoItem"] = tonumber(ReadTable[ReadCount])
 
 			ReadCount = ReadCount+1
@@ -80,7 +98,15 @@ function CustomQuest_OnReadScript()
 
 			ReadCount = ReadCount+1
 			
+			CustomQuest_QuestListRow["ItemLevel"] = tonumber(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+			
 			CustomQuest_QuestListRow["ItemString"] = tostring(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+			
+			CustomQuest_QuestListRow["ItemMonsterDrop"] = tostring(ReadTable[ReadCount])
 
 			ReadCount = ReadCount+1
 			
@@ -89,6 +115,14 @@ function CustomQuest_OnReadScript()
 			ReadCount = ReadCount+1
 			
 			CustomQuest_QuestListRow["PointReward"] = tonumber(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+			
+			CustomQuest_QuestListRow["ItemRewardIndex"] = tonumber(ReadTable[ReadCount])
+
+			ReadCount = ReadCount+1
+			
+			CustomQuest_QuestListRow["ItemRewardLevel"] = tonumber(ReadTable[ReadCount])
 
 			ReadCount = ReadCount+1
 			
@@ -152,7 +186,6 @@ end
 
 --Status = 0 - quest nie rozpoczety
 --Status = 1 - quest rozpoczety
---Status = 2 - quest zakonczony
 
 
 function CustomQuest_OnCharacterEntry(aIndex)
@@ -168,12 +201,55 @@ function CustomQuest_OnCharacterEntry(aIndex)
 			local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 10
 			
 			local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 10
-
-			--NoticeSend(bIndex,1,string.format(PartialQuestStatus))
-				
-			--NoticeSend(bIndex,1,string.format(MainQuestStatus))
 			
-			NoticeSend(aIndex,1,string.format("[Quest #%d] Killed monsters: %d/?",MainQuestStatus,CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount))
+			local NoticeText = ""
+			
+			if MainQuestStatus <= #CustomQuest_QuestList-1 then
+			
+				if PartialQuestStatus == 0 then
+			
+					NoticeText = string.format("[Quest #%d] Go meet %s to obtain new quest.",MainQuestStatus+1,CustomQuest_NPCName)
+				
+					NoticeSend(aIndex,1,NoticeText)
+				
+				else
+				
+					NoticeText = string.format("[Quest #%d]",MainQuestStatus+1)
+					
+					local NoMonsters = CustomQuest_QuestList[MainQuestStatus+1].NoMonsters
+
+					if NoMonsters ~= nil then
+					
+						if GetObjectClass(aIndex) == 81 then
+					
+							local MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
+					
+						elseif GetObjectClass(aIndex) == 32 then
+						
+							local MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
+							
+						else
+					
+							local MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterString
+					
+						end
+					
+						local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
+						
+						NoticeText = NoticeText + string.format("%d/%d %s killed",NoMonsters,MonsterCount,MonsterName)
+						
+					end
+					
+					--TU SKONCZYŁEM
+					--ILE ITEMÓW DO WYDROPIENIA?
+					
+					
+					
+				end
+
+			end
+			
+			--NoticeSend(aIndex,1,string.format("[Quest #%d] Killed monsters: %d/?",MainQuestStatus+1,CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount))
 			
 		else
 			
