@@ -214,6 +214,8 @@ function CustomQuest_OnCharacterEntry(aIndex)
 				
 					NoticeText = string.format("[Quest #%d]",MainQuestStatus+1)
 					
+					NoticeSend(aIndex,1,string.format("#1 %s",NoticeText))
+					
 					local NoMonsters = CustomQuest_QuestList[MainQuestStatus+1].NoMonsters
 					
 					local MonsterName
@@ -240,7 +242,7 @@ function CustomQuest_OnCharacterEntry(aIndex)
 					
 						local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
 						
-						NoticeText = NoticeText..(string.format("[%d/%d %s killed]",MonsterCount,NoMonsters,MonsterName))
+						NoticeText = NoticeText..(string.format(" [%d/%d %s killed]",MonsterCount,NoMonsters,MonsterName))
 						
 					end
 					
@@ -253,18 +255,16 @@ function CustomQuest_OnCharacterEntry(aIndex)
 						local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,CustomQuest_QuestList[MainQuestStatus+1].ItemLevel)
 						
 						local ItemString = CustomQuest_QuestList[MainQuestStatus+1].ItemString
-					
-						NoticeText = NoticeText..(string.format("[%d/%d %s collected]",NoItemCollected,NoItem,ItemString))
+
+						NoticeText = NoticeText..(string.format(" [%d/%d %s collected]",NoItemCollected,NoItem,ItemString))
 						
 					end
 					
 				end
-				
-				NoticeSend(aIndex,1,NoticeText)
 
 			end
 			
-			--NoticeSend(aIndex,1,string.format("[Quest #%d] Killed monsters: %d/?",MainQuestStatus+1,CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount))
+			NoticeSend(aIndex,1,NoticeText)
 			
 		else
 			
@@ -292,7 +292,71 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 			
 			-----------------------------------------------------------------------------------------------------------
 			
+			local CharacterName = GetObjectName(bIndex)
+
+		if CustomQuest_AddCharToTable(CharacterName) == 1 then
+		
+			local CharacterIndex = CustomQuest_CharacterIndexes[CharacterName]
 			
+			local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 10
+			
+			local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 10
+			
+			local NoticeText = ""
+			
+			if MainQuestStatus <= #CustomQuest_QuestList-1 then
+			
+				if PartialQuestStatus == 0 then
+			
+					NoticeText = string.format("[Quest #%d] Go meet %s to obtain new quest.",MainQuestStatus+1,CustomQuest_NPCName)
+				
+				else
+				
+					NoticeText = string.format("[Quest #%d]",MainQuestStatus+1)
+					
+					local NoMonsters = CustomQuest_QuestList[MainQuestStatus+1].NoMonsters
+					
+					local MonsterName
+
+					if NoMonsters ~= nil then
+					
+						local MonsterSUString = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
+						
+						local MonsterFEString = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
+					
+						if GetObjectClass(bIndex) == 81 and MonsterSUString ~= nil then
+					
+							MonsterName = MonsterSUString
+					
+						elseif GetObjectClass(bIndex) == 32 and MonsterFEString ~= nil then
+						
+							MonsterName = MonsterFEString
+							
+						else
+							
+							MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterString
+					
+						end
+					
+						local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
+						
+						NoticeText = NoticeText..(string.format(" %d/%d %s killed",MonsterCount,NoMonsters,MonsterName))
+						
+					end
+					
+				end
+				
+				NoticeSend(bIndex,1,NoticeText)
+
+			end
+			
+			--NoticeSend(aIndex,1,string.format("[Quest #%d] Killed monsters: %d/?",MainQuestStatus+1,CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount))
+			
+		else
+			
+			NoticeSend(bIndex,1,"Your quests are currently unavailable. Please contact the administrator.")
+			
+		end
 			
 			-----------------------------------------------------------------------------------------------------------
 	
