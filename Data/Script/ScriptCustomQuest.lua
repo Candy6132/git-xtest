@@ -4,6 +4,8 @@ CustomQuest_QuestStatusTable = {}
 
 CustomQuest_CharacterIndexes = {}
 
+CustomQuest_TableLength = 0
+
 ScriptLoader_AddOnReadScript("CustomQuest_OnReadScript")
 
 ScriptLoader_AddOnCommandManager("CustomQuest_OnCommandManager")
@@ -174,7 +176,19 @@ function CustomQuest_CheckTableCommand(aIndex)
 		
 			local CharacterIndex = CustomQuest_CharacterIndexes[CharacterName]
 			
-			NoticeSend(aIndex,1,string.format("#%d: %s %d %d",CharacterIndex,CharacterName,CustomQuest_QuestStatusTable[n].QuestStatus,CustomQuest_QuestStatusTable[n].MonsterCount))
+			local QuestStatus = CustomQuest_QuestStatusTable[n].QuestStatus
+			
+			local MonsterCount = CustomQuest_QuestStatusTable[n].MonsterCount
+			
+			if CharacterName == nil then CharacterName = "nil" end
+			
+			if CharacterIndex == nil then CharacterIndex = "-1" end
+			
+			if QuestStatus == nil then QuestStatus = "-1" end
+			
+			if MonsterCount == nil then MonsterCount = "-1" end
+			
+			NoticeSend(aIndex,1,string.format("#%d: %s %d %d",CharacterIndex,CharacterName,QuestStatus,MonsterCount))
 			
 		end
 		
@@ -202,7 +216,7 @@ function CustomQuest_OnCharacterEntry(aIndex)
 			
 			local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 10
 			
-			local NoticeText = ""
+			local NoticeText
 			
 			if MainQuestStatus <= #CustomQuest_QuestList-1 then
 			
@@ -213,8 +227,6 @@ function CustomQuest_OnCharacterEntry(aIndex)
 				else
 				
 					NoticeText = string.format("[Quest #%d]",MainQuestStatus+1)
-					
-					NoticeSend(aIndex,1,string.format("#1 %s",NoticeText))
 					
 					local NoMonsters = CustomQuest_QuestList[MainQuestStatus+1].NoMonsters
 					
@@ -250,9 +262,11 @@ function CustomQuest_OnCharacterEntry(aIndex)
 					
 					local NoItem = CustomQuest_QuestList[MainQuestStatus+1].NoItem
 					
-					if ItemIndex ~= nil and NoItem ~= nil and NoItem ~= 0 then
+					local ItemLevel = CustomQuest_QuestList[MainQuestStatus+1].ItemLevel
 					
-						local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,CustomQuest_QuestList[MainQuestStatus+1].ItemLevel)
+					if ItemIndex ~= nil and ItemLevel ~= nil and NoItem > 0 then
+					
+						local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)
 						
 						local ItemString = CustomQuest_QuestList[MainQuestStatus+1].ItemString
 
@@ -279,6 +293,12 @@ end
 
 function CustomQuest_OnCharacterClose(aIndex)
 
+	if CustomQuest_SystemSwitch == 1 then
+	
+		CustomQuest_RemoveCharFromTable(GetObjectName(aIndex))
+		
+	end
+
 end
 
 
@@ -292,71 +312,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 			
 			-----------------------------------------------------------------------------------------------------------
 			
-			local CharacterName = GetObjectName(bIndex)
-
-		if CustomQuest_AddCharToTable(CharacterName) == 1 then
-		
-			local CharacterIndex = CustomQuest_CharacterIndexes[CharacterName]
 			
-			local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 10
-			
-			local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 10
-			
-			local NoticeText = ""
-			
-			if MainQuestStatus <= #CustomQuest_QuestList-1 then
-			
-				if PartialQuestStatus == 0 then
-			
-					NoticeText = string.format("[Quest #%d] Go meet %s to obtain new quest.",MainQuestStatus+1,CustomQuest_NPCName)
-				
-				else
-				
-					NoticeText = string.format("[Quest #%d]",MainQuestStatus+1)
-					
-					local NoMonsters = CustomQuest_QuestList[MainQuestStatus+1].NoMonsters
-					
-					local MonsterName
-
-					if NoMonsters ~= nil then
-					
-						local MonsterSUString = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
-						
-						local MonsterFEString = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
-					
-						if GetObjectClass(bIndex) == 81 and MonsterSUString ~= nil then
-					
-							MonsterName = MonsterSUString
-					
-						elseif GetObjectClass(bIndex) == 32 and MonsterFEString ~= nil then
-						
-							MonsterName = MonsterFEString
-							
-						else
-							
-							MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterString
-					
-						end
-					
-						local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
-						
-						NoticeText = NoticeText..(string.format(" %d/%d %s killed",MonsterCount,NoMonsters,MonsterName))
-						
-					end
-					
-				end
-				
-				NoticeSend(bIndex,1,NoticeText)
-
-			end
-			
-			--NoticeSend(aIndex,1,string.format("[Quest #%d] Killed monsters: %d/?",MainQuestStatus+1,CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount))
-			
-		else
-			
-			NoticeSend(bIndex,1,"Your quests are currently unavailable. Please contact the administrator.")
-			
-		end
 			
 			-----------------------------------------------------------------------------------------------------------
 	
@@ -380,6 +336,18 @@ function CustomQuest_AddCharToTable(aName)
 		if SQLQuery(string.format("SELECT * FROM Character WHERE Name='%s'",aName)) == 0 or SQLFetch() == 0 then
 
 			SQLClose()
+			
+			if SQLCheck() == 0 then
+			
+				local SQL_ODBC = "MuOnline"
+
+				local SQL_USER = ""
+
+				local SQL_PASS = ""
+
+				SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+			
+			end
 			
 			return 0
 
@@ -413,14 +381,78 @@ end
 
 
 function CustomQuest_RemoveCharFromTable(aName)
-
-	--Usuwanie postaci z Tabeli jesli sie wylogowuje
 	
 	local CharacterIndex = CustomQuest_CharacterIndexes[aName]
 			
 	if CharacterIndex ~= nil then
+	
+		local QuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus
 		
-		--Usuwanie postaci z Tabeli jesli sie wylogowuje
+		local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
+		
+		NoticeSend(GetObjectIndexByName("Candy"),1,string.format("%s: index=%d, queststatus=%d, monstercount=%d",aName,CharacterIndex,QuestStatus,MonsterCount))
+		
+		--local QueryStatus = SQLQuery(string.format("UPDATE Character SET CustomQuest=%d WHERE Name='%s' UPDATE Character SET CQMonsterCount=%d WHERE Name='%s'",QuestStatus,aName,MonsterCount,aName))
+		
+		local QueryStatus1 = SQLQuery(string.format("UPDATE Character SET CustomQuest=%d WHERE Name='%s'",QuestStatus,aName))
+
+		SQLClose()
+		
+		if QueryStatus1 == 0 then
+			
+			LogPrint(string.format("CustomQuestScript: SQLQuery failed to save QuestStatus for %s, CharacterIndex=%d, QuestStatus=%d, MonsterCount=%d",aName,CharacterIndex,QuestStatus,MonsterCount))
+
+			LogColor(1,string.format("CustomQuestScript: SQLQuery failed to save QuestStatus for %s!",aName))
+			
+			if SQLCheck() == 0 then
+			
+				local SQL_ODBC = "MuOnline"
+
+				local SQL_USER = ""
+
+				local SQL_PASS = ""
+
+				SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+			
+			end
+			
+		end
+		
+		local QueryStatus2 = SQLQuery(string.format("UPDATE Character SET CQMonsterCount=%d WHERE Name='%s'",MonsterCount,aName))
+		
+		SQLClose()
+		
+		if QueryStatus2 == 0 then
+			
+			LogPrint(string.format("CustomQuestScript: SQLQuery failed to save MonsterCount for %s, CharacterIndex=%d, QuestStatus=%d, MonsterCount=%d",aName,CharacterIndex,QuestStatus,MonsterCount))
+
+			LogColor(1,string.format("CustomQuestScript: SQLQuery failed to save MonsterCount for %s!",aName))
+			
+			if SQLCheck() == 0 then
+			
+				local SQL_ODBC = "MuOnline"
+
+				local SQL_USER = ""
+
+				local SQL_PASS = ""
+
+				SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+			
+			end
+			
+		end
+		
+		if QueryStatus1 == 1 and QueryStatus2 == 1 then
+		
+			CustomQuest_QuestStatusTable[CharacterIndex].Name = nil
+			
+			CustomQuest_QuestStatusTable[CharacterIndex].QueryStatus = nil
+			
+			CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount = nil
+			
+			CustomQuest_CharacterIndexes[aName] = nil
+			
+		end
 	
 	end
 
