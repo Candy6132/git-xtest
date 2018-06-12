@@ -33,8 +33,11 @@
 31        "/mute"
 32        "/pack"
 33        "/unpack"
+
+//Custom Quests
 201       "/questtable"
 
+//Extra Command
 100       "/online"
 101       "/info"
 102       "/logout"
