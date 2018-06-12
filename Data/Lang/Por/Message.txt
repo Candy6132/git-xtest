@@ -372,4 +372,7 @@
 914       "Você só pode ativar o comando de uma zona segura"
 915       "Você precisa ser no mínimo Level %d para utilizar o /offstore"
 916       "Você precisa ter no mínimo %d Resets para utilizar o /offstore"
+
+1000	  "Hey you! Take this buff and kill some monsters for me. We'll see what you're made of."
+1001	  "Hmm, nice. Have you considered becoming a warrior? Maybe this will help you make the decision."
 end

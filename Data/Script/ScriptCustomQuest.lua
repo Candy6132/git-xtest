@@ -223,76 +223,8 @@ function CustomQuest_OnCharacterEntry(aIndex)
 		local CharacterName = GetObjectName(aIndex)
 
 		if CustomQuest_AddCharToTable(CharacterName) == 1 then
-		
-			local CharacterIndex = CustomQuest_CharacterIndexes[CharacterName]
 			
-			local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 10
-			
-			local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 10
-			
-			local NoticeText
-			
-			if MainQuestStatus <= #CustomQuest_QuestList-1 then
-			
-				if PartialQuestStatus == 0 then
-			
-					NoticeText = string.format("[Quest #%d] Go meet %s to obtain new quest.",MainQuestStatus+1,CustomQuest_NPCName)
-				
-				else
-				
-					NoticeText = string.format("[Quest #%d]",MainQuestStatus+1)
-					
-					local NoMonsters = CustomQuest_QuestList[MainQuestStatus+1].NoMonsters
-					
-					local MonsterName
-
-					if NoMonsters ~= nil then
-					
-						local MonsterSUString = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
-						
-						local MonsterFEString = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
-					
-						if GetObjectClass(aIndex) == 81 and MonsterSUString ~= nil then
-					
-							MonsterName = MonsterSUString
-					
-						elseif GetObjectClass(aIndex) == 32 and MonsterFEString ~= nil then
-						
-							MonsterName = MonsterFEString
-							
-						else
-							
-							MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterString
-					
-						end
-					
-						local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
-						
-						NoticeText = NoticeText..(string.format(" [%d/%d %s killed]",MonsterCount,NoMonsters,MonsterName))
-						
-					end
-					
-					local ItemIndex = CustomQuest_QuestList[MainQuestStatus+1].ItemIndex
-					
-					local NoItem = CustomQuest_QuestList[MainQuestStatus+1].NoItem
-					
-					local ItemLevel = CustomQuest_QuestList[MainQuestStatus+1].ItemLevel
-					
-					if ItemIndex ~= nil and ItemLevel ~= nil and NoItem > 0 then
-					
-						local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)
-						
-						local ItemString = CustomQuest_QuestList[MainQuestStatus+1].ItemString
-
-						NoticeText = NoticeText..(string.format(" [%d/%d %s collected]",NoItemCollected,NoItem,ItemString))
-						
-					end
-					
-				end
-
-			end
-			
-			NoticeSend(aIndex,1,NoticeText)
+			NoticeSend(aIndex,1,CustomQuest_GetQuestMessage(aIndex,CharacterName))
 			
 		else
 			
@@ -391,9 +323,7 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 
 					if ItemDropRate > 0 and ItemDropRate <= 100 then
 
-						local RandomNumber = math.random(99)+1
-
-						if RandomNumber <= ItemDropRate then
+						if math.random(99)+1 <= ItemDropRate then
 						
 							local ItemDropIndex = CustomQuest_QuestList[MainQuestStatus+1].ItemDropIndex
 							
@@ -404,13 +334,24 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 						end
 						
 					else
+					
+						local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
 
+						if MonsterCount < CustomQuest_QuestList[MainQuestStatus+1].NoMonsters then
+						
+							MonsterCount = MonsterCount+1
+							
+							CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount = MonsterCount
+							
+							if MonsterCount % 10 == 0 then
+							
+								--Zapis do bazy
+								
+							end
 					
+						end
 					
-					
-					
-					
-					
+						NoticeSend(bIndex,1,CustomQuest_GetQuestMessage(bIndex,CharacterName))
 					
 					end
 						
@@ -426,6 +367,95 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 		end
 		
 	end
+	
+end
+
+
+function CustomQuest_GetQuestMessage(aIndex,bName)
+
+	local CharacterIndex = CustomQuest_CharacterIndexes[bName]
+	
+	local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 10
+	
+	local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 10
+	
+	local NoticeText
+			
+	if MainQuestStatus <= #CustomQuest_QuestList-1 then
+			
+		if PartialQuestStatus == 0 then
+			
+			NoticeText = string.format("[Quest #%d] Meet %s to obtain new quest.",MainQuestStatus+1,CustomQuest_NPCName)
+				
+		else
+				
+			NoticeText = string.format("[Quest #%d]",MainQuestStatus+1)
+					
+			local NoMonsters = CustomQuest_QuestList[MainQuestStatus+1].NoMonsters
+					
+			local MonsterName
+			
+			local MonstersComplete = 0
+			
+			local ItemsComplete = 0
+
+			if NoMonsters ~= nil then
+					
+				local MonsterSUString = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
+						
+				local MonsterFEString = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
+					
+				if GetObjectClass(aIndex) == 81 and MonsterSUString ~= nil then
+			
+					MonsterName = MonsterSUString
+					
+				elseif GetObjectClass(aIndex) == 32 and MonsterFEString ~= nil then
+						
+					MonsterName = MonsterFEString
+							
+				else
+							
+					MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterString
+			
+				end
+					
+				local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
+						
+				NoticeText = NoticeText..(string.format(" [%d/%d %s killed]",MonsterCount,NoMonsters,MonsterName))
+				
+				if MonsterCount >= NoMonsters then MonstersComplete = 1 end
+				
+			end
+					
+			local ItemIndex = CustomQuest_QuestList[MainQuestStatus+1].ItemIndex
+					
+			local NoItem = CustomQuest_QuestList[MainQuestStatus+1].NoItem
+					
+			local ItemLevel = CustomQuest_QuestList[MainQuestStatus+1].ItemLevel
+					
+			if ItemIndex ~= nil and ItemLevel ~= nil and NoItem > 0 then
+					
+				local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)
+						
+				local ItemString = CustomQuest_QuestList[MainQuestStatus+1].ItemString
+
+				NoticeText = NoticeText..(string.format(" [%d/%d %s collected]",NoItemCollected,NoItem,ItemString))
+				
+				if NoItemCollected >= NoItem then ItemsComplete = 1 end
+				
+			end
+				
+			if MonstersComplete == 1 and ItemsComplete == 1 then
+			
+				NoticeText = NoticeText..(string.format(" Talk with %s to complete your quest.",CustomQuest_NPCName))
+			
+			end	
+				
+		end
+
+	end
+
+	return NoticeText
 	
 end
 

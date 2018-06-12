@@ -1,3 +1,40 @@
+//======================================================================================================//
+//													//
+//		#        #  #       #  #    #   #####   ######   ##      ##  #     #			//
+//		#        #  #       #  #   #   #     #  #     #  # ##  ## #  #     #			//
+//		#        #   ##   ##   ####    #     #  #     #  #   ##   #  #     #			//
+//		#   ##   #     ###     #   #   #     #  ######   #        #  #     #			//
+//		# ##  ## #      #      #   #   #     #  #        #        #  #     #			//
+//		##      ##      #      #    #   #####   #        #        #   #####			//
+//											       by Candy //
+//======================================================================================================//
+
+//ReqLevel			 - required level to start quest
+//ReqReset			 - required reset to start quest
+//ReqMReset			 - required master reset to start quest
+//NoMonsters			 - number of monster to kill in quest
+//MonsterIndex			 - index of monster to kill from Monster.txt
+//MonsterString			 - monster name in plural, ex. "Spiders"
+//MonsterFEIndex		 - index of alternative monster to kill for Fairy Elf
+//MonsterFEString		 - alternative monster name for Fairy Elf
+//MonsterSUIndex		 - index of alternative monster to kill for Summoner
+//MonsterSUString		 - alternative monster name for Summoner
+//NoItem			 - number of items to collect for quest
+//ItemIndex			 - index of item to collect for quest (type*512+index)
+//ItemLevel			 - level of item to collect for quest
+//ItemString			 - name of item to collect in quest
+//ItemDropIndex			 - index of item to drop from monster specified in MonsterIndex, or MonsterSUIndex, or MonsterFEIndex (type*512+index)
+//ItemDropLevel			 - level of item dropped by monster
+//ItemDropRate			 - chance to drop item from monster
+//ExpReward			 - how much exp will be the player awarded with
+//PointReward			 - how much level points will be the player awarded with
+//ItemRewardIndex		 - index of an item as reward for completing quest
+//ItemRewardLevel		 - level of item as reward for completing quest
+//EventItemBagSpecialValue	 - eventitembag SpecialValue from EventItemBagManager.txt, if added, a player will be awarded with item from eventitembag
+//QuestStartMessage		 - message number from Message.txt
+//QuestFinishMessage		 - message number from Message.txt
+
 //ReqLevel	ReqReset	ReqMReset	NoMonsters	MonsterIndex	MonsterString	MonsterFEIndex	MonsterFEString		MonsterSUIndex	MonsterSUString		NoItem	ItemIndex	ItemLevel	ItemString	ItemDropIndex	ItemDropLevel	ItemDropRate	ExpReward	PointReward	ItemRewardIndex	ItemRewardLevel	EventItemBagSpecialValue	QuestStartMessage	QuestFinishMessage
-0		*		*		10		3		"Spiders"	27		"Chain Skorpions"	*		*			10	7168		0		"Apples"	7168		0		80		10000		*		0		9		*				1000			1001
+0		*		*		10		3		"Spiders"	27		"Chain Skorpions"	*		*			10	7168		0		"Apples"	*		*		*		10000		*		0		9		*				1000			1001
+0		*		*		*		3		*		27		*			*		*			10	7168		0		"Apples"	7168		0		80		10000		*		0		9		*				1000			1001
 end
