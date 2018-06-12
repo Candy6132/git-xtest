@@ -110,15 +110,15 @@ function CustomQuest_OnReadScript()
 
 			ReadCount = ReadCount+1
 			
-			CustomQuest_QuestListRow["ItemDropIndex"] = tostring(ReadTable[ReadCount])
+			CustomQuest_QuestListRow["ItemDropIndex"] = tonumber(ReadTable[ReadCount])
 
 			ReadCount = ReadCount+1
 			
-			CustomQuest_QuestListRow["ItemDropLevel"] = tostring(ReadTable[ReadCount])
+			CustomQuest_QuestListRow["ItemDropLevel"] = tonumber(ReadTable[ReadCount])
 
 			ReadCount = ReadCount+1
 			
-			CustomQuest_QuestListRow["ItemDropRate"] = tostring(ReadTable[ReadCount])
+			CustomQuest_QuestListRow["ItemDropRate"] = tonumber(ReadTable[ReadCount])
 
 			ReadCount = ReadCount+1
 			
@@ -351,9 +351,9 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 		
 			local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 10
 			
-			if PartialQuestStatus ~= 0 then
-				
-				local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 10
+			local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 10
+			
+			if PartialQuestStatus ~= 0 and MainQuestStatus <= #CustomQuest_QuestList-1 then
 			
 				local CharacterClass = GetObjectClass(bIndex)
 		
@@ -388,16 +388,18 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 				if GetObjectClass(aIndex) == MonsterClass then
 				
 					local ItemDropRate = CustomQuest_QuestList[MainQuestStatus+1].ItemDropRate
-					
+
 					if ItemDropRate > 0 and ItemDropRate <= 100 then
-					
-						if math.random(99)+1 <= ItemDropRate then
+
+						local RandomNumber = math.random(99)+1
+
+						if RandomNumber <= ItemDropRate then
 						
 							local ItemDropIndex = CustomQuest_QuestList[MainQuestStatus+1].ItemDropIndex
 							
 							local ItemDropLevel = CustomQuest_QuestList[MainQuestStatus+1].ItemDropLevel
 						
-							ItemDropEx(bIndex,GetObjectMap(bIndex),GetObjectMapX(bIndex),GetObjectMapY(bIndex),ItemDropIndex,ItemDropLevel,0,0,0,0,0)
+							ItemDropEx(bIndex,GetObjectMap(aIndex),GetObjectMapX(aIndex),GetObjectMapY(aIndex),ItemDropIndex,ItemDropLevel,0,0,0,0,0)
 						
 						end
 						

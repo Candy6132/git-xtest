@@ -372,4 +372,7 @@
 914       "You can only activate the command in a safe zone"
 915       "You need to be at least Level %d to use the /offstore"
 916       "You need to have at least %d Resets to use the /offstore"
+
+1000	  "Hey you! Take this buff and kill some monsters for me. We'll see what you're made of."
+1001	  "Hmm, nice. Have you considered becoming a warrior? Maybe this will help you make the decision."
 end
