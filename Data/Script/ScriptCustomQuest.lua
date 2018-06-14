@@ -127,7 +127,7 @@ function CustomQuest_OnReadScript()
 
 			ReadCount = ReadCount+1
 			
-			CustomQuest_QuestListRow["ExpReward"] = tonumber(ReadTable[ReadCount])
+			CustomQuest_QuestListRow["ZenReward"] = tonumber(ReadTable[ReadCount])
 
 			ReadCount = ReadCount+1
 			
@@ -385,7 +385,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							
 							ChatTargetSend(aIndex,bIndex,CharText)
 							
-							CustomQuest_GetQuestMessage(bIndex,CharacterName)
+							NoticeSend(bIndex,1,CustomQuest_GetQuestMessage(bIndex,CharacterName))
 							
 						else
 						
@@ -415,15 +415,15 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							
 							if PlayerMasterReset < RequiredMasterReset then
 							
-								CharText = string.format("You're going to make at least %d master resets, before we start this quest.",RequiredMasterReset)
+								CharText = string.format("You need at least %d master resets, to start this quest.",RequiredMasterReset)
 								
 							elseif RequiredReset < RequiredReset then
 							
-								CharText = string.format("You don't have enough resets. Come back when you'll have at least %d resets!",RequiredReset)
+								CharText = string.format("You don't have enough resets. Come back after %d reset!",RequiredReset)
 							
 							elseif PlayerLevel < RequiredLevel then
 							
-								CharText = string.format("You're not strong enough! Come back when you'll have %d level.",RequiredLevel)
+								CharText = string.format("You're not strong enough! Come back when you'll be %d level.",RequiredLevel)
 								
 							end
 							
@@ -433,17 +433,129 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 						
 						end
 				
-					--elseif
+					else
 				
-				
-				
-				
-					--elseif
-				
-				
-				
-				
-				
+						local NoMonsters = CustomQuest_QuestList[MainQuestStatus+1].NoMonsters
+						
+						local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
+						
+						local NoItem = CustomQuest_QuestList[MainQuestStatus+1].NoItem
+						
+						local NoItemCollected = 0
+						
+						if NoItem ~= nil then
+						
+							local ItemIndex = CustomQuest_QuestList[MainQuestStatus+1].ItemIndex
+							
+							local ItemLevel = CustomQuest_QuestList[MainQuestStatus+1].ItemLevel
+							
+							if ItemLevel == nil then ItemLevel = -1 end
+						
+							NoItemCollected = InventoryGetItemCount(bIndex,ItemIndex,ItemLevel)
+							
+						end
+						
+						local CharText
+							
+						if (NoMonsters ~= nil and MonsterCount >= NoMonsters) or (NoItem ~= nil and NoItemCollected >= NoItem) then
+
+							local QuestMessageNumber = CustomQuest_QuestList[MainQuestStatus+1].QuestFinishMessage
+
+							if QuestMessageNumber ~= nil then
+								
+								CharText = MessageGet(QuestMessageNumber,GetObjectLang(bIndex))
+								
+							else
+							
+								CharText = string.format("Good job, %s. I hope you will like this reward.",CharacterName)
+							
+							end
+							
+							-- SKASOWAĆ QUEST ITEM
+							
+							
+
+							
+							-------------------------------------------- REWARDS --------------------------------------------
+							
+							local ItemRewardIndex = CustomQuest_QuestList[MainQuestStatus+1].ItemRewardIndex
+							
+							if ItemRewardIndex ~= nil then
+								
+								local ItemRewardLevel = CustomQuest_QuestList[MainQuestStatus+1].ItemRewardLevel
+								
+								if InventoryCheckSpaceByItem(bIndex,ItemRewardIndex) == 1 then
+								
+									ItemGiveEx(bIndex,ItemRewardIndex,ItemRewardLevel,0,0,0,0,0)
+									
+								else
+									
+									ItemDropEx(bIndex,ItemRewardIndex,ItemRewardLevel,0,0,0,0,0)
+									
+								end
+							
+							end
+							
+							local EventItemBagSpecialValue = CustomQuest_QuestList[MainQuestStatus+1].EventItemBagSpecialValue
+							
+							if EventItemBagSpecialValue ~= nil then
+							
+								ItemGive(bIndex,EventItemBagSpecialValue)
+							
+							end
+							
+							local ZenReward = CustomQuest_QuestList[MainQuestStatus+1].ZenReward
+							
+							if ZenReward ~= nil then
+							
+								MoneySend(bIndex,ZenReward*1000)
+								
+								NoticeSend(bIndex,1,string.format("You've been granted with %d Zen.",ZenReward*1000))
+							
+							end
+							
+							local PointReward = CustomQuest_QuestList[MainQuestStatus+1].PointReward
+							
+							if PointReward ~= nil then
+							
+								local LevelUpPoint = GetObjectLevelUpPoint(bIndex)
+								
+								SetObjectLevelUpPoint(bIndex,LevelUpPoint+PointReward)
+								
+								NoticeSend(bIndex,1,string.format("You've been granted with %d Level Up Points.",PointReward))
+							
+							end
+							
+							-------------------------------------------------------------------------------------------------
+							
+							PartialQuestStatus = 0 -- <--  POTRZEBNE????
+							
+							MainQuestStatus = MainQuestStatus + 1 -- <--  POTRZEBNE????
+							
+							CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus + 1
+
+							NoticeText = string.format("[Quest #%d] Speak with %s to obtain new quest.",MainQuestStatus+1,CustomQuest_NPCName)
+						
+						else
+						
+							local RandomTalk = {}
+							
+							RandomTalk[1] = "Hey, not so easy. Have you finished your task yet?"
+							
+							RandomTalk[2] = "Come back when you have your quest finished."
+							
+							RandomTalk[3] = "Have you finished that quest I gave you?"
+							
+							RandomTalk[4] = string.format("I'm still waiting for that job beeing done, %s.",CharacterName)
+							
+							CharText = RandomTalk[math.random(#RandomTalk)]
+		
+							NoticeSend(bIndex,1,CustomQuest_GetQuestMessage(bIndex,CharacterName))
+
+						end
+						
+						ChatTargetSend(aIndex,bIndex,CharText)
+
 					end
 				
 				else
@@ -670,8 +782,10 @@ function CustomQuest_GetQuestMessage(aIndex,bName)
 			local NoItem = CustomQuest_QuestList[MainQuestStatus+1].NoItem
 					
 			local ItemLevel = CustomQuest_QuestList[MainQuestStatus+1].ItemLevel
+			
+			if ItemLevel == nil then ItemLevel = -1 end
 					
-			if ItemIndex ~= nil and ItemLevel ~= nil and NoItem > 0 then
+			if ItemIndex ~= nil and NoItem > 0 then
 					
 				local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)
 						
