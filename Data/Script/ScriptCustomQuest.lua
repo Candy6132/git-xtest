@@ -367,15 +367,15 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 									
 								end
 								
-								if QuestHasMonsters = 1 and QuestHasItem = 1 then
+								if QuestHasMonsters == 1 and QuestHasItem == 1 then
 								
 									CharText = string.format("Kill %d %s and collect %d %s.",NoMonsters,MonsterName,NoItem,ItemName)
 									
-								elseif QuestHasMonsters = 1 then
+								elseif QuestHasMonsters == 1 then
 								
 									CharText = string.format("Slay %d %s.",NoMonsters,MonsterName)
 									
-								elseif QuestHasItem = 1 then
+								elseif QuestHasItem == 1 then
 								
 									CharText = string.format("Bring me %d %s.",NoItem,ItemName)
 			
