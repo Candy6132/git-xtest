@@ -29,13 +29,18 @@ function CustomQuest_OnReadScript()
 
 	SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
 	
+	
+	
 	CustomQuest_SystemSwitch = ConfigReadNumber("CustomQuestInfo","SystemSwitch","..\\Data\\Script\\Data\\CustomQuest.ini")
 	
 	CustomQuest_NPCNumber = ConfigReadNumber("CustomQuestInfo","QuestNPC","..\\Data\\Script\\Data\\CustomQuest.ini")
 	
 	CustomQuest_NPCName = ConfigReadString("CustomQuestInfo","NPCName","..\\Data\\Script\\Data\\CustomQuest.ini")
 	
+	CustomQuest_IsNPCShadowPhantomSoldier = ConfigReadNumber("CustomQuestInfo","IsNPCShadowPhantomSoldier","..\\Data\\Script\\Data\\CustomQuest.ini")
+		
 
+	
 	local ReadTable = FileLoad("..\\Data\\Script\\Data\\CustomQuest.txt")
 
 	if ReadTable == nil then return end
@@ -145,6 +150,10 @@ function CustomQuest_OnReadScript()
 			CustomQuest_QuestListRow["QuestStartMessage"] = tonumber(ReadTable[ReadCount])
 
 			ReadCount = ReadCount+1
+			
+			CustomQuest_QuestListRow["QuestFinishMessage"] = tonumber(ReadTable[ReadCount])
+			
+			ReadCount = ReadCount+1
 
 			table.insert(CustomQuest_QuestList,CustomQuest_QuestListRow)
 
@@ -227,6 +236,10 @@ function CustomQuest_OnCharacterEntry(aIndex)
 			NoticeSend(aIndex,1,CustomQuest_GetQuestMessage(aIndex,CharacterName))
 			
 		else
+		
+			LogPrint(string.format("CustomQuestScript: Failed to load  QuestStatus for %s",CharacterName))
+
+			LogColor(1,string.format("CustomQuestScript: Failed to load  QuestStatus for %s",CharacterName))
 			
 			NoticeSend(aIndex,1,"Your quests are currently unavailable. Please contact the administrator.")
 			
@@ -253,15 +266,220 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 	if CustomQuest_SystemSwitch == 1 then
 	
 		if GetObjectClass(aIndex) == CustomQuest_NPCNumber then
+			
+			-----------------------------------------------------------------------------------------------------------
+			
+			--NoticeSend(bIndex,1,string.format("Guardian: I'll help you, %s.",GetObjectName(bIndex)))
+			
+			--ChatTargetSend(aIndex,bIndex,string.format("Hello, %s.",GetObjectName(bIndex)))
+			
+			-----------------------------------------------------------------------------------------------------------
+			
+			local CharacterName = GetObjectName(bIndex)
 		
-			NoticeSend(bIndex,1,string.format("Guardian: I'll help you, %s.",GetObjectName(bIndex)))
+			if CustomQuest_AddCharToTable(CharacterName) == 1 then
 			
-			-----------------------------------------------------------------------------------------------------------
+				local CharacterIndex = CustomQuest_CharacterIndexes[CharacterName]
+		
+				local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 2
 			
+				local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 2
 			
+				if MainQuestStatus <= #CustomQuest_QuestList-1 then
+								
+					if PartialQuestStatus == 0 then
+				
+						local PlayerLevel = GetObjectLevel(bIndex)
+						
+						local PlayerReset = GetObjectReset(bIndex)
+						
+						local PlayerMasterReset = GetObjectMasterReset(bIndex)
+						
+						local RequiredLevel = CustomQuest_QuestList[MainQuestStatus+1].ReqLevel
+						
+						local RequiredReset = CustomQuest_QuestList[MainQuestStatus+1].ReqReset
+						
+						local RequiredMasterReset = CustomQuest_QuestList[MainQuestStatus+1].ReqMReset
+						
+						if RequiredLevel == nil then RequiredLevel = 0 end
+						
+						if RequiredReset == nil then RequiredReset = 0 end
+						
+						if RequiredMasterReset == nil then RequiredMasterReset = 0 end
+						
+						if PlayerLevel >= RequiredLevel and PlayerReset >= RequiredReset and PlayerMasterReset >= RequiredMasterReset then
+						
+							PartialQuestStatus = PartialQuestStatus + 1 -- <--  POTRZEBNE????
+							
+							CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus + 1
+							
+							local QuestMessageNumber = CustomQuest_QuestList[MainQuestStatus+1].QuestStartMessage
+							
+							local CharText
+						
+							if QuestMessageNumber ~= nil then
+							
+								CharText = MessageGet(QuestMessageNumber,GetObjectLang(bIndex))
+								
+							else
+							
+								local NoMonsters = CustomQuest_QuestList[MainQuestStatus+1].NoMonsters
+								
+								local NoItem = CustomQuest_QuestList[MainQuestStatus+1].NoItem
+								
+								local MonsterName
+								
+								local ItemName
+								
+								local QuestHasMonsters = 0
+								
+								local QuestHasItem = 0
+								
+								if NoMonsters ~= nil then
+
+									QuestHasMonsters = 1
+									
+									local MonsterSUString = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
+						
+									local MonsterFEString = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
+					
+									if GetObjectClass(bIndex) == 81 and MonsterSUString ~= nil then
 			
-			-----------------------------------------------------------------------------------------------------------
+										MonsterName = MonsterSUString
+					
+									elseif GetObjectClass(bIndex) == 32 and MonsterFEString ~= nil then
+						
+										MonsterName = MonsterFEString
+							
+									else
+							
+										MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterString
+			
+									end
+									
+								end
+								
+								if NoItem ~= nil then
+								
+									ItemName = CustomQuest_QuestList[MainQuestStatus+1].ItemString
+									
+									QuestHasItem = 1
+									
+								end
+								
+								if QuestHasMonsters = 1 and QuestHasItem = 1 then
+								
+									CharText = string.format("Kill %d %s and collect %d %s.",NoMonsters,MonsterName,NoItem,ItemName)
+									
+								elseif QuestHasMonsters = 1 then
+								
+									CharText = string.format("Slay %d %s.",NoMonsters,MonsterName)
+									
+								elseif QuestHasItem = 1 then
+								
+									CharText = string.format("Bring me %d %s.",NoItem,ItemName)
+			
+								end
+
+							end
+							
+							ChatTargetSend(aIndex,bIndex,CharText)
+							
+							CustomQuest_GetQuestMessage(bIndex,CharacterName)
+							
+						else
+						
+							local CharText
+							
+							local NoticeText = string.format("[Quest #%d] You need ",MainQuestStatus+1)
+							
+							if RequiredLevel > 0 then
+							
+								NoticeText = NoticeText..(string.format("%d level, ",RequiredLevel))
+								
+							end
+							
+							if RequiredReset > 0 then
+							
+								NoticeText = NoticeText..(string.format("%d reset, ",RequiredReset))
+							
+							end
+							
+							if RequiredMasterReset > 0 then
+							
+								NoticeText = NoticeText..(string.format("%d master reset, ",RequiredMasterReset))
+							
+							end
+							
+							NoticeText = NoticeText.."to start this quest."
+							
+							if PlayerMasterReset < RequiredMasterReset then
+							
+								CharText = string.format("You're going to make at least %d master resets, before we start this quest.",RequiredMasterReset)
+								
+							elseif RequiredReset < RequiredReset then
+							
+								CharText = string.format("You don't have enough resets. Come back when you'll have at least %d resets!",RequiredReset)
+							
+							elseif PlayerLevel < RequiredLevel then
+							
+								CharText = string.format("You're not strong enough! Come back when you'll have %d level.",RequiredLevel)
+								
+							end
+							
+							NoticeSend(bIndex,1,NoticeText)
+			
+							ChatTargetSend(aIndex,bIndex,CharText)
+						
+						end
+				
+					--elseif
+				
+				
+				
+				
+					--elseif
+				
+				
+				
+				
+				
+					end
+				
+				else
+				
+					ChatTargetSend(aIndex,bIndex,"You've finished all my quests. Come back later.")
+					
+					NoticeSend(bIndex,1,"Custom Quest: You have finished all quests. Congratulations!")
+				
+				end
+			
+			else
+			
+			--NoticeSend(bIndex,1,"Your quests are currently unavailable. Please contact the administrator.")
+			
+			end
 	
+		
+		
+		--WRZUCIĆ BLOKADĘ WYSKAKUJĄCEGO OKNA DLA ELF SOLIDER (IsNPCShadowPhantomSoldier)
+		
+		--local local ElfBufferMaxLevel_AL0 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxLevel_AL0","..\\Data\\Script\\Data\\CustomQuest.ini")
+	
+		--local ElfBufferMaxLevel_AL1 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxLevel_AL1","..\\Data\\Script\\Data\\CustomQuest.ini")
+	
+		--local ElfBufferMaxLevel_AL2 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxLevel_AL2","..\\Data\\Script\\Data\\CustomQuest.ini")
+	
+		--local ElfBufferMaxLevel_AL3 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxLevel_AL3","..\\Data\\Script\\Data\\CustomQuest.ini")
+	
+		--local ElfBufferMaxReset_AL0 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxReset_AL0","..\\Data\\Script\\Data\\CustomQuest.ini")
+	
+		--local ElfBufferMaxReset_AL1 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxReset_AL1","..\\Data\\Script\\Data\\CustomQuest.ini")
+	
+		--local ElfBufferMaxReset_AL2 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxReset_AL2","..\\Data\\Script\\Data\\CustomQuest.ini")
+	
+		--local ElfBufferMaxReset_AL3 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxReset_AL3","..\\Data\\Script\\Data\\CustomQuest.ini")
+		
 		end
 		
 	end
@@ -281,9 +499,9 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 
 			local CharacterIndex = CustomQuest_CharacterIndexes[CharacterName]
 		
-			local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 10
+			local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 2
 			
-			local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 10
+			local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 2
 			
 			if PartialQuestStatus ~= 0 and MainQuestStatus <= #CustomQuest_QuestList-1 then
 			
@@ -320,9 +538,9 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 				if GetObjectClass(aIndex) == MonsterClass then
 				
 					local ItemDropRate = CustomQuest_QuestList[MainQuestStatus+1].ItemDropRate
-
-					if ItemDropRate > 0 and ItemDropRate <= 100 then
-
+	
+					if ItemDropRate ~= nil then
+					
 						if math.random(99)+1 <= ItemDropRate then
 						
 							local ItemDropIndex = CustomQuest_QuestList[MainQuestStatus+1].ItemDropIndex
@@ -332,7 +550,7 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 							ItemDropEx(bIndex,GetObjectMap(aIndex),GetObjectMapX(aIndex),GetObjectMapY(aIndex),ItemDropIndex,ItemDropLevel,0,0,0,0,0)
 						
 						end
-						
+
 					else
 					
 						local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
@@ -345,7 +563,27 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 							
 							if MonsterCount % 10 == 0 then
 							
-								--Zapis do bazy
+								if SQLQuery(string.format("UPDATE Character SET CQMonsterCount=%d WHERE Name='%s'",MonsterCount,CharacterName)) == 0 then
+								
+									if SQLCheck() == 0 then
+			
+										local SQL_ODBC = "MuOnline"
+
+										local SQL_USER = ""
+
+										local SQL_PASS = ""
+
+										SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+			
+									end
+								
+									LogPrint(string.format("CustomQuestScript: Failed to save MonsterCount for %s",CharacterName))
+
+									LogColor(1,string.format("CustomQuestScript: Failed to save MonsterCount for %s",CharacterName))
+								
+								end
+
+								SQLClose()
 								
 							end
 					
@@ -375,9 +613,9 @@ function CustomQuest_GetQuestMessage(aIndex,bName)
 
 	local CharacterIndex = CustomQuest_CharacterIndexes[bName]
 	
-	local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 10
+	local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 2
 	
-	local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 10
+	local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 2
 	
 	local NoticeText
 			
@@ -483,6 +721,10 @@ function CustomQuest_AddCharToTable(aName)
 				SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
 			
 			end
+			
+			LogPrint(string.format("CustomQuestScript: Failed to save MonsterCount for %s",aName))
+
+			LogColor(1,string.format("CustomQuestScript: Failed to save MonsterCount for %s",aName))
 			
 			return 0
 

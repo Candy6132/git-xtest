@@ -30,11 +30,12 @@
 //PointReward			 - how much level points will be the player awarded with
 //ItemRewardIndex		 - index of an item as reward for completing quest
 //ItemRewardLevel		 - level of item as reward for completing quest
-//EventItemBagSpecialValue	 - eventitembag SpecialValue from EventItemBagManager.txt, if added, a player will be awarded with item from eventitembag
+//EventItemBagSpecialValue	 - eventitembag SpecialValue from EventItemBagManager.txt, if added, a player will be awarded with item from eventitembag. Don't forget to add new file in \Data\EventItemBag\Special\
 //QuestStartMessage		 - message number from Message.txt
 //QuestFinishMessage		 - message number from Message.txt
 
 //ReqLevel	ReqReset	ReqMReset	NoMonsters	MonsterIndex	MonsterString	MonsterFEIndex	MonsterFEString		MonsterSUIndex	MonsterSUString		NoItem	ItemIndex	ItemLevel	ItemString	ItemDropIndex	ItemDropLevel	ItemDropRate	ExpReward	PointReward	ItemRewardIndex	ItemRewardLevel	EventItemBagSpecialValue	QuestStartMessage	QuestFinishMessage
-0		*		*		10		3		"Spiders"	27		"Chain Skorpions"	*		*			10	7168		0		"Apples"	*		*		*		10000		*		0		9		*				1000			1001
-0		*		*		*		3		*		27		*			*		*			10	7168		0		"Apples"	7168		0		80		10000		*		0		9		*				1000			1001
+0		*		*		10		3		"Spiders"	27		"Chain Skorpions"	*		*			*	*		*		*		*		*		*		10000		*		0		9		*				1000			1001
+0		*		*		*		3		*		27		*			*		*			10	7168		0		"Apples"	7168		0		30		10000		5		0		9		*				1000			1001
+400		2		1		*		3		*		27		*			*		*			10	7168		0		"Apples"	7168		0		30		10000		5		0		9		*				1000			1001
 end
