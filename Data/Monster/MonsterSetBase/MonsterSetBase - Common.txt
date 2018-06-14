@@ -25,6 +25,7 @@
 257            00             00         7              120            03             //Shadow Phantom Soldier
 248            00             00         6              144            03             //Thompson Kenel
 256            00             00         130            128            03             //Lahap
+371            00             00         171            129            02             //Leo the Helper
 end
 
 0
