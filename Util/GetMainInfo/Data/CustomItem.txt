@@ -41,5 +41,13 @@
 4238	0	0	220	"ArmorMale43"		//Vibrant Armor  
 4750	0	0	220	"PantMale43"		//Vibrant Pants  
 5262	0	0	220	"GloveMale43"		//Vibrant Gloves  
-5774	0	0	220s	"BootMale43"		//Vibrant Boots  
+5774	0	0	220s	"BootMale43"		//Vibrant Boots
+7278	255	255	0	"covenant"		//Map of Dark Souls
+7279	255	255	0	"Devil01"		//Rare Key
+7280	255	0	0	"Event03"		//Qundun Orders
+7281	255	255	0	"EventBloodCastle00"	//Chaos Weapon Recipe
+7282	255	255	0	"EventBloodCastle00"	//Wings Recipe
+7283	255	100	0	"EventBloodCastle01"	//Beast's Horn
+7284	0	0	255	"ArmorMale04"		//Wizard's Robe
+7285	255	255	100	"expensiveitem01"	//Lizard's Crown
 end					

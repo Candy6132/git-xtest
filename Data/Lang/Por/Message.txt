@@ -375,4 +375,8 @@
 
 1000	  "Hey you! Take this buff and kill some monsters for me."
 1001	  "Hmm, nice. I think this will make you more effective."
+1002	  "Let's see how you'll handle with those little bastards."
+1003	  "Ok, maybe you'll be warrior some day."
+1004	  "Can you please bring me some Ale? I'm thirsty."
+1005	  "Oh, thanks. That's what I need. Here's your zen for that."
 end

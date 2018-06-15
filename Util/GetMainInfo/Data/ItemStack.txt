@@ -1,2 +1,7 @@
 //Index   MaxStack   CreateIndex   Comment
+7278	  10	     *		   //Map of Dark Souls
+7279	  20	     *		   //Rare Key
+7283	  100	     *		   //Beast's Horn
+7284	  50	     *		   //Wizard's Armor
+7285	  20	     *		   //Lizard's Crown
 end

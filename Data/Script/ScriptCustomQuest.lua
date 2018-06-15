@@ -387,6 +387,8 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							
 							NoticeSend(bIndex,1,CustomQuest_GetQuestMessage(bIndex,CharacterName))
 							
+							return 1
+							
 						else
 						
 							local CharText
@@ -415,7 +417,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							
 							if PlayerMasterReset < RequiredMasterReset then
 							
-								CharText = string.format("You need at least %d master resets, to start this quest.",RequiredMasterReset)
+								CharText = string.format("You need at least %d master reset, to start this quest.",RequiredMasterReset)
 								
 							elseif RequiredReset < RequiredReset then
 							
@@ -442,14 +444,14 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 						local NoItem = CustomQuest_QuestList[MainQuestStatus+1].NoItem
 						
 						local NoItemCollected = 0
+
+						local ItemIndex = CustomQuest_QuestList[MainQuestStatus+1].ItemIndex
+							
+						local ItemLevel = CustomQuest_QuestList[MainQuestStatus+1].ItemLevel
+							
+						if ItemLevel == nil then ItemLevel = -1 end
 						
 						if NoItem ~= nil then
-						
-							local ItemIndex = CustomQuest_QuestList[MainQuestStatus+1].ItemIndex
-							
-							local ItemLevel = CustomQuest_QuestList[MainQuestStatus+1].ItemLevel
-							
-							if ItemLevel == nil then ItemLevel = -1 end
 						
 							NoItemCollected = InventoryGetItemCount(bIndex,ItemIndex,ItemLevel)
 							
@@ -471,10 +473,11 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							
 							end
 							
-							-- SKASOWAĆ QUEST ITEM
+							if NoItem ~= nil and NoItemCollected >= NoItem then
+								
+								InventoryDelItemCount(bIndex,ItemIndex,ItemLevel,NoItem)
 							
-							
-
+							end
 							
 							-------------------------------------------- REWARDS --------------------------------------------
 							
@@ -508,9 +511,15 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							
 							if ZenReward ~= nil then
 							
-								MoneySend(bIndex,ZenReward*1000)
+								local CharacterZen = GetObjectMoney(bIndex)
+							
+								SetObjectMoney(bIndex,CharacterZen+ZenReward*100)
 								
-								NoticeSend(bIndex,1,string.format("You've been granted with %d Zen.",ZenReward*1000))
+								--MoneySend(bIndex,ZenReward*100)
+								
+								UserInfoSend(bIndex)
+								
+								NoticeSend(bIndex,1,string.format("You've been granted with %d Zen.",ZenReward*100))
 							
 							end
 							
@@ -522,9 +531,20 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 								
 								SetObjectLevelUpPoint(bIndex,LevelUpPoint+PointReward)
 								
+								--UserCalcAttribute(bIndex)
+								
+								UserInfoSend(bIndex)
+								
 								NoticeSend(bIndex,1,string.format("You've been granted with %d Level Up Points.",PointReward))
 							
 							end
+							
+							--LevelUpSend(aIndex)
+ 
+							--aIndex = User index.
+ 
+							--Update the user level at the client.
+
 							
 							-------------------------------------------------------------------------------------------------
 							
@@ -533,8 +553,34 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							MainQuestStatus = MainQuestStatus + 1 -- <--  POTRZEBNE????
 							
 							CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus + 1
+							
+							CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount = 0
+							
+							if SQLQuery(string.format("UPDATE Character SET CQMonsterCount=%d WHERE Name='%s'",MonsterCount,CharacterName)) == 0 or SQLQuery(string.format("UPDATE Character SET CustomQuest=%d WHERE Name='%s'",MainQuestStatus*2,CharacterName)) == 0 then
+								
+								if SQLCheck() == 0 then
+			
+									local SQL_ODBC = "MuOnline"
 
-							NoticeText = string.format("[Quest #%d] Speak with %s to obtain new quest.",MainQuestStatus+1,CustomQuest_NPCName)
+									local SQL_USER = ""
+
+									local SQL_PASS = ""
+
+									SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+			
+								end
+								
+								LogPrint(string.format("CustomQuestScript: Failed to save Custom Quest for %s",CharacterName))
+
+								LogColor(1,string.format("CustomQuestScript: Failed to save Custom Quest for %s",CharacterName))
+								
+							end
+
+							SQLClose()
+
+							NoticeSend(bIndex,1,string.format("[Quest #%d] Speak with %s to obtain new quest.",MainQuestStatus+1,CustomQuest_NPCName))
+							
+							return 1
 						
 						else
 						

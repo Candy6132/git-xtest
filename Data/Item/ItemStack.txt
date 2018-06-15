@@ -35,4 +35,9 @@
 7257      30         *             //Red Cherry Blossom Branch
 7258      255        *             //Golden Cherry Blossom Branch
 7268      255        *             //Lucky Coin
+7278	  10	     *		   //Map of Dark Souls
+7279	  20	     *		   //Rare Key
+7283	  100	     *		   //Beast's Horn
+7284	  10	     *		   //Wizard's Armor
+7285	  20	     *		   //Lizard's Crown
 end

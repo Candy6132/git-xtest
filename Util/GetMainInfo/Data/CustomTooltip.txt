@@ -5,6 +5,7 @@
 7270	0
 7271	2
 7272	0
+7280	1
 end
 
 1
@@ -74,6 +75,25 @@ end
 4750	0	2	"Cannot be traded"
 5262	0	2	"Cannot be traded"
 5774	0	2	"Cannot be traded"
+
+7278	0	0	"Return this quest item to Leo"
+7279	0	0	"Return this key to Leo"
+7280	0	0	"These are orders vital for Mu Land strategy"
+7280	0	0	"Return them to Leo as quickly as possible!"
+7281	0	0	"Chaos Weapon is a very powerful piece of equipment."
+7281	0	0	"You can create it in Chaos Machine, using as follows:"
+7281	0	0	"1x Jewel of Chaos"
+7281	0	0	"1x Equipment Item +4+4% Option or higher"
+7281	0	0	"The more valuable is the item, the more % you will get."
+7282	0	0	"Wings can greatly improve warrior's powers."
+7282	0	0	"This wonderful piece of equipment can be made from:"
+7282	0	0	"1x Jewel of Chaos"
+7282	0	0	"1x Chaos Weapon min. +4+4% Option"
+7282	0	0	"You can improve Succes Rate by adding other items +4+4%."
+7283	0	0	"Return this piece of horn back to Leo"
+7284	0	0	"Return this robe to Leo and you will get reward"
+7285	0	0	"This Crown is welded by most powerful creatures"
+7285	0	0	"Return it to Leo as proof of defeating the creature"
 end
 
 2
@@ -143,6 +163,25 @@ end
 4750	0	2	"Cannot be traded"
 5262	0	2	"Cannot be traded"
 5774	0	2	"Cannot be traded"
+
+7278	0	0	"Return this quest item to Leo"
+7279	0	0	"Return this key to Leo"
+7280	0	0	"These are orders vital for Mu Land strategy"
+7280	0	0	"Return them to Leo as quickly as possible!"
+7281	0	0	"Chaos Weapon is a very powerful piece of equipment."
+7281	0	0	"You can create it in Chaos Machine, using as follows:"
+7281	0	0	"1x Jewel of Chaos"
+7281	0	0	"1x Equipment Item +4+4% Option or higher"
+7281	0	0	"The more valuable is the item, the more % you will get."
+7282	0	0	"Wings can greatly improve warrior's powers."
+7282	0	0	"This wonderful piece of equipment can be made from:"
+7282	0	0	"1x Jewel of Chaos"
+7282	0	0	"1x Chaos Weapon min. +4+4% Option"
+7282	0	0	"You can improve Succes Rate by adding other items +4+4%."
+7283	0	0	"Return this piece of horn back to Leo"
+7284	0	0	"Return this robe to Leo and you will get reward"
+7285	0	0	"This Crown is welded by most powerful creatures"
+7285	0	0	"Return it to Leo as proof of defeating the creature"
 end
 
 3
@@ -212,4 +251,23 @@ end
 4750	0	2	"Cannot be traded"
 5262	0	2	"Cannot be traded"
 5774	0	2	"Cannot be traded"
+
+7278	0	0	"Return this quest item to Leo"
+7279	0	0	"Return this key to Leo"
+7280	0	0	"These are orders vital for Mu Land strategy"
+7280	0	0	"Return them to Leo as quickly as possible!"
+7281	0	0	"Chaos Weapon is a very powerful piece of equipment."
+7281	0	0	"You can create it in Chaos Machine, using as follows:"
+7281	0	0	"1x Jewel of Chaos"
+7281	0	0	"1x Equipment Item +4+4% Option or higher"
+7281	0	0	"The more valuable is the item, the more % you will get."
+7282	0	0	"Wings can greatly improve warrior's powers."
+7282	0	0	"This wonderful piece of equipment can be made from:"
+7282	0	0	"1x Jewel of Chaos"
+7282	0	0	"1x Chaos Weapon min. +4+4% Option"
+7282	0	0	"You can improve Succes Rate by adding other items +4+4%."
+7283	0	0	"Return this piece of horn back to Leo"
+7284	0	0	"Return this robe to Leo and you will get reward"
+7285	0	0	"This Crown is welded by most powerful creatures"
+7285	0	0	"Return it to Leo as proof of defeating the creature"
 end

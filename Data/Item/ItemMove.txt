@@ -119,5 +119,12 @@
 4238      0           1           0            1            //Vibrant Armor  
 4750      0           1           0            1            //Vibrant Pants  
 5262      0           1           0            1            //Vibrant Gloves  
-5774      0           1           0            1            //Vibrant Boots  
+5774      0           1           0            1            //Vibrant Boots
+
+7278	  0	      1		  0	       0	    //Map of Dark Souls
+7279	  0	      1		  0	       0	    //Rare Key
+7280	  0	      1		  0	       0	    //Kundun Orders
+7283	  0	      1		  0	       0	    //Beast's Horn
+7284	  0	      1		  0	       0	    //Wizard's Robe
+7285	  0	      1		  0	       0	    //Lizard's Crown
 end

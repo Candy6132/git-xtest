@@ -26,6 +26,7 @@
 248            00             00         6              144            03             //Thompson Kenel
 256            00             00         130            128            03             //Lahap
 371            00             00         171            129            02             //Leo the Helper
+371            00             00         98             129            01             //Leo the Helper
 end
 
 0
@@ -50,6 +51,7 @@ end
 231		2		0	 9		77		3		//Thompson Kenel
 239            02             00         206            30             02             //Librarian
 256            02             00         190            18             04             //Lahap
+371            02             00         210            54             02             //Leo the Helper
 end
 
 0
@@ -64,12 +66,27 @@ end
 451            03             00         179            129            03             //Cherry Blossom Tree
 257            03             00         166            085            02             //Shadow Phantom Soldier
 257            03             00         201            129            02             //Shadow Phantom Soldier
+371            03             00         169            118            02             //Leo the Helper
 end
 
 0
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
 257            04             00         203            80             03             //Shadow Phantom Soldier
 253            04             00         201            77             02             //Potion Girl Amy
+371            04             00         211            82             01             //Leo the Helper
+end
+
+0
+//Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
+253	       07	      3	         27	        22	       01             //Potion Girl
+257            07             3          23             25	       01	      //Shadow Phantom Soldier
+371            07             00         17             25             01             //Leo the Helper
+end
+
+0
+231	        8	      00	 191	        73	        2	      //Thompson Kenel
+253	        8	      00	 204	        62	        1	      //Potion Girl
+371             8             00         185            64             02             //Leo the Helper
 end
 
 0
@@ -132,6 +149,7 @@ end
 369            33             00         078            013            02             //Osbourne
 370            33             00         086            013            01             //Jerridon
 240            33             00         81             7              03             //Safety Guardian
+371            33             00         97             14             03             //Leo the Helper
 end
 
 0
@@ -149,11 +167,16 @@ end
 209            34             00         117            027            02             //Wolf Altar 5
 407            34             00         062            239            01             //Werewolf Quarel
 248            34             00         099            040            02             //Wandering Merchant Martin
+371            34             00         227            48             01             //Leo the Helper
 end
 
 0
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
 259            36             00         007            019            02             //Oracle Layla
+end
+
+0
+371            37             00         34             217            02             //Leo the Helper
 end
 
 0
@@ -232,6 +255,8 @@ end
 //385            51             00         055            243            01             //Mirage
 452            51             00         046            243            01             //Seed Master
 453            51             00         050            243            01             //Seed Researcher
+371            51             00         66             215            03             //Leo the Helper
+371            51             00         54             164            01             //Leo the Helper
 end
 
 0
@@ -1069,13 +1094,6 @@ end
 41	4	30	101	168	-1	//Death Cow
 
 end
-//=========================================================================================				
-//=================== Atlans NPCs- ======================================				
-//=========================================================================================
-0
-253	7	3	27	22	1	//Potion Girl
-257     7       3       23      25	1	//Shadow Phantom Soldier
-end
 
 //=========================================================================================				
 //=================== Atlans Monsters - ======================================				
@@ -1478,14 +1496,7 @@ end
 47	7	0	90	33	-1	//Valkyrie A1
 48	7	15	228	61	-1	//Lizard King A2
 end
-//=========================================================================================				
-//================================= Tarkan NPC- ===========================================				
-//=========================================================================================				
 
-0
-231	8	0	191	73	2	//Thompson Kenel
-253	8	0	204	62	1	//Potion Girl
-end
 
 //Mob	Map	Radio	CordX	CordY	CordX2	CordY2	Dir	Quant	Name
 1

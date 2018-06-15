@@ -1,0 +1,31 @@
+3
+//Index   DropRate
+0         10000
+1         10000
+2         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
+0         5         10000         1000          0             0    1    0    1    1    0
+1         6         10000         1000          0             1    0    0    0    0    1
+2         7         10000         1000          0             0    0    1    0    0    0
+end
+
+//DK Drop:											
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+01,001	9	0	*	*	10	*	*	*	*	0	//Hand Axe
+end											
+											
+//DW Drop:											
+6											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+05,000	9	0	*	*	10	*	*	*	*	0	//Skull Staff
+end											
+											
+//Elf Drop:											
+7											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+04,001	9	0	*	10	10	*	*	*	*	0	//Bow
+end											
