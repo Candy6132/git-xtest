@@ -1,7 +1,11 @@
 //Index   MaxStack   CreateIndex   Comment
 7278	  10	     *		   //Map of Dark Souls
-6736	  20	     *		   //Rare Key
-6740	  100	     *		   //Beast's Horn
+7720	  20	     *		   //Rare Key
+6276	  100	     *		   //Beast's Horn
 4239	  50	     *		   //Wizard's Armor
-6741	  20	     *		   //Lizard's Crown
+6278	  20	     *		   //Lizard's Crown
+7722	  100	     *		   //Red Ring
+7723	  100	     *		   //Totem Ornament
+7724	  100	     *		   //Beast's Fang
+7725	  100	     *		   //Blue Glass
 end

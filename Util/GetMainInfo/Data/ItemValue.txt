@@ -179,4 +179,7 @@
 7257      *       *       30            //Red Cherry Blossom Branch
 7258      *       *       30            //Golden Cherry Blossom Branch
 7268      *       *       30            //Lucky Coin
+
+6274	  *       *       1000          //Chaos Weapon Recipe
+6275	  *       *       1000          //Wings Recipe
 end

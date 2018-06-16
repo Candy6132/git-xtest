@@ -8,7 +8,12 @@
 2570	255	255	150	"Staff11"	
 2593	255	255	50	"gamble_wand"	
 2594	255	255	50	"gamble_stick"	
-2596	255	255	150	"Archangelus"	
+2596	255	255	150	"Archangelus"
+
+6702	255	255	100	"entrancered"
+6703	255	255	100	"entrancegray"
+6704	255	255	100	"entrancebleu"
+
 7269	255	255	100	"JewelofLuck"	
 7270	255	255	100	"JewelofSkill"	
 7271	255	255	100	"JewelofExcellent"	
@@ -44,30 +49,35 @@
 5262	0	0	220	"GloveMale43"		//Vibrant Gloves  
 5774	0	0	220	"BootMale43"		//Vibrant Boots
 
-7278	255	255	0	"Covenant"		//Map of Dark Souls
-6736	255	255	0	"Devil01"		//Rare Key
-6737	255	0	0	"Event03"		//Qundun Orders
-6738	255	255	0	"EventBloodCastle00"	//Chaos Weapon Recipe
-6739	255	255	0	"EventBloodCastle00"	//Wings Recipe
-6740	255	100	0	"EventBloodCastle01"	//Beast's Horn
+7278	255	255	40	"Covenant"		//Map of Dark Souls
+7720	255	255	40	"Devil01"		//Rare Key
+7721	255	0	0	"Event03"		//Qundun Orders
+6274	255	255	40	"EventBloodCastle00"	//Chaos Weapon Recipe
+6275	255	255	40	"EventBloodCastle00"	//Wings Recipe
+6276	255	100	0	"EventBloodCastle01"	//Beast's Horn
+6277	255	100	0	"EventBloodCastle00"	//Cherry Wine Recipe
 4239	0	0	255	"ArmorMale04"		//Wizard's Robe
-6741	255	255	100	"expensiveitem01"	//Lizard's Crown
+6278	255	255	40	"expensiveitem01"	//Lizard's Crown
+7722	255	40	40	"firering"		//Red Ring
+7723	255	255	40	"fr_2"			//Totem Ornament
+7724	255	40	40	"fr_3"			//Beast's Fang
+7725	255	255	40	"suho"			//Blue Glass
 
 //Test Items:
-150	255	255	100	"Devil01"		//0
-662	255	255	100	"Devil01"		//1
-1174	255	255	100	"Devil01"		//2
-1686	255	255	100	"Devil01"		//3
-2198	255	255	100	"Devil01"		//4
-2710	255	255	100	"Devil01"		//5
-3222	255	255	100	"Devil01"		//6
-3734	255	255	100	"Devil01"		//7
-4246	255	255	100	"Devil01"		//8
-4758	255	255	100	"Devil01"		//9
-5270	255	255	100	"Devil01"		//10
-5782	255	255	100	"Devil01"		//11
-6294	255	255	100	"Devil01"		//12
-6806	255	255	100	"Devil01"		//13
-7318	255	255	100	"Devil01"		//14
-7830	255	255	100	"Devil01"		//15
-end					
+150	255	255	100	"Wing01"		//0
+662	255	255	100	"Wing01"		//1
+1174	255	255	100	"Wing01"		//2
+1686	255	255	100	"Wing01"		//3
+2198	255	255	100	"Wing01"		//4
+2710	255	255	100	"Wing01"		//5
+3222	255	255	100	"Wing01"		//6
+3734	255	255	100	"Wing01"		//7
+4246	255	255	100	"Wing01"		//8
+4758	255	255	100	"Wing01"		//9
+5270	255	255	100	"Wing01"		//10
+5782	255	255	100	"Wing01"		//11
+6294	255	255	100	"Wing01"		//12
+6806	255	255	100	"Wing01"		//13
+7318	255	255	100	"Wing01"		//14
+7830	255	255	100	"Wing01"		//15
+end
