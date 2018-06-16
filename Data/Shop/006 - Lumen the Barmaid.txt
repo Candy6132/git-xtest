@@ -4,15 +4,13 @@
 7169	0	255	0	0	0	0	//Small Healing Potion
 7168	0	255	0	0	0	0	//Apple
 7188	0	0	0	0	0	0	//Remedy of Love
-6160	0	0	0	0	0	0	//Fire Slash
-6165	0	0	0	0	0	0	//Fire Burst Scroll
+6685	0	0	0	0	0	0	//Chaos Castle Armor
 7177	1	0	0	0	0	0	//Ale
 7174	0	255	0	0	0	0	//Large Mana Potion
 7173	0	255	0	0	0	0	//Medium Mana Potion
 7172	0	255	0	0	0	0	//Small Mana Potion
 7176	0	30	0	0	0	0	//Antidote
 7176	0	3	0	0	0	0	//Antidote
-6151	0	0	0	0	0	0	//Twisting Slash Orb
 7186	4	0	0	0	0	0	//Devil Key+4
 7186	3	0	0	0	0	0	//Devil Key+3
 7186	2	0	0	0	0	0	//Devil Key+2
@@ -37,5 +35,4 @@
 6672	2	0	0	0	0	0	//Archangel Scroll+2
 6673	1	0	0	0	0	0	//Blood Bone+1
 6672	1	0	0	0	0	0	//Archangel Scroll+1
-6685	0	0	0	0	0	0	//Chaos Castle Armor
 end							

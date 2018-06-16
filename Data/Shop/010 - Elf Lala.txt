@@ -3,7 +3,7 @@
 7170	0	255	0	0	0	0	//Medium Healing Potion
 7169	0	255	0	0	0	0	//Small Healing Potion
 7168	0	255	0	0	0	0	//Apple
-6161	0	0	0	0	0	0	//Orb of Penetration
+7177	0	0	0	0	0	0	//Ale
 6152	0	0	0	0	0	0	//Healing Orb
 6153	0	0	0	0	0	0	//Orb of Greater Defence
 6154	0	0	0	0	0	0	//Orb of Greater Damage
@@ -14,7 +14,6 @@
 6155	0	0	0	0	0	0	//Orb Goblin
 6155	1	0	0	0	0	0	//Orb Golem
 6155	2	0	0	0	0	0	//Orb Assasin
-6155	3	0	0	0	0	0	//Orb Yeti
 							
 3594	5	0	0	0	0	0	//Vine Helm
 3595	5	0	0	0	0	0	//Silk Helm

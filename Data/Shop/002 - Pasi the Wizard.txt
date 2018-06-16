@@ -15,8 +15,9 @@
 7686	0	0	0	0	0	0	//Ice Scroll
 5634	5	0	0	0	0	0	//Pad Boots
 5636	5	0	0	0	0	0	//Bone Boots
+7700	0	0	0	0	0	0	//Life Drain Scroll
 7687	0	0	0	0	0	0	//Twister Scroll
-7688	0	0	0	0	0	0	//Evil Spirits Scroll
+//7688	0	0	0	0	0	0	//Evil Spirits Scroll
 7680	0	0	0	0	0	0	//Poison Scroll
 7684	0	0	0	0	0	0	//Flame Scroll
 5122	5	0	0	0	0	0	//Pad Gloves

@@ -17,7 +17,7 @@
 5636	5	0	0	0	0	0	//Bone Boots
 5672	5	0	0	0	0	0	//Red Wing Boots
 7685	0	0	0	0	0	0	//Teleport Scroll
-7688	0	0	0	0	0	0	//Evil Spirits Scroll, lub Life Drain
+7700	0	0	0	0	0	0	//Life Drain Scroll
 5639	5	0	0	0	0	0	//Sphinx Boots
 5124	5	0	0	0	0	0	//Bone Gloves
 5160	5	0	0	0	0	0	//Red Wing Boots
