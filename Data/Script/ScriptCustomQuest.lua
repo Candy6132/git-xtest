@@ -836,8 +836,16 @@ function CustomQuest_GetQuestMessage(aIndex,bName)
 				local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)
 						
 				local ItemString = CustomQuest_QuestList[MainQuestStatus+1].ItemString
+				
+				if ItemLevel ~= -1 and ItemLevel > 0 then
+				
+					NoticeText = NoticeText..(string.format(" [%d/%d %s+%d collected]",NoItemCollected,NoItem,ItemString,ItemLevel))
+				
+				else
 
-				NoticeText = NoticeText..(string.format(" [%d/%d %s collected]",NoItemCollected,NoItem,ItemString))
+					NoticeText = NoticeText..(string.format(" [%d/%d %s collected]",NoItemCollected,NoItem,ItemString))
+					
+				end
 				
 				if NoItemCollected >= NoItem then ItemsComplete = 1 end
 				
