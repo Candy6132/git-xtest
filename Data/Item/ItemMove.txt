@@ -131,4 +131,5 @@
 6277	  0	      1		  0	       0	    //Cherry Wine Recipe
 4239	  0	      1		  0	       0	    //Wizard's Robe
 6741	  0	      1		  0	       0	    //Lizard's Crown
+7722	  0	      1		  0	       0	    //Red Ring
 end
