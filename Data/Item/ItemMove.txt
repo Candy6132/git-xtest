@@ -86,6 +86,9 @@
 7221      0           1           1            1            //Talisman of Luck
 7232      1           0           0            0            //Cursed Castle Water
 7264      0           1           1            1            //Talisman of Chaos Assembly
+6702      0           1           0            1            //DS Ticket
+6703      0           1           0            1            //BC Ticket
+6704      0           1           0            1            //Kalima Ticket
 7269      0           1           1            1            //Jewel of Luck
 7270      0           1           1            1            //Jewel of Skill
 7271      0           1           1            1            //Jewel of Excellent
@@ -124,7 +127,8 @@
 7278	  0	      1		  0	       0	    //Map of Dark Souls
 7720	  0	      1		  0	       0	    //Rare Key
 7721	  0	      1		  0	       0	    //Kundun Orders
-7283	  0	      1		  0	       0	    //Beast's Horn
+6276	  0	      1		  0	       0	    //Beast's Horn
+6277	  0	      1		  0	       0	    //Cherry Wine Recipe
 4239	  0	      1		  0	       0	    //Wizard's Robe
 6741	  0	      1		  0	       0	    //Lizard's Crown
 end
