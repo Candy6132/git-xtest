@@ -289,7 +289,9 @@ end
 119      3      0       2       2        1            1            0          "Divine Armor of Elements"           92      44        0              74           0          50            110            0           0             0               0      0       0       2       0       0       0																																																										
 120      3      0       2       3        1            1            0          "Vengeful Hawk Armor"                107     60        0              82           0          170           70             0           0             0               0      0       0       0       1       0       0																																																										
 128      3      0       2       3        1            1            0          "Pure Master Armor"                  117     51        0              78           0          80            21             0           0             0               0      0       0       0       0       1       0																																																										
-142      3      0       2       2        1            1            0          "Vibrant Armor"                      91      45        0              67           0          60            20             0           0             0               0      0       0       0       0       0       2																																																										
+142      3      0       2       2        1            1            0          "Vibrant Armor"                      91      45        0              67           0          60            20             0           0             0               0      0       0       0       0       0       2
+
+143      *      0       2       2        0            0            0          "Wizard's Robe"                	   50       0        0              0            0          0             0              0           0             0               0      0       0       0       0       0       0
 end																																																										
 																																																										
 9																																																										
@@ -649,8 +651,15 @@ end
 72       8      0       2       3        1            0            0          "Staff"                              0       255          0             0             0             0             0             0             0             0      1       1       1       1       1       1																																																										
 73       8      0       2       3        1            0            0          "Bow/Crossbow"                       0       255          0             0             0             0             0             0             0             0      1       1       1       1       1       1																																																										
 74       8      0       2       3        1            0            0          "Scepter"                            0       255          0             0             0             0             0             0             0             0      1       1       1       1       1       1																																																										
-75       8      0       2       3        1            0            0          "Stick"                              0       255          0             0             0             0             0             0             0             0      1       1       1       1       1       1																																																										
-end																																																										
+75       8      0       2       3        1            0            0          "Stick"                              0       255          0             0             0             0             0             0             0             0      1       1       1       1       1       1
+
+80       *      0       1       1        0            0            0          "Rare Key"                  	   20      0            0             0             0             0             0             0             0             0      1       1       1       1       1       1
+81       *      0       1       2        0            0            0          "Kundun Orders"                  	   150     0            0             0             0             0             0             0             0             0      1       1       1       1       1       1
+82       *      0       1       2        0            0            0          "Chaos Weapon Recipe"                10      0            0             0             0             0             0             0             0             0      1       1       1       1       1       1
+83       *      0       1       2        0            0            0          "Wings Recipe"                	   10      0            0             0             0             0             0             0             0             0      1       1       1       1       1       1
+84       *      0       1       2        0            0            0          "Beast's Horn"                	   10      0            0             0             0             0             0             0             0             0      1       1       1       1       1       1
+85       *      0       1       1        0            0            0          "Lizard's Crown"                	   50      0            0             0             0             0             0             0             0             0      1       1       1       1       1       1
+end
 																																																										
 14																																																										
 //Type   Slot   Skill   Width   Height   HaveSerial   HaveOption   DropItem   Name                                 Value   Level																																																										
@@ -757,13 +766,6 @@ end
 103      *      0       1       1        1            0            0          "Excellent Stone"                    120     0																																																										
 104      *      0       1       1        1            0            0          "Jewel of Ancient"                   140     0
 110      *      0       1       1        0            0            0          "Map of Dark Souls"                  80      0
-111      *      0       1       1        0            0            0          "Rare Key"                  	   20      0
-112      *      0       1       2        0            0            0          "Kundun Orders"                  	   150     0
-113      *      0       1       2        0            0            0          "Chaos Weapon Recipe"                10     0
-114      *      0       1       2        0            0            0          "Wings Recipe"                	   10     0
-115      *      0       1       2        0            0            0          "Beast's Horn"                	   10     0
-116      *      0       2       2        0            0            0          "Wizard's Robe"                	   50     0
-117      *      0       1       1        0            0            0          "Lizard's Crown"                	   50     0
 end																																																										
 																																																										
 15																																																										

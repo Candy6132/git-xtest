@@ -12,7 +12,8 @@
 7269	255	255	100	"JewelofLuck"	
 7270	255	255	100	"JewelofSkill"	
 7271	255	255	100	"JewelofExcellent"	
-7272	255	255	100	"JewelofAncient"	
+7272	255	255	100	"JewelofAncient"
+	
 3701	255	0	0	"HelmMale18"		//Red Phoenix Helm 
 4213	255	0	0	"ArmorMale18"		//Red Phoenix Armor 
 4725	255	0	0	"PantMale18"		//Red Phoenix Pants 
@@ -41,13 +42,14 @@
 4238	0	0	220	"ArmorMale43"		//Vibrant Armor  
 4750	0	0	220	"PantMale43"		//Vibrant Pants  
 5262	0	0	220	"GloveMale43"		//Vibrant Gloves  
-5774	0	0	220s	"BootMale43"		//Vibrant Boots
-7278	255	255	0	"covenant"		//Map of Dark Souls
-7279	255	255	0	"Devil01"		//Rare Key
-7280	255	0	0	"Event03"		//Qundun Orders
+5774	0	0	220	"BootMale43"		//Vibrant Boots
+
+7278	255	255	0	"Covenant"		//Map of Dark Souls
+6736	255	255	0	"Devil01"		//Rare Key
+6737	255	0	0	"Event03"		//Qundun Orders
 7281	255	255	0	"EventBloodCastle00"	//Chaos Weapon Recipe
 7282	255	255	0	"EventBloodCastle00"	//Wings Recipe
 7283	255	100	0	"EventBloodCastle01"	//Beast's Horn
-7284	0	0	255	"ArmorMale04"		//Wizard's Robe
-7285	255	255	100	"expensiveitem01"	//Lizard's Crown
+4239	0	0	255	"ArmorMale04"		//Wizard's Robe
+6741	255	255	100	"expensiveitem01"	//Lizard's Crown
 end					

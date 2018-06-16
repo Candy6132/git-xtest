@@ -122,9 +122,9 @@
 5774      0           1           0            1            //Vibrant Boots
 
 7278	  0	      1		  0	       0	    //Map of Dark Souls
-7279	  0	      1		  0	       0	    //Rare Key
-7280	  0	      1		  0	       0	    //Kundun Orders
+6736	  0	      1		  0	       0	    //Rare Key
+6737	  0	      1		  0	       0	    //Kundun Orders
 7283	  0	      1		  0	       0	    //Beast's Horn
-7284	  0	      1		  0	       0	    //Wizard's Robe
-7285	  0	      1		  0	       0	    //Lizard's Crown
+4239	  0	      1		  0	       0	    //Wizard's Robe
+6741	  0	      1		  0	       0	    //Lizard's Crown
 end
