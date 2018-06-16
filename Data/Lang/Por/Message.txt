@@ -377,10 +377,11 @@
 1001	  "Hmm, nice. I think this will make you more effective."
 1002	  "Let's see how you'll handle with those little bastards."
 1003	  "Ok, maybe you'll be warrior some day."
-1004	  "Can you please bring me some Wine? I'm thirsty."
+1004	  "Can you please bring me some Ale? I'm thirsty."
 1005	  "Oh, thanks. That's what I need. Here's your zen for that."
-1006	  "Can you collect some Apples? I heard Bull Fighters like them too."
+1006	  "Can you get me Apples? I heard Bull Fighters have some."
 1007	  "I was just joking with those apples. Here, keep it."
 1008	  "Bring me Beast's Fang from Bull Fighters, Rabbits or Agons."
-1009	  "You got? This was your first serious job. Here, you deserve it."
+1009	  "This was your first serious job. Here, you deserve it."
 end
+//1006	  "Can you collect some Apples? I heard Bull Fighters like the

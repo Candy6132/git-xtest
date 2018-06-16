@@ -21,7 +21,7 @@
 //MonsterSUString		 - alternative monster name for Summoner
 //NoItem			 - number of items to collect for quest
 //ItemIndex			 - index of item to collect for quest (type*512+index)
-//ItemLevel			 - level of item to collect for quest
+//ItemLevel			 - level of item to collect for quest. WARNING: CUSTOM ITEMS MUST HAVE ITEMLEVEL = -1, CUSTOM INDEX CANNOT BE STACKED
 //ItemString			 - name of item to collect in quest
 //ItemDropIndex			 - index of item to drop from monster specified in MonsterIndex, or MonsterSUIndex, or MonsterFEIndex (type*512+index)
 //ItemDropLevel			 - level of item dropped by monster
@@ -35,9 +35,9 @@
 //QuestFinishMessage		 - message number from Message.txt
 
 //ReqLevel	ReqReset	ReqMReset	NoMonsters	MonsterIndex	MonsterString		MonsterFEIndex	MonsterFEString		MonsterSUIndex	MonsterSUString		NoItem	ItemIndex	ItemLevel	ItemString	ItemDropIndex	ItemDropLevel	ItemDropRate	ZenReward 	PointReward	ItemRewardIndex	ItemRewardLevel	EventItemBagSpecialValue	QuestStartMessage	QuestFinishMessage
-0		*		*		10		3		"Spiders"		27		"Chain Skorpions"	*		*			*	*		*		*		*		*		*		*		*		*		*		12				1000			1001
-0		*		*		15		2		"Budge Dragons"		26		"Goblins"		418		"Strange Rabbits"	*	*		*		*		*		*		*		*		*		*		*		13				1002			1003
-0		*		*		*		*		*			*		*			*		*			1	7177		*		"Wine"		*		*		*		20		*		*		*		*				1004			1005
+0		*		*		5		3		"Spiders"		27		"Chain Skorpions"	*		*			*	*		*		*		*		*		*		*		*		*		*		12				1000			1001
+0		*		*		10		2		"Budge Dragons"		26		"Goblins"		418		"Strange Rabbits"	*	*		*		*		*		*		*		7		*		*		*		13				1002			1003
+0		*		*		*		*		*			*		*			*		*			1	7177		*		"Ale"		*		*		*		20		*		*		*		*				1004			1005
 0		*		*		*		0		*			33		*			418		*			20	7168		*		"Apples"	7168		0		50		*		*		*		*		14				1006			1007
-0		*		*		20		4		"Elite Bull Fighters"	31		"Agons"			419		"Hideous Rabbits"	20	7724		0		"Beast's Fangs"	7724		0		90		50		*		*		*		15				1008			1009
+0		*		*		20		4		"Elite Bull Fighters"	31		"Agons"			419		"Hideous Rabbits"	20	7724		*		"Beast's Fangs"	7724		0		90		50		2		*		*		15				1008			1009
 end

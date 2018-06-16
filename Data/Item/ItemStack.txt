@@ -35,13 +35,13 @@
 7257      30         *             //Red Cherry Blossom Branch
 7258      255        *             //Golden Cherry Blossom Branch
 7268      255        *             //Lucky Coin
-7278	  10	     *		   //Map of Dark Souls
-7720	  20	     *		   //Rare Key
-6276	  100	     *		   //Beast's Horn
-4239	  50	     *		   //Wizard's Armor
-6278	  20	     *		   //Lizard's Crown
-7722	  100	     *		   //Red Ring
-7723	  100	     *		   //Totem Ornament
-7724	  100	     *		   //Beast's Fang
-7725	  100	     *		   //Blue Glass
+//7278	  10	     *		   //Map of Dark Souls
+//7720	  20	     *		   //Rare Key
+//6276	  100	     *		   //Beast's Horn
+//4239	  50	     *		   //Wizard's Armor
+//6278	  20	     *		   //Lizard's Crown
+//7722	  100	     *		   //Red Ring
+//7723	  100	     *		   //Totem Ornament
+//7724	  100	     *		   //Beast's Fang
+//7725	  100	     *		   //Blue Glass
 end

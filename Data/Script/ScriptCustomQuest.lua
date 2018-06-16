@@ -464,7 +464,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							local QuestMessageNumber = CustomQuest_QuestList[MainQuestStatus+1].QuestFinishMessage
 
 							if QuestMessageNumber ~= nil then
-								
+
 								CharText = MessageGet(QuestMessageNumber,GetObjectLang(bIndex))
 								
 							else
@@ -472,6 +472,8 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 								CharText = string.format("Good job, %s. I hope you will like this reward.",CharacterName)
 							
 							end
+							
+							ChatTargetSend(aIndex,bIndex,CharText)
 							
 							if NoItem ~= nil and NoItemCollected >= NoItem then
 								
@@ -505,7 +507,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							
 								ItemDrop(bIndex,GetObjectMap(bIndex),GetObjectMapX(bIndex),GetObjectMapY(bIndex),EventItemBagSpecialValue)
 								
-								--ItemGive(bIndex,EventItemBagSpecialValue) - NIE DZIAŁĄ
+								--ItemGive(bIndex,EventItemBagSpecialValue) - NIE DZIAŁa
 							
 							end
 							
@@ -600,10 +602,10 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							CharText = RandomTalk[math.random(#RandomTalk)]
 		
 							NoticeSend(bIndex,1,CustomQuest_GetQuestMessage(bIndex,CharacterName))
+							
+							ChatTargetSend(aIndex,bIndex,CharText)
 
 						end
-						
-						ChatTargetSend(aIndex,bIndex,CharText)
 
 					end
 				
@@ -712,49 +714,46 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 						
 						end
 
-					else
+					end
 					
-						local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
+					local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
 
-						if MonsterCount < CustomQuest_QuestList[MainQuestStatus+1].NoMonsters then
+					if MonsterCount < CustomQuest_QuestList[MainQuestStatus+1].NoMonsters then
 						
-							MonsterCount = MonsterCount+1
+						MonsterCount = MonsterCount+1
 							
-							CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount = MonsterCount
+						CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount = MonsterCount
 							
-							if MonsterCount % 10 == 0 then
+						if MonsterCount % 10 == 0 then
 							
-								if SQLQuery(string.format("UPDATE Character SET CQMonsterCount=%d WHERE Name='%s'",MonsterCount,CharacterName)) == 0 then
+							if SQLQuery(string.format("UPDATE Character SET CQMonsterCount=%d WHERE Name='%s'",MonsterCount,CharacterName)) == 0 then
 								
-									if SQLCheck() == 0 then
+								if SQLCheck() == 0 then
 			
-										local SQL_ODBC = "MuOnline"
+									local SQL_ODBC = "MuOnline"
 
-										local SQL_USER = ""
+									local SQL_USER = ""
 
-										local SQL_PASS = ""
+									local SQL_PASS = ""
 
-										SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+									SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
 			
-									end
-								
-									LogPrint(string.format("CustomQuestScript: Failed to save MonsterCount for %s",CharacterName))
-
-									LogColor(1,string.format("CustomQuestScript: Failed to save MonsterCount for %s",CharacterName))
-								
 								end
+								
+								LogPrint(string.format("CustomQuestScript: Failed to save MonsterCount for %s",CharacterName))
 
-								SQLClose()
+								LogColor(1,string.format("CustomQuestScript: Failed to save MonsterCount for %s",CharacterName))
 								
 							end
-					
+
+							SQLClose()
+								
 						end
 					
-						NoticeSend(bIndex,1,CustomQuest_GetQuestMessage(bIndex,CharacterName))
-					
 					end
-						
-				
+					
+					NoticeSend(bIndex,1,CustomQuest_GetQuestMessage(bIndex,CharacterName))
+
 				end
 	
 			end
@@ -836,8 +835,28 @@ function CustomQuest_GetQuestMessage(aIndex,bName)
 					
 			if ItemIndex ~= nil and NoItem > 0 then
 					
+				--local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)  -- NIE DZIAŁA
+				
+				------[NIE DZIALA]-------
+				
 				local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)
+				
+				if NoItemCollected == 0 and ItemLevel == -1 then
+				
+					for n=12,76,1 do
+
+						if InventoryGetItemIndex(aIndex,n) == ItemIndex then
+					
+							NoItemCollected = NoItemCollected+1
 						
+						end
+				
+					end
+				
+				end
+		
+				------[/NIE DZIALA]------
+		
 				local ItemString = CustomQuest_QuestList[MainQuestStatus+1].ItemString
 				
 				if ItemLevel ~= -1 and ItemLevel > 0 then
