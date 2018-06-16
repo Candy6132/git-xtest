@@ -503,7 +503,9 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							
 							if EventItemBagSpecialValue ~= nil then
 							
-								ItemGive(bIndex,EventItemBagSpecialValue)
+								ItemDrop(bIndex,GetObjectMap(bIndex),GetObjectMapX(bIndex),GetObjectMapY(bIndex),EventItemBagSpecialValue)
+								
+								--ItemGive(bIndex,EventItemBagSpecialValue) - NIE DZIAŁĄ
 							
 							end
 							
@@ -516,6 +518,8 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 								SetObjectMoney(bIndex,CharacterZen+ZenReward*100)
 								
 								--MoneySend(bIndex,ZenReward*100)
+								
+								UserCalcAttribute(bIndex)
 								
 								UserInfoSend(bIndex)
 								
@@ -531,7 +535,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 								
 								SetObjectLevelUpPoint(bIndex,LevelUpPoint+PointReward)
 								
-								--UserCalcAttribute(bIndex)
+								UserCalcAttribute(bIndex)
 								
 								UserInfoSend(bIndex)
 								
