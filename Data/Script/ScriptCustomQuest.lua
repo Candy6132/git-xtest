@@ -544,7 +544,6 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							--aIndex = User index.
  
 							--Update the user level at the client.
-
 							
 							-------------------------------------------------------------------------------------------------
 							
