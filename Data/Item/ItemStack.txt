@@ -42,4 +42,5 @@
 6278	  20	     *		   //Lizard's Crown
 7722	  100	     *		   //Red Ring
 7723	  100	     *		   //Totem Ornament
+7724	  100	     *		   //Beast's Fang
 end
