@@ -100,4 +100,6 @@
 *             *           *              11             2              *              "Special\Life Mix"
 *             *           *              12             0              *              "Special\Quest 1"
 *             *           *              13             0              *              "Special\Quest Low"
+*             *           *              14             0              *              "Special\Quest 4"
+*             *           *              15             0              *              "Special\Quest 5"
 end
