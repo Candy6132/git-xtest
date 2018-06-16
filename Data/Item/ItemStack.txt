@@ -41,4 +41,5 @@
 4239	  50	     *		   //Wizard's Armor
 6278	  20	     *		   //Lizard's Crown
 7722	  100	     *		   //Red Ring
+7723	  100	     *		   //Totem Ornament
 end

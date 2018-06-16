@@ -132,4 +132,5 @@
 4239	  0	      1		  0	       0	    //Wizard's Robe
 6741	  0	      1		  0	       0	    //Lizard's Crown
 7722	  0	      1		  0	       0	    //Red Ring
+7723	  0	      1		  0	       0	    //Totem Ornament
 end
