@@ -13,5 +13,5 @@ end
 //DK Drop:											
 5											
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
-14,001	0	200	*	*	*	*	*	*	*	200	//Small HP Potion
+14,002	7	200	*	*	*	*	*	*	*	200	//Medium HP Potion
 end

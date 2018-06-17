@@ -13,5 +13,5 @@ end
 //DK Drop:											
 5											
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
-14,008	0	30	*	*	*	*	*	*	*	40	//Antidote
+14,008	0	30	*	*	*	*	*	*	*	30	//Antidote
 end

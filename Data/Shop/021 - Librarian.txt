@@ -5,7 +5,6 @@
 7682	0	0	0	0	0	0	//Lightning Scroll
 7680	0	0	0	0	0	0	//Poison Scroll
 7686	0	0	0	0	0	0	//Ice Scroll
-7686	0	0	0	0	0	0	//Ice Scroll
 7684	0	0	0	0	0	0	//Flame Scroll
 7687	0	0	0	0	0	0	//Twister Scroll
 7685	0	0	0	0	0	0	//Teleport Scroll
