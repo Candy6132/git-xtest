@@ -388,13 +388,13 @@
 1012	  "You need to enter Dungeon and kill some Larvas. Good luck!"
 1013	  "Is it done? Take these Antidotes in case you're poisoned."
 1014	  "Bring me Cherry Wine Recipe from Librarian in Devias Church."
-1015	  "Nice, I always wanted to make that wine.
+1015	  "Nice, I always wanted to make that wine."
 1016	  "Those monsters are out of controll again. Take care of that."
 1017	  "Good. I've got some equipment for you. I hope it suits."
 1018	  "You need to go back toDungeon and hunt down 20 Ghosts."
 1019	  "You look like you've seen a ghost. Haha!."
 1020	  "You need to be stronger. Go and kill 60 Elite Yetis."
-1021	  "Look at yourself. It's better now, isn't it?
+1021	  "Look at yourself. It's better now, isn't it?"
 1022	  "Did you like last reward? Get to work and earn another one."
 1023	  "Here's another piece of equipment, just as I promised."
 end
