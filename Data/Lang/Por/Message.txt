@@ -391,7 +391,7 @@
 1015	  "Nice, I always wanted to make that wine."
 1016	  "Those monsters are out of controll again. Take care of that."
 1017	  "Good. I've got some equipment for you. I hope it suits."
-1018	  "You need to go back toDungeon and hunt down 20 Ghosts."
+1018	  "You need to go back to Dungeon and hunt down 20 Ghosts."
 1019	  "You look like you've seen a ghost. Haha!."
 1020	  "You need to be stronger. Go and kill 60 Elite Yetis."
 1021	  "Look at yourself. It's better now, isn't it?"
