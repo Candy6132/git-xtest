@@ -301,6 +301,8 @@ end
 1
 14	1	10	77	216	92	223	-1	12	//Skeleton Warrior
 8	1	8	115	42	124	48	-1	6	//Poison Bull
+13	1	10	239	168	247	177	-1	5	//Hell Spider
+16	1	10	48	6	63	15	-1	4	//Elite Skeleton
 end
 				
 //Mob	Map	Radio	CordX	CordY	Strong	Name	
@@ -576,14 +578,14 @@ end
 24	2	30	170	6	-1	//Worm
 24	2	30	161	58	-1	//Worm
 24	2	30	180	78	-1	//Worm
-25	2	30	74	239	-1	//Ice Queen		
-25	2	30	70	212	-1	//Ice Queen		
-25	2	30	45	189	-1	//Ice Queen		
-25	2	30	113	230	-1	//Ice Queen		
-25	2	30	94	203	-1	//Ice Queen
-25	2	30	63	160	-1	//Ice Queen
-25	2	30	51	227	-1	//Ice Queen
-25	2	30	116	210	-1	//Ice Queen
+//25	2	30	74	239	-1	//Ice Queen		
+//25	2	30	70	212	-1	//Ice Queen		
+//25	2	30	45	189	-1	//Ice Queen		
+//25	2	30	113	230	-1	//Ice Queen		
+//25	2	30	94	203	-1	//Ice Queen
+//25	2	30	63	160	-1	//Ice Queen
+//25	2	30	51	227	-1	//Ice Queen
+//25	2	30	116	210	-1	//Ice Queen
 end
 
 //=========================================================================================				
@@ -3419,6 +3421,8 @@ end
 425            51             30         205            016            -1             //Captain Grizzly
 425            51             30         200            054            -1             //Captain Grizzly
 425            51             30         219            074            -1             //Captain Grizzly
+423            51             5          194            152            -1             //Totem Golem
+423            51             5          198            148            -1             //Totem Golem
 423            51             30         230            143            -1             //Totem Golem
 423            51             30         196            171            -1             //Totem Golem
 420            51             30         074            081            -1             //Werewolf
@@ -3510,6 +3514,10 @@ end
 424            51             30         154            080            -1             //Grizzly
 418            51             30         123            227            -1             //Strange Rabbit
 418            51             30         109            217            -1             //Strange Rabbit
+418            51             05         032            135            -1             //Strange Rabbit
+418            51             05         031            132            -1             //Strange Rabbit
+418            51             05         034            133            -1             //Strange Rabbit
+418            51             05         032            134            -1             //Strange Rabbit
 424            51             30         150            055            -1             //Grizzly
 424            51             30         156            052            -1             //Grizzly
 424            51             30         154            056            -1             //Grizzly
@@ -3546,6 +3554,9 @@ end
 418            51             30         097            190            -1             //Strange Rabbit
 419            51             30         128            169            -1             //Hideous Rabbit
 420            51             30         072            032            -1             //Werewolf
+420            51             05         101            061            -1             //Werewolf
+420            51             05         102            065            -1             //Werewolf
+420            51             05         105            062            -1             //Werewolf
 422            51             30         087            039            -1             //Cursed Lich
 420            51             30         092            058            -1             //Werewolf
 421            51             30         118            155            -1             //Polluted Butterfly

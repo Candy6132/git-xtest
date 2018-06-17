@@ -397,5 +397,11 @@
 1021	  "Look at yourself. It's better now, isn't it?"
 1022	  "Did you like last reward? Get to work and earn another one."
 1023	  "Here's another piece of equipment, just as I promised."
+1024	  "Find Ice Queen and kill her. She is a big problem to us."
+1025	  "At last. Here, I guess you've been looking for this."
+1026	  "It's time to conquer Lost Tower. Kill some Shadows first."
+1027	  "You're gonna need better equipment. Here, take this."
+1028	  "Kill some Cursed Wizards in Lost Tower and find the Robe."
+1029	  "Ok, you finally made it. Here, take this Bless."
 end
 //1006	  "Can you collect some Apples? I heard Bull Fighters like the

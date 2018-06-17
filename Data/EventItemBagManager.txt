@@ -105,4 +105,5 @@
 *             *           *              16             0              *              "Special\Quest Antidote"
 *             *           *              17             0              *              "Special\Quest Medium HP"
 *             *           *              18             0              *              "Special\Quest Medium"
+*             *           *              19             0              *              "Special\Quest Skills 1"
 end
