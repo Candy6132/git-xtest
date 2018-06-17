@@ -301,6 +301,8 @@ end
 1
 14	1	10	77	216	92	223	-1	12	//Skeleton Warrior
 8	1	8	115	42	124	48	-1	6	//Poison Bull
+11	1	5	146	150	149	154	-1	4	//Ghost
+11	1	5	158	166	169	173	-1	6	//Ghost
 13	1	10	239	168	247	177	-1	5	//Hell Spider
 16	1	10	48	6	63	15	-1	4	//Elite Skeleton
 end
