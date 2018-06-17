@@ -5,48 +5,106 @@ end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
-0         5         10000         1000          0             0    0    0    0    0    0
+0         5         8000         1000           0             0    0    0    0    0    0
+0         *         2000         20000          0             0    0    0    0    0    0
 end
 
-5
-//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-
-00,010    3       0       *         *         *         *         *         *         *         0          //Light Saber [Level: 3]
-00,011    3       0       *         *         *         *         *         *         *         0          //Legendary Sword [Level: 3]
-00,013    3       0       *         *         *         *         *         *         *         0          //Double Blade [Level: 3]
-01,007    3       0       *         *         *         *         *         *         *         0          //Larkan Axe [Level: 3]
-02,003    3       0       *         *         *         *         *         *         *         0          //Great Hammer [Level: 3]
-03,000    3       0       *         *         *         *         *         *         *         0          //Light Spear [Level: 3]
-03,004    3       0       *         *         *         *         *         *         *         0          //Serpent Spear [Level: 3]
-04,011    3       0       *         *         *         *         *         *         *         0          //Light Crossbow [Level: 3]
-04,003    3       0       *         *         *         *         *         *         *         0          //Battle Bow [Level: 3]
-05,002    3       0       *         *         *         *         *         *         *         0          //Serpent Staff [Level: 3]
-05,003    3       0       *         *         *         *         *         *         *         0          //Thunder Staff [Level: 3]
-06,006    3       0       *         *         *         *         *         *         *         0          //Skull Shield [Level: 3]
-06,005    3       0       *         *         *         *         *         *         *         0          //Dragon Slayer Shield [Level: 3]
-07,006    3       0       *         *         *         *         *         *         *         0          //Scale Helm [Level: 3]
-08,006    3       0       *         *         *         *         *         *         *         0          //Scale Armor [Level: 3]
-09,006    3       0       *         *         *         *         *         *         *         0          //Scale Pants [Level: 3]
-10,006    3       0       *         *         *         *         *         *         *         0          //Scale Gloves [Level: 3]
-11,006    3       0       *         *         *         *         *         *         *         0          //Scale Boots [Level: 3]
-07,008    3       0       *         *         *         *         *         *         *         0          //Brass Helm [Level: 3]
-08,008    3       0       *         *         *         *         *         *         *         0          //Brass Armor [Level: 3]
-09,008    3       0       *         *         *         *         *         *         *         0          //Brass Pants [Level: 3]
-10,008    3       0       *         *         *         *         *         *         *         0          //Brass Gloves [Level: 3]
-11,008    3       0       *         *         *         *         *         *         *         0          //Brass Boots [Level: 3]
-07,004    3       0       *         *         *         *         *         *         *         0          //Bone Helm [Level: 3]
-08,004    3       0       *         *         *         *         *         *         *         0          //Bone Armor [Level: 3]
-09,004    3       0       *         *         *         *         *         *         *         0          //Bone Pants [Level: 3]
-10,004    3       0       *         *         *         *         *         *         *         0          //Bone Gloves [Level: 3]
-11,004    3       0       *         *         *         *         *         *         *         0          //Bone Boots [Level: 3]
-13,000    0       0       *         *         *         *         *         *         *         0          //Guardian Angel
-13,001    0       0       *         *         *         *         *         *         *         0          //Imp
-13,002    0       0       *         *         *         *         *         *         *         0          //Horn of Uniria
-13,008    0       0       *         *         *         *         *         *         *         0          //Ring of Ice
-13,009    0       0       *         *         *         *         *         *         *         0          //Ring of Poison
-13,012    0       0       *         *         *         *         *         *         *         0          //Pendant of Lighting
-13,013    0       0       *         *         *         *         *         *         *         0          //Pendant of Fire
-14,013    0       0       *         *         *         *         *         *         *         0          //Jewel of Bless
-14,014    0       0       *         *         *         *         *         *         *         0          //Jewel of Soul
-12,015    0       0       *         *         *         *         *         *         *         0          //Jewel of Chaos
-end
+//DK Drop:											
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,005	0	0	41	*	18	34	*	*	*	0	//Leather Helm
+08,005	0	0	41	*	18	34	*	*	*	0	//Leather Armor
+09,005	0	0	41	*	18	34	*	*	*	0	//Leather Pants
+10,005	0	0	41	*	18	34	*	*	*	0	//Leather Gloves
+11,005	0	0	41	*	18	34	*	*	*	0	//Leather Boots
+07,000	0	0	41	*	18	34	*	*	*	0	//Bronze Helm
+08,000	0	0	41	*	18	34	*	*	*	0	//Bronze Armor
+09,000	0	0	41	*	18	34	*	*	*	0	//Bronze Pants
+10,000	0	0	41	*	18	34	*	*	*	0	//Bronze Gloves
+11,000	0	0	41	*	18	34	*	*	*	0	//Bronze Boots
+00,003	0	0	41	12	18	34	*	*	*	0	//Katana
+00,004	0	0	41	12	18	34	*	*	*	0	//Sword of Assassin
+06,001	0	0	41	*	18	34	*	*	*	0	//Horn Shield
+06,004	0	0	41	*	18	34	*	*	*	0	//Buckler
+											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,002	0	0	41	*	18	34	*	*	*	0	//Pad Helm
+08,002	0	0	41	*	18	34	*	*	*	0	//Pad Armor
+09,002	0	0	41	*	18	34	*	*	*	0	//Pad Pants
+10,002	0	0	41	*	18	34	*	*	*	0	//Pad Gloves
+11,002	0	0	41	*	18	34	*	*	*	0	//Pad Boots
+07,004	0	0	41	*	18	34	*	*	*	0	//Bone Helm
+08,004	0	0	41	*	18	34	*	*	*	0	//Bone Armor
+09,004	0	0	41	*	18	34	*	*	*	0	//Bone Pants
+10,004	0	0	41	*	18	34	*	*	*	0	//Bone Gloves
+11,004	0	0	41	*	18	34	*	*	*	0	//Bone Boots
+06,004	0	0	41	*	18	34	*	*	*	0	//Buckler
+06,006	0	0	41	*	18	34	*	*	*	0	//Skull Shield
+05,000	0	0	41	*	18	34	*	*	*	0	//Skull Staff
+05,001	0	0	41	*	18	34	*	*	*	0	//Angelic Staff
+											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,010	0	0	41	*	18	34	*	*	*	0	//Vine Helm
+08,010	0	0	41	*	18	34	*	*	*	0	//Vine Armor
+09,010	0	0	41	*	18	34	*	*	*	0	//Vine Pants
+10,010	0	0	41	*	18	34	*	*	*	0	//Vine Gloves
+11,010	0	0	41	*	18	34	*	*	*	0	//Vine Boots
+00,002	0	0	41	*	18	34	*	*	*	0	//Rapier
+00,000	0	0	41	*	18	34	*	*	*	0	//Kris
+06,003	0	0	41	*	18	34	*	*	*	0	//Elven Shield
+06,000	0	0	41	*	18	34	*	*	*	0	//Small Shield
+04,000	0	0	41	12	18	34	*	*	*	0	//Shord Bow
+04,001	0	0	41	12	18	34	*	*	*	0	//Bow
+04,002	0	0	41	12	18	34	*	*	*	0	//Elven Bow
+04,008	0	0	41	12	18	34	*	*	*	0	//Crossbow
+											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,039	0	0	41	*	18	34	*	*	*	0	//Violent Wind Helm
+08,039	0	0	41	*	18	34	*	*	*	0	//Violent Wind Armor
+09,039	0	0	41	*	18	34	*	*	*	0	//Violent Wind Pants
+10,039	0	0	41	*	18	34	*	*	*	0	//Violent Wind Gloves
+11,039	0	0	41	*	18	34	*	*	*	0	//Violent Wind Boots
+05,014	0	0	41	*	18	34	*	*	*	0	//Mystery Stick
+05,000	0	0	41	*	18	34	*	*	*	0	//Skull Staff
+											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+08,005	0	0	41	*	18	34	*	*	*	0	//Leather Armor
+09,005	0	0	41	*	18	34	*	*	*	0	//Leather Pants
+10,005	0	0	41	*	18	34	*	*	*	0	//Leather Gloves
+11,005	0	0	41	*	18	34	*	*	*	0	//Leather Boots
+08,000	0	0	41	*	18	34	*	*	*	0	//Bronze Armor
+09,000	0	0	41	*	18	34	*	*	*	0	//Bronze Pants
+10,000	0	0	41	*	18	34	*	*	*	0	//Bronze Gloves
+11,000	0	0	41	*	18	34	*	*	*	0	//Bronze Boots
+08,002	0	0	41	*	18	34	*	*	*	0	//Pad Armor
+09,002	0	0	41	*	18	34	*	*	*	0	//Pad Pants
+10,002	0	0	41	*	18	34	*	*	*	0	//Pad Gloves
+11,002	0	0	41	*	18	34	*	*	*	0	//Pad Boots
+08,004	0	0	41	*	18	34	*	*	*	0	//Bone Armor
+09,004	0	0	41	*	18	34	*	*	*	0	//Bone Pants
+10,004	0	0	41	*	18	34	*	*	*	0	//Bone Gloves
+11,004	0	0	41	*	18	34	*	*	*	0	//Bone Boots
+06,006	0	0	41	*	18	34	*	*	*	0	//Skull Shield
+05,000	0	0	41	*	18	34	*	*	*	0	//Skull Staff
+05,001	0	0	41	*	18	34	*	*	*	0	//Angelic Staff
+00,003	0	0	41	12	18	34	*	*	*	0	//Katana
+00,004	0	0	41	12	18	34	*	*	*	0	//Sword of Assassin
+06,001	0	0	41	*	18	34	*	*	*	0	//Horn Shield
+06,004	0	0	41	*	18	34	*	*	*	0	//Buckler
+										
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,005	0	0	41	*	18	34	*	*	*	0	//Leather Helm
+08,005	0	0	41	*	18	34	*	*	*	0	//Leather Armor
+09,005	0	0	41	*	18	34	*	*	*	0	//Leather Pants
+10,005	0	0	41	*	18	34	*	*	*	0	//Leather Gloves
+11,005	0	0	41	*	18	34	*	*	*	0	//Leather Boots
+07,000	0	0	41	*	18	34	*	*	*	0	//Bronze Helm
+08,000	0	0	41	*	18	34	*	*	*	0	//Bronze Armor
+09,000	0	0	41	*	18	34	*	*	*	0	//Bronze Pants
+10,000	0	0	41	*	18	34	*	*	*	0	//Bronze Gloves
+11,000	0	0	41	*	18	34	*	*	*	0	//Bronze Boots
+00,003	0	0	41	12	18	34	*	*	*	0	//Katana
+00,004	0	0	41	12	18	34	*	*	*	0	//Sword of Assassin
+06,001	0	0	41	*	18	34	*	*	*	0	//Horn Shield
+06,004	0	0	41	*	18	34	*	*	*	0	//Buckler
+end											
