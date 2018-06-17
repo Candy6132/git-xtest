@@ -102,4 +102,7 @@
 *             *           *              13             0              *              "Special\Quest Low"
 *             *           *              14             0              *              "Special\Quest 4"
 *             *           *              15             0              *              "Special\Quest 5"
+*             *           *              16             0              *              "Special\Quest Antidote"
+*             *           *              17             0              *              "Special\Quest Small HP"
+*             *           *              18             0              *              "Special\Quest Medium"
 end

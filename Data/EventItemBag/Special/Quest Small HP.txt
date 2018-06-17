@@ -1,0 +1,17 @@
+3
+//Index   DropRate
+0         10000
+
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
+0         5         10000         1000          0             1    1    1    1    1    1
+
+end
+
+//DK Drop:											
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+14,001	0	200	*	*	*	*	*	*	*	200	//Small HP Potion
+end
