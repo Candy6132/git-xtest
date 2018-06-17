@@ -37,9 +37,8 @@ function CustomQuest_OnReadScript()
 	
 	CustomQuest_NPCName = ConfigReadString("CustomQuestInfo","NPCName","..\\Data\\Script\\Data\\CustomQuest.ini")
 	
-	CustomQuest_IsNPCShadowPhantomSoldier = ConfigReadNumber("CustomQuestInfo","IsNPCShadowPhantomSoldier","..\\Data\\Script\\Data\\CustomQuest.ini")
+	CustomQuest_PartyRange = ConfigReadNumber("CustomQuestInfo","PartyRange","..\\Data\\Script\\Data\\CustomQuest.ini")
 		
-
 	
 	local ReadTable = FileLoad("..\\Data\\Script\\Data\\CustomQuest.txt")
 
@@ -266,14 +265,6 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 	if CustomQuest_SystemSwitch == 1 then
 	
 		if GetObjectClass(aIndex) == CustomQuest_NPCNumber then
-			
-			-----------------------------------------------------------------------------------------------------------
-			
-			--NoticeSend(bIndex,1,string.format("Guardian: I'll help you, %s.",GetObjectName(bIndex)))
-			
-			--ChatTargetSend(aIndex,bIndex,string.format("Hello, %s.",GetObjectName(bIndex)))
-			
-			-----------------------------------------------------------------------------------------------------------
 			
 			local CharacterName = GetObjectName(bIndex)
 		
@@ -541,12 +532,12 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 								
 								UserInfoSend(bIndex)
 								
+								LevelUpSend(bIndex)
+								
 								NoticeSend(bIndex,1,string.format("You've been granted with %d Level Up Points.",PointReward))
 							
 							end
-							
-							--LevelUpSend(aIndex)
- 
+
 							--aIndex = User index.
  
 							--Update the user level at the client.
@@ -655,115 +646,160 @@ end
 function CustomQuest_OnMonsterDie(aIndex,bIndex)
 
 	if CustomQuest_SystemSwitch == 1 then
-	
-		local CharacterName = GetObjectName(bIndex)
-		
-		if CustomQuest_AddCharToTable(CharacterName) == 1 then
 
-			local CharacterIndex = CustomQuest_CharacterIndexes[CharacterName]
-		
-			local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 2
-			
-			local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 2
-			
-			if PartialQuestStatus ~= 0 and MainQuestStatus <= #CustomQuest_QuestList-1 then
-			
-				local CharacterClass = GetObjectClass(bIndex)
-		
-				local MonsterSUIndex = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUIndex
-		
-				local MonsterFEIndex = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEIndex
-		
-				local MonsterClass = ""
+		local PartyIndex = GetObjectPartyNumber(bIndex)
 
-				local MonsterName = ""
+		if PartyIndex == -1 or PartyIndex == nil then
 		
-				if CharacterClass == 5 and MonsterSUIndex ~= nil then
-		
-					MonsterClass = MonsterSUIndex
+			CustomQuest_UpdateQuest(aIndex,bIndex,bIndex)
 			
-					MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
-			
-				elseif CharacterClass == 2 and MonsterFEIndex ~= nil then
-		
-					MonsterClass = MonsterFEIndex
-			
-					MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
-			
-				else
-			
-					MonsterClass = CustomQuest_QuestList[MainQuestStatus+1].MonsterIndex
-			
-					MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterString
-			
-				end
-		
-				if GetObjectClass(aIndex) == MonsterClass then
-				
-					local ItemDropRate = CustomQuest_QuestList[MainQuestStatus+1].ItemDropRate
-	
-					if ItemDropRate ~= nil then
-					
-						if math.random(99)+1 <= ItemDropRate then
-						
-							local ItemDropIndex = CustomQuest_QuestList[MainQuestStatus+1].ItemDropIndex
-							
-							local ItemDropLevel = CustomQuest_QuestList[MainQuestStatus+1].ItemDropLevel
-						
-							ItemDropEx(bIndex,GetObjectMap(aIndex),GetObjectMapX(aIndex),GetObjectMapY(aIndex),ItemDropIndex,ItemDropLevel,0,0,0,0,0)
-						
-						end
-
-					end
-					
-					local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
-
-					if MonsterCount < CustomQuest_QuestList[MainQuestStatus+1].NoMonsters then
-						
-						MonsterCount = MonsterCount+1
-							
-						CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount = MonsterCount
-							
-						if MonsterCount % 10 == 0 then
-							
-							if SQLQuery(string.format("UPDATE Character SET CQMonsterCount=%d WHERE Name='%s'",MonsterCount,CharacterName)) == 0 then
-								
-								if SQLCheck() == 0 then
-			
-									local SQL_ODBC = "MuOnline"
-
-									local SQL_USER = ""
-
-									local SQL_PASS = ""
-
-									SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
-			
-								end
-								
-								LogPrint(string.format("CustomQuestScript: Failed to save MonsterCount for %s",CharacterName))
-
-								LogColor(1,string.format("CustomQuestScript: Failed to save MonsterCount for %s",CharacterName))
-								
-							end
-
-							SQLClose()
-								
-						end
-					
-					end
-					
-					NoticeSend(bIndex,1,CustomQuest_GetQuestMessage(bIndex,CharacterName))
-
-				end
-	
-			end
-		
 		else
+
+			for n=0,PartyGetMemberCount(PartyIndex)-1,1 do
 			
-			--NoticeSend(bIndex,1,"Your quests are currently unavailable. Please contact the administrator.")
+				CustomQuest_UpdateQuest(aIndex,bIndex,PartyGetMemberIndex(PartyIndex,n))
+			
+			end
 			
 		end
 		
+	end
+	
+end
+
+
+function CustomQuest_UpdateQuest(MonsterIndex,KillerIndex,ParticipantIndex)
+		
+	local MonsterMap = GetObjectMap(MonsterIndex)
+		
+	local MonsterMapX = GetObjectMapX(MonsterIndex)
+		
+	local MonsterMapY = GetObjectMapY(MonsterIndex)
+	
+	local ParticipantMap = GetObjectMap(ParticipantIndex)
+		
+	local ParticipantMapX = GetObjectMapX(ParticipantIndex)
+		
+	local ParticipantMapY = GetObjectMapY(ParticipantIndex)
+	
+	if MonsterMap == ParticipantMap then
+	
+		if ParticipantMapX > MonsterMapX-CustomQuest_PartyRange and ParticipantMapX < MonsterMapX+CustomQuest_PartyRange then
+		
+			if ParticipantMapY > MonsterMapY-CustomQuest_PartyRange and ParticipantMapY < MonsterMapY+CustomQuest_PartyRange then
+			
+				local CharacterName = GetObjectName(ParticipantIndex)
+		
+				if CustomQuest_AddCharToTable(CharacterName) == 1 then
+
+					local CharacterIndex = CustomQuest_CharacterIndexes[CharacterName]
+		
+					local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 2
+			
+					local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 2
+			
+					if PartialQuestStatus ~= 0 and MainQuestStatus <= #CustomQuest_QuestList-1 then
+			
+						local CharacterClass = GetObjectClass(ParticipantIndex)
+		
+						local MonsterSUIndex = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUIndex
+		
+						local MonsterFEIndex = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEIndex
+		
+						local MonsterClass = ""
+
+						local MonsterName = ""
+		
+						if CharacterClass == 5 and MonsterSUIndex ~= nil then
+		
+							MonsterClass = MonsterSUIndex
+					
+							MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
+			
+						elseif CharacterClass == 2 and MonsterFEIndex ~= nil then
+		
+							MonsterClass = MonsterFEIndex
+			
+							MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
+			
+						else
+			
+							MonsterClass = CustomQuest_QuestList[MainQuestStatus+1].MonsterIndex
+			
+							MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterString
+			
+						end
+		
+						if GetObjectClass(MonsterIndex) == MonsterClass then
+				
+							local ItemDropRate = CustomQuest_QuestList[MainQuestStatus+1].ItemDropRate
+	
+							if ItemDropRate ~= nil and KillerIndex == ParticipantIndex then
+					
+								if math.random(99)+1 <= ItemDropRate then
+						
+									local ItemDropIndex = CustomQuest_QuestList[MainQuestStatus+1].ItemDropIndex
+							
+									local ItemDropLevel = CustomQuest_QuestList[MainQuestStatus+1].ItemDropLevel
+						
+									ItemDropEx(ParticipantIndex,GetObjectMap(MonsterIndex),GetObjectMapX(MonsterIndex),GetObjectMapY(MonsterIndex),ItemDropIndex,ItemDropLevel,0,0,0,0,0)
+						
+								end
+
+							end
+					
+							local MonsterCount = CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount
+
+							if MonsterCount < CustomQuest_QuestList[MainQuestStatus+1].NoMonsters then
+						
+								MonsterCount = MonsterCount+1
+							
+								CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount = MonsterCount
+							
+								if MonsterCount % 10 == 0 then
+							
+									if SQLQuery(string.format("UPDATE Character SET CQMonsterCount=%d WHERE Name='%s'",MonsterCount,CharacterName)) == 0 then
+								
+										if SQLCheck() == 0 then
+			
+											local SQL_ODBC = "MuOnline"
+
+											local SQL_USER = ""
+
+											local SQL_PASS = ""
+
+											SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+			
+										end
+								
+										LogPrint(string.format("CustomQuestScript: Failed to save MonsterCount for %s",CharacterName))
+
+										LogColor(1,string.format("CustomQuestScript: Failed to save MonsterCount for %s",CharacterName))
+								
+									end
+
+									SQLClose()
+								
+								end
+					
+							end
+					
+							NoticeSend(ParticipantIndex,1,CustomQuest_GetQuestMessage(ParticipantIndex,CharacterName))
+
+						end
+	
+					end
+		
+				else
+			
+					--NoticeSend(ParticipantIndex,1,"Your quests are currently unavailable. Please contact the administrator.")
+			
+				end
+			
+			end
+		
+		end
+	
 	end
 	
 end
