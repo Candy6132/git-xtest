@@ -339,18 +339,18 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 
 									QuestHasMonsters = 1
 									
-									local MonsterSUString = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
+									local MonsterSUIndex = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUIndex
 						
-									local MonsterFEString = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
+									local MonsterFEIndex = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEIndex
 					
-									if GetObjectClass(bIndex) == 5 and MonsterSUString ~= nil then
+									if GetObjectClass(bIndex) == 5 and MonsterSUIndex ~= nil then
 			
-										MonsterName = MonsterSUString
-					
-									elseif GetObjectClass(bIndex) == 2 and MonsterFEString ~= nil then
+										MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
+
+									elseif GetObjectClass(bIndex) == 2 and MonsterFEIndex ~= nil then
 						
-										MonsterName = MonsterFEString
-							
+										MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
+
 									else
 							
 										MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterString
@@ -670,25 +670,25 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 			
 				local CharacterClass = GetObjectClass(bIndex)
 		
-				local MonsterSUString = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
+				local MonsterSUIndex = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUIndex
 		
-				local MonsterFEString = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
+				local MonsterFEIndex = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEIndex
 		
 				local MonsterClass = ""
 
 				local MonsterName = ""
 		
-				if CharacterClass == 5 and MonsterSUString ~= nil then
+				if CharacterClass == 5 and MonsterSUIndex ~= nil then
 		
-					MonsterClass = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUIndex
+					MonsterClass = MonsterSUIndex
 			
-					MonsterName = MonsterSUString
+					MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
 			
-				elseif CharacterClass == 2 and MonsterFEString ~= nil then
+				elseif CharacterClass == 2 and MonsterFEIndex ~= nil then
 		
-					MonsterClass = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEIndex
+					MonsterClass = MonsterFEIndex
 			
-					MonsterName = MonsterFEString
+					MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
 			
 				else
 			
@@ -799,18 +799,18 @@ function CustomQuest_GetQuestMessage(aIndex,bName)
 
 			if NoMonsters ~= nil then
 					
-				local MonsterSUString = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
+				local MonsterSUIndex = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUIndex
 						
-				local MonsterFEString = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
+				local MonsterFEIndex = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEIndex
 
-				if GetObjectClass(aIndex) == 5 and MonsterSUString ~= nil then
+				if GetObjectClass(aIndex) == 5 and MonsterSUIndex ~= nil then
 			
-					MonsterName = MonsterSUString
-					
-				elseif GetObjectClass(aIndex) == 2 and MonsterFEString ~= nil then
+					MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterSUString
+
+				elseif GetObjectClass(aIndex) == 2 and MonsterFEIndex ~= nil then
 						
-					MonsterName = MonsterFEString
-							
+					MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterFEString
+	
 				else
 							
 					MonsterName = CustomQuest_QuestList[MainQuestStatus+1].MonsterString

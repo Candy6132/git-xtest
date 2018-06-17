@@ -381,7 +381,7 @@
 1005	  "Oh, thanks. That's what I need. Here's your zen for that."
 1006	  "Can you get me Apples? I heard Bull Fighters have some."
 1007	  "I was just joking with those apples. Here, keep it."
-1008	  "Bring me Beast's Fang from Bull Fighters, Rabbits or Agons."
+1008	  "Bring me Beast's Horns from Bull Fighters, Rabbits or Agons."
 1009	  "This was your first serious job. Here, you deserve it."
 1010	  "There's too much skeletons near Lorencia. Kill them please."
 1011	  "This money comes from residents. They are very grateful."
