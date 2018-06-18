@@ -871,25 +871,25 @@ function CustomQuest_GetQuestMessage(aIndex,bName)
 					
 			if ItemIndex ~= nil and NoItem > 0 then
 					
-				--local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)  -- NIE DZIAŁA
+				local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)
 				
 				------[NIE DZIALA]-------
 				
-				local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)
+				--local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)
 				
-				if NoItemCollected == 0 and ItemLevel == -1 then
+				--if NoItemCollected == 0 and ItemLevel == -1 then
 				
-					for n=12,76,1 do
+				--	for n=12,76,1 do
 
-						if InventoryGetItemIndex(aIndex,n) == ItemIndex then
+				--		if InventoryGetItemIndex(aIndex,n) == ItemIndex then
 					
-							NoItemCollected = NoItemCollected+1
+				--			NoItemCollected = NoItemCollected+1
 						
-						end
+				--		end
 				
-					end
+				--	end
 				
-				end
+				--end
 		
 				------[/NIE DZIALA]------
 		
