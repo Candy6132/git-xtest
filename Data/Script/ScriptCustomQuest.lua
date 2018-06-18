@@ -510,7 +510,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							
 								SetObjectMoney(bIndex,CharacterZen+ZenReward*100)
 								
-								--MoneySend(bIndex,ZenReward*100)
+								MoneySend(bIndex,ZenReward*100)   -- TEST
 								
 								UserCalcAttribute(bIndex)
 								
