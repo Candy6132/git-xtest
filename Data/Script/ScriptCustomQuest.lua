@@ -510,7 +510,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							
 								SetObjectMoney(bIndex,CharacterZen+ZenReward*100)
 								
-								MoneySend(bIndex,ZenReward*100)   -- TEST
+								MoneySend(bIndex,CharacterZen+ZenReward*100)   -- TEST
 								
 								UserCalcAttribute(bIndex)
 								
@@ -543,10 +543,8 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							--Update the user level at the client.
 							
 							-------------------------------------------------------------------------------------------------
-							
-							PartialQuestStatus = 0 -- <--  POTRZEBNE????
-							
-							MainQuestStatus = MainQuestStatus + 1 -- <--  POTRZEBNE????
+
+							MainQuestStatus = MainQuestStatus + 1
 							
 							CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus + 1
 							
@@ -872,27 +870,7 @@ function CustomQuest_GetQuestMessage(aIndex,bName)
 			if ItemIndex ~= nil and NoItem > 0 then
 					
 				local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)
-				
-				------[NIE DZIALA]-------
-				
-				--local NoItemCollected = InventoryGetItemCount(aIndex,ItemIndex,ItemLevel)
-				
-				--if NoItemCollected == 0 and ItemLevel == -1 then
-				
-				--	for n=12,76,1 do
 
-				--		if InventoryGetItemIndex(aIndex,n) == ItemIndex then
-					
-				--			NoItemCollected = NoItemCollected+1
-						
-				--		end
-				
-				--	end
-				
-				--end
-		
-				------[/NIE DZIALA]------
-		
 				local ItemString = CustomQuest_QuestList[MainQuestStatus+1].ItemString
 				
 				if ItemLevel ~= -1 and ItemLevel > 0 then
