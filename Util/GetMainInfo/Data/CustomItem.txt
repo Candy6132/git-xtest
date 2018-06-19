@@ -19,11 +19,11 @@
 7271	255	255	100	"JewelofExcellent"	
 7272	255	255	100	"JewelofAncient"
 	
-3701	255	0	0	"HelmMale18"		//Red Phoenix Helm 
-4213	255	0	0	"ArmorMale18"		//Red Phoenix Armor 
-4725	255	0	0	"PantMale18"		//Red Phoenix Pants 
-5237	255	0	0	"GloveMale18"		//Red Phoenix Gloves 
-5749	255	0	0	"BootMale18"		//Red Phoenix Boots 
+3701	255	0	0	"CzeHelm"		//Red Phoenix Helm 
+4213	255	0	0	"CzeArmor"		//Red Phoenix Armor 
+4725	255	0	0	"CzePant"		//Red Phoenix Pants 
+5237	255	0	0	"CzeGlove"		//Red Phoenix Gloves 
+5749	255	0	0	"CzeBoots"		//Red Phoenix Boots 
 3702	120	0	0	"HelmMale19"		//Brilliant Soul Helm 
 4214	120	0	0	"ArmorMale19"		//Brilliant Soul Armor 
 4726	120	0	0	"PantMale19"		//Brilliant Soul Pants 
