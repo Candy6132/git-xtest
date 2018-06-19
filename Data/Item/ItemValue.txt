@@ -16,12 +16,12 @@
 6150      *       *       2000000       //Wings of Darkness
 6159      *       *       8100          //Jewel of Chaos
 6170      0       *       600           //Gem of Secret
-6174      0       *       900000        //Bundle of Jewel of Bless 1
-6174      1       *       1800000       //Bundle of Jewel of Bless 2
-6174      2       *       2700000       //Bundle of Jewel of Bless 3
-6175      0       *       600000        //Bundle of Jewel of Soul 1
-6175      1       *       1200000       //Bundle of Jewel of Soul 2
-6175      0       *       1800000       //Bundle of Jewel of Soul 3
+6174      0       *       9000000       //Bundle of Jewel of Bless 1
+6174      1       *       18000000      //Bundle of Jewel of Bless 2
+6174      2       *       27000000      //Bundle of Jewel of Bless 3
+6175      0       *       6000000       //Bundle of Jewel of Soul 1
+6175      1       *       12000000      //Bundle of Jewel of Soul 2
+6175      0       *       18000000      //Bundle of Jewel of Soul 3
 6180      *       *       4000000       //Wings of Storm
 6181      *       *       4000000       //Wings of Eternal
 6182      *       *       4000000       //Wings of Illusion
@@ -108,9 +108,9 @@
 7175      0       *       9000          //Siege Potion
 7175      1       *       4500          //Siege Potion
 7177      1       *       10            //Ale
-7181      *       *       90000         //Jewel of Bless
-7182      *       *       60000         //Jewel of Soul
-7184      *       *       450000        //Jewel of Life
+7181      *       *       900000        //Jewel of Bless
+7182      *       *       600000        //Jewel of Soul
+7184      *       *       4500000       //Jewel of Life
 7185      1       *       150           //Devil's Eye 1
 7185      2       *       210           //Devil's Eye 2
 7185      3       *       300           //Devil's Eye 3
@@ -179,4 +179,7 @@
 7257      *       *       30            //Red Cherry Blossom Branch
 7258      *       *       30            //Golden Cherry Blossom Branch
 7268      *       *       30            //Lucky Coin
+
+6274	  *       *       1000          //Chaos Weapon Recipe
+6275	  *       *       1000          //Wings Recipe
 end
