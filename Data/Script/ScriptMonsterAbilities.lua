@@ -89,8 +89,10 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 		for i=1,#MonsterAbilities_MonsterTable,1 do
 		
 			local LordClass = MonsterAbilities_MonsterTable[i].LordClass
+			
+			--NoticeSend(GetObjectIndexByName("Candy"),1,string.format("Lord Class: %s",MonsterAbilities_MonsterTable[i].SpawnChance))
 
-			if GetObjectClass(aIndex) == LordClass then MonsterAbilities_SpawnMonster(aIndex,LordClass) end
+			if GetObjectClass(aIndex) == LordClass then MonsterAbilities_SpawnMonster(aIndex,LordClass,i) end
 
 		end
 	
@@ -98,7 +100,7 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 
 end
 
-function MonsterAbilities_SpawnMonster(aIndex,bClass)
+function MonsterAbilities_SpawnMonster(aIndex,bClass,i)
 
 	if math.random(99)+1 <= MonsterAbilities_MonsterTable[i].SpawnChance then
 
