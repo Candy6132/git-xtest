@@ -231,8 +231,20 @@ function CustomQuest_OnCharacterEntry(aIndex)
 		local CharacterName = GetObjectName(aIndex)
 
 		if CustomQuest_AddCharToTable(CharacterName) == 1 then
-			
+
 			NoticeSend(aIndex,1,CustomQuest_GetQuestMessage(aIndex,CharacterName))
+			
+			local CharacterIndex = CustomQuest_CharacterIndexes[CharacterName]
+		
+			local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 2
+			
+			local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 2
+			
+			if PartialQuestStatus == 1 then
+			
+				NoticeSend(aIndex,1,string.format("'%s'",MessageGet(CustomQuest_QuestList[MainQuestStatus+1].QuestStartMessage,GetObjectLang(aIndex))))
+			
+			end
 			
 		else
 		
