@@ -4,6 +4,7 @@ require("ScriptCustomRespawn")
 require("ScriptExtraCommand")
 require("ScriptCustomPK")
 require("ScriptCustomQuest")
+require("ScriptMonsterAbilities")
 
 
 function OnReadScript()
