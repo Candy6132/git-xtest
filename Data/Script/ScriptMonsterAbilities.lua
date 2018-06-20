@@ -1,149 +1,121 @@
 MonsterAbilities_SystemSwitch = 1
 
-MonsterAbilities_MainTimer = 0
-
-MonsterAbilities_SummonedMonster1 = {}
-
-MonsterAbilities_SummonedMonster2 = {}
-
-MonsterAbilities_SummonedMonster3 = {}
-
-MonsterAbilities_LordAbilityCooldown = {}
-
---MonsterAbilities_SummonedMonsterLord = {}
-
-MonsterAbilities_AbilityCooldown = {}
-
-MonsterAbilities_EffectNumber = {}
-
-MonsterAbilities_LordEffectTime = {}
-
 IceQueen = 25
 
-IceMonster = 21
+HellSpider = 13
 
-MonsterAbilities_AbilityCooldown[IceQueen] = 3
-
-MonsterAbilities_EffectNumber[IceQueen] = 4
-
-MonsterAbilities_LordEffectTime[IceQueen] = 0
-
-function CustomQuest_OnReadScript()
-
-	ScriptLoader_OnTimerThread("MonsterAbilities_OnTimerThread")
-	
-	ScriptLoader_OnCheckUserTarget("MonsterAbilities_OnCheckUserTarget")
-	
-	ScriptLoader_OnMonsterDie("MonsterAbilities_OnMonsterDie")
-	
-	math.randomseed(os.time())
-
-end
+MonsterAbilities_MonsterTable = {}
 
 
-function MonsterAbilities_OnTimerThread()
 
-	MonsterAbilities_MainTimer = MonsterAbilities_MainTimer + 1
-	
-end
 
-function OnCheckUserTarget(aIndex,bIndex)
+
+
+MonsterAbilities_NumberOfMonstersSpawned = {}
+
+MonsterAbilities_MonsterSpawnIndex = {}
+
+MonsterAbilities_NumberOfMonstersSpawned[IceQueen] = 4
+
+MonsterAbilities_NumberOfMonstersSpawned[HellSpider] = 5
+
+MonsterAbilities_MonsterSpawnIndex[IceQueen] = 22
+
+MonsterAbilities_MonsterSpawnIndex[HellSpider] = 3
+
+
+
+ScriptLoader_AddOnReadScript("MonsterAbilities_OnReadScript")
+
+ScriptLoader_AddOnMonsterDie("MonsterAbilities_OnMonsterDie")
+
+
+
+function MonsterAbilities_OnReadScript()
 
 	if MonsterAbilities_SystemSwitch == 1 then
 
-		if GetObjectClass(bIndex) == IceQueen then
+		local ReadTable = FileLoad("..\\Data\\Script\\Data\\MonsterAbilities.txt")
+
+		if ReadTable == nil then return end
+
+		local ReadCount = 1
+
+		while ReadCount < #ReadTable do
+
+			if ReadTable[ReadCount] == "end" then
+
+				ReadCount = ReadCount+1
+
+				break
+
+			else
+
+				MonsterAbilities_MonsterTableRow = {}
 	
-			if MonsterAbilities_LordAbilityCooldown[bIndex] == nil then
-			
-				MonsterAbilities_LordAbilityCooldown[bIndex] = MonsterAbilities_MainTimer
-			
-			elseif MonsterAbilities_MainTimer-MonsterAbilities_LordAbilityCooldown[bIndex] >= MonsterAbilities_Ability1Cooldown[IceQueen] then
-			
-				local LordMap = GetObjectMap(bIndex)
-			
-				local LordMapX = GetObjectMapX(bIndex)
-				
-				local LordMapY = GetObjectMapY(bIndex)
-			
-				if MonsterAbilities_SummonedMonster1[bIndex] == nil then
-				
-					MonsterCreate(IceMonster,LordMap,math.random(LordMapX-4,LordMapX+4),math.random(LordMapY-4,LordMapY+4),1)
-					
-					NoticeSend(GetObjectIndexByName("Candy"),1,string.format("Max Index: %d",GetMaxMonsterIndex()))
-					
-					MonsterAbilities_SummonedMonster1[bIndex] = 1
-					
-					MonsterAbilities_LordAbilityCooldown[bIndex] = MonsterAbilities_MainTimer
+				MonsterAbilities_MonsterTableRow["LordClass"] = tonumber(ReadTable[ReadCount])
 
-				elseif MonsterAbilities_SummonedMonster2[bIndex] == nil then
-				
-					MonsterCreate(IceMonster,LordMap,math.random(LordMapX-4,LordMapX+4),math.random(LordMapY-4,LordMapY+4),1)
-					
-					NoticeSend(GetObjectIndexByName("Candy"),1,string.format("Max Index: %d",GetMaxMonsterIndex()))
-					
-					MonsterAbilities_SummonedMonster2[bIndex] = 1
-					
-					MonsterAbilities_LordAbilityCooldown[bIndex] = MonsterAbilities_MainTimer
-				
-				elseif MonsterAbilities_SummonedMonster3[bIndex] == nil then
-					
-					MonsterCreate(IceMonster,LordMap,math.random(LordMapX-4,LordMapX+4),math.random(LordMapY-4,LordMapY+4),1)
-					
-					NoticeSend(GetObjectIndexByName("Candy"),1,string.format("Max Index: %d",GetMaxMonsterIndex()))
-					
-					MonsterAbilities_SummonedMonster3[bIndex] = 1
-					
-					MonsterAbilities_LordAbilityCooldown[bIndex] = MonsterAbilities_MainTimer
+				ReadCount = ReadCount+1
 
-				end
+				MonsterAbilities_MonsterTableRow["MonsterClass"] = tonumber(ReadTable[ReadCount])
+
+				ReadCount = ReadCount+1
+
+				MonsterAbilities_MonsterTableRow["NoMonsters"] = tonumber(ReadTable[ReadCount])
+
+				ReadCount = ReadCount+1
+
+				MonsterAbilities_MonsterTableRow["SpawnChance"] = tonumber(ReadTable[ReadCount])
+
+				ReadCount = ReadCount+1
 			
+				table.insert(MonsterAbilities_MonsterTable,MonsterAbilities_MonsterTableRow)
+	
 			end
-			
-			local MonsterLifePercentage = GetObjectLife(bIndex)/GetObjectMaxLife(bIndex)*100
-			
-			if EffectCheck(bIndex,MonsterAbilities_EffectNumber[IceQueen]) ~= 1 and MonsterLifePercentage < 40 then
-			
-				EffectAdd(bIndex,0,MonsterAbilities_EffectNumber[IceQueen],MonsterAbilities_LordEffectTime[IceQueen],100,100,100,100)
-				
-									--EffectAdd(aIndex,aValue,bValue,cValue,dValue,eValue,fValue,gValue)
- 
-									--aIndex = Object index.
-									--aValue = Effect mode.
-									--bValue = Effect index.
-									--cValue = Effect duration, in seconds.
-									--dValue = Effect value 1.
-									--eValue = Effect value 2.
-									--fValue = Effect value 3.
-									--gValue = Effect value 4.
-									 
-									--Add to the object the chosen effect.
-			
-			end
-			
+
 		end
+
+		math.randomseed(os.time())
 
 	end
 	
-	return 1
-	
 end
+
 
 function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 
 	if MonsterAbilities_SystemSwitch == 1 then
 	
-		if GetObjectClass(aIndex) == IceQueen then
+		for i=1,#MonsterAbilities_MonsterTable,1 do
 		
-			MonsterAbilities_LordAbilityCooldown[aIndex] = nil
-			
-			MonsterAbilities_SummonedMonster1[aIndex] = nil
-			
-			MonsterAbilities_SummonedMonster2[aIndex] = nil
-			
-			MonsterAbilities_SummonedMonster3[aIndex] = nil
-		
+			local LordClass = MonsterAbilities_MonsterTable[i].LordClass
+
+			if GetObjectClass(aIndex) == LordClass then MonsterAbilities_SpawnMonster(aIndex,LordClass) end
+
 		end
 	
 	end
 
+end
+
+function MonsterAbilities_SpawnMonster(aIndex,bClass)
+
+	if math.random(99)+1 <= MonsterAbilities_MonsterTable[i].SpawnChance then
+
+		local LordMap = GetObjectMap(aIndex)
+			
+		local LordMapX = GetObjectMapX(aIndex)
+			
+		local LordMapY = GetObjectMapY(aIndex)
+		
+		for n=1,MonsterAbilities_MonsterTable[i].NoMonsters,1 do
+			
+			--MonsterCreate(IceMonster,LordMap,math.random(LordMapX-4,LordMapX+4),math.random(LordMapY-4,LordMapY+4),1)
+			
+			MonsterCreate(MonsterAbilities_MonsterTable[i].MonsterClass,LordMap,LordMapX,LordMapY,1)
+			
+		end
+
+	end
+	
 end
