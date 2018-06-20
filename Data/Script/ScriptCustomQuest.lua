@@ -175,6 +175,14 @@ function CustomQuest_OnCommandManager(aIndex,code,arg)
 	
 	end
 	
+		if code == 202 then
+
+		CustomQuest_QuestInfoCommand(aIndex)
+		
+		return 1
+	
+	end
+	
 	return 0
 	
 end
@@ -215,6 +223,46 @@ function CustomQuest_CheckTableCommand(aIndex)
 		NoticeSend(aIndex,1,string.format("--------------------"))
 		
 		NoticeSend(aIndex,1,string.format("CustomQuest_TableLength=%d, #CustomQuest_QuestStatusTable=%d",CustomQuest_TableLength,#CustomQuest_QuestStatusTable))
+		
+	end
+
+end
+
+function CustomQuest_QuestInfoCommand(aIndex)
+
+	if CustomQuest_SystemSwitch ~= 1 then
+	
+		NoticeSend(aIndex,1,"Quest System is currently disabled. Please contact the administrator.")
+		
+	else
+	
+		local CharacterName = GetObjectName(aIndex)
+		
+		if CustomQuest_AddCharToTable(CharacterName) == 1 then
+
+			NoticeSend(aIndex,1,CustomQuest_GetQuestMessage(aIndex,CharacterName))
+			
+			local CharacterIndex = CustomQuest_CharacterIndexes[CharacterName]
+		
+			local PartialQuestStatus = CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus % 2
+			
+			local MainQuestStatus = (CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus - PartialQuestStatus) / 2
+			
+			if PartialQuestStatus == 1 then
+			
+				NoticeSend(aIndex,1,string.format("'%s'",MessageGet(CustomQuest_QuestList[MainQuestStatus+1].QuestStartMessage,GetObjectLang(aIndex))))
+			
+			end
+			
+		else
+		
+			LogPrint(string.format("CustomQuestScript: Failed to load  QuestStatus for %s",CharacterName))
+
+			LogColor(1,string.format("CustomQuestScript: Failed to load  QuestStatus for %s",CharacterName))
+			
+			NoticeSend(aIndex,1,"Your quests are currently unavailable. Please contact the administrator.")
+			
+		end
 		
 	end
 

@@ -36,6 +36,7 @@
 
 //Custom Quests
 201       "/questtable"
+202	  "/questinfo"
 
 //Extra Command
 100       "/online"
