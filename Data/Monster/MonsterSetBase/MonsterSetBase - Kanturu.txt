@@ -66,8 +66,8 @@
 2            360          39             30         080            100            *              //Dreadfear
 2            360          39             30         079            127            *              //Dreadfear
 2            360          39             30         081            127            *              //Dreadfear
-2            358          39             30         076            136            *              //Persona
-2            358          39             30         080            136            *              //Persona
+2            358          39             30         076            126            *              //Persona
+2            358          39             30         080            126            *              //Persona
 2            358          39             30         086            127            *              //Persona
 2            358          39             30         087            114            *              //Persona
 2            357          39             30         078            098            *              //Genocider
@@ -83,8 +83,8 @@
 6            360          39             30         075            111            *              //Dreadfear
 6            360          39             30         082            111            *              //Dreadfear
 6            360          39             30         079            115            *              //Dreadfear
-6            360          39             30         077            133            *              //Dreadfear
-6            360          39             30         081            133            *              //Dreadfear
+6            360          39             30         077            123            *              //Dreadfear
+6            360          39             30         081            123            *              //Dreadfear
 6            360          39             30         079            128            *              //Dreadfear
 6            360          39             30         077            121            *              //Dreadfear
 end
