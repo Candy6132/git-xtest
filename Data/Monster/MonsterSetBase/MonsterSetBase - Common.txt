@@ -288,6 +288,10 @@ end
 4	0	30	8	11	94	244	-1	40	// Elite Bull Fighter
 7	0	30	8	11	60	80	-1	15 	// Giant
 
+5	0	7	83	163	85	165	-1	6 	// Hell Hound   -------- Nowy Spot
+2	0	5	144	64	146	66	-1	5 	// Bull Fighter   -------- Nowy Spot
+5	0	5	85	116	88	119	-1	6 	// Hell Hound   -------- Nowy Spot
+2	0	5	142	75	145	77	-1	6 	// Bull Fighter --------- Nowy Spot
 3	0	3	186	113	188	115	-1	4 	// Spider
 6	0	10	135	213	143	220	-1	6 	// Lich
 14	0	10	135	213	143	220	-1	10 	// Skeleton Warrior
@@ -306,7 +310,29 @@ end
 12	1	5	70	180	81	190	-1	5	//Larva
 13	1	10	239	168	247	177	-1	5	//Hell Spider
 16	1	10	48	6	63	15	-1	4	//Elite Skeleton
-18	1	30	4	52	44	124	-1	2	//Gorgon
+
+
+10	1	3	6	127	9	130	-1	2	//Dark Knight -- Nowy
+9	1	4	6	127	9	130	-1	2	//Thunder Lich -- Nowy
+8	1	3	6	127	9	130	-1	2	//Poison Bull Fighter -- Nowy
+
+10	1	3	41	118	44	120	-1	2	//Dark Knight -- Nowy
+9	1	4	41	118	44	120	-1	2	//Thunder Lich -- Nowy
+8	1	3	41	118	44	120	-1	2	//Poison Bull Fighter -- Nowy
+
+10	1	3	41	55	43	58	-1	2	//Dark Knight -- Nowy
+9	1	4	41	55	43	58	-1	2	//Thunder Lich -- Nowy
+8	1	3	41	55	43	58	-1	2	//Poison Bull Fighter -- Nowy
+
+
+10	1	2	8	53	10	55	-1	2	//Dark Knight -- Nowy
+9	1	4	8	53	10	55	-1	2	//Thunder Lich -- Nowy
+8	1	2	8	53	10	55	-1	2	//Poison Bull Fighter -- Nowy
+
+18	1	3	25	67	27	68	-1	1	//Gorgon  - Ten przy tronie
+
+
+
 end
 				
 //Mob	Map	Radio	CordX	CordY	Strong	Name	
@@ -528,7 +554,7 @@ end
 23	2	30	170	80	245	200	-1	10	//Hommerd
 23	2	30	50	6	166	244	-1	30	//Hommerd
 24	2	30	170	80	245	200	-1	30	//Worm
-25	2	30	6	184	80	244	-1	3	//Ice Queen
+25	2	30	6	184	80	244	-1	2	//Ice Queen
 
 24	2	5	234	81	239	85	-1	6	//Worm
 24	2	5	157	5	167	15	-1	15	//Worm
@@ -536,6 +562,17 @@ end
 20	2	5	236	232	242	237	-1	5	//Elite Yeti
 22	2	10	48	192	58	200	-1	12	//Ice Monster
 22	2	10	20	229	26	236	-1	10	//Ice Monster
+
+19	2	2	14	11	16	13	-1	3	//Yeti ----- Nowy
+20	2	2	14	11	16	13	-1	4	//Elite Yeti ---- Nowy
+
+19	2	3	14	11	16	13	-1	2	//Yeti ----- Nowy
+21	2	3	51	38	53	41	-1	1	//Assasin ----- Nowy
+20	2	3	51	38	53	41	-1	3	//Elite Yeti ---- Nowy
+
+23	2	30	101	246	103	247	-1	4	//Hommerd ---- Nowy
+21	2	30	101	246	103	247	-1	2	//Assasin --- Nowy
+
 end
 				
 2
@@ -622,6 +659,31 @@ end
 421            51             30         087            090            125          170          -1             10            //Polluted Butterfly
 421            51             30         118            130            164          172          -1             10            //Polluted Butterfly
 419            51             30         118            087            160          141          -1             20            //Hideous Rabbit
+
+418            51             4          105            209            108           212         -1             3             //Strange Rabbit ---Nowy 
+003            51             3          105            209            108           212          1             3             //Spider -- Nowy
+
+418            51             4          113            221            119           228         -1             4             //Strange Rabbit ---Nowy
+003            51             3          113            221            119           228          1             3             //Spider -- Nowy
+
+418            51             4          53             155            60            160         -1             2             //Strange Rabbit ---Nowy
+003            51             4          53             155            60            160         -1             3             //Spider ---Nowy
+
+418            51             4          33             156            40            161         -1             2             //Strange Rabbit ---Nowy
+003            51             4          33             156            40            161         -1             3             //Spider ---Nowy
+
+422            51             4          84             46             89             51         -1             5             //Cursed Lich ---Nowy
+
+420            51             3          69             66             74             71         -1             4             //Werewolf ---Nowy
+
+422            51             4          104             61             109            66         -1            3             //Cursed Lich ---Nowy
+420            51             3          104             61             109            66         -1            2             //Werewolf ---Nowy
+
+423            51             4          194             151            199            156        -1            4             //Totem Golem ---Nowy
+423            51             4          193             138            198            143        -1            4             //Totem Golem ---Nowy
+
+
+ 
 end
 
 //=========================================================================================				
@@ -642,6 +704,8 @@ end
 35	4	5	13	126	19	131	-1	1	//Death Gordon LT7
 35	4	5	51	117	56	123	-1	1	//Death Gordon LT7
 40	4	5	13	126	19	131	-1	3	//Death Knight LT7
+35	4	3	14	169	17	172	-1	2	//Death Gordon LT7
+40	4	3	14	169	17	172	-1	2	//Death Knight LT7
 37	4	15	12	126	12	131	-1	1	//Devil LT7
 end
 				
@@ -1131,6 +1195,9 @@ end
 52	7	5	39	157	44	163	-1	3	//Silver Valkyre
 
 48	7	5	210	174	232	193	-1	7	//Lizard King
+
+45	7	3	44	18	49	24	-1	4	//Bahamut  --- nowy
+45	7	4	42	33	46	40	-1	5	//Bahamut  --- nowy
 end
 
 //Mob	Map	Radio	CordX	CordY	Strong	Name
