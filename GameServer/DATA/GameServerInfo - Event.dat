@@ -93,4 +93,4 @@ KanturuEvent = 1
 ;==================================================
 ; Raklion Event Settings
 ;==================================================
-RaklionEvent = 1		//Test
+RaklionEvent = 0

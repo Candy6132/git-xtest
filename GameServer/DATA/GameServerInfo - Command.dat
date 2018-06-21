@@ -20,10 +20,10 @@ CommandPostMoney_AL0 = 5000
 CommandPostMoney_AL1 = 5000
 CommandPostMoney_AL2 = 5000
 CommandPostMoney_AL3 = 5000
-CommandPostDelay_AL0 = 1	//Test
-CommandPostDelay_AL1 = 1	//Test
-CommandPostDelay_AL2 = 1	//Test
-CommandPostDelay_AL3 = 1	//Test
+CommandPostDelay_AL0 = 10
+CommandPostDelay_AL1 = 10
+CommandPostDelay_AL2 = 10
+CommandPostDelay_AL3 = 10
 
 ;==================================================
 ; Add Point Command Settings
@@ -67,7 +67,7 @@ CommandMoneyEnable_AL3 = 1
 ;==================================================
 ; Change Command Settings
 ;==================================================
-CommandChangeSwitch = 1		//Test
+CommandChangeSwitch = 0
 CommandChangeEnable_AL0 = 1
 CommandChangeEnable_AL1 = 1
 CommandChangeEnable_AL2 = 1
