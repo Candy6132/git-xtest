@@ -37,7 +37,7 @@
 //ReqLevel	ReqReset	ReqMReset	NoMonsters	MonsterIndex	MonsterString		MonsterFEIndex	MonsterFEString		MonsterSUIndex	MonsterSUString		NoItem	ItemIndex	ItemLevel	ItemString	ItemDropIndex	ItemDropLevel	ItemDropRate	ZenReward 	PointReward	ItemRewardIndex	ItemRewardLevel	EventItemBagSpecialValue	QuestStartMessage	QuestFinishMessage
 0		*		*		5		3		"Spiders"		26		"Goblins"		*		*			*	*		*		*		*		*		*		*		*		*		*		12				1000			1001
 0		*		*		10		2		"Budge Dragons"		27		"Chain Skorpions"	418		"Strange Rabbits"	*	*		*		*		*		*		*		8		*		*		*		13				1002			1003
-0		*		*		*		*		*			*		*			*		*			1	7177		*		"Ale from bar in Lorencia"		*		*		*		20		*		*		*		*				1004			1005
+0		*		*		*		*		*			*		*			*		*			1	7177		*		"Ale from bar in Lorencia"	*		*		*		20		*		*		*		*				1004			1005
 0		*		*		*		0		*			33		*			418		*			20	7168		*		"Apples"	7168		0		50		*		*		*		*		14				1006			1007
 0		*		*		20		4		"Elite Bull Fighters"	31		"Agons"			419		"Hideous Rabbits"	20	6276		*		"Beast's Horns"	6276		0		90		50		*		*		*		15				1008			1009
 0		*		*		20		14		"Skeletons"		*		*			*		*			*	*		*		*		*		*		*		50		2		*		*		13				1010			1011
@@ -47,8 +47,13 @@
 0		*		*		20		11		"Ghosts"		*		*			*		*			*	*		*		*		*		*		*		300		*		*		*		13				1018			1019
 0		*		*		60		20		"Elite Yetis"		*		*			*		*			*	*		*		*		*		*		*		100		3		*		*		18				1020			1021
 0		*		*		20		16		"Elite Skeletons"	13		"Hell Spiders"		423		"Totem Golems"		10	7723		*		"Totem Ornaments"	7723	0		50		100		*		*		*		18				1022			1023
-80		*		*		1		25		"Ice Queen"		*		*			*		*			*	*		*		*		*		*		*		500		5		*		*		19				1024			1025
-0		*		*		40		36		"Shadows"		*		*			*		*			*	*		*		*		*		*		*		*		*		*		*		18				1026			1027
-
-0		*		*		*		34		*			*		*			*		*			1	4239		*		"Wizard's Robe"	4239		9		1		200		*		7181		0		18				1028			1029
+80		*		*		1		25		"Ice Queen"		*		*			*		*			*	*		*		*		*		*		*		500		*		*		*		19				1024			1025
+0		*		*		50		45		"Bahamuts"		47		"Valkyrie"		46		"Vepars"		*	*		*		*		*		*		*		*		*		*		*		20				1030			1031
+0		*		*		1		88		"Spirit Knight"		*		*			*		*			1	1551		*		"Broken Chaos Weapon"	1551	0		100		500		5		*		*		*				1032			1033
+0		*		*		*		*		*			*		*			*		*			1	6159		*		"Jewel of Chaos"	*	*		*		*		*		*		*		21				1034			1035
+0		*		*		50		10		"Dark Knights"		46		"Poison Bull Fighters"	9		"Thunder Liches"	*	*		*		*		*		*		*		200		*		*		*		18				1036			1037
+0		*		*		1		18		"Gordon"		*		*			*		*			*	*		*		*		2564		9		20		500		5		7179		7		*				1038			1039
+0		*		*		40		36		"Shadows"		*		*			*		*			*	*		*		*		*		*		*		200		*		*		*		*				1026			1027
+0		*		*		40		39		"Poison Shadows"	*		*			*		*			*	*		*		*		*		*		*		*		*		7176		9		18				1040			1041
+0		*		*		*		34		*			*		*			*		*			1	4239		*		"Wizard's Robe"	4239		9		1		200		*		7181		0		*				1028			1029
 end

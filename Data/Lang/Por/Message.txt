@@ -403,5 +403,17 @@
 1027	  "You're gonna need better equipment. Here, take this."
 1028	  "Kill some Cursed Wizards in Lost Tower and find the Robe."
 1029	  "Ok, you finally made it. Here, take this Bless."
+1030	  "Can you swim? I hope so. Go kill some monsters in Atlans."
+1031	  "Ugh, you're soaking wet! Good job whough, take this."
+1032	  "Make Thunder Liches summon Spirit Knight. I need his weapon."
+1033	  "Damn, it's broken. We will have to fix it first."
+1034	  "I need Jewel of Chaos to fix this weapon. Can you bring it?"
+1035	  "Ok, there you go. Nice, isn't it?"
+1036	  "We gotta deal with the Dungeon. Go and teach them a lesson!"
+1037	  "I think I know who's responsible for that mess out there."
+1038	  "It's the Gordon you have to deal with. I want his head!."
+1039	  "Is he dead? What a reliefe! You deserve some payoff."
+1040	  "Did I say Poison Shadows last time? No? Then I say it now."
+1041	  "You don't look very good. Take this."
 end
 //1006	  "Can you collect some Apples? I heard Bull Fighters like the

@@ -106,4 +106,6 @@
 *             *           *              17             0              *              "Special\Quest Medium HP"
 *             *           *              18             0              *              "Special\Quest Medium"
 *             *           *              19             0              *              "Special\Quest Skills 1"
+*             *           *              20             0              *              "Special\Quest Rings"
+*             *           *              21             0              *              "Special\Quest Chaos Weapon"
 end
