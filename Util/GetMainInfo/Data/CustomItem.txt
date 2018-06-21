@@ -19,11 +19,11 @@
 7271	255	255	100	"JewelofExcellent"	
 7272	255	255	100	"JewelofAncient"
 	
-3701	255	0	0	"CzeHelm"		//Red Phoenix Helm 
-4213	255	0	0	"CzeArmor"		//Red Phoenix Armor 
-4725	255	0	0	"CzePant"		//Red Phoenix Pants 
-5237	255	0	0	"CzeGlove"		//Red Phoenix Gloves 
-5749	255	0	0	"CzeBoots"		//Red Phoenix Boots 
+3701	255	100	100	"CzeHelm"		//Red Phoenix Helm 
+4213	255	100	100	"CzeArmor"		//Red Phoenix Armor 
+4725	255	100	100	"CzePant"		//Red Phoenix Pants 
+5237	255	100	100	"CzeGlove"		//Red Phoenix Gloves 
+5749	255	100	100	"CzeBoots"		//Red Phoenix Boots 
 3702	120	0	0	"HelmMale19"		//Brilliant Soul Helm 
 4214	120	0	0	"ArmorMale19"		//Brilliant Soul Armor 
 4726	120	0	0	"PantMale19"		//Brilliant Soul Pants 
@@ -49,6 +49,7 @@
 5262	0	0	220	"GloveMale43"		//Vibrant Gloves  
 5774	0	0	220	"BootMale43"		//Vibrant Boots
 
+1551	220	150	150	"Mace07"		//Broken Chaos Weapon
 7278	255	255	40	"Covenant"		//Map of Dark Souls
 7720	255	255	40	"Devil01"		//Rare Key
 7721	255	0	0	"Event03"		//Qundun Orders
@@ -64,20 +65,20 @@
 7725	255	255	40	"suho"			//Blue Glass
 
 //Test Items:
-150	255	255	100	"Staff02"		//0
-662	255	255	100	"Staff02"		//1
-1174	255	255	100	"Staff02"		//2
-1686	255	255	100	"Staff02"		//3
-2198	255	255	100	"Staff02"		//4
-2710	255	255	100	"Staff02"		//5
-3222	255	255	100	"Staff02"		//6
-3734	255	255	100	"Staff02"		//7
-4246	255	255	100	"Staff02"		//8
-4758	255	255	100	"Staff02"		//9
-5270	255	255	100	"Staff02"		//10
-5782	255	255	100	"Staff02"		//11
-6294	255	255	100	"Staff02"		//12
-6806	255	255	100	"Staff02"		//13
-7318	255	255	100	"Staff02"		//14
-7830	255	255	100	"Staff02"		//15
+150	255	255	100	"Mace07"		//0
+662	255	255	100	"Mace07"		//1
+1174	255	255	100	"Mace07"		//2
+1686	255	255	100	"Mace07"		//3
+2198	255	255	100	"Mace07"		//4
+2710	255	255	100	"Mace07"		//5
+3222	255	255	100	"Mace07"		//6
+3734	255	255	100	"Mace07"		//7
+4246	255	255	100	"Mace07"		//8
+4758	255	255	100	"Mace07"		//9
+5270	255	255	100	"Mace07"		//10
+5782	255	255	100	"Mace07"		//11
+6294	255	255	100	"Mace07"		//12
+6806	255	255	100	"Mace07"		//13
+7318	255	255	100	"Mace07"		//14
+7830	255	255	100	"Mace07"		//15
 end

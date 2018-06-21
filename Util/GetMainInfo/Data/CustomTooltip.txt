@@ -84,6 +84,8 @@ end
 5262	0	2	"Cannot be traded"
 5774	0	2	"Cannot be traded"
 
+1551	0	0	"Take this broken weapon to Leo, to fix it"
+1551	0	1	"quest item"
 7278	0	0	"Return this quest item to Leo"
 7278	0	1	"quest item"
 7720	0	0	"Return this key to Leo"
@@ -194,6 +196,8 @@ end
 5262	0	2	"Cannot be traded"
 5774	0	2	"Cannot be traded"
 
+1551	0	0	"Take this broken weapon to Leo, to fix it"
+1551	0	1	"quest item"
 7278	0	0	"Return this quest item to Leo"
 7278	0	1	"quest item"
 7720	0	0	"Return this key to Leo"
@@ -304,6 +308,8 @@ end
 5262	0	2	"Cannot be traded"
 5774	0	2	"Cannot be traded"
 
+1551	0	0	"Take this broken weapon to Leo, to fix it"
+1551	0	1	"quest item"
 7278	0	0	"Return this quest item to Leo"
 7278	0	1	"quest item"
 7720	0	0	"Return this key to Leo"

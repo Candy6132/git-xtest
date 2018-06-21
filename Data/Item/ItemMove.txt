@@ -124,6 +124,7 @@
 5262      0           1           0            1            //Vibrant Gloves  
 5774      0           1           0            1            //Vibrant Boots
 
+1551	  0	      1		  0	       0	    //Broken Chaos Weapon
 7278	  0	      1		  0	       0	    //Map of Dark Souls
 7720	  0	      1		  0	       0	    //Rare Key
 7721	  0	      1		  0	       0	    //Kundun Orders
