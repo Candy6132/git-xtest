@@ -790,15 +790,15 @@ function CustomQuest_UpdateQuest(MonsterIndex,KillerIndex,ParticipantIndex)
 						
 						--[SPECIAL QUEST] - BROKEN CHAOS WEAPON:
 						
-						if GetObjectClass(MonsterIndex) == 9 and KillerIndex == ParticipantIndex and PartialQuestStatus == 1 and CustomQuest_QuestList[MainQuestStatus+1].ItemString == "Broken Chaos Weapon" then
+						--if GetObjectClass(MonsterIndex) == 9 and KillerIndex == ParticipantIndex and PartialQuestStatus == 1 and CustomQuest_QuestList[MainQuestStatus+1].ItemString == "Broken Chaos Weapon" then
 						
-							if math.random(99)+1 <= 3 then
+							--if math.random(99)+1 <= 3 then
 							
-								MonsterCreate(88,MonsterMap,MonsterMapX,MonsterMapY,0)
+								--MonsterCreate(88,MonsterMap,MonsterMapX,MonsterMapY,0)
 
-							end
+							--end
 							
-						end
+						--end
 						
 						--[/SPECIAL QUEST]
 		
