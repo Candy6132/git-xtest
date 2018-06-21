@@ -1,3 +1,6 @@
 //Message                                                            Type   Count   Opacity   Delay   ColorR   ColorG   ColorB   Speed   RepeatTime
-"Welcome to WykopMu"                                                  0      0       0         0       0        0        0        0       60
+"Current Active Events:"                                              0       0         0       0        0        0        0       	600
+"Cherry Blossom"                                                      0       0         0       0        0        0        0       	600
+"Visit our Discord server:"                                           0       0         0       0        0        0        0       	1000
+"https://discord.gg/Y2QcQw8"                                          0       0         0       0        0        0        0       	1000
 end
