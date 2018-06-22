@@ -38,6 +38,9 @@
 201       "/questtable"
 202	  "/questinfo"
 
+//Register
+250	  "/register"
+
 //Extra Command
 100       "/online"
 101       "/info"
