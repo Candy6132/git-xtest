@@ -5,22 +5,161 @@ end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
-0         5         10000         1000          0             1    1    1    1    1    1
+0         5         8000         1000          0             1    1    1    1    1    1
+0         6         2000         1000          0             1    1    1    1    1    1
 end
 
-5											
-//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
-14,011	0	0	*	*	*	*	*	*	*	0	//Box of Luck
-14,011	1	0	*	*	*	*	*	*	*	0	//Box of Heaven
-14,011	8	0	*	*	*	*	*	*	*	0	//BoK+1
-14,011	9	0	*	*	*	*	*	*	*	0	//BoK+2
-13,014	0	0	*	*	*	*	*	*	*	0	//Loch's Feather
-13,015	0	0	56	*	*	*	*	*	*	0	//Fruit
-13,064	0	0	*	*	*	*	*	*	*	0	//Demon
-13,065	0	0	*	*	*	*	*	*	*	0	//Spirit of Guardian
-14,042	0	0	*	*	*	*	*	*	*	0	//Jewel of Harmony
-14,053	0	0	*	*	*	*	*	*	*	0	//Talisman of Luck
-14,096	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly
-12,030	0	0	27	*	*	*	*	*	*	0	//Bundle Jewel of Bless
-12,031	0	0	27	*	*	*	*	*	*	0	//Bundle Jewel of Soul
-end											
+5												
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment	
+14,011	0	0	*	*	*	*	*	*	*	0	//Box of Luck	
+14,011	1	0	*	*	*	*	*	*	*	0	//Box of Heaven	
+14,011	8	0	*	*	*	*	*	*	*	0	//BoK+1	
+14,011	9	0	*	*	*	*	*	*	*	0	//BoK+2	
+13,014	0	0	*	*	*	*	*	*	*	0	//Loch's Feather	
+13,015	0	0	56	*	*	*	*	*	*	0	//Fruit	
+13,064	0	0	*	*	*	*	*	*	*	0	//Demon	
+13,065	0	0	*	*	*	*	*	*	*	0	//Spirit of Guardian	
+14,042	0	0	*	*	*	*	*	*	*	0	//Jewel of Harmony	
+14,053	0	0	*	*	*	*	*	*	*	0	//Talisman of Luck	
+14,096	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly	
+12,030	0	0	27	*	*	*	*	*	*	0	//Bundle Jewel of Bless	
+12,031	0	0	27	*	*	*	*	*	*	0	//Bundle Jewel of Soul	
+end												
+												
+6												
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment	
+00,000	0	0	*	*	17	32	*	24	*	0	//Hyon Dragon Helm	
+00,000	0	0	*	*	17	32	*	24	*	0	//Hyon Dragon Boots 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Hyon Dragon Gloves 	
+00,000	0	0	*	12	17	32	*	24	*	0	//Hyon Lightning Sword 	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Anubis Legendary Helm 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Anubis Legendary Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Anubis Legendary Gloves 	
+00,000	0	0	*	*	*	32	*	24	*	0	//Anubis Ring of Fire	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Warrior Leather Helm 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Warrior Leather Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Warrior Leather Pants 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Warrior Leather Boots 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Warrior Leather Gloves 	
+00,000	0	0	*	12	17	32	*	24	*	0	//Warrior Morning Star 	
+00,000	0	0	*	*	*	32	*	24	*	0	//Warrior Ring of ice	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Hyperion Bronze Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Hyperion Bronze Pants 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Hyperion Bronze Boots 	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Eplete Scale Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Eplete Scale Pants 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Eplete Scale Helmet 	
+00,000	0	0	*	12	17	32	*	24	*	0	//Eplete Plate Shield 	
+00,000	0	0	*	*	*	32	*	24	*	0	//Eplete Pendant of Lightning	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Garuda Brass Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Garuda Brass Pants 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Garuda Brass Gloves 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Garuda Brass Boots 	
+00,000	0	0	*	*	*	32	*	24	*	0	//Garuda Pendant of Fire	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Kantata Plate Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Kantata Plate Gloves 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Kantata Plate Boots 	
+00,000	0	0	*	*	*	32	*	24	*	0	//Kantata Ring of Poison	
+00,000	0	0	*	*	*	32	*	24	*	0	//Kantata Ring of Wind	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Apollo Pad Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Apollo Pad Pants 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Apollo Pad Helm 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Apollo Pad Gloves 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Appollo skull staff 	
+00,000	0	0	*	*	*	32	*	24	*	0	//Apollo Pendant of Ice	
+00,000	0	0	*	*	*	32	*	24	*	0	//Apollo Ring of Magic	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Evis Bone Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Evis Bone Pants 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Evis Bone Boots 	
+00,000	0	0	*	*	*	32	*	24	*	0	//Evis Pendant of Wind	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Hera Sphinx Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Hera Sphinx Pants 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Hera Sphinx Boots 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Hera Sphinx Gloves 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Hera Sphinx Helm 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Hera Skull Shield 	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Ceto Vine Boots 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Ceto Vine Pants 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Ceto Vine Gloves 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Ceto Vine Helm 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Ceto Rapier Sword 	
+00,000	0	0	*	*	*	32	*	24	*	0	//Ceto Ring of Earth	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Gaia Silk Pants 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Gaia Silk Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Gaia Silk Helm 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Gaia Silk Gloves 	
+00,000	0	0	*	12	17	32	*	24	*	0	//Gaia Golden Crossbow 	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Odin Wind Helm 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Odin Wind Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Odin Wind Pants 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Odin Wind Gloves 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Odin Wind Boots 	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Argo Spirit Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Argo Spirit Pants 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Argo Spirit Gloves 	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Gywen Guardian Armor 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Gywen Guardian Gloves 	
+00,000	0	0	*	*	17	32	*	24	*	0	//Gywen Guardian Boots 	
+00,000	0	0	*	12	17	32	*	24	*	0	//Gywen Sliver bow 	
+00,000	0	0	*	*	*	32	*	24	*	0	//Gywen Pendant of ability	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Gaion Storm Crow Helm	
+00,000	0	0	*	*	17	32	*	24	*	0	//Gaion Storm Crow Pants	
+00,000	0	0	*	*	17	32	*	24	*	0	//Gaion Storm Crow Armor	
+00,000	0	0	*	*	*	32	*	24	*	0	//Gaion Pendant of Water	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Agnis Adamantine Mask	
+00,000	0	0	*	*	17	32	*	24	*	0	//Agnis Adamantine Armor	
+00,000	0	0	*	*	17	32	*	24	*	0	//Agnis Adamantine Pants	
+00,000	0	0	*	*	*	32	*	25	*	0	//Agnis Ring of Poison	
+												
+00,000	0	0	*	*	17	32	*	24	*	0	//Chrono Red Wing Helm	
+00,000	0	0	*	*	17	32	*	24	*	0	//Chrono Red Wing Pants	
+00,000	0	0	*	*	17	32	*	24	*	0	//Chrono Red Wing Gloves	
+00,000	0	0	*	*	*	32	*	25	*	0	//Chrono Ring of Magic	
+												
+//content zablokowany:												
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Vicious Dragon Helm
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Vicious Dragon Armor 
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Vicious Dragon Pants
+//	00,000	0	0	*	*	*	32	*	25	*	0	//Vicious Ring of Earth
+												
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Enis Legendary Helm 
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Enis Legendary Armor 
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Enis Legendary Pants
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Enis Legendary Boots
+												
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Aruan Guardian Helm
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Aruan Guardian Armor 
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Aruan Guardian Pants
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Aruan Guardian Boots 
+												
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Muren Storm Crow Armor
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Muren Storm Crow Pants
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Muren Storm Crow Gloves
+//	00,000	0	0	*	*	*	32	*	25	*	0	//Muren Ring of Fire
+												
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Broy Adamantine Pants
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Broy Adamantine Gloves
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Broy Adamantine Boots
+//	00,000	0	0	*	*	*	32	*	25	*	0	//Broy Pendant of Ice
+												
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Sedemen Red Wing Helm
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Sedemen Red Wing Armor
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Sedemen Red Wing Gloves
+//	00,000	0	0	*	*	17	32	*	25	*	0	//Sedemen Red Wing Boots
+end
