@@ -63,29 +63,22 @@
 7723	255	255	40	"fr_2"			//Totem Ornament
 7724	255	40	40	"fr_3"			//Beast's Fang
 7725	255	255	40	"suho"			//Blue Glass
-7726	255	255	40	"SkillScroll01"		//Commands Handbook
-7727	50	100	255	"SkillScroll01"		//Wizard's Spells Guide
-7728	255	100	100	"SkillScroll01"		//Knight's Skills Guide
-7729	100	255	100	"SkillScroll01"		//Elf's Skills Guide
-7730	200	50	200	"SkillScroll01"		//Summoner's Spells Guide
-7731	255	255	255	"SkillScroll01"		//Lord's Skills Guide
-7732	255	255	40	"SkillScroll01"		//Gladiator's Skills Guide
 
 //Test Items:
-150	255	255	100	"SkillScroll01"		//0
-662	255	255	100	"SkillScroll01"		//1
-1174	255	255	100	"SkillScroll01"		//2
-1686	255	255	100	"SkillScroll01"		//3
-2198	255	255	100	"SkillScroll01"		//4
-2710	255	255	100	"SkillScroll01"		//5
-3222	255	255	100	"SkillScroll01"		//6
-3734	255	255	100	"SkillScroll01"		//7
-4246	255	255	100	"SkillScroll01"		//8
-4758	255	255	100	"SkillScroll01"		//9
-5270	255	255	100	"SkillScroll01"		//10
-5782	255	255	100	"SkillScroll01"		//11
-6294	255	255	100	"SkillScroll01"		//12
-6806	255	255	100	"SkillScroll01"		//13
-7318	255	255	100	"SkillScroll01"		//14
-7830	255	255	100	"SkillScroll01"		//15
+150	255	255	100	"Mace07"		//0
+662	255	255	100	"Mace07"		//1
+1174	255	255	100	"Mace07"		//2
+1686	255	255	100	"Mace07"		//3
+2198	255	255	100	"Mace07"		//4
+2710	255	255	100	"Mace07"		//5
+3222	255	255	100	"Mace07"		//6
+3734	255	255	100	"Mace07"		//7
+4246	255	255	100	"Mace07"		//8
+4758	255	255	100	"Mace07"		//9
+5270	255	255	100	"Mace07"		//10
+5782	255	255	100	"Mace07"		//11
+6294	255	255	100	"Mace07"		//12
+6806	255	255	100	"Mace07"		//13
+7318	255	255	100	"Mace07"		//14
+7830	255	255	100	"Mace07"		//15
 end
