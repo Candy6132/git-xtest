@@ -255,15 +255,15 @@ PcPointPointValue_AL3 = 1
 PartyReconnectTime = 300
 PartyExperienceRange = 200
 PartyGeneralExperience1 = 100
-PartyGeneralExperience2 = 85
-PartyGeneralExperience3 = 70
-PartyGeneralExperience4 = 60
-PartyGeneralExperience5 = 50
+PartyGeneralExperience2 = 95
+PartyGeneralExperience3 = 90
+PartyGeneralExperience4 = 85
+PartyGeneralExperience5 = 80
 PartySpecialExperience1 = 100
-PartySpecialExperience2 = 85
-PartySpecialExperience3 = 80
-PartySpecialExperience4 = 75
-PartySpecialExperience5 = 70
+PartySpecialExperience2 = 100
+PartySpecialExperience3 = 105
+PartySpecialExperience4 = 110
+PartySpecialExperience5 = 120
 
 ;==================================================
 ; Jewel Settings
