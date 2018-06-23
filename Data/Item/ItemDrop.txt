@@ -31,52 +31,52 @@
 //7268      0       0       *         *         *         *         *         *         *         0          *           *              25                150               0          //Lucky Coin
 
 7258      0       0       *         *         *         *         *         *         *         0          *           *              12                120               4000        //Golden Cherry Blossom - Cherry Blossom Event
-6151      0       0       *         *         *         *         *         *         *         0          *           *              47                65                600         //Twisting Slash Orb
-7688      0       0       *         *         *         *         *         *         *         0          *           *              47                65                600         //Evil Spirits Scroll
-6161      0       0       *         *         *         *         *         *         *         0          *           *              64                84                600         //Orb of Penetration
-6160      0       0       *         *         *         *         *         *         *         0          *           *              60                80                600         //Orb of Fire Slash
-6165      0       0       *         *         *         *         *         *         *         0          *           *              74                94                600         //Scroll of Fireburst
-7699      0       0       *         *         *         *         *         *         *         0          *           *              75                95                600         //Scroll of Chain Lightning
+6151      0       0       *         *         *         *         *         *         *         0          *           *              47                65                300         //Twisting Slash Orb
+7688      0       0       *         *         *         *         *         *         *         0          *           *              47                65                300         //Evil Spirits Scroll
+6161      0       0       *         *         *         *         *         *         *         0          *           *              64                84                300         //Orb of Penetration
+6160      0       0       *         *         *         *         *         *         *         0          *           *              60                80                300         //Orb of Fire Slash
+6165      0       0       *         *         *         *         *         *         *         0          *           *              74                94                300         //Scroll of Fireburst
+7699      0       0       *         *         *         *         *         *         *         0          *           *              75                95                300         //Scroll of Chain Lightning
 
-6159      0       0       *         *         *         *         *         *         *         0          *           *              12                65                20000       //Jewel of Chaos
-6159      0       0       *         *         *         *         *         *         *         0          *           *              66                199               10000       //Jewel of Chaos
-6670      0       0       *         *         *         *         *         *         *         0          10          *              25                150               5000        //Loch's Feather  
-6670      1       0       *         *         *         *         *         *         *         0          10          *              25                150               3000        //Monarch's Crest 
-6672      6       0       *         *         *         *         *         *         *         0          *           *              77                84                50000       //Scroll of Archangel 6
-6672      7       0       *         *         *         *         *         *         *         0          *           *              85                101               50000       //Scroll of Archangel 7
-6672      8       0       *         *         *         *         *         *         *         0          *           *              102               150               50000       //Scroll of Archangel 8
-6673      6       0       *         *         *         *         *         *         *         0          *           *              77                84                50000       //Blood Bone 6
-6673      7       0       *         *         *         *         *         *         *         0          *           *              85                101               50000       //Blood Bone 7
-6673      8       0       *         *         *         *         *         *         *         0          *           *              120               199               50000       //Blood Bone 8
-6687      0       0       *         *         *         *         *         *         *         0          *           *              102               120               5000        //Spirit of Dark Horse        
-6687      1       0       *         *         *         *         *         *         *         0          *           *              80                101               5000        //Spirit of Dark Spirit
-6688      0       0       *         *         *         *         *         *         *         0          34          *              97                134               20000       //Splinter of Armor
-6689      0       0       *         *         *         *         *         *         *         0          34          *              97                134               20000       //Bless of Guardian
-6690      0       0       *         *         *         *         *         *         *         0          34          *              97                134               20000       //Claw of Beast
-6694      0       0       *         *         *         *         *         *         *         0          38          *              25                150               10000       //Moonstone Pendant
-7179      5       0       *         *         *         *         *         *         *         0          *           *              12                49                8000        //Silver Medal
-7179      6       0       *         *         *         *         *         *         *         0          *           *              50                69                8000        //Gold Medal
-7181      0       0       *         *         *         *         *         *         *         0          *           *              25                199               15000       //Jewel of Bless
-7182      0       0       *         *         *         *         *         *         *         0          *           *              25                199               15000       //Jewel of Soul
-7184      0       0       *         *         *         *         *         *         *         0          *           *              46                199               8000        //Jewel of Life      
-7185      5       0       *         *         *         *         *         *         *         0          *           *              69                76                50000       //Devil's Eye 5
-7185      6       0       *         *         *         *         *         *         *         0          *           *              77                84                50000       //Devil's Eye 6
-7185      7       0       *         *         *         *         *         *         *         0          *           *              85                150               50000       //Devil's Eye 7
-7186      5       0       *         *         *         *         *         *         *         0          *           *              69                76                50000       //Devil's Key 5
-7186      6       0       *         *         *         *         *         *         *         0          *           *              77                84                50000       //Devil's Key 6
-7186      7       0       *         *         *         *         *         *         *         0          *           *              85                199               50000       //Devil's Key 7
-7189      3       0       *         *         *         *         *         *         *         0          *           *              25                150               30000       //Sign of the Lord
-7190      0       0       *         *         *         *         *         *         *         0          *           *              46                199               6000        //Jewel of Creation
-7197      1       0       *         *         *         *         *         *         *         0          *           *              25                46                80000       //Symbol of Kundun 1
-7197      2       0       *         *         *         *         *         *         *         0          *           *              47                65                80000       //Symbol of Kundun 2
-7197      3       0       *         *         *         *         *         *         *         0          *           *              66                77                80000       //Symbol of Kundun 3
-7197      4       0       *         *         *         *         *         *         *         0          *           *              78                83                80000       //Symbol of Kundun 4
-7197      5       0       *         *         *         *         *         *         *         0          *           *              84                91                80000       //Symbol of Kundun 5
-7197      6       0       *         *         *         *         *         *         *         0          *           *              92                113               80000       //Symbol of Kundun 6
-7197      7       0       *         *         *         *         *         *         *         0          *           *              114               199               80000       //Symbol of Kundun 7
-7209      0       0       *         *         *         *         *         *         *         0          39          *              69                150               10000       //Gemstone
-7269      0       0       *         *         *         *         *         *         *         0          *           *              150               199               300         //Jewel of Luck
-7270      0       0       *         *         *         *         *         *         *         0          *           *              150               199               1000        //Jewel of Skill
+6159      0       0       *         *         *         *         *         *         *         0          *           *              12                65                2000        //Jewel of Chaos
+6159      0       0       *         *         *         *         *         *         *         0          *           *              66                199               1000        //Jewel of Chaos
+6670      0       0       *         *         *         *         *         *         *         0          10          *              25                150               500        //Loch's Feather  
+6670      1       0       *         *         *         *         *         *         *         0          10          *              25                150               300        //Monarch's Crest 
+6672      6       0       *         *         *         *         *         *         *         0          *           *              77                84                5000       //Scroll of Archangel 6
+6672      7       0       *         *         *         *         *         *         *         0          *           *              85                101               5000       //Scroll of Archangel 7
+6672      8       0       *         *         *         *         *         *         *         0          *           *              102               150               5000       //Scroll of Archangel 8
+6673      6       0       *         *         *         *         *         *         *         0          *           *              77                84                5000       //Blood Bone 6
+6673      7       0       *         *         *         *         *         *         *         0          *           *              85                101               5000       //Blood Bone 7
+6673      8       0       *         *         *         *         *         *         *         0          *           *              120               199               5000       //Blood Bone 8
+6687      0       0       *         *         *         *         *         *         *         0          *           *              102               120               500        //Spirit of Dark Horse        
+6687      1       0       *         *         *         *         *         *         *         0          *           *              80                101               500        //Spirit of Dark Spirit
+6688      0       0       *         *         *         *         *         *         *         0          34          *              97                134               2000       //Splinter of Armor
+6689      0       0       *         *         *         *         *         *         *         0          34          *              97                134               2000       //Bless of Guardian
+6690      0       0       *         *         *         *         *         *         *         0          34          *              97                134               2000       //Claw of Beast
+6694      0       0       *         *         *         *         *         *         *         0          38          *              25                150               1000       //Moonstone Pendant
+7179      5       0       *         *         *         *         *         *         *         0          *           *              12                49                800        //Silver Medal
+7179      6       0       *         *         *         *         *         *         *         0          *           *              50                69                800        //Gold Medal
+7181      0       0       *         *         *         *         *         *         *         0          *           *              25                199               1500       //Jewel of Bless
+7182      0       0       *         *         *         *         *         *         *         0          *           *              25                199               1500       //Jewel of Soul
+7184      0       0       *         *         *         *         *         *         *         0          *           *              46                199               800        //Jewel of Life      
+7185      5       0       *         *         *         *         *         *         *         0          *           *              69                76                5000       //Devil's Eye 5
+7185      6       0       *         *         *         *         *         *         *         0          *           *              77                84                5000       //Devil's Eye 6
+7185      7       0       *         *         *         *         *         *         *         0          *           *              85                150               5000       //Devil's Eye 7
+7186      5       0       *         *         *         *         *         *         *         0          *           *              69                76                5000       //Devil's Key 5
+7186      6       0       *         *         *         *         *         *         *         0          *           *              77                84                5000       //Devil's Key 6
+7186      7       0       *         *         *         *         *         *         *         0          *           *              85                199               5000       //Devil's Key 7
+7189      3       0       *         *         *         *         *         *         *         0          *           *              25                150               3000       //Sign of the Lord
+7190      0       0       *         *         *         *         *         *         *         0          *           *              46                199               600        //Jewel of Creation
+7197      1       0       *         *         *         *         *         *         *         0          *           *              25                46                8000       //Symbol of Kundun 1
+7197      2       0       *         *         *         *         *         *         *         0          *           *              47                65                8000       //Symbol of Kundun 2
+7197      3       0       *         *         *         *         *         *         *         0          *           *              66                77                8000       //Symbol of Kundun 3
+7197      4       0       *         *         *         *         *         *         *         0          *           *              78                83                8000       //Symbol of Kundun 4
+7197      5       0       *         *         *         *         *         *         *         0          *           *              84                91                8000       //Symbol of Kundun 5
+7197      6       0       *         *         *         *         *         *         *         0          *           *              92                113               8000       //Symbol of Kundun 6
+7197      7       0       *         *         *         *         *         *         *         0          *           *              114               199               8000       //Symbol of Kundun 7
+7209      0       0       *         *         *         *         *         *         *         0          39          *              69                150               1000       //Gemstone
+7269      0       0       *         *         *         *         *         *         *         0          *           *              150               199               30         //Jewel of Luck
+7270      0       0       *         *         *         *         *         *         *         0          *           *              150               199               100        //Jewel of Skill
 
 
 //Hell Maine in Aida
