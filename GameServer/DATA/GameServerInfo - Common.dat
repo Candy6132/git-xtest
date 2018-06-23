@@ -213,8 +213,8 @@ SUCreateLevel_AL3 = 0
 ;==================================================
 ; Delete Character Settings
 ;==================================================
-CharacterDeleteSwitch = 0
-CharacterDeleteMaxLevel = 400
+CharacterDeleteSwitch = 1
+CharacterDeleteMaxLevel = 280
 CharacterDeleteMaxReset = 5
 
 ;==================================================
