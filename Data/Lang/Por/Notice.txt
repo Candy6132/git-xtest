@@ -1,6 +1,8 @@
 //Message				Type	Count	Opacity	Delay	ColorR	ColorG	ColorB	Speed	RepeatTime
 "Current Active Events:"		0	0	0	0	0	0	0	0	600
-"Cherry Blossom"			0	0	0	0	0	0	0	0	600
-"Visit our Discord server:"	 	0	0	0	0	0	0	0	0	01000
-"https://discord.gg/Y2QcQw8"		0	0	0	0	0	0	0	0	1000
+"Cherry Blossom"			0	0	0	0	0	0	0	0	1
+"Visit our Discord server:"	 	0	0	0	0	0	0	0	0	1000
+"https://discord.gg/Y2QcQw8"		0	0	0	0	0	0	0	0	1
+"Visit Librarian in Devias 206 30"	0	0	0	0	0	0	0	0	600
+"He has many useful books for you"	0	0	0	0	0	0	0	0	1
 end
