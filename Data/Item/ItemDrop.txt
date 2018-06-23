@@ -38,6 +38,8 @@
 6165      0       0       *         *         *         *         *         *         *         0          *           *              74                94                600         //Scroll of Fireburst
 7699      0       0       *         *         *         *         *         *         *         0          *           *              75                95                600         //Scroll of Chain Lightning
 
+6656      0       0       *         *         *         *         *         *         *         0          *           *              23                199               20000        //Guardian Angel
+6657      0       0       *         *         *         *         *         *         *         0          *           *              28                199               20000        //Imp
 6159      0       0       *         *         *         *         *         *         *         0          *           *              12                65                20000       //Jewel of Chaos
 6159      0       0       *         *         *         *         *         *         *         0          *           *              66                199               10000       //Jewel of Chaos
 6670      0       0       *         *         *         *         *         *         *         0          10          *              25                150               5000        //Loch's Feather  
