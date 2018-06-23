@@ -415,5 +415,15 @@
 1039	  "Is he dead? What a reliefe! You deserve some payoff."
 1040	  "Did I say Poison Shadows last time? No? Then I say it now."
 1041	  "You don't look very good. Take this."
+1042	  "Ok, time for Cows. You shouldn't have problem with them."
+1043	  "You did it? Good, I've got something for you."
+1044	  "Devils fly out of Lost Tower during night. Make them fewer."
+1045	  "I won't make a soup out of it. I'm not a whitch, haha!"
+1046	  "I guess you know what's next - Death Knight and his sword."
+1047	  "You beat them, right? Here's another piece of armor."
+1048	  "Death Gordons are carrying a large axe. I want it."
+1049	  "You should buy yourself a cart to carry this pile of steel."
+1050	  "A half men-half horse with a frightening look - find him!"
+1051	  "I guess it wasn't easy. I've got something extra for you."
 end
 //1006	  "Can you collect some Apples? I heard Bull Fighters like the

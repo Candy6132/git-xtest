@@ -108,4 +108,5 @@
 *             *           *              19             0              *              "Special\Quest Skills 1"
 *             *           *              20             0              *              "Special\Quest Rings"
 *             *           *              21             0              *              "Special\Quest Chaos Weapon"
+*             *           *              22             0              *              "Special\Quest High"
 end

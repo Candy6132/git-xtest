@@ -950,7 +950,6 @@ end
 37	4	30	128	6	-1	//Devil
 37	4	30	26	108	-1	//Devil
 38	4	30	31	212	-1	//Balrog
-38	4	30	28	212	-1	//Balrog
 39	4	30	243	125	-1	//Poison Shadow
 39	4	30	245	109	-1	//Poison Shadow
 39	4	30	219	6	-1	//Poison Shadow
