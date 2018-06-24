@@ -160,7 +160,7 @@ function Register_OnCharacterEntry(aIndex)
 				
 				NoticeSend(aIndex,0,"THIS IS REGISTER ACCOUNT")
 				
-				NoticeSend(aIndex,0,"TYPE /register <login> <password> <email>")
+				NoticeSend(aIndex,0,"TYPE /register yourlogin yourpassword your@mail.com")
 				
 				Register_CountingTime[n] = 1
 				
