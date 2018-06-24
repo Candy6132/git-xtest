@@ -75,8 +75,8 @@
 7         *      4       20    *     18      0       0
 7         *      4       21    *     18      0       0
 7         *      4       22    *     18      0       0
-8         *      6       24    *     12      0       0
-8         *      6       24    *     18      0       0
+//8         *      6       24    *     12      0       0
+//8         *      6       24    *     18      0       0
 9         *      12      6     *     8       0       0
 9         *      12      6     *     18      0       0
 9         *      12      24    *     8       0       0
@@ -103,7 +103,7 @@ end
 5         *                *                135         498           3600		//White Wizard Noria
 6         196              *                *           *             3600		//New Year Invasion
 7         197              *                *           *             3600		//Easter Rabbit
-8         198              *                *           *             3600		//Summer Invasion
+//8         198              *                *           *             3600		//Summer Invasion - BRAK MODELU FIRE FLAME GHOST
 9         199              *                476         206           3600		//Christmas Invasion
 10        499              *                *           *             600		//Hell Maine Wave #1
 11        500              *                *           *             600		//Hell Maine Wave #1
@@ -205,12 +205,12 @@ end
 7         0       4
 7         0       5
 
-8         0       0
-8         0       1
-8         0       2
-8         0       3
-8         0       4
-8         0       5
+//8         0       0
+//8         0       1
+//8         0       2
+//8         0       3
+//8         0       4
+//8         0       5
 
 9         0       0
 9         0       1
@@ -418,12 +418,12 @@ end
 7	0	4	413	10	37	10	10	240	240	0	0	//Lunar Rabbit 
 7	0	5	413	10	57	10	10	240	240	0	0	//Lunar Rabbit 
 												
-8	0	0	463	10	4	10	10	240	240	0	0	//Fire Flame Ghost
-8	0	1	463	10	7	10	10	240	240	0	0	//Fire Flame Ghost
-8	0	2	463	10	8	10	10	240	240	0	0	//Fire Flame Ghost
-8	0	3	463	10	33	10	10	240	240	0	0	//Fire Flame Ghost
-8	0	4	463	10	37	10	10	240	240	0	0	//Fire Flame Ghost
-8	0	5	463	10	57	10	10	240	240	0	0	//Fire Flame Ghost
+//8	0	0	463	10	4	10	10	240	240	0	0	//Fire Flame Ghost
+//8	0	1	463	10	7	10	10	240	240	0	0	//Fire Flame Ghost
+//8	0	2	463	10	8	10	10	240	240	0	0	//Fire Flame Ghost
+//8	0	3	463	10	33	10	10	240	240	0	0	//Fire Flame Ghost
+//8	0	4	463	10	37	10	10	240	240	0	0	//Fire Flame Ghost
+//8	0	5	463	10	57	10	10	240	240	0	0	//Fire Flame Ghost
 												
 9	0	0	466	10	0	148	47	164	65	0	0	//Cursed Goblin 
 9	0	0	476	1	0	148	47	164	65	0	0	//Cursed Santa 
