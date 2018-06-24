@@ -14,7 +14,7 @@
 6148      *       *       2000000       //Wings of Soul
 6149      *       *       2000000       //Wings of Dragon
 6150      *       *       2000000       //Wings of Darkness
-6159      *       *       8100          //Jewel of Chaos
+6159      *       *       81000         //Jewel of Chaos
 6170      0       *       600           //Gem of Secret
 6174      0       *       9000000       //Bundle of Jewel of Bless 1
 6174      1       *       18000000      //Bundle of Jewel of Bless 2
@@ -135,14 +135,14 @@
 7188      *       *       9             //Remedy of Love
 7189      0       *       90            //Rena
 7189      3       *       39            //Mark of Lord
-7190      *       *       360000        //Jewel of Creation
+7190      *       *       3600000       //Jewel of Creation
 7191      *       *       9000          //Scroll of the Emperor
 7192      *       *       9000          //Broken Sword
 7193      *       *       9000          //Tear of Elf
 7194      *       *       9000          //Soul Shard of Wizard
 7196      *       *       6000          //Lost Map
 7197      *       *       300           //Symbol of Kundun
-7199      *       *       600000        //Jewel of Guardian
+7199      *       *       6000000       //Jewel of Guardian
 7168      *       *       4             //Apple
 7169      *       *       16            //Small Healing Potion
 7170      *       *       66            //Medium Healing Potion
