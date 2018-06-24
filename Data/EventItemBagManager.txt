@@ -109,4 +109,5 @@
 *             *           *              20             0              *              "Special\Quest Rings"
 *             *           *              21             0              *              "Special\Quest Chaos Weapon"
 *             *           *              22             0              *              "Special\Quest High"
+*             *           *              23             0              *              "Special\Quest Box of Luck"
 end

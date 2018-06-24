@@ -438,5 +438,7 @@
 1049	  "You should buy yourself a cart to carry this pile of steel."
 1050	  "A half men-half horse with a frightening look - find him!"
 1051	  "I guess it wasn't easy. I've got something extra for you."
+1052	  "I' ve heard about new phenomenon - Golden Monster. Find it."
+1053	  "Bizzare thing. Here, have it back."
 end
 //1006	  "Can you collect some Apples? I heard Bull Fighters like the
