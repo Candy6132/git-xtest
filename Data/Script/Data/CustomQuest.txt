@@ -51,7 +51,7 @@
 0		*		*		50		45		"Bahamuts"		47		"Valkyrie"		46		"Vepars"		*	*		*		*		*		*		*		*		*		*		*		20				1030			1031
 0		*		*		1		88		"Spirit Knight"		*		*			*		*			1	1551		*		"Broken Chaos Weapon"	1551	0		10000		500		5		*		*		*				1032			1033
 0		*		*		*		*		*			*		*			*		*			1	6159		*		"Jewel of Chaos"	*	*		*		*		*		*		*		21				1034			1035
-0		*		*		50		10		"Dark Knights"		46		"Poison Bull Fighters"	9		"Thunder Liches"	*	*		*		*		*		*		*		200		*		*		*		18				1036			1037
+0		*		*		50		10		"Dark Knights"		8		"Poison Bull Fighters"	9		"Thunder Liches"	*	*		*		*		*		*		*		200		*		*		*		18				1036			1037
 0		*		*		1		18		"Gorgon"		*		*			*		*			*	*		*		*		2564		9		2000		800		5		7179		7		*				1038			1039
 0		*		*		40		36		"Shadows"		*		*			*		*			*	*		*		*		*		*		*		200		*		*		*		*				1026			1027
 0		*		*		40		39		"Poison Shadows"	*		*			*		*			*	*		*		*		*		*		*		*		*		7176		9		18				1040			1041
