@@ -373,6 +373,19 @@
 915       "You need to be at least Level %d to use the /offstore"
 916       "You need to have at least %d Resets to use the /offstore"
 
+//==============CUSTOM INVASION==================
+// poczatek
+917	  "Monsters from Lost Tower invaded Devias. Detenf the town!"
+// druga fala
+918	  "Balrog's forces are getting stronger. Defend Devias!"
+// wejscie bossa
+919	  "Balrog arrived to Devias. Defeat him!"
+// boss pada
+920	  "Balrog has been defeated!"
+// armia sie cofa
+921	  "The Lost Tower army retreats! Devias is safe."
+//==============CUSTOM INVASION==================
+
 1000	  "Hey you! Take this buff and kill some monsters for me."
 1001	  "Hmm, nice. I think this will make you more effective."
 1002	  "Let's see how you'll handle with those little bastards."

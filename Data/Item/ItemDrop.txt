@@ -118,4 +118,7 @@
 
 //Ancient Bali's Butterfly:
 7184	0	0	*	*	*	*	*	*	*	0		33		241		*		*		7500000	//Jewel of Life	
+
+//Custom Invasion - Balrog
+7179	11	0	*	*	*	*	*	*	*	0		2		38		*		*		1000000	//BoK+4
 end
