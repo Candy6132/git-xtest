@@ -672,11 +672,11 @@ end
 418            51             4          33             156            40            161         -1             2             //Strange Rabbit ---Nowy
 003            51             4          33             156            40            161         -1             3             //Spider ---Nowy
 
-422            51             4          84             46             89             51         -1             5             //Cursed Lich ---Nowy
+422            51             4          84             46             89             51         -1             4             //Cursed Lich ---Nowy
 
 420            51             3          69             66             74             71         -1             4             //Werewolf ---Nowy
 
-422            51             4          104             61             109            66         -1            3             //Cursed Lich ---Nowy
+422            51             4          104             61             109            66         -1            2             //Cursed Lich ---Nowy
 420            51             3          104             61             109            66         -1            2             //Werewolf ---Nowy
 
 423            51             4          194             151            199            156        -1            4             //Totem Golem ---Nowy
