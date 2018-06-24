@@ -74,7 +74,7 @@
 6714      0           1           1            1            //Reset Fruit Control
 6720      0           1           1            1            //Demon
 6721      0           1           1            1            //Spirit of Guardian
-6723      0           1           1            1            //Pet Rudolf
+6723      0           1           0            1            //Pet Rudolf
 7181      0           1           1            1            //Jewel of Bless
 7182      0           1           1            1            //Jewel of Soul
 7184      0           1           1            1            //Jewel of Life
