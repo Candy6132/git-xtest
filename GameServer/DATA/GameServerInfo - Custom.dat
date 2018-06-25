@@ -101,7 +101,7 @@ CustomJewelPackCommandJHRSyntax = -1
 ; Custom Store Settings
 ;==================================================
 CustomStoreSwitch = 1
-CustomStoreMapZone = -1
+CustomStoreMapZone = 0
 CustomStoreEnable_AL0 = 1
 CustomStoreEnable_AL1 = 1
 CustomStoreEnable_AL2 = 1
@@ -142,22 +142,22 @@ CustomStoreJoHName = Harmony Store
 ;==================================================
 ; Custom Store Offline Settings
 ;==================================================
-CustomStoreOfflineSwitch = 0
+CustomStoreOfflineSwitch = 1
 CustomStoreOfflineGPGain = 0
-CustomStoreOfflineMapZone = -1
-CustomStoreOfflineEnable_AL0 = 0
-CustomStoreOfflineEnable_AL1 = 0
-CustomStoreOfflineEnable_AL2 = 0
-CustomStoreOfflineEnable_AL3 = 0
-CustomStoreOfflineRequireLevel_AL0 = 0
-CustomStoreOfflineRequireLevel_AL1 = 0
-CustomStoreOfflineRequireLevel_AL2 = 0
-CustomStoreOfflineRequireLevel_AL3 = 0
+CustomStoreOfflineMapZone = 0
+CustomStoreOfflineEnable_AL0 = 1
+CustomStoreOfflineEnable_AL1 = 1
+CustomStoreOfflineEnable_AL2 = 1
+CustomStoreOfflineEnable_AL3 = 1
+CustomStoreOfflineRequireLevel_AL0 = 6
+CustomStoreOfflineRequireLevel_AL1 = 6
+CustomStoreOfflineRequireLevel_AL2 = 6
+CustomStoreOfflineRequireLevel_AL3 = 6
 CustomStoreOfflineRequireReset_AL0 = 0
 CustomStoreOfflineRequireReset_AL1 = 0
 CustomStoreOfflineRequireReset_AL2 = 0
 CustomStoreOfflineRequireReset_AL3 = 0
-CustomStoreOfflineMaxTimeLimit_AL0 = 0
-CustomStoreOfflineMaxTimeLimit_AL1 = 0
-CustomStoreOfflineMaxTimeLimit_AL2 = 0
-CustomStoreOfflineMaxTimeLimit_AL3 = 0
+CustomStoreOfflineMaxTimeLimit_AL0 = 600
+CustomStoreOfflineMaxTimeLimit_AL1 = 600
+CustomStoreOfflineMaxTimeLimit_AL2 = 600
+CustomStoreOfflineMaxTimeLimit_AL3 = 600
