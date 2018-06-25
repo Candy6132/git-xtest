@@ -288,9 +288,9 @@ end
 4	0	30	8	11	94	244	-1	40	// Elite Bull Fighter
 7	0	30	8	11	60	80	-1	15 	// Giant
 
-5	0	7	83	163	85	165	-1	6 	// Hell Hound   -------- Nowy Spot
+1	0	7	83	163	85	165	-1	6 	// Hound   -------- Nowy Spot
 0	0	5	144	64	146	66	-1	5 	// Bull Fighter   -------- Nowy Spot
-5	0	5	85	116	88	119	-1	6 	// Hell Hound   -------- Nowy Spot
+1	0	5	85	116	88	119	-1	6 	// Hound   -------- Nowy Spot
 0	0	5	142	75	145	77	-1	6 	// Bull Fighter --------- Nowy Spot
 3	0	3	186	113	188	115	-1	4 	// Spider
 6	0	10	135	213	143	220	-1	6 	// Lich
