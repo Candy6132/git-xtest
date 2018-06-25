@@ -38,7 +38,7 @@ GreaterDefenseRateFE = 100
 GreaterDefenseRateMG = 100
 GreaterDefenseRateDL = 100
 GreaterDefenseRateSU = 100
-GreaterDefenseTimeConstA = 60
+GreaterDefenseTimeConstA = 120
 
 ;==================================================
 ; Greater Damage Skill Settings
@@ -51,7 +51,7 @@ GreaterDamageRateFE = 100
 GreaterDamageRateMG = 100
 GreaterDamageRateDL = 100
 GreaterDamageRateSU = 100
-GreaterDamageTimeConstA = 60
+GreaterDamageTimeConstA = 120
 
 ;==================================================
 ; Summon Monster Skill Settings
@@ -59,7 +59,7 @@ GreaterDamageTimeConstA = 60
 SummonMaxLifeRate = 100
 SummonDefenseRate = 100
 SummonDefenseSuccessRateRate = 100
-SummonPhysiDamageRate = 100
+SummonPhysiDamageRate = 400
 SummonAttackSuccessRateRate = 100
 
 ;==================================================
