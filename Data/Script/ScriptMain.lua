@@ -6,6 +6,7 @@ require("ScriptCustomPK")
 require("ScriptCustomQuest")
 require("ScriptMonsterAbilities")
 require("ScriptRegister")
+require("ScriptPremiumAccount")
 
 
 function OnReadScript()

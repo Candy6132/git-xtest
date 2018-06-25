@@ -9,6 +9,8 @@ function PremiumAccount_OnCommandManager(aIndex,code,arg)
 	if PremiumAccount_SystemSwitch == 1 then
 
 		if code == 260 then
+		
+		NoticeSend(aIndex,0,"debug#1")
 
 			local Argument = CommandGetArgString(arg,0)
 			
