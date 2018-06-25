@@ -41,6 +41,9 @@
 //Register
 250	  "/register"
 
+//Premium
+260	  "/buypremium"
+
 //Extra Command
 100       "/online"
 101       "/info"
