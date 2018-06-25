@@ -8,6 +8,9 @@
 7721	1
 6274	1
 6275	1
+7279	3
+7280	3
+7281	3
 end
 
 1
@@ -53,6 +56,16 @@ end
 4750	0	1	"This item has been dyed with Vial of Dye"
 5262	0	1	"This item has been dyed with Vial of Dye"
 5774	0	1	"This item has been dyed with Vial of Dye"
+
+7279	0	0	"Use this card to buy premium account VIP1"
+7279	0	1	"type /buypremium 1"
+7279	0	2	"Cannot be traded"
+7280	0	0	"Use this card to buy premium account VIP2"
+7280	0	1	"type /buypremium 2"
+7280	0	2	"Cannot be traded"
+7281	0	0	"Use this card to buy premium account VIP3"
+7281	0	1	"type /buypremium 3"
+7281	0	2	"Cannot be traded"
 
 3701	0	2	"Cannot be traded"
 4213	0	2	"Cannot be traded"
@@ -259,6 +272,16 @@ end
 5262	0	1	"This item has been dyed with Vial of Dye"
 5774	0	1	"This item has been dyed with Vial of Dye"
 
+7279	0	0	"Use this card to buy premium account VIP1"
+7279	0	1	"type /buypremium 1"
+7279	0	2	"Cannot be traded"
+7280	0	0	"Use this card to buy premium account VIP2"
+7280	0	1	"type /buypremium 2"
+7280	0	2	"Cannot be traded"
+7281	0	0	"Use this card to buy premium account VIP3"
+7281	0	1	"type /buypremium 3"
+7281	0	2	"Cannot be traded"
+
 3701	0	2	"Cannot be traded"
 4213	0	2	"Cannot be traded"
 4725	0	2	"Cannot be traded"
@@ -463,6 +486,16 @@ end
 4750	0	1	"This item has been dyed with Vial of Dye"
 5262	0	1	"This item has been dyed with Vial of Dye"
 5774	0	1	"This item has been dyed with Vial of Dye"
+
+7279	0	0	"Use this card to buy premium account VIP1"
+7279	0	1	"type /buypremium 1"
+7279	0	2	"Cannot be traded"
+7280	0	0	"Use this card to buy premium account VIP2"
+7280	0	1	"type /buypremium 2"
+7280	0	2	"Cannot be traded"
+7281	0	0	"Use this card to buy premium account VIP3"
+7281	0	1	"type /buypremium 3"
+7281	0	2	"Cannot be traded"
 
 3701	0	2	"Cannot be traded"
 4213	0	2	"Cannot be traded"

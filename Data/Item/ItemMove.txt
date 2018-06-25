@@ -93,6 +93,9 @@
 7270      0           1           1            1            //Jewel of Skill
 7271      0           1           1            1            //Jewel of Excellent
 7272      0           1           1            1            //Jewel of Ancient
+7279      0           1           0            1            //Premium Card Bronze
+7280      0           1           0            1            //Premium Card Silver
+7281      0           1           0            1            //Premium Card Gold
 
 3701      0           1           0            1            //Red Phoenix Helm 
 4213      0           1           0            1            //Red Phoenix Armor 
