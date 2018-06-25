@@ -1,7 +1,45 @@
 PremiumAccount_SystemSwitch = 1
 
+CardIndex = {}
+
+CardName = {}
+
+CardIndex[1] = 7279
+
+CardIndex[2] = 7280
+
+CardIndex[3] = 7281
+
+CardName[1] = "Premium Card Bronze"
+
+CardName[2] = "Premium Card Silver"
+
+CardName[3] = "Premium Card Gold"
+
 
 ScriptLoader_AddOnCommandManager("PremiumAccount_OnCommandManager")
+
+ScriptLoader_AddOnCharacterEntry("PremiumAccount_OnCharacterEntry")
+
+
+function PremiumAccount_OnCharacterEntry(aIndex)
+
+	if PremiumAccount_SystemSwitch == 1 then
+	
+		--NoticeSend(aIndex,1,string.format("VIP Date: %d.",GetObjectAccountExpireDate(aIndex)))
+	
+		--To produce a date table, we use the format string "*t". For instance, the following code
+
+		--temp = os.date("*t", 906000490)
+		--produces the table
+		--{year = 1998, month = 9, day = 16, yday = 259, wday = 4,
+		--hour = 23, min = 48, sec = 10, isdst = false}
+	 
+	 
+	
+	end
+
+end
 
 
 function PremiumAccount_OnCommandManager(aIndex,code,arg)
@@ -9,56 +47,26 @@ function PremiumAccount_OnCommandManager(aIndex,code,arg)
 	if PremiumAccount_SystemSwitch == 1 then
 
 		if code == 260 then
-		
-		NoticeSend(aIndex,0,"debug#1")
 
-			local Argument = CommandGetArgString(arg,0)
+			local Argument = CommandGetArgNumber(arg,0)
 			
-			if Argument == 1 then
+			if Argument == 1 or Argument == 2 or Argument == 3 then
 			
-				if InventoryGetItemCount(aIndex,7279,-1) >= 1 then
+				if InventoryGetItemCount(aIndex,CardIndex[Argument],-1) >= 1 then
 				
-					PremiumAccount_Upgrade(aIndex,1)
+					PremiumAccount_Upgrade(aIndex,Argument)
 				
 				else
 				
-					NoticeSend(aIndex,0,"You don't have Premium Card Bronze.")
+					NoticeSend(aIndex,1,string.format("You don't have %s.",CardName[Argument]))
 					
-					NoticeSend(aIndex,0,"Please buy the card in Webshop on www.wykopmu.pl")
+					NoticeSend(aIndex,1,"Please buy the card in Webshop on www.wykopmu.pl")
 	
 				end
-			
-			elseif Argument == 2 then
-			
-				if InventoryGetItemCount(aIndex,7280,-1) >= 1 then
-				
-					PremiumAccount_Upgrade(aIndex,2)
-				
-				else
-				
-					NoticeSend(aIndex,0,"You don't have Premium Card Silver.")
-					
-					NoticeSend(aIndex,0,"Please buy the card in Webshop on www.wykopmu.pl")
-	
-				end
-						
-			elseif Argument == 3 then
-			
-				if InventoryGetItemCount(aIndex,7281,-1) >= 1 then
-				
-					PremiumAccount_Upgrade(aIndex,3)
-				
-				else
-				
-					NoticeSend(aIndex,0,"You don't have Premium Card Gold.")
-					
-					NoticeSend(aIndex,0,"Please buy the card in Webshop on www.wykopmu.pl")
-	
-				end
-			
+
 			else
 			
-				NoticeSend(aIndex,0,"Type: '/buypremium x' x - level of VIP: 1, 2 or 3")
+				NoticeSend(aIndex,1,"Type: '/buypremium x' x - level of VIP: 1, 2 or 3")
 
 			end
 	
@@ -73,7 +81,26 @@ end
 
 function PremiumAccount_Upgrade(aIndex,bLevel)
 
-	NoticeSend(aIndex,0,string.format("%s",GetObjectAccountExpireDate(aIndex)))
+	InventoryDelItemCount(aIndex,CardIndex[bLevel],-1,1)
+
+	UserSetAccountLevel(aIndex,bLevel,2680000)
+	
+	EffectAdd(aIndex,0,8,3600,0,0,0,0)
+	
+	local MapX = GetObjectMapX(aIndex)
+	
+	local MapY = GetObjectMapY(aIndex)
+	
+	FireworksSend(aIndex,MapX+2,MapY+2)
+	
+	FireworksSend(aIndex,MapX-2,MapY+2)
+	
+	FireworksSend(aIndex,MapX+2,MapY-2)
+	
+	FireworksSend(aIndex,MapX-2,MapY-2)
+	
+	NoticeSend(aIndex,0,string.format("You have upgraded your account to VIP %d!",bLevel))
+	
 
 
 
