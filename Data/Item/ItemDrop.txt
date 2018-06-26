@@ -115,6 +115,10 @@
 4129	0	0	*	*	12	32	*	*	*	0		36		*		150		150		83333	//Sunlight Armor
 4139	0	0	*	*	12	32	*	*	*	0		36		*		150		150		83333	//Storm Blitz Armor
 
+//Orki WW
+6676	0	0	*	*	*	*	*	*	*	0		*		136		*		*		30000	//Wizard Ring
+6676	0	0	*	*	*	*	*	*	*	0		*		137		*		*		30000	//Wizard Ring
+
 //Witch Queen (Hell Maine Invasion):
 6676	0	0	*	*	*	*	*	*	*	0		0		304		*		*		800000	//Wizard Ring
 6676	0	0	*	*	*	*	*	*	*	0		2		304		*		*		800000	//Wizard Ring
