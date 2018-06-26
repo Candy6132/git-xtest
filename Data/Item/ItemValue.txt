@@ -7,13 +7,13 @@
 2063      1       *       12            //Arrow
 2063      2       *       20            //Arrow
 2063      3       *       28            //Arrow
-//6144      *       *       500000        //Wings of Elf
-//6145      *       *       500000        //Wings of Heaven
-//6146      *       *       500000        //Wings of Satan
-//6147      *       *       2000000       //Wings of Spirits
-//6148      *       *       2000000       //Wings of Soul
-//6149      *       *       2000000       //Wings of Dragon
-//6150      *       *       2000000       //Wings of Darkness
+6144      *       *       500000        //Wings of Elf
+6145      *       *       500000        //Wings of Heaven
+6146      *       *       500000        //Wings of Satan
+6147      *       *       2000000       //Wings of Spirits
+6148      *       *       2000000       //Wings of Soul
+6149      *       *       2000000       //Wings of Dragon
+6150      *       *       2000000       //Wings of Darkness
 6159      *       *       81000         //Jewel of Chaos
 6170      0       *       600           //Gem of Secret
 6174      0       *       9000000       //Bundle of Jewel of Bless 1
