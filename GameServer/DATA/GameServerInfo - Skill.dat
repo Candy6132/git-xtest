@@ -2,9 +2,9 @@
 ;==================================================
 ; Mana Shield Skill Settings
 ;==================================================
-ManaShieldConstA = 10
-ManaShieldConstB = 150
-ManaShieldConstC = 600
+ManaShieldConstA = 5
+ManaShieldConstB = 300
+ManaShieldConstC = 1200
 ManaShieldRateDW = 100
 ManaShieldRateDK = 100
 ManaShieldRateFE = 100
