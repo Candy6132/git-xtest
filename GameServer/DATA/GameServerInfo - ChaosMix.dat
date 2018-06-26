@@ -122,10 +122,10 @@ FruitMixRate_AL3 = 90
 ;==================================================
 ; Wing2 Mix Settings
 ;==================================================
-Wing2MixRate_AL0 = -1
-Wing2MixRate_AL1 = -1
-Wing2MixRate_AL2 = -1
-Wing2MixRate_AL3 = -1
+Wing2MixRate_AL0 = 30
+Wing2MixRate_AL1 = 30
+Wing2MixRate_AL2 = 30
+Wing2MixRate_AL3 = 30
 
 ;==================================================
 ; Blood Castle Mix Settings
