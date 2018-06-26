@@ -2,17 +2,17 @@
 ;==================================================
 ; Mana Shield Skill Settings
 ;==================================================
-ManaShieldConstA = 150
+ManaShieldConstA = 10
 ManaShieldConstB = 150
-ManaShieldConstC = 150
-ManaShieldRateDW = 500
-ManaShieldRateDK = 500
-ManaShieldRateFE = 500
-ManaShieldRateMG = 500
-ManaShieldRateDL = 500
-ManaShieldRateSU = 500
-ManaShieldTimeConstA = 60
-ManaShieldTimeConstB = 60
+ManaShieldConstC = 600
+ManaShieldRateDW = 100
+ManaShieldRateDK = 100
+ManaShieldRateFE = 100
+ManaShieldRateMG = 100
+ManaShieldRateDL = 100
+ManaShieldRateSU = 100
+ManaShieldTimeConstA = 20
+ManaShieldTimeConstB = 100
 ManaShieldMaxRate = 40
 
 ;==================================================
