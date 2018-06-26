@@ -15,7 +15,8 @@ end
 14,011	1	0	*	*	*	*	*	*	*	0	//Box of Heaven	
 14,011	8	0	*	*	*	*	*	*	*	0	//BoK+1	
 14,011	9	0	*	*	*	*	*	*	*	0	//BoK+2	
-13,014	0	0	*	*	*	*	*	*	*	0	//Loch's Feather	
+13,014	0	0	*	*	*	*	*	*	*	0	//Loch's Feather
+13,014	1	0	*	*	*	*	*	*	*	0	//Loch's Feather		
 13,015	0	0	56	*	*	*	*	*	*	0	//Fruit	
 13,064	0	0	*	*	*	*	*	*	*	0	//Demon	
 13,065	0	0	*	*	*	*	*	*	*	0	//Spirit of Guardian	
