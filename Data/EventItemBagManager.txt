@@ -30,6 +30,7 @@
 7252          *           *              *              *              *              "Item\Cherry Blossom Box"
 
 *             *           44             *              *              *              "Monster\Red Dragon"
+*             *           42             *              *              *              "Monster\Large Red Dragon"
 *             *           43             *              *              *              "Monster\Golden Budge Dragon"
 *             *           53             *              *              *              "Monster\Golden Titan"
 *             *           54             *              *              *              "Monster\Golden Soldier"

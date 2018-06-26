@@ -1,0 +1,22 @@
+3
+//Index   DropRate
+0         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
+0         5         7000          1000          0             1    1    1    1    1    1
+0         6         3000          1000          0             1    1    1    1    1    1
+end
+
+5
+//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
+
+12,030    0       0       *         *         *         *         *         *         *         0          //Bundle Jewel of Bless
+end
+
+6
+//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
+
+12,031    0       0       *         *         *         *         *         *         *         0          //Bundle Jewel of Soul
+end
