@@ -60,7 +60,7 @@ CheckMoveHackMaxCount = 0
 ; Common Settings
 ;==================================================
 MaxItemOption = 7
-MaxIpConnection = 1
+MaxIpConnection = 3
 PersonalCodeCheck = 0
 EffectOverwriteMode = 0
 ChaosMixPlusItemAnnounce = 0
