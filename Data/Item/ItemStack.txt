@@ -44,5 +44,5 @@
 //7723	  100	     *		   //Totem Ornament
 //7724	  100	     *		   //Beast's Fang
 //7725	  100	     *		   //Blue Glass
-7733	  10	     *		   //Steroids
+//7733	  10	     *		   //Steroids
 end
