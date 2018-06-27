@@ -441,7 +441,7 @@
 1052	  "I' ve heard about new phenomenon - Golden Monster. Find it."
 1053	  "Bizzare thing. Here, have it back."
 1054	  "Enough of fire? Go back to water and fish me some Bahamuts."
-1055	  "I think, I know those Bahamuts are so big..."
+1055	  "I think, I know why those Bahamuts are so big..."
 1056	  "The reason is above the water. Deal with it in Kalima."
 1057	  "Hmm, I don't think Aegis is what we're looking for."
 1058	  "Go back to Kalima and keep looking."
