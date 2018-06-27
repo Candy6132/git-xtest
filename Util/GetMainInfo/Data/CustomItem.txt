@@ -73,22 +73,23 @@
 7730	200	50	200	"SkillScroll01"		//Summoner's Spells Guide
 7731	255	255	255	"SkillScroll01"		//Lord's Skills Guide
 7732	255	255	40	"SkillScroll01"		//Gladiator's Skills Guide
+7733	255	255	40	"sdwater02"		//Steroids
 
 //Test Items:
-150	255	255	100	"SkillScroll01"		//0
-662	255	255	100	"SkillScroll01"		//1
-1174	255	255	100	"SkillScroll01"		//2
-1686	255	255	100	"SkillScroll01"		//3
-2198	255	255	100	"SkillScroll01"		//4
-2710	255	255	100	"SkillScroll01"		//5
-3222	255	255	100	"SkillScroll01"		//6
-3734	255	255	100	"SkillScroll01"		//7
-4246	255	255	100	"SkillScroll01"		//8
-4758	255	255	100	"SkillScroll01"		//9
-5270	255	255	100	"SkillScroll01"		//10
-5782	255	255	100	"SkillScroll01"		//11
-6294	255	255	100	"SkillScroll01"		//12
-6806	255	255	100	"SkillScroll01"		//13
-7318	255	255	100	"SkillScroll01"		//14
-7830	255	255	100	"SkillScroll01"		//15
+150	255	255	100	"sdwater02"		//0
+662	255	255	100	"sdwater02"		//1
+1174	255	255	100	"sdwater02"		//2
+1686	255	255	100	"sdwater02"		//3
+2198	255	255	100	"sdwater02"		//4
+2710	255	255	100	"sdwater02"		//5
+3222	255	255	100	"sdwater02"		//6
+3734	255	255	100	"sdwater02"		//7
+4246	255	255	100	"sdwater02"		//8
+4758	255	255	100	"sdwater02"		//9
+5270	255	255	100	"sdwater02"		//10
+5782	255	255	100	"sdwater02"		//11
+6294	255	255	100	"sdwater02"		//12
+6806	255	255	100	"sdwater02"		//13
+7318	255	255	100	"sdwater02"		//14
+7830	255	255	100	"sdwater02"		//15
 end

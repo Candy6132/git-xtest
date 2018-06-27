@@ -440,5 +440,13 @@
 1051	  "I guess it wasn't easy. I've got something extra for you."
 1052	  "I' ve heard about new phenomenon - Golden Monster. Find it."
 1053	  "Bizzare thing. Here, have it back."
+1054	  "Enough of fire? Go back to water and fish me some Bahamuts."
+1055	  "I think, I know those Bahamuts are so big..."
+1056	  "The reason is above the water. Deal with it in Kalima."
+1057	  "Hmm, I don't think Aegis is what we're looking for."
+1058	  "Go back to Kalima and keep looking."
+1059	  "Bingo! Setroids, who could have thought. Good job."
+1060	  "Need another Bill of Balrog, but this time from Death King."
+1061	  "I guess it wasn't easy to find. Here, take this."
 end
 //1006	  "Can you collect some Apples? I heard Bull Fighters like the

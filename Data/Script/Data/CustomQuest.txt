@@ -62,4 +62,9 @@
 0		*		*		50		35		"Death Gorgons"		*		*			*		*			5	520		0		"Crescent Axes"	520		0		1000		*		*		*		*		22				1048			1049
 0		*		*		1		38		"Balrog"		*		*			*		*			1	1545		7		"Bill of Balrog"	1545	7		10000		20000		5		7184		0		22				1050			1051
 0		*		*		1		43		"Golden Budge Dragon"	*		*			*		*			1	7179		0		"Box of Luck"	*		*		*		*		*		*		*		23				1052			1053
+0		*		*		80		51		"Grat Bahamuts"		*		*			*		*			*	*		*		*		*		*		*		2000		*		7196		3		*				1054			1055
+0		*		*		40		185		"Aegis in Kalima 3"	*		*			*		*			*	*		*		*		*		*		*		2000		*		7196		3		*				1056			1057
+0		*		*		80		187		"Necrons in Kalima 3"	*		*			*		*			10	7733		0		"Steroids"	7733		0		10		15000		*		7184		0		22				1058			1059
+0		*		*		1		55		"Death King"		*		*			*		*			1	1545		5		"Bill of Balrog"	1545	5		10000		3000		*		*		*		22				1060			1061
+//Spirit Knighty w Valley 150 szt
 end

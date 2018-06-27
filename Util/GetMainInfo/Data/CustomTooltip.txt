@@ -138,6 +138,9 @@ end
 7724	0	1	"quest item"
 7725	0	0	"Return this piece of glass to Leo"
 7725	0	1	"quest item"
+7733	0	0	"These steroids probably makes Great Bahamuts so big!"
+7733	0	0	"Return this nasty thing to Leo"
+7733	0	1	"quest item"
 
 7726	0	1	"You can use the following commands:"
 7726	0	0	"/move example: /move lorencia"
@@ -359,6 +362,9 @@ end
 7724	0	1	"quest item"
 7725	0	0	"Return this piece of glass to Leo"
 7725	0	1	"quest item"
+7733	0	0	"These steroids probably makes Great Bahamuts so big!"
+7733	0	0	"Return this nasty thing to Leo"
+7733	0	1	"quest item"
 
 7726	0	1	"You can use the following commands:"
 7726	0	0	"/move example: /move lorencia"
@@ -580,6 +586,9 @@ end
 7724	0	1	"quest item"
 7725	0	0	"Return this piece of glass to Leo"
 7725	0	1	"quest item"
+7733	0	0	"These steroids probably makes Great Bahamuts so big!"
+7733	0	0	"Return this nasty thing to Leo"
+7733	0	1	"quest item"
 
 7726	0	1	"You can use the following commands:"
 7726	0	0	"/move example: /move lorencia"

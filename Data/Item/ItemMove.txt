@@ -140,4 +140,5 @@
 7723	  0	      1		  0	       0	    //Totem Ornament
 7724	  0	      1		  0	       0	    //Beast's Fang
 7725	  0	      1		  0	       0	    //Blue Glass
+7733	  0	      1		  0	       0	    //Steroids
 end
