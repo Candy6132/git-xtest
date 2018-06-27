@@ -142,6 +142,15 @@ end
 223            30             00         179            214            01             //Senior
 376            30             00         090            044            01             //Pamela the Supplier
 377            30             00         089            218            03             //Angela the Supplier
+
+249            30             20         042            015            07             //Guard
+247            30             20         054            014            07             //Guard
+249            30             20         071            016            07             //Guard
+247            30             20         061            015            07             //Guard
+249            30             20         082            017            07             //Guard
+247            30             20         102            015            07             //Guard
+249            30             20         120            015            07             //Guard
+247            30             20         145            015            07             //Guard
 end
 
 0
@@ -3152,13 +3161,23 @@ end
 //=========================================================================================						
 //Mob	Map	Radio	CordX	CordY	CordX2	CordY2	Dir	Quant	Name	
 1
+117	30	5	32	10	38	15	-1	7	// Red Skeleton Knight
+118	30	5	32	10	38	15	-1	4	// Magic Skeleton
+117	30	5	71	4	78	4	-1	6	// Red Skeleton Knight
+118	30	5	71	4	78	4	-1	3	// Magic Skeleton
+117	30	5	102	5	106	10	-1	6	// Red Skeleton Knight
+118	30	5	102	5	106	10	-1	3	// Magic Skeleton
+117	30	5	128	7	135	14	-1	6	// Red Skeleton Knight
+118	30	5	128	7	135	14	-1	3	// Magic Skeleton
 
-117	30	5	135	17	140	20	-1	2	// Red Skeleton Knight -- test
-118	30	5	135	17	140	20	-1	2	// Magic Skeleton -- test
-117	30	5	115	40	147	30	-1	5	// Red Skeleton Knight -- test
-118	30	5	115	40	147	30	-1	5	// Magic Skeleton -- test
+117	30	5	143	34	145	44	-1	2	// Red Skeleton Knight -- test
+118	30	5	143	34	145	44	-1	1	// Magic Skeleton -- test
+117	30	5	145	20	155	26	-1	2	// Red Skeleton Knight -- test
+118	30	5	145	20	155	26	-1	1	// Magic Skeleton -- test
+117	30	5	164	34	164	34	-1	2	// Red Skeleton Knight -- test
 
-
+117	30	30	46	4	164	6	-1	25	// Red Skeleton Knight
+118	30	30	46	4	164	6	-1	10	// Magic Skeleton
 end
 
 //=========================================================================================					
