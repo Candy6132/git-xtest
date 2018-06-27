@@ -3153,10 +3153,10 @@ end
 //Mob	Map	Radio	CordX	CordY	CordX2	CordY2	Dir	Quant	Name	
 1
 
-117	30	5	135	17	140	20	-1	3	// Red Skeleton Knight -- test
-118	30	5	135	17	140	20	-1	3	// Magic Skeleton -- test
-117	30	5	115	40	147	30	-1	10	// Red Skeleton Knight -- test
-118	30	5	115	40	147	30	-1	10	// Magic Skeleton -- test
+117	30	5	135	17	140	20	-1	2	// Red Skeleton Knight -- test
+118	30	5	135	17	140	20	-1	2	// Magic Skeleton -- test
+117	30	5	115	40	147	30	-1	5	// Red Skeleton Knight -- test
+118	30	5	115	40	147	30	-1	5	// Magic Skeleton -- test
 
 
 end
