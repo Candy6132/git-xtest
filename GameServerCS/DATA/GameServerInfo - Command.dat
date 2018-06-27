@@ -3,7 +3,7 @@
 ; Post Command Settings
 ;==================================================
 CommandPostSwitch = 1
-CommandPostType = 7
+CommandPostType = 5
 CommandPostEnable_AL0 = 1
 CommandPostEnable_AL1 = 1
 CommandPostEnable_AL2 = 1
