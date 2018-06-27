@@ -32,12 +32,12 @@ ConnectServerPort = 55557
 ; Log Settings
 ;==================================================
 WriteChatLog = 0
-WriteCommandLog = 0
+WriteCommandLog = 1
 WriteTradeLog = 1
 WriteConnectLog = 1
 WriteHackLog = 1
 WriteCashShopLog = 0
-WriteChaosMixLog = 0
+WriteChaosMixLog = 1
 WriteScriptLog = 1
 
 ;==================================================
