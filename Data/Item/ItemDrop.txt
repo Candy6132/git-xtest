@@ -48,7 +48,10 @@
 
 6159      0       0       *         *         *         *         *         *         *         0          *           *              12                45                3000        //Jewel of Chaos
 6159      0       0       *         *         *         *         *         *         *         0          *           *              46                199               1000        //Jewel of Chaos
-6670      0       0       *         *         *         *         *         *         *         0          10          *              25                150               600        //Loch's Feather  
+6670      0       0       *         *         *         *         *         *         *         0          10          *              25                80                300        //Loch's Feather 
+6670      0       0       *         *         *         *         *         *         *         0          10          *              81                86                450        //Loch's Feather
+6670      0       0       *         *         *         *         *         *         *         0          10          *              87                100               600        //Loch's Feather
+6670      0       0       *         *         *         *         *         *         *         0          10          *              101               150               2000       //Loch's Feather
 6670      1       0       *         *         *         *         *         *         *         0          30          *              75                150               600        //Monarch's Crest 
 6672      6       0       *         *         *         *         *         *         *         0          *           *              77                84                5000       //Scroll of Archangel 6
 6672      7       0       *         *         *         *         *         *         *         0          *           *              85                101               5000       //Scroll of Archangel 7
