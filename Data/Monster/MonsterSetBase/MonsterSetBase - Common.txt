@@ -24,7 +24,7 @@
 257            00             00         170            129            01             //Shadow Phantom Soldier
 257            00             00         7              120            03             //Shadow Phantom Soldier
 248            00             00         6              144            03             //Thompson Kenel
-256            00             00         130            128            03             //Lahap
+//256            00             00         130            128            03             //Lahap
 371            00             00         171            129            02             //Leo the Helper
 371            00             00         98             129            01             //Leo the Helper
 end
@@ -50,7 +50,7 @@ end
 //379            02             00         032            031            03             //Natasha the Firecracker Merchan - zbugowana picza
 231		2		0	 9		77		3		//Thompson Kenel
 239            02             00         206            30             02             //Librarian
-256            02             00         190            18             04             //Lahap
+//256            02             00         190            18             04             //Lahap
 371            02             00         210            54             02             //Leo the Helper
 end
 
@@ -164,7 +164,7 @@ end
 0
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
 226            34             00         135            047            02             //Trainer
-256            34             00         096            025            02             //Lahap
+//256            34             00         096            025            02             //Lahap
 251            34             00         145            014            01             //Hanzo the Blacksmith
 240            34             00         113            056            02             //Safety Guardian
 224            34             00         118            011            04             //Guardsman
@@ -253,7 +253,7 @@ end
 
 0
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
-256            51             00         037            241            01             //Lahap
+//256            51             00         037            241            01             //Lahap
 415            51             00         044            229            01             //Silvia
 416            51             00         029            236            02             //Rhea
 417            51             00         036            219            02             //Marce
