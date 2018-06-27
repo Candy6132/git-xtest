@@ -1,22 +1,23 @@
 //Index   AllowDrop   AllowSell   AllowTrade   AllowVault   Comment
-6144      0           1           1            1            //Wings of Elf
-6145      0           1           1            1            //Wings of Heaven
-6146      0           1           1            1            //Wings of Satan
-6147      0           1           1            1            //Wings of Spirits
-6148      0           1           1            1            //Wings of Soul
-6149      0           1           1            1            //Wings of Dragon
-6150      0           1           1            1            //Wings of Darkness
+6144      0           0           1            1            //Wings of Elf
+6145      0           0           1            1            //Wings of Heaven
+6146      0           0           1            1            //Wings of Satan
+6147      0           0           1            1            //Wings of Spirits
+6148      0           0           1            1            //Wings of Soul
+6149      0           0           1            1            //Wings of Dragon
+6150      0           0           1            1            //Wings of Darkness
+6686	  0           0           1            1            //Cape of Lord
 6159      0           1           1            1            //Jewel of Chaos
 6174      0           1           1            1            //Bundled Jewel of Bless
 6175      0           1           1            1            //Bundled Jewel of Soul
-6180      0           1           1            1            //Wing of Storm
-6181      0           1           1            1            //Wing of Eternal
-6182      0           1           1            1            //Wing of Illusion
-6183      0           1           1            1            //Wing of Ruin
-6184      0           1           1            1            //Cape of Emperor
-6185      0           1           1            1            //Wing of Curse
-6186      0           1           1            1            //Wind of Despair
-6187      0           1           1            1            //Wing of Dimension
+6180      0           0           1            1            //Wing of Storm
+6181      0           0           1            1            //Wing of Eternal
+6182      0           0           1            1            //Wing of Illusion
+6183      0           0           1            1            //Wing of Ruin
+6184      0           0           1            1            //Cape of Emperor
+6185      0           0           1            1            //Wing of Curse
+6186      0           0           1            1            //Wind of Despair
+6187      0           0           1            1            //Wing of Dimension
 6204      0           1           1            1            //Seed (Fire)
 6205      0           1           1            1            //Seed (Water)
 6206      0           1           1            1            //Seed (Ice)
