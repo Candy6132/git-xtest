@@ -92,7 +92,7 @@
 4         21      1       0       1.200       0.006       //Uppercut
 4         22      1       0       1.200       0.006       //Cyclone
 4         60      3       0       1.200       0.006       //Force
-4         61      1       0       1.200       0.006       //Fire Burst
+4         61      1       0       1.500       0.004       //Fire Burst
 4         62      3       1       1.200       0.006       //Earthquake
 4         64      0       2       1.200       0.006       //Greater Critical Damage
 4         65      3       1       1.200       0.006       //Electric Spark
