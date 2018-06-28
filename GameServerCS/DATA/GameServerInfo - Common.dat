@@ -83,6 +83,16 @@ NonPK = 0
 PKLimitFree = 0
 PKDownTime1 = 3600
 PKDownTime2 = 3600
+PKLimitMove = 1 ;Blocks PKs move (0=No/1=Yes).
+PKLimitMoveSummon = 1 ;Blocks PKs being summoned (0=No/1=Yes).
+PKLimitEventEntry = 1 ;Blocks PKs entering events (0=No/1=Yes).
+PKDownPlusTimePoint = 1 ;Amount of PK points gained per second.
+PKDownPlusKillPoint = 1 ;Divisor of the amount of PK points gained after monster kill (MonsterLevel/config).
+PKDownRequirePoint1 = 3600 ;Amount of points required to lower PK level at stage 1.
+PKDownRequirePoint2 = 3600 ;Amount of points required to lower PK level at stage 2.
+PKDownRequirePoint3 = 3600 ;Amount of points required to lower PK level at stage 3.
+PKDownRequirePoint4 = 3600 ;Amount of points required to lower PK level above stage 3.
+
 
 ;==================================================
 ; Guild Settings
