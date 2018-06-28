@@ -11,8 +11,8 @@ end
 
 5												
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment	
-14,101	0	0	*	*	*	*	*	*	*	0	//Jewel of Luck	
-14,102	0	0	*	*	*	*	*	*	*	0	//Jewel of Skill	
+14,101	7	0	*	*	*	*	*	*	*	0	//Jewel of Luck	
+14,102	7	0	*	*	*	*	*	*	*	0	//Jewel of Skill	
 13,014	0	0	*	*	*	*	*	*	*	0	//Loch's Feather	
 13,014	1	0	*	*	*	*	*	*	*	0	//Monarh' Crest	
 14,096	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly	
