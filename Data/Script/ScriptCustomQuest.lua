@@ -509,9 +509,19 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 						end
 						
 						local CharText
+						
+						local QuestComplete = 0
+						
+						if NoItem == nil and NoMonsters ~= nil and MonsterCount >= NoMonsters then QuestComplete = 1 end
+						
+						if NoMonsters == nil and NoItem ~= nil and NoItemCollected >= NoItem then QuestComplete = 1 end
+						
+						if NoItem ~= nil and NoItemCollected >= NoItem and NoMonsters ~= nil and MonsterCount >= NoMonsters then QuestComplete = 1 end
 							
-						if (NoMonsters ~= nil and MonsterCount >= NoMonsters) or (NoItem ~= nil and NoItemCollected >= NoItem) then
+						--if (NoMonsters ~= nil and NoItem == nil and MonsterCount >= NoMonsters) or (NoItem ~= nil and NoMonsters == nil and NoItemCollected >= NoItem) or (NoItem ~= nil and NoItemCollected >= NoItem and NoMonsters ~= nil and MonsterCount >= NoMonsters)then
 
+						if QuestComplete == 1 then
+						
 							local QuestMessageNumber = CustomQuest_QuestList[MainQuestStatus+1].QuestFinishMessage
 
 							if QuestMessageNumber ~= nil then
