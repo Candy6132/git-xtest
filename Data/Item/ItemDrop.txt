@@ -92,16 +92,16 @@
 
 //Hell Maine in Aida
 //Index	Level	Grade	Option0	Option1	Option2	Option3	Option4	Option5	Option6	Duration	MapNumber	MonsterClass	MonsterLevelMin	MonsterLevelMax	DropRate	Comment					
-20	0	0	*	12	12	32	*	*	*	0		33		*		122		122		10000	//Knight Blade
-24	0	0	*	12	12	32	*	*	*	0		33		*		122		122		10000	//Daybreak
-25	0	0	*	12	12	32	*	*	*	0		33		*		122		122		10000	//Sword Dancer
-31	0	0	*	12	12	32	*	*	*	0		33		*		122		122		10000	//Rune Blade
-1039	0	0	*	12	12	32	*	*	*	0		33		*		122		122		10000	//Shining Scepter
-2067	0	0	*	12	12	32	*	*	*	0		33		*		122		122		10000	//Great Reign Crossbow
-2070	0	0	*	12	12	32	*	*	*	0		33		*		122		122		10000	//Albatross Bow
-2569	0	0	*	*	12	32	*	*	*	0		33		*		122		122		10000	//Dragon Soul Staff
-2573	0	0	*	*	12	32	*	*	*	0		33		*		122		122		10000	//Platina Staff
-2578	0	0	*	*	12	32	*	*	*	0		33		*		122		122		10000	//Demonic Stick
+20	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Knight Blade
+24	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Daybreak
+25	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Sword Dancer
+31	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Rune Blade
+1039	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Shining Scepter
+2067	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Great Reign Crossbow
+2070	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Albatross Bow
+2569	0	0	*	*	12	32	*	*	*	0		33		*		122		122		100000	//Dragon Soul Staff
+2573	0	0	*	*	12	32	*	*	*	0		33		*		122		122		100000	//Platina Staff
+2578	0	0	*	*	12	32	*	*	*	0		33		*		122		122		100000	//Demonic Stick
 
 //Relics of Kundun in Kalima
 //Index	Level	Grade	Option0	Option1	Option2	Option3	Option4	Option5	Option6	Duration	MapNumber	MonsterClass	MonsterLevelMin	MonsterLevelMax	DropRate	Comment					
@@ -123,17 +123,17 @@
 6676	0	0	*	*	*	*	*	*	*	0		*		137		*		*		30000	//Wizard Ring
 
 //Witch Queen (Hell Maine Invasion):
-6676	0	0	*	*	*	*	*	*	*	0		0		304		*		*		80000	//Wizard Ring
-6676	0	0	*	*	*	*	*	*	*	0		2		304		*		*		80000	//Wizard Ring
-6676	0	0	*	*	*	*	*	*	*	0		3		304		*		*		80000	//Wizard Ring
+6676	0	0	*	*	*	*	*	*	*	0		0		304		*		*		800000	//Wizard Ring
+6676	0	0	*	*	*	*	*	*	*	0		2		304		*		*		800000	//Wizard Ring
+6676	0	0	*	*	*	*	*	*	*	0		3		304		*		*		800000	//Wizard Ring
 //Hell Maine (Hell Maine Invasion):
-7270	7	0	*	*	*	*	*	*	*	0		0		309		*		*		100000	//Jewel of Skill
-7270	7	0	*	*	*	*	*	*	*	0		2		309		*		*		100000	//Jewel of Skill
-7270	7	0	*	*	*	*	*	*	*	0		3		309		*		*		100000	//Jewel of Skill
+7270	7	0	*	*	*	*	*	*	*	0		0		309		*		*		1000000	//Jewel of Skill
+7270	7	0	*	*	*	*	*	*	*	0		2		309		*		*		1000000	//Jewel of Skill
+7270	7	0	*	*	*	*	*	*	*	0		3		309		*		*		1000000	//Jewel of Skill
 
 //Ancient Bali's Butterfly:
 7184	0	0	*	*	*	*	*	*	*	0		33		241		*		*		7500000	//Jewel of Life	
 
 //Custom Invasion - Balrog
-7179	11	0	*	*	*	*	*	*	*	0		2		38		*		*		100000	//BoK+4
+7179	11	0	*	*	*	*	*	*	*	0		2		38		*		*		1000000	//BoK+4
 end
