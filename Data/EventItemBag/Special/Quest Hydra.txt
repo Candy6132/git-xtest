@@ -1,0 +1,58 @@
+3
+//Index   DropRate
+0         10000
+1         10000
+2         10000
+3         10000
+4         10000
+5         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
+0         5         10000         1000          0             0    1    0    0    0    0
+1         6         10000         1000          0             1    0    0    0    0    0
+2         7         10000         1000          0             0    0    1    0    0    0
+3         8         10000         1000          0             0    0    0    0    0    1
+4         9         10000         1000          0             0    0    0    1    0    0
+5         10        10000         1000          0             0    0    0    0    1    0
+end
+
+//DK Drop:											
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+02,004	0	0	46	12	13	33	*	*	*	0	//Crystal Morning Star
+02,005	0	0	46	12	13	33	*	*	*	0	//Crystal Sword
+end
+
+//DW Drop:											
+6											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+05,006	0	0	46	*	13	33	*	*	*	0	//Staff of Resurrection
+end
+
+//Elf Drop:											
+7											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+04,013	0	0	46	12	13	33	*	*	*	0	//Bluewing Crossbow
+04,014	0	0	46	12	13	33	*	*	*	0	//Aquagold Crossbow
+end
+
+//Summoner Drop:											
+8											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+05,016	0	0	46	*	13	33	*	*	*	0	//Red Wing Stick
+05,023	0	0	46	12	13	33	*	*	*	0	//Book of Ghost Phantom
+end
+
+//MG Drop:											
+9											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+05,006	0	0	46	*	13	33	*	*	*	0	//Staff of Resurrection
+end
+
+//DL Drop:											
+10											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+02,009	0	0	46	12	13	33	*	*	*	0	//Master Scepter"
+end

@@ -1394,8 +1394,6 @@ end
 48	7	5	172	146	-1	//Lizard King
 48	7	5	167	141	-1	//Lizard King
 49	7	30	19	230	-1	//Hydra
-49	7	30	24	227	-1	//Hydra
-49	7	30	211	192	-1	//Hydra
 49	7	30	229	203	-1	//Hydra
 
 51	7	5	195	26	-1	//Great Bahamut

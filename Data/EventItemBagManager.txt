@@ -111,4 +111,6 @@
 *             *           *              21             0              *              "Special\Quest Chaos Weapon"
 *             *           *              22             0              *              "Special\Quest High"
 *             *           *              23             0              *              "Special\Quest Box of Luck"
+*             *           *              24             0              *              "Special\Quest XHigh"
+*             *           *              25             0              *              "Special\Quest Hydra"
 end

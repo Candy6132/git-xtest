@@ -1,0 +1,101 @@
+3
+//Index   DropRate
+0         10000
+1         10000
+2         10000
+3         10000
+4         10000
+5         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
+0         5         10000         1000          0             0    1    0    0    0    0
+1         6         10000         1000          0             1    0    0    0    0    0
+2         7         10000         1000          0             0    0    1    0    0    0
+3         8         10000         1000          0             0    0    0    0    0    1
+4         9         10000         1000          0             0    0    0    1    0    0
+5         10        10000         1000          0             0    0    0    0    1    0
+end
+
+//DK Drop:											
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,001	0	0	44	*	13	33	*	*	*	0	//Dragon Helm
+08,001	0	0	44	*	13	33	*	*	*	0	//Dragon Armor
+09,001	0	0	44	*	13	33	*	*	*	0	//Dragon Pants
+10,001	0	0	44	*	13	33	*	*	*	0	//Dragon Gloves
+11,001	0	0	44	*	13	33	*	*	*	0	//Dragon Boots
+06,012	0	0	44	12	13	33	*	*	*	0	//Bronze Shield
+03,009	0	0	44	12	13	33	*	*	*	0	//Bill of Balrog
+00,012	0	0	44	12	13	33	*	*	*	0	//Helical Sword
+00,013	0	0	44	12	13	33	*	*	*	0	//Double Blade
+end
+
+//DW Drop:											
+6											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,003	0	0	44	*	13	33	*	*	*	0	//Legendary Helm
+08,003	0	0	44	*	13	33	*	*	*	0	//Legendary Armor
+09,003	0	0	44	*	13	33	*	*	*	0	//Legendary Pants
+10,003	0	0	44	*	13	33	*	*	*	0	//Legendary Gloves
+11,003	0	0	44	*	13	33	*	*	*	0	//Legendary Boots
+06,014	0	0	44	*	13	33	*	*	*	0	//Legendary Shield
+05,005	0	0	44	*	13	33	*	*	*	0	//Legendary Staff
+end
+
+//Elf Drop:											
+7											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,014	0	0	44	*	13	33	*	*	*	0	//Guardian Helm
+08,014	0	0	44	*	13	33	*	*	*	0	//Guardian Armor
+09,014	0	0	44	*	13	33	*	*	*	0	//Guardian Pants
+10,014	0	0	44	*	13	33	*	*	*	0	//Guardian Gloves
+11,014	0	0	44	*	13	33	*	*	*	0	//Guardian Boots
+04,005	0	0	44	12	13	33	*	*	*	0	//Silver Bow
+end
+
+//Summoner Drop:											
+8											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,040	0	0	44	*	13	33	*	*	*	0	//Red Wing Helm
+08,040	0	0	44	*	13	33	*	*	*	0	//Red Wing Armor
+09,040	0	0	44	*	13	33	*	*	*	0	//Red Wing Pants
+10,040	0	0	44	*	13	33	*	*	*	0	//Red Wing Gloves
+11,040	0	0	44	*	13	33	*	*	*	0	//Red Wing Boots
+05,016	0	0	44	*	13	33	*	*	*	0	//Red Wing Stick
+05,022	0	0	44	12	13	33	*	*	*	0	//Book of Neil											
+end
+
+//MG Drop:											
+9											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,001	0	0	44	*	13	33	*	*	*	0	//Dragon Helm
+08,001	0	0	44	*	13	33	*	*	*	0	//Dragon Armor
+09,001	0	0	44	*	13	33	*	*	*	0	//Dragon Pants
+10,001	0	0	44	*	13	33	*	*	*	0	//Dragon Gloves
+11,001	0	0	44	*	13	33	*	*	*	0	//Dragon Boots
+06,012	0	0	44	12	13	33	*	*	*	0	//Bronze Shield
+03,009	0	0	44	12	13	33	*	*	*	0	//Bill of Balrog
+00,012	0	0	44	12	13	33	*	*	*	0	//Helical Sword
+00,013	0	0	44	12	13	33	*	*	*	0	//Double Blade
+
+07,003	0	0	44	*	13	33	*	*	*	0	//Legendary Helm
+08,003	0	0	44	*	13	33	*	*	*	0	//Legendary Armor
+09,003	0	0	44	*	13	33	*	*	*	0	//Legendary Pants
+10,003	0	0	44	*	13	33	*	*	*	0	//Legendary Gloves
+11,003	0	0	44	*	13	33	*	*	*	0	//Legendary Boots
+06,014	0	0	44	*	13	33	*	*	*	0	//Legendary Shield
+05,005	0	0	44	*	13	33	*	*	*	0	//Legendary Staff
+end
+
+//DL Drop:											
+10											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+07,026	0	0	44	*	13	33	*	*	*	0	//Adamantine  Helm
+08,026	0	0	44	*	13	33	*	*	*	0	//Adamantine  Armor
+09,026	0	0	44	*	13	33	*	*	*	0	//Adamantine  Pants
+10,026	0	0	44	*	13	33	*	*	*	0	//Adamantine  Gloves
+11,026	0	0	44	*	13	33	*	*	*	0	//Adamantine  Boots
+02,009	0	0	44	12	13	33	*	*	*	0	//Master Scepter
+end
