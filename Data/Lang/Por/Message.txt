@@ -448,11 +448,12 @@
 1059	"Bingo! Setroids, who could have thought. Good job."
 1060	"Need another Bill of Balrog, but this time from Death King."
 1061	"I guess it wasn't easy to find. Here, take this."
-1062	"Ok, now we can go back to water. Kill Silver some Valkyries."
+1062	"Ok, now we can go back to water. Kill some Silver Valkyries."
 1063	"Are you freezing? Thowe bustards create a lot of trouble."
 1064	"I have the contract for Lizard's Crown. Can you find it?"
 1065	"Pretty. 50/50 Zen as usual."
 1066	"It's time to deal with Atlans once and for all. Kill Hydra!"
 1067	"Great job. Come back to me when you have at least 1 Reset."
+1068	"How about I take the box and you take what's inside."
 end
 //1006	"Can you collect some Apples? I heard Bull Fighters like the
