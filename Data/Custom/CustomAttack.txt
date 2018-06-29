@@ -35,7 +35,7 @@
 1         43      1       0       1.200       0.006       //Death Stab
 1         48      0       2       1.200       0.006       //Greater Life
 1         76      3       1       1.200       0.006       //Plasma Storm
-1         232     3       0       1.200       0.006       //Frozen Stab
+1         232     3       0       1.500       0.000       //Frozen Stab
 1         344     3       0       1.200       0.006       //Blood Storm
 1         723     3       0       1.200       0.006       //Fire Blow
 1         740     0       2       1.200       0.006       //Archangel Will
