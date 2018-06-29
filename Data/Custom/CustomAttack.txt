@@ -31,7 +31,7 @@
 1         22      1       0       1.200       0.006       //Cyclone
 1         23      1       0       1.200       0.006       //Slash
 1         41      3       1       1.200       0.006       //Twisting Slash
-1         42      3       1       1.200       0.006       //Rageful Blow
+1         42      3       1       1.200       0.000       //Rageful Blow
 1         43      1       0       1.200       0.006       //Death Stab
 1         48      0       2       1.200       0.006       //Greater Life
 1         76      3       1       1.200       0.006       //Plasma Storm
@@ -74,7 +74,7 @@
 3         22      1       0       1.200       0.006       //Cyclone
 3         23      1       0       1.200       0.006       //Slash
 3         41      3       1       1.200       0.006       //Twisting Slash
-3         55      2       0       1.200       0.006       //Fire Slash
+3         55      2       0       1.500       0.005       //Fire Slash
 3         56      3       1       1.200       0.006       //Power Slash
 3         76      3       1       1.200       0.006       //Plasma Storm
 3         236     3       1       1.200       0.006       //Sword Slash
@@ -92,7 +92,7 @@
 4         21      1       0       1.200       0.006       //Uppercut
 4         22      1       0       1.200       0.006       //Cyclone
 4         60      3       0       1.200       0.006       //Force
-4         61      1       0       1.500       0.004       //Fire Burst
+4         61      1       0       1.500       0.005       //Fire Burst
 4         62      3       1       1.200       0.006       //Earthquake
 4         64      0       2       1.200       0.006       //Greater Critical Damage
 4         65      3       1       1.200       0.006       //Electric Spark
