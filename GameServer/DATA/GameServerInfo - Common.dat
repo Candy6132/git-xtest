@@ -152,7 +152,7 @@ ItemDropRate_AL3 = 40
 ;==================================================
 ; Money Drop Settings
 ;==================================================
-MoneyDropTime = 30
+MoneyDropTime = 60
 MoneyAmountDropRate_AL0 = 1
 MoneyAmountDropRate_AL1 = 1
 MoneyAmountDropRate_AL2 = 1
