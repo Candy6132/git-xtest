@@ -113,4 +113,5 @@
 *             *           *              23             0              *              "Special\Quest Box of Luck"
 *             *           *              24             0              *              "Special\Quest XHigh"
 *             *           *              25             0              *              "Special\Quest Hydra"
+*             *           *              26             0              *              "Special\Quest Jewels Few"
 end

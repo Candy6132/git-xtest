@@ -454,6 +454,16 @@
 1065	"Pretty. 50/50 Zen as usual."
 1066	"It's time to deal with Atlans once and for all. Kill Hydra!"
 1067	"Great job. Come back to me when you have at least 1 Reset."
-1068	"How about I take the box and you take what's inside."
+1069	"Here's your reward for 1st Reset. You can keep BoK too."
+1071	"Thirsty after the desert? Here, have a drink."
+1072	"Wolf's fangs are very valuable. We can make money on it."
+1073	"These are the best you could get? Ehh fine, take your cut."
+1074	"Have you seen Titans turned into stone? Find a living one."
+1075	"It will take some time to examine those pieces of Titan..."
+1076	"In the meantime, you can go to Aida and kill orcs."
+1078	"I need you to collect wood in Aida, if you know what I mean."
+1079	"I have a bunch of jewels for you. I won it playing cards."
+1080	"Do your duty and defend Valley of Loren from Orcs."
+1081	"What's the report, solider? Take this pay and go back."
 end
 //1006	"Can you collect some Apples? I heard Bull Fighters like the

@@ -39,7 +39,7 @@
 0			*			*			10			2				"Budge Dragons"			27				"Chain Skorpions"		418				"Strange Rabbits"	*		*			*			*							*				*				*				8			*			*				*				13							1002				1003
 0			*			*			*			*				*						*				*						*				*					1		7177		*			"Ale from bar in Lorencia"	*				*				*				2			*			*				*				*							1004				1005
 0			*			*			*			0				*						33				*						418				*					20		7168		*			"Apples"					7168			0				5000			*			*			*				*				14							1006				1007
-0			*			*			20			4				"Elite Bull Fighters"	31				"Agons"					419				"Hideous Rabbits"	20		6276		*			"Beast's Horns"				6276			0				9000			50			*			*				*				15							1008				1009
+0			*			*			20			4				"Elite Bull Fighters"	31				"Agons"					419				"Hideous Rabbits"	20		6276		0			"Beast's Horns"				6276			0				9000			50			*			*				*				15							1008				1009
 0			*			*			20			14				"Skeletons"				*				*						*				*					*		*			*			*							*				*				*				50			2			*				*				13							1010				1011
 0			*			*			15			12				"Larvas"				*				*						*				*					*		*			*			*							*				*				*				200			*			6159			0				16							1012				1013
 0			*			*			*			*				*						*				*						*				*					1		6277		*			"Cherry Wine Recipe"		*				*				*				50			*			*				*				*							1014				1015
@@ -69,7 +69,13 @@
 0			*			*			60			52				"Silver Valkyrie"		*				*						*				*					*		*			*			*							*				*				*				8000		*			7176			7				24							1062				1063
 0			*			*			100			48				"Lizard Kings"			*				*						*				*					1		6278		0			"Lizard's Crown"			6278			0				100				8000		*			*				*				*							1064				1065
 350			*			*			1			49				"Hydra"					*				*						*				*					*		*			*			*							*				*				*				20000		10			*				*				25							1066				1067
-*			1			*			1			78				"Golden Goblin"			*				*						*				*					*		*			*			*							*				*				*				8000		*			7179			8				*							*					1068
+0			1			*			1			78				"Golden Goblin"			*				*						*				*					*		*			*			*							*				*				*				8000		*			7270			7				*							*					1069
+0			1			*			120			62				"Mutants"				*				*						*				*					*		*			*			*							*				*				*				*			*			7177			0				24							*					1071
+0			1			*			100			60				"Bloody Wolfs"			*				*						*				*					10		6276		5			*							6276			5				1000			12000		*			7184			0				26							1072				1073
+0			1			*			1			53				"Golden Titan"			*				*						*				*					*		*			*			*							*				*				*				10000		10			7179			9				*							1074				1075
+0			1			*			120			307				"Forest Orcs"			*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				26							1076				*
+0			1			*			120			308				"Death Tree"			*				*						*				*					*		*			*			*							*				*				*				12000		*			6720			0				26							1078				1079
+0			1			*			200			117				"Red Skeleton Knights in Valley" *		*						*				*					*		*			*			*							*				*				*				16000		*			*				*				26							1080				1081
 //K2 w trakcie Tarkan
 //Eventitembag - Lepsze Bronie
 //Spirit Knighty w Valley 150 szt
