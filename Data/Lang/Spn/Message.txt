@@ -375,15 +375,15 @@
 
 //==============CUSTOM INVASION==================
 // poczatek
-917	  "Monsters from Lost Tower invaded Devias. Detenf the town!"
+917	  "Monsters from Icarus invaded Devias. Detend the town!"
 // druga fala
-918	  "Balrog's forces are getting stronger. Defend Devias!"
+918	  "Icarus forces are getting stronger. Defend Devias!"
 // wejscie bossa
-919	  "Balrog arrived to Devias. Defeat him!"
+919	  "Phoenix of Darkness is quilting from the sky. Defeat him!"
 // boss pada
-920	  "Balrog has been defeated!"
+920	  "Phoenix of Darkness has been defeated!"
 // armia sie cofa
-921	  "The Lost Tower army retreats! Devias is safe."
+921	  "Icarus monsters fly away! Devias is safe."
 //==============CUSTOM INVASION==================
 
 1000	"Hey you! Take this buff and kill some monsters for me."
