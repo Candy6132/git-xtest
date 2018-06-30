@@ -92,16 +92,17 @@
 
 //Hell Maine in Aida
 //Index	Level	Grade	Option0	Option1	Option2	Option3	Option4	Option5	Option6	Duration	MapNumber	MonsterClass	MonsterLevelMin	MonsterLevelMax	DropRate	Comment					
-20	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Knight Blade
-24	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Daybreak
-25	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Sword Dancer
-31	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Rune Blade
-1039	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Shining Scepter
-2067	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Great Reign Crossbow
-2070	0	0	*	12	12	32	*	*	*	0		33		*		122		122		100000	//Albatross Bow
-2569	0	0	*	*	12	32	*	*	*	0		33		*		122		122		100000	//Dragon Soul Staff
-2573	0	0	*	*	12	32	*	*	*	0		33		*		122		122		100000	//Platina Staff
-2578	0	0	*	*	12	32	*	*	*	0		33		*		122		122		100000	//Demonic Stick
+20	0	0	*	12	12	32	*	*	*	0		33		*		122		122		80000	//Knight Blade
+24	0	0	*	12	12	32	*	*	*	0		33		*		122		122		80000	//Daybreak
+25	0	0	*	12	12	32	*	*	*	0		33		*		122		122		80000	//Sword Dancer
+31	0	0	*	12	12	32	*	*	*	0		33		*		122		122		80000	//Rune Blade
+1039	0	0	*	12	12	32	*	*	*	0		33		*		122		122		80000	//Shining Scepter
+2067	0	0	*	12	12	32	*	*	*	0		33		*		122		122		80000	//Great Reign Crossbow
+2070	0	0	*	12	12	32	*	*	*	0		33		*		122		122		80000	//Albatross Bow
+2569	0	0	*	*	12	32	*	*	*	0		33		*		122		122		80000	//Dragon Soul Staff
+2573	0	0	*	*	12	32	*	*	*	0		33		*		122		122		80000	//Platina Staff
+2578	0	0	*	*	12	32	*	*	*	0		33		*		122		122		80000	//Demonic Stick
+7270	7	0	*	*	*	*	*	*	*	0		33		*		122		122		200000	//Jewel of Skill
 
 //Relics of Kundun in Kalima
 //Index	Level	Grade	Option0	Option1	Option2	Option3	Option4	Option5	Option6	Duration	MapNumber	MonsterClass	MonsterLevelMin	MonsterLevelMax	DropRate	Comment					
