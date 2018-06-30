@@ -163,8 +163,8 @@ MoneyAmountDropRate_AL3 = 1
 ;==================================================
 WeaponDurabilityRate = 150
 ArmorDurabilityRate = 150
-WingDurabilityRate = 80
-GuardianDurabilityRate = 100
+WingDurabilityRate = 120
+GuardianDurabilityRate = 200
 PendantDurabilityRate = 100
 RingDurabilityRate = 100
 PetDurabilityRate = 200
