@@ -70,13 +70,13 @@
 0			*			*			100			48				"Lizard Kings"			*				*						*				*					1		6278		0			"Lizard's Crown"			6278			0				100				8000		*			*				*				*							1064				1065
 350			*			*			1			49				"Hydra"					*				*						*				*					*		*			*			*							*				*				*				20000		10			*				*				25							1066				1067
 0			1			*			1			78				"Golden Goblin"			*				*						*				*					*		*			*			*							*				*				*				8000		*			7270			7				*							*					1069
-0			1			*			120			62				"Mutants"				*				*						*				*					*		*			*			*							*				*				*				*			*			7177			0				24							*					1071
-0			1			*			100			60				"Bloody Wolfs"			*				*						*				*					10		6276		5			*							6276			5				1000			12000		*			7184			0				26							1072				1073
-0			1			*			1			53				"Golden Titan"			*				*						*				*					*		*			*			*							*				*				*				10000		10			7179			9				*							1074				1075
-0			1			*			120			307				"Forest Orcs"			*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				26							1076				*
-0			1			*			120			308				"Death Tree"			*				*						*				*					*		*			*			*							*				*				*				12000		*			6720			0				26							1078				1079
-0			1			*			200			117				"Red Skeleton Knights in Valley" *		*						*				*					*		*			*			*							*				*				*				16000		*			*				*				26							1080				1081
-//K2 w trakcie Tarkan
+0			*			*			120			62				"Mutants"				*				*						*				*					*		*			*			*							*				*				*				*			*			7177			0				24							*					1071
+0			*			*			100			60				"Bloody Wolfs"			*				*						*				*					10		6276		5			"Beast's Horns"				6276			5				1000			12000		*			7184			0				26							1072				1073
+0			*			*			1			53				"Golden Titan"			*				*						*				*					*		*			*			*							*				*				*				10000		10			7179			9				*							1074				1075
+0			*			*			120			307				"Forest Orcs"			*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				26							1076				*
+0			*			*			120			308				"Death Tree"			*				*						*				*					*		*			*			*							*				*				*				12000		*			6720			0				26							1078				1079
+0			*			*			200			117				"Red Skeleton Knights in Valley" *		*						*				*					*		*			*			*							*				*				*				16000		*			*				*				26							1080				1081
+//Skeleton Spirit
+//Eventitembag - lepsze ringi
 //Eventitembag - Lepsze Bronie
-//Spirit Knighty w Valley 150 szt
 end
