@@ -8,8 +8,8 @@
 6150      0           0           1            1            //Wings of Darkness
 6686	  0           0           1            1            //Cape of Lord
 6159      0           1           1            1            //Jewel of Chaos
-6174      0           1           1            1            //Bundled Jewel of Bless
-6175      0           1           1            1            //Bundled Jewel of Soul
+6174      0           0           1            1            //Bundled Jewel of Bless
+6175      0           0           1            1            //Bundled Jewel of Soul
 6180      0           0           1            1            //Wing of Storm
 6181      0           0           1            1            //Wing of Eternal
 6182      0           0           1            1            //Wing of Illusion
