@@ -467,7 +467,7 @@
 1081	"What's the report, solider? Take this pay and go back."
 1082	"It's even worse! Go back to Loren and kill Spirit Soccerers."
 1083	"Let's say the siege has been pushed back. Here's, your pay."
-1084	"I can make wings for you. Bring me Broken Chaos Weapoen."
+1084	"I can make wings for you. Bring me Broken Chaos Weapon."
 1085	"Ok, I will have to repair it. I will need some jewels."
 1086	"Now bring me few Jewel of Bless."
 1087	"Ok, the weapon is fine now."

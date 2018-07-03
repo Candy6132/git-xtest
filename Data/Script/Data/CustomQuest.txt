@@ -88,6 +88,7 @@
 0			*			*			4			44				"Red Dragons"			*				*						*				*					*		*			*			*							*				*				*				30000		15			*				*				29							1096				1097
 
 
+
 //200x Splinter Wolf 351
 //150x Satyros 353
 //50x Iron Rider 352
