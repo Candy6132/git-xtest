@@ -143,6 +143,8 @@ end
 376            30             00         090            044            01             //Pamela the Supplier
 377            30             00         089            218            03             //Angela the Supplier
 
+371            30             00         033            045            02             //Leo The Helper
+
 249            30             20         042            015            07             //Guard
 247            30             20         054            014            07             //Guard
 249            30             20         071            016            07             //Guard
@@ -3159,6 +3161,9 @@ end
 //============================= Valley of Loren  - ========================================
 //=========================================================================================						
 //Mob	Map	Radio	CordX	CordY	CordX2	CordY2	Dir	Quant	Name	
+
+
+
 1
 117	30	30	32	10	38	15	-1	2	// Red Skeleton Knight
 115	30	20	32	10	38	15	-1	4	// Dark Skull Soldier
