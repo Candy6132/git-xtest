@@ -16,12 +16,6 @@
 //6150      *       *       2000000       //Wings of Darkness
 6159      *       *       81000         //Jewel of Chaos
 6170      0       *       600           //Gem of Secret
-6174      0       *       9000000       //Bundle of Jewel of Bless 1
-6174      1       *       18000000      //Bundle of Jewel of Bless 2
-6174      2       *       27000000      //Bundle of Jewel of Bless 3
-6175      0       *       6000000       //Bundle of Jewel of Soul 1
-6175      1       *       12000000      //Bundle of Jewel of Soul 2
-6175      0       *       18000000      //Bundle of Jewel of Soul 3
 //6180      *       *       4000000       //Wings of Storm
 //6181      *       *       4000000       //Wings of Eternal
 //6182      *       *       4000000       //Wings of Illusion
