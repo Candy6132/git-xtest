@@ -173,17 +173,102 @@ function CustomQuest_OnCommandManager(aIndex,code,arg)
 		
 		return 1
 	
-	end
-	
-		if code == 202 then
+	elseif code == 202 then
 
 		CustomQuest_QuestInfoCommand(aIndex)
 		
 		return 1
+		
+	elseif code == 203 then
+		
+		local Argument0 = CommandGetArgString(arg,0)
+					
+		local Argument1 = CommandGetArgNumber(arg,1)
+		
+		local Argument2 = CommandGetArgNumber(arg,2)
+		
+		if string.len(Argument0) >= 3 and Argument1 ~= nil then
+		
+			CustomQuest_Modify(aIndex,Argument0,Argument1,Argument2)
+		
+			return 1
+		
+		end
 	
 	end
 	
 	return 0
+	
+end
+
+
+function CustomQuest_Modify(aIndex,bName,cStatus,dMonster)
+
+	if GetObjectAuthority(aIndex) == 32 then
+	
+		local CharacterIndex = CustomQuest_CharacterIndexes[bName]
+			
+		if CharacterIndex ~= nil then
+			
+			CustomQuest_QuestStatusTable[CharacterIndex].QuestStatus = cStatus
+				
+			if dMonster ~= nil then
+
+				CustomQuest_QuestStatusTable[CharacterIndex].MonsterCount = dMonster
+				
+			end
+			
+		end
+			
+		local QueryStatus1 = SQLQuery(string.format("UPDATE Character SET CustomQuest=%d WHERE Name='%s'",cStatus,bName))
+			
+		SQLClose()
+			
+		local QueryStatus2 = 1
+			
+		if dMonster ~= nil then
+			
+			QueryStatus2 = SQLQuery(string.format("UPDATE Character SET CQMonsterCount=%d WHERE Name='%s'",dMonster,bName))
+				
+			SQLClose()
+			
+		end
+			
+		if QueryStatus1 == 1 and QueryStatus2 == 1 then
+		
+			NoticeSend(aIndex,1,string.format("Quest Status updated succesfuly for %s.",bName))
+		
+		else
+		
+			if SQLCheck() == 0 then
+			
+				local SQL_ODBC = "MuOnline"
+
+				local SQL_USER = ""
+
+				local SQL_PASS = ""
+
+				SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+			
+			end
+			
+			if QueryStatus1 ~= 1 and QueryStatus2 ~= 1 then
+			
+				NoticeSend(aIndex,1,string.format("Failed to modify Quest Status and Monster Count for %s.",bName))
+			
+			elseif QueryStatus1 ~= 1 then
+			
+				NoticeSend(aIndex,1,string.format("Failed to modify Quest Status for %s.",bName))
+				
+			elseif QueryStatus2 ~= 1 then
+			
+				NoticeSend(aIndex,1,string.format("Failed to modify Monster Count for %s.",bName))
+				
+			end
+		
+		end
+		
+	end
 	
 end
 

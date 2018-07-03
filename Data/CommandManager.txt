@@ -37,6 +37,7 @@
 //Custom Quests
 201       "/questtable"
 202	  "/questinfo"
+203	  "/setquest"
 
 //Register
 250	  "/register"
