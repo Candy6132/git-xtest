@@ -40,8 +40,8 @@
 6663      0       *       15000         //Contract (Summon)
 6663      1       *       12000         //Contract (Summon)
 6667      1       *       24000         //Order (Guardian/Life Stone)
-6670      0       *       1800          //Loch's Feather
-6670      1       *       75000         //Crest of Monarch
+6670      0       *       1800000      //Loch's Feather
+6670      1       *       1500000      //Crest of Monarch
 6671      *       *       330000        //Fruits
 6672      1       *       150           //Scroll of Archangel 1
 6672      2       *       210           //Scroll of Archangel 2

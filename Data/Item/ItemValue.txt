@@ -40,8 +40,8 @@
 6663      0       *       15000         //Contract (Summon)
 6663      1       *       12000         //Contract (Summon)
 6667      1       *       24000         //Order (Guardian/Life Stone)
-6670      0       *       1800          //Loch's Feather
-6670      1       *       75000         //Crest of Monarch
+6670      0       *       1800000      //Loch's Feather
+6670      1       *       1500000      //Crest of Monarch
 6671      *       *       330000        //Fruits
 6672      1       *       150           //Scroll of Archangel 1
 6672      2       *       210           //Scroll of Archangel 2
@@ -145,11 +145,11 @@
 7199      *       *       6000000       //Jewel of Guardian
 7168      *       *       4             //Apple
 7169      *       *       16            //Small Healing Potion
-7170      *       *       66            //Medium Healing Potion
-7171      *       *       300           //Large Healing Potion
+7170      *       *       90            //Medium Healing Potion
+7171      *       *       470           //Large Healing Potion
 7172      *       *       16            //Small Mana Potion
-7173      *       *       66            //Medium Mana Potion
-7174      *       *       300           //Large Mana Potion
+7173      *       *       85            //Medium Mana Potion
+7174      *       *       420           //Large Mana Potion
 7203      *       *       200           //Small SD Potion
 7204      *       *       400           //SD Potion
 7205      *       *       600           //Large SD Potion
