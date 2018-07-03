@@ -114,4 +114,7 @@
 *             *           *              24             0              *              "Special\Quest XHigh"
 *             *           *              25             0              *              "Special\Quest Hydra"
 *             *           *              26             0              *              "Special\Quest Jewels Few"
+*             *           *              27             0              *              "Special\Quest Better Rings"
+*             *           *              28             0              *              "Special\Quest 1st Wings"
+*             *           *              29             0              *              "Special\Quest Jewels More"
 end

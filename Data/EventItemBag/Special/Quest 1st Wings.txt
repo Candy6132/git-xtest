@@ -1,0 +1,59 @@
+3
+//Index   DropRate
+0         10000
+1         10000
+2         10000
+3         10000
+4         10000
+5         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
+0         5         10000         1000          0             0    1    0    0    0    0
+1         6         10000         1000          0             1    0    0    0    0    0
+2         7         10000         1000          0             0    0    1    0    0    0
+3         8         10000         1000          0             0    0    0    0    0    1
+4         9         10000         1000          0             0    0    0    0    1    0
+5         10        10000         1000          0             0    0    0    1    0    0
+end
+
+//DK Drop:											
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+12,002	0	0	35	*	18	22	*	*	*	0	//Wings of Satan
+end											
+											
+//DW Drop:											
+6											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+12,001	0	0	35	*	18	22	*	*	*	0	//Wings of Heaven
+end											
+											
+//Elf Drop:											
+7											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+12,000	0	0	35	*	18	22	*	*	*	0	//Wings of Elf
+end
+
+//SU Drop:											
+8											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+12,041	0	0	35	*	18	22	*	*	*	0	//Wings of Curse
+end
+
+//DL Drop:											
+9											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+12,000	0	0	35	*	18	22	*	*	*	0	//Wings of Elf
+12,001	0	0	35	*	18	22	*	*	*	0	//Wings of Heaven
+12,002	0	0	35	*	18	22	*	*	*	0	//Wings of Satan
+12,041	0	0	35	*	18	22	*	*	*	0	//Wings of Curse
+end
+
+//MG Drop:											
+10											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+12,001	0	0	35	*	18	22	*	*	*	0	//Wings of Heaven
+12,002	0	0	35	*	18	22	*	*	*	0	//Wings of Satan
+end

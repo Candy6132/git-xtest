@@ -15,17 +15,17 @@ end
 //DK Drop:											
 5											
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
-01,001	9	0	*	*	33	*	*	*	*	0	//Hand Axe
+01,001	9	0	*	*	*	33	*	*	*	0	//Hand Axe
 end											
 											
 //DW Drop:											
 6											
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
-05,000	9	0	*	*	33	*	*	*	*	0	//Skull Staff
+05,000	9	0	*	*	*	33	*	*	*	0	//Skull Staff
 end											
 											
 //Elf Drop:											
 7											
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
-04,001	9	0	*	10	33	*	*	*	*	0	//Bow
+04,001	9	0	*	11	*	33	*	*	*	0	//Bow
 end
