@@ -1,4 +1,5 @@
 //Index   Level   Grade   Value         Comment
+1551	  *	  *	  10000		//Broken Chaos Weapon
 2055      0       *       1             //Bolt
 2055      1       *       14            //Bolt
 2055      2       *       22            //Bolt
