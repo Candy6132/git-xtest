@@ -155,10 +155,10 @@ ItemDropRate_AL3 = 40
 ; Money Drop Settings
 ;==================================================
 MoneyDropTime = 60
-MoneyAmountDropRate_AL0 = 6
-MoneyAmountDropRate_AL1 = 6
-MoneyAmountDropRate_AL2 = 6
-MoneyAmountDropRate_AL3 = 6
+MoneyAmountDropRate_AL0 = 3
+MoneyAmountDropRate_AL1 = 3
+MoneyAmountDropRate_AL2 = 3
+MoneyAmountDropRate_AL3 = 3
 
 ;==================================================
 ; Item Durability Settings
