@@ -77,15 +77,15 @@
 0			*			*			120			308				"Death Tree"			*				*						*				*					*		*			*			*							*				*				*				12000		*			6720			0				26							1078				1079
 //ReqLevel	ReqReset	ReqMReset	NoMonsters	MonsterIndex	MonsterString			MonsterFEIndex	MonsterFEString			MonsterSUIndex	MonsterSUString		NoItem	ItemIndex	ItemLevel	ItemString					ItemDropIndex	ItemDropLevel	ItemDropRate	ZenReward 	PointReward	ItemRewardIndex	ItemRewardLevel	EventItemBagSpecialValue	QuestStartMessage	QuestFinishMessage
 //#41...
-//0			*			*			200			117				"Red Skeleton Knights in Valley" *		*						*				*					*		*			*			*							*				*				*				16000		*			*				*				26							1080				1081
-//0			*			*			10			118				"Spirit Soccerers"		*				*						*				*					1		2560		9			"Skull Staffs"				2560			9				1000			18000		5			7184			0				27							1082				1083
-//0			*			*			40			117				"Red Skeleton Knights"	*				*						*				*					1		1551		7			"Broken Chaos Weapon"		1551			7				2000			8000		*			*				0				*							1084				1085
-//0			*			*			*			*				*						*				*						*				*					2		7181		*			"Jewels of Bless"			*				*				*				*			*			*				*				*							1086				1087
-//0			*			*			*			*				*						*				*						*				*					1		6159		*			"Jewel of Chaos"			*				*				*				*			*			*				*				28							1088				1089
-//0			*			*			80			69				"Aquamoses"				*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				26							1090				1091
-//0			*			*			200			71				"Mega Crusts"			*				*						*				*					1		18			5			"Thunder Blade"				18				5				100				20000		*			*				0				29							1092				1093
-//0			*			*			160			70				"Queen Rainer"			*				*						*				*					*		*			*			*							*				*				*				10000		*			7184			0				*							*					1095
-//0			*			*			4			44				"Red Dragons"			*				*						*				*					*		*			*			*							*				*				*				30000		15			*				*				29							1096				1097
+0			*			*			200			117				"Red Skeleton Knights in Valley" *		*						*				*					*		*			*			*							*				*				*				16000		*			*				*				26							1080				1081
+0			*			*			10			118				"Spirit Soccerers"		*				*						*				*					1		2560		9			"Skull Staffs"				2560			9				1000			18000		5			7184			0				27							1082				1083
+0			*			*			40			117				"Red Skeleton Knights"	*				*						*				*					1		1551		7			"Broken Chaos Weapon"		1551			7				2000			8000		*			*				0				*							1084				1085
+0			*			*			*			*				*						*				*						*				*					2		7181		*			"Jewels of Bless"			*				*				*				*			*			*				*				*							1086				1087
+0			*			*			*			*				*						*				*						*				*					1		6159		*			"Jewel of Chaos"			*				*				*				*			*			*				*				28							1088				1089
+0			*			*			80			69				"Aquamoses"				*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				26							1090				1091
+0			*			*			200			71				"Mega Crusts"			*				*						*				*					1		18			5			"Thunder Blade"				18				5				100				20000		*			*				0				29							1092				1093
+0			*			*			160			70				"Queen Rainer"			*				*						*				*					*		*			*			*							*				*				*				10000		*			7184			0				*							*					1095
+0			*			*			4			44				"Red Dragons"			*				*						*				*					*		*			*			*							*				*				*				30000		15			*				*				29							1096				1097
 
 
 
