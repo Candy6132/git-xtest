@@ -21,65 +21,65 @@ end
 //BK
 5
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-00,014    0       0       45        12        13        34        *         *         *         0          //Sword of Destruction
-07,016    0       0       41        *         13        33        *         *         *         0          //Black Dragon Helm
-08,016    0       0       41        *         13        33        *         *         *         0          //Black Dragon Armor
-09,016    0       0       41        *         13        33        *         *         *         0          //Black Dragon Pants
-10,016    0       0       41        *         13        33        *         *         *         0          //Black Dragon Gloves
-11,016    0       0       41        *         13        33        *         *         *         0          //Black Dragon Boots
+00,014    0       0       43        12        13        34        *         *         *         0          //Sword of Destruction
+07,016    0       0       43        *         13        33        *         *         *         0          //Black Dragon Helm
+08,016    0       0       43        *         13        33        *         *         *         0          //Black Dragon Armor
+09,016    0       0       43        *         13        33        *         *         *         0          //Black Dragon Pants
+10,016    0       0       43        *         13        33        *         *         *         0          //Black Dragon Gloves
+11,016    0       0       43        *         13        33        *         *         *         0          //Black Dragon Boots
 end
 
 //DL
 6
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-02,010    0       0       45        12        13        34        *         *         *         0          //Great Scepter
-07,038    0       0       41        *         13        33        *         *         *         0          //Glorious Helm
-08,038    0       0       41        *         13        33        *         *         *         0          //Glorious Armor
-09,038    0       0       41        *         13        33        *         *         *         0          //Glorious Pants
-10,038    0       0       41        *         13        33        *         *         *         0          //Glorious Gloves
-11,038    0       0       41        *         13        33        *         *         *         0          //Glorious Boots
+02,010    0       0       43        12        13        34        *         *         *         0          //Great Scepter
+07,038    0       0       43        *         13        33        *         *         *         0          //Glorious Helm
+08,038    0       0       43        *         13        33        *         *         *         0          //Glorious Armor
+09,038    0       0       43        *         13        33        *         *         *         0          //Glorious Pants
+10,038    0       0       43        *         13        33        *         *         *         0          //Glorious Gloves
+11,038    0       0       43        *         13        33        *         *         *         0          //Glorious Boots
 end
 
 //ME
 7
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-04,016    0       0       45        12        13        34        *         *         *         0          //Saint Crossbow
-07,019    0       0       41        *         13        33        *         *         *         0          //Divine Helm
-08,019    0       0       41        *         13        33        *         *         *         0          //Divine Armor
-09,019    0       0       41        *         13        33        *         *         *         0          //Divine Pants
-10,019    0       0       41        *         13        33        *         *         *         0          //Divine Gloves
-11,019    0       0       41        *         13        33        *         *         *         0          //Divine Boots
+04,016    0       0       43        12        12        34        *         *         *         0          //Saint Crossbow
+07,019    0       0       43        *         12        33        *         *         *         0          //Divine Helm
+08,019    0       0       43        *         12        33        *         *         *         0          //Divine Armor
+09,019    0       0       43        *         12        33        *         *         *         0          //Divine Pants
+10,019    0       0       43        *         12        33        *         *         *         0          //Divine Gloves
+11,019    0       0       43        *         12        33        *         *         *         0          //Divine Boots
 end
 
 //SM
 8
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-05,008    0       0       45        11        13        34        *         *         *         0          //Staff of Destruction
-07,018    0       0       41        *         13        33        *         *         *         0          //Grand Soul Helm
-08,018    0       0       41        *         13        33        *         *         *         0          //Grand Soul Armor
-09,018    0       0       41        *         13        33        *         *         *         0          //Grand Soul Pants
-10,018    0       0       41        *         13        33        *         *         *         0          //Grand Soul Gloves
-11,018    0       0       41        *         13        33        *         *         *         0          //Grand Soul Boots
+05,008    0       0       43        11        12        34        *         *         *         0          //Staff of Destruction
+07,018    0       0       43        *         12        33        *         *         *         0          //Grand Soul Helm
+08,018    0       0       43        *         12        33        *         *         *         0          //Grand Soul Armor
+09,018    0       0       43        *         12        33        *         *         *         0          //Grand Soul Pants
+10,018    0       0       43        *         12        33        *         *         *         0          //Grand Soul Gloves
+11,018    0       0       43        *         12        33        *         *         *         0          //Grand Soul Boots
 end
 
 //SU
 9
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-05,017    0       0       45        12        13        34        *         *         *         0          //Ancient Stick
-07,041    0       0       41        *         13        33        *         *         *         0          //Ancient Helm
-08,041    0       0       41        *         13        33        *         *         *         0          //Ancient Armor
-09,041    0       0       41        *         13        33        *         *         *         0          //Ancient Pants
-10,041    0       0       41        *         13        33        *         *         *         0          //Ancient Gloves
-11,041    0       0       41        *         13        33        *         *         *         0          //Ancient Boots
+05,017    0       0       43        12        12        34        *         *         *         0          //Ancient Stick
+07,041    0       0       43        *         12        33        *         *         *         0          //Ancient Helm
+08,041    0       0       43        *         12        33        *         *         *         0          //Ancient Armor
+09,041    0       0       43        *         12        33        *         *         *         0          //Ancient Pants
+10,041    0       0       43        *         12        33        *         *         *         0          //Ancient Gloves
+11,041    0       0       43        *         12        33        *         *         *         0          //Ancient Boots
 end
 
 //MG
 10
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-00,014    0       0       45        12        13        34        *         *         *         0          //Sword of Destruction
-05,008    0       0       45        11        13        34        *         *         *         0          //Staff of Destruction
-08,020    0       0       41        *         13        33        *         *         *         0          //Thunder Hawk Armor
-09,020    0       0       41        *         13        33        *         *         *         0          //Thunder Hawk Pants
-10,020    0       0       41        *         13        33        *         *         *         0          //Thunder Hawk Gloves
-11,020    0       0       41        *         13        33        *         *         *         0          //Thunder Hawk Boots
+00,014    0       0       43        12        12        34        *         *         *         0          //Sword of Destruction
+05,008    0       0       43        11        12        34        *         *         *         0          //Staff of Destruction
+08,020    0       0       43        *         12        33        *         *         *         0          //Thunder Hawk Armor
+09,020    0       0       43        *         12        33        *         *         *         0          //Thunder Hawk Pants
+10,020    0       0       43        *         12        33        *         *         *         0          //Thunder Hawk Gloves
+11,020    0       0       43        *         12        33        *         *         *         0          //Thunder Hawk Boots
 end
