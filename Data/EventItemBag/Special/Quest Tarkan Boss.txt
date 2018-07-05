@@ -21,23 +21,23 @@ end
 //BK
 5
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-00,016    0       0       43        12        13        34        *         *         *         0          //Sword of Destruction
-07,016    0       0       43        *         13        33        *         *         *         0          //Black Dragon Helm
-08,016    0       0       43        *         13        33        *         *         *         0          //Black Dragon Armor
-09,016    0       0       43        *         13        33        *         *         *         0          //Black Dragon Pants
-10,016    0       0       43        *         13        33        *         *         *         0          //Black Dragon Gloves
-11,016    0       0       43        *         13        33        *         *         *         0          //Black Dragon Boots
+00,016    0       0       43        12        12        34        *         *         *         0          //Sword of Destruction
+07,016    0       0       43        *         12        33        *         *         *         0          //Black Dragon Helm
+08,016    0       0       43        *         12        33        *         *         *         0          //Black Dragon Armor
+09,016    0       0       43        *         12        33        *         *         *         0          //Black Dragon Pants
+10,016    0       0       43        *         12        33        *         *         *         0          //Black Dragon Gloves
+11,016    0       0       43        *         12        33        *         *         *         0          //Black Dragon Boots
 end
 
 //DL
 6
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-02,010    0       0       43        12        13        34        *         *         *         0          //Great Scepter
-07,038    0       0       43        *         13        33        *         *         *         0          //Glorious Helm
-08,038    0       0       43        *         13        33        *         *         *         0          //Glorious Armor
-09,038    0       0       43        *         13        33        *         *         *         0          //Glorious Pants
-10,038    0       0       43        *         13        33        *         *         *         0          //Glorious Gloves
-11,038    0       0       43        *         13        33        *         *         *         0          //Glorious Boots
+02,010    0       0       43        12        12        34        *         *         *         0          //Great Scepter
+07,038    0       0       43        *         12        33        *         *         *         0          //Glorious Helm
+08,038    0       0       43        *         12        33        *         *         *         0          //Glorious Armor
+09,038    0       0       43        *         12        33        *         *         *         0          //Glorious Pants
+10,038    0       0       43        *         12        33        *         *         *         0          //Glorious Gloves
+11,038    0       0       43        *         12        33        *         *         *         0          //Glorious Boots
 end
 
 //ME
