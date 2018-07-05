@@ -126,6 +126,7 @@ end
 32        4000    3000    2000    1000    0       0       0       0       //JoL Option (Box of Kundun) (0~3)
 33        7000    2000    800     200     0       0       0       0       //JoL Option (Quest Equipment) (0~3)
 34        4000    3000    2000    1000    0       0       0       0       //JoL Option (Medals) (0~3)
+34        0       5000    3000    2000    0       0       0       0       //JoL Option (Better Quest Equipment) (1~3)
 end
 
 4

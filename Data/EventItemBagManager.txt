@@ -117,4 +117,5 @@
 *             *           *              27             0              *              "Special\Quest Better Rings"
 *             *           *              28             0              *              "Special\Quest 1st Wings"
 *             *           *              29             0              *              "Special\Quest Jewels More"
+*             *           *              30             0              *              "Special\Quest Tarkan Boss"
 end

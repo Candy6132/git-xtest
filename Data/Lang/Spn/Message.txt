@@ -479,6 +479,19 @@
 1093	"Ok, here's your pay. See you after 5 resets."
 1095	"Are you having enough of those Rainers? Fine."
 1096	"You flew to your victim. Now the victim will fly to you."
-1097	"Was it hard to find them? I hope so."
+1097	"Come back to me right after completing 5th reset."
+1098	"You have to help Archangel in Blood Castle 3"
+1099	"Have you bring back his weapon? I have this reward for you."
+1100	"I've examined those pieces of Titan. Go back to Tarkan now."
+1101	"Something changes climate in Tarkan. It's bigger though."
+1102	"Maybe Tantalos is the culprit? Go and check that."
+1103	"Hm, I don't think his infernal made this vegetation havoc."
+1104	"Maybe Beam Knights burned all plants? Go and find out."
+1105	"I feel like we're close. Any ideas?"
+1106	"I got it! It's the Death Beam Knight. Go and find it!"
+1108	"Just to be shure, go and slay the Zaikan too."
+1109	"Tarkan will be a better place now. Thank you."
+1110	"Golden Dragons are becoming big problem. Can kill them?"
+
 end
 //1006	"Can you collect some Apples? I heard Bull Fighters like the
