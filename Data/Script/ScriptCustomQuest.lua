@@ -638,17 +638,17 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 		
 		local PartyMemberCount = PartyGetMemberCount(PartyIndex)-1
 
-		if PartyIndex == -1 or PartyIndex == nil or PartyMemberCount <= 1 then       -------------TEST
+		if PartyIndex == -1 or PartyIndex == nil or PartyMemberCount == 0 then       -------------TEST
 		
 		--if PartyIndex == -1 or PartyIndex == nil then
 		
-			CustomQuest_UpdateQuest(aIndex,bIndex,0)
+			CustomQuest_UpdateQuest(aIndex,bIndex,bIndex)
 			
 		else
 
 			for n=0,PartyMemberCount,1 do
 			
-				CustomQuest_UpdateQuest(aIndex,PartyGetMemberIndex(PartyIndex,n),n)
+				CustomQuest_UpdateQuest(aIndex,bIndex,PartyGetMemberIndex(PartyIndex,n))
 			
 			end
 			
@@ -890,7 +890,7 @@ end
 
 
 
-function CustomQuest_UpdateQuest(MonsterIndex,ParticipantIndex,NoDrop)
+function CustomQuest_UpdateQuest(MonsterIndex,KillerIndex,ParticipantIndex)
 		
 	local MonsterMap = GetObjectMap(MonsterIndex)
 		
@@ -956,7 +956,7 @@ function CustomQuest_UpdateQuest(MonsterIndex,ParticipantIndex,NoDrop)
 				
 							local ItemDropRate = CustomQuest_QuestList[MainQuestStatus+1].ItemDropRate
 	
-							if ItemDropRate ~= nil and NoDrop == 0 then
+							if ItemDropRate ~= nil and KillerIndex == ParticipantIndex then
 					
 								if math.random(9999)+1 <= ItemDropRate then
 						
