@@ -351,7 +351,9 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							ChatTargetSend(aIndex,bIndex,CharText)
 							
 							NoticeSend(bIndex,1,CustomQuest_GetQuestMessage(bIndex,CharacterName))
-
+							
+							return 1
+							
 						else
 						
 							local CharText
@@ -553,6 +555,8 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 							SQLClose()
 
 							NoticeSend(bIndex,1,string.format("[Quest #%d] Speak with %s to obtain new quest.",MainQuestStatus+1,CustomQuest_NPCName))
+							
+							return 1
 						
 						else
 						
@@ -589,8 +593,6 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 			--NoticeSend(bIndex,1,"Your quests are currently unavailable. Please contact the administrator.")
 			
 			end
-			
-			return 1
 	
 		
 		
@@ -635,22 +637,18 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 		local PartyIndex = GetObjectPartyNumber(bIndex)
 		
 		local PartyMemberCount = PartyGetMemberCount(PartyIndex)-1
-		
-		local AllowDrop = 1
 
 		if PartyIndex == -1 or PartyIndex == nil or PartyMemberCount == 0 then       -------------TEST
 		
 		--if PartyIndex == -1 or PartyIndex == nil then
 		
-			CustomQuest_UpdateQuest(aIndex,AllowDrop,bIndex)
+			CustomQuest_UpdateQuest(aIndex,bIndex,bIndex)
 			
 		else
 
 			for n=0,PartyMemberCount,1 do
 			
-				CustomQuest_UpdateQuest(aIndex,AllowDrop,PartyGetMemberIndex(PartyIndex,n))
-				
-				AllowDrop = 0
+				CustomQuest_UpdateQuest(aIndex,bIndex,PartyGetMemberIndex(PartyIndex,n))
 			
 			end
 			
