@@ -594,7 +594,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 			
 			end
 	
-		
+			reutrn 1
 		
 		--WRZUCIĆ BLOKADĘ WYSKAKUJĄCEGO OKNA DLA ELF SOLIDER (IsNPCShadowPhantomSoldier)
 		
