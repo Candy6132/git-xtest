@@ -86,7 +86,7 @@
 0			*			*			200			71				"Mega Crusts"			*				*						*				*					1		18			5			"Thunder Blade"				18				5				100				20000		*			*				*				29							1092				1093
 0			*			*			160			70				"Queen Rainer"			*				*						*				*					*		*			*			*							*				*				*				10000		*			7184			0				*							*					1095
 0			*			*			4			44				"Red Dragons"			*				*						*				*					*		*			*			*							*				*				*				30000		15			*				*				29							1096				1097
-0			5			*			1			134				"Statue of Saint in Blood Castle 3"	*	*						*				*					*		*			*			*							*				*				*				20000		*			7269			9				*							1098				1099
+0			5			*			300			96				"King Orcs in Blood Castle 3"		*	*						*				*					*		*			*			*							*				*				*				20000		*			7269			9				*							1098				1099
 0			*			*			100			57				"Iron Wheels"			*				*						*				*					3		2062		7			"Aquagold Crossbows"		2062			7				300				10000		*			*				*				26							1100				1101
 0			*			*			120			58				"Tantalos"				*				*						*				*					3		16			0			"Swords of Destruction"		16				0				200				10000		*			*				*				26							1102				1103
 0			*			*			80			61				"Beam Knights"			*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				29							1104				1105
