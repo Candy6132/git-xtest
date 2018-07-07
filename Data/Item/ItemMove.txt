@@ -97,6 +97,7 @@
 7279      0           1           0            1            //Premium Card Bronze
 7280      0           1           0            1            //Premium Card Silver
 7281      0           1           0            1            //Premium Card Gold
+7282      0           1           0            1            //Large Vial of Dye
 
 3701      0           1           0            1            //Red Phoenix Helm 
 4213      0           1           0            1            //Red Phoenix Armor 

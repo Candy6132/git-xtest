@@ -19,38 +19,39 @@
 7271	255	255	100	"JewelofExcellent"	
 7272	255	255	100	"JewelofAncient"
 	
-3701	255	50	0	"CzeHelm"		//Red Phoenix Helm 
-4213	255	50	0	"CzeArmor"		//Red Phoenix Armor 
-4725	255	50	0	"CzePant"		//Red Phoenix Pants 
-5237	255	50	0	"CzeGlove"		//Red Phoenix Gloves 
-5749	255	50	0	"CzeBoots"		//Red Phoenix Boots 
-3702	120	0	0	"HelmMale19"		//Brilliant Soul Helm 
-4214	120	0	0	"ArmorMale19"		//Brilliant Soul Armor 
-4726	120	0	0	"PantMale19"		//Brilliant Soul Pants 
-5238	120	0	0	"GloveMale19"		//Brilliant Soul Gloves 
-5750	120	0	0	"BootMale19"		//Brilliant Soul Boots 
-3703	0	0	220	"HelmMaleTest20"	//Divine Helm of Elements
-4215	0	0	220	"ArmorMaleTest20"	//Divine Armor of Elements
-4727	0	0	220	"PantMaleTest20"	//Divine Pants of Elements
-5239	0	0	220	"GloveMaleTest20"	//Divine Gloves of Elements
-5751	0	0	220	"BootMaleTest20"	//Divine Boots of Elements
-4216	255	255	100	"ArmorMale21"		//Vengeful Hawk Armor 
-4728	255	255	100	"PantMale21"		//Vengeful Hawk Pants 
-5240	255	255	100	"GloveMale21"		//Vengeful Hawk Gloves 
-5752	255	255	100	"BootMale21"		//Vengeful Hawk Boots 
-3712	255	255	200	"HelmMale29"		//Pure Master Helm 
-4224	255	255	200	"ArmorMale29"		//Pure Master Armor 
-4736	255	255	200	"PantMale29"		//Pure Master Pants 
-5248	255	255	200	"GloveMale29"		//Pure Master Gloves 
-5760	255	255	200	"BootMale29"		//Pure Master Boots 
-3726	0	0	220	"HelmMale43"		//Vibrant Helm  
-4238	0	0	220	"ArmorMale43"		//Vibrant Armor  
-4750	0	0	220	"PantMale43"		//Vibrant Pants  
-5262	0	0	220	"GloveMale43"		//Vibrant Gloves  
-5774	0	0	220	"BootMale43"		//Vibrant Boots
+3701	245	80	20	"CzeHelm"		//Red Phoenix Helm 
+4213	245	80	20	"CzeArmor"		//Red Phoenix Armor 
+4725	245	80	20	"CzePant"		//Red Phoenix Pants 
+5237	245	80	20	"CzeGlove"		//Red Phoenix Gloves 
+5749	245	80	20	"CzeBoots"		//Red Phoenix Boots 
+3702	255	50	50	"HelmRoz"		//Brilliant Soul Helm 
+4214	255	50	50	"ArmorRoz"		//Brilliant Soul Armor 
+4726	255	50	50	"PantRoz"		//Brilliant Soul Pants 
+5238	255	50	50	"GloveRoz"		//Brilliant Soul Gloves 
+5750	255	50	50	"BootRoz"		//Brilliant Soul Boots 
+3703	50	220	220	"HelmEle"		//Divine Helm of Elements
+4215	50	220	220	"ArmorEle"		//Divine Armor of Elements
+4727	50	220	220	"PantEle"		//Divine Pants of Elements
+5239	50	220	220	"GloveEle"		//Divine Gloves of Elements
+5751	50	220	220	"BootEle"		//Divine Boots of Elements
+4216	200	150	100	"ArmorVE"		//Vengeful Hawk Armor 
+4728	200	150	100	"PantVE"		//Vengeful Hawk Pants 
+5240	200	150	100	"GloveVE"		//Vengeful Hawk Gloves 
+5752	200	150	100	"BootVE"		//Vengeful Hawk Boots 
+3712	220	120	50	"HelmPM"		//Pure Master Helm 
+4224	220	120	50	"ArmorPM"		//Pure Master Armor 
+4736	220	120	50	"PantPM"		//Pure Master Pants 
+5248	220	120	50	"GlovePM"		//Pure Master Gloves 
+5760	220	120	50	"BootPM"		//Pure Master Boots 
+3726	50	220	220	"HelmDP"		//Vibrant Helm  
+4238	50	220	220	"ArmorDP"		//Vibrant Armor  
+4750	50	220	220	"PantDP"		//Vibrant Pants  
+5262	50	220	220	"GloveDP"		//Vibrant Gloves  
+5774	50	220	220	"BootDP"		//Vibrant Boots
 7279	255	255	40	"premium_card_bronze"	//Premium Card Bronze
 7280	255	255	40	"premium_card_silver"	//Premium Card Silver
 7281	255	255	40	"premium_card_gold"	//Premium Card Gold
+7282	255	255	40	"SpecialVial"		//Large Vial of Dye
 
 1551	220	150	150	"Mace07"		//Broken Chaos Weapon
 7278	255	255	40	"Covenant"		//Map of Dark Souls
@@ -76,20 +77,20 @@
 7733	255	255	40	"sdwater02"		//Steroids
 
 //Test Items:
-150	255	255	100	"sdwater02"		//0
-662	255	255	100	"sdwater02"		//1
-1174	255	255	100	"sdwater02"		//2
-1686	255	255	100	"sdwater02"		//3
-2198	255	255	100	"sdwater02"		//4
-2710	255	255	100	"sdwater02"		//5
-3222	255	255	100	"sdwater02"		//6
-3734	255	255	100	"sdwater02"		//7
-4246	255	255	100	"sdwater02"		//8
-4758	255	255	100	"sdwater02"		//9
-5270	255	255	100	"sdwater02"		//10
-5782	255	255	100	"sdwater02"		//11
-6294	255	255	100	"sdwater02"		//12
-6806	255	255	100	"sdwater02"		//13
-7318	255	255	100	"sdwater02"		//14
-7830	255	255	100	"sdwater02"		//15
+150	255	255	100	"DarkHorseSoul"		//0
+662	255	255	100	"DarkHorseSoul"		//1
+1174	255	255	100	"DarkHorseSoul"		//2
+1686	255	255	100	"DarkHorseSoul"		//3
+2198	255	255	100	"DarkHorseSoul"		//4
+2710	255	255	100	"DarkHorseSoul"		//5
+3222	255	255	100	"DarkHorseSoul"		//6
+3734	255	255	100	"DarkHorseSoul"		//7
+4246	255	255	100	"DarkHorseSoul"		//8
+4758	255	255	100	"DarkHorseSoul"		//9
+5270	255	255	100	"DarkHorseSoul"		//10
+5782	255	255	100	"DarkHorseSoul"		//11
+6294	255	255	100	"DarkHorseSoul"		//12
+6806	255	255	100	"DarkHorseSoul"		//13
+7318	255	255	100	"DarkHorseSoul"		//14
+7830	255	255	100	"DarkHorseSoul"		//15
 end

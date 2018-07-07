@@ -10,6 +10,7 @@
 7279	3
 7280	3
 7281	3
+7282	3
 end
 
 1
@@ -80,6 +81,17 @@ end
 //7281	0	1	"+Ability to dye items"
 7281	0	1	"type /buypremium 3"
 7281	0	2	"Cannot be traded"
+7282	0	1	"Used to dye items"
+7282	0	1	"type /dye"
+7282	0	0	"Sets available to dye:"
+7282	0	0	"Dark Phoenix"
+7282	0	0	"Grand Soul"
+7282	0	0	"Divine"
+7282	0	0	"Thunder Hawk"
+7282	0	0	"Dark Master"
+7282	0	0	"Demonic"
+7282	0	2	"Cannot be traded"
+7282	0	2	"Requires VIP level 3"
 
 3701	0	2	"Cannot be traded"
 4213	0	2	"Cannot be traded"
@@ -314,6 +326,17 @@ end
 //7281	0	1	"+Ability to dye items"
 7281	0	1	"type /buypremium 3"
 7281	0	2	"Cannot be traded"
+7282	0	1	"Used to dye items"
+7282	0	1	"type /dye"
+7282	0	0	"Sets available to dye:"
+7282	0	0	"Dark Phoenix"
+7282	0	0	"Grand Soul"
+7282	0	0	"Divine"
+7282	0	0	"Thunder Hawk"
+7282	0	0	"Dark Master"
+7282	0	0	"Demonic"
+7282	0	2	"Cannot be traded"
+7282	0	2	"Requires VIP level 3"
 
 3701	0	2	"Cannot be traded"
 4213	0	2	"Cannot be traded"
@@ -548,6 +571,17 @@ end
 //7281	0	1	"+Ability to dye items"
 7281	0	1	"type /buypremium 3"
 7281	0	2	"Cannot be traded"
+7282	0	1	"Used to dye items"
+7282	0	1	"type /dye"
+7282	0	0	"Sets available to dye:"
+7282	0	0	"Dark Phoenix"
+7282	0	0	"Grand Soul"
+7282	0	0	"Divine"
+7282	0	0	"Thunder Hawk"
+7282	0	0	"Dark Master"
+7282	0	0	"Demonic"
+7282	0	2	"Cannot be traded"
+7282	0	2	"Requires VIP level 3"
 
 3701	0	2	"Cannot be traded"
 4213	0	2	"Cannot be traded"
