@@ -798,7 +798,6 @@ end
 111      *      0       1       1        0            0            0          "Premium Card Bronze"                80      0
 112      *      0       1       1        0            0            0          "Premium Card Silver"                80      0
 113      *      0       1       1        0            0            0          "Premium Card Gold"                  80      0
-114      *      0       1       2        0            0            0          "Large Vial of Dye"                  80      0
 
 150      *      0       2       2        0            0            0          "Test Item"                  80      0
 end																																																										
@@ -848,7 +847,8 @@ end
 50       *      0       1       2        0            0            0          "Summoner's Spells Guide"            50      0          0           150        0       0       0       0       0       0
 51       *      0       1       2        0            0            0          "Lord's Skills Guide"                50      0          0           150        0       0       0       0       0       0
 52       *      0       1       2        0            0            0          "Gladiator's Skills Guide"           50      0          0           150        0       0       0       0       0       0
-53       *      0       1       1        0            0            0          "Steroids"		           50      0          0           150        0       0       0       0       0       0
+53       *      0       1       1        0            0            0          "Steroids"		 		           50      0          0           150        0       0       0       0       0       0
+54       *      0       1       2        0            0            0          "Large Vial of Dye"		           50      0          0           150        0       0       0       0       0       0
 
 
 150      *      0       2       2        1            0            0          "Test Item"                          100     0          220         380000     0       0       0       1       0       0

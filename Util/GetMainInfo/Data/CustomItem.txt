@@ -51,7 +51,7 @@
 7279	255	255	40	"premium_card_bronze"	//Premium Card Bronze
 7280	255	255	40	"premium_card_silver"	//Premium Card Silver
 7281	255	255	40	"premium_card_gold"	//Premium Card Gold
-7282	255	255	40	"SpecialVial"		//Large Vial of Dye
+7734	255	255	40	"SpecialVial"		//Large Vial of Dye
 
 1551	220	150	150	"Mace07"		//Broken Chaos Weapon
 7278	255	255	40	"Covenant"		//Map of Dark Souls
