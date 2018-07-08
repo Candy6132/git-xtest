@@ -31,42 +31,42 @@ GuardianSpiritDecDamageConstA = 30
 ;==================================================
 ; Apple Potion Settings
 ;==================================================
-DWApplePotionRate = 10
-DKApplePotionRate = 10
-FEApplePotionRate = 10
-MGApplePotionRate = 10
-DLApplePotionRate = 10
-SUApplePotionRate = 10
+DWApplePotionRate = 5
+DKApplePotionRate = 5
+FEApplePotionRate = 5
+MGApplePotionRate = 5
+DLApplePotionRate = 5
+SUApplePotionRate = 5
 
 ;==================================================
 ; Small Life Potion Settings
 ;==================================================
-DWSmallLifePotionRate = 30
-DKSmallLifePotionRate = 30
-FESmallLifePotionRate = 30
-MGSmallLifePotionRate = 30
-DLSmallLifePotionRate = 30
-SUSmallLifePotionRate = 30
+DWSmallLifePotionRate = 15
+DKSmallLifePotionRate = 15
+FESmallLifePotionRate = 15
+MGSmallLifePotionRate = 15
+DLSmallLifePotionRate = 15
+SUSmallLifePotionRate = 15
 
 ;==================================================
 ; Midle Life Potion Settings
 ;==================================================
-DWMidleLifePotionRate = 40
-DKMidleLifePotionRate = 40
-FEMidleLifePotionRate = 40
-MGMidleLifePotionRate = 40
-DLMidleLifePotionRate = 40
-SUMidleLifePotionRate = 40
+DWMidleLifePotionRate = 20
+DKMidleLifePotionRate = 20
+FEMidleLifePotionRate = 20
+MGMidleLifePotionRate = 20
+DLMidleLifePotionRate = 20
+SUMidleLifePotionRate = 20
 
 ;==================================================
 ; Large Life Potion Settings
 ;==================================================
-DWLargeLifePotionRate = 50
-DKLargeLifePotionRate = 50
-FELargeLifePotionRate = 50
-MGLargeLifePotionRate = 50
-DLLargeLifePotionRate = 50
-SULargeLifePotionRate = 50
+DWLargeLifePotionRate = 25
+DKLargeLifePotionRate = 25
+FELargeLifePotionRate = 25
+MGLargeLifePotionRate = 25
+DLLargeLifePotionRate = 25
+SULargeLifePotionRate = 25
 
 ;==================================================
 ; Small Mana Potion Settings
