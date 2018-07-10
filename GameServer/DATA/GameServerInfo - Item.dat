@@ -2,12 +2,12 @@
 ;==================================================
 ; Transformation Ring Settings
 ;==================================================
-TransformationRing1 = 351
-TransformationRing2 = 300
-TransformationRing3 = 303
-TransformationRing4 = 8
-TransformationRing5 = 236
-TransformationRing6 = 156
+TransformationRing1 = 351 
+TransformationRing2 = 300 
+TransformationRing3 = 303 
+TransformationRing4 = 8 
+TransformationRing5 = 236 
+TransformationRing6 = 458
 
 ;==================================================
 ; Guardian Inc Damage Settings
