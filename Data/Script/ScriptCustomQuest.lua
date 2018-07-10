@@ -1173,9 +1173,9 @@ function CustomQuest_AddCharToTable(aIndex)
 			
 			end
 			
-			LogPrint(string.format("CustomQuestScript: Failed to save MonsterCount for %s",CharacterName))
+			LogPrint(string.format("CustomQuestScript: Failed to read CustomQuest and CQMonsterCount from Query for %s",CharacterName))
 
-			LogColor(1,string.format("CustomQuestScript: Failed to save MonsterCount for %s",CharacterName))
+			LogColor(1,string.format("CustomQuestScript: Failed to read CustomQuest and CQMonsterCount from Query for %s",CharacterName))
 			
 			return 0
 
