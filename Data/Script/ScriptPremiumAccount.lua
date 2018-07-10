@@ -70,6 +70,26 @@ function PremiumAccount_OnCommandManager(aIndex,code,arg)
 
 			end
 	
+		elseif code == 261 then
+		
+			local AccountLevel = GetObjectAccountLevel(aIndex)
+			
+			if AccountLevel == 3 then
+			
+				UniqueSets_DyeItem(aIndex)
+			
+			end
+		
+		elseif code == 262 then
+				
+			local AccountLevel = GetObjectAccountLevel(aIndex)
+			
+			if AccountLevel == 3 then
+			
+				UniqueSets_UndyeItem(aIndex)
+			
+			end
+		
 		end
 		
 		return 1

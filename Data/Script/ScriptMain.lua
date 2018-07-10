@@ -7,6 +7,7 @@ require("ScriptCustomQuest")
 require("ScriptMonsterAbilities")
 require("ScriptRegister")
 require("ScriptPremiumAccount")
+require("ScriptUniqueSets")
 
 
 function OnReadScript()

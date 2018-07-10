@@ -44,6 +44,8 @@
 
 //Premium
 260	  "/buypremium"
+261	  "/dye"
+262	  "/undye"
 
 //Extra Command
 100       "/online"
