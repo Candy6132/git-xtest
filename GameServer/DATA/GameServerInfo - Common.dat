@@ -167,7 +167,7 @@ WingDurabilityRate = 120
 GuardianDurabilityRate = 200
 PendantDurabilityRate = 100
 RingDurabilityRate = 100
-PetDurabilityRate = 80
+PetDurabilityRate = 350
 
 ;==================================================
 ; Trade Item Block Settings
