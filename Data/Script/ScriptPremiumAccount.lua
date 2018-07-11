@@ -71,12 +71,16 @@ function PremiumAccount_OnCommandManager(aIndex,code,arg)
 			end
 	
 		elseif code == 261 then
-		
+
 			local AccountLevel = GetObjectAccountLevel(aIndex)
 			
-			if AccountLevel == 3 then
-			
-				UniqueSets_DyeItem(aIndex)
+			if AccountLevel >= 2 then										--Vip level 2 do dye
+
+				UniqueSets_DyeItemCommand(aIndex)
+				
+			else
+				
+				NoticeSend(aIndex,1,"You need at least Vip 2 to dye items.")
 			
 			end
 		
@@ -84,9 +88,13 @@ function PremiumAccount_OnCommandManager(aIndex,code,arg)
 				
 			local AccountLevel = GetObjectAccountLevel(aIndex)
 			
-			if AccountLevel == 3 then
+			if AccountLevel >= 2 then										--Vip level 2 do dye
 			
-				UniqueSets_UndyeItem(aIndex)
+				UniqueSets_UndyeItemCommand(aIndex)
+				
+			else
+				
+				NoticeSend(aIndex,1,"You need at least Vip 2 to undye items.")
 			
 			end
 		

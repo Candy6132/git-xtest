@@ -158,14 +158,18 @@ UniqueItem[28] = 5760
 UniqueItem[29] = 5774
 
 
+UsersDyeOnEntry = {}
+
+UsersUndyeOnEntry = {}
 
 
-ScriptLoader_AddOnReadScript("CustomQuest_OnReadScript")
+ScriptLoader_AddOnReadScript("UniqueSets_OnReadScript")
+
+ScriptLoader_AddOnCharacterEntry("UniqueSets_OnCharacterEntry")
 
 
 
-
-function CustomQuest_OnReadScript()
+function UniqueSets_OnReadScript()
 
 	local SQL_ODBC = "MuOnline"
 
@@ -175,14 +179,10 @@ function CustomQuest_OnReadScript()
 
 	SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
 	
-
-
 end
 
 
-
-
-function UniqueSets_DyeItem(aIndex)
+function UniqueSets_DyeItemCommand(aIndex)
 
 	if InventoryGetItemCount(aIndex,LargeVialIndex,-1) >= 1 then				--Large Vial of Dye - dowolny level itemu (-1)
 
@@ -200,58 +200,29 @@ function UniqueSets_DyeItem(aIndex)
 		
 		end
 		
-		local CharacterName = GetObjectName(aIndex)
-			
-		if SQLQuery(string.format("SELECT Inventory FROM Character WHERE Name='%s'",CharacterName)) == 0 or SQLFetch() == 0 then
+		for n=1,#UsersDyeOnEntry,1 do
 		
-			SQLClose()
+			if UsersDyeOnEntry[n] == aIndex then
 			
-			if SQLCheck() == 0 then
-			
-				local SQL_ODBC = "MuOnline"
-
-				local SQL_USER = ""
-
-				local SQL_PASS = ""
-
-				SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+				AllowDye = 0
 			
 			end
-			
-			LogPrint(string.format("UniqueSets: Failed to read inventory for %s",CharacterName))
-
-			LogColor(1,string.format("UniqueSets: Failed to read inventory for %s",CharacterName))
-			
-			NoticeSend(aIndex,1,"Failed to dye the item. Try again or contact the Administrator.")
 		
+		end
+		
+		if AllowDye == 1 then
+		
+			table.insert(UsersDyeOnEntry,aIndex)
+			
+			NoticeSend(aIndex,1,"Dyeing in progress...")
+			
+			UserGameLogout(aIndex,1)
+			
 		else
 		
-			local InventoryHex = tostring(SQLGetString("Inventory"))
+			NoticeSend(aIndex,1,"This item cannot be dyed.")
 			
-			SQLClose()
-		
-			InventoryHex = string.sub(InventoryHex,387,32)
-		
-		
-		------------
-		
-			NoticeSend(aIndex,1,string.format("InventoryHex: %s",InventoryHex))
-			
-		------------
-		
-		
-		
-		
-		
-			if AllowDye == 1 then
-			
-			else
-		
-				NoticeSend(aIndex,1,"This item cannot be dyed.")
-			
-				NoticeSend(aIndex,1,"Place the item in top left corner of your inventory, relog and retry.")
-		
-			end
+			NoticeSend(aIndex,1,"Place the item in top left corner of your inventory, relog and retry.")
 		
 		end
 		
@@ -264,10 +235,270 @@ function UniqueSets_DyeItem(aIndex)
 end
 
 
-function UniqueSets_UndyeItem(aIndex)
+
+
+
+
+function UniqueSets_UndyeItemCommand(aIndex)
+
+	local ItemIndex = InventoryGetItemIndex(aIndex,12)
+	
+	local AllowDye = 0
+		
+	for n=1,#UniqueItem,1 do
+		
+		if ItemIndex == UniqueItem[n] then
+			
+			AllowDye = 1
+				
+		end
+		
+	end
+		
+	for n=1,#UsersUndyeOnEntry,1 do
+		
+		if UsersUndyeOnEntry[n] == aIndex then
+			
+			AllowDye = 0
+			
+		end
+		
+	end
+		
+	if AllowDye == 1 then
+		
+		table.insert(UsersUndyeOnEntry,aIndex)
+			
+		NoticeSend(aIndex,1,"Undyeing in progress...")
+			
+		UserGameLogout(aIndex,1)
+			
+	else
+		
+		NoticeSend(aIndex,1,"This item cannot be undyed.")
+			
+		NoticeSend(aIndex,1,"Place unique item in top left corner of your inventory, relog and retry.")
+		
+	end	
 
 end
 
+
+
+
+
+
+
+function UniqueSets_OnCharacterEntry(aIndex)
+
+	for n=1,#UsersDyeOnEntry,1 do
+	
+		if UsersDyeOnEntry[n] == aIndex then
+		
+			table.remove(UsersDyeOnEntry,n)
+			
+			if InventoryGetItemCount(aIndex,LargeVialIndex,-1) >= 1 then				--Large Vial of Dye - dowolny level itemu (-1)
+
+				local ItemIndex = InventoryGetItemIndex(aIndex,12)
+		
+				local AllowDye = 0
+		
+				for n=1,#DyableItem,1 do
+		
+					if ItemIndex == DyableItem[n] then
+			
+						AllowDye = 1
+				
+					end
+		
+				end
+		
+				if AllowDye == 1 then
+			
+					DyeItem(aIndex,100,ItemIndex)
+
+				else
+				
+					NoticeSend(aIndex,1,"This item cannot be dyed.")
+			
+					NoticeSend(aIndex,1,"Place the item in top left corner of your inventory, relog and retry.")
+				
+				end
+			
+			else
+			
+				NoticeSend(aIndex,1,"You don't have a Large Vial of Dye, to dye this item.")
+			
+			end
+			
+		end
+	
+	end
+	
+	for n=1,#UsersUndyeOnEntry,1 do
+	
+		if UsersUndyeOnEntry[n] == aIndex then
+		
+			table.remove(UsersUndyeOnEntry,n)
+
+			local ItemIndex = InventoryGetItemIndex(aIndex,12)
+		
+			local AllowDye = 0
+		
+			for n=1,#UniqueItem,1 do
+		
+				if ItemIndex == UniqueItem[n] then
+			
+					AllowDye = 1
+				
+				end
+		
+			end
+		
+			if AllowDye == 1 then
+			
+				DyeItem(aIndex,-100,ItemIndex)
+
+			else
+				
+				NoticeSend(aIndex,1,"This item cannot be undyed.")
+			
+				NoticeSend(aIndex,1,"Place unique item in top left corner of your inventory, relog and retry.")
+				
+			end
+
+		end
+	
+	end
+ 
+end
+
+
+function DyeItem(aIndex,AddValue,ItemIndex)
+
+	local CharacterName = GetObjectName(aIndex)
+			
+	if SQLQuery(string.format("SELECT * FROM Character WHERE Name='%s'",CharacterName)) == 0 or SQLFetch() == 0 then
+		
+		SQLClose()
+			
+		if SQLCheck() == 0 then
+			
+			local SQL_ODBC = "MuOnline"
+
+			local SQL_USER = ""
+
+			local SQL_PASS = ""
+
+			SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+			
+		end
+			
+		LogPrint(string.format("UniqueSets: Failed to read inventory for %s",CharacterName))
+
+		LogColor(1,string.format("UniqueSets: Failed to read inventory for %s",CharacterName))
+				
+		NoticeSend(aIndex,1,"Failed to dye the item. Try again or contact the Administrator.")
+		
+	else
+		
+		local InventoryHex = tostring(SQLGetString("Inventory"))
+			
+		SQLClose()
+		
+		InventoryHex = string.sub(InventoryHex,385,416)
+	
+		local ItemType = UniqueSets_HexToDec(string.sub(InventoryHex,1,2))
+				
+		local ItemCategory = UniqueSets_HexToDec(string.sub(InventoryHex,19,19))
+
+		if ItemCategory*512+ItemType ~= ItemIndex then
+				
+			NoticeSend(aIndex,1,"Failed to dye the item.")
+			
+			NoticeSend(aIndex,1,"Please relog your character and retry.")
+				
+		else
+				
+			local ItemOptions = UniqueSets_HexToDec(string.sub(InventoryHex,3,4))
+
+			local ItemSkill = (ItemOptions - (ItemOptions % 128))/128
+							
+			ItemOptions = ItemOptions - 128 * ItemSkill
+							
+			local ItemLevel = (ItemOptions - (ItemOptions % 8))/8
+							
+			ItemOptions = ItemOptions - 8 * ItemLevel
+							
+			local ItemLuck = (ItemOptions - (ItemOptions % 4))/4
+							
+			ItemOptions = ItemOptions - 4 * ItemLuck
+
+			local ItemOption = ItemOptions - (ItemOptions % 1)
+							
+			local ItemExcOptions = UniqueSets_HexToDec(string.sub(InventoryHex,15,16))
+							
+			local Item16Option = (ItemExcOptions - (ItemExcOptions % 64))/64
+							
+			ItemOption = ItemOption + 4 * Item16Option
+							
+			ItemExcOptions = ItemExcOptions - 64 * Item16Option
+							
+			local Durability = UniqueSets_HexToDec(string.sub(InventoryHex,5,6))
+					
+			local AncientOption = UniqueSets_HexToDec(string.sub(InventoryHex,17,18))
+			
+			if AncientOption ~= 0 and AncientOption ~= nil then
+			
+				NoticeSend(aIndex,1,"Failed to dye the item.")
+				
+				NoticeSend(aIndex,1,"Item cannot be Ancient.")
+				
+			else
+	
+				ItemIndex = ItemIndex + AddValue
+			
+				InventoryDelItemIndex(aIndex,12)
+			
+				ItemGiveEx(aIndex,ItemIndex,ItemLevel,Durability,ItemSkill,ItemLuck,ItemOption,ItemExcOptions)
+				
+				if AddValue < 0 then
+				
+					ItemGiveEx(aIndex,LargeVialIndex,0,0,0,0,0,0)
+				
+				else
+				
+					InventoryDelItemCount(aIndex,LargeVialIndex,-1,1)
+				
+				end
+ 
+			-----------
+
+			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("ItemOptions: %d",ItemOptions))
+						
+			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("ItemLevel: %d",ItemLevel))
+					
+			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("ItemLuck: %d",ItemLuck))
+						
+			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("ItemSkill: %d",ItemSkill))
+							
+			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("ItemOption: %d",ItemOption))
+
+			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("ItemExcOptions: %d",ItemExcOptions))
+							
+			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Durability: %d",Durability))
+							
+			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("AncientOption: %d",AncientOption))
+
+			------------
+			
+			end
+				
+		end
+
+	end
+
+end
 
 
 
@@ -277,9 +508,11 @@ function UniqueSets_HexToDec(aString)
 
 	for n=1,#aString,1 do
 	
+		local Substring = string.sub(aString,n,n)
+	
 		for i=0,15,1 do
-		
-			if string.sub(aString,n,1) == Hex[i] then
+
+			if Substring == Hex[i] then
 			
 				Number = Number + (i * 16^(#aString-n))
 			
