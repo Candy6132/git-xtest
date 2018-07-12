@@ -222,7 +222,7 @@ function UniqueSets_DyeItemCommand(aIndex)
 		
 			NoticeSend(aIndex,1,"This item cannot be dyed.")
 			
-			NoticeSend(aIndex,1,"Place the item in top left corner of your inventory, relog and retry.")
+			NoticeSend(aIndex,1,"Place the item in top left corner of your inventory and retry.")
 		
 		end
 		
@@ -277,7 +277,7 @@ function UniqueSets_UndyeItemCommand(aIndex)
 		
 		NoticeSend(aIndex,1,"This item cannot be undyed.")
 			
-		NoticeSend(aIndex,1,"Place unique item in top left corner of your inventory, relog and retry.")
+		NoticeSend(aIndex,1,"Place unique item in top left corner of your inventory and retry.")
 		
 	end	
 
@@ -321,7 +321,7 @@ function UniqueSets_OnCharacterEntry(aIndex)
 				
 					NoticeSend(aIndex,1,"This item cannot be dyed.")
 			
-					NoticeSend(aIndex,1,"Place the item in top left corner of your inventory, relog and retry.")
+					NoticeSend(aIndex,1,"Place the item in top left corner of your inventory and retry.")
 				
 				end
 			
@@ -363,7 +363,7 @@ function UniqueSets_OnCharacterEntry(aIndex)
 				
 				NoticeSend(aIndex,1,"This item cannot be undyed.")
 			
-				NoticeSend(aIndex,1,"Place unique item in top left corner of your inventory, relog and retry.")
+				NoticeSend(aIndex,1,"Place unique item in top left corner of your inventory and retry.")
 				
 			end
 
@@ -471,27 +471,9 @@ function DyeItem(aIndex,AddValue,ItemIndex)
 					InventoryDelItemCount(aIndex,LargeVialIndex,-1,1)
 				
 				end
- 
-			-----------
-
-			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("ItemOptions: %d",ItemOptions))
-						
-			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("ItemLevel: %d",ItemLevel))
-					
-			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("ItemLuck: %d",ItemLuck))
-						
-			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("ItemSkill: %d",ItemSkill))
-							
-			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("ItemOption: %d",ItemOption))
-
-			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("ItemExcOptions: %d",ItemExcOptions))
-							
-			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Durability: %d",Durability))
-							
-			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("AncientOption: %d",AncientOption))
-
-			------------
-			
+				
+				NoticeSend(aIndex,1,"You'vs dyed the item succesfuly!")
+				
 			end
 				
 		end
