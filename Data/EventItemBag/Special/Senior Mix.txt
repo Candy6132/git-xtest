@@ -21,13 +21,11 @@ end
 6											
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
 00,023	0	0	55	12	16	32	31	*	*	0	//Explosion Blade
-05,011	0	0	55	*	16	32	31	*	*	0	//Staff of Kundun
 end											
 											
 7											
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
 05,012	0	0	55	*	16	32	31	*	*	0	//Grand Viper Staff
-05,011	0	0	55	*	16	32	31	*	*	0	//Staff of Kundun
 end											
 											
 8											
@@ -37,7 +35,6 @@ end
 											
 9											
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
-02,013	0	0	55	12	16	32	31	*	*	0	//Divine Scepter of Archangel
 02,014	0	0	55	12	16	32	31	*	*	0	//Soleil Scepter
 end											
 											
