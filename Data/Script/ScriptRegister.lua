@@ -208,7 +208,7 @@ function Register_OnTimerThread()
 		
 			if Register_CharTimer[n] <= 0 then
 		
-				UserGameLogout(RegisterCharIndex,0)
+				UserGameLogout(RegisterCharIndex,2)
 			
 				Register_CharTimer[n] = 30
 		
