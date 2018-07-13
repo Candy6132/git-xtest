@@ -492,6 +492,12 @@
 1108	"Just to be shure, go and slay the Zaikan too."
 1109	"Tarkan will be a better place now. Thank you."
 1110	"Golden Dragons are becoming big problem. Can kill them?"
+1112	"We need to go back to Icarus. Kill 80 Drakans for me."
+1114	"I need Ancestral Spirit. Bring me the Spirit Sword."
+1115	"Good job. Here, I have some Jewels of Life."
+1116	"It's time for Giant Drakkans."
+1118	"I think you are ready to kill Phoenix of Darkness."
+1119	"You made it! Icarus is no longer a problem."
 
 end
 //1006	"Can you collect some Apples? I heard Bull Fighters like the

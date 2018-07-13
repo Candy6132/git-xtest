@@ -93,8 +93,14 @@
 0			*			*			1			63				"Death Beam Knight"		*				*						*				*					*		*			*			*							*				*				*				*			10			*				*				30							1106				*
 0			*			*			1			59				"Zaikan"				*				*						*				*					1		2568		0			"Staff of Destruction"		2568			0				10000			40000		10			*				*				30							1108				1109
 0			*			*			1			79				"Golden Dragon"			*				*						*				*					*		*			*			*							*				*				*				20000		5			7179			10				*							1110				*
+0			*			*			80			73				"Drakans"				*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				29							1112				*
+0			*			*			150			74				"Alpha Crusts"			*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				30							*					*
+0			*			*			100			72				"Phantom Knights"		*				*						*				*					1		17			5			"Spirit Sword"				17				5				100				40000		5			7216			3				31							1114				1115
+0			*			*			50			75				"Giant Drakans"			*				*						*				*					*		*			*			*							*				*				*				30000		*			7217			3				32							1116				*
+0			*			*			1			77				"Phoenix of Darkness"	*				*						*				*					*		*			*			*							*				*				*				50000		20			6670			0				*							1118				1119
 
 
+//Hero Mutant 300 - itembag: exc biżuteria
 //200x Splinter Wolf 351
 //150x Satyros 353
 //50x Iron Rider 352

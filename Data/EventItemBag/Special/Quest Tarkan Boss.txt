@@ -33,33 +33,33 @@ end
 6
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
 02,010    0       0       43        12        12        34        *         *         *         0          //Great Scepter
-07,038    0       0       43        *         12        33        *         *         *         0          //Glorious Helm
-08,038    0       0       43        *         12        33        *         *         *         0          //Glorious Armor
-09,038    0       0       43        *         12        33        *         *         *         0          //Glorious Pants
-10,038    0       0       43        *         12        33        *         *         *         0          //Glorious Gloves
-11,038    0       0       43        *         12        33        *         *         *         0          //Glorious Boots
+07,027    0       0       43        *         12        33        *         *         *         0          //Dark Steel Helm
+08,027    0       0       43        *         12        33        *         *         *         0          //Dark Steel Armor
+09,027    0       0       43        *         12        33        *         *         *         0          //Dark Steel Pants
+10,027    0       0       43        *         12        33        *         *         *         0          //Dark Steel Gloves
+11,027    0       0       43        *         12        33        *         *         *         0          //Dark Steel Boots
 end
 
 //ME
 7
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
 04,016    0       0       43        12        12        34        *         *         *         0          //Saint Crossbow
-07,019    0       0       43        *         12        33        *         *         *         0          //Divine Helm
-08,019    0       0       43        *         12        33        *         *         *         0          //Divine Armor
-09,019    0       0       43        *         12        33        *         *         *         0          //Divine Pants
-10,019    0       0       43        *         12        33        *         *         *         0          //Divine Gloves
-11,019    0       0       43        *         12        33        *         *         *         0          //Divine Boots
+07,036    0       0       43        *         12        33        *         *         *         0          //Iris Helm
+08,036    0       0       43        *         12        33        *         *         *         0          //Iris Armor
+09,036    0       0       43        *         12        33        *         *         *         0          //Iris Pants
+10,036    0       0       43        *         12        33        *         *         *         0          //Iris Gloves
+11,036    0       0       43        *         12        33        *         *         *         0          //Iris Boots
 end
 
 //SM
 8
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
 05,008    0       0       43        11        12        34        *         *         *         0          //Staff of Destruction
-07,018    0       0       43        *         12        33        *         *         *         0          //Grand Soul Helm
-08,018    0       0       43        *         12        33        *         *         *         0          //Grand Soul Armor
-09,018    0       0       43        *         12        33        *         *         *         0          //Grand Soul Pants
-10,018    0       0       43        *         12        33        *         *         *         0          //Grand Soul Gloves
-11,018    0       0       43        *         12        33        *         *         *         0          //Grand Soul Boots
+07,035    0       0       43        *         12        33        *         *         *         0          //Eclipse Helm
+08,035    0       0       43        *         12        33        *         *         *         0          //Eclipse Armor
+09,035    0       0       43        *         12        33        *         *         *         0          //Eclipse Pants
+10,035    0       0       43        *         12        33        *         *         *         0          //Eclipse Gloves
+11,035    0       0       43        *         12        33        *         *         *         0          //Eclipse Boots
 end
 
 //SU

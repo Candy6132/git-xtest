@@ -118,4 +118,6 @@
 *             *           *              28             0              *              "Special\Quest 1st Wings"
 *             *           *              29             0              *              "Special\Quest Jewels More"
 *             *           *              30             0              *              "Special\Quest Tarkan Boss"
+*             *           *              31             0              *              "Special\Quest Jewels of Life"
+*             *           *              32             0              *              "Special\Quest Icarus Sets"
 end
