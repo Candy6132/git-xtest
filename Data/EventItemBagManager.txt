@@ -122,4 +122,6 @@
 *             *           *              32             0              *              "Special\Quest Icarus Sets"
 *             *           *              33             0              *              "Special\Quest Jewel of Ancient"
 *             *           *              34             0              *              "Special\Strange Jewel Mix"
+*             *           *              35             0              *              "Special\Quest Excellent Rings"
+*             *           *              36             0              *              "Special\Quest HM Weapon"
 end

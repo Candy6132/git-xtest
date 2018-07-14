@@ -498,8 +498,15 @@
 1116	"It's time for Giant Drakkans."
 1118	"I think you are ready to kill Phoenix of Darkness."
 1119	"Now Icarus is no longer a problem. See you after 10 rr."
-1120	"Find 10 Small Shards in Aida and mix them in Chaos Machine."
-1121	"I don't believe this! This... is the Jewel of Ancient!"
+//1120	"Find 10 Small Shards in Aida and mix them in Chaos Machine."
+//1121	"I don't believe this! This... is the Jewel of Ancient!"
+1120	"Have you heard about Jewel of Ancient? Find 10 Small Shards."
+1121	"Here, I mixed it for you."
+1122	"Something's wrong in Aida. Where are Blue Golems come from?"
+1123	"Hmm, they are definitely summoned by someone."
+1124	"Seems like Aida is invaded with some mages. Kill them!"
+1126	"I think they were protecting something bigger. Go find it."
+1127	"Dreadful demon! I'm glad he's dead now. Here, take it."
 
 end
 //1006	"Can you collect some Apples? I heard Bull Fighters like the

@@ -1,0 +1,60 @@
+3
+//Index   DropRate
+0         10000
+1         10000
+2         10000
+3         10000
+4         10000
+5         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
+0         5         10000         1000          0             0    1    0    0    0    0
+1         6         10000         1000          0             0    0    0    0    1    0
+2         7         10000         1000          0             0    0    1    0    0    0
+3         8         10000         1000          0             1    0    0    0    0    0
+4         9         10000         1000          0             0    0    0    0    0    1
+5         10        10000         1000          0             0    0    0    1    0    0
+end
+
+//BK
+5
+//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
+00,020    0       0       43        12        12        33        *         *         *         0          //Knight Blade
+00,024    0       0       43        12        12        33        *         *         *         0          //Daybreak
+end
+
+//DL
+6
+//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
+02,015    0       0       43        12        12        33        *         *         *         0          //Shining Scepter
+
+end
+
+//ME
+7
+//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
+04,019    0       0       43        12        12        33        *         *         *         0          //Great Reign Crossbow
+04,022    0       0       43        12        12        33        *         *         *         0          //Albatross Bow
+end
+
+//SM
+8
+//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
+05,013    0       0       43        11        12        33        *         *         *         0          //Platina Staff
+05,009    0       0       43        11        12        33        *         *         *         0          //Dragon Soul Staff
+end
+
+//SU
+9
+//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
+05,018    0       0       43        12        12        33        *         *         *         0          //Demonic Stick
+end
+
+//MG
+10
+//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
+00,025    0       0       43        12        12        33        *         *         *         0          //Rune Blade
+00,031    0       0       43        11        12        33        *         *         *         0          //Sword Dancer
+end
