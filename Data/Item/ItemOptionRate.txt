@@ -58,7 +58,7 @@ end
 //Index   Rate0   Rate1   Comment
 0         7000    3000    //Skill Option (Common)
 1         0       10000   //Skill Option (Exc)
-2         0       10000   //Skill Option (Set)
+2         5000    5000    //Skill Option (Set)
 3         7500    2500    //Skill Option (ChaosItemMix)
 9         9500    500     //Skill Option (MossMerchant)
 10        10000   0       //Skill Option (Lucky)
@@ -69,8 +69,8 @@ end
 
 2
 //Index   Rate0   Rate1   Comment
-0         7000    3000    //Luck Option (Common)
-1         9500    500     //Luck Option (Exc)
+0         8000    2000    //Luck Option (Common)
+1         8000    2000    //Luck Option (Exc)
 2         9500    500     //Luck Option (Set)
 3         8000    2000    //Luck Option (ChaosItemMix)
 4         8000    2000    //Luck Option (Wing2Mix)
