@@ -120,4 +120,6 @@
 *             *           *              30             0              *              "Special\Quest Tarkan Boss"
 *             *           *              31             0              *              "Special\Quest Jewels of Life"
 *             *           *              32             0              *              "Special\Quest Icarus Sets"
+*             *           *              33             0              *              "Special\Quest Jewel of Ancient"
+*             *           *              34             0              *              "Special\Strange Jewel Mix"
 end

@@ -18,6 +18,7 @@
 7270	255	255	100	"JewelofSkill"	
 7271	255	255	100	"JewelofExcellent"	
 7272	255	255	100	"JewelofAncient"
+7282	255	255	100	"JewelofAncient"	//Strange Jewel
 	
 3701	245	80	20	"CzeHelm"		//Red Phoenix Helm 
 4213	245	80	20	"CzeArmor"		//Red Phoenix Armor 
@@ -75,6 +76,8 @@
 7731	255	255	255	"SkillScroll01"		//Lord's Skills Guide
 7732	255	255	40	"SkillScroll01"		//Gladiator's Skills Guide
 7733	255	255	40	"sdwater02"		//Steroids
+7735	0	50	255	"LowRefineStone"	//Small Shard
+7282	255	255	100	"JewelofAncient"	//Strange Jewel
 
 //Test Items:
 150	255	255	100	"DarkHorseSoul"		//0

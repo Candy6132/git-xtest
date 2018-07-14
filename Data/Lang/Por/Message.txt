@@ -497,7 +497,9 @@
 1115	"Good job. Here, I have some Jewels of Life."
 1116	"It's time for Giant Drakkans."
 1118	"I think you are ready to kill Phoenix of Darkness."
-1119	"You made it! Icarus is no longer a problem."
+1119	"Now Icarus is no longer a problem. See you after 10 rr."
+1120	"Find 10 Small Shards in Aida and mix them in Chaos Machine."
+1121	"I don't believe this! This... is the Jewel of Ancient!"
 
 end
 //1006	"Can you collect some Apples? I heard Bull Fighters like the

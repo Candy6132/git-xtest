@@ -98,6 +98,7 @@
 0			*			*			100			72				"Phantom Knights"		*				*						*				*					1		17			5			"Spirit Sword"				17				5				100				40000		5			7216			3				31							1114				1115
 0			*			*			50			75				"Giant Drakans"			*				*						*				*					*		*			*			*							*				*				*				30000		*			7217			3				32							1116				*
 0			*			*			1			77				"Phoenix of Darkness"	*				*						*				*					*		*			*			*							*				*				*				50000		20			6670			0				*							1118				1119
+0			10			*			100			305				"Death Riders"			*				*						*				*					1		7282		7			"Jewel mixed from 10 Small Shards"	7735	9				1000			100000		*			*				*				33							1120				1121
 
 
 //Hero Mutant 300 - itembag: exc biżuteria
