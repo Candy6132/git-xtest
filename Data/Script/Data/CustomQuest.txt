@@ -99,7 +99,7 @@
 0			*			*			50			75				"Giant Drakans"			*				*						*				*					*		*			*			*							*				*				*				30000		*			7217			3				32							1116				*
 0			*			*			1			77				"Phoenix of Darkness"	*				*						*				*					*		*			*			*							*				*				*				50000		20			6670			0				*							1118				1119
 //0			10			*			100			306				"Death Riders"			*				*						*				*					1		7282		7			"Jewel mixed from 10 Small Shards"	7735	7				1000			100000		*			*				*				33							1120				1121
-0			10			*			100			306				"Death Riders"			*				*						*				*					1		7735		7			"Small Shards"				7735			7				1000			100000		*			*				*				33							1120				1121
+0			10			*			100			306				"Death Riders"			*				*						*				*					1		7735		9			"Small Shards"				7735			9				1000			100000		*			*				*				33							1120				1121
 
 
 //Hero Mutant 300 - itembag: exc biżuteria
