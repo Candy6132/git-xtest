@@ -113,36 +113,35 @@ end
 09,040	0	0	54	*	17	32	*	24	*	0	//Chrono Red Wing Pants	
 10,040	0	0	54	*	17	32	*	24	*	0	//Chrono Red Wing Gloves	
 13,024	0	0	54	*	*	32	*	25	*	0	//Chrono Ring of Magic	
+																							
+07,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Helm
+08,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Armor 
+09,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Pants
+13,022	0	0	54	*	*	32	*	25	*	0	//Vicious Ring of Earth
 												
-//content zablokowany:												
-//	07,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Helm
-//	08,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Armor 
-//	09,001	0	0	54	*	17	32	*	25	*	0	//Vicious Dragon Pants
-//	13,022	0	0	54	*	*	32	*	25	*	0	//Vicious Ring of Earth
+07,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Helm 
+08,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Armor 
+09,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Pants
+11,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Boots
 												
-//	07,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Helm 
-//	08,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Armor 
-//	09,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Pants
-//	11,003	0	0	54	*	17	32	*	25	*	0	//Enis Legendary Boots
+07,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Helm
+08,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Armor 
+09,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Pants
+11,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Boots 
 												
-//	07,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Helm
-//	08,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Armor 
-//	09,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Pants
-//	11,014	0	0	54	*	17	32	*	25	*	0	//Aruan Guardian Boots 
+08,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Armor
+09,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Pants
+10,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Gloves
+13,021	0	0	54	*	*	32	*	25	*	0	//Muren Ring of Fire
 												
-//	08,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Armor
-//	09,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Pants
-//	10,026	0	0	54	*	17	32	*	25	*	0	//Muren Storm Crow Gloves
-//	13,021	0	0	54	*	*	32	*	25	*	0	//Muren Ring of Fire
+09,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Pants
+10,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Gloves
+11,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Boots
+13,025	0	0	54	*	*	32	*	25	*	0	//Broy Pendant of Ice
 												
-//	09,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Pants
-//	10,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Gloves
-//	11,026	0	0	54	*	17	32	*	25	*	0	//Broy Adamantine Boots
-//	13,025	0	0	54	*	*	32	*	25	*	0	//Broy Pendant of Ice
-												
-//	07,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Helm
-//	08,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Armor
-//	10,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Gloves
-//	11,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Boots
+07,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Helm
+08,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Armor
+10,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Gloves
+11,040	0	0	54	*	17	32	*	25	*	0	//Sedemen Red Wing Boots
 end												
 														
