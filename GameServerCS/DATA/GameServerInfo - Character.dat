@@ -73,12 +73,12 @@ SUDamageRateToSU = 100
 ;==================================================
 ; Character Stuck Rate Settings
 ;==================================================
-DWDamageStuckRate = 0
-DKDamageStuckRate = 0
-FEDamageStuckRate = 0
-MGDamageStuckRate = 0
-DLDamageStuckRate = 0
-SUDamageStuckRate = 0
+DWDamageStuckRate = 100
+DKDamageStuckRate = 100
+FEDamageStuckRate = 100
+MGDamageStuckRate = 100
+DLDamageStuckRate = 100
+SUDamageStuckRate = 100
 
 ;==================================================
 ; Character Damage Multiplier Settings
