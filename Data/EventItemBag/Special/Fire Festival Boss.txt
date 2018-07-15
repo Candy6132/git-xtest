@@ -6,11 +6,11 @@ end
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
 0         *         2000          10000000      0             1    1    1    1    1    1	
-0         5         4000          1             0             1    1    1    1    1    1	//Exc
+0         5         4200          1             0             1    1    1    1    1    1	//Exc
 0         6         1000          1             0             1    1    1    1    1    1	//Jewel of Luck
-0         7         1000          1             0             1    1    1    1    1    1	//Jewel of Ancient
-0         8         500           1             0             1    1    1    1    1    1	//Jewel of Excellent
-0         9         1500          1             0             1    1    1    1    1    1	//TCA
+0         7         500           1             0             1    1    1    1    1    1	//Jewel of Ancient
+0         8         300           1             0             1    1    1    1    1    1	//Jewel of Excellent
+0         9         1000          1             0             1    1    1    1    1    1	//TCA
 end
 
 5											
@@ -73,5 +73,5 @@ end
 end
 
 9
-14,053	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly
+14,096	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly
 end

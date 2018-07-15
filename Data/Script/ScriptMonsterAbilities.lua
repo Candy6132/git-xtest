@@ -142,15 +142,19 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 						
 					FireworksSend(FirstBeamKillerIndex,FirstBeamKnightMapX,FirstBeamKnightMapY)
 					
+					local MessageText = ""
+					
 					if FirstBeamKillerIndex == bIndex then
 										
-						local MessageText = string.format("%s have defeated both Fire Beam Knights!",GetObjectName(bIndex))
+						MessageText = string.format("%s have defeated both Fire Beam Knights!",GetObjectName(bIndex))
 						
 					else
 					
-						local MessageText = string.format("%s and %s have defeated both Fire Beam Knights!",GetObjectName(FirstBeamKillerIndex),GetObjectName(bIndex))
+						MessageText = string.format("%s and %s have defeated both Fire Beam Knights!",GetObjectName(FirstBeamKillerIndex),GetObjectName(bIndex))
 					
 					end
+					
+					--local MessageText = string.format("%s and %s have defeated both Fire Beam Knights!",GetObjectName(FirstBeamKillerIndex),GetObjectName(bIndex))
 						
 					NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
 						
