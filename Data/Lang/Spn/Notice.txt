@@ -8,8 +8,6 @@
 "Example: '/attack 1 1 1 9' - autoattack Evli Spirit"		0	0	0	0	0	0	0	0	1
 "You can check skill numbers in Library."			0	0	0	0	0	0	0	0	1
 
-"Current Active Events:"					0	0	0	0	0	0	0	0	700
-"Cherry Blossom"						0	0	0	0	0	0	0	0	1
 
 "Tip 2: You can use command: '/re auto'"			0	0	0	0	0	0	0	0	700
 "It allows other player to automaticly"				0	0	0	0	0	0	0	0	1

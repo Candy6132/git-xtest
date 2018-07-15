@@ -62,8 +62,8 @@ end
 240            03             00         172            96             03             //Safety Guardian
 238            03             00         180            103            01             //Chaos Goblin
 257            03             00         167            118            01             //Shadow Phantom Soldier
-450            03             00         179            126            01             //Cherry Blossom Spirit
-451            03             00         179            129            03             //Cherry Blossom Tree
+//450            03             00         179            126            01             //Cherry Blossom Spirit
+//451            03             00         179            129            03             //Cherry Blossom Tree
 257            03             00         166            085            02             //Shadow Phantom Soldier
 257            03             00         201            129            02             //Shadow Phantom Soldier
 371            03             00         169            118            02             //Leo the Helper

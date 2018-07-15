@@ -29,8 +29,8 @@
 //7202      1       0       *         *         *         *         *         *         *         0          *           *              70                97                0          //Navy Candy Box
 //7213      0       0       *         *         *         *         *         *         *         0          *           *              25                150               0          //Pumpkin of Luck      
 //7268      0       0       *         *         *         *         *         *         *         0          *           *              25                150               0          //Lucky Coin
+//7258      0       0       *         *         *         *         *         *         *         0          *           *              12                120               8000        //Golden Cherry Blossom - Cherry Blossom Event
 
-7258      0       0       *         *         *         *         *         *         *         0          *           *              12                120               8000        //Golden Cherry Blossom - Cherry Blossom Event
 6151      0       0       *         *         *         *         *         *         *         0          *           *              47                65                300         //Twisting Slash Orb
 7688      0       0       *         *         *         *         *         *         *         0          *           *              47                65                300         //Evil Spirits Scroll
 6161      0       0       *         *         *         *         *         *         *         0          *           *              64                84                300         //Orb of Penetration
