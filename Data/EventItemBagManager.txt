@@ -28,6 +28,7 @@
 7224          *           *              *              *              *              "Item\Pink Mistery Box"
 7225          *           *              *              *              *              "Item\Purple Mistery Box"
 7252          *           *              *              *              *              "Item\Cherry Blossom Box"
+7179          2           *              *              *              *              "Item\Firecracker"
 
 *             *           44             *              *              *              "Monster\Red Dragon"
 *             *           42             *              *              *              "Monster\Large Red Dragon"

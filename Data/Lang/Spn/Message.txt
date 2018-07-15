@@ -127,7 +127,7 @@
 195 	  "White Wizard invasion has started!"
 196 	  "New Year invasion has started!"
 197 	  "Easter Rabbit invasion has started!"
-198 	  "Summer invasion has started!"
+198 	  "Summer invasion has started! Kill 2 Death Beam Knights at the same time."
 199 	  "Christmas invasion has started!"
 200 	  "Medusa invasion has started!"
 202 	  "Player %s defeated the Skeleton King!"

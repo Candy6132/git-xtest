@@ -141,8 +141,16 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 					ItemDrop(FirstBeamKillerIndex,FirstBeamKnightMap,FirstBeamKnightMapX,FirstBeamKnightMapY,100)
 						
 					FireworksSend(FirstBeamKillerIndex,FirstBeamKnightMapX,FirstBeamKnightMapY)
+					
+					if FirstBeamKillerIndex == bIndex then
+										
+						local MessageText = string.format("%s have defeated both Fire Beam Knights!",GetObjectName(bIndex))
 						
-					local MessageText = string.format("...")
+					else
+					
+						local MessageText = string.format("%s and %s have defeated both Fire Beam Knights!",GetObjectName(FirstBeamKillerIndex),GetObjectName(bIndex))
+					
+					end
 						
 					NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
 						
@@ -211,6 +219,9 @@ function MonsterAbilities_SpawnMonster(aIndex,bClass,i)
 	
 end
 
+
+------------------------- Fire Festival Bosses---------------------
+
 function MonsterAbilities_OnTimerThread()
 
 	if MonsterAbilities_SystemSwitch == 1 then
@@ -244,3 +255,5 @@ function MonsterAbilities_OnTimerThread()
 	end
 
 end
+
+------------------------- Fire Festival Bosses---------------------

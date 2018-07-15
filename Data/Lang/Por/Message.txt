@@ -127,7 +127,7 @@
 195       "A invasão do White Wizard começou!"
 196       "A invasão de Ano Novo começou!"
 197       "A invasão de Coelhos começou!"
-198       "A invasão de Verão começou!"
+198 	  "Summer invasion has started! Kill 2 Death Beam Knights at the same time."
 199       "A invasão de Natal começou!"
 200       "A invasão da Medusa começou!"
 202       "O jogador %s derrotou o Skeleton King!"
