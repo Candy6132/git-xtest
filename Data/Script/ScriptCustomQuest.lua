@@ -633,16 +633,6 @@ end
 function CustomQuest_OnMonsterDie(aIndex,bIndex)
 
 	if CustomQuest_SystemSwitch == 1 then
-	
-		------------------------- CUSTOM INVASION - 259 Erohim, 7269 Jewel of Luck w 51 Elbeland:
-		
-		if GetObjectClass(aIndex) == 295 and GetObjectMap(aIndex) == 51 then
-
-			ItemDropEx(bIndex,51,GetObjectMapX(aIndex),GetObjectMapY(aIndex),7269,9,0,0,0,0,0)
-
-		end
-		
-		------------------------- CUSTOM INVASION
 
 		local PartyIndex = GetObjectPartyNumber(bIndex)
 		

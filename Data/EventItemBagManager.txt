@@ -28,9 +28,6 @@
 7224          *           *              *              *              *              "Item\Pink Mistery Box"
 7225          *           *              *              *              *              "Item\Purple Mistery Box"
 7252          *           *              *              *              *              "Item\Cherry Blossom Box"
-7223          *           *              *              *              *              "Item\Green Chaos Box"
-7224          *           *              *              *              *              "Item\Red Chaos Box"
-7225          *           *              *              *              *              "Item\Purple Chaos Box"
 
 *             *           44             *              *              *              "Monster\Red Dragon"
 *             *           42             *              *              *              "Monster\Large Red Dragon"
@@ -127,4 +124,6 @@
 *             *           *              34             0              *              "Special\Strange Jewel Mix"
 *             *           *              35             0              *              "Special\Quest Excellent Rings"
 *             *           *              36             0              *              "Special\Quest HM Weapon"
+
+*             *           *              100            0              *              "Special\Fire Festival Boss"
 end
