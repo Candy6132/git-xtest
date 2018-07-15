@@ -1,0 +1,77 @@
+3
+//Index   DropRate
+0         10000
+end
+
+4
+//Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
+0         *         2000          10000000      0             1    1    1    1    1    1	
+0         5         4000          1             0             1    1    1    1    1    1	//Exc
+0         6         1000          1             0             1    1    1    1    1    1	//Jewel of Luck
+0         7         1000          1             0             1    1    1    1    1    1	//Jewel of Ancient
+0         8         500           1             0             1    1    1    1    1    1	//Jewel of Excellent
+0         9         1500          1             0             1    1    1    1    1    1	//TCA
+end
+
+5											
+//Index	Level	Grade	Option0	Option1	Option2	Option3	Option4	Option5	Option6	Duration	Comment
+10,021	0	0	*	*	16	32	12	*	*	0	//Red Phoenix Gloves
+11,021	0	0	*	*	16	32	12	*	*	0	//Red Phoenix Boots
+10,022	0	0	*	*	16	32	12	*	*	0	//Dark Side Gloves
+11,022	0	0	*	*	16	32	12	*	*	0	//Dark Side Boots
+10,024	0	0	*	*	16	32	12	*	*	0	//Nature Gloves
+11,024	0	0	*	*	16	32	12	*	*	0	//Nature Boots
+10,028	0	0	*	*	16	32	12	*	*	0	//Dark Master Gloves
+11,028	0	0	*	*	16	32	12	*	*	0	//Dark Master Boots
+10,023	0	0	*	*	16	32	12	*	*	0	//Hurricane Gloves
+11,023	0	0	*	*	16	32	12	*	*	0	//Hurricane Boots
+10,042	0	0	*	*	16	32	12	*	*	0	//Demonic Gloves
+11,042	0	0	*	*	16	32	12	*	*	0	//Demonic Boots
+
+07,021	0	0	*	*	16	32	12	*	*	0	//Red Phoenix Helm
+09,021	0	0	*	*	16	32	12	*	*	0	//Red Phoenix Pants
+07,022	0	0	*	*	16	32	12	*	*	0	//Dark Side Helm
+09,022	0	0	*	*	16	32	12	*	*	0	//Dark Side Pants
+07,024	0	0	*	*	16	32	12	*	*	0	//Nature Helm
+09,024	0	0	*	*	16	32	12	*	*	0	//Nature Pants
+07,028	0	0	*	*	16	32	12	*	*	0	//Dark Master Helm
+09,028	0	0	*	*	16	32	12	*	*	0	//Dark Master Pants
+09,023	0	0	*	*	16	32	12	*	*	0	//Hurricane Pants
+07,042	0	0	*	*	16	32	12	*	*	0	//Demonic Helm
+09,042	0	0	*	*	16	32	12	*	*	0	//Demonic Pants
+
+08,021	0	0	*	*	16	32	12	*	*	0	//Red Phoenix Armor
+08,024	0	0	*	*	16	32	12	*	*	0	//Nature Armor
+08,028	0	0	*	*	16	32	12	*	*	0	//Dark Master Armor
+08,022	0	0	*	*	16	32	12	*	*	0	//Dark Side Armor
+08,023	0	0	*	*	16	32	12	*	*	0	//Hurricane Armor
+08,042	0	0	*	*	16	32	12	*	*	0	//Demonic Armor
+
+00,024	0	0	*	12	15	32	12	*	*	0	//Daybreak
+00,021	0	0	*	12	15	32	12	*	*	0	//Dark Reign Blade
+00,025	0	0	*	12	15	32	12	*	*	0	//Sword Dancer
+05,013	0	0	*	*	15	32	12	*	*	0	//Platina Staff
+04,022	0	0	*	12	15	32	12	*	*	0	//Albatross Bow
+04,020	0	0	*	12	15	32	12	*	*	0	//Arrow Viper Bow
+02,013	0	0	*	12	15	32	12	*	*	0	//Divine Scepter of Archangel
+00,019	0	0	*	12	15	32	12	*	*	0	//Divine Sword of Archangel
+05,018	0	0	*	*	15	32	12	*	*	0	//Demonic Stick
+05,036	0	0	*	*	14	32	12	*	*	0	//Divine Stick of Archangel
+end											
+											
+6											
+//Index	Level	Grade	Option0	Option1	Option2	Option3	Option4	Option5	Option6	Duration	Comment
+14,101	9	0	*	*	*	*	*	*	*	0	//Jewel of Luck
+end											
+											
+7
+14,104	7	0	*	*	*	*	*	12	*	0	//Jewel of Ancient
+end											
+											
+8											
+14,103	7	0	*	*	*	*	12	*	*	0	//Jewel of Excellent
+end
+
+9
+14,053	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly
+end
