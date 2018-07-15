@@ -136,7 +136,4 @@
 
 //Ancient Bali's Butterfly:
 7184	0	0	*	*	*	*	*	*	*	0		33		241		*		*		7500000	//Jewel of Life	
-
-//Custom Invasion - Phoenix of Darkness
-6670	11	0	*	*	*	*	*	*	*	0		2		77		*		*		1000000	//Loch's Feather
 end

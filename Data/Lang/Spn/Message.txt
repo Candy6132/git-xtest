@@ -375,15 +375,15 @@
 
 //==============CUSTOM INVASION==================
 // poczatek
-917	  "Monsters from Icarus invaded Devias. Detend the town!"
+917	  "Erohim forces invaded Elbeland!"
 // druga fala
-918	  "Icarus forces are getting stronger. Defend Devias!"
+918	  "Erohim forces are getting stronger. Defend Elbeland!"
 // wejscie bossa
-919	  "Phoenix of Darkness is quilting from the sky. Defeat him!"
+919	  "Erohim is near the gates. Defeat him!"
 // boss pada
-920	  "Phoenix of Darkness has been defeated!"
+920	  "Erohim has been defeated!"
 // armia sie cofa
-921	  "Icarus monsters fly away! Devias is safe."
+921	  "Erohim forces retreats. The Elbeland is safe!"
 //==============CUSTOM INVASION==================
 
 1000	"Hey you! Take this buff and kill some monsters for me."
