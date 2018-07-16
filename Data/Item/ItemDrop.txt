@@ -81,6 +81,7 @@
 7189      3       0       *         *         *         *         *         *         *         0          *           *              25                150               3000       //Sign of the Lord
 7190      0       0       *         *         *         *         *         *         *         0          *           *              46                199               1200       //Jewel of Creation
 7199      0       0       *         *         *         *         *         *         *         0          31          *              46                199               1500       //Jewel of Guardian
+7199      0       0       *         *         *         *         *         *         *         0          *           337            *                 *                 850       //Jewel of Guardian K7 szriker
 7197      1       0       *         *         *         *         *         *         *         0          *           *              25                46                8000       //Symbol of Kundun 1
 7197      2       0       *         *         *         *         *         *         *         0          *           *              47                65                8000       //Symbol of Kundun 2
 7197      3       0       *         *         *         *         *         *         *         0          *           *              66                77                8000       //Symbol of Kundun 3
