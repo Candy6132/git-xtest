@@ -238,6 +238,10 @@ function MonsterAbilities_OnTimerThread()
 			
 					NoticeSend(FirstBeamKillerIndex,1,"You have failed to kill both Fire Beam Knights at the same time.")
 					
+					local MessageText = string.format("%s failed to kill both Fire Beam Knights. Try again tomorrow!",GetObjectName(FirstBeamKillerIndex))
+						
+					NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
+					
 				end
 	
 				FirstBeamKnightIndex = nil
@@ -249,10 +253,6 @@ function MonsterAbilities_OnTimerThread()
 				FirstBeamKnightMapY = nil
 
 				FirstBeamKillerIndex = nil
-				
-				local MessageText = string.format("%s failed to kill both Fire Beam Knights. Try again tomorrow!",GetObjectName(FirstBeamKillerIndex))
-						
-				NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
 			
 			end
 			
