@@ -20,10 +20,10 @@ CommandPostMoney_AL0 = 5000
 CommandPostMoney_AL1 = 5000
 CommandPostMoney_AL2 = 5000
 CommandPostMoney_AL3 = 5000
-CommandPostDelay_AL0 = 30
-CommandPostDelay_AL1 = 30
-CommandPostDelay_AL2 = 30
-CommandPostDelay_AL3 = 30
+CommandPostDelay_AL0 = 10
+CommandPostDelay_AL1 = 10
+CommandPostDelay_AL2 = 10
+CommandPostDelay_AL3 = 10
 
 ;==================================================
 ; Add Point Command Settings
