@@ -14,5 +14,5 @@ end
 
 5
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
-14,011    10      0       18        *         *         10        *         *         *         0          //Box of Kundun +3
+14,011    10      0       *         *         *         10        *         *         *         0          //Box of Kundun +3
 end
