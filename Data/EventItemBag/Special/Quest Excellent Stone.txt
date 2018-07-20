@@ -10,5 +10,5 @@ end
 
 5											
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
-14,103	7	0	*	*	*	*	12	*	*	0	//Excellent Stone
+14,103	7	0	*	*	*	*	29	*	*	0	//Excellent Stone
 end

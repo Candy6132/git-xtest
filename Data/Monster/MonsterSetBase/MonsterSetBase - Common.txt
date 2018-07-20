@@ -187,7 +187,8 @@ end
 end
 
 0
-371            37             00         34             217            02             //Leo the Helper
+//Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
+371            37             00         38             216            02             //Leo the Helper
 end
 
 0
