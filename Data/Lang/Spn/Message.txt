@@ -508,6 +508,7 @@
 1126	"I think they were protecting something bigger. Go find it."
 1127	"Dreadful demon! I'm glad he's dead now. Here, take it."
 1128	"We got work to do in Kalima. Collect the Map from Skeletons."
+1129	"Ok, now you are ready to enter Kalima 4."
 1130	"Now use the map to kill Death Centurions. Bring me Spear too."
 1132	"I have contract for Schrikers too. Go and kill them."
 1133	"Great! This crown is so damn expensive in black market."
