@@ -77,9 +77,9 @@
 0			*			*			120			308				"Death Tree"			*				*						*				*					*		*			*			*							*				*				*				12000		*			6720			0				26							1078				1079
 //ReqLevel	ReqReset	ReqMReset	NoMonsters	MonsterIndex	MonsterString			MonsterFEIndex	MonsterFEString			MonsterSUIndex	MonsterSUString		NoItem	ItemIndex	ItemLevel	ItemString					ItemDropIndex	ItemDropLevel	ItemDropRate	ZenReward 	PointReward	ItemRewardIndex	ItemRewardLevel	EventItemBagSpecialValue	QuestStartMessage	QuestFinishMessage
 //#41...
-0			*			*			200			117				"Red Skeleton Knights in Valley" *		*						*				*					*		*			*			*							*				*				*				16000		*			*				*				26							1080				1081
+0			*			*			200			117				"Spirit Knights in Valley" 		*		*						*				*					*		*			*			*							*				*				*				16000		*			*				*				26							1080				1081
 0			*			*			10			118				"Spirit Soccerers"		*				*						*				*					1		2560		9			"Skull Staffs"				2560			9				1000			18000		5			7184			0				27							1082				1083
-0			*			*			40			117				"Red Skeleton Knights"	*				*						*				*					1		1551		7			"Broken Chaos Weapon"		1551			7				2000			8000		*			*				*				*							1084				1085
+0			*			*			40			117				"Spirit Knights"		*				*						*				*					1		1551		7			"Broken Chaos Weapon"		1551			7				2000			8000		*			*				*				*							1084				1085
 0			*			*			*			*				*						*				*						*				*					2		7181		*			"Jewels of Bless"			*				*				*				*			*			*				*				*							1086				1087
 0			*			*			*			*				*						*				*						*				*					1		6159		*			"Jewel of Chaos"			*				*				*				*			*			*				*				28							1088				1089
 0			*			*			80			69				"Aquamoses"				*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				26							1090				1091
@@ -103,7 +103,7 @@
 0			*			*			300			305				"Blue Golems"			*				*						*				*					15		7725		0			"Blue Glass"				7725			0				500				40000		*			7179			10				32							1122				1123
 0			*			*			100			304				"Witch Queens"			*				*						*				*					*		*			*			*							*				*				*				40000		*			7179			10				35							1124				*
 0			*			*			1			309				"Hell Maine"			*				*						*				*					*		*			*			*							*				*				*				100000		20			7179			11				36							1126				1127
-0			*			*			50			*				"Red Skeleton Knights in Valley"	*	*						*				*					1		7196		4			"Lost Map"					7197			4				1000			10000		*			7196			5				*							1128				*
+0			*			*			50			117				"Spirit Knights in Valley"			*	*						*				*					1		7196		4			"Lost Map"					7197			4				1000			10000		*			7196			5				*							1128				*
 0			*			*			150			191				"Death Centurions in Kalima 4"		*	*						*				*					1		1546		7			"Dragon Spear"				1546			7				100				60000		*			7196			5				37							1130				*
 0			*			*			60			196				"Schrikers in Kalima 4"				*	*						*				*					*		*			*			*							*				*				*				50000		*			*				*				37							1132				*
 0			*			*			1			80				"Golden Lizard"			*				*						*				*					1		6278		7			"Lizard's Crown"			6278			7				10000			80000		10			7179			11				*							*					1133
