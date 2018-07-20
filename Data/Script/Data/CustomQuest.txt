@@ -100,13 +100,30 @@
 0			*			*			1			77				"Phoenix of Darkness"	*				*						*				*					*		*			*			*							*				*				*				50000		20			6670			0				*							1118				1119
 //0			10			*			100			306				"Death Riders"			*				*						*				*					1		7282		7			"Jewel mixed from 10 Small Shards"	7735	7				1000			100000		*			*				*				33							1120				1121
 0			10			*			100			306				"Death Riders"			*				*						*				*					10		7735		9			"Small Shards"				7735			9				1000			100000		*			*				*				33							1120				1121
-0			*			*			150			305				"Blue Golems"			*				*						*				*					15		7725		0			"Blue Glass"				7725			0				500				40000		*			7179			10				32							1122				1123
+0			*			*			300			305				"Blue Golems"			*				*						*				*					15		7725		0			"Blue Glass"				7725			0				500				40000		*			7179			10				32							1122				1123
 0			*			*			100			304				"Witch Queens"			*				*						*				*					*		*			*			*							*				*				*				40000		*			7179			10				35							1124				*
 0			*			*			1			309				"Hell Maine"			*				*						*				*					*		*			*			*							*				*				*				100000		20			7179			11				36							1126				1127
+0			*			*			50			*				"Red Skeleton Knights in Valley"	*	*						*				*					1		7196		4			"Lost Map"					7197			4				1000			10000		*			7196			5				*							1128				*
+0			*			*			150			191				"Death Centurions in Kalima 4"		*	*						*				*					1		1546		7			"Dragon Spear"				1546			7				100				60000		*			7196			5				37							1130				*
+0			*			*			60			196				"Schrikers in Kalima 4"				*	*						*				*					*		*			*			*							*				*				*				50000		*			*				*				37							1132				*
+0			*			*			1			80				"Golden Lizard"			*				*						*				*					1		6278		7			"Lizard's Crown"			6278			7				10000			80000		10			7179			11				*							*					1133
+0			*			*			200			351				"Splinter Wolfs"		*				*						*				*					10		6276		7			"Beast's Horns"				6276			7				500				50000		*			*				*				29							1134				1135
+0			*			*			180			353				"Satyroses"				*				*						*				*					*		*			*			*							*				*				*				60000		*			7179			0				38							*					*
+0			*			*			160			352				"Iron Riders"			*				*						*				*					*		*			*			*							*				*				*				80000		*			*				*				39							1136				1137
+0			15			*			1			82				"Golden Tantalos"		*				*						*				*					1		7179		12			"Box of Kundun"				*				*				*				100000		25			*				*				*							1138				1139
+0			15			*			*			*				*						*				*						*				*					6		7212		0			"Higher Refining Stones"	*				*				*				*			*			*				*				40							1140				1141
 
+
+
+//Itembag: Bolty i Arrow Exc
+//Lizard Warrior + Lizards Crown+5 290 lvl 78
+
+//Cursed King 66, lvl 86 - w Devil Square?
 
 //Hero Mutant 300 - itembag: exc biżuteria
-//200x Splinter Wolf 351
-//150x Satyros 353
-//50x Iron Rider 352
+
+//Adud
+
+//Bali - biżuteria ancient
+
 end

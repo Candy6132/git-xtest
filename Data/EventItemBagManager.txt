@@ -125,6 +125,10 @@
 *             *           *              34             0              *              "Special\Strange Jewel Mix"
 *             *           *              35             0              *              "Special\Quest Excellent Rings"
 *             *           *              36             0              *              "Special\Quest HM Weapon"
+*             *           *              37             0              *              "Special\Quest BoK 3"
+*             *           *              38             0              *              "Special\Quest Jewels Many"
+*             *           *              39             0              *              "Special\Quest More Jewels of Life"
+*             *           *              40             0              *              "Special\Quest Excellent Stone"
 
 *             *           *              100            0              *              "Special\Fire Festival Boss"
 end

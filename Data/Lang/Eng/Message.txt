@@ -507,6 +507,18 @@
 1124	"Seems like Aida is invaded with some mages. Kill them!"
 1126	"I think they were protecting something bigger. Go find it."
 1127	"Dreadful demon! I'm glad he's dead now. Here, take it."
+1128	"We got work to do in Kalima. Collect the Map from Skeletons."
+1130	"Now use the map to kill Death Centurions. Bring me Spear too."
+1132	"I have contract for Schrikers too. Go and kill them."
+1133	"Great! This crown is so damn expensive in black market."
+1134	"Have you heard about Kanturu? This is bizzare place."
+1135	"Nice horns, we will sell them for a lot of zen, my brother."
+1136	"Those Iron Riders are too dangerous. Kill them."
+1137	"Great job, come beack when you have 15 resets."
+1138	"We will create a special jewel. I need a Box of Kundun +5."
+1139	"Good, now you will have to sacrifice a few excellents."
+1140	"Now bring me 6 Higher Refining Stones."
+1141	"It's done, the Excellent Stone! Make a good use of it."
 
 
 end
