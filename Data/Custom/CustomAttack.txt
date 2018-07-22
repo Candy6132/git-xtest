@@ -75,7 +75,7 @@
 3         23      1       0       1.200       0.006       //Slash
 3         41      3       1       1.200       0.006       //Twisting Slash
 3         55      2       0       1.500       0.005       //Fire Slash
-3         56      3       1       1.500       0.005       //Power Slash
+3         56      3       1       1.850       0.006       //Power Slash
 3         76      3       1       1.200       0.006       //Plasma Storm
 3         236     3       1       1.200       0.006       //Sword Slash
 3         237     3       1       1.200       0.006       //Lightning Storm
