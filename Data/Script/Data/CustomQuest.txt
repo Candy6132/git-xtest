@@ -106,12 +106,6 @@
 0			*			*			50			117				"Spirit Knights in Valley"			*	*						*				*					1		7196		4			"Lost Map"					7197			4				1000			10000		*			7196			4				*							1128				1129
 0			*			*			150			191				"Death Centurions in Kalima 4"		*	*						*				*					1		1546		7			"Dragon Spear"				1546			7				100				60000		*			7196			4				37							1130				*
 0			*			*			60			196				"Schrikers in Kalima 4"				*	*						*				*					*		*			*			*							*				*				*				50000		*			*				*				37							1132				*
-0			*			*			1			80				"Golden Lizard"			*				*						*				*					1		6278		7			"Lizard's Crown"			6278			7				10000			80000		10			7179			11				*							*					1133
-0			*			*			200			351				"Splinter Wolfs"		*				*						*				*					10		6276		7			"Beast's Horns"				6276			7				500				50000		*			*				*				29							1134				1135
-0			*			*			180			350				"Berserkers"			*				*						*				*					*		*			*			*							*				*				*				60000		*			7179			0				38							*					*
-0			*			*			160			352				"Iron Riders"			*				*						*				*					*		*			*			*							*				*				*				80000		*			*				*				39							1136				1137
-0			15			*			1			82				"Golden Tantalos"		*				*						*				*					1		7179		12			"Box of Kundun"				*				*				*				100000		25			*				*				*							1138				1139
-0			15			*			*			*				*						*				*						*				*					6		7212		0			"Higher Refining Stones"	*				*				*				*			*			*				*				40							1140				1141
 
 
 
