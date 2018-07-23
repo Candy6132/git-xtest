@@ -43,8 +43,8 @@ WriteScriptLog = 1
 ;==================================================
 ; Hack Settings
 ;==================================================
-CheckSpeedHack = 0
-CheckSpeedHackTolerance = 1500
+CheckSpeedHack = 1
+CheckSpeedHackTolerance = 2200
 CheckLatencyHack = 0
 CheckLatencyHackTolerance = 0
 CheckAutoPotionHack = 1
