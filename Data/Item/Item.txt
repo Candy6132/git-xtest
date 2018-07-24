@@ -755,9 +755,9 @@ end
 62       *      0       1       1        1            0            0          "Rare Item Ticket5"                  0       0	//brak w kliencie
 63       *      0       1       1        1            0            0          "Firecracker"                        0       0																																																										
 64       *      0       1       1        1            0            0          "Cursed Castle Water"                0       0																																																										
-65       *      0       1       1        1            0            0          "Death-beam Knight Flame"            0       0																																																										
-66       *      0       1       2        1            0            0          "Hell-Miner Horn"                    0       0																																																										
-67       *      0       1       2        1            0            0          "Dark Phoenix Feather"               0       0																																																										
+65       *      0       1       1        1            0            1          "Death-beam Knight Flame"            0       0																																																										
+66       *      0       1       2        1            0            1          "Hell-Miner Horn"                    0       0																																																										
+67       *      0       1       2        1            0            1          "Dark Phoenix Feather"               0       0																																																										
 68       *      0       1       2        1            0            0          "Abyssal Eye"                        0       0																																																										
 70       *      0       1       1        1            0            0          "Elite Healing Potion"               0       0	//brak w kliencie
 71       *      0       1       1        1            0            0          "Elite Mana Potion"                  0       0	//brak w kliencie
