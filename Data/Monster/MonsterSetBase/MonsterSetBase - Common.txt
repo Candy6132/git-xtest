@@ -177,7 +177,6 @@ end
 208            34             00         115            035            02             //Wolf Altar 4
 209            34             00         117            027            02             //Wolf Altar 5
 407            34             00         062            239            01             //Werewolf Quarel
-406            34             00         228            048            01             //Apostle Devin
 248            34             00         099            040            02             //Wandering Merchant Martin
 371            34             00         227            48             01             //Leo the Helper
 end
@@ -204,6 +203,7 @@ end
 
 0
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
+406            41             00         027            085            01             //Apostle Devin
 408            41             00         119            168            02             //Gatekeeper
 end
 
