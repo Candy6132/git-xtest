@@ -1176,6 +1176,42 @@ end
 
 end
 
+
+2
+77	6	1	20	65	-1	//Dark Phoenix	
+77	6	1	20	65	-1	//Dark Phoenix	
+77	6	1	20	65	-1	//Dark Phoenix	
+
+
+63	6	1	20	65	-1	//Dark Phoenix	
+63	6	1	20	65	-1	//Dark Phoenix	
+63	6	1	20	65	-1	//Dark Phoenix	
+
+309	6	1	20	65	-1	//Dark Phoenix	
+309	6	1	20	65	-1	//Dark Phoenix	
+309	6	1	20	65	-1	//Dark Phoenix	
+309	6	1	20	65	-1	//Dark Phoenix	
+309	6	1	20	65	-1	//Dark Phoenix	
+77	6	1	20	65	-1	//Dark Phoenix	
+77	6	1	20	65	-1	//Dark Phoenix	
+77	6	1	20	65	-1	//Dark Phoenix	
+77	6	1	20	65	-1	//Dark Phoenix	
+77	6	1	20	65	-1	//Dark Phoenix	
+
+
+63	6	1	20	65	-1	//Dark Phoenix	
+63	6	1	20	65	-1	//Dark Phoenix	
+63	6	1	20	65	-1	//Dark Phoenix	
+
+309	6	1	20	65	-1	//Dark Phoenix	
+309	6	1	20	65	-1	//Dark Phoenix	
+309	6	1	20	65	-1	//Dark Phoenix	
+309	6	1	20	65	-1	//Dark Phoenix	
+309	6	1	20	65	-1	//Dark Phoenix
+
+end
+
+
 //=========================================================================================				
 //=================== Atlans Monsters - ======================================				
 //=========================================================================================
