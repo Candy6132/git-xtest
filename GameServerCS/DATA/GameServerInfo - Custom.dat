@@ -3,6 +3,7 @@
 ; Custom Arena Settings
 ;==================================================
 CustomArenaSwitch = 0
+CustomArenaMapNumber = 40
 CustomArenaVictimScoreDecrease = 0
 CustomArenaKillerScoreIncrease = 100
 

@@ -17,6 +17,7 @@ ServerPort = 55919
 ServerVersion = 1.00.00
 ServerSerial = niechzadziala
 ServerMaxUserNumber = 1000
+ServerTick = 10
 
 ;==================================================
 ; Connection Settings
@@ -262,7 +263,6 @@ PcPointPointValue_AL3 = 1
 ;==================================================
 ; Party Settings
 ;==================================================
-PartyReconnectTime = 300
 PartyExperienceRange = 200
 PartyGeneralExperience1 = 100
 PartyGeneralExperience2 = 95
@@ -274,6 +274,7 @@ PartySpecialExperience2 = 100
 PartySpecialExperience3 = 105
 PartySpecialExperience4 = 110
 PartySpecialExperience5 = 120
+PartyMoneyDistribute = 1
 
 ;==================================================
 ; Jewel Settings
@@ -322,3 +323,9 @@ FruitSubPointSuccessRate_AL0 = -1
 FruitSubPointSuccessRate_AL1 = -1
 FruitSubPointSuccessRate_AL2 = -1
 FruitSubPointSuccessRate_AL3 = -1
+
+;==================================================
+; Reconnect Settings
+;==================================================
+ReconnectTime = 300 
+ReconnectOfflineTime = 300

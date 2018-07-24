@@ -21,7 +21,7 @@ function FileLoad(FilePath)
 
 		local ReadTable = {}
 
-		for line in file:lines("l") do
+		for line in file:lines() do
 
 			local LastStr = 0
 
