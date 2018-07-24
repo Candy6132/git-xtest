@@ -203,6 +203,7 @@ end
 
 0
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
+406            41             00         027            085            01             //Apostle Devin
 408            41             00         119            168            02             //Gatekeeper
 end
 
