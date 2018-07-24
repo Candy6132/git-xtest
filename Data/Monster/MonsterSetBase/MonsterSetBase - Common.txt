@@ -1941,6 +1941,19 @@ end
 75	10	30	25	231	-1	//Giant Drakan
 //76	10	30	48	228	-1	//Dark Phoenix Shield
 77	10	30	34	238	-1	//Dark Phoenix	
+77	10	30	34	238	-1	//Dark Phoenix	
+77	10	30	34	238	-1	//Dark Phoenix	
+77	10	30	34	238	-1	//Dark Phoenix	
+77	10	30	34	238	-1	//Dark Phoenix	
+77	10	30	34	238	-1	//Dark Phoenix	
+77	10	30	34	238	-1	//Dark Phoenix	
+77	10	30	34	238	-1	//Dark Phoenix	
+77	10	30	34	238	-1	//Dark Phoenix	
+77	10	30	34	238	-1	//Dark Phoenix	
+77	10	30	34	238	-1	//Dark Phoenix	
+77	10	30	34	238	-1	//Dark Phoenix	
+77	10	30	34	238	-1	//Dark Phoenix	
+
 end
 
 //=========================================================================================
