@@ -95,6 +95,76 @@
 7270      7       0       *         *         *         *         *         *         *         0          *           *              150               199               1000       //Jewel of Skill
 
 
+//Swamp & LaCleon Drop
+//Index	Level	Grade	Option0	Option1	Option2	Option3	Option4	Option5	Option6	Duration	MapNumber	MonsterClass	MonsterLevelMin	MonsterLevelMax	DropRate	Comment
+26	0	0	0	0	0	0	*	*	3	0	57	*	195	199	500	//Flameberge  
+27	0	0	0	0	0	0	*	*	3	0	56	*	166	186	500	//Sword Breaker 
+28	0	0	0	0	0	0	*	*	3	0	56	*	166	186	500	//Rune Bastard Sword
+																
+1040	0	0	0	0	0	0	*	*	3	0	56	*	158	178	500	//Frost Mace 
+1041	0	0	0	0	0	0	*	*	3	0	56	*	166	186	500	//Absolute Scepter 
+																
+2071	0	0	0	0	0	0	*	*	4	0	56	*	175	195	500	//Dark Stinger Bow
+																
+2590	0	0	0	0	0	0	*	*	3	0	56	*	166	186	500	//Deadly Staff 
+2591	0	0	0	0	0	0	*	*	3	0	56	*	166	186	500	//Inberial Staff 
+2580	0	0	0	0	0	0	*	*	3	0	56	*	175	195	500	//Eternal Wing Stick
+																
+3089	0	0	0	0	0	0	*	*	3	0	57	*	170	190	500	//Crimson Glory 
+3090	0	0	0	0	0	0	*	*	3	0	57	*	170	190	500	//Salamander Shield 
+3091	0	0	0	0	0	0	*	*	3	0	57	*	170	190	500	//Frost Barrier 
+3092	0	0	0	0	0	0	*	*	3	0	57	*	170	190	500	//Guardian Shield 
+3093	0	0	0	0	0	0	*	*	3	0	57	*	170	190	500	//Cross Shield 
+																
+3629	0	0	0	0	0	0	*	*	3	0	57	*	180	199	500	//Titan Helm 
+3630	0	0	0	0	0	0	*	*	3	0	56	*	158	178	500	//Brave Helm 
+3633	0	0	0	0	0	0	*	*	3	0	57	*	180	199	500	//Seraphim Helm 
+3634	0	0	0	0	0	0	*	*	3	0	56	*	158	178	500	//Faith Helm 
+3635	0	0	0	0	0	0	*	*	3	0	56	*	158	178	500	//Royal Mask 
+3636	0	0	0	0	0	0	*	*	3	0	56	*	158	178	500	//Hades Helm 
+3637	0	0	0	0	0	0	*	*	3	0	56	*	158	178	500	//Eternal Wing Helm
+																
+4141	0	0	0	0	0	0	*	*	3	0	57	*	195	199	500	//Titan Armor 
+4142	0	0	0	0	0	0	*	*	3	0	56	*	166	186	500	//Brave Armor 
+4143	0	0	0	0	0	0	*	*	3	0	57	*	195	199	500	//Destroy Armor 
+4144	0	0	0	0	0	0	*	*	3	0	56	*	166	186	500	//Phantom Armor 
+4145	0	0	0	0	0	0	*	*	3	0	57	*	195	199	500	//Seraphim Armor 
+4146	0	0	0	0	0	0	*	*	3	0	56	*	166	186	500	//Faith Armor 
+4147	0	0	0	0	0	0	*	*	3	0	56	*	166	186	500	//Royal Armor 
+4148	0	0	0	0	0	0	*	*	3	0	56	*	166	186	500	//Hades Armor 
+4149	0	0	0	0	0	0	*	*	3	0	56	*	166	186	500	//Eternal Wing Armor
+																
+4653	0	0	0	0	0	0	*	*	3	0	57	*	182	199	500	//Titan Pants 
+4654	0	0	0	0	0	0	*	*	3	0	56	*	158	178	500	//Brave Pants 
+4655	0	0	0	0	0	0	*	*	3	0	57	*	182	199	500	//Destroy Pants 
+4656	0	0	0	0	0	0	*	*	3	0	56	*	158	178	500	//Phantom Pants 
+4657	0	0	0	0	0	0	*	*	3	0	57	*	182	199	500	//Seraphim Pants 
+4658	0	0	0	0	0	0	*	*	3	0	56	*	158	178	500	//Faith Pants 
+4659	0	0	0	0	0	0	*	*	3	0	56	*	158	178	500	//Royal Pants 
+4660	0	0	0	0	0	0	*	*	3	0	56	*	158	178	500	//Hades Pants 
+4661	0	0	0	0	0	0	*	*	3	0	56	*	158	178	500	//Eternal Wing Pants
+																
+5165	0	0	0	0	0	0	*	*	3	0	57	*	170	190	500	//Titan Gloves 
+5166	0	0	0	0	0	0	*	*	3	0	56	*	150	170	500	//Brave Gloves 
+5167	0	0	0	0	0	0	*	*	3	0	57	*	170	190	500	//Destroy Gloves 
+5168	0	0	0	0	0	0	*	*	3	0	56	*	150	170	500	//Phantom Gloves 
+5169	0	0	0	0	0	0	*	*	3	0	57	*	170	190	500	//Seraphim Gloves 
+5170	0	0	0	0	0	0	*	*	3	0	56	*	150	170	500	//Faith Gloves 
+5171	0	0	0	0	0	0	*	*	3	0	56	*	150	170	500	//Royal Gloves 
+5172	0	0	0	0	0	0	*	*	3	0	56	*	150	170	500	//Hades Gloves 
+5173	0	0	0	0	0	0	*	*	3	0	56	*	150	170	500	//Eternal Wing Gloves
+																
+5677	0	0	0	0	0	0	*	*	3	0	57	*	170	190	500	//Titan Boots 
+5678	0	0	0	0	0	0	*	*	3	0	56	*	155	175	500	//Brave Boots 
+5679	0	0	0	0	0	0	*	*	3	0	57	*	170	190	500	//Destroy Boots 
+5680	0	0	0	0	0	0	*	*	3	0	56	*	155	175	500	//Phantom Boots 
+5681	0	0	0	0	0	0	*	*	3	0	57	*	170	190	500	//Seraphim Boots 
+5682	0	0	0	0	0	0	*	*	3	0	56	*	155	175	500	//Faith Boots 
+5683	0	0	0	0	0	0	*	*	3	0	56	*	155	175	500	//Royal Boots 
+5684	0	0	0	0	0	0	*	*	3	0	56	*	155	175	500	//Hades Boots 
+5685	0	0	0	0	0	0	*	*	3	0	56	*	155	175	500	//Eternal Wing Boots
+
+
 //Hell Maine in Aida
 //Index	Level	Grade	Option0	Option1	Option2	Option3	Option4	Option5	Option6	Duration	MapNumber	MonsterClass	MonsterLevelMin	MonsterLevelMax	DropRate	Comment					
 20	0	0	*	12	12	32	*	*	*	0		33		*		122		122		80000	//Knight Blade
@@ -108,6 +178,7 @@
 2573	0	0	*	*	12	32	*	*	*	0		33		*		122		122		80000	//Platina Staff
 2578	0	0	*	*	12	32	*	*	*	0		33		*		122		122		80000	//Demonic Stick
 7270	7	0	*	*	*	*	*	*	*	0		33		*		122		122		200000	//Jewel of Skill
+
 
 //Relics of Kundun in Kalima
 //Index	Level	Grade	Option0	Option1	Option2	Option3	Option4	Option5	Option6	Duration	MapNumber	MonsterClass	MonsterLevelMin	MonsterLevelMax	DropRate	Comment					
