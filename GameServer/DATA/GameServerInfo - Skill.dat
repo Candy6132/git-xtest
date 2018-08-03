@@ -65,18 +65,18 @@ SummonAttackSuccessRateRate = 100
 ;==================================================
 ; Greater Life Skill Settings
 ;==================================================
-GreaterLifeConstA = 40
+GreaterLifeConstA = 35
 GreaterLifeConstB = 50
 GreaterLifeConstC = 50
 GreaterLifeRateDW = 200
-GreaterLifeRateDK = 250
+GreaterLifeRateDK = 230
 GreaterLifeRateFE = 200
 GreaterLifeRateMG = 200
 GreaterLifeRateDL = 200
 GreaterLifeRateSU = 200
 GreaterLifeTimeConstA = 50
 GreaterLifeTimeConstB = 50
-GreaterLifeMaxRate = 200
+GreaterLifeMaxRate = 100
 
 ;==================================================
 ; Fire Slash Skill Settings
