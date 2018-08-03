@@ -58,6 +58,9 @@
 *             *           441            *              *              *              "Monster\Sapi Unus"
 *             *           442            *              *              *              "Monster\Sapi Unus"
 *             *           443            *              *              *              "Monster\Sapi Unus"
+*             *           444            *              *              *              "Monster\Shadow Pawn"
+*             *           445            *              *              *              "Monster\Shadow Pawn"
+*             *           446            *              *              *              "Monster\Shadow Pawn"
 
 *             *           *              0              0              1              "Special\Devil Square 1"
 *             *           *              0              1              1              "Special\Devil Square 2"
