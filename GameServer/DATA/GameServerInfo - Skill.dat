@@ -65,17 +65,17 @@ SummonAttackSuccessRateRate = 100
 ;==================================================
 ; Greater Life Skill Settings
 ;==================================================
-GreaterLifeConstA = 35
-GreaterLifeConstB = 35
-GreaterLifeConstC = 35
-GreaterLifeRateDW = 340
-GreaterLifeRateDK = 340
-GreaterLifeRateFE = 340
-GreaterLifeRateMG = 340
-GreaterLifeRateDL = 340
-GreaterLifeRateSU = 340
-GreaterLifeTimeConstA = 60
-GreaterLifeTimeConstB = 60
+GreaterLifeConstA = 40
+GreaterLifeConstB = 50
+GreaterLifeConstC = 50
+GreaterLifeRateDW = 270
+GreaterLifeRateDK = 270
+GreaterLifeRateFE = 270
+GreaterLifeRateMG = 270
+GreaterLifeRateDL = 270
+GreaterLifeRateSU = 270
+GreaterLifeTimeConstA = 50
+GreaterLifeTimeConstB = 50
 GreaterLifeMaxRate = 100
 
 ;==================================================
