@@ -61,6 +61,9 @@
 *             *           444            *              *              *              "Monster\Shadow Pawn"
 *             *           445            *              *              *              "Monster\Shadow Pawn"
 *             *           446            *              *              *              "Monster\Shadow Pawn"
+*             *           447            *              *              *              "Monster\Thuner Napin"
+*             *           448            *              *              *              "Monster\Thuner Napin"
+*             *           449            *              *              *              "Monster\Blaze Napin"
 
 *             *           *              0              0              1              "Special\Devil Square 1"
 *             *           *              0              1              1              "Special\Devil Square 2"

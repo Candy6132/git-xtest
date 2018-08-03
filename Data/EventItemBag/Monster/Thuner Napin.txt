@@ -5,7 +5,7 @@ end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
-0         *         6000          9000          0             1    1    1    1    1    1	//Zen
+0         *         6000          12000         0             1    1    1    1    1    1	//Zen
 0         5         2260          1000          0             1    1    1    1    1    1	//Sety
 0         6         900           1000          0             1    1    1    1    1    1
 0         7         350           1000          0             1    1    1    1    1    1
@@ -20,18 +20,23 @@ end
 
 5
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
-10,046	0	0	0	0	0	0	*	*	3	0	//Brave Gloves
-11,046	0	0	0	0	0	0	*	*	3	0	//Brave Boots 
-10,048	0	0	0	0	0	0	*	*	3	0	//Phantom Gloves
-11,048	0	0	0	0	0	0	*	*	3	0	//Phantom Boots  
-10,050	0	0	0	0	0	0	*	*	3	0	//Faith Gloves 
-11,050	0	0	0	0	0	0	*	*	3	0	//Faith Boots
-10,051	0	0	0	0	0	0	*	*	3	0	//Royal Gloves
-11,051	0	0	0	0	0	0	*	*	3	0	//Royal Boots 
-10,052	0	0	0	0	0	0	*	*	3	0	//Hades Gloves 
-11,052	0	0	0	0	0	0	*	*	3	0	//Hades Boots 
-10,053	0	0	0	0	0	0	*	*	3	0	//Eternal Wing Gloves
-11,053	0	0	0	0	0	0	*	*	3	0	//Eternal Wing Boots
+02,016	0	0	0	0	0	0	*	*	3	0	//Frost Mace
+00,027	0	0	0	0	0	0	*	*	3	0	//Sword Breaker 
+02,017	0	0	0	0	0	0	*	*	3	0	//Absolute Scepter 
+05,030	0	0	0	0	0	0	*	*	3	0	//Deadly Staff 
+05,031	0	0	0	0	0	0	*	*	3	0	//Inberial Staff 
+
+07,046	0	0	0	0	0	0	*	*	3	0	//Brave Helm 
+09,046	0	0	0	0	0	0	*	*	3	0	//Brave Pants 
+09,048	0	0	0	0	0	0	*	*	3	0	//Phantom Pants 
+07,050	0	0	0	0	0	0	*	*	3	0	//Faith Helm 
+09,050	0	0	0	0	0	0	*	*	3	0	//Faith Pants 
+07,051	0	0	0	0	0	0	*	*	3	0	//Royal Mask 
+09,051	0	0	0	0	0	0	*	*	3	0	//Royal Pants 
+07,052	0	0	0	0	0	0	*	*	3	0	//Hades Helm 
+09,052	0	0	0	0	0	0	*	*	3	0	//Hades Pants 
+07,053	0	0	0	0	0	0	*	*	3	0	//Eternal Wing Helm
+09,053	0	0	0	0	0	0	*	*	3	0	//Eternal Wing Pants
 end
 
 6
@@ -82,11 +87,29 @@ end
 12
 //Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
 10,029	0	0	1	1	1	1	1	*	*	0	//Dragon Knight Gloves
+11,029	0	0	1	1	1	1	1	*	*	0	//Dragon Knight Boots
 10,030	0	0	1	1	1	1	1	*	*	0	//Venom Mist Gloves
+11,030	0	0	1	1	1	1	1	*	*	0	//Venom Mist Boots
 10,031	0	0	1	1	1	1	1	*	*	0	//Sylphid Ray Gloves
+11,031	0	0	1	1	1	1	1	*	*	0	//Sylphid Ray Boots
 10,033	0	0	1	1	1	1	1	*	*	0	//Sunlight Gloves
+11,033	0	0	1	1	1	1	1	*	*	0	//Sunlight Boots
 10,032	0	0	1	1	1	1	1	*	*	0	//Volcano Gloves
+11,032	0	0	1	1	1	1	1	*	*	0	//Volcano Boots
 10,044	0	0	1	1	1	1	1	*	*	0	//Succubus Gloves
+11,044	0	0	1	1	1	1	1	*	*	0	//Succubus Boots
+
+//00,022	0	0	1	1	1	1	1	*	*	0	//Bone Blade 147
+//00,023	0	0	1	1	1	1	1	*	*	0	//Explosion Blade 147
+//03,011	0	0	1	1	1	1	1	*	*	0	//Brova 147
+//05,012	0	0	1	1	1	1	1	*	*	0	//Grand Viper Staff 147
+05,033	0	0	1	1	1	1	1	*	*	0	//Chromatic Staff 140
+//04,021	0	0	1	1	1	1	1	*	*	0	//Sylph Wind Bow 147
+04,024	0	0	1	1	1	1	1	*	*	0	//Aileen Bow 140
+//02,012	0	0	1	1	1	1	1	*	*	0	//Great Lord Scepter 140
+//02,014	0	0	1	1	1	1	1	*	*	0	//Soleil Scepter 147
+//02,018	0	0	1	1	1	1	1	*	*	0	//Striker Scepter 147
+//05,034	0	0	1	1	1	1	1	*	*	0	//Raven Stick 140
 end
 
 13												
