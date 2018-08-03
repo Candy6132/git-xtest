@@ -55,6 +55,9 @@
 *             *           413            *              *              *              "Monster\Lunar Rabbit"
 *             *           459            *              *              *              "Monster\Selupan"
 *             *           463            *              *              *              "Monster\Fire Flame Ghost"
+*             *           441            *              *              *              "Monster\Sapi Unus"
+*             *           442            *              *              *              "Monster\Sapi Unus"
+*             *           443            *              *              *              "Monster\Sapi Unus"
 
 *             *           *              0              0              1              "Special\Devil Square 1"
 *             *           *              0              1              1              "Special\Devil Square 2"
