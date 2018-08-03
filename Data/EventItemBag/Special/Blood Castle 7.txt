@@ -15,8 +15,8 @@ end
 
 5											
 //Index	Level	Grade	Option0	Option1	Option2	Option3	Option4	Option5	Option6	Duration	Comment
-12,031	1	0	*	*	*	*	*	*	*	0	//Jewel of Soul Bundle 10 
-12,030	1	0	*	*	*	*	*	*	*	0	//Jewel of Bless Bundle 10 
+12,031	0	0	*	*	*	*	*	*	*	0	//Jewel of Soul Bundle 10 
+12,030	0	0	*	*	*	*	*	*	*	0	//Jewel of Bless Bundle 10 
 end											
 											
 6											
@@ -25,7 +25,7 @@ end
 end											
 																					
 7																						
-14,053	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly
+14,096	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly
 end
 
 8
