@@ -101,7 +101,7 @@ GuildCreateMinLevel = 100
 GuildInsertMaxUser1 = 40
 GuildInsertMaxUser2 = 80
 GuildAllianceMinUser = 1
-GuildAllianceMaxCount = 5
+GuildAllianceMaxCount = 0
 GuildOwnerDestroyLimit = 1
 
 ;==================================================
