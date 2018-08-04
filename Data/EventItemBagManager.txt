@@ -64,6 +64,11 @@
 *             *           447            *              *              *              "Monster\Thuner Napin"
 *             *           448            *              *              *              "Monster\Thuner Napin"
 *             *           449            *              *              *              "Monster\Blaze Napin"
+*             *           454            *              *              *              "Monster\Ice Walker"
+*             *           455            *              *              *              "Monster\Ice Giant"
+*             *           456            *              *              *              "Monster\Ice Giant"
+*             *           457            *              *              *              "Monster\Coolutin"
+*             *           458            *              *              *              "Monster\Iron Knight"
 
 *             *           *              0              0              1              "Special\Devil Square 1"
 *             *           *              0              1              1              "Special\Devil Square 2"
