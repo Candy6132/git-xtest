@@ -70,14 +70,14 @@ GreaterLifeConstA = 40
 GreaterLifeConstB = 50
 GreaterLifeConstC = 50
 GreaterLifeRateDW = 200
-GreaterLifeRateDK = 250
+GreaterLifeRateDK = 245
 GreaterLifeRateFE = 200
 GreaterLifeRateMG = 200
 GreaterLifeRateDL = 200
 GreaterLifeRateSU = 200
 GreaterLifeTimeConstA = 50
 GreaterLifeTimeConstB = 50
-GreaterLifeMaxRate = 200
+GreaterLifeMaxRate = 130
 
 ;==================================================
 ; Fire Slash Skill Settings
