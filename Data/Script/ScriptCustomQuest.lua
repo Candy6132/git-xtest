@@ -614,9 +614,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 		
 					InventoryDelItemCount(bIndex,7721,-1,1)
 				
-					ItemGive(bIndex,101)
-					
-					--ItemDrop(bIndex,GetObjectMap(bIndex),GetObjectMapX(bIndex),GetObjectMapY(bIndex),101)
+					ItemDrop(bIndex,GetObjectMap(bIndex),GetObjectMapX(bIndex),GetObjectMapY(bIndex),101)
 				
 					ChatTargetSend(aIndex,bIndex,string.format("Good job! We need %d more.",(CustomQuest_PlansGoal-CustomQuest_PlansCount)))
 
