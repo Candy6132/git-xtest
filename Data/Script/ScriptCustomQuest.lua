@@ -14,6 +14,14 @@ ScriptLoader_AddOnCharacterEntry("CustomQuest_OnCharacterEntry")
 
 ScriptLoader_AddOnCharacterClose("CustomQuest_OnCharacterClose")
 
+------------SWAMP EVENT--------------
+
+CustomQuest_PlansCount = 0
+
+CustomQuest_PlansGoal = 200
+
+-----------/SWAMP EVENT--------------
+
 
 
 
@@ -596,23 +604,37 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 	
 			return 1
 		
-		--WRZUCIĆ BLOKADĘ WYSKAKUJĄCEGO OKNA DLA ELF SOLIDER (IsNPCShadowPhantomSoldier)
+		elseif GetObjectClass(aIndex) == 406 then
 		
-		--local local ElfBufferMaxLevel_AL0 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxLevel_AL0","..\\Data\\Script\\Data\\CustomQuest.ini")
-	
-		--local ElfBufferMaxLevel_AL1 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxLevel_AL1","..\\Data\\Script\\Data\\CustomQuest.ini")
-	
-		--local ElfBufferMaxLevel_AL2 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxLevel_AL2","..\\Data\\Script\\Data\\CustomQuest.ini")
-	
-		--local ElfBufferMaxLevel_AL3 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxLevel_AL3","..\\Data\\Script\\Data\\CustomQuest.ini")
-	
-		--local ElfBufferMaxReset_AL0 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxReset_AL0","..\\Data\\Script\\Data\\CustomQuest.ini")
-	
-		--local ElfBufferMaxReset_AL1 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxReset_AL1","..\\Data\\Script\\Data\\CustomQuest.ini")
-	
-		--local ElfBufferMaxReset_AL2 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxReset_AL2","..\\Data\\Script\\Data\\CustomQuest.ini")
-	
-		--local ElfBufferMaxReset_AL3 = ConfigReadNumber("CustomQuestInfo","ElfBufferMaxReset_AL3","..\\Data\\Script\\Data\\CustomQuest.ini")
+			------------SWAMP EVENT--------------
+		
+			if InventoryGetItemCount(bIndex,7721,-1) > 0 then
+			
+				if CustomQuest_PlansGoal > CustomQuest_PlansCount then
+		
+					InventoryDelItemCount(bIndex,7721,-1,1)
+				
+					ItemDrop(bIndex,GetObjectMap(bIndex),GetObjectMapX(bIndex),GetObjectMapY(bIndex),101)
+				
+					ChatTargetSend(aIndex,bIndex,string.format("Good job! We need %d more.",(CustomQuest_PlansGoal-CustomQuest_PlansCount)))
+
+					return 1
+				
+				end
+			
+			else
+			
+			-----------/SWAMP EVENT--------------
+			
+				if GetObjectReset(bIndex) < 20 then
+				
+					ChatTargetSend(aIndex,bIndex,"You need at least 20 resets to start my task.")
+				
+					return 1
+				
+				end
+		
+			end --SWAMP EVENT
 		
 		end
 		

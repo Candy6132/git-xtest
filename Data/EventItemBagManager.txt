@@ -145,4 +145,5 @@
 *             *           *              40             0              *              "Special\Quest Excellent Stone"
 
 *             *           *              100            0              *              "Special\Fire Festival Boss"
+*             *           *              101            0              *              "Special\Kundun Plans Reward"
 end

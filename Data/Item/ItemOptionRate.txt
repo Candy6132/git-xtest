@@ -52,6 +52,11 @@
 54        7000    0       0       0       0       0       0       1000    1000    1000    0        0        0        0        0        0        //Level Option (Kundun Ancient Drop) (0~9)
 55        0       0       0       0       0       0       0       3334    3333    3333    0        0        0        0        0        0        //Level Option (Lord Mix) (7~9)
 56        2000    2000    2000    2000    2000    0       0       0       0       0       0        0        0        0        0        0        //Level Option (Fruits) (0~4)
+
+60        2500    2500    2500    2500    0       0       0       0       0       0       0        0        0        0        0        0        //Level Option (Seed Fire and Earth) (0~3)
+61        2000    2000    2000    2000    2000    0       0       0       0       0       0        0        0        0        0        0        //Level Option (Seed Water) (0~4)
+62        3334    3333    3333    0       0       0       0       0       0       0       0        0        0        0        0        0        //Level Option (Seed Ice) (0~2)
+63        1667    1667    1667    1667    1666    1666    0       0       0       0       0        0        0        0        0        0        //Level Option (Seed Wind and Lightning) (0~5)
 end
 
 1
