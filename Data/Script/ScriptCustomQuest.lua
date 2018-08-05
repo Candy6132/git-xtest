@@ -618,7 +618,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 				
 					ChatTargetSend(aIndex,bIndex,string.format("Good job! We need %d more.",(CustomQuest_PlansGoal-CustomQuest_PlansCount)))
 
-					return 0
+					return 1
 				
 				end
 			
@@ -630,7 +630,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 				
 					ChatTargetSend(aIndex,bIndex,"You need at least 20 resets to start my task.")
 				
-					return 0
+					return 1
 				
 				end
 		
