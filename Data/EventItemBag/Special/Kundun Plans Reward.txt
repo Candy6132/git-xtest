@@ -1,22 +1,16 @@
 3
 //Index   DropRate
 0         10000
-1         2000
 end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
 0         *         2000          5000000       0             1    1    1    1    1    1
-0         5         2000          1             0             1    1    1    1    1    1
-0         6         2500          1             0             1    1    1    1    1    1
-0         7         2500          1             0             1    1    1    1    1    1
-0         8         1000          1             0             1    1    1    1    1    1
-1         9         10000         1             0             0    1    0    0    0    0
-1         10        10000         1             0             1    0    0    0    0    0
-1         11        10000         1             0             0    0    1    0    0    0
-1         12        10000         1             0             0    0    0    0    0    1
-1         13        10000         1             0             0    0    0    1    0    0
-1         14        10000         1             0             0    0    0    0    1    0
+0         5         2500          1             0             1    1    1    1    1    1
+0         6         1000          1             0             1    1    1    1    1    1
+0         7         2000          1             0             1    1    1    1    1    1
+0         8         2000          1             0             1    1    1    1    1    1
+0         9         500           1             0             1    1    1    1    1    1
 end
 
 
@@ -29,76 +23,21 @@ end
 12,064	0	0	63	*	*	*	*	*	*	0	//Lightning Seed
 12,065	0	0	60	*	*	*	*	*	*	0	//Earth Seed
 end											
+
+6
+12,030	0	0	*	*	*	*	*	*	*	0	//Bundle Jewel of Bless 10
+12,031	0	0	*	*	*	*	*	*	*	0	//Bundle Jewel of Soul 10
+end
 											
-6											
+7											
 12,070	0	0	*	*	*	*	*	*	*	0	//Chipped Sphere
 end											
 											
-7											
+8											
 12,071	0	0	*	*	*	*	*	*	*	0	//Flawed Sphere
-14,053	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly
+14,096	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly
 end											
 											
-8											
+9											
 12,072	0	0	*	*	*	*	*	*	*	0	//Natural Sphere
-14,053	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly
-end
-
-//BK
-9
-07,029	0	0	*	*	13	*	*	*	12	0	//Dragon Knight Helm
-08,029	0	0	*	*	13	*	*	*	12	0	//Dragon Knight Armor
-09,029	0	0	*	*	13	*	*	*	12	0	//Dragon Knight Pants
-10,029	0	0	*	*	13	*	*	*	12	0	//Dragon Knight Gloves
-11,029	0	0	*	*	13	*	*	*	12	0	//Dragon Knight Boots
-00,022	0	0	*	12	13	*	*	*	12	0	//Bone Blade
-end
-
-//SM
-10
-07,030	0	0	*	*	13	*	*	*	12	0	//Venom Mist Helm
-08,030	0	0	*	*	13	*	*	*	12	0	//Venom Mist Armor
-09,030	0	0	*	*	13	*	*	*	12	0	//Venom Mist Pants
-10,030	0	0	*	*	13	*	*	*	12	0	//Venom Mist Gloves
-11,030	0	0	*	*	13	*	*	*	12	0	//Venom Mist Boots
-05,012	0	0	*	*	13	*	*	*	12	0	//Grand Viper Staff
-end
-
-//ME
-11
-07,031	0	0	*	*	13	*	*	*	12	0	//Sylphid Ray Helm
-08,031	0	0	*	*	13	*	*	*	12	0	//Sylphid Ray Armor
-09,031	0	0	*	*	13	*	*	*	12	0	//Sylphid Ray Pants
-10,031	0	0	*	*	13	*	*	*	12	0	//Sylphid Ray Gloves
-11,031	0	0	*	*	13	*	*	*	12	0	//Sylphid Ray Boots
-04,021	0	0	*	12	13	*	*	*	12	0	//Sylph Wind Bow
-end
-
-//SU
-12
-07,044	0	0	*	*	13	*	*	*	12	0	//Succubus Helm
-08,044	0	0	*	*	13	*	*	*	12	0	//Succubus Armor
-09,044	0	0	*	*	13	*	*	*	12	0	//Succubus Pants
-10,044	0	0	*	*	13	*	*	*	12	0	//Succubus Gloves
-11,044	0	0	*	*	13	*	*	*	12	0	//Succubus Boots
-05,034	0	0	*	*	13	*	*	*	12	0	//Raven Stick
-end
-
-//MG
-13
-08,032	0	0	*	*	13	*	*	*	12	0	//Volcano Armor
-09,032	0	0	*	*	13	*	*	*	12	0	//Volcano Pants
-10,032	0	0	*	*	13	*	*	*	12	0	//Volcano Gloves
-11,032	0	0	*	*	13	*	*	*	12	0	//Volcano Boots
-00,023	0	0	*	12	13	*	*	*	12	0	//Explosion Blade
-end
-
-//DL
-14
-07,033	0	0	*	*	13	*	*	*	12	0	//Sunlight Helm
-08,033	0	0	*	*	13	*	*	*	12	0	//Sunlight Armor
-09,033	0	0	*	*	13	*	*	*	12	0	//Sunlight Pants
-10,033	0	0	*	*	13	*	*	*	12	0	//Sunlight Gloves
-11,033	0	0	*	*	13	*	*	*	12	0	//Sunlight Boots
-02,014	0	0	*	12	13	*	*	*	12	0	//Soleil Scepter
 end
