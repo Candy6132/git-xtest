@@ -187,19 +187,23 @@ function CustomQuest_OnCharacterEntry(aIndex)
 		local CharacterName = GetObjectName(aIndex)
 	
 		if CustomQuest_AddCharToTable(aIndex) == 1 then
-
-			NoticeSend(aIndex,1,CustomQuest_GetQuestMessage(aIndex,CharacterName))
-			
+		
 			local TableIndex = GetIndexFromTable(CharacterName)
 
 			local PartialQuestStatus = CustomQuest_QuestStatusTable[TableIndex].QuestStatus % 2
 			
 			local MainQuestStatus = (CustomQuest_QuestStatusTable[TableIndex].QuestStatus - PartialQuestStatus) / 2
 			
-			if PartialQuestStatus == 1 then
+			if MainQuestStatus <= #CustomQuest_QuestList-1 then
 			
-				NoticeSend(aIndex,1,string.format("'%s'",MessageGet(CustomQuest_QuestList[MainQuestStatus+1].QuestStartMessage,GetObjectLang(aIndex))))
+				NoticeSend(aIndex,1,CustomQuest_GetQuestMessage(aIndex,CharacterName))
 			
+				if PartialQuestStatus == 1 then
+			
+					NoticeSend(aIndex,1,string.format("'%s'",MessageGet(CustomQuest_QuestList[MainQuestStatus+1].QuestStartMessage,GetObjectLang(aIndex))))
+			
+				end
+
 			end
 			
 		else
@@ -868,18 +872,26 @@ function CustomQuest_QuestInfoCommand(aIndex)
 		local CharacterName = GetObjectName(aIndex)
 
 		if CustomQuest_AddCharToTable(aIndex) == 1 then
-
-			NoticeSend(aIndex,1,CustomQuest_GetQuestMessage(aIndex,CharacterName))
-			
+	
 			local TableIndex = GetIndexFromTable(CharacterName)
 
 			local PartialQuestStatus = CustomQuest_QuestStatusTable[TableIndex].QuestStatus % 2
 			
 			local MainQuestStatus = (CustomQuest_QuestStatusTable[TableIndex].QuestStatus - PartialQuestStatus) / 2
 			
-			if PartialQuestStatus == 1 then
+			if MainQuestStatus <= #CustomQuest_QuestList-1 then
 			
-				NoticeSend(aIndex,1,string.format("'%s'",MessageGet(CustomQuest_QuestList[MainQuestStatus+1].QuestStartMessage,GetObjectLang(aIndex))))
+				NoticeSend(aIndex,1,CustomQuest_GetQuestMessage(aIndex,CharacterName))
+			
+				if PartialQuestStatus == 1 then
+			
+					NoticeSend(aIndex,1,string.format("'%s'",MessageGet(CustomQuest_QuestList[MainQuestStatus+1].QuestStartMessage,GetObjectLang(aIndex))))
+			
+				end
+				
+			else
+			
+				NoticeSend(aIndex,1,"You have finished all quests. Congratulations!")
 			
 			end
 			
