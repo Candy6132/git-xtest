@@ -230,22 +230,22 @@ ShieldPotionMixRate3_AL3 = 30
 ;==================================================
 ; Jewel of Harmony Item Purity Mix Settings
 ;==================================================
-JewelOfHarmonyItemPurityMixRate_AL0 = 50
-JewelOfHarmonyItemPurityMixRate_AL1 = 50
-JewelOfHarmonyItemPurityMixRate_AL2 = 50
-JewelOfHarmonyItemPurityMixRate_AL3 = 50
+JewelOfHarmonyItemPurityMixRate_AL0 = 80
+JewelOfHarmonyItemPurityMixRate_AL1 = 80
+JewelOfHarmonyItemPurityMixRate_AL2 = 80
+JewelOfHarmonyItemPurityMixRate_AL3 = 80
 
 ;==================================================
 ; Jewel of Harmony Item Smelt Mix Settings
 ;==================================================
-JewelOfHarmonyItemSmeltMixRate1_AL0 = 80
-JewelOfHarmonyItemSmeltMixRate1_AL1 = 80
-JewelOfHarmonyItemSmeltMixRate1_AL2 = 80
-JewelOfHarmonyItemSmeltMixRate1_AL3 = 80
-JewelOfHarmonyItemSmeltMixRate2_AL0 = 80
-JewelOfHarmonyItemSmeltMixRate2_AL1 = 80
-JewelOfHarmonyItemSmeltMixRate2_AL2 = 80
-JewelOfHarmonyItemSmeltMixRate2_AL3 = 80
+JewelOfHarmonyItemSmeltMixRate1_AL0 = 50
+JewelOfHarmonyItemSmeltMixRate1_AL1 = 50
+JewelOfHarmonyItemSmeltMixRate1_AL2 = 50
+JewelOfHarmonyItemSmeltMixRate1_AL3 = 50
+JewelOfHarmonyItemSmeltMixRate2_AL0 = 50
+JewelOfHarmonyItemSmeltMixRate2_AL1 = 50
+JewelOfHarmonyItemSmeltMixRate2_AL2 = 50
+JewelOfHarmonyItemSmeltMixRate2_AL3 = 50
 
 ;==================================================
 ; Jewel of Harmony Item Restore Mix Settings
