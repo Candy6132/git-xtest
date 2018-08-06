@@ -7,9 +7,9 @@ end
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
 0         *         2000          5000000       0             1    1    1    1    1    1
-0         5         2000          1             0             1    1    1    1    1    1
-0         6         2500          1             0             1    1    1    1    1    1
-0         7         2500          1             0             1    1    1    1    1    1
+0         5         3000          1             0             1    1    1    1    1    1
+0         6         2000          1             0             1    1    1    1    1    1
+0         7         1000          1             0             1    1    1    1    1    1
 0         8         1000          1             0             1    1    1    1    1    1
 1         9         10000         1             0             0    1    0    0    0    0
 1         10        10000         1             0             1    0    0    0    0    0
@@ -36,12 +36,11 @@ end
 											
 7											
 12,071	0	0	*	*	*	*	*	*	*	0	//Flawed Sphere
-14,053	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly
 end											
 											
 8											
 12,072	0	0	*	*	*	*	*	*	*	0	//Natural Sphere
-14,053	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly
+14,096	0	0	*	*	*	*	*	*	*	0	//Talisman of Chaos Assembly
 end
 
 //BK
