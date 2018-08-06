@@ -60,4 +60,41 @@
 5683     3
 5684     3
 5685     3
+
+//380-ki S2 z eventu:
+3613	1	//Dragon Knight Helm
+4125	1	//Dragon Knight Armor
+4637	1	//Dragon Knight Pants
+5149	1	//Dragon Knight Gloves
+5661	1	//Dragon Knight Boots
+3614	1	//Venom Mist Helm
+4126	1	//Venom Mist Armor
+4638	1	//Venom Mist Pants
+5150	1	//Venom Mist Gloves
+5662	1	//Venom Mist Boots
+3615	1	//Sylphid Ray Helm
+4127	1	//Sylphid Ray Armor
+4639	1	//Sylphid Ray Pants
+5151	1	//Sylphid Ray Gloves
+5663	1	//Sylphid Ray Boots
+3617	1	//Sunlight Helm
+4129	1	//Sunlight Armor
+4641	1	//Sunlight Pants
+5153	1	//Sunlight Gloves
+5665	1	//Sunlight Boots
+4128	1	//Volcano Armor
+4640	1	//Volcano Pants
+5152	1	//Volcano Gloves
+5664	1	//Volcano Boots
+3628	1	//Succubus Helm
+4140	1	//Succubus Armor
+4652	1	//Succubus Pants
+5164	1	//Succubus Gloves
+5676	1	//Succubus Boots
+22	1	//Bone Blade
+23	1	//Explosion Blade
+2572	1	//Grand Viper Staff
+2069	1	//Sylph Wind Bow
+1038	1	//Soleil Scepter
+2594	1	//Raven Stick
 end
