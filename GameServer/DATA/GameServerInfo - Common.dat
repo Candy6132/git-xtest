@@ -161,8 +161,8 @@ MoneyAmountDropRate_AL3 = 3
 ;==================================================
 ; Item Durability Settings
 ;==================================================
-WeaponDurabilityRate = 150
-ArmorDurabilityRate = 150
+WeaponDurabilityRate = 450
+ArmorDurabilityRate = 450
 WingDurabilityRate = 120
 GuardianDurabilityRate = 200
 PendantDurabilityRate = 100
