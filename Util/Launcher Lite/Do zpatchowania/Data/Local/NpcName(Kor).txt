@@ -112,7 +112,7 @@
  82 1 "Golden Tantalos"
  81 1 "Golden Vepar"
  80 1 "Golden Lizard King"
- 79 1 "Golden Derkon"
+ 79 1 "Golden Dragon"
  78 1 "Golden Goblin"
 
  77 1 "Phoenix of Darkness"
