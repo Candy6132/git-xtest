@@ -18,7 +18,7 @@ ScriptLoader_AddOnCharacterClose("CustomQuest_OnCharacterClose")
 
 CustomQuest_PlansCount = 0
 
-CustomQuest_PlansGoal = 200
+CustomQuest_PlansGoal = 400
 
 -----------/SWAMP EVENT--------------
 
@@ -197,10 +197,12 @@ function CustomQuest_OnCharacterEntry(aIndex)
 			if MainQuestStatus <= #CustomQuest_QuestList-1 then
 			
 				NoticeSend(aIndex,1,CustomQuest_GetQuestMessage(aIndex,CharacterName))
+				
+				local QuestMessageNumber = CustomQuest_QuestList[MainQuestStatus+1].QuestStartMessage
 			
-				if PartialQuestStatus == 1 then
+				if PartialQuestStatus == 1 and QuestMessageNumber ~= nil then
 			
-					NoticeSend(aIndex,1,string.format("'%s'",MessageGet(CustomQuest_QuestList[MainQuestStatus+1].QuestStartMessage,GetObjectLang(aIndex))))
+					NoticeSend(aIndex,1,string.format("'%s'",MessageGet(QuestMessageNumber,GetObjectLang(aIndex))))
 			
 				end
 
@@ -626,19 +628,9 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 				
 				end
 			
-			else
+			end
 			
 			-----------/SWAMP EVENT--------------
-			
-				if GetObjectReset(bIndex) < 20 then
-				
-					ChatTargetSend(aIndex,bIndex,"You need at least 20 resets to start my task.")
-				
-					return 1
-				
-				end
-		
-			end --SWAMP EVENT
 		
 		end
 		
