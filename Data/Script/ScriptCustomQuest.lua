@@ -18,7 +18,7 @@ ScriptLoader_AddOnCharacterClose("CustomQuest_OnCharacterClose")
 
 CustomQuest_PlansCount = 0
 
-CustomQuest_PlansGoal = 200
+CustomQuest_PlansGoal = 400
 
 -----------/SWAMP EVENT--------------
 
@@ -166,6 +166,38 @@ function CustomQuest_OnReadScript()
 		end
 
 	end
+	
+	------------SWAMP EVENT--------------
+	
+	if SQLQuery(string.format("SELECT * FROM Character WHERE Name='%s'","SwampEvent")) == 0 or SQLFetch() == 0 then
+
+		SQLClose()
+			
+		if SQLCheck() == 0 then
+			
+			local SQL_ODBC = "MuOnline"
+
+			local SQL_USER = ""
+
+			local SQL_PASS = ""
+
+			SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+			
+		end
+			
+		LogPrint("CustomQuestScript: Failed to read CustomQuest as Swamp Event")
+
+		LogColor(1,"CustomQuestScript: Failed to read CustomQuest as Swamp Event")
+
+	else
+
+		CustomQuest_PlansCount = tonumber(SQLGetNumber("CustomQuest"))
+
+		SQLClose()
+
+	end
+
+	-----------/SWAMP EVENT--------------
 
 	math.randomseed(os.time())
 
@@ -197,10 +229,12 @@ function CustomQuest_OnCharacterEntry(aIndex)
 			if MainQuestStatus <= #CustomQuest_QuestList-1 then
 			
 				NoticeSend(aIndex,1,CustomQuest_GetQuestMessage(aIndex,CharacterName))
+				
+				local QuestMessageNumber = CustomQuest_QuestList[MainQuestStatus+1].QuestStartMessage
 			
-				if PartialQuestStatus == 1 then
+				if PartialQuestStatus == 1 and QuestMessageNumber ~= nil then
 			
-					NoticeSend(aIndex,1,string.format("'%s'",MessageGet(CustomQuest_QuestList[MainQuestStatus+1].QuestStartMessage,GetObjectLang(aIndex))))
+					NoticeSend(aIndex,1,string.format("'%s'",MessageGet(QuestMessageNumber,GetObjectLang(aIndex))))
 			
 				end
 
@@ -215,6 +249,14 @@ function CustomQuest_OnCharacterEntry(aIndex)
 			NoticeSend(aIndex,1,"Your quests are currently unavailable. Please contact the administrator.")
 			
 		end
+		
+		------------SWAMP EVENT--------------
+		
+		NoticeSend(aIndex,0,"Help Librarian to find the secret location of new Kundun forces!")
+		
+		NoticeSend(aIndex,0,string.format("%d/%d Kundun Orders collected",CustomQuest_PlansCount,CustomQuest_PlansGoal))
+		
+		-----------/SWAMP EVENT--------------
 	
 	end
 
@@ -608,7 +650,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 	
 			return 1
 		
-		elseif GetObjectClass(aIndex) == 406 then
+		elseif GetObjectClass(aIndex) == 239 then
 		
 			------------SWAMP EVENT--------------
 		
@@ -619,26 +661,46 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 					InventoryDelItemCount(bIndex,7721,-1,1)
 				
 					ItemDrop(bIndex,GetObjectMap(bIndex),GetObjectMapX(bIndex),GetObjectMapY(bIndex),101)
-				
-					ChatTargetSend(aIndex,bIndex,string.format("Good job! We need %d more.",(CustomQuest_PlansGoal-CustomQuest_PlansCount)))
+					
+					CustomQuest_PlansCount = CustomQuest_PlansCount+1
+					
+					if SQLQuery(string.format("UPDATE Character SET CustomQuest=%d WHERE Name='%s'",CustomQuest_PlansCount,"SwampEvent")) == 0 then
+								
+						if SQLCheck() == 0 then
+			
+							local SQL_ODBC = "MuOnline"
+
+							local SQL_USER = ""
+
+							local SQL_PASS = ""
+
+							SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+			
+						end
+								
+						LogPrint("CustomQuestScript: Failed to save Custom Quest for Swamp Event")
+
+						LogColor(1,"CustomQuestScript: Failed to save Custom Quest for Swamp Event")
+								
+					end
+
+					SQLClose()
+					
+					local PlansLeft = CustomQuest_PlansGoal-CustomQuest_PlansCount
+
+					ChatTargetSend(aIndex,bIndex,string.format("Good job! We need %d more.",PlansLeft))
+
+					local MessageText = string.format("%s returned Kundun Orders. %d Orders left to collect.",GetObjectName(bIndex),PlansLeft)
+
+					NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
 
 					return 1
 				
 				end
 			
-			else
+			end
 			
 			-----------/SWAMP EVENT--------------
-			
-				if GetObjectReset(bIndex) < 20 then
-				
-					ChatTargetSend(aIndex,bIndex,"You need at least 20 resets to start my task.")
-				
-					return 1
-				
-				end
-		
-			end --SWAMP EVENT
 		
 		end
 		

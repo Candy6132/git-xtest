@@ -178,6 +178,7 @@ end
 209            34             00         117            027            02             //Wolf Altar 5
 407            34             00         062            239            01             //Werewolf Quarel
 248            34             00         099            040            02             //Wandering Merchant Martin
+//406            34             00         228            048            01             //Apostle Devin - do dodania
 371            34             00         227            48             01             //Leo the Helper
 end
 
@@ -203,7 +204,7 @@ end
 
 0
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
-406            41             00         027            085            01             //Apostle Devin
+//406            41             00         027            085            01             //Apostle Devin
 408            41             00         119            168            02             //Gatekeeper
 end
 
@@ -270,6 +271,13 @@ end
 453            51             00         050            243            01             //Seed Researcher
 371            51             00         66             215            03             //Leo the Helper
 371            51             00         54             164            01             //Leo the Helper
+end
+
+0
+//Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
+240            56             00         133            113            02             //Safety Guardian
+406            56             00         138            113            01             //Apostle Devin
+415            56             00         133            105            03             //Silvia
 end
 
 0
@@ -3099,8 +3107,6 @@ end
 315	34	30	92	219	-1	//Werewolf Hero
 315	34	30	100	182	-1	//Werewolf Hero
 315	34	30	102	171	-1	//Werewolf Hero
-315	34	30	103	169	-1	//Werewolf Hero
-315	34	30	99	170	-1	//Werewolf Hero
 315	34	30	115	204	-1	//Werewolf Hero
 315	34	30	117	193	-1	//Werewolf Hero
 315	34	30	133	195	-1	//Werewolf Hero
@@ -3134,8 +3140,7 @@ end
 317	34	30	65	234	-1	//Solam
 317	34	30	96	164	-1	//Solam
 317	34	30	114	164	-1	//Solam
-317	34	30	114	167	-1	//Solam
-317	34	30	113	170	-1	//Solam
+317	34	30	116	172	-1	//Solam
 317	34	30	140	230	-1	//Solam
 317	34	30	145	174	-1	//Solam
 317	34	30	147	164	-1	//Solam
@@ -3749,8 +3754,7 @@ end
 
 1
 //Mob	Map	Radio	CordX	CordY	CordX2	CordY2	Dir 	Quant  Name
-441	56	5	219	212	225	218	-1	20	//Sapi-Unus - na testy
-//441	56	5	219	212	225	218	-1	3	//Sapi-Unus
+441	56	5	219	212	225	218	-1	3	//Sapi-Unus
 end
 2
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
