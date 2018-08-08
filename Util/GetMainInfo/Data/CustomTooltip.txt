@@ -11,6 +11,7 @@
 7280	3
 7281	3
 7734	3
+7721	3
 end
 
 1
@@ -132,7 +133,7 @@ end
 7720	0	0	"Return this key to Leo"
 7720	0	1	"quest item"
 7721	0	0	"These are orders vital for Mu Land strategy"
-7721	0	0	"Return them to Devin as quickly as possible!"
+7721	0	0	"Return them to Librarian as quickly as possible!"
 7721	0	1	"quest item"
 6274	0	0	"Chaos Weapon is a very powerful piece of equipment."
 6274	0	0	"You can create it in Chaos Machine, using as follows:"
@@ -384,7 +385,7 @@ end
 7720	0	0	"Return this key to Leo"
 7720	0	1	"quest item"
 7721	0	0	"These are orders vital for Mu Land strategy"
-7721	0	0	"Return them to Devin as quickly as possible!"
+7721	0	0	"Return them to Librarian as quickly as possible!"
 7721	0	1	"quest item"
 6274	0	0	"Chaos Weapon is a very powerful piece of equipment."
 6274	0	0	"You can create it in Chaos Machine, using as follows:"
@@ -636,7 +637,7 @@ end
 7720	0	0	"Return this key to Leo"
 7720	0	1	"quest item"
 7721	0	0	"These are orders vital for Mu Land strategy"
-7721	0	0	"Return them to Devin as quickly as possible!"
+7721	0	0	"Return them to Librarian as quickly as possible!"
 7721	0	1	"quest item"
 6274	0	0	"Chaos Weapon is a very powerful piece of equipment."
 6274	0	0	"You can create it in Chaos Machine, using as follows:"
