@@ -355,10 +355,10 @@
 348 1 "Tanker"
 349 1 "Balgass"  //MVP º¸½º
 
-// Å©¶óÀÌ¿ïÇÁ ¿ä»õ ¸Ê »óÀÎ _ 8¿ù 8ÀÏ ( ¿À½Â¾ð ) : Å©¶óÀÌ¿ïÇÁ ¿ä»õ Á¶•Ã»ç ¹× ¼¼¸£ºñ½º ¸÷ ¹øÈ£ ¼öÁ¤
+// Å©¶óÀÌ¿ïÇÁ ¿ä»õ ¸Ê »óÀÎ _ 8¿ù 8ÀÏ ( ¿À½Â¾ð ) : Å©¶óÀÌ¿ïÇÁ ¿ä»õ Á¶•Ã»?¹× ¼¼¸£ºñ½º ¸÷ ¹øÈ£ ¼öÁ¤
 //CryWolf Fortress Map Merchant - 8/8 (Seung Un Oh) : Crywolf Fortress Trainer and Serevis Map number revision
 
-// ¾Æ•¡ 2 NPC´Â ÃßÈÄ Ãß°¡
+// ¾Æ•?2 NPC´Â ÃßÈÄ Ãß°¡
 // Below 2 NPC will be added later
 
 //344 1 "Summoner" // registring after pet system                   
@@ -446,14 +446,14 @@
 404 1 "MU Allies"                         
 405 1 "Illusion Sorcerer"                         
                            
-// 3rd Change Up                                                      
-406 1 "Apostle Devin"                         
-407 1 "Werewolf Quarter"                         
-408 1 "Gatekeeper"                         
-409 1 "Balam (Trainee Soldier)"                                                  
-410 1 "Death Spirit (Trainee Soldier)"                                                 
-411 1 "Soram (Trainee Soldier)"                          
-412 1 "Dark Elf (Trainee Soldier)"                         
+// 3rd Job Change (Change-up)
+406 1 "Priest Devin"
+407 1 "Werewolf Quarrel"
+408 1 "Gatekeeper"
+409 1 "Balram(Hero)"
+410 1 "Death Spirit(Hero)"
+411 1 "Soram(Hero)"
+412 1 "Dark Elf(Hero)"                       
                            
                            
 // Thanksgiving Day Event (2007)                                                     
