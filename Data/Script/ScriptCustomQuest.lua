@@ -252,7 +252,7 @@ function CustomQuest_OnCharacterEntry(aIndex)
 		
 		------------SWAMP EVENT--------------
 		
-		NoticeSend(aIndex,0,"Help Librarian to find new secret location of new Kundun forces!")
+		NoticeSend(aIndex,0,"Help Librarian to find the secret location of new Kundun forces!")
 		
 		NoticeSend(aIndex,0,string.format("%d/%d Kundun Orders collected",CustomQuest_PlansCount,CustomQuest_PlansGoal))
 		
