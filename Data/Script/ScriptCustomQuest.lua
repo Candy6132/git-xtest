@@ -16,6 +16,14 @@ ScriptLoader_AddOnCharacterClose("CustomQuest_OnCharacterClose")
 
 ------------SWAMP EVENT--------------
 
+ScriptLoader_AddOnTimerThread("CustomQuest_OnTimerThread")
+
+CustomQuest_AnnounceTimer = 0
+
+CustomQuest_GeneralTimer = 60
+
+CustomQuest_AnnouncePlayer = ""
+
 CustomQuest_PlansCount = 0
 
 CustomQuest_PlansGoal = 400
@@ -169,47 +177,13 @@ function CustomQuest_OnReadScript()
 	
 	------------SWAMP EVENT--------------
 	
-	if SQLQuery(string.format("SELECT * FROM Character WHERE Name='%s'","SwampEvent")) == 0 or SQLFetch() == 0 then
-
-		SQLClose()
-			
-		if SQLCheck() == 0 then
-			
-			local SQL_ODBC = "MuOnline"
-
-			local SQL_USER = ""
-
-			local SQL_PASS = ""
-
-			SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
-			
-		end
-			
-		LogPrint("CustomQuestScript: Failed to read CustomQuest as Swamp Event")
-
-		LogColor(1,"CustomQuestScript: Failed to read CustomQuest as Swamp Event")
-
-	else
-
-		CustomQuest_PlansCount = tonumber(SQLGetNumber("CustomQuest"))
-
-		SQLClose()
-
-	end
+	CustomQuest_GetSwampStatus()
 
 	-----------/SWAMP EVENT--------------
 
 	math.randomseed(os.time())
 
 end
-
-
-
-
-
-
-
-
 
 
 function CustomQuest_OnCharacterEntry(aIndex)
@@ -264,12 +238,6 @@ end
 
 
 
-
-
-
-
-
-
 function CustomQuest_OnCharacterClose(aIndex)
 
 	if CustomQuest_SystemSwitch == 1 then
@@ -279,12 +247,6 @@ function CustomQuest_OnCharacterClose(aIndex)
 	end
 
 end
-
-
-
-
-
-
 
 
 
@@ -685,15 +647,13 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 					end
 
 					SQLClose()
+
+					ChatTargetSend(aIndex,bIndex,string.format("Good job! We need %d more.",CustomQuest_PlansGoal-CustomQuest_PlansCount))
+
+					CustomQuest_AnnouncePlayer = GetObjectName(bIndex)
 					
-					local PlansLeft = CustomQuest_PlansGoal-CustomQuest_PlansCount
-
-					ChatTargetSend(aIndex,bIndex,string.format("Good job! We need %d more.",PlansLeft))
-
-					local MessageText = string.format("%s returned Kundun Orders. %d Orders left to collect.",GetObjectName(bIndex),PlansLeft)
-
-					NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
-
+					CustomQuest_AnnounceTimer = 5
+					
 					return 1
 				
 				end
@@ -709,12 +669,6 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 	return 0
 
 end
-
-
-
-
-
-
 
 
 
@@ -747,11 +701,6 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 	end
 
 end
-
-
-
-
-
 
 
 
@@ -793,9 +742,78 @@ function CustomQuest_OnCommandManager(aIndex,code,arg)
 end
 
 
+------------SWAMP EVENT--------------
+
+function CustomQuest_OnTimerThread()
+
+	if CustomQuest_SystemSwitch == 1 then
+	
+		if CustomQuest_AnnounceTimer > 0 then
+		
+			if CustomQuest_AnnounceTimer == 1 then
+
+				local MessageText = string.format("%s returned Kundun Orders. %d Orders left to collect.",CustomQuest_AnnouncePlayer,CustomQuest_PlansGoal-CustomQuest_PlansCount)
+
+				NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
+			
+			end
+			
+			CustomQuest_AnnounceTimer = CustomQuest_AnnounceTimer-1
+		
+		end
+		
+		if CustomQuest_GeneralTimer > 0 then
+		
+			CustomQuest_GeneralTimer = CustomQuest_GeneralTimer-1
+		
+		else
+		
+			CustomQuest_GeneralTimer = 60
+			
+			CustomQuest_GetSwampStatus()
+			
+		end
+	
+	end
+
+end
 
 
 
+
+function CustomQuest_GetSwampStatus()
+
+	if SQLQuery(string.format("SELECT * FROM Character WHERE Name='%s'","SwampEvent")) == 0 or SQLFetch() == 0 then
+
+		SQLClose()
+			
+		if SQLCheck() == 0 then
+			
+			local SQL_ODBC = "MuOnline"
+
+			local SQL_USER = ""
+
+			local SQL_PASS = ""
+
+			SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+			
+		end
+			
+		LogPrint("CustomQuestScript: Failed to read CustomQuest as Swamp Event")
+
+		LogColor(1,"CustomQuestScript: Failed to read CustomQuest as Swamp Event")
+
+	else
+
+		CustomQuest_PlansCount = tonumber(SQLGetNumber("CustomQuest"))
+
+		SQLClose()
+
+	end
+
+end
+
+-----------/SWAMP EVENT--------------
 
 
 
@@ -873,10 +891,6 @@ end
 
 
 
-
-
-
-
 function CustomQuest_CheckTableCommand(aIndex)
 
 	if GetObjectAuthority(aIndex) == 32 then
@@ -914,12 +928,6 @@ function CustomQuest_CheckTableCommand(aIndex)
 	end
 
 end
-
-
-
-
-
-
 
 
 
@@ -972,20 +980,8 @@ function CustomQuest_QuestInfoCommand(aIndex)
 end
 
 
-
-
 --Status = 0 - quest nie rozpoczety
 --Status = 1 - quest rozpoczety
-
-
-
-
-
-
-
-
-
-
 
 
 function CustomQuest_UpdateQuest(MonsterIndex,AllowDrop,ParticipantIndex)
@@ -1130,11 +1126,6 @@ end
 
 
 
-
-
-
-
-
 function CustomQuest_GetQuestMessage(aIndex,bName)
 
 	local TableIndex = GetIndexFromTable(bName)
@@ -1236,13 +1227,6 @@ end
 
 
 
-
-
-
-
-
-
-
 function CustomQuest_AddCharToTable(aIndex)
 
 	--Ladowanie Quest Status postaci jesli jej nie ma w tabeli:
@@ -1300,10 +1284,6 @@ function CustomQuest_AddCharToTable(aIndex)
 	end
 
 end
-
-
-
-
 
 
 
@@ -1374,10 +1354,6 @@ function CustomQuest_RemoveCharFromTable(aIndex)
 	end
 
 end
-
-
-
-
 
 
 
