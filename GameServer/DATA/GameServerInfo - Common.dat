@@ -177,7 +177,7 @@ TradeItemBlockExc = 0
 TradeItemBlockSet = 0
 TradeItemBlock380 = 0
 TradeItemBlockHarmony = 1
-TradeItemBlockSockets = 0
+TradeItemBlockSockets = 1
 TradeItemBlockSell = 1
 
 ;==================================================
