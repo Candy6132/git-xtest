@@ -178,7 +178,7 @@ end
 209            34             00         117            027            02             //Wolf Altar 5
 407            34             00         062            239            01             //Werewolf Quarel
 248            34             00         099            040            02             //Wandering Merchant Martin
-//406            34             00         228            048            01             //Apostle Devin - do dodania
+406            34             00         228            048            01             //Apostle Devin
 371            34             00         227            48             01             //Leo the Helper
 end
 
