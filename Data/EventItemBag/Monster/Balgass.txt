@@ -1,11 +1,15 @@
 3
 //Index   DropRate
 0         10000
+1         10000
+2         10000
 end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
 0         5         10000         1000          0             1    1    1    1    1    1
+1         6         10000         1000          0             1    1    1    1    1    1
+2         6         10000         1000          0             1    1    1    1    1    1
 end
 
 5											
@@ -19,14 +23,24 @@ end
 07,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Helm
 09,033	0	0	*	*	16	32	29	*	*	0	//Sunlight Pants
 09,032	0	0	*	*	16	32	29	*	*	0	//Volcano Pants
-07,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Helm
-09,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Pants
+07,044	0	0	*	*	16	32	29	*	*	0	//Succubus Helm
+09,044	0	0	*	*	16	32	29	*	*	0	//Succubus Pants
 											
 00,022	0	0	*	12	15	32	29	*	*	0	//Bone Blade
 00,023	0	0	*	12	15	32	29	*	*	0	//Explosion Blade
+03,011	0	0	*	12	15	32	29	*	*	0	//Brova
 05,012	0	0	*	*	15	32	29	*	*	0	//Grand Viper Staff
+05,033	0	0	*	*	15	32	29	*	*	0	//Chromatic Staff
 04,021	0	0	*	12	15	32	29	*	*	0	//Sylph Wind Bow
+04,024	0	0	*	12	15	32	29	*	*	0	//Aileen Bow
 02,012	0	0	*	12	15	32	29	*	*	0	//Great Lord Scepter
 02,014	0	0	*	12	15	32	29	*	*	0	//Soleil Scepter
-05,019	0	0	*	*	15	32	29	*	*	0	//Storm Blitz Stick
+02,018	0	0	*	12	15	32	29	*	*	0	//Striker Scepter
+05,034	0	0	*	*	15	32	29	*	*	0	//Raven Stick
 end											
+
+6
+//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
+
+15,041    0       0       *         *         *         *         *         *         *         0          //Kundun Orders
+end

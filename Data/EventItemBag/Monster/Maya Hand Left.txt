@@ -1,12 +1,14 @@
 3
 //Index   DropRate
 0         10000
+1         10000
 end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
 0         5         2500         1000          0             1    1    1    1    1    1
 0         6         7500         1000          0             1    1    1    1    1    1
+1         7         10000        1000          0             1    1    1    1    1    1
 end
 
 5											
@@ -21,8 +23,8 @@ end
 11,028	0	0	*	*	16	32	29	*	*	0	//Dark Master Boots
 10,023	0	0	*	*	16	32	29	*	*	0	//Hurricane Gloves
 11,023	0	0	*	*	16	32	29	*	*	0	//Hurricane Boots
-10,042	0	0	*	*	16	32	29	*	*	0	//Demonic Gloves
-11,042	0	0	*	*	16	32	29	*	*	0	//Demonic Boots
+10,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Gloves
+11,043	0	0	*	*	16	32	29	*	*	0	//Storm Blitz Boots
 											
 00,024	0	0	*	13	14	32	29	*	*	0	//Daybreak
 00,021	0	0	*	13	14	32	29	*	*	0	//Dark Reign Blade
@@ -32,7 +34,7 @@ end
 04,020	0	0	*	13	14	32	29	*	*	0	//Arrow Viper Bow
 02,013	0	0	*	12	14	32	29	*	*	0	//Divine Scepter of Archangel
 00,019	0	0	*	13	14	32	29	*	*	0	//Divine Sword of Archangel
-05,018	0	0	*	*	14	32	29	*	*	0	//Demonic Stick
+05,019	0	0	*	*	14	32	29	*	*	0	//Storm Blitz Stick
 05,036	0	0	*	*	14	32	29	*	*	0	//Divine Stick of Archangel
 end											
 											
@@ -62,16 +64,22 @@ end
 09,032	0	0	41	*	13	32	*	*	*	0	//Volcano Pants
 10,032	0	0	41	*	13	32	*	*	*	0	//Volcano Gloves
 11,032	0	0	41	*	13	32	*	*	*	0	//Volcano Boots
-07,043	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Helm
-08,043	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Armor
-09,043	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Pants
-10,043	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Gloves
-11,043	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Boots
+07,044	0	0	41	*	13	32	*	*	*	0	//Succubus Helm
+08,044	0	0	41	*	13	32	*	*	*	0	//Succubus Armor
+09,044	0	0	41	*	13	32	*	*	*	0	//Succubus Pants
+10,044	0	0	41	*	13	32	*	*	*	0	//Succubus Gloves
+11,044	0	0	41	*	13	32	*	*	*	0	//Succubus Boots
 											
 00,022	0	0	41	12	13	32	*	*	*	0	//Bone Blade
 00,023	0	0	41	12	13	32	*	*	*	0	//Explosion Blade
 05,012	0	0	41	*	13	32	*	*	*	0	//Grand Viper Staff
 04,021	0	0	41	12	13	32	*	*	*	0	//Sylph Wind Bow
 02,012	0	0	41	12	13	32	*	*	*	0	//Great Lord Scepter
-05,019	0	0	41	*	13	32	*	*	*	0	//Storm Blitz Stick
+05,034	0	0	41	*	13	32	*	*	*	0	//Raven Stick Stick
 end											
+
+7
+//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
+
+15,041    0       0       *         *         *         *         *         *         *         0          //Kundun Orders
+end
