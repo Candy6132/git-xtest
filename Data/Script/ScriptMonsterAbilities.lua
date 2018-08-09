@@ -45,7 +45,7 @@ ScriptLoader_AddOnMonsterDie("MonsterAbilities_OnMonsterDie")
 
 ------------------------- Fire Festival Bosses---------------------
 
-ScriptLoader_AddOnTimerThread("MonsterAbilities_OnTimerThread")
+--ScriptLoader_AddOnTimerThread("MonsterAbilities_OnTimerThread")
 
 ------------------------- Fire Festival Bosses---------------------
 
@@ -108,73 +108,74 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 	
 		------------------------- Fire Festival Bosses---------------------
 		
-		if GetObjectClass(aIndex) == DeathBeamKnight then
+		--if GetObjectClass(aIndex) == DeathBeamKnight then
 		
-			if GetObjectMap(aIndex) ~= 8 then
+		--	if GetObjectMap(aIndex) ~= 8 then
 			
-				if FirstBeamKnightIndex == 0 or FirstBeamKnightIndex == nil then
+		--		if FirstBeamKnightIndex == 0 or FirstBeamKnightIndex == nil then
 				
-					FirstBeamKnightIndex = aIndex
+		--			FirstBeamKnightIndex = aIndex
 					
-					FirstBeamKillerIndex = bIndex
+		--			FirstBeamKillerIndex = bIndex
 					
-					FirstBeamKnightMap = GetObjectMap(aIndex)
+		--			FirstBeamKnightMap = GetObjectMap(aIndex)
 					
-					FirstBeamKnightMapX = GetObjectMapX(aIndex)
+		--			FirstBeamKnightMapX = GetObjectMapX(aIndex)
 					
-					FirstBeamKnightMapY = GetObjectMapY(aIndex)
+		--			FirstBeamKnightMapY = GetObjectMapY(aIndex)
 					
-					MidFireTimer = 10
+		--			MidFireTimer = 10
 					
-				elseif MidFireTimer >= 5 then
+		--		elseif MidFireTimer >= 5 then
 					
-					local Map = GetObjectMap(aIndex)
+		--			local Map = GetObjectMap(aIndex)
 						
-					local MapX = GetObjectMapX(aIndex)
+		--			local MapX = GetObjectMapX(aIndex)
 						
-					local MapY = GetObjectMapY(aIndex)
+		--			local MapY = GetObjectMapY(aIndex)
 					
-					ItemDrop(bIndex,Map,MapX,MapY,100)
+		--			ItemDrop(bIndex,Map,MapX,MapY,100)
 						
-					FireworksSend(bIndex,MapX,MapY)
+		--			FireworksSend(bIndex,MapX,MapY)
 						
-					ItemDrop(FirstBeamKillerIndex,FirstBeamKnightMap,FirstBeamKnightMapX,FirstBeamKnightMapY,100)
+		--			ItemDrop(FirstBeamKillerIndex,FirstBeamKnightMap,FirstBeamKnightMapX,FirstBeamKnightMapY,100)
 						
-					FireworksSend(FirstBeamKillerIndex,FirstBeamKnightMapX,FirstBeamKnightMapY)
+		--			FireworksSend(FirstBeamKillerIndex,FirstBeamKnightMapX,FirstBeamKnightMapY)
 					
-					local MessageText = ""
+		--			local MessageText = ""
 					
-					if FirstBeamKillerIndex == bIndex then
+		--			if FirstBeamKillerIndex == bIndex then
 										
-						MessageText = string.format("%s have defeated both Fire Beam Knights!",GetObjectName(bIndex))
+		--				MessageText = string.format("%s have defeated both Fire Beam Knights!",GetObjectName(bIndex))
 						
-					else
+		--			else
 					
-						MessageText = string.format("%s and %s have defeated both Fire Beam Knights!",GetObjectName(FirstBeamKillerIndex),GetObjectName(bIndex))
+		--				MessageText = string.format("%s and %s have defeated both Fire Beam Knights!",GetObjectName(FirstBeamKillerIndex),GetObjectName(bIndex))
 					
-					end
+		--			end
 					
-					--local MessageText = string.format("%s and %s have defeated both Fire Beam Knights!",GetObjectName(FirstBeamKillerIndex),GetObjectName(bIndex))
+		--			--local MessageText = string.format("%s and %s have defeated both Fire Beam Knights!",GetObjectName(FirstBeamKillerIndex),GetObjectName(bIndex))
 						
-					NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
+		--			NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
 						
-					MidFireTimer = 0
+		--			MidFireTimer = 0
 						
-					FirstBeamKnightIndex = nil
+		--			FirstBeamKnightIndex = nil
 
-					FirstBeamKnightMap = nil
+		--			FirstBeamKnightMap = nil
 
-					FirstBeamKnightMapX = nil
+		--			FirstBeamKnightMapX = nil
 
-					FirstBeamKnightMapY = nil
+		--			FirstBeamKnightMapY = nil
 
-					FirstBeamKillerIndex = nil
+		--			FirstBeamKillerIndex = nil
 
-				end
+		--		end
 			
-			end
+		--	end
 		
-		end
+		--end
+		
 		------------------------- Fire Festival Bosses---------------------
 		
 		------------------------- CUSTOM INVASION - 259 Erohim, 7269 Jewel of Luck w 51 Elbeland:
@@ -226,42 +227,42 @@ end
 
 ------------------------- Fire Festival Bosses---------------------
 
-function MonsterAbilities_OnTimerThread()
+--function MonsterAbilities_OnTimerThread()
 
-	if MonsterAbilities_SystemSwitch == 1 then
+--	if MonsterAbilities_SystemSwitch == 1 then
 	
-		if MidFireTimer > 0 then
+--		if MidFireTimer > 0 then
 		
-			if MidFireTimer == 1 then
+--			if MidFireTimer == 1 then
 			
-				if FirstBeamKillerIndex ~= nil and FirstBeamKillerIndex ~= 0 then
+--				if FirstBeamKillerIndex ~= nil and FirstBeamKillerIndex ~= 0 then
 			
-					NoticeSend(FirstBeamKillerIndex,1,"You have failed to kill both Fire Beam Knights at the same time.")
+--					NoticeSend(FirstBeamKillerIndex,1,"You have failed to kill both Fire Beam Knights at the same time.")
 					
-					local MessageText = string.format("%s failed to kill both Fire Beam Knights. Try again tomorrow!",GetObjectName(FirstBeamKillerIndex))
+--					local MessageText = string.format("%s failed to kill both Fire Beam Knights. Try again tomorrow!",GetObjectName(FirstBeamKillerIndex))
 						
-					NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
+--					NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
 					
-				end
+--				end
 	
-				FirstBeamKnightIndex = nil
+--				FirstBeamKnightIndex = nil
 
-				FirstBeamKnightMap = nil
+--				FirstBeamKnightMap = nil
 
-				FirstBeamKnightMapX = nil
+--				FirstBeamKnightMapX = nil
 
-				FirstBeamKnightMapY = nil
+--				FirstBeamKnightMapY = nil
 
-				FirstBeamKillerIndex = nil
+--				FirstBeamKillerIndex = nil
 			
-			end
+--			end
 			
-			MidFireTimer = MidFireTimer-1
+--			MidFireTimer = MidFireTimer-1
 		
-		end
+--		end
 	
-	end
+--	end
 
-end
+--end
 
 ------------------------- Fire Festival Bosses---------------------
