@@ -3542,32 +3542,33 @@ end
 360	38	30	151	161	1	//Dreadfear
 end
 
+//Mob	Map	Radio	CordX	CordY	CordX2	CordY2	Dir	Quant	Name
+1
+409	41	5	62	130	67	136	-1	3	//Balram
+409	41	5	44	132	52	141	-1	3	//Balram
+410	41	5	93	63	102	097	-1	4	//Death Spirit
+410	41	5	120	90	126	097	-1	3	//Death Spirit
+411	41	5	131	139	139	146	-1	3	//Soram
+end
 
 2
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
 409            41             30         039            101            -1             //Balram
 409            41             30         044            110            -1             //Balram
-409            41             30         052            134            -1             //Balram
 409            41             30         067            112            -1             //Balram
 409            41             30         087            090            -1             //Balram
-409            41             30         090            067            -1             //Balram
 409            41             30         090            078            -1             //Balram
 409            41             30         071            101            -1             //Balram
 409            41             30         071            101            -1             //Balram
-409            41             30         064            132            -1             //Balram
 409            41             30         109            101            -1             //Balram
 410            41             30         098            096            -1             //Death Spirit
-410            41             30         122            090            -1             //Death Spirit
 410            41             30         125            099            -1             //Death Spirit
 410            41             30         137            140            -1             //Death Spirit
-410            41             30         140            150            -1             //Death Spirit
 410            41             30         044            127            -1             //Death Spirit
-410            41             30         057            123            -1             //Death Spirit
 410            41             30         079            086            -1             //Death Spirit
 410            41             30         101            069            -1             //Death Spirit
 410            41             30         121            118            -1             //Death Spirit
 411            41             30         127            127            -1             //Soram
-411            41             30         126            164            -1             //Soram
 411            41             30         123            160            -1             //Soram
 411            41             30         132            156            -1             //Soram
 411            41             30         132            136            -1             //Soram
