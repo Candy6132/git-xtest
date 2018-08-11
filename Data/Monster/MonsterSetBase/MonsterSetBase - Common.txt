@@ -2647,7 +2647,7 @@ end
 293            31             15         188            099            -1             //Poison Golem
 293            31             15         186            092            -1             //Poison Golem
 292            31             15         187            159            -1             //Queen Bee
-295            31             15         220            211            -1             //Erohim
+//295            31             15         220            211            -1             //Erohim
 291            31             15         222            221            -1             //Fire Golem
 291            31             15         231            211            -1             //Fire Golem
 291            31             15         208            217            -1             //Fire Golem
@@ -2925,26 +2925,27 @@ end
 //=========================================================================================						
 //Mob	Map	Radio	CordX	CordY	CordX2	CordY2	Dir	Quant	Name	
 1							
-310	34	5	206	40	208	46	-1	3	//Hammer Scout
+310	34	5	204	41	209	45	-1	4	//Hammer Scout
 310	34	5	85	40	90	45	-1	4	//Hammer Scout
-310	34	5	205	64	234	79	-1	3	//Hammer Scout
-311	34	5	172	93	172	101	-1	3	//Lance Scout
+311	34	5	172	93	172	101	-1	4	//Lance Scout
 311	34	5	27	65	32	70	-1	2	//Lance Scout
-311	34	5	205	64	234	79	-1	2	//Lance Scout
-312	34	5	27	65	32	70	-1	2	//Bow Scout
-312	34	5	169	18	173	25	-1	4	//Bow Scout
+312	34	5	27	65	32	70	-1	1	//Bow Scout
+310	34	5	208	70	213	75	-1	2	//Hammer Scout
+311	34	5	208	70	213	75	-1	2	//Lance Scout
+312	34	5	208	70	213	75	-1	1	//Bow Scout
+312	34	5	169	18	173	25	-1	5	//Bow Scout
 312	34	5	79	6	85	14	-1	4	//Bow Scout
-312	34	5	97	55	112	95	-1	4	//Bow Scout
-312	34	5	205	64	234	79	-1	3	//Bow Scout
-313	34	5	22	117	25	127	-1	2	//Werewolf
+312	34	5	95	55	97	63	-1	4	//Bow Scout
+313	34	5	25	116	29	123	-1	4	//Werewolf
+314	34	5	22	152	27	163	-1	4	//Scout Hero
 313	34	5	206	116	221	129	-1	4	//Werewolf
-314	34	5	159	145	179	160	-1	3	//Scout Hero
-314	34	5	22	152	27	163	-1	3	//Scout Hero
-314	34	5	162	144	181	158	-1	2	//Scout Hero
-315	34	5	101	166	112	175	-1	2	//Werewolf Hero
-316	34	5	200	197	209	202	-1	3	//Valam
+314	34	5	174	147	180	155	-1	4	//Scout Hero
+315	34	5	103	168	109	172	-1	4	//Werewolf Hero
+316	34	5	200	197	209	202	-1	5	//Valam
 316	34	5	68	203	80	214	-1	4	//Valam
-317	34	5	127	209	136	221	-1	4	//Solam
+317	34	5	130	211	135	219	-1	4	//Solam
+317	34	5	160	226	165	233	-1	2	//Solam
+316	34	5	160	226	165	233	-1	2	//Valam
 end
 
 //Mob	Map	Rad	X	Y	Str	Name
@@ -2953,7 +2954,6 @@ end
 311	34	0	162	8	-1	//Lance Scout
 310	34	0	162	8	-1	//Hammer Scout
 311	34	0	162	8	-1	//Lance Scout
-310	34	0	162	8	-1	//Hammer Scout
 
 311	34	0	172	61	-1	//Lance Scout
 311	34	0	172	61	-1	//Lance Scout
@@ -3002,7 +3002,6 @@ end
 310	34	30	195	33	-1	//Hammer Scout
 310	34	30	199	60	-1	//Hammer Scout
 310	34	30	201	40	-1	//Hammer Scout
-310	34	30	205	46	-1	//Hammer Scout
 310	34	30	206	45	-1	//Hammer Scout
 310	34	30	214	60	-1	//Hammer Scout
 311	34	30	22	100	-1	//Lance Scout
@@ -3030,13 +3029,11 @@ end
 311	34	30	177	78	-1	//Lance Scout
 311	34	30	197	78	-1	//Lance Scout
 311	34	30	210	88	-1	//Lance Scout
-311	34	30	211	69	-1	//Lance Scout
 311	34	30	221	78	-1	//Lance Scout
 311	34	30	223	120	-1	//Lance Scout
 311	34	30	225	68	-1	//Lance Scout
 311	34	30	231	78	-1	//Lance Scout
 312	34	30	21	88	-1	//Bow Scout
-312	34	30	23	115	-1	//Bow Scout
 312	34	30	30	88	-1	//Bow Scout
 312	34	30	56	115	-1	//Bow Scout
 312	34	30	68	115	-1	//Bow Scout
@@ -3063,10 +3060,7 @@ end
 312	34	30	236	88	-1	//Bow Scout
 313	34	30	19	131	-1	//Werewolf
 313	34	30	20	145	-1	//Werewolf
-313	34	30	25	125	-1	//Werewolf
-313	34	30	29	124	-1	//Werewolf
 313	34	30	30	126	-1	//Werewolf
-313	34	30	26	123	-1	//Werewolf
 313	34	30	71	109	-1	//Werewolf
 313	34	30	76	145	-1	//Werewolf
 313	34	30	82	107	-1	//Werewolf
@@ -3118,8 +3112,13 @@ end
 315	34	30	159	206	-1	//Werewolf Hero
 315	34	30	170	208	-1	//Werewolf Hero
 315	34	30	175	197	-1	//Werewolf Hero
-315	34	30	199	200	-1	//Werewolf Hero
 315	34	30	222	189	-1	//Werewolf Hero
+
+316	34	30	182	230	-1	//Valam
+316	34	30	182	230	-1	//Valam
+316	34	30	182	230	-1	//Valam
+316	34	30	182	230	-1	//Valam
+
 316	34	30	47	184	-1	//Valam
 316	34	30	84	201	-1	//Valam
 316	34	30	104	194	-1	//Valam
@@ -3133,7 +3132,6 @@ end
 316	34	30	66	217	-1	//Valam
 316	34	30	83	217	-1	//Valam
 316	34	30	100	217	-1	//Valam
-316	34	30	134	215	-1	//Valam
 316	34	30	153	215	-1	//Valam
 317	34	30	14	164	-1	//Solam
 317	34	30	25	164	-1	//Solam
@@ -3150,6 +3148,11 @@ end
 317	34	30	177	167	-1	//Solam
 317	34	30	233	169	-1	//Solam
 317	34	30	115	221	-1	//Solam
+
+317	34	0	127	238	-1	//Solam
+317	34	0	127	238	-1	//Solam
+317	34	0	127	238	-1	//Solam
+317	34	0	127	238	-1	//Solam
 end
 
 2
@@ -3257,20 +3260,20 @@ end
 
 // Kanturu custom spots
 1
-351	37	5	76	227	38	236	-1	2	// Splinter Wolf
-351	37	5	86	234	79	241	-1	2	// Splinter Wolf
-351	37	5	68	228	62	235	-1	2	// Splinter Wolf
-352	37	5	186	210	190	216	-1	3	// Iron Rider
-352	37	5	195	179	189	186	-1	3	// Iron Rider
-353	37	5	226	39	220	48	-1	3	// Satyros
-353	37	5	229	77	224	86	-1	3	// Satyros
-357	37	5	29	79	34	83	-1	3	// Genocider
-356 37  5   88  32  93  37  -1  2   // Gigantis
-350 37  5   88  32  93  37  -1  1   // Berserker
-356 37  5   50  33  58  38  -1  2   // Gigantis
-350 37  5   50  33  58  38  -1  1   // Berserker
-356 37  5   77  17  70  26  -1  1   // Gigantis
-350 37  5   77  17  70  26  -1  1   // Berserker
+351	37	5	76	227	38	236	-1	2	//Splinter Wolf
+351	37	5	86	234	79	241	-1	2	//Splinter Wolf
+351	37	5	68	228	62	235	-1	2	//Splinter Wolf
+352	37	5	186	210	190	216	-1	3	//Iron Rider
+352	37	5	195	179	189	186	-1	3	//Iron Rider
+353	37	5	226	39	220	48	-1	3	//Satyros
+353	37	5	229	77	224	86	-1	3	//Satyros
+357	37	5	29	79	34	83	-1	3	//Genocider
+356	37	5	88	32	93	37	-1	2	//Gigantis
+350	37	5	88	32	93	37	-1	1	//Berserker
+356	37	5	50	33	58	38	-1	2	//Gigantis
+350	37	5	50	33	58	38	-1	1	//Berserker
+356	37	5	77	17	70	26	-1	1	//Gigantis
+350	37	5	77	17	70	26	-1	1	//Berserker
 end
 
 2
@@ -3563,17 +3566,13 @@ end
 409            41             30         109            101            -1             //Balram
 410            41             30         098            096            -1             //Death Spirit
 410            41             30         125            099            -1             //Death Spirit
-410            41             30         137            140            -1             //Death Spirit
 410            41             30         044            127            -1             //Death Spirit
 410            41             30         079            086            -1             //Death Spirit
 410            41             30         101            069            -1             //Death Spirit
 410            41             30         121            118            -1             //Death Spirit
 411            41             30         127            127            -1             //Soram
 411            41             30         123            160            -1             //Soram
-411            41             30         132            156            -1             //Soram
-411            41             30         132            136            -1             //Soram
 411            41             30         116            103            -1             //Soram
-411            41             30         129            146            -1             //Soram
 end
 
 2
