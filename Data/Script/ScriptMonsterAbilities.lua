@@ -197,6 +197,38 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 			if GetObjectClass(aIndex) == LordClass then MonsterAbilities_SpawnMonster(aIndex,LordClass,i) end
 
 		end
+		
+		------------------------- BC, DS, CC Master Fix ---------------------
+		
+		if GetObjectLevel(bIndex) < 200 then
+		
+			if GetObjectMap(bIndex) == 52 then
+			
+				MoveUserEx(bIndex,2,210,28)
+				
+				ItemGiveEx(bIndex,6674,8,0,0,0,0,0)
+				
+				NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
+				
+			elseif GetObjectMap(bIndex) == 32 then
+			
+				MoveUserEx(bIndex,3,172,105)
+				
+				ItemGiveEx(bIndex,7187,7,0,0,0,0,0)
+				
+				NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
+				
+			elseif GetObjectMap(bIndex) == 53 then
+			
+				MoveUserEx(bIndex,0,123,133)
+
+				NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
+				
+			end
+		
+		end
+		
+		------------------------/ BC, DS, CC Master Fix ---------------------
 	
 	end
 
