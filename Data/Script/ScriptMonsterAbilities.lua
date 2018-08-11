@@ -20,6 +20,12 @@ FirstBeamKnightMapY = 0
 
 FirstBeamKillerIndex = 0
 
+MonsterCounter = 0
+
+MonsterCounterGMName = ""
+
+MonsterCounterTimer = 0
+
 
 
 
@@ -43,11 +49,7 @@ ScriptLoader_AddOnReadScript("MonsterAbilities_OnReadScript")
 
 ScriptLoader_AddOnMonsterDie("MonsterAbilities_OnMonsterDie")
 
-------------------------- Fire Festival Bosses---------------------
-
---ScriptLoader_AddOnTimerThread("MonsterAbilities_OnTimerThread")
-
-------------------------- Fire Festival Bosses---------------------
+ScriptLoader_AddOnTimerThread("MonsterAbilities_OnTimerThread")
 
 
 
@@ -105,6 +107,87 @@ end
 function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 
 	if MonsterAbilities_SystemSwitch == 1 then
+	
+		----------------Licznik Mobow--------------------
+		
+		if GetObjectAuthority(bIndex) == 32 and InventoryGetItemIndex(bIndex,12) == 0 then
+		
+			local GMName = GetObjectName(bIndex)
+			
+			if GMName == MonsterCounterGMName then
+
+				MonsterCounter = MonsterCounter+1
+			
+			end
+			
+			if MonsterCounterTimer == 0 then
+			
+				MonsterCounter = 1
+			
+				MonsterCounterTimer = 61
+				
+				MonsterCounterGMName = GMName
+			
+			end
+		
+		end
+		
+		---------------/Licznik Mobow--------------------
+		
+		------------------------- CUSTOM INVASION - 259 Erohim, 7269 Jewel of Luck w 51 Elbeland:
+		
+		if GetObjectClass(aIndex) == 295 and GetObjectMap(aIndex) == 51 then
+
+			ItemDropEx(bIndex,51,GetObjectMapX(aIndex),GetObjectMapY(aIndex),7269,9,0,0,0,0,0)
+
+		end
+		
+		------------------------/ CUSTOM INVASION -------------------------
+	
+		for i=1,#MonsterAbilities_MonsterTable,1 do
+		
+			local LordClass = MonsterAbilities_MonsterTable[i].LordClass
+			
+			--NoticeSend(GetObjectIndexByName("Candy"),1,string.format("Lord Class: %s",MonsterAbilities_MonsterTable[i].SpawnChance))
+
+			if GetObjectClass(aIndex) == LordClass then MonsterAbilities_SpawnMonster(aIndex,LordClass,i) end
+
+		end
+		
+		------------------------- BC, DS, CC Master Fix ---------------------
+		
+		if GetObjectLevel(bIndex) < 200 then
+		
+			if GetObjectMap(bIndex) == 52 then
+			
+				MoveUserEx(bIndex,2,210,28)
+				
+				ItemGiveEx(bIndex,6674,8,0,0,0,0,0)
+				
+				NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
+				
+			elseif GetObjectMap(bIndex) == 32 then
+			
+				MoveUserEx(bIndex,3,172,105)
+				
+				ItemGiveEx(bIndex,7187,7,0,0,0,0,0)
+				
+				NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
+				
+			elseif GetObjectMap(bIndex) == 53 then
+			
+				MoveUserEx(bIndex,0,123,133)
+
+				NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
+				
+			end
+		
+		end
+		
+		------------------------/ BC, DS, CC Master Fix ---------------------
+	
+		
+		
 	
 		------------------------- Fire Festival Bosses---------------------
 		
@@ -178,58 +261,6 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 		
 		------------------------- Fire Festival Bosses---------------------
 		
-		------------------------- CUSTOM INVASION - 259 Erohim, 7269 Jewel of Luck w 51 Elbeland:
-		
-		if GetObjectClass(aIndex) == 295 and GetObjectMap(aIndex) == 51 then
-
-			ItemDropEx(bIndex,51,GetObjectMapX(aIndex),GetObjectMapY(aIndex),7269,9,0,0,0,0,0)
-
-		end
-		
-		------------------------- CUSTOM INVASION
-	
-		for i=1,#MonsterAbilities_MonsterTable,1 do
-		
-			local LordClass = MonsterAbilities_MonsterTable[i].LordClass
-			
-			--NoticeSend(GetObjectIndexByName("Candy"),1,string.format("Lord Class: %s",MonsterAbilities_MonsterTable[i].SpawnChance))
-
-			if GetObjectClass(aIndex) == LordClass then MonsterAbilities_SpawnMonster(aIndex,LordClass,i) end
-
-		end
-		
-		------------------------- BC, DS, CC Master Fix ---------------------
-		
-		if GetObjectLevel(bIndex) < 200 then
-		
-			if GetObjectMap(bIndex) == 52 then
-			
-				MoveUserEx(bIndex,2,210,28)
-				
-				ItemGiveEx(bIndex,6674,8,0,0,0,0,0)
-				
-				NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
-				
-			elseif GetObjectMap(bIndex) == 32 then
-			
-				MoveUserEx(bIndex,3,172,105)
-				
-				ItemGiveEx(bIndex,7187,7,0,0,0,0,0)
-				
-				NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
-				
-			elseif GetObjectMap(bIndex) == 53 then
-			
-				MoveUserEx(bIndex,0,123,133)
-
-				NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
-				
-			end
-		
-		end
-		
-		------------------------/ BC, DS, CC Master Fix ---------------------
-	
 	end
 
 end
@@ -257,9 +288,32 @@ function MonsterAbilities_SpawnMonster(aIndex,bClass,i)
 end
 
 
-------------------------- Fire Festival Bosses---------------------
 
---function MonsterAbilities_OnTimerThread()
+function MonsterAbilities_OnTimerThread()
+
+	if MonsterAbilities_SystemSwitch == 1 then
+	
+		----------------Licznik Mobow--------------------
+		
+		if MonsterCounterTimer > 1 then
+		
+			MonsterCounterTimer = MonsterCounterTimer-1
+			
+		elseif MonsterCounterTimer == 1 then
+		
+			MonsterCounterTimer = MonsterCounterTimer-1
+			
+			NoticeSend(GetObjectIndexByName(MonsterCounterGMName),0,string.format("Monster Counter: %d monsters/min",MonsterCounter))
+			
+			MonsterCounter = 0
+		
+		end
+		
+		---------------/Licznik Mobow--------------------
+	
+	end
+
+------------------------- Fire Festival Bosses---------------------
 
 --	if MonsterAbilities_SystemSwitch == 1 then
 	
@@ -295,6 +349,6 @@ end
 	
 --	end
 
---end
-
 ------------------------- Fire Festival Bosses---------------------
+
+end
