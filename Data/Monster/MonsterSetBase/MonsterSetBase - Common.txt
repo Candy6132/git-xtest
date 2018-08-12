@@ -2647,7 +2647,7 @@ end
 293            31             15         188            099            -1             //Poison Golem
 293            31             15         186            092            -1             //Poison Golem
 292            31             15         187            159            -1             //Queen Bee
-//295            31             15         220            211            -1             //Erohim
+295            31             15         220            211            -1             //Erohim
 291            31             15         222            221            -1             //Fire Golem
 291            31             15         231            211            -1             //Fire Golem
 291            31             15         208            217            -1             //Fire Golem
