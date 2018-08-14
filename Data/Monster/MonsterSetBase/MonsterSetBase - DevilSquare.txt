@@ -365,7 +365,7 @@ end
 2            040          09             30         132            158            *              //Death Knight
 3            038          09             30         134            168            *              //Balrog
 3            038          09             30         126            179            *              //Balrog
-
+end
 2
 //Stage      Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
 0            045          09             30         065            150            *              //Bahamut
@@ -1112,12 +1112,9 @@ end
 1            437          32             30         057            153            *              //Soram
 1            437          32             30         051            165            *              //Soram
 1            437          32             30         058            167            *              //Soram
-1            437          32             30         069            148            *              //Soram
-1            437          32             30         078            154            *              //Soram
-1            437          32             30         057            150            *              //Soram
-1            437          32             30         074            155            *              //Soram
-1            437          32             30         057            153            *              //Soram
 1            437          32             30         051            165            *              //Soram
+1            437          32             30         058            167            *              //Soram
+1            437          32             30         058            167            *              //Soram
 2            438          32             30         060            154            *              //Persona
 2            438          32             30         067            148            *              //Persona
 2            438          32             30         067            151            *              //Persona
@@ -1148,8 +1145,6 @@ end
 2            439          32             30         070            160            *              //Dreadfear
 2            439          32             30         060            144            *              //Dreadfear
 2            439          32             30         060            156            *              //Dreadfear
-2            439          32             30         074            147            *              //Dreadfear
-2            439          32             30         054            150            *              //Dreadfear
 3            440          32             30         062            154            *              //Dark Elf
 3            440          32             30         054            165            *              //Dark Elf
 end
