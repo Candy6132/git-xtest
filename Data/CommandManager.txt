@@ -34,6 +34,9 @@
 32        "/pack"
 33        "/unpack"
 
+//Test:
+34        "/dupacyckireset"
+
 //Custom Quests
 201       "/questtable"
 202	  "/questinfo"

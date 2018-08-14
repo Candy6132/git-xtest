@@ -88,6 +88,11 @@ function ExtraCommand_OnCommandManager(aIndex,code,arg)
 		ExtraCommand_GameMasterSetRuud(aIndex,arg)
 		return 1
 
+	elseif code == 34 then
+
+		CustomReset_Reset(aIndex)
+		return 1
+
 	end
 
 	return 0
