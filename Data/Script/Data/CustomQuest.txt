@@ -60,34 +60,34 @@
 250			*			*			80			37				"Devils"				*				*						*				*					40		7185		0			"Devil's Eyes"				7185			0				5000			3000		3			7182			0				22							1044				1045
 0			*			*			60			40				"Death Knights"			*				*						*				*					*		*			*			*							*				*				*				3500		*			*				*				22							1046				1047
 0			*			*			50			35				"Death Gorgons"			*				*						*				*					5		520			0			"Crescent Axes"				520				0				1000			*			*			*				*				22							1048				1049
-300			*			*			1			38				"Balrog"				*				*						*				*					1		1545		7			"Bill of Balrog"			1545			7				10000			20000		5			7184			0				22							1050				1051
+300			*			*			1			38				"Balrog"				*				*						*				*					1		1545		7			"Bill of Balrog+7"			1545			7				10000			20000		5			7184			0				22							1050				1051
 0			*			*			1			43				"Golden Budge Dragon"	*				*						*				*					1		7179		0			"Box of Luck"				*				*				*				*			*			*				*				23							1052				1053
 0			*			*			80			51				"Great Bahamuts"		*				*						*				*					*		*			*			*							*				*				*				4000		*			7196			3				*							1054				1055
 0			*			*			40			185				"Aegis in Kalima 3"		*				*						*				*					*		*			*			*							*				*				*				4000		*			7196			3				*							1056				1057
 0			*			*			80			187				"Necrons in Kalima 3"	*				*						*				*					10		7733		0			"Steroids"					7733			0				1000			15000		*			7184			0				22							1058				1059
-0			*			*			1			55				"Death King"			*				*						*				*					1		1545		5			"Bill of Balrog"			1545			5				10000			6000		*			*				*				22							1060				1061
+0			*			*			1			55				"Death King"			*				*						*				*					1		1545		5			"Bill of Balrog+5"			1545			5				10000			6000		*			*				*				22							1060				1061
 0			*			*			60			52				"Silver Valkyrie"		*				*						*				*					*		*			*			*							*				*				*				8000		*			7176			7				24							1062				1063
 0			*			*			100			48				"Lizard Kings"			*				*						*				*					1		6278		0			"Lizard's Crown"			6278			0				100				8000		*			*				*				*							1064				1065
 350			*			*			1			49				"Hydra"					*				*						*				*					*		*			*			*							*				*				*				20000		10			*				*				25							1066				1067
 0			1			*			1			78				"Golden Goblin"			*				*						*				*					*		*			*			*							*				*				*				8000		*			7270			7				*							*					1069
 0			*			*			120			62				"Mutants"				*				*						*				*					*		*			*			*							*				*				*				*			*			7177			0				24							*					1071
-0			*			*			100			60				"Bloody Wolfs"			*				*						*				*					10		6276		5			"Beast's Horns"				6276			5				1000			12000		*			7184			0				26							1072				1073
+0			*			*			100			60				"Bloody Wolfs"			*				*						*				*					10		6276		5			"Beast's Horns+5"			6276			5				1000			12000		*			7184			0				26							1072				1073
 0			*			*			1			53				"Golden Titan"			*				*						*				*					*		*			*			*							*				*				*				10000		10			7179			9				*							1074				1075
 0			*			*			120			307				"Forest Orcs"			*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				26							1076				*
 0			*			*			120			308				"Death Tree"			*				*						*				*					*		*			*			*							*				*				*				12000		*			6720			0				26							1078				1079
 //ReqLevel	ReqReset	ReqMReset	NoMonsters	MonsterIndex	MonsterString			MonsterFEIndex	MonsterFEString			MonsterSUIndex	MonsterSUString		NoItem	ItemIndex	ItemLevel	ItemString					ItemDropIndex	ItemDropLevel	ItemDropRate	ZenReward 	PointReward	ItemRewardIndex	ItemRewardLevel	EventItemBagSpecialValue	QuestStartMessage	QuestFinishMessage
 //#41...
 0			*			*			200			117				"Spirit Knights in Valley" 		*		*						*				*					*		*			*			*							*				*				*				16000		*			*				*				26							1080				1081
-0			*			*			10			118				"Spirit Soccerers"		*				*						*				*					1		2560		9			"Skull Staffs"				2560			9				1000			18000		5			7184			0				27							1082				1083
-0			*			*			40			117				"Spirit Knights"		*				*						*				*					1		1551		7			"Broken Chaos Weapon"		1551			7				2000			8000		*			*				*				*							1084				1085
+0			*			*			10			118				"Spirit Soccerers"		*				*						*				*					1		2560		9			"Skull Staffs+9"			2560			9				1000			18000		5			7184			0				27							1082				1083
+0			*			*			40			117				"Spirit Knights"		*				*						*				*					1		1551		7			"Broken Chaos Weapon+7"		1551			7				2000			8000		*			*				*				*							1084				1085
 0			*			*			*			*				*						*				*						*				*					2		7181		*			"Jewels of Bless"			*				*				*				*			*			*				*				*							1086				1087
 0			*			*			*			*				*						*				*						*				*					1		6159		*			"Jewel of Chaos"			*				*				*				*			*			*				*				28							1088				1089
 0			*			*			80			69				"Aquamoses"				*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				26							1090				1091
-0			*			*			200			71				"Mega Crusts"			*				*						*				*					1		18			5			"Thunder Blade"				18				5				100				20000		*			*				*				29							1092				1093
+0			*			*			200			71				"Mega Crusts"			*				*						*				*					1		18			5			"Thunder Blade+5"			18				5				100				20000		*			*				*				29							1092				1093
 0			*			*			160			70				"Queen Rainer"			*				*						*				*					*		*			*			*							*				*				*				10000		*			7184			0				*							*					1095
 0			*			*			4			44				"Red Dragons"			*				*						*				*					*		*			*			*							*				*				*				30000		15			*				*				29							1096				1097
 0			5			*			300			96				"King Orcs in Blood Castle 3"		*	*						*				*					*		*			*			*							*				*				*				20000		*			7269			9				*							1098				1099
-0			*			*			100			57				"Iron Wheels"			*				*						*				*					3		2062		7			"Aquagold Crossbows"		2062			7				300				10000		*			*				*				26							1100				1101
+0			*			*			100			57				"Iron Wheels"			*				*						*				*					3		2062		7			"Aquagold Crossbows+7"		2062			7				300				10000		*			*				*				26							1100				1101
 0			*			*			120			58				"Tantalos"				*				*						*				*					3		16			0			"Swords of Destruction"		16				0				200				10000		*			*				*				26							1102				1103
 0			*			*			80			61				"Beam Knights"			*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				29							1104				1105
 0			*			*			1			63				"Death Beam Knight"		*				*						*				*					*		*			*			*							*				*				*				*			10			*				*				30							1106				*
@@ -95,7 +95,7 @@
 0			*			*			1			79				"Golden Dragon"			*				*						*				*					*		*			*			*							*				*				*				20000		5			7179			10				*							1110				*
 0			*			*			80			73				"Drakans"				*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				29							1112				*
 0			*			*			150			74				"Alpha Crusts"			*				*						*				*					*		*			*			*							*				*				*				*			*			*				*				32							*					*
-0			*			*			100			72				"Phantom Knights"		*				*						*				*					1		17			5			"Spirit Sword"				17				5				100				40000		5			7216			3				31							1114				1115
+0			*			*			100			72				"Phantom Knights"		*				*						*				*					1		17			5			"Spirit Sword+5"			17				5				100				40000		5			7216			3				31							1114				1115
 0			*			*			50			75				"Giant Drakans"			*				*						*				*					*		*			*			*							*				*				*				30000		*			7217			3				32							1116				*
 0			*			*			1			77				"Phoenix of Darkness"	*				*						*				*					*		*			*			*							*				*				*				50000		20			6670			0				*							1118				1119
 //0			10			*			100			306				"Death Riders"			*				*						*				*					1		7282		7			"Jewel mixed from 10 Small Shards"	7735	7				1000			100000		*			*				*				33							1120				1121
@@ -103,14 +103,14 @@
 0			*			*			300			305				"Blue Golems"			*				*						*				*					15		7725		0			"Blue Glass"				7725			0				500				40000		*			7179			10				32							1122				1123
 0			*			*			100			304				"Witch Queens"			*				*						*				*					*		*			*			*							*				*				*				40000		*			7179			10				35							1124				*
 0			*			*			1			309				"Hell Maine"			*				*						*				*					*		*			*			*							*				*				*				100000		20			7179			11				36							1126				1127
-0			*			*			50			117				"Spirit Knights in Valley"			*	*						*				*					1		7196		4			"Lost Map"					7197			4				1000			10000		*			7196			4				*							1128				1129
-0			*			*			150			191				"Death Centurions in Kalima 4"		*	*						*				*					1		1546		7			"Dragon Spear"				1546			7				100				60000		*			7196			4				37							1130				*
+0			*			*			50			117				"Spirit Knights in Valley"			*	*						*				*					1		7196		4			"Lost Map+4"				7197			4				1000			10000		*			7196			4				*							1128				1129
+0			*			*			150			191				"Death Centurions in Kalima 4"		*	*						*				*					1		1546		7			"Dragon Spear+7"			1546			7				100				60000		*			7196			4				37							1130				*
 0			*			*			60			196				"Schrikers in Kalima 4"				*	*						*				*					*		*			*			*							*				*				*				50000		*			*				*				37							1132				*
-0			*			*			1			80				"Golden Lizard"			*				*						*				*					1		6278		7			"Lizard's Crown"			6278			7				10000			80000		10			7179			11				*							*					1133
-0			*			*			200			351				"Splinter Wolfs"		*				*						*				*					10		6276		7			"Beast's Horns"				6276			7				500				50000		*			*				*				29							1134				1135
+0			*			*			1			80				"Golden Lizard"			*				*						*				*					1		6278		7			"Lizard's Crown+7"			6278			7				10000			80000		10			7179			11				*							*					1133
+0			*			*			200			351				"Splinter Wolfs"		*				*						*				*					10		6276		7			"Beast's Horns+7"			6276			7				500				50000		*			*				*				29							1134				1135
 0			*			*			180			350				"Berserkers"			*				*						*				*					*		*			*			*							*				*				*				60000		*			7179			0				38							*					*
 0			*			*			160			352				"Iron Riders"			*				*						*				*					*		*			*			*							*				*				*				80000		*			*				*				39							1136				1137
-0			15			*			1			82				"Golden Tantalos"		*				*						*				*					1		7179		12			"Box of Kundun"				*				*				*				100000		25			*				*				*							1138				1139
+0			15			*			1			82				"Golden Tantalos"		*				*						*				*					1		7179		12			"Box of Kundun+5"			*				*				*				100000		25			*				*				*							1138				1139
 0			15			*			*			*				*						*				*						*				*					6		7212		0			"Higher Refining Stones"	*				*				*				*			*			*				*				40							1140				1141
 
 
