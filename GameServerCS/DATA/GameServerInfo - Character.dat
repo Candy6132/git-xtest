@@ -85,7 +85,7 @@ SUDamageStuckRate = 10
 ;==================================================
 DKDamageMultiplierConstA = 10
 DLDamageMultiplierConstA = 20
-DKDamageMultiplierMaxRate = 500
+DKDamageMultiplierMaxRate = 800
 DLDamageMultiplierMaxRate = 500
 
 ;==================================================
@@ -276,8 +276,8 @@ DWPhysiDamageMinConstA = 6
 DWPhysiDamageMaxConstA = 4
 DWMagicDamageMinConstA = 9
 DWMagicDamageMaxConstA = 4
-DKPhysiDamageMinConstA = 8
-DKPhysiDamageMaxConstA = 4
+DKPhysiDamageMinConstA = 6
+DKPhysiDamageMaxConstA = 3
 DKMagicDamageMinConstA = 9
 DKMagicDamageMaxConstA = 4
 FEPhysiDamageMinConstA = 7
