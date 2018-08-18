@@ -187,8 +187,8 @@ TradeItemBlockSell = 1
 ; Level Up Settings
 ;==================================================
 MaxLevel = 400
-MaxLevelUp = 5
-MaxLevelUpEvent = 5
+MaxLevelUp = 25
+MaxLevelUpEvent = 25
 MaxStatPoint_AL0 = 65000
 MaxStatPoint_AL1 = 65000
 MaxStatPoint_AL2 = 65000
