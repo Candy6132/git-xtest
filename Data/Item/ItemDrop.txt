@@ -63,7 +63,7 @@
 6687      0       0       *         *         *         *         *         *         *         0          *           *              102               120               1000       //Spirit of Dark Horse        
 6687      1       0       *         *         *         *         *         *         *         0          *           *              80                101               1000       //Spirit of Dark Spirit
 6688      0       0       *         *         *         *         *         *         *         0          34          *              97                200               14000       //Splinter of Armor
-6689      0       0       *         *         *         *         *         *         *         0          34          *              97                200               7000       //Bless of Guardian
+6689      0       0       *         *         *         *         *         *         *         0          34          *              97                200               10000       //Bless of Guardian
 6690      0       0       *         *         *         *         *         *         *         0          34          *              97                200               4000       //Claw of Beast
 6694      0       0       *         *         *         *         *         *         *         0          38          *              25                150               1000       //Moonstone Pendant
 7179      5       0       *         *         *         *         *         *         *         0          *           *              12                49                1600       //Silver Medal
