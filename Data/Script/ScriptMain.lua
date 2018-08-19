@@ -8,7 +8,6 @@ require("ScriptMonsterAbilities")
 require("ScriptRegister")
 require("ScriptPremiumAccount")
 require("ScriptUniqueSets")
-require("ScriptCustomReset")
 
 
 function OnReadScript()
