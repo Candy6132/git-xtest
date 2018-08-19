@@ -96,8 +96,6 @@ CommandWareNumber_AL3 = 5
 
 ;==================================================
 ; Reset Command Settings
-;
-;	SKOPIOWAC PONIZSZE TEZ DO "..\Data\Script\Data\CustomReset.ini" !!!!
 ;==================================================
 CommandResetSwitch = 1
 CommandResetType = 1
