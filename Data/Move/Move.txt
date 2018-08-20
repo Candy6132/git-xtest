@@ -32,6 +32,6 @@
 31        "Kanturu2"              42000          160        *          *          *          0              141
 32        "Kanturu3"              80000          230        *          *          *          0              139
 //33        "Raklion"               300000         300        *          *          *          0              287
-//34        "SwampOfCalmness"       200000         270        *          *          *          0              273
+34        "SwampOfCalmness"       200000         270        *          *          *          0              273
 35        "LorenDeep"             40000          180        *          *          *          0              103
 end
