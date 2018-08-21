@@ -3766,6 +3766,25 @@ end
 
 442	56	5	221	170	224	168	-1	2	//Sapi-Duo
 
+
+448	56	5	29	184	33	186	-1	1	//Ghost Napin
+449	56	5	29	184	33	186	-1	1	//Blaze Napin
+
+
+
+448	56	5	20	210	22	212	-1	1	//Ghost Napin
+449	56	5	20	210	22	212	-1	1	//Blaze Napin
+
+
+443	56	5	28	45	26	46	-1	3	//Sapi-Tres
+
+445	56	5	11	47	12	49	-1	2	//Shadow Knight
+446	56	5	11	47	12	49	-1	2	//Shadow Look
+
+
+445	56	5	18	9	20	10	-1	1	//Shadow Knight
+446	56	5	18	9	20	10	-1	2	//Shadow Look
+
 end
 2
 //Monster      MapNumber      Range      PositionX      PositionY      Direction      Comment
