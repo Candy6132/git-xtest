@@ -20,9 +20,6 @@ end
 3         7         2000           1000          0             1    1    1    1    1    1
 4         6         8000           1000          0             1    1    1    1    1    1
 4         7         2000           1000          0             1    1    1    1    1    1
-5         8         10000          1000          0             1    1    1    1    1    1
-6         8         10000          1000          0             1    1    1    1    1    1
-7         8         10000          1000          0             1    1    1    1    1    1
 end
 
 
@@ -216,5 +213,6 @@ end
 8
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
 
-15,041    0       0       *         *         *         *         *         *         *         0          //Kundun Orders
+15,041    0       0       *         *         *         *         *         *         *         0          //Kundun Orders
+
 end
