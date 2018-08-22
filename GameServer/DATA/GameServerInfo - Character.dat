@@ -415,7 +415,7 @@ SUDefenseSuccessRatePvPConstC = 2
 ;==================================================
 DWDefenseConstA = 4
 DKDefenseConstA = 3
-FEDefenseConstA = 10
+FEDefenseConstA = 8
 MGDefenseConstA = 4
-DLDefenseConstA = 7
+DLDefenseConstA = 6
 SUDefenseConstA = 3
