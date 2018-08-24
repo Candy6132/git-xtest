@@ -4,7 +4,7 @@
 1         6000
 2         6000
 3         4000
-4         3000
+4         6000
 end
 
 4
@@ -19,19 +19,22 @@ end
 5
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
 
-14,013    0       0       *         *         *         *         *         *         *         0          //Jewel of Bless
+14,013    0       0       *         *         *         *         *         *         *         0          //Jewel of Bless
+
 end
 
 6
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
 
-14,014    0       0       *         *         *         *         *         *         *         0          //Jewel of Soul
+14,014    0       0       *         *         *         *         *         *         *         0          //Jewel of Soul
+
 end
 
 7
 //Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   Comment
 
-14,016    0       0       *         *         *         *         *         *         *         0          //Jewel of Life
+14,016    0       0       *         *         *         *         *         *         *         0          //Jewel of Life
+
 end
 
 8											
