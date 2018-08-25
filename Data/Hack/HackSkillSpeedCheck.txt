@@ -5,7 +5,7 @@
 //4	50	2000	2000	10	10	//Fire Ball 
 //5	50	2000	2000	10	10	//Flame  
 //7	50	2000	2000	10	10	//Ice  
-9	50	2000	2000	15	27	//Evil Spirit 
+//9	50	2000	2000	15	27	//Evil Spirit
 //10	50	2000	2000	10	10	//Hell Fire 
 //11	50	2000	2000	10	10	//Power Wave 
 //12	50	2000	2000	10	10	//Aqua Beam 
@@ -17,13 +17,13 @@
 //21	50	2000	2000	10	10	//Uppercut  
 //22	50	2000	2000	10	10	//Cyclone  
 //23	50	2000	2000	10	10	//Slash  
-24	50	2000	2000	50	50	//Triple Shot 
+//24	50	2000	2000	50	50	//Triple Shot
 //38	50	2000	2000	10	10	//Decay  
 //39	50	2000	2000	10	10	//Ice Storm 
 //40	50	2000	2000	10	10	//Nova  
-41	50	2000	2000	20	20	//Twisting Slash 
+//41	50	2000	2000	20	20	//Twisting Slash
 //42	50	2000	2000	10	10	//Rageful Blow 
-43	50	2000	2000	20	20	//Death Stab 
+//43	50	2000	2000	20	20	//Death Stab
 //44	50	2000	2000	10	10	//Crescent Moon Slash
 //45	50	2000	2000	10	10	//Mana Glaive 
 //46	50	2000	2000	10	10	//Starfall  
@@ -35,15 +35,15 @@
 //56	50	2000	2000	10	10	//Power Slash 
 //57	50	2000	2000	10	10	//Spiral Slash 
 //60	50	2000	2000	10	10	//Force  
-61	50	2000	2000	10	10	//Fire Burst 
+//61	50	2000	2000	10	10	//Fire Burst
 //62	50	2000	2000	10	10	//Earthquake  
-65	50	2000	2000	3	3	//Electric Spark 
+//65	50	2000	2000	3	3	//Electric Spark
 //66	50	2000	2000	10	10	//Force Wave 
 //67	50	2000	2000	10	10	//Stern  
 //73	50	2000	2000	10	10	//Mana Rays 
 //74	50	2000	2000	10	10	//Fire Blast 
 //75	50	2000	2000	10	10	//Brand  
-76	50	2000	2000	15	15	//Plasma Storm 
+//76	50	2000	2000	15	15	//Plasma Storm
 //77	50	2000	2000	10	10	//Infinity Arrow 
 //78	50	2000	2000	10	10	//Fire Scream 
 //79	50	2000	2000	10	10	//Explosion  
@@ -53,10 +53,10 @@
 //217	50	2000	2000	10	10	//Damage Reflect 
 //218	50	2000	2000	10	10	//Sword Power 
 //221	50	2000	2000	10	10	//Weakness  
-223	50	2000	2000	5	5	//Sahamutt  
-224	50	2000	2000	5	5	//Neil  
-225	50	2000	2000	5	5	//Ghost Phantom 
-230	50	2000	2000	20	20	//Lighning Shock 
+//223	50	2000	2000	5	5	//Sahamutt
+//224	50	2000	2000	5	5	//Neil
+//225	50	2000	2000	5	5	//Ghost Phantom
+//230	50	2000	2000	20	20	//Lighning Shock
 //232	50	2000	2000	10	10	//Frozen Stab 
 //233	50	2000	2000	10	10	//Magic Circle 
 //234	50	2000	2000	10	10	//Shield Recover 
