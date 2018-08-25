@@ -5,7 +5,7 @@
 2	    7271	   13		13		*		*		7			7		*		2			0		*		*			*			1		1			0	    100			100		100		100	       6600000		"JewelofExcellent"	//Jewel of Excellent
 3	    7272	   11		*		*		*		4			*		*		0			1		*		*			*			1		1			0	    100			100		100		100	       7500000		"JewelofAncient"	//Jewel of Ancient
 4	    7735	   *		*		*		*		4			*		*		*			*		*		*			*			0		0			0	    100			100		100		100	       25000		"LowRefineStone"	//Small Shard
-5	    7721	   *		*		*		*		4			*		*		*			*		*		*			*			0		0			0	    100			100		100		100	       15000000		"Event03"		//Kundun Orders
+5	    7283	   *		*		*		*		4			*		*		*			*		*		*			*			0		0			0	    100			100		100		100	       15000000		"Quest03"		//Mysterious Ice
 end
 
 1

@@ -78,22 +78,23 @@
 7733	255	255	40	"sdwater02"		//Steroids
 7735	0	50	255	"LowRefineStone"	//Small Shard
 7282	255	255	100	"JewelofAncient"	//Strange Jewel
+7283	255	255	100	"Quest03"		//Mysterious Ice
 
 //Test Items:
-150	255	255	100	"DarkHorseSoul"		//0
-662	255	255	100	"DarkHorseSoul"		//1
-1174	255	255	100	"DarkHorseSoul"		//2
-1686	255	255	100	"DarkHorseSoul"		//3
-2198	255	255	100	"DarkHorseSoul"		//4
-2710	255	255	100	"DarkHorseSoul"		//5
-3222	255	255	100	"DarkHorseSoul"		//6
-3734	255	255	100	"DarkHorseSoul"		//7
-4246	255	255	100	"DarkHorseSoul"		//8
-4758	255	255	100	"DarkHorseSoul"		//9
-5270	255	255	100	"DarkHorseSoul"		//10
-5782	255	255	100	"DarkHorseSoul"		//11
-6294	255	255	100	"DarkHorseSoul"		//12
-6806	255	255	100	"DarkHorseSoul"		//13
-7318	255	255	100	"DarkHorseSoul"		//14
-7830	255	255	100	"DarkHorseSoul"		//15
+150	255	255	100	"Quest03"		//0
+662	255	255	100	"Quest03"		//1
+1174	255	255	100	"Quest03"		//2
+1686	255	255	100	"Quest03"		//3
+2198	255	255	100	"Quest03"		//4
+2710	255	255	100	"Quest03"		//5
+3222	255	255	100	"Quest03"		//6
+3734	255	255	100	"Quest03"		//7
+4246	255	255	100	"Quest03"		//8
+4758	255	255	100	"Quest03"		//9
+5270	255	255	100	"Quest03"		//10
+5782	255	255	100	"Quest03"		//11
+6294	255	255	100	"Quest03"		//12
+6806	255	255	100	"Quest03"		//13
+7318	255	255	100	"Quest03"		//14
+7830	255	255	100	"Quest03"		//15
 end

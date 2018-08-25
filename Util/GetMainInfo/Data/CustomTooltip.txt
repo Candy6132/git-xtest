@@ -12,6 +12,7 @@
 7281	3
 7734	3
 7721	3
+7283	3
 end
 
 1
@@ -82,6 +83,7 @@ end
 7281	0	1	"+Ability to dye items"
 7281	0	1	"type /buypremium 3"
 7281	0	2	"Cannot be traded"
+7283	0	0	"Return this piece of ice to Librarian before it melts."
 7734	0	1	"This vial is used to dye items:"
 7734	0	1	"1. Place your item in top left corner of inventory"
 7734	0	1	"2. Type command: /dye"
@@ -334,6 +336,7 @@ end
 7281	0	1	"+Ability to dye items"
 7281	0	1	"type /buypremium 3"
 7281	0	2	"Cannot be traded"
+7283	0	0	"Return this piece of ice to Librarian before it melts."
 7734	0	1	"This vial is used to dye items:"
 7734	0	1	"1. Place your item in top left corner of inventory"
 7734	0	1	"2. Type command: /dye"
@@ -586,6 +589,7 @@ end
 7281	0	1	"+Ability to dye items"
 7281	0	1	"type /buypremium 3"
 7281	0	2	"Cannot be traded"
+7283	0	0	"Return this piece of ice to Librarian before it melts."
 7734	0	1	"This vial is used to dye items:"
 7734	0	1	"1. Place your item in top left corner of inventory"
 7734	0	1	"2. Type command: /dye"

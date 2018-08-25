@@ -26,7 +26,7 @@ CustomQuest_AnnouncePlayer = ""
 
 CustomQuest_PlansCount = 0
 
-CustomQuest_PlansGoal = 400
+CustomQuest_PlansGoal = 800
 
 -----------/SWAMP EVENT--------------
 
@@ -226,9 +226,9 @@ function CustomQuest_OnCharacterEntry(aIndex)
 		
 		------------SWAMP EVENT--------------
 		
-		NoticeSend(aIndex,0,"Help Librarian to find the secret location of new Kundun forces!")
+		NoticeSend(aIndex,0,"Help Librarian to examine Mysterious Ice!")
 		
-		NoticeSend(aIndex,0,string.format("%d/%d Kundun Orders collected",CustomQuest_PlansCount,CustomQuest_PlansGoal))
+		NoticeSend(aIndex,0,string.format("%d/%d Mysterious Ice collected",CustomQuest_PlansCount,CustomQuest_PlansGoal))
 		
 		-----------/SWAMP EVENT--------------
 	
@@ -682,10 +682,8 @@ function CustomQuest_OnMonsterDie(aIndex,bIndex)
 		
 		local AllowDrop = 1
 
-		if PartyIndex == -1 or PartyIndex == nil or PartyMemberCount == 0 then       -------------TEST
-		
-		--if PartyIndex == -1 or PartyIndex == nil then
-		
+		if PartyIndex == -1 or PartyIndex == nil or PartyMemberCount == 0 then
+
 			AllowDrop = CustomQuest_UpdateQuest(aIndex,AllowDrop,bIndex)
 			
 		else
@@ -752,7 +750,7 @@ function CustomQuest_OnTimerThread()
 		
 			if CustomQuest_AnnounceTimer == 1 then
 
-				local MessageText = string.format("%s returned Kundun Orders. %d Orders left to collect.",CustomQuest_AnnouncePlayer,CustomQuest_PlansGoal-CustomQuest_PlansCount)
+				local MessageText = string.format("%s returned Mysterious Ice. %d left to collect.",CustomQuest_AnnouncePlayer,CustomQuest_PlansGoal-CustomQuest_PlansCount)
 
 				NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
 			
