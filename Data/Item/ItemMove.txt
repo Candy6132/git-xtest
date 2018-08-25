@@ -144,4 +144,5 @@
 7734      0           1           0            1            //Large Vial of Dye
 7735      0           1           0            1            //Small Shard
 7282      0           0           0            0            //Strange Jewel
+7283      0           1           0            1            //Strange Jewel
 end
