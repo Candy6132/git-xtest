@@ -616,7 +616,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 		
 			------------SWAMP EVENT--------------
 		
-			if InventoryGetItemCount(bIndex,7721,-1) > 0 then
+			if InventoryGetItemCount(bIndex,7283,-1) > 0 then
 			
 				if CustomQuest_PlansGoal > CustomQuest_PlansCount then
 		
