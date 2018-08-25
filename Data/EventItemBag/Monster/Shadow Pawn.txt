@@ -7,7 +7,7 @@ end
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
 0         *         6000          10000         0             1    1    1    1    1    1	//Zen
 0         5         2260          1000          0             1    1    1    1    1    1	//Sety
-0         6         900           1000          0             1    1    1    1    1    1
+0         6         1000          1000          0             1    1    1    1    1    1
 0         7         350           1000          0             1    1    1    1    1    1
 0         8         250           1000          0             1    1    1    1    1    1
 0         9         140           1000          0             1    1    1    1    1    1
@@ -40,6 +40,7 @@ end
 13,017	8	0	*	*	*	*	*	*	*	0	//Blood Bone 8
 14,017	7	0	*	*	*	*	*	*	*	0	//Devil's Key 7
 14,018	7	0	*	*	*	*	*	*	*	0	//Devil's Eye 7
+14,029	7	0	*	*	*	*	*	*	*	0	//Symbol of Kundun 7
 end
 
 7
