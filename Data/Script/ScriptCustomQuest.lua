@@ -228,7 +228,7 @@ function CustomQuest_OnCharacterEntry(aIndex)
 		
 		NoticeSend(aIndex,0,"Help Librarian to examine Mysterious Ice!")
 		
-		NoticeSend(aIndex,0,string.format("%d Mysterious Ice collected",CustomQuest_PlansCount))
+		NoticeSend(aIndex,0,string.format("%d/%d Mysterious Ice collected",CustomQuest_PlansCount,CustomQuest_PlansGoal))
 		
 		-----------/SWAMP EVENT--------------
 	
