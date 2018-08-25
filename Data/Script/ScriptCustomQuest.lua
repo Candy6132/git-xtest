@@ -620,7 +620,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 			
 				if CustomQuest_PlansGoal > CustomQuest_PlansCount then
 		
-					InventoryDelItemCount(bIndex,7721,-1,1)
+					InventoryDelItemCount(bIndex,7283,-1,1)
 				
 					ItemDrop(bIndex,GetObjectMap(bIndex),GetObjectMapX(bIndex),GetObjectMapY(bIndex),101)
 					
