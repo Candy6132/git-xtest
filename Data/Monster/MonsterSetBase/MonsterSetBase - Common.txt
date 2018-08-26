@@ -3946,6 +3946,7 @@ end
 449            56             05         028            188            -1             //Blaze Napin
 449            56             05         028            183            -1             //Blaze Napin
 448            56             05         033            184            -1             //Ghost Napin
+449            56             05         083            217            -1             //Blaze Napin
 443            56             05         050            202            -1             //Sapi-Tres
 end
 
