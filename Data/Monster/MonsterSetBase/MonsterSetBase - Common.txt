@@ -3763,6 +3763,8 @@ end
 441	56	5	173	218	174	221	-1	2	//Sapi-Unus
 447	56	5	173	218	174	221	-1	1	//Thunder Napin
 
+447	56	5	237	232	235	234	-1	2	//Thunder Napin
+
 
 442	56	5	221	170	224	168	-1	2	//Sapi-Duo
 
@@ -3784,6 +3786,26 @@ end
 
 445	56	5	18	9	20	10	-1	1	//Shadow Knight
 446	56	5	18	9	20	10	-1	2	//Shadow Look
+
+
+448	56	5	52	232	54	231	-1	1	//Ghost Napin
+449	56	5	52	232	54	231	-1	2	//Blaze Napin
+
+445	56	5	27	22	24	24	-1	2	//Shadow Knight
+446	56	5	27	22	24	24	-1	1	//Shadow Look
+
+443	56	5	51	26	53	27	-1	2	//Sapi-Tres
+445	56	5	51	26	53	27	-1	1	//Shadow Knight
+446	56	5	51	26	53	27	-1	1	//Shadow Look
+
+444	56	5	233	11	235	13	-1	1	//Shadow Pawn
+445	56	5	233	11	235	13	-1	1	//Shadow Knight
+
+444	56	5	219	80	221	81	-1	1	//Shadow Pawn
+448	56	5	219	80	221	81	-1	2	//Ghost Napin
+
+444	56	5	208	30	206	29	-1	1	//Shadow Pawn
+445	56	5	233	11	206	29	-1	1	//Shadow Knight
 
 end
 2
@@ -3882,7 +3904,6 @@ end
 443            56             05         069            023            -1             //Sapi-Tres
 443            56             05         039            020            -1             //Sapi-Tres
 443            56             05         041            026            -1             //Sapi-Tres
-443            56             05         085            220            -1             //Sapi-Tres
 445            56             05         027            053            -1             //Shadow Knight
 445            56             05         032            053            -1             //Shadow Knight
 445            56             05         029            043            -1             //Shadow Knight
@@ -3927,8 +3948,6 @@ end
 448            56             05         026            226            -1             //Ghost Napin
 448            56             05         034            192            -1             //Ghost Napin
 449            56             05         012            182            -1             //Blaze Napin
-449            56             05         085            220            -1             //Blaze Napin
-449            56             05         085            220            -1             //Blaze Napin
 449            56             05         019            182            -1             //Blaze Napin
 449            56             05         010            192            -1             //Blaze Napin
 449            56             05         014            224            -1             //Blaze Napin
@@ -3946,7 +3965,6 @@ end
 449            56             05         028            188            -1             //Blaze Napin
 449            56             05         028            183            -1             //Blaze Napin
 448            56             05         033            184            -1             //Ghost Napin
-449            56             05         083            217            -1             //Blaze Napin
 443            56             05         050            202            -1             //Sapi-Tres
 end
 
