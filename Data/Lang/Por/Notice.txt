@@ -1,27 +1,31 @@
 //Message							Type	Count	Opacity	Delay	ColorR	ColorG	ColorB	Speed	RepeatTime
-"Mu Land needs you!"						0	0	0	0	0	0	0	0	700
+"Vote for WykopMu:"						0	0	0	0	0	0	0	0	700
+"www.topg.org"							0	0	0	0	0	0	0	0	3
+"www.arena-top100.com"						0	0	0	0	0	0	0	0	3
+
+"Mu Land needs you!"						0	0	0	0	0	0	0	0	1400
 "There are many quests for you to complete."			0	0	0	0	0	0	0	0	1
 "Ask Leo the Helper for a new Quest."				0	0	0	0	0	0	0	0	1
 
-"Tip 1: Turn on bot by command: '/attack 1 1 1 x'"		0	0	0	0	0	0	0	0	700
+"Tip 1: Turn on bot by command: '/attack 1 1 1 x'"		0	0	0	0	0	0	0	0	1400
 "x is number of your skill."					0	0	0	0	0	0	0	0	1
 "Example: '/attack 1 1 1 9' - autoattack Evli Spirit"		0	0	0	0	0	0	0	0	1
 "You can check skill numbers in Library."			0	0	0	0	0	0	0	0	1
 
-"Currently Active Events:"					0	0	0	0	0	0	0	0	700
+"Currently Active Events:"					0	0	0	0	0	0	0	0	1400
 "Searching La Cleon - collect Mysterious Ice"			0	0	0	0	0	0	0	0	1
 
-"Tip 2: You can use command: '/re auto'"			0	0	0	0	0	0	0	0	700
+"Tip 2: You can use command: '/re auto'"			0	0	0	0	0	0	0	0	1400
 "It allows other player to automaticly"				0	0	0	0	0	0	0	0	1
 "join your party."						0	0	0	0	0	0	0	0	1
 
-"Visit our Discord server:"	 				0	0	0	0	0	0	0	0	700
+"Visit our Discord server:"	 				0	0	0	0	0	0	0	0	1400
 "https://discord.gg/Y2QcQw8"					0	0	0	0	0	0	0	0	1
 
-"Tip 3: You can sell items in store for jewels!"		0	0	0	0	0	0	0	0	700
+"Tip 3: You can sell items in store for jewels!"		0	0	0	0	0	0	0	0	1400
 "Just place your item in personal store and set price,"		0	0	0	0	0	0	0	0	1
 "then type '/store bless' to open it."				0	0	0	0	0	0	0	0	1
 
-"Visit Librarian in Devias 206 30."				0	0	0	0	0	0	0	0	700
+"Visit Librarian in Devias 206 30."				0	0	0	0	0	0	0	0	1400
 "He has many useful books for you."				0	0	0	0	0	0	0	0	1
 end
