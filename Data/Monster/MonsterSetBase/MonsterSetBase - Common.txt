@@ -3882,6 +3882,7 @@ end
 443            56             05         069            023            -1             //Sapi-Tres
 443            56             05         039            020            -1             //Sapi-Tres
 443            56             05         041            026            -1             //Sapi-Tres
+443            56             05         085            220            -1             //Sapi-Tres
 445            56             05         027            053            -1             //Shadow Knight
 445            56             05         032            053            -1             //Shadow Knight
 445            56             05         029            043            -1             //Shadow Knight
@@ -3926,6 +3927,8 @@ end
 448            56             05         026            226            -1             //Ghost Napin
 448            56             05         034            192            -1             //Ghost Napin
 449            56             05         012            182            -1             //Blaze Napin
+449            56             05         085            220            -1             //Blaze Napin
+449            56             05         085            220            -1             //Blaze Napin
 449            56             05         019            182            -1             //Blaze Napin
 449            56             05         010            192            -1             //Blaze Napin
 449            56             05         014            224            -1             //Blaze Napin
