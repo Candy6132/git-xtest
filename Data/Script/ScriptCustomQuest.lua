@@ -26,7 +26,7 @@ CustomQuest_AnnouncePlayer = ""
 
 CustomQuest_PlansCount = 0
 
-CustomQuest_PlansGoal = 800
+CustomQuest_PlansGoal = 2000
 
 -----------/SWAMP EVENT--------------
 
@@ -228,7 +228,7 @@ function CustomQuest_OnCharacterEntry(aIndex)
 		
 		NoticeSend(aIndex,0,"Help Librarian to examine Mysterious Ice!")
 		
-		NoticeSend(aIndex,0,string.format("%d Mysterious Ice collected",CustomQuest_PlansCount))
+		NoticeSend(aIndex,0,string.format("%d/%d Mysterious Ice collected",CustomQuest_PlansCount,CustomQuest_PlansGoal))
 		
 		-----------/SWAMP EVENT--------------
 	
@@ -652,7 +652,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 
 					CustomQuest_AnnouncePlayer = GetObjectName(bIndex)
 					
-					CustomQuest_AnnounceTimer = 5
+					CustomQuest_AnnounceTimer = 10
 					
 					return 1
 				
@@ -750,7 +750,7 @@ function CustomQuest_OnTimerThread()
 		
 			if CustomQuest_AnnounceTimer == 1 then
 
-				local MessageText = string.format("%s returned Mysterious Ice. %d were collected.",CustomQuest_AnnouncePlayer,CustomQuest_PlansCount)
+				local MessageText = string.format("%s returned Mysterious Ice. %d left to collect.",CustomQuest_AnnouncePlayer,CustomQuest_PlansGoal-CustomQuest_PlansCount)
 
 				NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
 			
