@@ -909,7 +909,9 @@ function CustomQuest_CheckTableCommand(aIndex)
 			
 			--------------BOUNTY SYSTEM--------------
 			
-			local Bounty = CustomQuest_QuestStatusTable[TableIndex].Bounty
+			local Bounty = CustomQuest_QuestStatusTable[n].Bounty
+			
+			local LastKilledBy = CustomQuest_QuestStatusTable[n].LastKilledBy
 			
 			-------------/BOUNTY SYSTEM--------------
 			
@@ -923,7 +925,7 @@ function CustomQuest_CheckTableCommand(aIndex)
 			
 			--------------BOUNTY SYSTEM--------------
 			
-			NoticeSend(aIndex,1,string.format("#%d: %d %s %d %d %d",n,CharacterIndex,CharacterName,QuestStatus,MonsterCount,Bounty))
+			NoticeSend(aIndex,1,string.format("#%d: %d %s %d %d %d %s",n,CharacterIndex,CharacterName,QuestStatus,MonsterCount,Bounty,LastKilledBy))
 			
 			--NoticeSend(aIndex,1,string.format("#%d: %d %s %d %d",n,CharacterIndex,CharacterName,QuestStatus,MonsterCount))
 			
@@ -1255,9 +1257,9 @@ function CustomQuest_AddCharToTable(aIndex)
 			
 			end
 			
-			LogPrint(string.format("CustomQuestScript: Failed to read CustomQuest and CQMonsterCount from Query for %s",CharacterName))
+			LogPrint(string.format("CustomQuestScript: Failed to read CustomQuest and CQMonsterCount for %s",CharacterName))
 
-			LogColor(1,string.format("CustomQuestScript: Failed to read CustomQuest and CQMonsterCount from Query for %s",CharacterName))
+			LogColor(1,string.format("CustomQuestScript: Failed to read CustomQuest and CQMonsterCount for %s",CharacterName))
 			
 			return 0
 

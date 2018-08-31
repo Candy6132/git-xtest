@@ -2,6 +2,8 @@ CustomPK_SystemSwitch = 1
 
 CustomPK_MinBounty = 1000000
 
+CustomPK_BountyTax = 80
+
 CustomPK_PKList = {}
 
 
@@ -163,10 +165,8 @@ function CustomPK_OnCheckUserKiller(aIndex,bIndex)
 						NoticeSend(bIndex,1,string.format("%s took %d Bounty for your head.",KillerName,Bounty))
 
 						local MessageText = string.format("%s killed %s and took %d Zen Bounty for their head.",KillerName,VictimName,Bounty)
-						
-						NoticeSend(bIndex,1,MessageText)						---TEST
 
-						--NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
+						NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
 							
 							
 
@@ -221,7 +221,7 @@ function CustomPK_SetBounty(aIndex,arg)
 			
 			if BountyZen <= CommandMoney then
 			
-				if CustomQuest_AddCharToTable(bIndex) == 1 then
+				if CustomQuest_AddCharToTable(TargetIndex) == 1 then
 
 					local TableIndex = CustomQuest_GetIndexFromTable(TargetName)
 			
@@ -229,7 +229,7 @@ function CustomPK_SetBounty(aIndex,arg)
 					
 																				--TIMER BLOKUJACY BOUNTY GRACZA
 						
-						local Bounty = CustomQuest_QuestStatusTable[TableIndex].Bounty + BountyZen
+						local Bounty = CustomQuest_QuestStatusTable[TableIndex].Bounty + BountyZen * CustomPK_BountyTax / 100
 
 						if SQLQuery(string.format("UPDATE Character SET Bounty=%d WHERE Name='%s'",Bounty,TargetName)) == 0 then
 					
@@ -263,9 +263,9 @@ function CustomPK_SetBounty(aIndex,arg)
 						
 							NoticeSend(aIndex,1,string.format("You wish %s's death. Their total Bonty is %d Zen now.",TargetName,Bounty))
 						
-							--local MessageText = string.format("Someone set a %d Zen Bounty for %s's head.",Bounty,TargetName)
+							local MessageText = string.format("Someone set a %d Zen Bounty for %s's head.",Bounty,TargetName)
 					
-							--NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
+							NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
 
 						end	
 						
@@ -291,7 +291,15 @@ function CustomPK_SetBounty(aIndex,arg)
 
 	else
 	
-		NoticeSend(aIndex,1,string.format("No player %s found.",TargetName))
+		if TargetName == nil or TargetName == "" then
+	
+			NoticeSend(aIndex,1,string.format("No player %s found.",TargetName))
+		
+		else
+		
+			NoticeSend(aIndex,1,"No player found for Bounty.")
+		
+		end
 	
 	end
 	
