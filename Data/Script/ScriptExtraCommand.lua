@@ -1,3 +1,4 @@
+
 ScriptLoader_AddOnCommandManager("ExtraCommand_OnCommandManager")
 
 
@@ -86,6 +87,11 @@ function ExtraCommand_OnCommandManager(aIndex,code,arg)
 	elseif code == 122 then
 
 		ExtraCommand_GameMasterSetRuud(aIndex,arg)
+		return 1
+
+	elseif code == 204 then
+
+		CustomPK_SetBounty(aIndex,arg)
 		return 1
 
 	end

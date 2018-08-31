@@ -39,6 +39,10 @@
 202	  "/questinfo"
 203	  "/setquest"
 
+//Bounty System
+204	  "/bounty"
+205	  "/trackbounty"
+
 //Register
 250	  "/register"
 

@@ -194,7 +194,7 @@ function CustomQuest_OnCharacterEntry(aIndex)
 	
 		if CustomQuest_AddCharToTable(aIndex) == 1 then
 		
-			local TableIndex = GetIndexFromTable(CharacterName)
+			local TableIndex = CustomQuest_GetIndexFromTable(CharacterName)
 
 			local PartialQuestStatus = CustomQuest_QuestStatusTable[TableIndex].QuestStatus % 2
 			
@@ -260,7 +260,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 		
 			if CustomQuest_AddCharToTable(bIndex) == 1 then
 			
-				local TableIndex = GetIndexFromTable(CharacterName)
+				local TableIndex = CustomQuest_GetIndexFromTable(CharacterName)
 
 				local PartialQuestStatus = CustomQuest_QuestStatusTable[TableIndex].QuestStatus % 2
 			
@@ -820,7 +820,7 @@ function CustomQuest_Modify(aIndex,bName,cStatus,dMonster)
 
 	if GetObjectAuthority(aIndex) == 32 then
 
-		local TableIndex = GetIndexFromTable(bName)
+		local TableIndex = CustomQuest_GetIndexFromTable(bName)
 			
 		if TableIndex >= 1 then
 			
@@ -907,6 +907,12 @@ function CustomQuest_CheckTableCommand(aIndex)
 			
 			local MonsterCount = CustomQuest_QuestStatusTable[n].MonsterCount
 			
+			--------------BOUNTY SYSTEM--------------
+			
+			local Bounty = CustomQuest_QuestStatusTable[TableIndex].Bounty
+			
+			-------------/BOUNTY SYSTEM--------------
+			
 			if CharacterName == nil or CharacterName == "" then CharacterName = "nil" end
 			
 			if CharacterIndex == nil then CharacterIndex = "-1" end
@@ -915,7 +921,13 @@ function CustomQuest_CheckTableCommand(aIndex)
 			
 			if MonsterCount == nil then MonsterCount = "-1" end
 			
-			NoticeSend(aIndex,1,string.format("#%d: %d %s %d %d",n,CharacterIndex,CharacterName,QuestStatus,MonsterCount))
+			--------------BOUNTY SYSTEM--------------
+			
+			NoticeSend(aIndex,1,string.format("#%d: %d %s %d %d %d",n,CharacterIndex,CharacterName,QuestStatus,MonsterCount,Bounty))
+			
+			--NoticeSend(aIndex,1,string.format("#%d: %d %s %d %d",n,CharacterIndex,CharacterName,QuestStatus,MonsterCount))
+			
+			-------------/BOUNTY SYSTEM--------------
 			
 		end
 		
@@ -941,7 +953,7 @@ function CustomQuest_QuestInfoCommand(aIndex)
 
 		if CustomQuest_AddCharToTable(aIndex) == 1 then
 	
-			local TableIndex = GetIndexFromTable(CharacterName)
+			local TableIndex = CustomQuest_GetIndexFromTable(CharacterName)
 
 			local PartialQuestStatus = CustomQuest_QuestStatusTable[TableIndex].QuestStatus % 2
 			
@@ -1006,7 +1018,7 @@ function CustomQuest_UpdateQuest(MonsterIndex,AllowDrop,ParticipantIndex)
 		
 				if CustomQuest_AddCharToTable(ParticipantIndex) == 1 then
 				
-					local TableIndex = GetIndexFromTable(CharacterName)
+					local TableIndex = CustomQuest_GetIndexFromTable(CharacterName)
 
 					local PartialQuestStatus = CustomQuest_QuestStatusTable[TableIndex].QuestStatus % 2
 			
@@ -1126,7 +1138,7 @@ end
 
 function CustomQuest_GetQuestMessage(aIndex,bName)
 
-	local TableIndex = GetIndexFromTable(bName)
+	local TableIndex = CustomQuest_GetIndexFromTable(bName)
 	
 	local PartialQuestStatus = CustomQuest_QuestStatusTable[TableIndex].QuestStatus % 2
 	
@@ -1223,7 +1235,7 @@ function CustomQuest_AddCharToTable(aIndex)
 	
 	local CharacterName = GetObjectName(aIndex)
 	
-	local TableIndex = GetIndexFromTable(CharacterName)
+	local TableIndex = CustomQuest_GetIndexFromTable(CharacterName)
 
 	if TableIndex == 0 then
 
@@ -1259,6 +1271,14 @@ function CustomQuest_AddCharToTable(aIndex)
 			
 			CustomQuest_QuestStatusTableRow["MonsterCount"] = tonumber(SQLGetNumber("CQMonsterCount"))
 			
+			--------------BOUNTY SYSTEM--------------
+			
+			CustomQuest_QuestStatusTableRow["Bounty"] = tonumber(SQLGetNumber("Bounty"))
+			
+			CustomQuest_QuestStatusTableRow["LastKilledBy"] = ""
+
+			-------------/BOUNTY SYSTEM--------------
+			
 			table.insert(CustomQuest_QuestStatusTable,CustomQuest_QuestStatusTableRow)
 			
 			SQLClose()
@@ -1283,13 +1303,19 @@ function CustomQuest_RemoveCharFromTable(aIndex)
 	
 	local CharacterName = GetObjectName(aIndex)
 	
-	local TableIndex = GetIndexFromTable(CharacterName)
+	local TableIndex = CustomQuest_GetIndexFromTable(CharacterName)
 			
 	if TableIndex >= 1 then
 
 		local QuestStatus = CustomQuest_QuestStatusTable[TableIndex].QuestStatus
 		
 		local MonsterCount = CustomQuest_QuestStatusTable[TableIndex].MonsterCount
+		
+		--------------BOUNTY SYSTEM--------------
+		
+		local Bounty = CustomQuest_QuestStatusTable[TableIndex].Bounty
+		
+		-------------/BOUNTY SYSTEM--------------
 		
 		table.remove(CustomQuest_QuestStatusTable,TableIndex)
 
@@ -1341,6 +1367,34 @@ function CustomQuest_RemoveCharFromTable(aIndex)
 			
 		end
 		
+		--------------BOUNTY SYSTEM--------------
+
+		local QueryStatus3 = SQLQuery(string.format("UPDATE Character SET Bounty=%d WHERE Name='%s'",Bounty,CharacterName))
+		
+		SQLClose()
+		
+		if QueryStatus3 == 0 then
+			
+			LogPrint(string.format("BountySystem: SQLQuery failed to save Bounty for %s",CharacterName))
+
+			LogColor(1,string.format("BountySystem: SQLQuery failed to save Bounty for %s",CharacterName))
+			
+			if SQLCheck() == 0 then
+			
+				local SQL_ODBC = "MuOnline"
+
+				local SQL_USER = ""
+
+				local SQL_PASS = ""
+
+				SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+			
+			end
+			
+		end
+		
+		-------------/BOUNTY SYSTEM--------------
+		
 	end
 
 end
@@ -1348,7 +1402,7 @@ end
 
 
 
-function GetIndexFromTable(aName)
+function CustomQuest_GetIndexFromTable(aName)
 
 	local TableIndex = 0
 	
