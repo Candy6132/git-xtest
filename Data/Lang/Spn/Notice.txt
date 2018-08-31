@@ -28,4 +28,9 @@
 
 "Visit Librarian in Devias 206 30."				0	0	0	0	0	0	0	0	1400
 "He has many useful books for you."				0	0	0	0	0	0	0	0	1
+
+"You can now give Bounty for player's head."			0	0	0	0	0	0	0	0	1400
+"For example type /bounty 1000000 Candy_GM"			0	0	0	0	0	0	0	0	1
+
+"Type /trackbounty to find your victim."			0	0	0	0	0	0	0	0	1400
 end
