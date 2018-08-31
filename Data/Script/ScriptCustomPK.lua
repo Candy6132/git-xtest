@@ -1,25 +1,26 @@
 CustomPK_SystemSwitch = 1
 
+CustomPK_PKList = {}
+
 --------------BOUNTY SYSTEM--------------
 
 CustomPK_MinBounty = 1000000
 
-CustomPK_BountyTax = 90
+CustomPK_BountyTax = 80
 
 CustomPK_BountyTimer = 0
 
 CustomPK_BountyMinTime = 30
 
+ScriptLoader_AddOnTimerThread("CustomPK_OnTimerThread")
+
 -------------/BOUNTY SYSTEM--------------
-
-CustomPK_PKList = {}
-
 
 ScriptLoader_AddOnReadScript("CustomPK_OnReadScript")
 
 ScriptLoader_AddOnCheckUserKiller("CustomPK_OnCheckUserKiller")
 
-ScriptLoader_AddOnTimerThread("CustomPK_OnTimerThread")
+
 
 function CustomPK_OnReadScript()
 
@@ -212,124 +213,179 @@ end
 
 function CustomPK_SetBounty(aIndex,arg)
 
-	local TargetName = CommandGetArgString(arg,1)
+	if CustomPK_SystemSwitch ~= 0 then
+
+		local TargetName = CommandGetArgString(arg,1)
 	
-	if TargetName == nil or TargetName == "" then
+		if TargetName == nil or TargetName == "" then
 	
-		local CommandTableIndex = CustomQuest_GetIndexFromTable(GetObjectName(aIndex))
+			local CommandTableIndex = CustomQuest_GetIndexFromTable(GetObjectName(aIndex))
 	
-		if CommandTableIndex >= 1 then
+			if CommandTableIndex >= 1 then
 	
-			TargetName = CustomQuest_QuestStatusTable[CommandTableIndex].LastKilledBy
+				TargetName = CustomQuest_QuestStatusTable[CommandTableIndex].LastKilledBy
+	
+			end
 	
 		end
 	
-	end
+		local TargetIndex = GetObjectIndexByName(TargetName)
 	
-	local TargetIndex = GetObjectIndexByName(TargetName)
+		if CustomPK_BountyTimer == 0 then
 	
-	if CustomPK_BountyTimer == 0 then
+			if TargetIndex ~= -1 then
 	
-		if TargetIndex ~= -1 then
-	
-			local BountyZen = CommandGetArgNumber(arg,0)
+				local BountyZen = CommandGetArgNumber(arg,0)
 		
-			if BountyZen >= 1000000 then
+				if BountyZen >= 1000000 then
 		
-				local CommandMoney = GetObjectMoney(aIndex)
+					local CommandMoney = GetObjectMoney(aIndex)
 			
-				if BountyZen <= CommandMoney then
+					if BountyZen <= CommandMoney then
 			
-					if CustomQuest_AddCharToTable(TargetIndex) == 1 then
+						if CustomQuest_AddCharToTable(TargetIndex) == 1 then
 
-						local TableIndex = CustomQuest_GetIndexFromTable(TargetName)
+							local TableIndex = CustomQuest_GetIndexFromTable(TargetName)
 			
-						if TableIndex >= 1 then
+							if TableIndex >= 1 then
 					
-																					--TIMER BLOKUJACY BOUNTY GRACZA
+																						--TIMER BLOKUJACY BOUNTY GRACZA
 						
-							local Bounty = CustomQuest_QuestStatusTable[TableIndex].Bounty + BountyZen * CustomPK_BountyTax / 100
+								local Bounty = CustomQuest_QuestStatusTable[TableIndex].Bounty + BountyZen * CustomPK_BountyTax / 100
 
-							if SQLQuery(string.format("UPDATE Character SET Bounty=%d WHERE Name='%s'",Bounty,TargetName)) == 0 then
+								if SQLQuery(string.format("UPDATE Character SET Bounty=%d WHERE Name='%s'",Bounty,TargetName)) == 0 then
 					
-								SQLClose()
+									SQLClose()
 			
-								LogPrint(string.format("BountySystem: SQLQuery failed to save Bounty for %s",TargetName))
+									LogPrint(string.format("BountySystem: SQLQuery failed to save Bounty for %s",TargetName))
 
-								LogColor(1,string.format("BountySystem: SQLQuery failed to save Bounty for %s",TargetName))
+									LogColor(1,string.format("BountySystem: SQLQuery failed to save Bounty for %s",TargetName))
 			
-								if SQLCheck() == 0 then
+									if SQLCheck() == 0 then
 			
-									local SQL_ODBC = "MuOnline"
+										local SQL_ODBC = "MuOnline"
 
-									local SQL_USER = ""
+										local SQL_USER = ""
 
-									local SQL_PASS = ""
+										local SQL_PASS = ""
 
-									SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
+										SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
 			
-								end
+									end
+						
+								else
+					
+									SQLClose()
+								
+									CustomPK_BountyTimer = CustomPK_BountyMinTime
+						
+									SetObjectMoney(aIndex,CommandMoney-BountyZen)
+						
+									MoneySend(aIndex,CommandMoney-BountyZen)
+
+									CustomQuest_QuestStatusTable[TableIndex].Bounty = Bounty
+						
+									NoticeSend(aIndex,1,string.format("You wish %s's death. Their total Bounty is %s Zen now.",TargetName,GetZenString(Bounty)))
+						
+									local MessageText = string.format("Someone set a %s Zen Bounty for %s's head.",GetZenString(Bounty),TargetName)
+								
+									NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
+
+								end	
 						
 							else
-					
-								SQLClose()
-								
-								CustomPK_BountyTimer = CustomPK_BountyMinTime
-						
-								SetObjectMoney(aIndex,CommandMoney-BountyZen)
-						
-								MoneySend(aIndex,CommandMoney-BountyZen)
-
-								CustomQuest_QuestStatusTable[TableIndex].Bounty = Bounty
-						
-								NoticeSend(aIndex,1,string.format("You wish %s's death. Their total Bounty is %s Zen now.",TargetName,GetZenString(Bounty)))
-						
-								local MessageText = string.format("Someone set a %s Zen Bounty for %s's head.",GetZenString(Bounty),TargetName)
-								
-								NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
-
-							end	
-						
-						else
 				
-							NoticeSend(aIndex,1,string.format("No player %s found.",TargetName))
+								NoticeSend(aIndex,1,string.format("No player %s found.",TargetName))
+				
+							end
 				
 						end
 				
+					else
+			
+						NoticeSend(aIndex,1,"You don't have enough Zen.")
+			
 					end
-				
-				else
-			
-					NoticeSend(aIndex,1,"You don't have enough Zen.")
-			
-				end
 		
+				else
+	
+					NoticeSend(aIndex,1,string.format("Minimum Bounty is %s Zen.",GetZenString(CustomPK_MinBounty)))
+		
+				end
+
 			else
 	
-				NoticeSend(aIndex,1,string.format("Minimum Bounty is %s Zen.",GetZenString(CustomPK_MinBounty)))
+				if TargetName == nil or TargetName == "" then
+	
+					NoticeSend(aIndex,1,string.format("No player %s found.",TargetName))
 		
+				else
+		
+					NoticeSend(aIndex,1,"No player found for Bounty.")
+		
+				end
+	
 			end
-
+	
 		else
 	
-			if TargetName == nil or TargetName == "" then
+			NoticeSend(aIndex,1,string.format("You can't set Bounty now. Please wait %d sec.",CustomPK_BountyTimer))
 	
-				NoticeSend(aIndex,1,string.format("No player %s found.",TargetName))
+		end
+	
+	end
+	
+end
+
+
+function CustomPK_TrackBounty(aIndex,arg)
+
+	if CustomPK_SystemSwitch ~= 0 then
+	
+		local TrackBountyTable = {}
+
+		PlayerMap = GetObjectMap(aIndex)
+
+		for n=1,#CustomQuest_QuestStatusTable,1 do
 		
-			else
+			local nBounty = CustomQuest_QuestStatusTable[n].Bounty
+	
+			if nBounty > 0 then
 		
-				NoticeSend(aIndex,1,"No player found for Bounty.")
+				nName = CustomQuest_QuestStatusTable[n].Name
+			
+				nMap = GetObjectMap(GetObjectIndexByName(nName))
+			
+				if nMap == PlayerMap then
+			
+					local TrackBountyTableRow = string.format("Name: %s, Bounty: %s Zen",nName,GetZenString(nBounty))
+					
+					table.insert(TrackBountyTable,TrackBountyTableRow)
+			
+				end
 		
 			end
 	
 		end
-	
-	else
-	
-		NoticeSend(aIndex,1,string.format("You can't set Bounty now. Please wait %d sec.",CustomPK_BountyTimer))
+
+		if #TrackBountyTable >= 1 then
+		
+			NoticeSend(aIndex,1,"You sense the presence of victims:")
+		
+			for n=1,#TrackBountyTable,1 do
+			
+				NoticeSend(aIndex,1,TrackBountyTable[n])
+			
+			end
+		
+		else
+		
+			NoticeSend(aIndex,1,"No one can be hunted down in this vicinity.")
+			
+		end
 	
 	end
-	
+
 end
 
 function CustomPK_OnTimerThread()
