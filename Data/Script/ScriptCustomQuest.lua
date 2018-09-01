@@ -1079,8 +1079,10 @@ function CustomQuest_UpdateQuest(MonsterIndex,AllowDrop,ParticipantIndex)
 							end
 					
 							local MonsterCount = CustomQuest_QuestStatusTable[TableIndex].MonsterCount
+							
+							local NoMonsters = CustomQuest_QuestList[MainQuestStatus+1].NoMonsters
 
-							if MonsterCount < CustomQuest_QuestList[MainQuestStatus+1].NoMonsters then
+							if NoMonsters ~= nil and MonsterCount < NoMonsters then
 						
 								MonsterCount = MonsterCount+1
 							
