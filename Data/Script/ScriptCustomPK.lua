@@ -12,6 +12,10 @@ CustomPK_BountyTimer = 0
 
 CustomPK_BountyMinTime = 30
 
+CustomPK_UserDyeTable = {}
+
+CustomPK_DyeTableTime = 60
+
 ScriptLoader_AddOnTimerThread("CustomPK_OnTimerThread")
 
 -------------/BOUNTY SYSTEM--------------
@@ -19,6 +23,10 @@ ScriptLoader_AddOnTimerThread("CustomPK_OnTimerThread")
 ScriptLoader_AddOnReadScript("CustomPK_OnReadScript")
 
 ScriptLoader_AddOnCheckUserKiller("CustomPK_OnCheckUserKiller")
+
+ScriptLoader_AddOnUserRespawn("CustomPK_OnUserRespawn")
+
+ScriptLoader_AddOnCharacterClose("CustomPK_OnCharacterClose")
 
 
 
@@ -85,7 +93,7 @@ function CustomPK_OnReadScript()
 end
 
 
-function CustomPK_OnCheckUserKiller(aIndex,bIndex)
+function CustomPK_OnCheckUserKiller(aIndex,bIndex)		-- aIndex - Killer, bIndex - Victim
 
 	if CustomPK_SystemSwitch ~= 0 then
 
@@ -93,7 +101,6 @@ function CustomPK_OnCheckUserKiller(aIndex,bIndex)
 		local KillerMapX = GetObjectMapX(aIndex)
 		local KillerMapY = GetObjectMapY(aIndex)
 
-		
 		for n=1,#CustomPK_PKList,1 do
 
 			if CustomPK_PKList[n].Map == KillerMap then
@@ -119,26 +126,198 @@ function CustomPK_OnCheckUserKiller(aIndex,bIndex)
 			end
 
 		end
+
+		if #CustomPK_UserDyeTable > 0 then
 		
-		--------------BOUNTY SYSTEM--------------
+			local DyeTablePos = 0
 		
-		local VictimName = GetObjectName(bIndex)
+			for n=1,#CustomPK_UserDyeTable,1 do
 		
-		if CustomQuest_AddCharToTable(bIndex) == 1 then
+				if CustomPK_UserDyeTable[n].Victim == bIndex then
+				
+					DyeTablePos = n
+					
+					break
+					
+				end
+		
+			end
+
+			CustomPK_AddToDyeTable(DyeTablePos,bIndex,aIndex)
+			
+		else
+		
+			CustomPK_AddToDyeTable(0,bIndex,aIndex)
+		
+		end
+
+	end
+
+	return 1
+
+end
+
+
+
+function CustomPK_OnUserRespawn(aIndex,KillerType)
+
+	if CustomPK_SystemSwitch ~= 0 then
+
+		if KillerType == 0 or KillerType == 1 then
+	
+			if #CustomPK_UserDyeTable > 0 then
+		
+				for n=1,#CustomPK_UserDyeTable,1 do
+			
+					local VictimIndex = CustomPK_UserDyeTable[n].Victim
+		
+					if VictimIndex == aIndex then
+				
+						local KillerIndex = CustomPK_UserDyeTable[n].Killer
+					
+						table.remove(CustomPK_UserDyeTable,n)
+					
+						--Co sie ma dziac po zabiciu VictimIndex przez KillerIndex:
+				
+				
+						CustomPK_GiveBounty(KillerIndex,VictimIndex)		--BOUNTY SYSTEM
+				
+						break
+					
+					end
+		
+				end
+
+			end
+	
+		end
+	
+	end
+
+end
+
+
+
+
+function CustomPK_OnCharacterClose(aIndex)
+
+	if CustomPK_SystemSwitch ~= 0 then
+	
+		if #CustomPK_UserDyeTable > 0 then
+
+			for n=1,#CustomPK_UserDyeTable,1 do
+		
+				if CustomPK_UserDyeTable[n].Victim == aIndex or CustomPK_UserDyeTable[n].Killer == aIndex then
+				
+					table.remove(CustomPK_UserDyeTable,n)
+					
+					break
+					
+				end
+		
+			end
+
+		end
+		
+	end
+
+end
+
+
+
+
+function CustomPK_OnTimerThread()
+
+	if #CustomPK_UserDyeTable > 0 then
+		
+		for n=1,#CustomPK_UserDyeTable,1 do
+
+			local DyeTimer = CustomPK_UserDyeTable[n].Time
+			
+			if DyeTimer > 0 then
+
+				CustomPK_UserDyeTable[n].Time = DyeTimer - 1
+				
+			else
+			
+				table.remove(CustomPK_UserDyeTable,n)
+			
+			end
+
+		end
+
+	end
+
+--------------BOUNTY SYSTEM--------------
+
+	if CustomPK_BountyTimer > 0 then
+	
+		CustomPK_BountyTimer = CustomPK_BountyTimer - 1
+	
+	end
+	
+-------------/BOUNTY SYSTEM--------------	
+
+end
+
+
+
+
+
+
+
+function CustomPK_AddToDyeTable(aPosition,bVictim,cKiller)
+
+	local CustomPK_UserDyeTableRow = {}
+
+	if aPosition > 0 then
+	
+		CustomPK_UserDyeTable[aPosition].Victim = bVictim
+		
+		CustomPK_UserDyeTable[aPosition].Killer = cKiller
+		
+		CustomPK_UserDyeTable[aPosition].Time = CustomPK_DyeTableTime
+	
+	else
+	
+		CustomPK_UserDyeTableRow["Victim"] = bVictim
+		
+		CustomPK_UserDyeTableRow["Killer"] = cKiller
+		
+		CustomPK_UserDyeTableRow["Time"] = CustomPK_DyeTableTime
+		
+		table.insert(CustomPK_UserDyeTable,CustomPK_UserDyeTableRow)
+	
+	end
+
+end
+
+
+
+
+--------------BOUNTY SYSTEM--------------
+
+function CustomPK_GiveBounty(aKiller,bVictim)
+
+	local VictimName = GetObjectName(bVictim)
+	
+	local KillerName = GetObjectName(aKiller)
+	
+	if KillerName ~= nil then
+	
+		if CustomQuest_AddCharToTable(bVictim) == 1 then
 
 			local TableIndex = CustomQuest_GetIndexFromTable(VictimName)
 			
 			if TableIndex >= 1 then
-			
-				local KillerName = GetObjectName(aIndex)
-			
+
 				CustomQuest_QuestStatusTable[TableIndex].LastKilledBy = KillerName
 			
 				local Bounty = CustomQuest_QuestStatusTable[TableIndex].Bounty
 				
 				if Bounty > 0 then
 				
-					if GetObjectIpAddress(aIndex) ~= GetObjectIpAddress(bIndex) then
+					if GetObjectIpAddress(aKiller) ~= GetObjectIpAddress(bVictim) then
 
 						if SQLQuery(string.format("UPDATE Character SET Bounty=0 WHERE Name='%s'",VictimName)) == 0 then
 					
@@ -166,29 +345,25 @@ function CustomPK_OnCheckUserKiller(aIndex,bIndex)
 						
 							CustomQuest_QuestStatusTable[TableIndex].Bounty = 0
 
-							local CharacterZen = GetObjectMoney(aIndex)
+							local CharacterZen = GetObjectMoney(aKiller)
 
-							SetObjectMoney(aIndex,CharacterZen+Bounty)
+							SetObjectMoney(aKiller,CharacterZen+Bounty)
 
-							MoneySend(aIndex,CharacterZen+Bounty)
+							MoneySend(aKiller,CharacterZen+Bounty)
 						
-							NoticeSend(aIndex,1,string.format("You killed %s and won %d Zen for their head.",VictimName,Bounty))
+							NoticeSend(aKiller,1,string.format("You killed %s and won %d Zen for their head.",VictimName,Bounty))
 
-							NoticeSend(bIndex,1,string.format("%s took %d Bounty for your head.",KillerName,Bounty))
+							NoticeSend(bVictim,1,string.format("%s took %d Bounty for your head.",KillerName,Bounty))
 
 							local MessageText = string.format("%s killed %s and took %d Zen Bounty for their head.",KillerName,VictimName,Bounty)
 
 							NoticeLangGlobalSend(0,MessageText,MessageText,MessageText)
-							
-								
 
-							--KOMENDA SPRAWDZAJACA BOUNTY W LOKACJI
-			
 						end
 						
 					else
 					
-						NoticeSend(aIndex,1,"You can't get Bounty for your alt.")
+						NoticeSend(aKiller,1,"You can't get Bounty for your alt.")
 					
 					end
 				
@@ -198,18 +373,12 @@ function CustomPK_OnCheckUserKiller(aIndex,bIndex)
 
 		end
 		
-		--CustomQuest_QuestStatusTableRow["LastKilledBy"] = tostring(CharacterName)
-		
-		-------------/BOUNTY SYSTEM--------------
-
 	end
-
-	return 1
 
 end
 
 
---------------BOUNTY SYSTEM--------------
+
 
 function CustomPK_SetBounty(aIndex,arg)
 
@@ -383,16 +552,6 @@ function CustomPK_TrackBounty(aIndex,arg)
 			NoticeSend(aIndex,1,"No one can be hunted down in this vicinity.")
 			
 		end
-	
-	end
-
-end
-
-function CustomPK_OnTimerThread()
-
-	if CustomPK_BountyTimer > 0 then
-	
-		CustomPK_BountyTimer = CustomPK_BountyTimer - 1
 	
 	end
 
