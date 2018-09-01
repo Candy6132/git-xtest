@@ -26,7 +26,7 @@ CustomQuest_AnnouncePlayer = ""
 
 CustomQuest_PlansCount = 0
 
-CustomQuest_PlansGoal = 2000
+CustomQuest_PlansGoal = 1000
 
 -----------/SWAMP EVENT--------------
 
