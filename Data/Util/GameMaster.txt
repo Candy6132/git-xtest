@@ -1,8 +1,8 @@
 //Account         Name         Level
-Wraithulek	NOWITAM_GM	3
-Rezun2		Candy_GM	3
-buzka		POZDRO_GM	3
-test17		HotChick	3
-DominikGM1      Grass_GM        3
-carngm1664      Carnage_GM      2
+Wraithulek	NOWITAM_GM	2
+Rezun2		Candy_GM	2
+buzka		POZDRO_GM	2
+test17		HotChick	2
+DominikGM1      Grass_GM        2
+carngm1664      Carnage_GM      1
 end
