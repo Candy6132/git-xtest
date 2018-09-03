@@ -237,7 +237,7 @@ ShieldGaugeAttackComboMiss = 0
 ;==================================================
 ; Master Skill Tree Settings
 ;==================================================
-MasterSkillTree = 0
+MasterSkillTree = 1
 MasterSkillTreePoint = 1
 MasterSkillTreeMaxLevel = 200
 
