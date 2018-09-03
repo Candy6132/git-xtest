@@ -258,13 +258,13 @@ CommandGMPostGameMasterLevel = 1
 ; Track Command Settings
 ;==================================================
 CommandTrackSwitch = 1
-CommandTrackGameMasterLevel = 2
+CommandTrackGameMasterLevel = 0
 
 ;==================================================
 ; Trace Command Settings
 ;==================================================
 CommandTraceSwitch = 1
-CommandTraceGameMasterLevel = 0
+CommandTraceGameMasterLevel = 2
 
 ;==================================================
 ; Disconnect Command Settings
