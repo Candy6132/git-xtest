@@ -4,4 +4,5 @@ Rezun2		Candy_GM	3
 buzka		POZDRO_GM	3
 test17		HotChick	3
 DominikGM1      Grass_GM        3
+carngm1664      Carnage_GM      2
 end
