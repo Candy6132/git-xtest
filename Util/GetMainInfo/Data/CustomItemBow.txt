@@ -1,2 +1,3 @@
-//Index   Number   Effect   ColorR   ColorG   ColorB   ModelName
+//Index	Number	Effect	ColorR	ColorG	ColorB	ModelName
+2072	0	297	50	150	255	"gamblebow"
 end
