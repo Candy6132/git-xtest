@@ -64,11 +64,11 @@
 *             *           447            *              *              *              "Monster\Thuner Napin"
 *             *           448            *              *              *              "Monster\Thuner Napin"
 *             *           449            *              *              *              "Monster\Blaze Napin"
-//*             *           454            *              *              *              "Monster\Ice Walker"    //LaCleon drop zablokowany
-//*             *           455            *              *              *              "Monster\Ice Giant"    //LaCleon drop zablokowany
-//*             *           456            *              *              *              "Monster\Ice Giant"    //LaCleon drop zablokowany
-//*             *           457            *              *              *              "Monster\Coolutin"    //LaCleon drop zablokowany
-//*             *           458            *              *              *              "Monster\Iron Knight"    //LaCleon drop zablokowany
+*             *           454            *              *              *              "Monster\Ice Walker"    //LaCleon drop zablokowany
+*             *           455            *              *              *              "Monster\Ice Giant"    //LaCleon drop zablokowany
+*             *           456            *              *              *              "Monster\Ice Giant"    //LaCleon drop zablokowany
+*             *           457            *              *              *              "Monster\Coolutin"    //LaCleon drop zablokowany
+*             *           458            *              *              *              "Monster\Iron Knight"    //LaCleon drop zablokowany
 
 *             *           *              0              0              1              "Special\Devil Square 1"
 *             *           *              0              1              1              "Special\Devil Square 2"
