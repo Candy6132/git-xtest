@@ -3972,9 +3972,11 @@ end
 //Mob	Map	Radio	CordX	CordY	CordX2	CordY2	Dir	Quant	Name
 454	57	5	180	182	185	187	-1	4	//Ice Walker
 454	57	5	160	215	163	217	-1	4	//Ice Walker
+454	57	5	108	139	112	143	-1	4	//Ice Walker
 458	57	5	123	213	125	216	-1	4	//Iron Knight
 458	57	5	120	96	124	99	-1	4	//Iron Knight
-457	57	5	190	55	196	58	-1	4	//Iron Knight
+457	57	5	190	55	196	58	-1	4	//Coolutin 
+457	57	5	118	44	123	50	-1	4	//Coolutin 
 end									
 									
 									
@@ -4030,13 +4032,9 @@ end
 454	57	30	203	204	-1	//Ice Walker			
 454	57	30	196	203	-1	//Ice Walker			
 454	57	30	188	203	-1	//Ice Walker			
-454	57	30	179	204	-1	//Ice Walker			
 455	57	30	171	207	-1	//Giant Mammoth			
 455	57	30	174	214	-1	//Giant Mammoth			
-455	57	30	164	212	-1	//Giant Mammoth			
 456	57	30	168	217	-1	//Ice Giant			
-456	57	30	157	217	-1	//Ice Giant			
-456	57	30	153	210	-1	//Ice Giant			
 456	57	30	172	188	-1	//Ice Giant			
 456	57	30	166	187	-1	//Ice Giant			
 456	57	30	162	182	-1	//Ice Giant			
@@ -4051,7 +4049,6 @@ end
 458	57	30	123	142	-1	//Iron Knight			
 458	57	30	143	135	-1	//Iron Knight			
 458	57	30	144	107	-1	//Iron Knight			
-458	57	30	127	99	-1	//Iron Knight			
 458	57	30	161	135	-1	//Iron Knight			
 458	57	30	191	144	-1	//Iron Knight			
 458	57	30	189	102	-1	//Iron Knight			
@@ -4083,6 +4080,7 @@ end
 454	57	30	154	129	-1	//Ice Walker			
 454	57	30	141	113	-1	//Ice Walker			
 end									
+
 
 
 //=========================================================================================================================================
