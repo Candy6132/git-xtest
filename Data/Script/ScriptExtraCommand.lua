@@ -91,7 +91,7 @@ function ExtraCommand_OnCommandManager(aIndex,code,arg)
 
 	elseif code == 204 then
 
-		CustomPK_SetBounty(aIndex,arg)
+		CustomPK_SetBountyCommand(aIndex,arg)
 		return 1
 
 	elseif code == 205 then

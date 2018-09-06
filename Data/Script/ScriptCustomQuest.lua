@@ -1419,6 +1419,8 @@ function CustomQuest_GetIndexFromTable(aName)
 			if CustomQuest_QuestStatusTable[n].Name == aName then
 			
 				TableIndex = n
+				
+				break
 
 			end			
 			
