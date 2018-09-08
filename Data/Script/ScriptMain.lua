@@ -1,5 +1,6 @@
 require("ScriptDefine")
 require("ScriptUtil")
+require("ScriptMonster")
 require("ScriptCustomRespawn")
 require("ScriptExtraCommand")
 require("ScriptCustomPK")

@@ -196,12 +196,16 @@ function ExtraCommand_GameMasterMonsterSpawn(aIndex,arg)
 	if GetObjectAuthority(aIndex) == 32 then
 
 		local MonsterClass = CommandGetArgNumber(arg,0)
+		
+		local MonsterTime = CommandGetArgNumber(arg,1)
+		
+		if MonsterTime == nil or MonsterTime == 0 then MonsterTime = 60 end
 
-		local MonsterMap = CommandGetArgNumber(arg,1)
+		local MonsterMap = CommandGetArgNumber(arg,2)
 
-		local MonsterMapX = CommandGetArgNumber(arg,2)
+		local MonsterMapX = CommandGetArgNumber(arg,3)
 
-		local MonsterMapY = CommandGetArgNumber(arg,3)
+		local MonsterMapY = CommandGetArgNumber(arg,4)
 
 		if MonsterMap == 0 and MonsterMapX == 0 and MonsterMapY == 0 then
 
@@ -211,13 +215,9 @@ function ExtraCommand_GameMasterMonsterSpawn(aIndex,arg)
 
 			MonsterMapY = GetObjectMapY(aIndex)
 
-			MonsterCreate(MonsterClass,MonsterMap,MonsterMapX,MonsterMapY,0)
-
-		else
-
-			MonsterCreate(MonsterClass,MonsterMap,MonsterMapX,MonsterMapY,0)
-
 		end
+		
+		Monster_Spawn(MonsterClass,MonsterMap,MonsterMapX,MonsterMapY,-1,MonsterTime)
 
 	end
 
