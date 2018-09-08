@@ -7,12 +7,12 @@ LifespanTable = {}
 Monster_ActiveTable = {}
 
 
-ScriptLoader_AddOnReadScript("OnReadScript")
+ScriptLoader_AddOnReadScript("Monster_OnReadScript")
 
 ScriptLoader_AddOnTimerThread("OnTimerLifespan")
 
 
-function OnReadScript()
+function Monster_OnReadScript()
 
 	local ReadPassiveTable = FileLoad("..\\Data\\Script\\Data\\MonsterPassiveAbilities.txt")
 	
@@ -38,7 +38,7 @@ function OnReadScript()
 
 			ReadCount = ReadCount+1
 
-			MonsterTableRow["PMonsterSpawn"] = tonumber(ReadPassiveTable[ReadCount])
+			MonsterTableRow["PSpawnClass"] = tonumber(ReadPassiveTable[ReadCount])
 
 			ReadCount = ReadCount+1
 
@@ -118,6 +118,60 @@ end
 	
 function Monster_CallPassiveAbilities(aIndex)
 --The monster performs all passive abilities
+
+	if #MonsterActiveAbilitiesTable > 0 then
+
+		for n=1,#MonsterActiveAbilitiesTable,1 do
+		
+			local LordClass = MonsterActiveAbilitiesTable[n].LordClass
+		
+			if LordClass == GetObjectClass(aIndex) then
+			
+				local SpawnClass = MonsterActiveAbilitiesTable[n].PSpawnClass
+				
+				local NoMonsters = MonsterActiveAbilitiesTable[n].PNoMonsters
+
+				if SpawnClass ~= nil and NoMonsters ~= nil and NoMonsters > 0 then
+				
+					local MonsterMap = GetObjectMap(aIndex)
+					
+					local MonsterMapX = GetObjectMapX(aIndex)
+					
+					local MonsterMapY = GetObjectMapY(aIndex)
+				
+					local SpawnChance = MonsterActiveAbilitiesTable[n].PSpawnChance
+					
+					if SpawnChance == nil or SpawnChance == 10000 then
+					
+						for i=1,NoMonsters,1 do
+					
+							Monster_Spawn(SpawnClass,MonsterMap,MonsterMapX,MonsterMapY,-1,60)
+							
+						end
+
+					else
+					
+						if math.random(9999)+1 <= SpawnChance then
+						
+							for i=1,NoMonsters,1 do
+					
+								Monster_Spawn(SpawnClass,MonsterMap,MonsterMapX,MonsterMapY,-1,60)
+							
+							end
+						
+						end
+					
+					end
+
+				end
+				
+				break
+			
+			end
+		
+		end
+	
+	end
 
 end
 
