@@ -53,10 +53,10 @@
 "Ma dla ciebie wiele przydatnych wskazowek."			0	0	0	0	0	0	0	0	1
 
 "You can now give Bounty for player's head."			0	0	0	0	0	0	0	0	1400
-"For example type /bounty 1000000 Candy_GM"			0	0	0	0	0	0	0	0	1
+"For example type /bounty Candy_GM 1000000 zen"			0	0	0	0	0	0	0	0	1
 
 "Mozesz teraz placic za g³owe innych graczy."			0	0	0	0	0	0	0	0	60
-"Na przyklad wpisz /bounty 1000000 Candy_GM"			0	0	0	0	0	0	0	0	1
+"Na przyklad wpisz /bounty Candy_GM 1000000 zen"		0	0	0	0	0	0	0	0	1
 
 "Type /trackbounty to find your victim."			0	0	0	0	0	0	0	0	1400
 "Wpisz /trackbounty aby znalezc swoja ofiare."			0	0	0	0	0	0	0	0	1
