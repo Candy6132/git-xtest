@@ -16,6 +16,8 @@ ScriptLoader_AddOnCharacterClose("CustomQuest_OnCharacterClose")
 
 ------------SWAMP EVENT--------------
 
+CustomQuest_SwampEventSwitch = 0
+
 ScriptLoader_AddOnTimerThread("CustomQuest_OnTimerThread")
 
 CustomQuest_AnnounceTimer = 0
@@ -226,9 +228,13 @@ function CustomQuest_OnCharacterEntry(aIndex)
 		
 		------------SWAMP EVENT--------------
 		
-		NoticeSend(aIndex,0,"Help Librarian to examine Mysterious Ice!")
+		if CustomQuest_SwampEventSwitch == 1 then
 		
-		NoticeSend(aIndex,0,string.format("%d/%d Mysterious Ice collected",CustomQuest_PlansCount,CustomQuest_PlansGoal))
+			NoticeSend(aIndex,0,"Help Librarian to examine Mysterious Ice!")
+		
+			NoticeSend(aIndex,0,string.format("%d/%d Mysterious Ice collected",CustomQuest_PlansCount,CustomQuest_PlansGoal))
+		
+		end
 		
 		-----------/SWAMP EVENT--------------
 	
@@ -612,7 +618,7 @@ function CustomQuest_OnNpcTalk(aIndex,bIndex)
 	
 			return 1
 		
-		elseif GetObjectClass(aIndex) == 239 then
+		elseif GetObjectClass(aIndex) == 239 and CustomQuest_SwampEventSwitch == 1 then
 		
 			------------SWAMP EVENT--------------
 		
