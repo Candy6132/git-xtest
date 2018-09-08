@@ -906,31 +906,15 @@ function CustomQuest_CheckTableCommand(aIndex)
 			local QuestStatus = CustomQuest_QuestStatusTable[n].QuestStatus
 			
 			local MonsterCount = CustomQuest_QuestStatusTable[n].MonsterCount
-			
-			--------------BOUNTY SYSTEM--------------
-			
-			local Bounty = CustomQuest_QuestStatusTable[n].Bounty
-			
-			local LastKilledBy = CustomQuest_QuestStatusTable[n].LastKilledBy
-			
-			-------------/BOUNTY SYSTEM--------------
-			
+
 			if CharacterName == nil or CharacterName == "" then CharacterName = "nil" end
 			
 			if CharacterIndex == nil then CharacterIndex = "-1" end
 			
 			if QuestStatus == nil then QuestStatus = "-1" end
-			
-			if MonsterCount == nil then MonsterCount = "-1" end
-			
-			--------------BOUNTY SYSTEM--------------
-			
-			NoticeSend(aIndex,1,string.format("#%d: %d %s %d %d %d %s",n,CharacterIndex,CharacterName,QuestStatus,MonsterCount,Bounty,LastKilledBy))
-			
-			--NoticeSend(aIndex,1,string.format("#%d: %d %s %d %d",n,CharacterIndex,CharacterName,QuestStatus,MonsterCount))
-			
-			-------------/BOUNTY SYSTEM--------------
-			
+
+			NoticeSend(aIndex,1,string.format("#%d: %d %s %d %d",n,CharacterIndex,CharacterName,QuestStatus,MonsterCount))
+	
 		end
 		
 		NoticeSend(aIndex,1,string.format("--------------------"))
@@ -1274,15 +1258,7 @@ function CustomQuest_AddCharToTable(aIndex)
 			CustomQuest_QuestStatusTableRow["QuestStatus"] = tonumber(SQLGetNumber("CustomQuest"))
 			
 			CustomQuest_QuestStatusTableRow["MonsterCount"] = tonumber(SQLGetNumber("CQMonsterCount"))
-			
-			--------------BOUNTY SYSTEM--------------
-			
-			CustomQuest_QuestStatusTableRow["Bounty"] = tonumber(SQLGetNumber("Bounty"))
-			
-			CustomQuest_QuestStatusTableRow["LastKilledBy"] = ""
 
-			-------------/BOUNTY SYSTEM--------------
-			
 			table.insert(CustomQuest_QuestStatusTable,CustomQuest_QuestStatusTableRow)
 			
 			SQLClose()
@@ -1314,13 +1290,7 @@ function CustomQuest_RemoveCharFromTable(aIndex)
 		local QuestStatus = CustomQuest_QuestStatusTable[TableIndex].QuestStatus
 		
 		local MonsterCount = CustomQuest_QuestStatusTable[TableIndex].MonsterCount
-		
-		--------------BOUNTY SYSTEM--------------
-		
-		local Bounty = CustomQuest_QuestStatusTable[TableIndex].Bounty
-		
-		-------------/BOUNTY SYSTEM--------------
-		
+
 		table.remove(CustomQuest_QuestStatusTable,TableIndex)
 
 		local QueryStatus1 = SQLQuery(string.format("UPDATE Character SET CustomQuest=%d WHERE Name='%s'",QuestStatus,CharacterName))
@@ -1370,35 +1340,7 @@ function CustomQuest_RemoveCharFromTable(aIndex)
 			end
 			
 		end
-		
-		--------------BOUNTY SYSTEM--------------
 
-		local QueryStatus3 = SQLQuery(string.format("UPDATE Character SET Bounty=%d WHERE Name='%s'",Bounty,CharacterName))
-		
-		SQLClose()
-		
-		if QueryStatus3 == 0 then
-			
-			LogPrint(string.format("BountySystem: SQLQuery failed to save Bounty for %s",CharacterName))
-
-			LogColor(1,string.format("BountySystem: SQLQuery failed to save Bounty for %s",CharacterName))
-			
-			if SQLCheck() == 0 then
-			
-				local SQL_ODBC = "MuOnline"
-
-				local SQL_USER = ""
-
-				local SQL_PASS = ""
-
-				SQLConnect(SQL_ODBC,SQL_USER,SQL_PASS)
-			
-			end
-			
-		end
-		
-		-------------/BOUNTY SYSTEM--------------
-		
 	end
 
 end
