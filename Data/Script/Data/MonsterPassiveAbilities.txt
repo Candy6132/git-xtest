@@ -24,4 +24,6 @@
 357		12			4			3000			//Genocider
 422		11			3			8000			//Cursed Lich
 423		421			3			10000			//Totem Golem
+455		24			4			6000			//Giant Mammoth
+456		22			4			6000			//Ice Giant
 end

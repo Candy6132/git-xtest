@@ -1,2 +1,5 @@
-//Index   MapNumber   MaxLife   DamageMin   DamageMax   Defense   AttackRate   DefenseRate   ExperienceRate   KillMessage   InfoMessage   RewardValue1   RewardValue2
+//Index		MapNumber	MaxLife	DamageMin	DamageMax	Defense	AttackRate	DefenseRate	ExperienceRate	KillMessage	InfoMessage	RewardValue1	RewardValue2
+22		57		76923	6250		6250		11852	7273		7407		20000		*		*		*		*
+24		57		83333	6667		6667		12800	8000		8000		20000		*		*		0		0
+12		37		8000	1111		1111		1935	1280		1452		5000		*		*		0		*
 end

@@ -1,15 +1,15 @@
-MonsterPassiveAbilitiesTable = {}
+Monster_MonsterPassiveAbilitiesTable = {}
 
-MonsterActiveAbilitiesTable = {}
+Monster_MonsterActiveAbilitiesTable = {}
 
-LifespanTable = {}
+Monster_LifespanTable = {}
 
 Monster_ActiveTable = {}
 
 
 ScriptLoader_AddOnReadScript("Monster_OnReadScript")
 
-ScriptLoader_AddOnTimerThread("OnTimerLifespan")
+ScriptLoader_AddOnTimerThread("Monster_OnTimerLifespan")
 
 
 function Monster_OnReadScript()
@@ -50,7 +50,7 @@ function Monster_OnReadScript()
 
 			ReadCount = ReadCount+1
 			
-			table.insert(MonsterPassiveAbilitiesTable,MonsterTableRow)
+			table.insert(Monster_MonsterPassiveAbilitiesTable,MonsterTableRow)
 	
 		end
 
@@ -74,7 +74,7 @@ function Monster_OnReadScript()
 
 			ReadCount = ReadCount+1
 
-			table.insert(MonsterActiveAbilitiesTable,MonsterTableRow)
+			table.insert(Monster_MonsterActiveAbilitiesTable,MonsterTableRow)
 	
 		end
 
@@ -85,23 +85,23 @@ function Monster_OnReadScript()
 end
 
 
-function OnTimerLifespan()
+function Monster_OnTimerLifespan()
 
-	if #LifespanTable > 0 then
+	if #Monster_LifespanTable > 0 then
 	
-		for n=1,#LifespanTable,1 do
+		for n=1,#Monster_LifespanTable,1 do
 		
-			local LifespanTime = LifespanTable[n].Timer
+			local LifespanTime = Monster_LifespanTable[n].Timer
 		
 			if LifespanTime == 0 then
 
-				MonsterDelete(LifespanTable[n].Index)
+				MonsterDelete(Monster_LifespanTable[n].Index)
 			
-				table.remove(LifespanTable,n)
+				table.remove(Monster_LifespanTable,n)
 
 			else
 			
-				LifespanTable[n].Timer = LifespanTime - 1
+				Monster_LifespanTable[n].Timer = LifespanTime - 1
 			
 			end
 		
@@ -119,17 +119,17 @@ end
 function Monster_CallPassiveAbilities(aIndex)
 --The monster performs all passive abilities
 
-	if #MonsterActiveAbilitiesTable > 0 then
+	if #Monster_MonsterPassiveAbilitiesTable > 0 then
 
-		for n=1,#MonsterActiveAbilitiesTable,1 do
+		for n=1,#Monster_MonsterPassiveAbilitiesTable,1 do
 		
-			local LordClass = MonsterActiveAbilitiesTable[n].LordClass
+			local LordClass = Monster_MonsterPassiveAbilitiesTable[n].LordClass
 		
 			if LordClass == GetObjectClass(aIndex) then
 			
-				local SpawnClass = MonsterActiveAbilitiesTable[n].PSpawnClass
+				local SpawnClass = Monster_MonsterPassiveAbilitiesTable[n].PSpawnClass
 				
-				local NoMonsters = MonsterActiveAbilitiesTable[n].PNoMonsters
+				local NoMonsters = Monster_MonsterPassiveAbilitiesTable[n].PNoMonsters
 
 				if SpawnClass ~= nil and NoMonsters ~= nil and NoMonsters > 0 then
 				
@@ -139,7 +139,7 @@ function Monster_CallPassiveAbilities(aIndex)
 					
 					local MonsterMapY = GetObjectMapY(aIndex)
 				
-					local SpawnChance = MonsterActiveAbilitiesTable[n].PSpawnChance
+					local SpawnChance = Monster_MonsterPassiveAbilitiesTable[n].PSpawnChance
 					
 					if SpawnChance == nil or SpawnChance == 10000 then
 					
@@ -194,7 +194,7 @@ function Monster_Spawn(aClass,bMap,cMapX,dMapY,eTurn,dTime)
 		
 		LifespanTableRow["Timer"] = dTime
 	
-		table.insert(LifespanTable,LifespanTableRow)
+		table.insert(Monster_LifespanTable,LifespanTableRow)
 
 	end
 
