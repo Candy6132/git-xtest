@@ -92,6 +92,11 @@
 7269      9       0       *         *         *         *         *         *         *         0          *           *              150               199               500        //Jewel of Luck
 7270      7       0       *         *         *         *         *         *         *         0          *           *              150               199               1000       //Jewel of Skill
 
+//Blokada Dropu
+//Index   Level   Grade   Option0   Option1   Option2   Option3   Option4   Option5   Option6   Duration   MapNumber   MonsterClass   MonsterLevelMin   MonsterLevelMax   DropRate   Comment
+7183      6       0       *         *         *         *         *         *         *         0          57          22             1                 199               1000000    //Zen Ice Monster
+7183      6       0       *         *         *         *         *         *         *         0          57          24             1                 199               1000000    //Zen Worm
+7183      4       0       *         *         *         *         *         *         *         0          37          12             1                 199               1000000    //Zen Larva
 
 //Hell Maine in Aida
 //Index	Level	Grade	Option0	Option1	Option2	Option3	Option4	Option5	Option6	Duration	MapNumber	MonsterClass	MonsterLevelMin	MonsterLevelMax	DropRate	Comment					
@@ -128,5 +133,5 @@
 6676	0	0	*	*	*	*	*	*	*	0		*		137		*		*		30000	//Wizard Ring
 
 //Ancient Bali's Butterfly:
-7184	0	0	*	*	*	*	*	*	*	0		33		421		*		*		75000	//Jewel of Life	
+7184	0	0	*	*	*	*	*	*	*	0		33		421		*		*		75000	//Jewel of Life
 end
