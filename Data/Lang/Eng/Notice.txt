@@ -21,8 +21,8 @@
 "Przyklad: '/attack 1 1 1 9' - autoattack Evli Spirit"		0	0	0	0	0	0	0	0	5
 "Numery czarow znajdziesz w Kosciele Devias"			0	0	0	0	0	0	0	0	5
 
-"Currently Active Events:"					0	0	0	0	0	0	0	0	1400
-"Searching La Cleon - collect Mysterious Ice"			0	0	0	0	0	0	0	0	1
+//"Currently Active Events:"					0	0	0	0	0	0	0	0	1400
+//"Searching La Cleon - collect Mysterious Ice"			0	0	0	0	0	0	0	0	1
 
 //"Obecne Eveny:"							0	0	0	0	0	0	0	0	60
 //"Poszukiwania La Cleon - zbierz Mysterious Ice"			0	0	0	0	0	0	0	0	1
