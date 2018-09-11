@@ -20,6 +20,20 @@ MonsterCounterGMName = ""
 
 MonsterCounterTimer = 0
 
+-------SELUPAN--------
+
+SelupanPlayerList = {}
+
+SelupanMasterTimer = 0
+
+SelupanStartFightTimer = 0
+
+SelupanIndex = 0
+
+SelupanLastHP = 0
+
+------/SELUPAN--------
+
 
 
 
@@ -146,8 +160,36 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 		
 		------------------------/ Level Restrictions ---------------------
 	
+		------------------------- Selupan Boss Fight ---------------------
+		
+		if GetObjectClass(aIndex) == 460 or GetObjectClass(aIndex) == 461 or GetObjectClass(aIndex) == 462 then
+		
+			SelupanStartFightTimer = 20
+
+		elseif GetObjectClass(aIndex) == 459 then
+
+			SelupanPlayerList = nil
+
+			SelupanMasterTimer = 0
+
+			SelupanStartFightTimer = 0
+
+			SelupanIndex = 0
+
+			SelupanLastHP = 0
+		
+		end
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		------------------------/ Selupan Boss Fight ---------------------
 	
 		------------------------- Fire Festival Bosses---------------------
 		
@@ -247,6 +289,74 @@ function MonsterAbilities_OnTimerThread()
 		end
 		
 		---------------/Licznik Mobow--------------------
+		
+		------------------------- Selupan Boss Fight ---------------------
+		
+		if SelupanStartFightTimer == 1 then
+		
+			SelupanStartFightTimer = 0
+			
+			for o=GetMinMonsterIndex(),GetMaxMonsterIndex(),1 do
+			
+				if GetObjectClass(o) == 459 then
+				
+					SelupanIndex = o
+					
+					break
+				
+				end
+			
+			end
+			
+			if SelupanIndex ~= 0 then
+			
+				SelupanMasterTimer = 600
+			
+				SelupanLastHP = GetObjectLife(SelupanIndex)
+			
+				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Selupan Index: %d",SelupanIndex))	--TEST
+				
+				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Selupan HP: %d",SelupanLastHP))	--TEST
+				
+				SelupanPlayerList = nil
+			
+				for p=GetMinUserIndex(),GetMaxUserIndex(),1 do
+			
+					if GetObjectMap(p) == 58 then
+				
+						table.insert(SelupanPlayerList,p)
+					
+						NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Player: %s",GetObjectName(p)))	--TEST
+						
+						
+				
+					end
+				
+				end
+
+			end
+		
+		elseif SelupanStartFightTimer > 0 then
+		
+			SelupanStartFightTimer = SelupanStartFightTimer - 1
+			
+			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SelupanStartFightTimer: %d",SelupanStartFightTimer))	--TEST
+		
+		end
+		
+		if SelupanMasterTimer > 0 then
+		
+			SelupanMasterTimer = SelupanMasterTimer - 1
+			
+			SelupanLastHP = GetObjectLife(SelupanIndex)
+			
+			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SelupanMasterTimer: %d",SelupanMasterTimer))	--TEST
+			
+			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SelupanLastHP: %d",SelupanLastHP))	--TEST
+		
+		end
+		
+		------------------------/ Selupan Boss Fight ---------------------
 	
 	end
 
