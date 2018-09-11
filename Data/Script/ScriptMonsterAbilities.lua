@@ -84,37 +84,63 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 		
 		------------------------/ CUSTOM INVASION -------------------------
 
-		------------------------- BC, DS, CC Master Fix ---------------------
+		------------------------- Level Restrictions ---------------------
 		
-		if GetObjectLevel(bIndex) < 200 then
+		if GetObjectAuthority(bIndex) ~= 32 then
 		
-			if GetObjectMap(bIndex) == 52 then
-			
-				MoveUserEx(bIndex,2,210,28)
-				
-				ItemGiveEx(bIndex,6674,8,0,0,0,0,0)
-				
-				NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
-				
-			elseif GetObjectMap(bIndex) == 32 then
-			
-				MoveUserEx(bIndex,3,172,105)
-				
-				ItemGiveEx(bIndex,7187,7,0,0,0,0,0)
-				
-				NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
-				
-			elseif GetObjectMap(bIndex) == 53 then
-			
-				MoveUserEx(bIndex,0,123,133)
+			local KillerLevel = GetObjectLevel(bIndex)
+		
+			local KillerMap = GetObjectMap(bIndex)
+		
+			if (KillerLevel < 300 and KillerMap == 57) or (KillerLevel < 270 and KillerMap == 56) then
 
-				NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
+				MoveUserEx(bIndex,1,174,218)
+			
+				local KillerZen = GetObjectMoney(bIndex)
+			
+				SetObjectMoney(bIndex,KillerZen-2000000)
+			
+				MoneySend(bIndex,KillerZen-2000000)
+			
+				SetObjectPKLevel(bIndex,GetObjectPKLevel(bIndex)+4)
+			
+				SetObjectPKTimer(bIndex,GetObjectPKTimer(bIndex)+3600)
+
+				NoticeSend(bIndex,1,"Exploiting DL Summon is not allowed. Enjoy your punishment. :)")
+			
+				NoticeSend(bIndex,1,"You paid 2 000 000 Zen for warp.")
+		
+			elseif KillerLevel < 200 then
+		
+				if KillerMap == 52 then
+			
+					MoveUserEx(bIndex,2,210,28)
 				
+					ItemGiveEx(bIndex,6674,8,0,0,0,0,0)
+				
+					NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
+
+				elseif KillerMap == 32 then
+			
+					MoveUserEx(bIndex,3,172,105)
+				
+					ItemGiveEx(bIndex,7187,7,0,0,0,0,0)
+				
+					NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
+				
+				elseif KillerMap == 53 then
+			
+					MoveUserEx(bIndex,0,123,133)
+
+					NoticeSend(bIndex,1,"You must have at least 200 level to enter this location.")
+				
+				end
+
 			end
 		
 		end
 		
-		------------------------/ BC, DS, CC Master Fix ---------------------
+		------------------------/ Level Restrictions ---------------------
 	
 		
 		
