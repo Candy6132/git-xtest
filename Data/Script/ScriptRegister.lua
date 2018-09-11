@@ -202,23 +202,23 @@ function Register_OnTimerThread()
 
 	if Register_SystemSwitch == 1 then
 
-		for n=1,#Register_CharTimer,1 do
+		for s=1,#Register_CharTimer,1 do
 
-			local RegisterCharIndex = GetObjectIndexByName(Register_RegisterCharacterName[n])
+			local RegisterCharIndex = GetObjectIndexByName(Register_RegisterCharacterName[s])
 		
-			if Register_CharTimer[n] <= 0 then
+			if Register_CharTimer[s] <= 0 then
 		
 				UserGameLogout(RegisterCharIndex,2)
 			
-				Register_CharTimer[n] = 30
+				Register_CharTimer[s] = 30
 		
 			else
 			
-				if Register_CountingTime[n] == 1 then
+				if Register_CountingTime[s] == 1 then
 
-					Register_CharTimer[n] = Register_CharTimer[n]-1
+					Register_CharTimer[s] = Register_CharTimer[s]-1
 					
-					NoticeSend(RegisterCharIndex,1,string.format("You will be disconnecterd in: %d",Register_CharTimer[n]))
+					NoticeSend(RegisterCharIndex,1,string.format("You will be disconnecterd in: %d",Register_CharTimer[s]))
 				
 				end
 
