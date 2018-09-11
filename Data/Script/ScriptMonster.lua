@@ -87,9 +87,11 @@ end
 
 function Monster_OnTimerLifespan()
 
-	if #Monster_LifespanTable > 0 then
+	local LifespanTableLength = #Monster_LifespanTable
+
+	if LifespanTableLength > 0 then
 	
-		for n=1,#Monster_LifespanTable,1 do
+		for n=1,LifespanTableLength,1 do
 		
 			local LifespanTime = Monster_LifespanTable[n].Timer
 		
