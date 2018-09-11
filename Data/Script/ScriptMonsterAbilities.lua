@@ -101,10 +101,14 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 				SetObjectMoney(bIndex,KillerZen-2000000)
 			
 				MoneySend(bIndex,KillerZen-2000000)
+				
+				SetObjectPKCount(bIndex,GetObjectPKCount(bIndex)+3)
 			
-				SetObjectPKLevel(bIndex,GetObjectPKLevel(bIndex)+4)
+				SetObjectPKLevel(bIndex,GetObjectPKLevel(bIndex)+6)
 			
 				SetObjectPKTimer(bIndex,GetObjectPKTimer(bIndex)+3600)
+				
+				PKLevelSend(bIndex,GetObjectPKLevel(bIndex)+6)
 
 				NoticeSend(bIndex,1,"Exploiting DL Summon is not allowed. Enjoy your punishment. :)")
 			
