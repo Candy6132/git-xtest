@@ -53,7 +53,7 @@
 *             *           363            *              *              *              "Monster\Maya Hand Right"
 *             *           365            *              *              *              "Monster\Fortune Pouch"
 *             *           413            *              *              *              "Monster\Lunar Rabbit"
-*             *           459            *              *              *              "Monster\Selupan"
+//*             *           459            *              *              *              "Monster\Selupan"
 *             *           463            *              *              *              "Monster\Fire Flame Ghost"
 *             *           441            *              *              *              "Monster\Sapi Unus"
 *             *           442            *              *              *              "Monster\Sapi Unus"
