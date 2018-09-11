@@ -308,17 +308,17 @@ function CustomPK_OnTimerThread()
 
 	if #CustomPK_UserDieTable > 0 then
 		
-		for n=1,#CustomPK_UserDieTable,1 do
+		for r=1,#CustomPK_UserDieTable,1 do
 
-			local DieTimer = CustomPK_UserDieTable[n].Time
+			local DieTimer = CustomPK_UserDieTable[r].Time
 			
 			if DieTimer > 0 then
 
-				CustomPK_UserDieTable[n].Time = DieTimer - 1
+				CustomPK_UserDieTable[r].Time = DieTimer - 1
 				
 			else
 			
-				table.remove(CustomPK_UserDieTable,n)
+				table.remove(CustomPK_UserDieTable,r)
 			
 			end
 
