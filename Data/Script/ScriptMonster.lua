@@ -50,6 +50,18 @@ function Monster_OnReadScript()
 
 			ReadCount = ReadCount+1
 			
+			MonsterTableRow["Effect"] = tonumber(ReadPassiveTable[ReadCount])
+
+			ReadCount = ReadCount+1
+			
+			MonsterTableRow["EffectTime"] = tonumber(ReadPassiveTable[ReadCount])
+
+			ReadCount = ReadCount+1
+			
+			MonsterTableRow["EffectChance"] = tonumber(ReadPassiveTable[ReadCount])
+
+			ReadCount = ReadCount+1
+			
 			table.insert(Monster_MonsterPassiveAbilitiesTable,MonsterTableRow)
 	
 		end
@@ -118,7 +130,7 @@ end
 --Active abilities are abilities called while monster is fighting.
 
 	
-function Monster_CallPassiveAbilities(aIndex)
+function Monster_CallPassiveAbilities(aMonster,bKiller)
 --The monster performs all passive abilities
 
 	if #Monster_MonsterPassiveAbilitiesTable > 0 then
@@ -127,7 +139,7 @@ function Monster_CallPassiveAbilities(aIndex)
 		
 			local LordClass = Monster_MonsterPassiveAbilitiesTable[n].LordClass
 		
-			if LordClass == GetObjectClass(aIndex) then
+			if LordClass == GetObjectClass(aMonster) then
 			
 				local SpawnClass = Monster_MonsterPassiveAbilitiesTable[n].PSpawnClass
 				
@@ -135,11 +147,11 @@ function Monster_CallPassiveAbilities(aIndex)
 
 				if SpawnClass ~= nil and NoMonsters ~= nil and NoMonsters > 0 then
 				
-					local MonsterMap = GetObjectMap(aIndex)
+					local MonsterMap = GetObjectMap(aMonster)
 					
-					local MonsterMapX = GetObjectMapX(aIndex)
+					local MonsterMapX = GetObjectMapX(aMonster)
 					
-					local MonsterMapY = GetObjectMapY(aIndex)
+					local MonsterMapY = GetObjectMapY(aMonster)
 				
 					local SpawnChance = Monster_MonsterPassiveAbilitiesTable[n].PSpawnChance
 					
@@ -165,6 +177,32 @@ function Monster_CallPassiveAbilities(aIndex)
 					
 					end
 
+				end
+				
+				local Effect = Monster_MonsterPassiveAbilitiesTable[n].Effect
+				
+				if Effect ~= nil then
+				
+					local EffectChance = Monster_MonsterPassiveAbilitiesTable[n].EffectChance
+					
+					local EffectTime = Monster_MonsterPassiveAbilitiesTable[n].EffectTime
+					
+					if EffectTime == nil or EffectTime == 0 then EffectTime = 5 end
+					
+					if EffectChance == nil or EffectChance == 10000 then
+					
+						EffectAdd(bKiller,0,Effect,EffectTime,0,0,0,0)
+					
+					else
+					
+						if math.random(9999)+1 <= EffectChance then
+						
+							EffectAdd(bKiller,0,Effect,EffectTime,0,0,0,0)
+	
+						end
+					
+					end
+					
 				end
 				
 				break
@@ -202,4 +240,33 @@ function Monster_Spawn(aClass,bMap,cMapX,dMapY,eTurn,dTime)
 
 	return MonsterIndex
 	
+end
+
+
+function Monster_CheckDistanceBetweenObjects(aIndex,bIndex)
+
+	local AMap = GetObjectMap(aIndex)
+	
+	local AMapX = GetObjectMapY(aIndex)
+	
+	local AMapX = GetObjectMapY(aIndex)
+
+	local BMap = GetObjectMap(bIndex)
+	
+	local BMapX = GetObjectMapY(bIndex)
+	
+	local BMapX = GetObjectMapY(bIndex)
+	
+	if AMap == BMap then
+	
+		local Distance = tonumber(math.sqrt((AMapX-BMapX)^2+(AMapY-BMapY)^2))
+		
+		return Distance
+	
+	else
+	
+		return -1
+	
+	end
+
 end

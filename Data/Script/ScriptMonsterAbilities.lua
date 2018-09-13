@@ -26,14 +26,27 @@ SelupanPlayerList = {}
 
 SelupanMasterTimer = 0
 
+SelupanMaxFightTime = 1199
+
+--SelupanEnrageTime = 600
+
+SelupanEnrageTime = 1000 -- TEST
+
 SelupanStartFightTimer = 0
+
+SelupanPhase = 0
 
 SelupanIndex = 0
 
 SelupanLastHP = 0
 
-------/SELUPAN--------
+RINGOFICE = 6664
 
+PENDANTOFICE = 6681
+
+ScriptLoader_AddOnUserRespawn("MonsterAbilities_OnUserRespawn")
+
+------/SELUPAN--------
 
 
 
@@ -60,7 +73,7 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 
 	if MonsterAbilities_SystemSwitch == 1 then
 	
-		Monster_CallPassiveAbilities(aIndex)
+		Monster_CallPassiveAbilities(aIndex,bIndex)
 	
 		----------------Licznik Mobow--------------------
 		
@@ -162,32 +175,51 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 	
 		------------------------- Selupan Boss Fight ---------------------
 		
-		if GetObjectClass(aIndex) == 460 or GetObjectClass(aIndex) == 461 or GetObjectClass(aIndex) == 462 then
+		if GetObjectMap(aIndex) == 58 then
 		
-			SelupanStartFightTimer = 20
+			local MonsterClass = GetObjectClass(aIndex)
+		
+			if MonsterClass == 460 or MonsterClass == 461 or MonsterClass == 462 then
+		
+				SelupanStartFightTimer = 20
 
-		elseif GetObjectClass(aIndex) == 459 then
+			elseif MonsterClass == 459 then
 
-			SelupanPlayerList = nil
+				MonsterAbilities_SelupanResetFight()
+		
+			elseif MonsterClass == 22 then
+			
+				local PendantItem = InventoryGetItemIndex(bIndex,4)
+				
+				local Ring1Item = InventoryGetItemIndex(bIndex,8)
+				
+				local Ring2Item = InventoryGetItemIndex(bIndex,10)
 
-			SelupanMasterTimer = 0
-
-			SelupanStartFightTimer = 0
-
-			SelupanIndex = 0
-
-			SelupanLastHP = 0
+				if PendantItem ~= PENDANTOFICE and Ring1Item ~= RINGOFICE and Ring2Item ~= RINGOFICE then
+				
+					EffectAdd(bIndex,0,57,10,0,0,0,0)
+				
+					for nPlayer=1,#SelupanPlayerList,1 do
+					
+						local nPlayerIndex = SelupanPlayerList[nPlayer]
+				
+						if bIndex ~= nPlayerIndex and Monster_CheckDistanceBetweenObjects(bIndex,nPlayerIndex) <= 2 then
+					
+							EffectAdd(nPlayerIndex,0,57,10,0,0,0,0)
+					
+						end
+						
+					end
+					
+				else
+				
+					EffectAdd(bIndex,0,57,5,0,0,0,0)
+				
+				end
+		
+			end
 		
 		end
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		------------------------/ Selupan Boss Fight ---------------------
 	
@@ -268,6 +300,40 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 end
 
 
+------------------------- Selupan Boss Fight ---------------------
+
+function MonsterAbilities_OnUserRespawn(aIndex,KillerType)
+
+	if MonsterAbilities_SystemSwitch ~= 0 then
+	
+		local DeathMap = GetObjectDeathMap(aIndex)
+
+		if DeathMap == 58 then
+		
+			if SelupanMasterTimer > 0 then
+			
+				local DeathMapX = GetObjectDeathMapX(aIndex)
+				
+				local DeathMapY = GetObjectDeathMapY(aIndex)
+			
+				Monster_Spawn(55,DeathMap,DeathMapX,DeathMapY,-1,600)
+				
+				ChatTargetSend(SelupanIndex,-1,"This soul is mine now!")
+		
+				MonsterAbilities_SelupanRefreshPlayerList()
+			
+			end
+		
+		end
+		
+	end
+	
+end
+
+------------------------/ Selupan Boss Fight ---------------------
+
+
+
 function MonsterAbilities_OnTimerThread()
 
 	if MonsterAbilities_SystemSwitch == 1 then
@@ -296,63 +362,97 @@ function MonsterAbilities_OnTimerThread()
 		
 			SelupanStartFightTimer = 0
 			
-			for o=GetMinMonsterIndex(),GetMaxMonsterIndex(),1 do
+			MonsterAbilities_StartSelupanFight()
 			
-				if GetObjectClass(o) == 459 then
-				
-					SelupanIndex = o
-					
-					break
-				
-				end
-			
-			end
-			
-			if SelupanIndex ~= 0 then
-			
-				SelupanMasterTimer = 600
-			
-				SelupanLastHP = GetObjectLife(SelupanIndex)
-			
-				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Selupan Index: %d",SelupanIndex))	--TEST
-				
-				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Selupan HP: %d",SelupanLastHP))	--TEST
-				
-				SelupanPlayerList = nil
-			
-				for p=GetMinUserIndex(),GetMaxUserIndex(),1 do
-			
-					if GetObjectMap(p) == 58 then
-				
-						table.insert(SelupanPlayerList,p)
-					
-						NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Player: %s",GetObjectName(p)))	--TEST
-						
-						
-				
-					end
-				
-				end
+			ChatTargetSend(SelupanIndex,-1,"How dare you touch my eggs?!")		--TEST
 
-			end
-		
 		elseif SelupanStartFightTimer > 0 then
 		
 			SelupanStartFightTimer = SelupanStartFightTimer - 1
-			
-			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SelupanStartFightTimer: %d",SelupanStartFightTimer))	--TEST
-		
+
 		end
 		
-		if SelupanMasterTimer > 0 then
+		if SelupanMasterTimer > 1 then
 		
 			SelupanMasterTimer = SelupanMasterTimer - 1
 			
-			SelupanLastHP = GetObjectLife(SelupanIndex)
+			SelupanLastHP = tonumber(100*GetObjectLife(SelupanIndex)/GetObjectMaxLife(SelupanIndex))
 			
+			if SelupanLastHP <= 10 then
+			
+				SelupanPhase = 4						--Summon Iron Knight + Summon Golden Titan + Summon Ice Giant + Meteor (Czesciej) razem z Ice Arrow
+			
+			elseif SelupanLastHP <= 30 then
+			
+				SelupanPhase = 3						--Summon Golden Titan + Summon Ice Giant + Meteor
+			
+			elseif SelupanLastHP <= 60 then
+			
+				SelupanPhase = 2						--Summon Ice Giant + Meteor
+			
+			elseif SelupanLastHP <= 90 then
+			
+				SelupanPhase = 1						--Summon Mammoth + Meteor
+			
+			end
+			
+			local SelupanPlayerListLength = #SelupanPlayerList
+			
+			if SelupanPlayerListLength > 0 then
+			
+				for k=1,SelupanPlayerListLength,1 do
+			
+					if GetObjectMap(k) ~= 58 then
+				
+						MonsterAbilities_SelupanRefreshPlayerList()
+					
+						break
+				
+					end
+					
+				end
+				
+			else
+			
+				MonsterAbilities_SelupanResetFight()
+			
+			end
+			
+			if SelupanMasterTimer < SelupanEnrageTime then
+			
+				for j=1,#SelupanPlayerList,1 do
+				
+					Monster_Spawn(101,58,GetObjectMapX(j),GetObjectMapY(j),0,5)
+					
+					EffectAdd(j,0,76,5,10,10,0,0)
+					
+					EffectAdd(j,0,77,5,0,0,10,10)
+				
+				end
+			
+			end
+
 			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SelupanMasterTimer: %d",SelupanMasterTimer))	--TEST
 			
 			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SelupanLastHP: %d",SelupanLastHP))	--TEST
+			
+		elseif SelupanMasterTimer == 1 then
+
+			MonsterAbilities_SelupanRefreshPlayerList()
+			
+			local SelupanPlayerListLength = #SelupanPlayerList
+			
+			if SelupanPlayerListLength > 0 then
+			
+				for g=1,SelupanPlayerListLength,1 do
+				
+					MoveUser(SelupanPlayerList[g],287)
+				
+				end
+			
+			end
+			
+			MonsterAbilities_SelupanResetFight()
 		
 		end
 		
@@ -399,3 +499,93 @@ function MonsterAbilities_OnTimerThread()
 ------------------------- Fire Festival Bosses---------------------
 
 end
+
+------------------------- Selupan Boss Fight ---------------------
+
+function MonsterAbilities_StartSelupanFight()
+
+	for o=GetMinMonsterIndex(),GetMaxMonsterIndex(),1 do
+			
+		if GetObjectClass(o) == 459 then
+				
+			if GetObjectLife(o) > 0 and GetObjectMap(o) == 58 then
+				
+				SelupanIndex = o
+					
+				break
+					
+			end
+				
+		end
+			
+	end
+			
+	if SelupanIndex ~= 0 then
+			
+		SelupanLastHP = tonumber(100*GetObjectLife(SelupanIndex)/GetObjectMaxLife(SelupanIndex))
+
+		SelupanMasterTimer = SelupanMaxFightTime
+
+		NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Selupan Index: %d",SelupanIndex))	--TEST
+		
+		NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Selupan HP: %d",SelupanLastHP))	--TEST
+		
+		MonsterAbilities_SelupanRefreshPlayerList()
+		
+		return true
+		
+	else
+	
+		return false
+
+	end
+
+end
+
+
+function MonsterAbilities_SelupanResetFight()
+
+	SelupanPlayerList = {}
+
+	SelupanMasterTimer = 0
+
+	SelupanStartFightTimer = 0
+
+	SelupanIndex = 0
+
+	SelupanLastHP = 0
+	
+	SelupanPhase = 0
+	
+	for e=GetMinMonsterIndex(),GetMaxMonsterIndex(),1 do
+			
+		if GetObjectClass(e) == 459 then
+			
+			MonsterDelete(e)
+			
+		end
+			
+	end
+
+end
+
+
+function MonsterAbilities_SelupanRefreshPlayerList()
+
+	SelupanPlayerList = {}
+			
+	for p=GetMinUserIndex(),GetMaxUserIndex(),1 do
+			
+		if GetObjectMap(p) == 58 then
+
+			table.insert(SelupanPlayerList,p)
+
+			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Player: %s",GetObjectName(p)))	--TEST
+		
+		end
+	
+	end
+
+end
+
+------------------------/ Selupan Boss Fight ---------------------
