@@ -34,6 +34,22 @@ SelupanEnrageTime = 1000 -- TEST
 
 SelupanStartFightTimer = 0
 
+SelupanMammothFreq = 10
+
+SelupanIceGiantFreq = 30
+
+SelupanTitanFreq = 45
+
+SelupanTitanDuration = 15
+
+SelupanMeteorFrequency = 30
+
+SelupanMeteorTimer = 0
+
+SelupanMeteorDuration = 15
+
+SelupanMeteorTarget = 0
+
 SelupanPhase = 0
 
 SelupanIndex = 0
@@ -74,6 +90,12 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 	if MonsterAbilities_SystemSwitch == 1 then
 	
 		Monster_CallPassiveAbilities(aIndex,bIndex)
+		
+		if GetObjectClass(aIndex) == 53 then
+		
+			Monster_FrostBloom(aIndex,7,10)
+		
+		end
 	
 		----------------Licznik Mobow--------------------
 		
@@ -188,12 +210,12 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 				MonsterAbilities_SelupanResetFight()
 		
 			elseif MonsterClass == 22 then
-			
-				local PendantItem = InventoryGetItemIndex(bIndex,4)
+
+				local PendantItem = InventoryGetItemIndex(bIndex,9)
 				
-				local Ring1Item = InventoryGetItemIndex(bIndex,8)
+				local Ring1Item = InventoryGetItemIndex(bIndex,10)
 				
-				local Ring2Item = InventoryGetItemIndex(bIndex,10)
+				local Ring2Item = InventoryGetItemIndex(bIndex,11)
 
 				if PendantItem ~= PENDANTOFICE and Ring1Item ~= RINGOFICE and Ring2Item ~= RINGOFICE then
 				
@@ -203,7 +225,7 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 					
 						local nPlayerIndex = SelupanPlayerList[nPlayer]
 				
-						if bIndex ~= nPlayerIndex and Monster_CheckDistanceBetweenObjects(bIndex,nPlayerIndex) <= 2 then
+						if bIndex ~= nPlayerIndex and Monster_CheckDistanceBetweenObjects(bIndex,nPlayerIndex,-1,-1,-1) <= 2 then
 					
 							EffectAdd(nPlayerIndex,0,57,10,0,0,0,0)
 					
@@ -307,6 +329,8 @@ function MonsterAbilities_OnUserRespawn(aIndex,KillerType)
 	if MonsterAbilities_SystemSwitch ~= 0 then
 	
 		local DeathMap = GetObjectDeathMap(aIndex)
+		
+		if aIndex == SelupanMeteorTarget then SelupanMeteorTimer = 0 end
 
 		if DeathMap == 58 then
 		
@@ -317,6 +341,8 @@ function MonsterAbilities_OnUserRespawn(aIndex,KillerType)
 				local DeathMapY = GetObjectDeathMapY(aIndex)
 			
 				Monster_Spawn(55,DeathMap,DeathMapX,DeathMapY,-1,600)
+				
+				Monster_FrostBloom(aIndex,22,10)
 				
 				ChatTargetSend(SelupanIndex,-1,"This soul is mine now!")
 		
@@ -405,6 +431,8 @@ function MonsterAbilities_OnTimerThread()
 					if GetObjectMap(k) ~= 58 then
 				
 						MonsterAbilities_SelupanRefreshPlayerList()
+						
+						SelupanPlayerListLength = #SelupanPlayerList
 					
 						break
 				
@@ -412,29 +440,47 @@ function MonsterAbilities_OnTimerThread()
 					
 				end
 				
+			end
+
+			if SelupanPlayerListLength > 0 then
+			
+				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Phase: %d, Mod: %d",SelupanPhase,(SelupanMasterTimer % SelupanMammothFreq)))	--TEST
+
+				if SelupanPhase == 1 and (SelupanMasterTimer % SelupanMammothFreq) == 0 then
+				
+					local SpawnX = math.random(-3,3) + GetObjectMapX(SelupanIndex)
+					
+					local SpawnY = math.random(-3,3) + GetObjectMapY(SelupanIndex)
+					
+					NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SpawnX: %d, SpawnY: %d",SpawnX,SpawnY))	--TEST
+			
+					Monster_Spawn(455,58,SpawnX,SpawnY,-1,60)
+			
+				end
+			
+				if SelupanMasterTimer < SelupanEnrageTime then
+			
+					for j=1,#SelupanPlayerList,1 do
+				
+						Monster_Spawn(101,58,GetObjectMapX(j),GetObjectMapY(j),0,5)
+					
+						EffectAdd(j,0,76,5,10,10,0,0)							--TEST
+					
+						EffectAdd(j,0,77,5,0,0,10,10)							--TEST
+				
+					end
+			
+				end
+
+				--NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SelupanMasterTimer: %d",SelupanMasterTimer))	--TEST
+			
+				--NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SelupanLastHP: %d",SelupanLastHP))	--TEST
+				
 			else
 			
 				MonsterAbilities_SelupanResetFight()
 			
 			end
-			
-			if SelupanMasterTimer < SelupanEnrageTime then
-			
-				for j=1,#SelupanPlayerList,1 do
-				
-					Monster_Spawn(101,58,GetObjectMapX(j),GetObjectMapY(j),0,5)
-					
-					EffectAdd(j,0,76,5,10,10,0,0)
-					
-					EffectAdd(j,0,77,5,0,0,10,10)
-				
-				end
-			
-			end
-
-			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SelupanMasterTimer: %d",SelupanMasterTimer))	--TEST
-			
-			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SelupanLastHP: %d",SelupanLastHP))	--TEST
 			
 		elseif SelupanMasterTimer == 1 then
 
@@ -585,6 +631,47 @@ function MonsterAbilities_SelupanRefreshPlayerList()
 		end
 	
 	end
+
+end
+
+
+function MonsterAbilities_SpawnInVicinity(aClass,bDuration,cRange,dMinDistance)
+
+	local SpawnInProgress = true
+	
+	local Range = cRange / 2
+	
+	local MapX = 0
+	
+	local MapY = 0
+	
+	while SpawnInProgress do
+
+		MapX = math.random(Range * (-1),Range) + GetObjectMapX(SelupanIndex)
+		
+		MapY = math.random(Range * (-1),Range) + GetObjectMapY(SelupanIndex)
+		
+		if MapCheckAttr(58,MapX,MapY,2) == 1 then
+		
+			SpawnInProgress = false
+		
+			for nVicinity=1,#SelupanPlayerList,1 do
+			
+				local Distance = Monster_CheckDistanceBetweenObjects(SelupanPlayerList[nVicinity],-1,58,MapX,MapY)
+			
+				if Distance ~= -1 and Distance <= dMinDistance then
+				
+					SpawnInProgress = true
+				
+				end
+			
+			end
+		
+		end
+
+	end
+	
+	return Monster_Spawn(aClass,58,MapX,MapY,-1,bDuration)
 
 end
 

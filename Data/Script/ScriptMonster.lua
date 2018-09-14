@@ -230,9 +230,9 @@ function Monster_Spawn(aClass,bMap,cMapX,dMapY,eTurn,dTime)
 	
 		local LifespanTableRow = {}
 		
-		LifespanTableRow["Index"] = MonsterIndex
+		LifespanTableRow["Index"] = tonumber(MonsterIndex)
 		
-		LifespanTableRow["Timer"] = dTime
+		LifespanTableRow["Timer"] = tonumber(dTime)
 	
 		table.insert(Monster_LifespanTable,LifespanTableRow)
 
@@ -243,21 +243,31 @@ function Monster_Spawn(aClass,bMap,cMapX,dMapY,eTurn,dTime)
 end
 
 
-function Monster_CheckDistanceBetweenObjects(aIndex,bIndex)
+function Monster_CheckDistanceBetweenObjects(aIndex,bIndex,cMap,dMapX,eMapY)
 
 	local AMap = GetObjectMap(aIndex)
 	
 	local AMapX = GetObjectMapY(aIndex)
 	
-	local AMapX = GetObjectMapY(aIndex)
+	local AMapY = GetObjectMapY(aIndex)
+	
+	local BMap = cMap
+	
+	local BMapX = dMapX
+	
+	local BMapY = eMapY
+	
+	if bIndex ~= nil and bIndex ~= -1 then
 
-	local BMap = GetObjectMap(bIndex)
+		BMap = GetObjectMap(bIndex)
 	
-	local BMapX = GetObjectMapY(bIndex)
+		BMapX = GetObjectMapY(bIndex)
 	
-	local BMapX = GetObjectMapY(bIndex)
+		BMapY = GetObjectMapY(bIndex)
+		
+	end
 	
-	if AMap == BMap then
+	if AMap ~= nil and BMap ~= nil and AMap == BMap then
 	
 		local Distance = tonumber(math.sqrt((AMapX-BMapX)^2+(AMapY-BMapY)^2))
 		
@@ -266,6 +276,43 @@ function Monster_CheckDistanceBetweenObjects(aIndex,bIndex)
 	else
 	
 		return -1
+	
+	end
+
+end
+
+
+function Monster_FrostBloom(aIndex,bRange,cDuration)
+
+	for nBloom=GetMinUserIndex(),GetMaxUserIndex(),1 do
+	
+		local nDistance = Monster_CheckDistanceBetweenObjects(aIndex,nBloom,-1,-1,-1)
+	
+		if nDistance ~= -1 and nDistance <= bRange then
+		
+			if GetObjectMap(aIndex) == 58 then
+		
+				Monster_Spawn(101,GetObjectMap(nBloom),GetObjectMapX(nBloom),GetObjectMapY(nBloom),0,cDuration)
+				
+			end
+		
+			EffectAdd(nBloom,0,57,cDuration,0,0,0,0)
+			
+			EffectAdd(nBloom,0,86,cDuration,0,0,0,0)
+			
+			local PendantItem = InventoryGetItemIndex(nBloom,9)
+				
+			local Ring1Item = InventoryGetItemIndex(nBloom,10)
+				
+			local Ring2Item = InventoryGetItemIndex(nBloom,11)
+
+			if PendantItem ~= 6664 and Ring1Item ~= 6681 and Ring2Item ~= 6681 then
+				
+				EffectAdd(nBloom,0,61,cDuration,0,0,0,0)
+			
+			end
+		
+		end
 	
 	end
 

@@ -9,26 +9,31 @@
 //											       by Candy //
 //======================================================================================================//
 
+
+//Effect Frozen Stab: 86 dla Ice Monster po zabiciu przez gracza
+//Effect Ice Arrow: 57 dla Ice Monster podczas walki z Selupanem
+//Sahamut 75 podczas Meteorytow
+//Sleep 72 lub Neil 74
 //Enrage: 76, 77 Lesser Damage i Def
-//dodaï¿½ passive Ice po zabiciu Ice Monster i passive Poison po zabiciu Larvy
+//dodaæ passive Ice po zabiciu Ice Monster i passive Poison po zabiciu Larvy
 
 //LordClass	PassiveSpawnClass	PassiveNoMonsters	PassiveSpawnChance	PassiveEffect	PassiveEffectTime	PassiveEffectChance	Comment
-9		88			1			300			*		*		*			//Thunder Lich
-13		3			6			3000			*		*		*			//Hell Spider
-16		14			2			10000			*		*		*			//Chief Skeleton Warrior
-22		*			*			*			86		5		3000			//Ice Monster
-24		*			*			*			55		10		3000			//Larva
-25		22			4			10000			57		10		10000			//Ice Queen
-42		2			5			10000			*		*		*			//Adud
-44		2			4			5000			*		*		*			//Red Dragon
-49		177			2			10000			*		*		*			//Hydra
-51		45			2			2000			*		*		*			//Great Bahamut
-67		38			1			10000			*		*		*			//Metal Balrog
-79		43			3			5000			*		*		*			//Golden Dragon
-150		421			5			10000			55		60		10000			//Bali
-357		12			4			3000			*		*		*			//Genocider
-422		11			3			8000			*		*		*			//Cursed Lich
-423		421			3			10000			*		*		*			//Totem Golem
-455		24			4			6000			*		*		*			//Giant Mammoth
-456		22			4			6000			*		*		*			//Ice Giant
+9		88			1			300			*		*			*			//Thunder Lich
+13		3			6			3000			*		*			*			//Hell Spider
+16		14			2			10000			*		*			*			//Chief Skeleton Warrior
+22		*			*			*			86		5			3000			//Ice Monster
+24		*			*			*			55		10			3000			//Larva
+25		22			4			10000			57		10			10000			//Ice Queen
+42		2			5			10000			*		*			*			//Adud
+44		2			4			5000			*		*			*			//Red Dragon
+49		177			2			10000			*		*			*			//Hydra
+51		45			2			2000			*		*			*			//Great Bahamut
+67		38			1			10000			*		*			*			//Metal Balrog
+79		43			3			5000			*		*			*			//Golden Dragon
+150		421			5			10000			55		60			10000			//Bali
+357		12			4			3000			*		*			*			//Genocider
+422		11			3			8000			*		*			*			//Cursed Lich
+423		421			3			10000			*		*			*			//Totem Golem
+455		24			4			6000			*		*			*			//Giant Mammoth
+456		22			4			6000			*		*			*			//Ice Giant
 end
