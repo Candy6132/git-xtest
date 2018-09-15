@@ -40,7 +40,17 @@ SelupanIceGiantFreq = 30
 
 SelupanTitanFreq = 45
 
+SelupanTitanIndex = 0
+
+SelupanTitanTimer = 0
+
 SelupanTitanDuration = 15
+
+SelupanTitanGateIndex = 0
+
+SelupanTitanGateTimer = 0
+
+SelupanTitanGateDuration = 10
 
 SelupanMeteorFrequency = 30
 
@@ -94,6 +104,14 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 		if GetObjectClass(aIndex) == 53 then
 		
 			Monster_FrostBloom(aIndex,7,10)
+			
+			if aIndex == SelupanTitanIndex then
+			
+				SelupanTitanIndex = 0
+				
+				SelupanTitanTimer = 0
+			
+			end
 		
 		end
 	
@@ -238,6 +256,12 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 					EffectAdd(bIndex,0,57,5,0,0,0,0)
 				
 				end
+				
+			elseif MonsterClass == 158 then
+			
+				SelupanTitanGateTimer = 0
+				
+				SelupanTitanGateIndex = 0
 		
 			end
 		
@@ -396,6 +420,52 @@ function MonsterAbilities_OnTimerThread()
 
 		end
 		
+		if SelupanMeteorTimer > 0 then
+		
+			SelupanMeteorTimer = SelupanMeteorTimer - 1
+			
+			local MeteorTargetMapX = GetObjectMapX(SelupanMeteorTarget)
+			
+			local MeteorTargetMapY = GetObjectMapY(SelupanMeteorTarget)
+			
+			Monster_Spawn(103,58,MeteorTargetMapX,MeteorTargetMapY,0,5)
+
+		end
+		
+		if SelupanTitanGateTimer > 1 then
+		
+			SelupanTitanGateTimer = SelupanTitanGateTimer - 1
+		
+		elseif SelupanTitanGateTimer == 1 then
+		
+			local GateMapX = GetObjectMapX(SelupanTitanGateIndex)
+			
+			local GateMapY = GetObjectMapY(SelupanTitanGateIndex)
+		
+			SelupanTitanIndex = Monster_Spawn(53,58,GateMapX,GateMapY,-1,SelupanTitanDuration)				--Goledn Titan
+			
+			SelupanTitanTimer = SelupanTitanDuration
+		
+			SelupanTitanGateTimer = 0
+			
+			SelupanTitanGateIndex = 0
+		
+		end
+		
+		if SelupanTitanTimer > 1 then
+		
+			SelupanTitanTimer = SelupanTitanTimer - 1
+			
+		elseif SelupanTitanTimer == 1 then
+		
+			Monster_FrostBloom(SelupanTitanIndex,20,5)
+		
+			SelupanTitanTimer = 0
+		
+			SelupanTitanIndex = 0 
+		
+		end
+		
 		if SelupanMasterTimer > 1 then
 		
 			SelupanMasterTimer = SelupanMasterTimer - 1
@@ -422,7 +492,7 @@ function MonsterAbilities_OnTimerThread()
 				
 				ChatTargetSend(SelupanIndex,-1,"You're just a miserable dust!")
 				
-			elseif SelupanPhase == 3 and SelupanLastHP <= 10 then						--Summon Iron Knight + Summon Golden Titan + Summon Ice Giant + Meteor (Czesciej) razem z Ice Arrow
+			elseif SelupanPhase == 3 and SelupanLastHP <= 10 then						--Summon Golden Titan + Summon Ice Giant + Meteor (Czesciej) razem z Ice Arrow
 			
 				SelupanPhase = 4
 				
@@ -458,8 +528,74 @@ function MonsterAbilities_OnTimerThread()
 					
 					local SpawnY = math.random(-3,3) + GetObjectMapY(SelupanIndex)
 
-					Monster_Spawn(455,58,SpawnX,SpawnY,-1,60)
+					Monster_Spawn(455,58,SpawnX,SpawnY,-1,60)															--Mammoth
+					
+				elseif SelupanPhase > 1 and (SelupanMasterTimer % SelupanIceGiantFreq) == 0 then
+				
+					local SpawnX = math.random(-3,3) + GetObjectMapX(SelupanIndex)
+					
+					local SpawnY = math.random(-3,3) + GetObjectMapY(SelupanIndex)
+
+					Monster_Spawn(456,58,SpawnX,SpawnY,-1,60)															--Ice Giant
 			
+				end
+				
+				if SelupanPhase > 3 and (SelupanMasterTimer % SelupanTitanFreq) == 0 then
+					
+					local SpawnX = math.random(-5,5) + GetObjectMapX(SelupanIndex)										--ZROBIC FUNKCJE ZEBY NIE RESPILO W SCIANIE
+					
+					local SpawnY = math.random(-5,5) + GetObjectMapY(SelupanIndex)
+
+					SelupanTitanGateIndex = Monster_Spawn(158,58,SpawnX,SpawnY,-1,SelupanTitanGateDuration)				--Kalima Gate
+					
+					SelupanTitanGateTimer = SelupanTitanGateDuration
+
+					ChatTargetSend(SelupanIndex,-1,"Come my infernal minion. The master calls you!")
+					
+					NoticeRegionSend(0,"Selupan Spawns Titan Gate")														--TEST
+				
+				end
+
+				if SelupanPhase < 4 then
+				
+					if (SelupanMasterTimer % SelupanMeteorFrequency) == 0 then
+				
+						SelupanMeteorTarget = SelupanPlayerList[math.random(1,#SelupanPlayerList)]
+						
+						SelupanMeteorTimer = SelupanMeteorDuration
+						
+						EffectAdd(SelupanMeteorTarget,0,75,SelupanMeteorDuration,0,0,0,0)
+						
+						local MeteorTargetMapX = GetObjectMapX(SelupanMeteorTarget)
+						
+						local MeteorTargetMapY = GetObjectMapY(SelupanMeteorTarget)
+						
+						Monster_Spawn(103,58,MeteorTargetMapX,MeteorTargetMapY,0,3)										--Meteor
+						
+						ChatTargetSend(SelupanIndex,-1,"I'll burn you!")
+						
+					end
+					
+				else
+				
+					if (SelupanMasterTimer % SelupanMeteorFrequency/2) == 0 then
+				
+						SelupanMeteorTarget = SelupanPlayerList[math.random(1,#SelupanPlayerList)]
+						
+						SelupanMeteorTimer = SelupanMeteorDuration
+						
+						EffectAdd(SelupanMeteorTarget,0,75,SelupanMeteorDuration,0,0,0,0)
+						
+						EffectAdd(SelupanMeteorTarget,0,57,SelupanMeteorDuration,0,0,0,0)
+						
+						local MeteorTargetMapX = GetObjectMapX(SelupanMeteorTarget)
+						
+						local MeteorTargetMapY = GetObjectMapY(SelupanMeteorTarget)
+						
+						Monster_Spawn(103,58,MeteorTargetMapX,MeteorTargetMapY,0,3)										--Meteor
+					
+					end
+					
 				end
 			
 				if SelupanPhase ~= 5 and SelupanMasterTimer < SelupanEnrageTime then
