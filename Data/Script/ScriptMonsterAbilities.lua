@@ -225,8 +225,8 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 					
 						local nPlayerIndex = SelupanPlayerList[nPlayer]
 				
-						if bIndex ~= nPlayerIndex and Monster_CheckDistanceBetweenObjects(bIndex,nPlayerIndex,-1,-1,-1) <= 2 then
-					
+						if bIndex ~= nPlayerIndex and Monster_CheckDistanceBetweenObjects(nPlayerIndex,bIndex) <= 4 then
+
 							EffectAdd(nPlayerIndex,0,57,10,0,0,0,0)
 					
 						end
@@ -339,10 +339,8 @@ function MonsterAbilities_OnUserRespawn(aIndex,KillerType)
 				local DeathMapX = GetObjectDeathMapX(aIndex)
 				
 				local DeathMapY = GetObjectDeathMapY(aIndex)
-			
-				Monster_Spawn(55,DeathMap,DeathMapX,DeathMapY,-1,600)
-				
-				Monster_FrostBloom(aIndex,22,10)
+
+				Monster_FrostBloom(Monster_Spawn(55,DeathMap,DeathMapX,DeathMapY,-1,600),22,10)			--Frost Bloom + Spawn Szkieleta
 				
 				ChatTargetSend(SelupanIndex,-1,"This soul is mine now!")
 		
@@ -390,7 +388,7 @@ function MonsterAbilities_OnTimerThread()
 			
 			MonsterAbilities_StartSelupanFight()
 			
-			ChatTargetSend(SelupanIndex,-1,"How dare you touch my eggs?!")		--TEST
+			ChatTargetSend(SelupanIndex,-1,"How dare you touch my eggs?!")
 
 		elseif SelupanStartFightTimer > 0 then
 		
@@ -404,21 +402,31 @@ function MonsterAbilities_OnTimerThread()
 			
 			SelupanLastHP = tonumber(100*GetObjectLife(SelupanIndex)/GetObjectMaxLife(SelupanIndex))
 			
-			if SelupanLastHP <= 10 then
+			if SelupanPhase == 0 and SelupanLastHP <= 90 then							--Summon Mammoth + Meteor
 			
-				SelupanPhase = 4						--Summon Iron Knight + Summon Golden Titan + Summon Ice Giant + Meteor (Czesciej) razem z Ice Arrow
+				SelupanPhase = 1
+				
+				ChatTargetSend(SelupanIndex,-1,"You shall see my power!")
 			
-			elseif SelupanLastHP <= 30 then
+			elseif SelupanPhase == 1 and SelupanLastHP <= 60 then						--Summon Ice Giant + Meteor
 			
-				SelupanPhase = 3						--Summon Golden Titan + Summon Ice Giant + Meteor
+				SelupanPhase = 2
+				
+				--ChatTargetSend(SelupanIndex,-1,"Come my creatures, freeze those mortals!")
+				
+				ChatTargetSend(SelupanIndex,-1,"Come to me, let it pierce you to the bone!")
 			
-			elseif SelupanLastHP <= 60 then
+			elseif SelupanPhase == 2 and SelupanLastHP <= 30 then						--Summon Golden Titan + Summon Ice Giant + Meteor
 			
-				SelupanPhase = 2						--Summon Ice Giant + Meteor
+				SelupanPhase = 3
+				
+				ChatTargetSend(SelupanIndex,-1,"You're just a miserable dust!")
+				
+			elseif SelupanPhase == 3 and SelupanLastHP <= 10 then						--Summon Iron Knight + Summon Golden Titan + Summon Ice Giant + Meteor (Czesciej) razem z Ice Arrow
 			
-			elseif SelupanLastHP <= 90 then
-			
-				SelupanPhase = 1						--Summon Mammoth + Meteor
+				SelupanPhase = 4
+				
+				ChatTargetSend(SelupanIndex,-1,"You won't run from me!")
 			
 			end
 			
@@ -443,22 +451,26 @@ function MonsterAbilities_OnTimerThread()
 			end
 
 			if SelupanPlayerListLength > 0 then
-			
-				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Phase: %d, Mod: %d",SelupanPhase,(SelupanMasterTimer % SelupanMammothFreq)))	--TEST
 
 				if SelupanPhase == 1 and (SelupanMasterTimer % SelupanMammothFreq) == 0 then
 				
 					local SpawnX = math.random(-3,3) + GetObjectMapX(SelupanIndex)
 					
 					local SpawnY = math.random(-3,3) + GetObjectMapY(SelupanIndex)
-					
-					NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SpawnX: %d, SpawnY: %d",SpawnX,SpawnY))	--TEST
-			
+
 					Monster_Spawn(455,58,SpawnX,SpawnY,-1,60)
 			
 				end
 			
-				if SelupanMasterTimer < SelupanEnrageTime then
+				if SelupanPhase ~= 5 and SelupanMasterTimer < SelupanEnrageTime then
+				
+					SelupanPhase = 5
+					
+					ChatTargetSend(SelupanIndex,-1,"Your end is close, mortals!")
+					
+				end
+				
+				if SelupanPhase == 5 then
 			
 					for j=1,#SelupanPlayerList,1 do
 				
@@ -634,45 +646,5 @@ function MonsterAbilities_SelupanRefreshPlayerList()
 
 end
 
-
-function MonsterAbilities_SpawnInVicinity(aClass,bDuration,cRange,dMinDistance)
-
-	local SpawnInProgress = true
-	
-	local Range = cRange / 2
-	
-	local MapX = 0
-	
-	local MapY = 0
-	
-	while SpawnInProgress do
-
-		MapX = math.random(Range * (-1),Range) + GetObjectMapX(SelupanIndex)
-		
-		MapY = math.random(Range * (-1),Range) + GetObjectMapY(SelupanIndex)
-		
-		if MapCheckAttr(58,MapX,MapY,2) == 1 then
-		
-			SpawnInProgress = false
-		
-			for nVicinity=1,#SelupanPlayerList,1 do
-			
-				local Distance = Monster_CheckDistanceBetweenObjects(SelupanPlayerList[nVicinity],-1,58,MapX,MapY)
-			
-				if Distance ~= -1 and Distance <= dMinDistance then
-				
-					SpawnInProgress = true
-				
-				end
-			
-			end
-		
-		end
-
-	end
-	
-	return Monster_Spawn(aClass,58,MapX,MapY,-1,bDuration)
-
-end
 
 ------------------------/ Selupan Boss Fight ---------------------

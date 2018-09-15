@@ -243,33 +243,23 @@ function Monster_Spawn(aClass,bMap,cMapX,dMapY,eTurn,dTime)
 end
 
 
-function Monster_CheckDistanceBetweenObjects(aIndex,bIndex,cMap,dMapX,eMapY)
+function Monster_CheckDistanceBetweenObjects(aIndex,bIndex)
 
-	local AMap = GetObjectMap(aIndex)
+	aMap = GetObjectMap(aIndex)
 	
-	local AMapX = GetObjectMapY(aIndex)
+	aMapX = GetObjectMapY(aIndex)
 	
-	local AMapY = GetObjectMapY(aIndex)
-	
-	local BMap = cMap
-	
-	local BMapX = dMapX
-	
-	local BMapY = eMapY
-	
-	if bIndex ~= nil and bIndex ~= -1 then
+	aMapY = GetObjectMapY(aIndex)
 
-		BMap = GetObjectMap(bIndex)
+	bMap = GetObjectMap(bIndex)
 	
-		BMapX = GetObjectMapY(bIndex)
+	bMapX = GetObjectMapY(bIndex)
 	
-		BMapY = GetObjectMapY(bIndex)
-		
-	end
+	bMapY = GetObjectMapY(bIndex)
+
+	if bMap ~= nil and aMap ~= nil and aMap == bMap then
 	
-	if AMap ~= nil and BMap ~= nil and AMap == BMap then
-	
-		local Distance = tonumber(math.sqrt((AMapX-BMapX)^2+(AMapY-BMapY)^2))
+		local Distance = tonumber(math.sqrt((aMapX-bMapX)^2+(aMapY-bMapY)^2))
 		
 		return Distance
 	
@@ -286,11 +276,13 @@ function Monster_FrostBloom(aIndex,bRange,cDuration)
 
 	for nBloom=GetMinUserIndex(),GetMaxUserIndex(),1 do
 	
-		local nDistance = Monster_CheckDistanceBetweenObjects(aIndex,nBloom,-1,-1,-1)
+		local nDistance = Monster_CheckDistanceBetweenObjects(aIndex,nBloom)
 	
 		if nDistance ~= -1 and nDistance <= bRange then
 		
-			if GetObjectMap(aIndex) == 58 then
+			local IndexMap = GetObjectMap(aIndex)
+		
+			if IndexMap == 58 then
 		
 				Monster_Spawn(101,GetObjectMap(nBloom),GetObjectMapX(nBloom),GetObjectMapY(nBloom),0,cDuration)
 				
@@ -306,7 +298,7 @@ function Monster_FrostBloom(aIndex,bRange,cDuration)
 				
 			local Ring2Item = InventoryGetItemIndex(nBloom,11)
 
-			if PendantItem ~= 6664 and Ring1Item ~= 6681 and Ring2Item ~= 6681 then
+			if PendantItem ~= 6681 and Ring1Item ~= 6664 and Ring2Item ~= 6664 then
 				
 				EffectAdd(nBloom,0,61,cDuration,0,0,0,0)
 			
