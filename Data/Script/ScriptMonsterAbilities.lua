@@ -105,6 +105,8 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 		
 			Monster_FrostBloom(aIndex,7,10)
 			
+			------------------------- Selupan Boss Fight ---------------------
+			
 			if aIndex == SelupanTitanIndex then
 			
 				SelupanTitanIndex = 0
@@ -112,6 +114,8 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 				SelupanTitanTimer = 0
 			
 			end
+			
+			------------------------/ Selupan Boss Fight ---------------------
 		
 		end
 	
@@ -364,7 +368,7 @@ function MonsterAbilities_OnUserRespawn(aIndex,KillerType)
 				
 				local DeathMapY = GetObjectDeathMapY(aIndex)
 
-				Monster_FrostBloom(Monster_Spawn(55,DeathMap,DeathMapX,DeathMapY,-1,600),22,10)			--Frost Bloom + Spawn Szkieleta
+				Monster_FrostBloom(Monster_Spawn(55,DeathMap,DeathMapX,DeathMapY,-1,300),22,10)			--Frost Bloom + Spawn Szkieleta
 				
 				ChatTargetSend(SelupanIndex,-1,"This soul is mine now!")
 		
@@ -444,7 +448,7 @@ function MonsterAbilities_OnTimerThread()
 		
 			SelupanTitanIndex = Monster_Spawn(53,58,GateMapX,GateMapY,-1,SelupanTitanDuration)				--Goledn Titan
 			
-			SelupanTitanTimer = SelupanTitanDuration
+			SelupanTitanTimer = SelupanTitanDuration - 2
 		
 			SelupanTitanGateTimer = 0
 			
@@ -477,6 +481,8 @@ function MonsterAbilities_OnTimerThread()
 				SelupanPhase = 1
 				
 				ChatTargetSend(SelupanIndex,-1,"You shall see my power!")
+				
+				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("PHASE: %d",SelupanPhase))	--TEST
 			
 			elseif SelupanPhase == 1 and SelupanLastHP <= 60 then						--Summon Ice Giant + Meteor
 			
@@ -485,6 +491,8 @@ function MonsterAbilities_OnTimerThread()
 				--ChatTargetSend(SelupanIndex,-1,"Come my creatures, freeze those mortals!")
 				
 				ChatTargetSend(SelupanIndex,-1,"Come to me, let it pierce you to the bone!")
+				
+				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("PHASE: %d",SelupanPhase))	--TEST
 			
 			elseif SelupanPhase == 2 and SelupanLastHP <= 30 then						--Summon Golden Titan + Summon Ice Giant + Meteor
 			
@@ -492,11 +500,15 @@ function MonsterAbilities_OnTimerThread()
 				
 				ChatTargetSend(SelupanIndex,-1,"You're just a miserable dust!")
 				
+				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("PHASE: %d",SelupanPhase))	--TEST
+				
 			elseif SelupanPhase == 3 and SelupanLastHP <= 10 then						--Summon Golden Titan + Summon Ice Giant + Meteor (Czesciej) razem z Ice Arrow
 			
 				SelupanPhase = 4
 				
 				ChatTargetSend(SelupanIndex,-1,"You won't run from me!")
+				
+				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("PHASE: %d",SelupanPhase))	--TEST
 			
 			end
 			
@@ -548,7 +560,7 @@ function MonsterAbilities_OnTimerThread()
 
 					SelupanTitanGateIndex = Monster_Spawn(158,58,SpawnX,SpawnY,-1,SelupanTitanGateDuration)				--Kalima Gate
 					
-					SelupanTitanGateTimer = SelupanTitanGateDuration
+					SelupanTitanGateTimer = SelupanTitanGateDuration - 2
 
 					ChatTargetSend(SelupanIndex,-1,"Come my infernal minion. The master calls you!")
 					
@@ -603,6 +615,8 @@ function MonsterAbilities_OnTimerThread()
 					SelupanPhase = 5
 					
 					ChatTargetSend(SelupanIndex,-1,"Your end is close, mortals!")
+					
+					NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("PHASE: %d",SelupanPhase))	--TEST
 					
 				end
 				
@@ -752,14 +766,18 @@ function MonsterAbilities_SelupanResetFight()
 	SelupanPhase = 0
 	
 	for e=GetMinMonsterIndex(),GetMaxMonsterIndex(),1 do
+	
+		local eClass = GetObjectClass(e)
 			
-		if GetObjectClass(e) == 459 then
+		if eClass == 459 or eClass == 55 then
 			
 			MonsterDelete(e)
 			
 		end
 			
 	end
+	
+	NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("SELUPAN FIGHT END"))	--TEST
 
 end
 
@@ -774,7 +792,7 @@ function MonsterAbilities_SelupanRefreshPlayerList()
 
 			table.insert(SelupanPlayerList,p)
 
-			NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Player: %s",GetObjectName(p)))	--TEST
+			--NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("Player: %s",GetObjectName(p)))	--TEST
 		
 		end
 	
