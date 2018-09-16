@@ -373,6 +373,12 @@ function MonsterAbilities_OnUserRespawn(aIndex,KillerType)
 				ChatTargetSend(SelupanIndex,-1,"This soul is mine now!")
 		
 				MonsterAbilities_SelupanRefreshPlayerList()
+				
+				if #SelupanPlayerList == 0 then
+				
+					MonsterAbilities_SelupanResetFight()
+				
+				end
 			
 			end
 		
@@ -759,17 +765,31 @@ function MonsterAbilities_SelupanResetFight()
 
 	SelupanStartFightTimer = 0
 
+	SelupanTitanIndex = 0
+
+	SelupanTitanTimer = 0
+
+	SelupanTitanGateIndex = 0
+
+	SelupanTitanGateTimer = 0
+
+	SelupanMeteorTimer = 0
+
+	SelupanMeteorTarget = 0
+
+	SelupanPhase = 0
+
 	SelupanIndex = 0
 
 	SelupanLastHP = 0
-	
-	SelupanPhase = 0
-	
+
 	for e=GetMinMonsterIndex(),GetMaxMonsterIndex(),1 do
 	
 		local eClass = GetObjectClass(e)
+		
+		local eMap = GetObjectMap(e)
 			
-		if eClass == 459 or eClass == 55 then
+		if eMap == 58 and eClass ~= 460 and eClass ~= 461 and eClass ~= 462 then
 			
 			MonsterDelete(e)
 			

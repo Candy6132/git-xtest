@@ -284,7 +284,7 @@ function Monster_FrostBloom(aIndex,bRange,cDuration)
 		
 			if IndexMap == 58 then
 		
-				Monster_Spawn(101,GetObjectMap(nBloom),GetObjectMapX(nBloom),GetObjectMapY(nBloom),0,cDuration)
+				Monster_Spawn(101,GetObjectMap(nBloom),GetObjectMapX(nBloom),GetObjectMapY(nBloom),0,1)
 				
 			end
 		
