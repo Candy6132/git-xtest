@@ -195,12 +195,12 @@ LesserDamageMaxRate = 40
 ;==================================================
 ; Sahamutt Skill Settings
 ;==================================================
-SahamuttConstA = 60
+SahamuttConstA = 120
 
 ;==================================================
 ; Neil Skill Settings
 ;==================================================
-NeilConstA = 60
+NeilConstA = 120
 
 ;==================================================
 ; Magic Circle Skill Settings
