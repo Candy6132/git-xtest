@@ -164,7 +164,7 @@ CommandResetPointRateDK = 100
 CommandResetPointRateFE = 100
 CommandResetPointRateMG = 125
 CommandResetPointRateDL = 115
-CommandResetPointRateSU = 100
+CommandResetPointRateSU = 120
 
 ;==================================================
 ; Master Reset Command Settings

@@ -50,10 +50,10 @@ CommandPKClearEnable_AL0 = 1
 CommandPKClearEnable_AL1 = 1
 CommandPKClearEnable_AL2 = 1
 CommandPKClearEnable_AL3 = 1
-CommandPKClearMoney_AL0 = 1000000
-CommandPKClearMoney_AL1 = 1000000
-CommandPKClearMoney_AL2 = 1000000
-CommandPKClearMoney_AL3 = 1000000
+CommandPKClearMoney_AL0 = 10000000
+CommandPKClearMoney_AL1 = 10000000
+CommandPKClearMoney_AL2 = 10000000
+CommandPKClearMoney_AL3 = 10000000
 
 ;==================================================
 ; Money Command Settings
@@ -164,7 +164,7 @@ CommandResetPointRateDK = 100
 CommandResetPointRateFE = 100
 CommandResetPointRateMG = 125
 CommandResetPointRateDL = 115
-CommandResetPointRateSU = 100
+CommandResetPointRateSU = 120
 
 ;==================================================
 ; Master Reset Command Settings
