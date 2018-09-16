@@ -1,6 +1,6 @@
 0
 //AppearanceDelay   BossZoneCloseDelay   BossZoneOpenDelay
-60		    5		         300
+5		    10		         60
 end
 
 1
@@ -10,7 +10,7 @@ end
 
 2
 //SkillDelay
-12000
+3000
 end
 
 3

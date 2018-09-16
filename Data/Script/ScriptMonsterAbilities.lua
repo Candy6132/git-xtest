@@ -223,7 +223,7 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 		
 			local MonsterClass = GetObjectClass(aIndex)
 		
-			if MonsterClass == 460 or MonsterClass == 461 or MonsterClass == 462 then
+			if SelupanMasterTimer == 0 and (MonsterClass == 460 or MonsterClass == 461 or MonsterClass == 462) then
 		
 				SelupanStartFightTimer = 20
 
@@ -368,7 +368,7 @@ function MonsterAbilities_OnUserRespawn(aIndex,KillerType)
 				
 				local DeathMapY = GetObjectDeathMapY(aIndex)
 
-				Monster_FrostBloom(Monster_Spawn(55,DeathMap,DeathMapX,DeathMapY,-1,300),22,10)			--Frost Bloom + Spawn Szkieleta
+				Monster_FrostBloom(Monster_Spawn(55,DeathMap,DeathMapX,DeathMapY,-1,120),22,10)			--Frost Bloom + Spawn Szkieleta
 				
 				ChatTargetSend(SelupanIndex,-1,"This soul is mine now!")
 		
@@ -719,9 +719,9 @@ function MonsterAbilities_StartSelupanFight()
 			if GetObjectLife(o) > 0 and GetObjectMap(o) == 58 then
 				
 				SelupanIndex = o
-					
-				break
-					
+				
+				--break
+				
 			end
 				
 		end
