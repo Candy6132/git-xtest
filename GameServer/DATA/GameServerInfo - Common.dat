@@ -107,18 +107,18 @@ GuildOwnerDestroyLimit = 1
 ;==================================================
 ; Elf Buffer Settings
 ;==================================================
-ElfBufferMaxLevel_AL0 = 200
-ElfBufferMaxLevel_AL1 = 200
-ElfBufferMaxLevel_AL2 = 200
-ElfBufferMaxLevel_AL3 = 200
-ElfBufferMaxReset_AL0 = 3
-ElfBufferMaxReset_AL1 = 3
-ElfBufferMaxReset_AL2 = 3
-ElfBufferMaxReset_AL3 = 3
+ElfBufferMaxLevel_AL0 = 400
+ElfBufferMaxLevel_AL1 = 400
+ElfBufferMaxLevel_AL2 = 400
+ElfBufferMaxLevel_AL3 = 400
+ElfBufferMaxReset_AL0 = 5
+ElfBufferMaxReset_AL1 = 5
+ElfBufferMaxReset_AL2 = 5
+ElfBufferMaxReset_AL3 = 5
 ElfBufferDamageConstA = 50
 ElfBufferDamageConstB = 5
-ElfBufferDefenseConstA = 45
-ElfBufferDefenseConstB = 3
+ElfBufferDefenseConstA = 60
+ElfBufferDefenseConstB = 2
 
 ;==================================================
 ; Experience Settings
