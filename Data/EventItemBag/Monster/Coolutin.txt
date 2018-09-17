@@ -61,7 +61,6 @@ end
 13,001	0	0	*	*	*	*	*	*	*	0	//Imp
 14,016	0	0	*	*	*	*	*	*	*	0	//Jewel of Life
 14,022	0	0	*	*	*	*	*	*	*	0	//Jewel of Creation
-14,031	0	0	*	*	*	*	*	*	*	0	//Jewel of Guardian
 end
 
 9
