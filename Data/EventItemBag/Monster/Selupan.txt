@@ -1,16 +1,317 @@
 3
 //Index   DropRate
 0         10000
+1         10000
+2         5000
+3         10000
+4         5000
 
 end
 
 4
 //Index   Section   SectionRate   MoneyAmount   OptionValue   DW   DK   FE   MG   DL   SU
 0         5         10000          1000          0             1    1    1    1    1    1
+1         6         10000          1000          0             1    1    1    1    1    1
+2         6         10000          1000          0             1    1    1    1    1    1
+3         7         10000          1000          0             1    1    1    1    1    1
+4         7         10000          1000          0             1    1    1    1    1    1
 
 end
 
-5												
-//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment	
-	
-end																											
+5											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+12,074	0	0	*	*	*	*	*	*	*	0	//Perfect Sphere
+end											
+											
+6											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+00,026	0	0	*	*	19	35	*	*	24	0	//Flameberge  
+00,027	0	0	*	*	19	35	*	*	24	0	//Sword Breaker 
+00,028	0	0	*	*	19	35	*	*	24	0	//Rune Bastard Sword
+											
+02,016	0	0	*	*	19	35	*	*	24	0	//Frost Mace 
+02,017	0	0	*	*	19	35	*	*	24	0	//Absolute Scepter 
+											
+04,023	0	0	*	*	19	35	*	*	25	0	//Dark Stinger Bow
+											
+05,020	0	0	*	*	19	35	*	*	24	0	//Eternal Wing Stick
+05,030	0	0	*	*	19	35	*	*	24	0	//Deadly Staff 
+05,031	0	0	*	*	19	35	*	*	24	0	//Inberial Staff 
+											
+06,017	0	0	*	*	19	35	*	*	24	0	//Crimson Glory 
+06,018	0	0	*	*	19	35	*	*	24	0	//Salamander Shield 
+06,019	0	0	*	*	19	35	*	*	24	0	//Frost Barrier 
+06,020	0	0	*	*	19	35	*	*	24	0	//Guardian Shield 
+06,021	0	0	*	*	19	35	*	*	24	0	//Cross Shield 
+											
+07,045	0	0	*	*	19	35	*	*	24	0	//Titan Helm 
+07,046	0	0	*	*	19	35	*	*	24	0	//Brave Helm 
+07,049	0	0	*	*	19	35	*	*	24	0	//Seraphim Helm 
+07,050	0	0	*	*	19	35	*	*	24	0	//Faith Helm 
+07,051	0	0	*	*	19	35	*	*	24	0	//Royal Mask 
+07,052	0	0	*	*	19	35	*	*	24	0	//Hades Helm 
+07,053	0	0	*	*	19	35	*	*	24	0	//Eternal Wing Helm
+											
+08,045	0	0	*	*	19	35	*	*	24	0	//Titan Armor 
+08,046	0	0	*	*	19	35	*	*	24	0	//Brave Armor 
+08,047	0	0	*	*	19	35	*	*	24	0	//Destroy Armor 
+08,048	0	0	*	*	19	35	*	*	24	0	//Phantom Armor 
+08,049	0	0	*	*	19	35	*	*	24	0	//Seraphim Armor 
+08,050	0	0	*	*	19	35	*	*	24	0	//Faith Armor 
+08,051	0	0	*	*	19	35	*	*	24	0	//Royal Armor 
+08,052	0	0	*	*	19	35	*	*	24	0	//Hades Armor 
+08,053	0	0	*	*	19	35	*	*	24	0	//Eternal Wing Armor
+											
+09,045	0	0	*	*	19	35	*	*	24	0	//Titan Pants 
+09,046	0	0	*	*	19	35	*	*	24	0	//Brave Pants 
+09,047	0	0	*	*	19	35	*	*	24	0	//Destroy Pants 
+09,048	0	0	*	*	19	35	*	*	24	0	//Phantom Pants 
+09,049	0	0	*	*	19	35	*	*	24	0	//Seraphim Pants 
+09,050	0	0	*	*	19	35	*	*	24	0	//Faith Pants 
+09,051	0	0	*	*	19	35	*	*	24	0	//Royal Pants 
+09,052	0	0	*	*	19	35	*	*	24	0	//Hades Pants 
+09,053	0	0	*	*	19	35	*	*	24	0	//Eternal Wing Pants
+											
+10,045	0	0	*	*	19	35	*	*	24	0	//Titan Gloves 
+10,046	0	0	*	*	19	35	*	*	24	0	//Brave Gloves 
+10,047	0	0	*	*	19	35	*	*	24	0	//Destroy Gloves 
+10,048	0	0	*	*	19	35	*	*	24	0	//Phantom Gloves 
+10,049	0	0	*	*	19	35	*	*	24	0	//Seraphim Gloves 
+10,050	0	0	*	*	19	35	*	*	24	0	//Faith Gloves 
+10,051	0	0	*	*	19	35	*	*	24	0	//Royal Gloves 
+10,052	0	0	*	*	19	35	*	*	24	0	//Hades Gloves 
+10,053	0	0	*	*	19	35	*	*	24	0	//Eternal Wing Gloves
+											
+11,045	0	0	*	*	19	35	*	*	24	0	//Titan Boots 
+11,046	0	0	*	*	19	35	*	*	24	0	//Brave Boots 
+11,047	0	0	*	*	19	35	*	*	24	0	//Destroy Boots 
+11,048	0	0	*	*	19	35	*	*	24	0	//Phantom Boots 
+11,049	0	0	*	*	19	35	*	*	24	0	//Seraphim Boots 
+11,050	0	0	*	*	19	35	*	*	24	0	//Faith Boots 
+11,051	0	0	*	*	19	35	*	*	24	0	//Royal Boots 
+11,052	0	0	*	*	19	35	*	*	24	0	//Hades Boots 
+11,053	0	0	*	*	19	35	*	*	24	0	//Eternal Wing Boots
+end											
+											
+7											
+//Index	Level	Grade	Opt0	Opt1	Opt2	Opt3	Opt4	Opt5	Opt6	Dur	Comment
+00,026	0	0	*	*	19	35	32	*	*	0	//Flameberge  
+00,027	0	0	*	*	19	35	32	*	*	0	//Sword Breaker 
+00,028	0	0	*	*	19	35	32	*	*	0	//Rune Bastard Sword
+											
+02,016	0	0	*	*	19	35	32	*	*	0	//Frost Mace 
+02,017	0	0	*	*	19	35	32	*	*	0	//Absolute Scepter 
+											
+04,023	0	0	*	*	19	35	32	*	*	0	//Dark Stinger Bow
+											
+05,020	0	0	*	*	19	35	32	*	*	0	//Eternal Wing Stick
+05,030	0	0	*	*	19	35	32	*	*	0	//Deadly Staff 
+05,031	0	0	*	*	19	35	32	*	*	0	//Inberial Staff 
+											
+06,017	0	0	*	*	19	35	32	*	*	0	//Crimson Glory 
+06,018	0	0	*	*	19	35	32	*	*	0	//Salamander Shield 
+06,019	0	0	*	*	19	35	32	*	*	0	//Frost Barrier 
+06,020	0	0	*	*	19	35	32	*	*	0	//Guardian Shield 
+06,021	0	0	*	*	19	35	32	*	*	0	//Cross Shield 
+											
+07,045	0	0	*	*	19	35	32	*	*	0	//Titan Helm 
+07,046	0	0	*	*	19	35	32	*	*	0	//Brave Helm 
+07,049	0	0	*	*	19	35	32	*	*	0	//Seraphim Helm 
+07,050	0	0	*	*	19	35	32	*	*	0	//Faith Helm 
+07,051	0	0	*	*	19	35	32	*	*	0	//Royal Mask 
+07,052	0	0	*	*	19	35	32	*	*	0	//Hades Helm 
+07,053	0	0	*	*	19	35	32	*	*	0	//Eternal Wing Helm
+											
+08,045	0	0	*	*	19	35	32	*	*	0	//Titan Armor 
+08,046	0	0	*	*	19	35	32	*	*	0	//Brave Armor 
+08,047	0	0	*	*	19	35	32	*	*	0	//Destroy Armor 
+08,048	0	0	*	*	19	35	32	*	*	0	//Phantom Armor 
+08,049	0	0	*	*	19	35	32	*	*	0	//Seraphim Armor 
+08,050	0	0	*	*	19	35	32	*	*	0	//Faith Armor 
+08,051	0	0	*	*	19	35	32	*	*	0	//Royal Armor 
+08,052	0	0	*	*	19	35	32	*	*	0	//Hades Armor 
+08,053	0	0	*	*	19	35	32	*	*	0	//Eternal Wing Armor
+											
+09,045	0	0	*	*	19	35	32	*	*	0	//Titan Pants 
+09,046	0	0	*	*	19	35	32	*	*	0	//Brave Pants 
+09,047	0	0	*	*	19	35	32	*	*	0	//Destroy Pants 
+09,048	0	0	*	*	19	35	32	*	*	0	//Phantom Pants 
+09,049	0	0	*	*	19	35	32	*	*	0	//Seraphim Pants 
+09,050	0	0	*	*	19	35	32	*	*	0	//Faith Pants 
+09,051	0	0	*	*	19	35	32	*	*	0	//Royal Pants 
+09,052	0	0	*	*	19	35	32	*	*	0	//Hades Pants 
+09,053	0	0	*	*	19	35	32	*	*	0	//Eternal Wing Pants
+											
+10,045	0	0	*	*	19	35	32	*	*	0	//Titan Gloves 
+10,046	0	0	*	*	19	35	32	*	*	0	//Brave Gloves 
+10,047	0	0	*	*	19	35	32	*	*	0	//Destroy Gloves 
+10,048	0	0	*	*	19	35	32	*	*	0	//Phantom Gloves 
+10,049	0	0	*	*	19	35	32	*	*	0	//Seraphim Gloves 
+10,050	0	0	*	*	19	35	32	*	*	0	//Faith Gloves 
+10,051	0	0	*	*	19	35	32	*	*	0	//Royal Gloves 
+10,052	0	0	*	*	19	35	32	*	*	0	//Hades Gloves 
+10,053	0	0	*	*	19	35	32	*	*	0	//Eternal Wing Gloves
+											
+11,045	0	0	*	*	19	35	32	*	*	0	//Titan Boots 
+11,046	0	0	*	*	19	35	32	*	*	0	//Brave Boots 
+11,047	0	0	*	*	19	35	32	*	*	0	//Destroy Boots 
+11,048	0	0	*	*	19	35	32	*	*	0	//Phantom Boots 
+11,049	0	0	*	*	19	35	32	*	*	0	//Seraphim Boots 
+11,050	0	0	*	*	19	35	32	*	*	0	//Faith Boots 
+11,051	0	0	*	*	19	35	32	*	*	0	//Royal Boots 
+11,052	0	0	*	*	19	35	32	*	*	0	//Hades Boots 
+11,053	0	0	*	*	19	35	32	*	*	0	//Eternal Wing Boots
+end											
+											
+8											
+00,017	0	0	*	13	19	32	30	*	*	0	//Dark Breaker
+00,019	0	0	*	13	19	32	30	*	*	0	//Divine Sword of Archangel
+00,020	0	0	*	13	19	32	30	*	*	0	//Knight Blade
+00,021	0	0	*	13	19	32	30	*	*	0	//Dark Reign Blade
+00,022	0	0	*	13	19	32	30	*	*	0	//Bone Blade
+00,023	0	0	*	13	19	32	30	*	*	0	//Explosion Blade
+00,024	0	0	*	13	19	32	30	*	*	0	//Daybreak
+00,025	0	0	*	13	19	32	30	*	*	0	//Sword Dancer
+00,031	0	0	*	13	19	32	30	*	*	0	//Rune Blade
+											
+02,011	0	0	*	13	19	32	30	*	*	0	//Lord Scepter
+02,012	0	0	*	13	19	32	30	*	*	0	//Great Lord Scepter
+02,013	0	0	*	13	19	32	30	*	*	0	//Divine Scepter of Archangel
+02,014	0	0	*	13	19	32	30	*	*	0	//Soleil Scepter
+02,015	0	0	*	13	19	32	30	*	*	0	//Shining Scepter
+02,018	0	0	*	13	19	32	30	*	*	0	//Striker Scepter
+											
+03,010	0	0	*	13	19	32	30	*	*	0	//Dragon Spear
+03,011	0	0	*	13	19	32	30	*	*	0	//Brova
+											
+04,017	0	0	*	13	19	32	30	*	*	0	//Celestial Bow
+04,018	0	0	*	13	19	32	30	*	*	0	//Divine Crossbow of Archangel
+04,019	0	0	*	13	19	32	30	*	*	0	//Great Regin Crossbow
+04,020	0	0	*	13	19	32	30	*	*	0	//Arrow Viper Bow
+04,021	0	0	*	13	19	32	30	*	*	0	//Sylph Wind Bow
+04,022	0	0	*	13	19	32	30	*	*	0	//Albatross Bow
+04,024	0	0	*	13	19	32	30	*	*	0	//Aileen Bow
+											
+05,008	0	0	*	*	19	32	30	*	*	0	//Staff of Destr
+05,009	0	0	*	*	19	32	30	*	*	0	//Dragon Soul Staff
+05,010	0	0	*	*	19	32	30	*	*	0	//Divine Staff of Archangel
+05,011	0	0	41	*	19	32	30	*	*	0	//Staff of Kundun
+05,012	0	0	*	*	19	32	30	*	*	0	//Grand Viper Staff
+05,013	0	0	*	*	19	32	30	*	*	0	//Platina Staff
+05,018	0	0	*	*	19	32	30	*	*	0	//Demonic Stick
+05,019	0	0	*	*	19	32	30	*	*	0	//Storm Blitz Stick
+05,023	0	0	*	13	19	32	30	*	*	0	//Book of Ghost Phantom
+05,033	0	0	41	*	19	32	30	*	*	0	//Chromatic Staff
+05,034	0	0	*	*	19	32	30	*	*	0	//Raven Stick
+05,036	0	0	*	*	19	32	30	*	*	0	//Divine Stick of Archangel
+											
+06,013	0	0	*	13	19	32	30	*	*	0	//Dragon Shield
+06,015	0	0	*	*	19	32	30	*	*	0	//Grand Soul Shield
+06,016	0	0	*	*	19	32	30	*	*	0	//Elemental Shield
+											
+07,016	0	0	*	*	19	32	30	*	*	0	//Black Dragon Helm
+07,017	0	0	*	*	19	32	30	*	*	0	//Phoenix Helm
+07,018	0	0	*	*	19	32	30	*	*	0	//Grand Soul Helm
+07,019	0	0	*	*	19	32	30	*	*	0	//Divine Helm
+07,021	0	0	*	*	19	32	30	*	*	0	//Red Phoenix Helm
+07,022	0	0	*	*	19	32	30	*	*	0	//Dark Side Helm
+07,024	0	0	*	*	19	32	30	*	*	0	//Nature Helm
+07,028	0	0	*	*	19	32	30	*	*	0	//Dark Master Helm
+07,029	0	0	*	*	19	32	30	*	*	0	//Dragon Knight Helm
+07,030	0	0	*	*	19	32	30	*	*	0	//Venom Mist Helm
+07,031	0	0	*	*	19	32	30	*	*	0	//Sylphid Ray Helm
+07,033	0	0	*	*	19	32	30	*	*	0	//Sunlight Helm
+07,038	0	0	*	*	19	32	30	*	*	0	//Glorious Helm
+07,042	0	0	*	*	19	32	30	*	*	0	//Demonic Helm
+07,043	0	0	*	*	19	32	30	*	*	0	//Storm Blitz Helm
+07,044	0	0	*	*	19	32	30	*	*	0	//Succubus Helm
+											
+08,016	0	0	*	*	19	32	30	*	*	0	//Black Dragon Armor
+08,017	0	0	*	*	19	32	30	*	*	0	//Phoenix Armor
+08,018	0	0	*	*	19	32	30	*	*	0	//Grand Soul Armor
+08,019	0	0	*	*	19	32	30	*	*	0	//Divine Armor
+08,020	0	0	*	*	19	32	30	*	*	0	//Thunder Hawk Armor
+08,021	0	0	*	*	19	32	30	*	*	0	//Red Phoenix Armor
+08,022	0	0	*	*	19	32	30	*	*	0	//Dark Side Armor
+08,023	0	0	*	*	19	32	30	*	*	0	//Hurricane Armor
+08,024	0	0	*	*	19	32	30	*	*	0	//Nature Armor
+08,028	0	0	*	*	19	32	30	*	*	0	//Dark Master Armor
+08,029	0	0	*	*	19	32	30	*	*	0	//Dragon Knight Armor
+08,030	0	0	*	*	19	32	30	*	*	0	//Venom Mist Armor
+08,031	0	0	*	*	19	32	30	*	*	0	//Sylphid Ray Armor
+08,032	0	0	*	*	19	32	30	*	*	0	//Volcano Armor
+08,033	0	0	*	*	19	32	30	*	*	0	//Sunlight Armor
+08,037	0	0	*	*	19	32	30	*	*	0	//Valiant Armor
+08,038	0	0	*	*	19	32	30	*	*	0	//Glorious Armor
+08,042	0	0	*	*	19	32	30	*	*	0	//Demonic Armor
+08,043	0	0	*	*	19	32	30	*	*	0	//Storm Blitz Armor
+08,044	0	0	*	*	19	32	30	*	*	0	//Succubus Armor
+											
+09,016	0	0	*	*	19	32	30	*	*	0	//Black Dragon Pants
+09,017	0	0	*	*	19	32	30	*	*	0	//Phoenix Pants
+09,018	0	0	*	*	19	32	30	*	*	0	//Grand Soul Pants
+09,019	0	0	*	*	19	32	30	*	*	0	//Divine Pants
+09,020	0	0	*	*	19	32	30	*	*	0	//Thunder Hawk Pants
+09,021	0	0	*	*	19	32	30	*	*	0	//Red Phoenix Pants
+09,022	0	0	*	*	19	32	30	*	*	0	//Dark Side Pants
+09,023	0	0	*	*	19	32	30	*	*	0	//Hurricane Pants
+09,024	0	0	*	*	19	32	30	*	*	0	//Nature Pants
+09,028	0	0	*	*	19	32	30	*	*	0	//Dark Master Pants
+09,029	0	0	*	*	19	32	30	*	*	0	//Dragon Knight Pants
+09,030	0	0	*	*	19	32	30	*	*	0	//Venom Mist Pants
+09,031	0	0	*	*	19	32	30	*	*	0	//Sylphid Ray Pants
+09,032	0	0	*	*	19	32	30	*	*	0	//Volcano Pants
+09,033	0	0	*	*	19	32	30	*	*	0	//Sunlight Pants
+09,037	0	0	*	*	19	32	30	*	*	0	//Valiant Pants
+09,038	0	0	*	*	19	32	30	*	*	0	//Glorious Pants
+09,042	0	0	*	*	19	32	30	*	*	0	//Demonic Pants
+09,043	0	0	*	*	19	32	30	*	*	0	//Storm Blitz Pants
+09,044	0	0	*	*	19	32	30	*	*	0	//Succubus Pants
+											
+10,016	0	0	*	*	19	32	30	*	*	0	//Black Dragon Gloves
+10,017	0	0	*	*	19	32	30	*	*	0	//Phoenix Gloves
+10,018	0	0	*	*	19	32	30	*	*	0	//Grand Soul Gloves
+10,019	0	0	*	*	19	32	30	*	*	0	//Divine Gloves
+10,020	0	0	*	*	19	32	30	*	*	0	//Thunder Hawk Gloves
+10,021	0	0	*	*	19	32	30	*	*	0	//Red Phoenix Gloves
+10,022	0	0	*	*	19	32	30	*	*	0	//Dark Side Gloves
+10,023	0	0	*	*	19	32	30	*	*	0	//Hurricane Gloves
+10,024	0	0	*	*	19	32	30	*	*	0	//Nature Gloves
+10,028	0	0	*	*	19	32	30	*	*	0	//Dark Master Gloves
+10,029	0	0	*	*	19	32	30	*	*	0	//Dragon Knight Gloves
+10,030	0	0	*	*	19	32	30	*	*	0	//Venom Mist Gloves
+10,031	0	0	*	*	19	32	30	*	*	0	//Sylphid Ray Gloves
+10,032	0	0	*	*	19	32	30	*	*	0	//Volcano Gloves
+10,033	0	0	*	*	19	32	30	*	*	0	//Sunlight Gloves
+10,037	0	0	*	*	19	32	30	*	*	0	//Valiant Gloves
+10,038	0	0	*	*	19	32	30	*	*	0	//Glorious Gloves
+10,042	0	0	*	*	19	32	30	*	*	0	//Demonic Gloves
+10,043	0	0	*	*	19	32	30	*	*	0	//Storm Blitz Gloves
+10,044	0	0	*	*	19	32	30	*	*	0	//Succubus Gloves
+											
+11,016	0	0	*	*	19	32	30	*	*	0	//Black Dragon Boots
+11,017	0	0	*	*	19	32	30	*	*	0	//Phoenix Boots
+11,018	0	0	*	*	19	32	30	*	*	0	//Grand Soul Boots
+11,019	0	0	*	*	19	32	30	*	*	0	//Divine Boots
+11,020	0	0	*	*	19	32	30	*	*	0	//Thunder Hawk Boots
+11,021	0	0	*	*	19	32	30	*	*	0	//Red Phoenix Boots
+11,022	0	0	*	*	19	32	30	*	*	0	//Dark Side Boots
+11,023	0	0	*	*	19	32	30	*	*	0	//Hurricane Boots
+11,024	0	0	*	*	19	32	30	*	*	0	//Nature Boots
+11,028	0	0	*	*	19	32	30	*	*	0	//Dark Master Boots
+11,029	0	0	*	*	19	32	30	*	*	0	//Dragon Knight Boots
+11,030	0	0	*	*	19	32	30	*	*	0	//Venom Mist Boots
+11,031	0	0	*	*	19	32	30	*	*	0	//Sylphid Ray Boots
+11,032	0	0	*	*	19	32	30	*	*	0	//Volcano Boots
+11,033	0	0	*	*	19	32	30	*	*	0	//Sunlight Boots
+11,037	0	0	*	*	19	32	30	*	*	0	//Valiant Boots
+11,038	0	0	*	*	19	32	30	*	*	0	//Glorious Boots
+11,042	0	0	*	*	19	32	30	*	*	0	//Demonic Boots
+11,043	0	0	*	*	19	32	30	*	*	0	//Storm Blitz Boots
+11,044	0	0	*	*	19	32	30	*	*	0	//Succubus Boots
+											
+13,013	0	0	*	*	19	32	30	*	*	0	//Pendant of Fire
+13,021	0	0	*	*	19	32	30	*	*	0	//Ring of Fire
+13,023	0	0	*	*	19	32	30	*	*	0	//Ring of Wind
+13,026	0	0	*	*	19	32	30	*	*	0	//Pendant of Wind
+end											

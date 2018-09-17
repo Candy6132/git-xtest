@@ -93,6 +93,7 @@ end
 16        5000    5000    //Luck Option (Boss 3 & 6) (0~1)
 17        7000    3000    //Luck Option (Kundun Ancient Drop) (0~1)
 18        7000    3000    //Luck Option (Medals) (0~1)
+19        5000    5000    //Luck Option (Selupan) (0~1)
 end
 
 3
@@ -132,6 +133,7 @@ end
 33        7000    2000    800     200     0       0       0       0       //JoL Option (Quest Equipment) (0~3)
 34        4000    3000    2000    1000    0       0       0       0       //JoL Option (Medals) (0~3)
 34        0       5000    3000    2000    0       0       0       0       //JoL Option (Better Quest Equipment) (1~3)
+35        4000    3000    2000    1000    0       0       0       0       //JoL Option (Selupan) (0~3)
 end
 
 4
@@ -167,6 +169,8 @@ end
 29        0       7000    2800    200     0       0       0       //Exc Option (Box of Kundun)
 30        0       8000    2000    0       0       0       0       //Exc Option (Blood Castle)
 31        0       0       3333    3333    3333    0       0       //Exc Option (Lord Mix)
+32        0       7000    2800    200     0       0       0       //Exc Option (Selupan)
+33        0       0       0       10000   0       0       0       //Exc Option (Selupan) (3)
 end
 
 5
@@ -220,4 +224,6 @@ end
 21        0       0       0       5000    5000    0       //Socket Option (EventItemBag) (3~4)
 22        0       0       0       3334    3333    3333    //Socket Option (EventItemBag) (3~5)
 23        0       0       0       0       5000    5000    //Socket Option (EventItemBag) (4~5)
+24        0       0       0       10000   0       0       //Socket Option (Selupan) (3)
+25        0       0       0       0       0       10000   //Socket Option (Selupan 2-hand) (5)
 end
