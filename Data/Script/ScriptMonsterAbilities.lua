@@ -28,17 +28,15 @@ SelupanMasterTimer = 0
 
 SelupanMaxFightTime = 1199
 
---SelupanEnrageTime = 600
-
-SelupanEnrageTime = 1000 -- TEST
+SelupanEnrageTime = 600
 
 SelupanStartFightTimer = 0
 
 SelupanMammothFreq = 10
 
-SelupanIceGiantFreq = 30
+SelupanIceGiantFreq = 10
 
-SelupanTitanFreq = 45
+SelupanTitanFreq = 29
 
 SelupanTitanIndex = 0
 
@@ -52,7 +50,7 @@ SelupanTitanGateTimer = 0
 
 SelupanTitanGateDuration = 10
 
-SelupanMeteorFrequency = 30
+SelupanMeteorFrequency = 20
 
 SelupanMeteorTimer = 0
 
@@ -87,6 +85,8 @@ ScriptLoader_AddOnTimerThread("MonsterAbilities_OnTimerThread")
 function MonsterAbilities_OnReadScript()
 
 	if MonsterAbilities_SystemSwitch == 1 then
+
+		MonsterAbilities_StartSelupanFight()
 
 		math.randomseed(os.time())
 
@@ -452,13 +452,17 @@ function MonsterAbilities_OnTimerThread()
 			
 			local GateMapY = GetObjectMapY(SelupanTitanGateIndex)
 		
-			SelupanTitanIndex = Monster_Spawn(53,58,GateMapX,GateMapY,-1,SelupanTitanDuration)				--Goledn Titan
+			SelupanTitanIndex = Monster_Spawn(53,58,GateMapX,GateMapY,-1,SelupanTitanDuration+2)				--Goledn Titan
 			
-			SelupanTitanTimer = SelupanTitanDuration - 2
+			SelupanTitanTimer = SelupanTitanDuration
 		
 			SelupanTitanGateTimer = 0
 			
+			MonsterDelete(SelupanTitanGateIndex)
+			
 			SelupanTitanGateIndex = 0
+			
+			MonsterAbilities_SelupanMessage("Titan spawned")
 		
 		end
 		
@@ -471,6 +475,8 @@ function MonsterAbilities_OnTimerThread()
 			Monster_FrostBloom(SelupanTitanIndex,20,5)
 		
 			SelupanTitanTimer = 0
+			
+			MonsterDelete(SelupanTitanIndex)
 		
 			SelupanTitanIndex = 0 
 		
@@ -482,7 +488,7 @@ function MonsterAbilities_OnTimerThread()
 			
 			SelupanLastHP = tonumber(100*GetObjectLife(SelupanIndex)/GetObjectMaxLife(SelupanIndex))
 			
-			if SelupanPhase == 0 and SelupanLastHP <= 90 then							--Summon Mammoth + Meteor
+			if SelupanPhase == 0 and SelupanLastHP <= 95 then							--Summon Mammoth + Meteor
 			
 				SelupanPhase = 1
 				
@@ -490,7 +496,7 @@ function MonsterAbilities_OnTimerThread()
 				
 				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("PHASE: %d",SelupanPhase))	--TEST
 			
-			elseif SelupanPhase == 1 and SelupanLastHP <= 60 then						--Summon Ice Giant + Meteor
+			elseif SelupanPhase == 1 and SelupanLastHP <= 80 then						--Summon Ice Giant + Meteor
 			
 				SelupanPhase = 2
 				
@@ -500,7 +506,7 @@ function MonsterAbilities_OnTimerThread()
 				
 				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("PHASE: %d",SelupanPhase))	--TEST
 			
-			elseif SelupanPhase == 2 and SelupanLastHP <= 30 then						--Summon Golden Titan + Summon Ice Giant + Meteor
+			elseif SelupanPhase == 2 and SelupanLastHP <= 50 then						--Summon Golden Titan + Summon Ice Giant + Meteor
 			
 				SelupanPhase = 3
 				
@@ -508,7 +514,7 @@ function MonsterAbilities_OnTimerThread()
 				
 				NoticeSend(GetObjectIndexByName("Candy_GM"),1,string.format("PHASE: %d",SelupanPhase))	--TEST
 				
-			elseif SelupanPhase == 3 and SelupanLastHP <= 10 then						--Summon Golden Titan + Summon Ice Giant + Meteor (Czesciej) razem z Ice Arrow
+			elseif SelupanPhase == 3 and SelupanLastHP <= 20 then						--Summon Golden Titan + Summon Ice Giant + Meteor (Czesciej) razem z Ice Arrow
 			
 				SelupanPhase = 4
 				
@@ -558,19 +564,19 @@ function MonsterAbilities_OnTimerThread()
 			
 				end
 				
-				if SelupanPhase > 3 and (SelupanMasterTimer % SelupanTitanFreq) == 0 then
+				if SelupanPhase > 2 and (SelupanMasterTimer % SelupanTitanFreq) == 0 then
 					
 					local SpawnX = math.random(-5,5) + GetObjectMapX(SelupanIndex)										--ZROBIC FUNKCJE ZEBY NIE RESPILO W SCIANIE
 					
 					local SpawnY = math.random(-5,5) + GetObjectMapY(SelupanIndex)
 
-					SelupanTitanGateIndex = Monster_Spawn(158,58,SpawnX,SpawnY,-1,SelupanTitanGateDuration)				--Kalima Gate
+					SelupanTitanGateIndex = Monster_Spawn(158,58,SpawnX,SpawnY,-1,SelupanTitanGateDuration+2)				--Kalima Gate
 					
-					SelupanTitanGateTimer = SelupanTitanGateDuration - 2
+					SelupanTitanGateTimer = SelupanTitanGateDuration
 
 					ChatTargetSend(SelupanIndex,-1,"Come my infernal minion. The master calls you!")
 					
-					NoticeRegionSend(0,"Selupan Spawns Titan Gate")														--TEST
+					MonsterAbilities_SelupanMessage("Selupan Spawns Titan Gate")
 				
 				end
 
@@ -820,5 +826,19 @@ function MonsterAbilities_SelupanRefreshPlayerList()
 
 end
 
+
+function MonsterAbilities_SelupanMessage(aMessage)
+
+	if #SelupanPlayerList > 0 then
+	
+		for nMessage=1,#SelupanPlayerList,1 do
+		
+			NoticeSend(SelupanPlayerList[nMessage],0,aMessage)
+		
+		end
+	
+	end
+
+end
 
 ------------------------/ Selupan Boss Fight ---------------------
