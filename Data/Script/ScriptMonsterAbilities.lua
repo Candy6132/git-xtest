@@ -32,6 +32,8 @@ SelupanEnrageTime = 600
 
 SelupanStartFightTimer = 0
 
+SelupanDieTimer = 0
+
 SelupanMammothFreq = 10
 
 SelupanIceGiantFreq = 10
@@ -228,8 +230,8 @@ function MonsterAbilities_OnMonsterDie(aIndex,bIndex)
 				SelupanStartFightTimer = 20
 
 			elseif MonsterClass == 459 then
-
-				MonsterAbilities_SelupanResetFight()
+			
+				SelupanDieTimer = 5
 		
 			elseif MonsterClass == 22 then
 
@@ -428,6 +430,18 @@ function MonsterAbilities_OnTimerThread()
 		
 			SelupanStartFightTimer = SelupanStartFightTimer - 1
 
+		end
+		
+		if SelupanDieTimer > 1 then
+		
+			SelupanDieTimer = SelupanDieTimer - 1
+			
+		elseif SelupanDieTimer == 1 then
+		
+			SelupanDieTimer = 0
+
+			MonsterAbilities_SelupanResetFight()
+			
 		end
 		
 		if SelupanMeteorTimer > 0 then
