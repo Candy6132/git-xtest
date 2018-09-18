@@ -1145,6 +1145,6 @@ end
 2            439          32             30         070            160            *              //Dreadfear
 2            439          32             30         060            144            *              //Dreadfear
 2            439          32             30         060            156            *              //Dreadfear
-3            440          32             30         062            154            *              //Dark Elf
-3            440          32             30         054            165            *              //Dark Elf
+3            458          32             30         062            154            *              //Iron Knight
+3            458          32             30         054            165            *              //Iron Knight
 end
