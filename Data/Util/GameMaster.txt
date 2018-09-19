@@ -5,5 +5,5 @@ Rezun2		Tester_GM	2
 buzka		POZDRO_GM	2
 test17		HotChick	2
 DominikGM1      Grass_GM        2
-carngm1664      Carnage_GM      1
+carngm1664      Carnage_GM      2
 end
