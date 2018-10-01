@@ -126,27 +126,27 @@ ElfBufferDefenseConstB = 2
 ;==================================================
 ; Experience Settings
 ;==================================================
-AddExperienceRate_AL0 = 300
-AddExperienceRate_AL1 = 300
-AddExperienceRate_AL2 = 300
-AddExperienceRate_AL3 = 300
-AddMasterExperienceRate_AL0 = 100
-AddMasterExperienceRate_AL1 = 100
-AddMasterExperienceRate_AL2 = 100
-AddMasterExperienceRate_AL3 = 100
+AddExperienceRate_AL0 = 30000
+AddExperienceRate_AL1 = 30000
+AddExperienceRate_AL2 = 30000
+AddExperienceRate_AL3 = 30000
+AddMasterExperienceRate_AL0 = 10000
+AddMasterExperienceRate_AL1 = 10000
+AddMasterExperienceRate_AL2 = 10000
+AddMasterExperienceRate_AL3 = 10000
 MinMasterExperienceMonsterLevel_AL0 = 150
 MinMasterExperienceMonsterLevel_AL1 = 150
 MinMasterExperienceMonsterLevel_AL2 = 150
 MinMasterExperienceMonsterLevel_AL3 = 150
-AddEventExperienceRate_AL0 = 150
-AddEventExperienceRate_AL1 = 150
-AddEventExperienceRate_AL2 = 150
-AddEventExperienceRate_AL3 = 150
+AddEventExperienceRate_AL0 = 15000
+AddEventExperienceRate_AL1 = 15000
+AddEventExperienceRate_AL2 = 15000
+AddEventExperienceRate_AL3 = 15000
 
 ;==================================================
 ; Item Drop Settings
 ;==================================================
-ItemDropTime = 30
+ItemDropTime = 60
 ItemDropRate_AL0 = 40
 ItemDropRate_AL1 = 40
 ItemDropRate_AL2 = 40
@@ -156,10 +156,10 @@ ItemDropRate_AL3 = 40
 ; Money Drop Settings
 ;==================================================
 MoneyDropTime = 60
-MoneyAmountDropRate_AL0 = 3
-MoneyAmountDropRate_AL1 = 3
-MoneyAmountDropRate_AL2 = 3
-MoneyAmountDropRate_AL3 = 3
+MoneyAmountDropRate_AL0 = 77
+MoneyAmountDropRate_AL1 = 77
+MoneyAmountDropRate_AL2 = 77
+MoneyAmountDropRate_AL3 = 77
 
 ;==================================================
 ; Item Durability Settings
@@ -187,19 +187,19 @@ TradeItemBlockSell = 1
 ; Level Up Settings
 ;==================================================
 MaxLevel = 400
-MaxLevelUp = 25
-MaxLevelUpEvent = 25
+MaxLevelUp = 55
+MaxLevelUpEvent = 55
 MaxStatPoint_AL0 = 65000
 MaxStatPoint_AL1 = 65000
 MaxStatPoint_AL2 = 65000
 MaxStatPoint_AL3 = 65000
-DWLevelUpPoint = 5
-DKLevelUpPoint = 5
-FELevelUpPoint = 5
-MGLevelUpPoint = 7
-DLLevelUpPoint = 7
-SULevelUpPoint = 5
-PlusStatPoint = 1
+DWLevelUpPoint = 6
+DKLevelUpPoint = 6
+FELevelUpPoint = 6
+MGLevelUpPoint = 8
+DLLevelUpPoint = 8
+SULevelUpPoint = 8
+PlusStatPoint = 5
 
 ;==================================================
 ; Create Character Settings
@@ -303,10 +303,10 @@ AddLuckSuccessRate1_AL0 = 25
 AddLuckSuccessRate1_AL1 = 25
 AddLuckSuccessRate1_AL2 = 25
 AddLuckSuccessRate1_AL3 = 25
-AddLuckSuccessRate2_AL0 = 20
-AddLuckSuccessRate2_AL1 = 20
-AddLuckSuccessRate2_AL2 = 20
-AddLuckSuccessRate2_AL3 = 20
+AddLuckSuccessRate2_AL0 = 25
+AddLuckSuccessRate2_AL1 = 25
+AddLuckSuccessRate2_AL2 = 25
+AddLuckSuccessRate2_AL3 = 25
 
 ;==================================================
 ; Fruit Settings
